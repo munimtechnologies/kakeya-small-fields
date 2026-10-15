@@ -4,12 +4,14 @@
 **An exact entropy formula for that limit (1.1). Permutation-invariant Kakeya sets over F_3 have
 growth base exactly 2 (new in 1.2). Maps that respect a linear quotient cannot beat the bound
 (new in 1.2). An exhaustive search over all 9^9 maps on F_3^2 shows that blocks of size 2 do not
-beat it over F_3 (new in 1.3).**
+beat it over F_3 (new in 1.3). Kakeya sets of higher rank: for every q >= 3 and r >= 2, sets
+containing a translate of every r-dimensional subspace can be smaller than the bounds of Kopparty,
+Lev, Saraf and Sudan, and their growth base is q - q^(2-r) + O(q^(1-r) log q) (new in 1.4).**
 
-By MV2 of Munim, Inc. Version 1.3, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.4, 2026-10-15. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
-checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py` and
-`test_exact_h2.py`. Text CC BY 4.0, code Apache-2.0.
+checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py`,
+`test_exact_h2.py` and `test_higher_rank.py`. Text CC BY 4.0, code Apache-2.0.
 
 ## 1. Summary
 
@@ -56,7 +58,7 @@ and h_1 = log2 q - (q-1)/q, which is the bound above. So the bound is the true v
 exactly when h_k = k h_1 for every k. A single map P on F_q^k with h(P) < k h_1, a finite object
 that a computer can check, would give an explicit Kakeya construction beating it.
 
-The rest of the note narrows down where such a map could be:
+The rest of the note narrows down where such a map could be, and then turns to flats:
 
 - **Section 7 (Theorem 3, completed in 1.2).** A Kakeya set invariant under permuting coordinates
   never beats the bound, and over F_3 the best such sets have base exactly 2. Theorem 1 needs its
@@ -67,6 +69,12 @@ The rest of the note narrows down where such a map could be:
 - **Section 9 (new in 1.3).** For q = 3 and k = 2 the question is settled by an exhaustive search:
   no map on F_3^2 beats the coordinatewise squares, so h_2 = 2 h_1 over F_3. The first open case
   over F_3 is now k = 3.
+- **Section 10 (new in 1.4).** The same averaging works for Kakeya sets of rank r (a translate of
+  every r-dimensional subspace). Two simple witnesses, the square of one coordinate and the norm
+  form of F_(q^2), beat both upper bounds of KLSS for every q >= 3 and r >= 2, and together with
+  the KLSS lower bound they pin the growth base down to q - q^(2-r) + O(q^(1-r) log q). For r = 2
+  it is q - 1 + O((log q)/q); the bounds known before left it anywhere between q - 1 + O(1/q) and
+  about q - (ln q)/q.
 
 ## 2. Background and prior bounds
 
@@ -421,31 +429,198 @@ maps with P(0) = 0, far too many for this search. For larger q the k = 2 case is
 | 4 | 96 | 103.34 |
 | 5 | 200 | 212.00 |
 
-## 10. What is and is not claimed
+## 10. Kakeya sets of higher rank (new in 1.4)
+
+A **Kakeya set of rank r** in F_q^n contains a translate of every r-dimensional subspace; rank 1
+is the usual Kakeya set. Let K_r(n, q) be the least size of one (n >= r). If K1 and K2 have rank r,
+so does K1 x K2: the projection of an r-dimensional subspace D of F_q^(n1+n2) to each factor lies
+in an r-dimensional subspace of that factor, whose translate the factor contains, and the product
+of the two translates contains a translate of D. So
+
+    beta_(q,r) = lim K_r(n, q)^(1/n)
+
+exists. KLSS (section 6 of their paper) note that for r >= 2 "there is no reason to believe" their
+bounds are sharp, and ask for this limit for any single pair (q, r) other than (2, 1). Their
+bounds for fixed q and growing n are
+
+- lower (KLSS Theorem 1): beta_(q,r) >= q^(r+1) / (q^r + q - 1) = q / (1 + (q - 1) q^(-r));
+- upper: beta_(q,r) <= q^(1 - q^(-r)) (Theorem 10, from a "universal" set) and
+  beta_(q,r) <= q (1 - (q - delta_q) / (2 q^r))^(1/(r+1)) (Theorem 4; delta_q = 5/3 for q = 3,
+  3 for odd q >= 5, 1 for even q).
+
+In this section R is the number of blocks (it was called r in sections 3 and 6).
+
+**Theorem 5.** For a function f : F_q^r -> F_q let
+
+    Phi(f) = (1/q^r) * sum over t in F_q^r of H(f(U) + <t, U>),    U uniform on F_q^r.
+
+Then beta_(q,r) <= 2^Phi(f).
+
+*Proof.* Section 3 with columns in place of symbols. Let n = R m, cut F_q^n into R blocks of m
+coordinates, and let K = { x : sum over j of log2 N(x^(j)) <= T } with
+T = R m Phi(f) + m log2(q) sqrt(R r ln q). Let D be an r-dimensional subspace with basis
+d_1, ..., d_r, and for each coordinate c let u_c = (d_1c, ..., d_rc) in F_q^r be its column. For
+b_j and s_j in F_q^r, let a have coordinate f(u_c - b_j) + <s_j, u_c> for c in block j. The point
+a + t_1 d_1 + ... + t_r d_r has coordinate f(u_c - b_j) + <s_j + t, u_c>, so the symbol
+distribution of its block j is the law of f(Y - b_j) + <s_j + t, Y>, where Y is a uniformly chosen
+column of block j. Write Phi_f(tau) for Phi computed with U ~ tau. Then f(Y - b) + <s, Y> is a
+translate of f(Z) + <s, Z> with Z = Y - b, and the laws of Y - b average, over the q^r values of b,
+to the uniform law. Phi_f is concave in tau, so some b_j makes the average over s of
+H(f(Y - b_j) + <s, Y>) at most Phi(f). With that b_j, the cost log2 N of block j is at most m
+times this entropy (Lemma 1), so its mean over a uniform shift s_j is at most m Phi(f). Hoeffding's
+inequality with M = m log2 q and a union bound over the q^r points t, as in Lemma 3, give shifts
+that put all of a + D in K. Finally |K| <= C(m + q - 1, q - 1)^R 2^T, and m about n^(1/3) gives
+beta_(q,r) <= 2^Phi(f). QED
+
+**Corollary 4 (three witnesses).**
+
+- (a) f = 0. The slice t = 0 is constant and the others are uniform, so
+  Phi = (1 - q^(-r)) log2 q. This is the base q^(1 - q^(-r)) of KLSS's Theorem 10.
+- (b) f(u) = u_1^2. A slice t with (t_2, ..., t_r) != 0 is uniform, and the q slices with
+  t_2 = ... = t_r = 0 are the maps of Lemma 2. So Phi = log2 q - (q - 1)/q^r, and
+
+      beta_(q,r) <= q * 2^(-(q-1)/q^r).
+
+- (c) r >= 2 and f(u) = N(u_1, u_2), where N(x, y) = x^2 + a x y + b y^2 with t^2 + a t + b
+  irreducible over F_q. N(x, y) is the norm of x - y theta from F_(q^2) (theta a root), so it
+  vanishes only at 0 and takes each nonzero value q + 1 times. Its polar form
+  N(x + y) - N(x) - N(y) is nondegenerate (for even q because a != 0), so every linear function
+  <t', u> of (u_1, u_2) equals N(u + c) - N(u) - N(c) for some c, and N(u) + <t', u> = N(u + c) - N(c)
+  is a translate of N. So the q^2 slices with t_3 = ... = t_r = 0 all have the law of N, the others
+  are uniform, and
+
+      Phi = log2 q - D(q)/q^r,    D(q) = q^2 log2(1 + 1/q) - log2(q + 1).
+
+The square wins for q = 3, 4, 5 (deficit q - 1 against D(3) = 1.735, D(4) = 2.83, D(5) = 3.99),
+and the norm form wins for every q >= 7 (D(7) = 6.440 against 6). Both beat KLSS for every q >= 3
+and r >= 2: (b) because q - 1 > log2 q, and Theorem 4 of KLSS is weaker still. For q = 2 all
+three give at best 2^(3/4) at r = 2, the value KLSS already had.
+
+| q | rank 2: KLSS lower bound | best KLSS upper bound | Theorem 5 | witness |
+|---|---|---|---|---|
+| 2 | 1.6000 | 1.6818 | 1.6818 | f = 0 (no gain) |
+| 3 | 2.4545 | 2.6553 | **2.5717** | u_1^2 |
+| 4 | 3.3684 | 3.6680 | **3.5125** | u_1^2 |
+| 5 | 4.3103 | 4.6883 | **4.4751** | u_1^2 |
+| 7 | 6.2364 | 6.7275 | **6.3905** | norm |
+| 8 | 7.2113 | 7.7442 | **7.3595** | norm |
+
+For rank 3 over F_3 the three numbers are 2.7931, 2.8804 and **2.8499**.
+`python higher_rank.py table` prints these for r = 2, 3, 4.
+
+**Corollary 5 (the second-order term).** For every q and every r >= 2,
+
+    q - q^(2-r) + q^(1-r)  <=  beta_(q,r)  <=  q - q^(2-r) + (1 + ln(q + 1)) q^(1-r).
+
+So beta_(q,r) = q - q^(2-r) + O(q^(1-r) log q), and in particular beta_(q,2) = q - 1 + O((log q)/q).
+Before, the best upper bound was q^(1 - q^(-r)) = q - (ln q) q^(1-r) + ..., which does not show
+the term -q^(2-r) at all.
+
+*Proof.* Lower: q / (1 + x) >= q (1 - x) with x = (q - 1)/q^r. Upper: by Corollary 4(c),
+beta_(q,r) <= q e^(-y) with y = (ln 2) D(q)/q^r = (q^2 ln(1 + 1/q) - ln(q + 1))/q^r, and
+q e^(-y) <= q (1 - y + y^2/2). Since ln(1 + 1/q) >= 1/q - 1/(2q^2), q y >= (q - 1/2 - ln(q + 1)) q^(1-r);
+since y <= q^(1-r), q y^2/2 <= q^(3-2r)/2 <= q^(1-r)/2. QED
+
+**Proposition 1 (the limit of one-coordinate witnesses).** Every f has
+Phi(f) >= log2 q - log2(1 + (q - 1)/q^r), which is the logarithm of the KLSS lower bound.
+
+*Proof.* Two different columns u, v collide in slice t exactly when <t, u - v> = f(v) - f(u), which
+holds for exactly q^(r-1) values of t. So the collision probabilities of the q^r slices add up to
+1 + q^(r-1) - 1/q, and their average is (1 + (q - 1)/q^r)/q. Each slice has entropy at least minus
+the log of its collision probability, and -log2 is convex. QED
+
+So one-coordinate witnesses cannot go below the known lower bound, and Corollary 5 shows they come
+within O(q^(1-r) log q) of it. Narrowing the rest of the gap needs blocks, by the next theorem.
+
+**Theorem 6 (exact formula).** Let g_(r,k) be the least value of
+(1/q^r) sum over t in F_q^r of H(P(U) + t U) over maps P : F_q^(r x k) -> F_q^k, where U is a
+uniform r x k matrix and t a row vector. Then beta_(q,r) = inf over k of 2^(g_(r,k)/k), and
+g_(r,1) is the least Phi.
+
+*Proof.* As for Theorem 2. Putting maps side by side gives g_(r,k+l) <= g_(r,k) + g_(r,l). The
+construction of Theorem 5 over the alphabet F_q^k (letters are r x k blocks of columns) gives
+beta_(q,r) <= 2^(g_(r,k)/k). For k >= r, a rank-r Kakeya set K0 in F_q^k gives a map with every
+P(U) + t U in K0: the row space of U lies in some r-dimensional subspace, and P(U) is a point of a
+translate of that subspace inside K0. So g_(r,k) <= log2 K_r(k, q), and the infimum is at most
+beta_(q,r) by Fekete's lemma. QED
+
+**Proposition 2 (q = 3, r = 2).** The least Phi over all f : F_3^2 -> F_3 is log2 3 - 2/9, attained
+by u_1^2. So 2.5717 is the best that one-coordinate witnesses give for rank-2 Kakeya sets over F_3,
+and going lower needs blocks (k >= 2 in Theorem 6). Among the f whose nine slices all take all
+three values, the norm form is best.
+
+*Proof.* Write Delta_t = log2 3 - H(slice t); we show sum over t of Delta_t <= 2. A slice has
+counts (s_0, s_1, s_2) adding up to 9, and by the proof of Proposition 1 its pair count
+C_t = sum of C(s_i, 2) satisfies sum over t of (C_t - 9) = 3 * 36 - 81 = 27. A slice t *misses a
+value* if f(u) != c_t - <t, u> for all u.
+
+(i) If three slices t_1, t_2, t_3 miss values, then at every u at most two of the three forbidden
+values c_i - <t_i, u> differ. Two of them agree on a line of F_3^2, so the three lines of agreement
+cover all nine points, are parallel, and the t_i lie on a line t_0 + F_3 v. Then
+f(u) + <t_0, u> is the value not forbidden at u, which depends only on <v, u>, and the slices are
+those of a one-variable map plus a uniform part, so the sum is at most 2 by section 4. A fourth such
+slice is impossible, since a line of F_3^2 has three points.
+
+(ii) If exactly two slices miss values, a change of variables (adding a linear function and a
+constant to f, translating u, a linear map) makes them t = (0, 0) and (1, 0), both missing 0. Then
+f(u) = u_1 whenever u_1 != 0, and f(0, u_2) = g(u_2) in {1, 2} with g not constant (otherwise a
+third slice misses a value). The slices (0, 0) and (1, 0) have counts {5, 4, 0}
+(Delta = 0.5939 each), (2, 0) has {6, 2, 1} (Delta = 0.3606), and the six slices with t_2 != 0 have
+{4, 3, 2} or {3, 3, 3} (Delta <= 0.0545). The sum is at most 1.8752.
+
+(iii) If at most one slice misses a value: among count patterns with all three values present,
+Delta_t / (C_t - 9) is largest for {4, 4, 1} (0.1928/3 = 0.0643), so with no missing value the sum
+is at most 27 * 0.0643 = 1.7353, which the norm form attains with nine {4, 4, 1} slices. With one
+missing slice the sum is at most Delta + 0.0643 (27 - (C - 9)) over the patterns {5, 4, 0},
+{6, 3, 0}, {7, 2, 0}, {8, 1, 0}, {9, 0, 0}, and the largest of these is 1.8793. QED
+
+For q = 2 the same question has the answer 3/4 (eight of the 16 functions are affine and give 3/4,
+the other eight give H(1/4) = 0.8113), so for q = r = 2, the case KLSS single out, one-coordinate
+witnesses give nothing beyond their 2^(3n/4).
+
+*Checks.* `test_higher_rank.py` builds the fields F_q for q <= 16 and checks: the slice laws of the
+norm form; the closed forms of Corollary 4 against direct computation for r = 1, 2 (all ten fields)
+and r = 3 (q <= 5); the collision count and the floor of Proposition 1 on the witnesses and on
+random f; the translation step of Theorem 5 on random column laws; Theorem 5 with one block on every
+plane of F_3^4, F_2^5 and F_4^3 (130, 155 and 21 planes): some translate of the witness gives a
+flat whose points have average log2 N at most n Phi(f); Corollary 5 and the comparison with KLSS
+for q up to 64 and r = 2, 3, 4; and every number quoted in this section.
+
+*Prior work.* We searched (2026-10-15) for constructions of rank-r Kakeya sets over a fixed field
+after KLSS. Dhar, Dvir and Lund (2019) still cite KLSS Theorem 4 as the construction for this
+case, and we found nothing better. We could not read K. Cong's 2021 MIT RSI report on Furstenberg
+sets over finite fields, which includes constructions. If any of this is known, please open an
+issue.
+
+## 11. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
   (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
-  Theorem 3 with Lemma 4, Theorem 4 and Corollary 3.
+  Theorem 3 with Lemma 4, Theorem 4 and Corollary 3, and for higher rank Theorems 5 and 6,
+  Corollaries 4 and 5 and Propositions 1 and 2.
 - Computed (exhaustive, with the checks above): max S = 36 over all maps on F_3^2, so h_2 = 2 h_1
   for q = 3.
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
-  q = 3, Theorems 2, 3 and 4, Lemma 4, and the value h_2 = 2 h_1 for q = 3. The bound for q = 3 is
-  not new (KLSS proved it with a random construction).
-- Not claimed: any value of beta_q, any improvement below 1.8899 for q = 3, or that h_k = k h_1 for
-  k >= 3. The gap between q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
-- The O(n^(2/3) log n) error term means the bound beats earlier constructions only in large
-  dimension. The bound is about the exponential growth rate, not about small cases.
-- `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to 9
-  of this README are newer than the preprint.
+  q = 3, Theorems 2, 3 and 4, Lemma 4, the value h_2 = 2 h_1 for q = 3, and every rank-r bound in
+  section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5. The bound for
+  q = 3 in section 1 is not new (KLSS proved it with a random construction).
+- Not claimed: any value of beta_q or beta_(q,r), any improvement below 1.8899 for q = 3, that
+  h_k = k h_1 for k >= 3, or any improvement for q = 2 in rank r >= 2. The gap between
+  q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
+- The O(n^(2/3) log n) error term means the bounds beat earlier constructions only in large
+  dimension. They are about the exponential growth rate, not about small cases.
+- `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to
+  10 of this README are newer than the preprint.
 
-## 11. The code and the tests
+## 12. The code and the tests
 
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
 q = 3 witness, the bound formulas, h(P) and S(P), witness maps of Kakeya sets, a local search, and
 the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an annealing search.
 `exact_h2.py` is the pure-Python branch and bound of section 9 (`python exact_h2.py --q 3 --k 2`).
-`python -m unittest -v` checks:
+`higher_rank.py` (pure Python) holds the section 10 witnesses, bounds and checks
+(`python higher_rank.py table`). `python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
 - Lemma 2 at the uniform distribution (exactly) and against random and point distributions, and its
@@ -463,18 +638,23 @@ the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an 
 - Theorem 3(a) for random and all deterministic couplings; Lemma 4 and Theorem 3(b) (section 7);
 - Theorem 4 and Corollary 3 (section 8);
 - the exhaustive search of section 9 and its cross-checks;
+- the higher-rank results of section 10 (listed there);
 - every number quoted in this README.
 
-## 12. Sources
+## 13. Sources
 
 - S. Kopparty, V. F. Lev, S. Saraf, M. Sudan, "Kakeya-type sets in finite vector spaces",
-  J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 6, 7, 8).
+  J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 4, 6, 7, 8, 10; section 6).
 - G. Kyureghyan, P. Muller, Q. Wang, "On the size of Kakeya sets in finite vector spaces",
   Electron. J. Combin. 20(3) (2013) #P36; arXiv 1302.5591.
 - B. Bukh, T.-W. Chao, "Sharp density bounds on the finite field Kakeya problem", Discrete
   Analysis 2021:26; arXiv 2108.00074.
 - Z. Dvir, S. Kopparty, S. Saraf, M. Sudan, "Extensions to the method of multiplicities, with
   applications to Kakeya sets and mergers", FOCS 2009; S. Saraf, M. Sudan, arXiv 0808.2499.
+- J. Ellenberg, R. Oberlin, T. Tao, "The Kakeya set and maximal conjectures for algebraic varieties
+  over finite fields", Mathematika 56 (2010) (Kakeya sets of rank r).
+- M. Dhar, Z. Dvir, B. Lund, "Simple proofs for Furstenberg sets over finite fields",
+  arXiv 1909.03180 (2019).
 - T. Banakh, V. Gavrylkiv, on difference bases of finite groups, 2019 (the case q = 2).
 - B. Georgiev, J. Gomez-Serrano, T. Tao, A. Z. Wagner, "Mathematical exploration and discovery at
   scale", arXiv 2511.02864 (2025).
