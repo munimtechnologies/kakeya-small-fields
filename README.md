@@ -1,13 +1,14 @@
 # Smaller Kakeya sets over small finite fields
 
 **New upper bound: lim K(n, q)^(1/n) <= q * 2^(-(q-1)/q) for every finite field F_q.**
-**New in 1.1: an exact entropy formula for that limit, and a proof that sets symmetric under
-permuting coordinates cannot beat the bound.**
+**An exact entropy formula for that limit (1.1). Permutation-invariant Kakeya sets over F_3 have
+growth base exactly 2 (new in 1.2). Maps that respect a linear quotient cannot beat the bound
+(new in 1.2).**
 
-By MV2 of Munim, Inc. Version 1.1, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.2, 2026-10-15. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
-checked by the tests in `test_kakeya_entropy.py` and `test_search_h2.py`. Text CC BY 4.0, code
-Apache-2.0.
+checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py` and `test_structure.py`.
+Text CC BY 4.0, code Apache-2.0.
 
 ## 1. Summary
 
@@ -44,7 +45,7 @@ The idea in one sentence: KLSS build Kakeya sets from a function f with small im
 blocks and shifting the line's parameter separately on each block lets us pay for the *average*
 of their *entropies* instead.
 
-Version 1.1 shows that this averaging loses nothing (section 6). For a map P : F_q^k -> F_q^k let
+Section 6 shows that this averaging loses nothing. For a map P : F_q^k -> F_q^k let
 h(P) = (1/q) sum over t of H(P(X) + t X), with X uniform on F_q^k, and let h_k be the least h(P).
 Then
 
@@ -52,9 +53,17 @@ Then
 
 and h_1 = log2 q - (q-1)/q, which is the bound above. So the bound is the true value of beta_q
 exactly when h_k = k h_1 for every k. A single map P on F_q^k with h(P) < k h_1, a finite object
-that a computer can check, would give an explicit Kakeya construction beating it. Section 7 shows
-that no Kakeya set invariant under permuting coordinates beats the bound, and that for q = 3 such
-sets cannot even reach it. Section 8 states the smallest open finite case (maps on F_3^2).
+that a computer can check, would give an explicit Kakeya construction beating it.
+
+The rest of the note narrows down where such a map could be:
+
+- **Section 7 (Theorem 3, completed in 1.2).** A Kakeya set invariant under permuting coordinates
+  never beats the bound, and over F_3 the best such sets have base exactly 2. Theorem 1 needs its
+  block structure.
+- **Section 8 (Theorem 4, new in 1.2).** If P respects a linear quotient (P(x + w) - P(x) lies in a
+  subspace W whenever w does), then h(P) >= h_(k-l) + h_l. So a map that beats the bound must
+  respect no proper subspace; affine maps never beat it.
+- **Section 9** states the smallest open finite case (maps on F_3^2).
 
 ## 2. Background and prior bounds
 
@@ -152,8 +161,7 @@ entropy by (s log2 s)/q and uses C(s, 2) pairs, and s log2 s <= s(s - 1) = 2 C(s
 only for s <= 2. So the total reduction is at most q - 1, and it is reached exactly when all fibres
 have size at most 2, as for f = x^2. (The tests check this for every f when q <= 5.) Going below
 q * 2^(-(q-1)/q) therefore needs witnesses that are not of the form "one function per coordinate".
-Section 6 shows exactly what such witnesses must do, and section 7 that the set cannot be symmetric
-under all permutations of the coordinates.
+Sections 6 to 9 show what such witnesses must do.
 
 ## 5. q = 3 without probability
 
@@ -240,7 +248,7 @@ The formula turns the question "what is beta_q?" into a sequence of finite optim
 one for each k, with the k = 1 problem solved exactly (section 4). It does not by itself say
 whether h_k/k ever drops below h_1.
 
-## 7. Sets symmetric under permuting coordinates (new in 1.1)
+## 7. Sets symmetric under permuting coordinates (completed in 1.2)
 
 Most explicit constructions are unions of composition classes: a point's membership depends only
 on how often each symbol occurs. Theorem 1's set is not: it is symmetric only within blocks.
@@ -248,14 +256,15 @@ on how often each symbol occurs. Theorem 1's set is not: it is symmetric only wi
 **Theorem 3.** (a) If K in F_q^n is a Kakeya set that is invariant under all permutations of the
 coordinates and q divides n, then |K| >= (q * 2^(-(q-1)/q))^n / (n + 1)^q.
 
-(b) For q = 3 there is a delta > 0 such that every permutation-invariant Kakeya set in F_3^n with n
-even has |K| >= 2^((c_3 + delta) n) / (n + 1)^3, where 2^(c_3) = 1.8899. The permutation-invariant
-set of points that use at most two of the three symbols is a Kakeya set with 3 * 2^n - 3 points.
+(b) For q = 3, every permutation-invariant Kakeya set in F_3^n has |K| >= 2^n / (n + 1)^3 when n
+is even and |K| >= 2^(n-1) / n^3 when n is odd. The permutation-invariant set of points that use at
+most two of the three symbols is a Kakeya set with 3 * 2^n - 3 points.
 
-So permutation-invariant Kakeya sets never beat q * 2^(-(q-1)/q), and over F_3 their best base lies
-in the interval (1.8899, 2]. Theorem 1 needs its block structure. (Part (a) is far from sharp for
-q = 2: a union of Hamming-weight levels needs about 2^(0.81 n) points to contain every difference,
-while beta_2 = sqrt 2.)
+So the best growth base of permutation-invariant Kakeya sets is never below q * 2^(-(q-1)/q), and
+over F_3 it is **exactly 2**, against 1.8899 for Theorem 1's block construction. Version 1.1 proved
+only "strictly above 1.8899" and conjectured 2. (Part (a) is far from sharp for q = 2: a union of
+Hamming-weight levels needs about 2^(0.81 n) points to contain every difference, while
+beta_2 = sqrt 2.)
 
 *Proof of (a).* Let u be a direction in which each symbol occurs n/q times, and let a + t u be a
 line in K. Let pi be the joint distribution of the pairs (u_i, a_i) over the n coordinates; its
@@ -270,36 +279,113 @@ f(X) + t X, so by concavity and section 4,
 
 Some t therefore has H(Y + t X) >= c_q. QED
 
-*Proof of (b).* Take u with n/2 zeros and n/2 ones. If the symbols of a are distributed as k0 where
-u is 0 and as k1 where u is 1, then point t of the line has symbol distribution
-M_t(z) = (k0(z) + k1(z - t)) / 2. We show max over t of H(M_t) > h(2/3) = c_3 for every k0, k1
-(h is the binary entropy). The minimum over k0, k1 is attained, so it equals c_3 + delta with
-delta > 0, and the class-size bound finishes as in (a).
+*Proof of (b).* For even n take u with n/2 zeros and n/2 ones, and a line a + t u in K. If the
+symbols of a are distributed as k0 where u is 0 and as k1 where u is 1, then point t of the line
+has symbol distribution
 
-Suppose H(M_t) <= h(2/3) for t = 0, 1, 2. A distribution on three points whose largest mass p is
-below 2/3 has entropy above h(2/3): if p < 1/2 its entropy is at least log2(1/p) > 1, and if
-1/2 <= p < 2/3 it is at least h(p) > h(2/3). So for each t there is a symbol z_t with
-k0(z_t) + k1(z_t - t) >= 4/3, and A + B >= 4 for A = sum_t k0(z_t), B = sum_t k1(z_t - t).
-If z_s = z_t for s != t then z_s - s != z_t - t. If all three z_t are equal, A <= 3 and the
-z_t - t are distinct, so B = 1. If exactly two are equal, A <= 2 and B <= 2. If all are distinct,
-A = 1 and B <= 3. So A + B = 4: every M_t has largest mass exactly 2/3, and H(M_t) <= h(2/3) then
-puts the remaining 1/3 on one symbol. In the first case k0 is a point mass and k1 is uniform, so
-M_t = (2/3, 1/6, 1/6); in the third case k1 is a point mass and k0 uniform, with the same M_t; in
-the second both are point masses and every mass of every M_t is 0, 1/2 or 1. Each case contradicts
-the shape (2/3, 1/3, 0). QED
+    M_t(z) = (k0(z) + k1(z - t)) / 2.
 
-The two-symbol set is Kakeya because g_t(u) = u^2 + t u uses at most two symbols (g_t has a fibre
-of size 2 on F_3), and it has 3 (2^n - 2) + 3 points. We conjecture that the minimum in (b) is
-exactly 1 (point masses attain 1, and we checked by hand that nothing below 1 occurs when k0 is a
-point mass), which would make the best base for permutation-invariant sets over F_3 exactly 2.
-`python kakeya_entropy.py entropy` prints the minimum over a grid.
+K contains the whole class of a + t u, which has at least 2^(n H(M_t)) / (n + 1)^3 points, so
+Lemma 4 below gives |K| >= 2^n / (n + 1)^3. For odd n, let K' be the set of y in F_3^(n-1) with
+(y, c) in K for some c. A line of K in direction (d', 0) gives a line of K' in direction d', so K'
+is a permutation-invariant Kakeya set of F_3^(n-1) with |K'| <= |K|. The two-symbol set is Kakeya
+because g_t(u) = u^2 + t u uses at most two symbols (g_t has a fibre of size 2 on F_3), and it has
+3 (2^n - 2) + 3 points. QED
 
-## 8. The smallest open case: maps on F_3^2
+**Lemma 4.** For all probability distributions k0, k1 on F_3, max over t of H(M_t) >= 1, with
+equality when k0 and k1 are point masses.
+
+*Proof.* Point masses give one slice of entropy 0 and two of entropy 1. Suppose H(M_t) < 1 for
+t = 0, 1, 2. A distribution whose largest mass is at most 1/2 has entropy at least 1, so each M_t
+has a symbol z_t with M_t(z_t) > 1/2, that is,
+
+    (*)  k0(z_t) + k1(z_t - t) > 1.
+
+(i) *Exactly two z_t are equal*, say z_s = z_t = z != z_u. Then z - s != z - t. If z_u - u is the
+third symbol, the three k1 values in (*) are at different symbols, and adding the three
+inequalities gives 2 k0(z) + k0(z_u) + 1 > 3, impossible since k0(z) + k0(z_u) <= 1. If z_u - u
+equals z - s, adding (*) for t and for u gives k0(z) + k0(z_u) + k1(z - t) + k1(z - s) > 2,
+impossible because both pairs are masses at different symbols. The case z_u - u = z - t is the same.
+
+(ii) *The z_t are all different.* Then the k0 terms of (*) add up to 1, so the k1 terms add up to
+more than 2. That forces z_t - t to be the same symbol s for all t: if two of the z_t - t differ,
+the k1 terms add up to at most k1(s1) + (k1(s1) + k1(s2)) <= 2. Now swap the roles of k0 and k1:
+with k0' = k1 and k1' = k0 the new slices are M'_t(z) = M_(-t)(z - t), translates of the old ones,
+and every M'_t has its large mass at the same symbol s. So this case reduces to case (iii).
+
+(iii) *All z_t are equal.* Translating k0 and k1 by the same amount translates every M_t, so we may
+take z_t = 0. Put alpha = k0(0) and g = min over s of k1(s), so g <= 1/3. By (*),
+alpha + k1(-t) > 1 for every t; adding the three, 3 alpha + 1 > 3, so alpha > 2/3, and g > 1 - alpha.
+Take t with k1(-t) = g. Then M_t(0) = (alpha + g)/2, and each of the two other masses of M_t is at
+least k1(z - t)/2 >= g/2. With the mass at 0 fixed, the entropy is smallest when the rest is split
+as unevenly as allowed, so
+
+    H(M_t) >= F(alpha, g) = H( (alpha + g)/2, (2 - alpha - 2g)/2, g/2 ).
+
+F is concave in (alpha, g) (the entropy of an affine function), so on the triangle
+2/3 <= alpha <= 1, 1 - alpha <= g <= 1/3 it is smallest at a vertex: F(1, 0) = H(1/2, 1/2, 0) = 1,
+F(1, 1/3) = H(2/3, 1/6, 1/6) = 1.2516 and F(2/3, 1/3) = H(1/2, 1/3, 1/6) = 1.4591. So
+H(M_t) >= 1, a contradiction. QED
+
+`test_structure.py` checks Lemma 4 on a grid of 8,281 pairs (k0, k1), on 20,000 random pairs and on
+5,000 pairs near the point masses, checks the bound F on the triangle and on the actual slices of
+case (iii), and checks the two-symbol set up to F_3^4.
+
+## 8. Maps that respect a linear quotient cannot beat the bound (new in 1.2)
+
+Theorem 2 reduces the question to maps P : F_q^k -> F_q^k. This section rules out a large,
+natural class of them.
+
+**Theorem 4.** Let W be a subspace of F_q^k of dimension l, 0 < l < k, and suppose
+P(x + w) - P(x) lies in W for every x in F_q^k and every w in W. Then
+
+    h(P) >= h_(k-l) + h_l.
+
+*Proof.* Write Y_t = P(X) + t X. Let pi be the quotient map F_q^k -> F_q^k / W, a space of
+dimension k - l. By the hypothesis, P induces a map Pbar on the quotient with
+Pbar(pi x) = pi P(x), and pi Y_t = Pbar(pi X) + t pi X with pi X uniform. So
+sum over t of H(pi Y_t) >= q h_(k-l). Next, H(Y_t) = H(pi Y_t) + H(Y_t | pi Y_t), and pi Y_t is a
+function of pi X, so H(Y_t | pi Y_t) >= H(Y_t | pi X). Given pi X = c, fix a point x_c with
+pi x_c = c. Then X = x_c + V with V uniform on W, and
+
+    Y_t = (P(x_c) + t x_c) + Q_c(V) + t V,    Q_c(v) = P(x_c + v) - P(x_c),
+
+where Q_c maps W to W. The first bracket is a constant, so
+sum over t of H(Y_t | pi X = c) >= q h_l. Averaging over c and adding,
+sum over t of H(Y_t) >= q (h_(k-l) + h_l). QED
+
+In coordinates with W spanned by the first l unit vectors, the hypothesis says that the last
+k - l coordinates of P(x) depend only on the last k - l coordinates of x: P is block-triangular.
+This includes every coordinatewise map, and the coordinatewise squares (which give equality) in
+particular.
+
+- **k = 2.** Since h_1 = log2 q - (q-1)/q (section 4), every map on F_q^2 that respects a line W
+  has h(P) >= 2 h_1. A map on F_q^2 that beats Theorem 1 must respect no line: for each of the
+  q + 1 lines W there must be x and w in W with P(x + w) - P(x) outside W.
+- **Induction.** If h_j = j h_1 for every j < k, then no map on F_q^k that respects a proper nonzero
+  subspace beats k h_1.
+
+**Corollary 3 (affine maps).** If P(x) = A x + b for a k x k matrix A over F_q, then
+h(P) >= k (q - 1) log2(q) / q, which is at least k h_1, with equality only for q = 2.
+Equivalently S(P) <= k q^k log2 q, with equality at A = 0.
+
+*Proof.* Y_t = (A + t I) X + b is uniform on a coset of the image of A + t I, so
+H(Y_t) = (k - dim ker(A + t I)) log2 q. The kernels are eigenspaces of A for the different
+eigenvalues -t, so their dimensions add up to at most k, and
+sum over t of H(Y_t) >= (q - 1) k log2 q. Finally (q - 1) log2(q) / q >= log2 q - (q - 1)/q
+is the inequality q - 1 >= log2 q. QED
+
+`test_structure.py` checks Theorem 4 on random block-triangular maps for (q, k) = (2, 2), (3, 2)
+and (5, 2), and Corollary 3 on all 81 matrices over F_3 and on random affine maps over F_5^2,
+F_3^3 and F_2^3.
+
+## 9. The smallest open case: maps on F_3^2
 
 By Corollary 1, beta_3 < 1.8899 would follow from one map P : F_3^2 -> F_3^2 with S(P) > 36,
 that is, from nine lines in nine non-vertical directions of F_3^3 whose three horizontal slices are
 more concentrated, in total entropy, than the coordinatewise squares (which have S = 36, each
-slice with fibre sizes 4, 2, 2, 1). Corollary 2 caps S at 39.80. The same windows for k = 2:
+slice with fibre sizes 4, 2, 2, 1). Corollary 2 caps S at 39.80, and by Theorem 4 such a map must
+respect none of the four lines of F_3^2. The same windows for k = 2:
 
 | q | S of the squares = threshold | ceiling from the lower bound |
 |---|---|---|
@@ -308,32 +394,32 @@ slice with fibre sizes 4, 2, 2, 1). Corollary 2 caps S at 39.80. The same window
 | 5 | 200 | 212.00 |
 
 There are 9^9 maps on F_3^2, and since P -> P + c does not change S, the 9^8 = 43,046,721 maps with
-P(0) = 0 cover them all. `search_h2.py exhaustive --q 3 --k 2` checks every one of them with numpy
-in a few minutes, and `search_h2.py anneal` runs simulated annealing for larger q and k. This
-version does not include their results; we will add them, positive or negative.
+P(0) = 0 cover them all. `search_h2.py exhaustive --q 3 --k 2` checks every one of them with numpy,
+and `search_h2.py anneal` runs simulated annealing for larger q and k. This version does not include
+their results; we will add them, positive or negative.
 
-## 9. What is and is not claimed
+## 10. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
-  (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries)
-  and Theorem 3.
+  (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
+  Theorem 3 with Lemma 4, Theorem 4 and Corollary 3.
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
-  q = 3, Theorem 2 and Theorem 3. The bound for q = 3 is not new (KLSS proved it with a random
-  construction).
+  q = 3, Theorems 2, 3 and 4, and Lemma 4. The bound for q = 3 is not new (KLSS proved it with a
+  random construction).
 - Not claimed: any value of beta_q, any improvement below 1.8899 for q = 3, or that h_k = k h_1.
   The gap between q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
 - The O(n^(2/3) log n) error term means the bound beats earlier constructions only in large
-  dimension. The bound is about the exponential growth rate, not about small cases. The delta of
-  Theorem 3(b) comes from a compactness argument and is not explicit.
+  dimension. The bound is about the exponential growth rate, not about small cases.
+- `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 and 8
+  of this README are newer than the preprint.
 
-## 10. The code and the tests
+## 11. The code and the tests
 
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
 q = 3 witness, the bound formulas, h(P) and S(P), witness maps of Kakeya sets, a local search, and
 the section 7 quantities. `search_h2.py` holds the exhaustive (numpy) and annealing searches of
-section 8. `paper/kakeya-small-fields.tex` is a LaTeX preprint of Theorems 1-3 with the same
-proofs. `python -m unittest -v` checks:
+section 9. `python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
 - Lemma 2 at the uniform distribution (exactly) and against random and point distributions, and its
@@ -348,12 +434,12 @@ proofs. `python -m unittest -v` checks:
 - h(P) = k log2 q - S(P)/q^(k+1); h of the coordinatewise squares is k c_q for eight (q, k);
   h_2 = 1 for q = 2 over all 256 maps; h(P) is unchanged by P -> P + c and P -> P + lam x;
   witness maps of Kakeya sets have h(P) <= log2 |K|; every map tested respects Corollary 2;
-- Theorem 3(a) for random and all deterministic couplings, 3(b) on a grid, and the Kakeya property
-  and size of the two-symbol set up to F_3^4;
+- Theorem 3(a) for random and all deterministic couplings; Lemma 4 and Theorem 3(b) (section 7);
+- Theorem 4 and Corollary 3 (section 8);
 - the exhaustive search against brute force and known values (when numpy is installed);
 - every number quoted in this README.
 
-## 11. Sources
+## 12. Sources
 
 - S. Kopparty, V. F. Lev, S. Saraf, M. Sudan, "Kakeya-type sets in finite vector spaces",
   J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 6, 7, 8).
