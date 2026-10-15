@@ -12,7 +12,7 @@
 
 \newcommand{\F}{\mathbb{F}}
 
-\title{Kakeya sets of rank $r$ over $\F_2$}
+\title{Kakeya sets of rank $r$ over $\F_2$ and translates of cubes in finite groups}
 \author{MV2 (Munim, Inc.)}
 \date{October 15, 2026}
 
@@ -25,14 +25,18 @@ $\lim_{n\to\infty} K_r(n,q)^{1/n}$ of the smallest such sets for any pair $(q,r)
 and remarked that already the case $q=r=2$ seems non-trivial. We show by a short entropy argument
 that every Kakeya set of rank $r$ in $\F_2^n$ has at least $2^{(1-2^{-r})n}$ points. With their
 universal-set construction this gives $\lim K_r(n,2)^{1/n} = 2^{1-2^{-r}}$ for every $r\ge 1$;
-for $r=2$ the limit is $2^{3/4}$.
+for $r=2$ the limit is $2^{3/4}$. The same argument works in every finite group $G$: a set
+containing a translate of every $r$-dimensional cube $\{a\,d_1^{t_1}\cdots d_r^{t_r}:t\in\{0,1\}^r\}$
+has at least $|G|^{1-2^{-r}}$ elements, and more generally every configuration of $m$ points with
+coefficients $0$ and $1$ needs $|G|^{1-1/m}$, which is sharp up to a logarithmic factor. This
+settles a natural family of cases of the universal set problem of Alon, Bukh and Sudakov.
 \end{abstract}
 
 \maketitle
 
 \noindent\emph{This note was researched and written with AI agents working in MV2's name. Code and
-tests: \url{https://github.com/munimtechnologies/kakeya-small-fields} (section 11 of the README).
-Licence: CC BY 4.0.}
+tests: \url{https://github.com/munimtechnologies/kakeya-small-fields} (sections 11 and 12 of the
+README). Licence: CC BY 4.0.}
 
 \section{Introduction}
 
@@ -68,6 +72,9 @@ $2^{3n/4}$ points.
 For $r=1$ the theorem is the classical bound $|K|\ge 2^{n/2}$ for sets with $K+K=\F_2^n$. The
 values of $\beta_{2,r}$ for $r=1,2,3,4$ are $1.4142$, $1.6818$, $1.8340$ and $1.9152$, against
 $1.3333$, $1.6$, $1.7778$ and $1.8824$ from the lower bound of \cite{KLSS}.
+
+Section~\ref{sec:groups} shows that the proof works in every finite group, for every family of
+configurations built from $0/1$ combinations (Theorem~\ref{thm:groups}).
 
 \section{The entropy inequality}
 
@@ -107,39 +114,109 @@ $A=A(d_1,\dots,d_r)$ be such a point $a$. Then $Y_t=A+t\cdot d\in K$ for every $
 $H(Y_t)\le\log_2|K|$. Lemma~\ref{lem:entropy} gives $2^r\log_2|K|\ge(2^r-1)n$.
 \end{proof}
 
-\section{Remarks}
+\section{Translates of cubes in finite groups}\label{sec:groups}
+
+Alon, Bukh and Sudakov \cite{ABS} posed the \emph{universal set problem}: given a group acting on
+a set and a family $\mathcal F$ of subsets, find the least size of a set containing a translate of
+every member of $\mathcal F$. They note that it is hard in general and ask for general conditions
+under which it can be solved. The proof of Lemma~\ref{lem:entropy} gives one.
+
+Let $G$ be a finite group of order $N$. A \emph{pattern} is a nonempty set $T\subseteq\{0,1\}^r$;
+write $m=|T|$. For $d=(d_1,\dots,d_r)\in G^r$ and $t\in\{0,1\}^r$ put
+$w_t(d)=d_1^{t_1}d_2^{t_2}\cdots d_r^{t_r}$. A set $K\subseteq G$ is \emph{$T$-universal} if for
+every $d\in G^r$ there is $a\in G$ with $a\,w_t(d)\in K$ for all $t\in T$; let $U_T(G)$ be the least
+size of such a set. For $T=\{0,1\}^r$ the sets $\{a\,w_t(d)\}$ are the $r$-dimensional cubes
+(Hilbert cubes, in an abelian group), and for $G=\F_2^n$, $n\ge r$, the $T$-universal sets are
+exactly the Kakeya sets of rank $r$. For $T=\{0,e_1,\dots,e_{m-1}\}$ they are the $m$-universal
+sets of \cite{ABS}.
+
+\begin{lemma}\label{lem:groups}
+Let $d_1,\dots,d_r$ be independent and uniform on $G$, let $A$ be any random element of $G$ with
+any joint distribution with the $d_i$, and put $Y_t=A\,w_t(d)$. Then for every pattern
+$T\subseteq\{0,1\}^r$,
+\[
+  \sum_{t\in T}H(Y_t)\ \ge\ (|T|-1)\log_2N.
+\]
+\end{lemma}
+
+\begin{proof}
+Induction on $r$; for $r=0$ the pattern has one point. Let $r\ge1$. Call $t\in T$ \emph{paired} if
+$t_r=0$ and $t+e_r\in T$, and let $p$ be the number of paired $t$. For paired $t$ we have
+$Y_{t+e_r}=Y_t\,d_r$, so
+$H(Y_t)+H(Y_{t+e_r})\ge H(Y_t,d_r)=\log_2N+H(Y_t\mid d_r)$. Every other $t\in T$ has
+$H(Y_t)\ge H(Y_t\mid d_r)$. Let $R$ be $T$ without the vectors $t+e_r$ of the pairs; then
+\[
+  \sum_{t\in T}H(Y_t)\ \ge\ p\log_2N+\sum_{t\in R}H(Y_t\mid d_r),
+\]
+and deleting the last coordinate maps $R$ injectively onto a pattern $T'\subseteq\{0,1\}^{r-1}$
+with $|T|-p$ points. Given $d_r=\delta$, for $t\in R$ we have
+$Y_t=A\,w_{t'}(d')\,\delta^{t_r}$, where $t'$ and $d'$ omit the last coordinate. Right
+multiplication by the fixed element $\delta^{t_r}$ is a bijection of $G$, so
+$H(Y_t\mid d_r=\delta)=H(A\,w_{t'}(d')\mid d_r=\delta)$, and $d_1,\dots,d_{r-1}$ are still
+independent and uniform given $d_r=\delta$. By induction the last sum is at least
+$(|T|-p-1)\log_2N$, and the total is at least $(|T|-1)\log_2N$.
+\end{proof}
+
+Equality holds for $A=w_s(d)^{-1}$ with $s\in T$. For $G=\F_2^n$ and $T=\F_2^r$,
+Lemma~\ref{lem:groups} is Lemma~\ref{lem:entropy}.
+
+\begin{theorem}\label{thm:groups}
+For every finite group $G$ of order $N$ and every pattern $T$ with $m$ points,
+\[
+  N^{1-1/m}\ \le\ U_T(G)\ \le\ \min\Bigl(N,\ 2N^{1-1/m}\bigl(m^2(m\ln N+1)\bigr)^{1/m}\Bigr).
+\]
+In particular a set containing a translate of every $r$-dimensional cube of $G$ has at least
+$N^{1-2^{-r}}$ elements, and $N^{1-2^{-r}+o(1)}$ elements suffice.
+\end{theorem}
+
+\begin{proof}
+Lower bound: take $d$ uniform on $G^r$ and $A(d)$ with $A(d)\,w_t(d)\in K$ for all $t\in T$; each
+$Y_t$ lies in $K$, so Lemma~\ref{lem:groups} gives $m\log_2|K|\ge(m-1)\log_2N$. Upper bound (the
+standard random construction; \cite{ABS} give sharper ones for many groups): if $m\le N$, put each
+element in $K$ independently with probability $p$, where $p^m=m^2(m\ln N+1)/N$ (if $p\ge1$ take
+$K=G$). For a fixed $m$-set $S$, two left translates $gS$ and $hS$ meet only if $g^{-1}h\in SS^{-1}$,
+so there are at least $N/m^2$ pairwise disjoint translates, and none lies in $K$ with probability at
+most $\exp(-p^mN/m^2)=e^{-1}N^{-m}$. A union bound over at most $N^m$ sets $S$ and Markov's
+inequality for $|K|$ give a set with $|K|<2pN$ containing a translate of every $m$-set, and every
+image of $T$ lies in an $m$-set.
+\end{proof}
 
 \begin{remark}[Counting]
-A set containing a translate of every $2^r$-point subset of $\F_2^n$ needs about
-$2^{(1-2^{-r})n}$ points by counting alone. A Kakeya set of rank $r$ only has to contain
-translates of the roughly $2^{r(n-r)}$ subspaces of dimension $r$, and counting the tuples
-$(a,a+w_1,\dots,a+w_r)$ inside $K$ gives only $|K|\gtrsim 2^{rn/(r+1)}$ (base $2^{2/3}\approx
-1.5874$ for $r=2$). Lemma~\ref{lem:entropy} shows that over $\F_2$ the weaker requirement already
-forces the size of a universal set.
+A set containing a translate of every $r$-cube contains at least $N^r$ cubes, and each cube in
+$K$ is determined by $a,ad_1,\dots,ad_r\in K$, so counting gives only $|K|\ge N^{r/(r+1)}$; a
+subgroup of order $N^{r/(r+1)}$ contains $N^r$ cubes, so no argument that counts cubes alone can
+do better. For $r=2$ the exponents are $2/3$ against $3/4$; for $\F_2^n$ the same comparison is
+$2^{2/3}\approx1.5874$ against $2^{3/4}\approx1.6818$. For $m$-universal sets the counting bound of
+\cite{ABS}, $\tfrac12N^{1-1/m}$, is already of the right order. Over $\F_2$ every $T\subseteq\F_2^r$
+is a pattern, so for every linear configuration of $m$ points the least set in $\F_2^n$
+containing a translate of every copy has growth base exactly $2^{1-1/m}$.
 \end{remark}
 
-\begin{remark}[Other fields]
-Over $\F_q$ the same pairing, applied to one pair of points on each line in direction $d_1$, gives
-$\sum_{t\in\F_q^r}H(Y_t)\ge(q^r-(q-1)^r)\,n\log_2q$, that is, base $q^{1-(1-1/q)^r}$. For $q\ge3$
-this is weaker than the bound of \cite{KLSS}, since $(q-1)^{r-1}\ln q\ge1$. The value of
-$\beta_{q,r}$ remains open for every $q\ge3$; for $r=1$ and $q=3$ it lies between $1.8$ and
-$1.8899$.
+\begin{remark}[Limits]
+The proof needs coefficients $0$ and $1$. For progressions $\{a,a+d,a+2d\}$ it gives only
+$N^{1/3}$, and for $k$-term progressions in $\mathbb Z_p$ the problem is of Kakeya type and open
+\cite{ABS}. Over $\F_q$ the same pairing, applied to one pair of points on each line in direction
+$d_1$, gives $\sum_{t\in\F_q^r}H(Y_t)\ge(q^r-(q-1)^r)\,n\log_2q$, that is, base
+$q^{1-(1-1/q)^r}$; for $q\ge3$ this is weaker than the bound of \cite{KLSS}, since
+$(q-1)^{r-1}\ln q\ge1$. The value of $\beta_{q,r}$ remains open for every $q\ge3$; for $r=1$ and
+$q=3$ it lies between $1.8$ and $1.8899$.
 \end{remark}
 
-\begin{remark}[Small dimensions]
+\begin{remark}[Small cases]
 Writing $K=\F_2^n\setminus C$, one checks that $K_{n-1}(n,2)=2^n-1$ for $n\ge2$ and
 $K_{n-2}(n,2)=2^n-3$ for $n\ge3$: a set $C$ of four points, translated to $\{0,a,b,c\}$, is mapped
 onto $\F_2^2$ by some linear map whose kernel $W$ has dimension $n-2$, and then no coset of $W$
 lies in $K$; so $K$ has rank $n-2$ exactly when $|C|\le3$. Exhaustive search gives $K_2(4,2)=13$, well above
 $2^{3}=8$; Theorem~\ref{thm:main} is about the growth rate. The repository's tests check these
-values, Lemma~\ref{lem:entropy} on small cases, and every number in this note.
+values, Lemmas~\ref{lem:entropy} and~\ref{lem:groups} on small cases, Theorem~\ref{thm:groups} by
+exhaustive search in $25$ groups of order at most $16$, and every number in this note.
 \end{remark}
 
 \begin{thebibliography}{9}
 \bibitem{KLSS} S.~Kopparty, V.~F.~Lev, S.~Saraf, M.~Sudan, \emph{Kakeya-type sets in finite
 vector spaces}, J. Algebraic Combin. \textbf{34} (2011), 337--355; arXiv:1003.3736.
 \bibitem{ABS} N.~Alon, B.~Bukh, B.~Sudakov, \emph{Discrete Kakeya-type problems and small bases},
-Israel J. Math. \textbf{174} (2009), 285--301.
+Israel J. Math. \textbf{174} (2009), 285--301; arXiv:0711.1604.
 \bibitem{EOT} J.~Ellenberg, R.~Oberlin, T.~Tao, \emph{The Kakeya set and maximal conjectures for
 algebraic varieties over finite fields}, Mathematika \textbf{56} (2010).
 \end{thebibliography}

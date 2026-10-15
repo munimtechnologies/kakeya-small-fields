@@ -9,12 +9,16 @@ containing a translate of every r-dimensional subspace can be smaller than the b
 Lev, Saraf and Sudan, and their growth base is q - q^(2-r) + O(q^(1-r) log q) (new in 1.4).
 Over F_2 the growth base of Kakeya sets of rank r is exactly 2^(1 - 2^(-r)) for every r: every
 rank-2 Kakeya set in F_2^n has at least 2^(3n/4) points, which answers the case q = r = 2 that
-Kopparty, Lev, Saraf and Sudan singled out (new in 1.5).**
+Kopparty, Lev, Saraf and Sudan singled out (new in 1.5). The same argument works in every finite
+group: a set containing a translate of every r-dimensional cube {a + sum of d_i over i in S} of a
+group of order N has at least N^(1 - 2^(-r)) elements, which is sharp up to a logarithmic factor
+(new in 1.6).**
 
-By MV2 of Munim, Inc. Version 1.5, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.6, 2026-10-15. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
 checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py`,
-`test_exact_h2.py`, `test_higher_rank.py` and `test_f2_rank.py`. Text CC BY 4.0, code Apache-2.0.
+`test_exact_h2.py`, `test_higher_rank.py`, `test_f2_rank.py` and `test_cubes.py`. Text CC BY 4.0,
+code Apache-2.0.
 
 ## 1. Summary
 
@@ -83,6 +87,12 @@ The rest of the note narrows down where such a map could be, and then turns to f
   construction of KLSS has size below 2^((1 - 2^(-r)) n + r + 1), so the growth base for q = 2 is
   exactly 2^(1 - 2^(-r)) for every r. KLSS asked for this limit "even for just one particular pair
   (q, r) != (2, 1)", and called the case q = r = 2 non-trivial.
+- **Section 12 (Theorem 8, new in 1.6).** The proof of Theorem 7 works in every finite group G of
+  order N. A set containing a translate of every r-dimensional cube {a + sum of d_i over i in S}
+  has at least N^(1 - 2^(-r)) elements, and N^(1 - 2^(-r) + o(1)) elements suffice. More
+  generally, any configuration of m points whose coefficients are 0 and 1 needs N^(1 - 1/m), as
+  many as m points in general position, although counting gives only N^(r/(r+1)) for cubes. This
+  settles a natural family of cases of the "universal set problem" of Alon, Bukh and Sudakov.
 
 ## 2. Background and prior bounds
 
@@ -665,7 +675,7 @@ subset of K is a translate of at most 2^r of them. A rank-r
 Kakeya set has to contain far fewer configurations, and counting the tuples a, a + w_1, ..., a + w_r
 gives only base 2^(r/(r+1)) (1.5874 for r = 2, below the 1.6 of KLSS Theorem 1). Lemma 5 shows
 that over F_2 a rank-r Kakeya set must nevertheless be as large as a 2^r-universal set, up to the
-factor 2^(r+1).
+factor 2^(r+1). Section 12 shows that the same holds in every finite group.
 
 **Why only q = 2.** Over F_q the same pairing, using one pair on each line in direction d_1 and
 keeping the other q - 2 points, gives sum over t of H(Y_t) >= (q^r - (q - 1)^r) n log2 q, so base
@@ -705,20 +715,158 @@ min-entropy and large q), and the universal-set paper of Alon, Bukh and Sudakov.
 Theorem 1 with the polynomial method, and we found no better lower bound for q = 2 and r >= 2.
 If Theorem 7 is known, please open an issue and we will cite it.
 
-## 12. What is and is not claimed
+## 12. Translates of cubes in any finite group (new in 1.6)
+
+The proof of Lemma 5 uses one fact about F_2: the two points of a line differ by its direction.
+In any group the two ends of an edge of a cube differ by one generator, and the proof carries
+over. Alon, Bukh and Sudakov (ABS, 2009) posed the "universal set problem": given a family of
+finite sets, find the least size of a set that contains a translate of each of them. They call it
+"certainly hard in general" and ask for general conditions under which it can be solved. This
+section solves it, up to a logarithmic factor, for every family built from 0/1 combinations.
+
+Let G be a finite group of order N, written multiplicatively (in an abelian group read a w as
+a + w). A **pattern** is a nonempty set T of 0/1 vectors of length r; m = |T| is its number of
+points. For d = (d_1, ..., d_r) in G^r put
+
+    w_t(d) = d_1^(t_1) d_2^(t_2) ... d_r^(t_r)       (abelian: t_1 d_1 + ... + t_r d_r).
+
+A set K in G is **T-universal** if for every d in G^r some left translate {a w_t(d) : t in T}
+lies in K. Let U_T(G) be the least size of a T-universal set. Examples:
+
+- T = {0,1}^r: the images are the r-dimensional cubes {a + sum of d_i over i in S : S a subset of
+  {1, ..., r}} (Hilbert cubes, when the d_i are nonzero). In F_2^n with n >= r the subset sums of
+  d_1, ..., d_r are their span, so the T-universal sets are exactly the Kakeya sets of rank r.
+- T = {0, e_1, ..., e_(m-1)}: the images are all sets {e, d_1, ..., d_(m-1)}, so the T-universal
+  sets are the m-universal sets of ABS (a translate of every set of m elements).
+- In F_2^n every set T of vectors of F_2^r is a pattern, so every linear configuration
+  {t_1 d_1 + ... + t_r d_r : t in T} is covered.
+
+**Lemma 6.** Let d_1, ..., d_r be independent and uniform on G, let A be any random element of G
+(with any joint law with the d_i), and put Y_t = A w_t(d). Then for every pattern T of length r,
+
+    sum over t in T of H(Y_t) >= (|T| - 1) log2 N.
+
+*Proof.* Induction on r; for r = 0 the pattern has one point and the claim is H(A) >= 0. Let
+r >= 1. Call t in T *paired* if t_r = 0 and t + e_r is in T too, and let p be the number of paired
+t. For paired t, Y_(t + e_r) = Y_t d_r, so (Y_t, Y_(t + e_r)) and (Y_t, d_r) determine each other
+and
+
+    H(Y_t) + H(Y_(t + e_r)) >= H(Y_t, d_r) = log2 N + H(Y_t | d_r).
+
+Every other t in T has H(Y_t) >= H(Y_t | d_r). Let R be T without the vectors t + e_r of the
+pairs. Then
+
+    sum over t in T of H(Y_t) >= p log2 N + sum over t in R of H(Y_t | d_r),
+
+and dropping the last coordinate maps R one-to-one onto a pattern T' of length r - 1 with |T| - p
+points. Condition on d_r = delta. For t in R, Y_t = A w_(t')(d') delta^(t_r), where t' and d'
+drop the last coordinate. Right multiplication by the fixed element delta^(t_r) is a bijection of
+G, so H(Y_t | d_r = delta) = H(A w_(t')(d') | d_r = delta). Given d_r = delta, d_1, ..., d_(r-1)
+are still independent and uniform, so by induction these terms add up to at least
+(|T| - p - 1) log2 N for every delta. In total the sum is at least (|T| - 1) log2 N. QED
+
+Equality holds, for example, for A = w_s(d)^(-1) with s in T: then Y_s is the identity, and for
+t != s, Y_t = w_s(d)^(-1) w_t(d) is uniform (given the other d_i, it is a bijective function of d_j
+for the last j with s_j != t_j). For G = F_2^n and T = F_2^r, Lemma 6 is Lemma 5.
+
+**Theorem 8.** For every finite group G of order N and every pattern T with m points,
+
+    N^(1 - 1/m)  <=  U_T(G)  <=  min( N, 2 N^(1 - 1/m) (m^2 (m ln N + 1))^(1/m) ).
+
+So U_T(G) = N^(1 - 1/m + o(1)) as N grows: the answer depends only on the number of points of the
+pattern, not on the relations between them.
+
+*Proof of the lower bound.* Take d uniform on G^r and let A(d) be an element with A(d) w_t(d) in K
+for every t in T. Every Y_t lies in K, so H(Y_t) <= log2 |K|, and Lemma 6 gives
+m log2 |K| >= (m - 1) log2 N. QED
+
+**Proposition 4 (upper bound).** If m <= N, some set of fewer than
+2 N^(1 - 1/m) (m^2 (m ln N + 1))^(1/m) elements contains a left translate of every m-element
+subset of G, and so of every image of every pattern with m points.
+
+*Proof.* The standard random construction (ABS give sharper ones for many groups). Put each element
+in K independently with probability p, where p^m = m^2 (m ln N + 1)/N; if p >= 1 take K = G. Fix a
+set S of m elements. Two left translates g S and h S meet only if g^(-1) h lies in S S^(-1), which
+has at most m^2 elements, so we can pick at least N/m^2 pairwise disjoint translates. Each lies in
+K with probability p^m, independently, so S has no translate in K with probability at most
+exp(-p^m N/m^2) = e^(-1) N^(-m). There are at most N^m sets S, so with probability at least
+1 - e^(-1) all of them have a translate in K. By Markov's inequality |K| < 2 p N with probability
+greater than 1/2, and 1 - e^(-1) + 1/2 > 1. Every image of a pattern with m points has at most m
+elements, so it lies in an m-element set. QED
+
+**Corollary 7 (cubes).** Every set containing a left translate of every r-dimensional cube
+{d_1^(t_1) ... d_r^(t_r) : t in {0,1}^r} of G has at least N^(1 - 2^(-r)) elements, and if
+2^r <= N some such set has fewer than 2 N^(1 - 2^(-r)) (4^r (2^r ln N + 1))^(2^(-r)). For G = Z_N
+and r = 2: a set
+containing a translate of every {a, a + x, a + y, a + x + y} has at least N^(3/4) elements, and
+N^(3/4 + o(1)) elements suffice. For G = F_2^n this is Theorem 7 again.
+
+**Corollary 8 (every linear pattern over F_2).** For every set T of m vectors of F_2^r, the least
+set in F_2^n containing a translate of {t_1 d_1 + ... + t_r d_r : t in T} for every
+d_1, ..., d_r has between 2^((1 - 1/m) n) and 2^((1 - 1/m) n + O_m(log n)) points; its growth base
+is 2^(1 - 1/m). Linear relations among the points of a configuration never make it cheaper to
+contain a translate of every copy.
+
+**Why this beats counting.** A set K containing a translate of every r-cube contains at least N^r
+cubes (one for each d), and a cube inside K is determined by its elements a, a d_1, ..., a d_r, so
+N^r <= |K|^(r+1) and |K| >= N^(r/(r+1)). A subgroup of order N^(r/(r+1)) (when there is one)
+contains exactly N^r cubes, so no argument that only counts cubes can do better. Lemma 6 also uses
+that the d whose cubes K must contain are all of G^r, each once. The exponents of N:
+
+| r | counting cubes: r/(r+1) | Theorem 8: 1 - 2^(-r) |
+|---|---|---|
+| 1 | 0.5 | 0.5 |
+| 2 | 0.6667 | 0.75 |
+| 3 | 0.75 | 0.875 |
+| 4 | 0.8 | 0.9375 |
+
+(`python cubes.py table` prints this table.) For m-universal sets the counting bound of ABS,
+|U| >= (1/2) N^(1 - 1/m), is already of the right order; there Theorem 8 only removes the factor
+1/2. Its gain is for patterns with linear relations, such as cubes and subspaces, where counting
+fails.
+
+**Where the method stops.** The proof needs coefficients 0 and 1: the two points of each pair must
+differ by a single d_r. For a progression {a, a + d, a + 2d} it gives only |K| >= N^(1/3). For
+k-term progressions in Z_p this is a Kakeya-type problem; ABS recall Bourgain's observation that
+strong lower bounds there would imply the Euclidean Kakeya conjecture, and it stays open. Over
+F_q with q >= 3, a Kakeya set of rank r must contain the images of all of F_q^r, and section 11
+shows that the pairing is weaker than KLSS there.
+
+*Checks.* `test_cubes.py` builds 25 groups of order at most 16: the cyclic groups Z_2, ..., Z_16;
+F_2^2, F_2^3, F_2^4, Z_3 x Z_3, Z_2 x Z_4, Z_4 x Z_4, Z_2 x Z_8 and Z_2 x Z_2 x Z_4; and the
+non-abelian S_3 and S_3 x Z_2. It checks: the group axioms; Lemma 6 for every deterministic base
+point and every pattern in {0,1}^r when (G, r) is (Z_3, 2), (Z_2, 3) or (Z_2, 2), and for r = 1 in
+Z_4, Z_5, S_3 and F_2^2, where the minimum is exactly (|T| - 1) log2 N; the equality case; local
+minima from random starts for patterns in Z_4, Z_5, S_3 and F_2^2 with r = 2 and in Z_3 with
+r = 3; Theorem 8 for 2-cubes, by an exhaustive search for the least cube-universal set in all 25
+groups, and for 3-point sets in the groups of order at most 12; that the least 2-cube-universal
+sets of F_2^2, F_2^3 and F_2^4 have 4, 7 and 13 elements, the values K_2(n, 2) of section 11; that
+the search's tester agrees with the definition on random sets; and every number quoted here.
+
+*Prior work.* We searched (2026-10-15) for lower bounds on sets containing a translate of every
+Hilbert cube, or of every copy of another configuration with linear relations, and found none. The
+work on Hilbert cubes we found (for example Cilleruelo, arXiv 1310.1646) is about sets that
+contain no cube, and ABS bound k-universal sets by counting. The argument is elementary, so it may
+be known; if so, please open an issue and we will cite it.
+
+## 13. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
   (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
   Theorem 3 with Lemma 4, Theorem 4 and Corollary 3, and for higher rank Theorems 5, 6 and 7,
-  Lemma 5, Corollaries 4, 5 and 6 and Propositions 1, 2 and 3.
+  Lemma 5, Corollaries 4, 5 and 6 and Propositions 1, 2 and 3; for finite groups Lemma 6,
+  Theorem 8, Proposition 4 and Corollaries 7 and 8.
 - Computed (exhaustive, with the checks above): max S = 36 over all maps on F_3^2, so h_2 = 2 h_1
-  for q = 3; the values K_r(n, 2) for n <= 4.
+  for q = 3; the values K_r(n, 2) for n <= 4; the least 2-cube-universal sets of 25 groups of
+  order at most 16, each at least N^(3/4).
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
   q = 3, Theorems 2, 3 and 4, Lemma 4, the value h_2 = 2 h_1 for q = 3, every rank-r bound in
-  section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5, and the exact
-  value beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 2 (Theorem 7 and Corollary 6). The bound for
-  q = 3 in section 1 is not new (KLSS proved it with a random construction), and neither is the
-  case r = 1 of Theorem 7 or the upper bound of Corollary 6 (KLSS Corollary 11).
+  section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5, the exact
+  value beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 2 (Theorem 7 and Corollary 6), and the lower
+  bound of Theorem 8 for patterns with linear relations (Lemma 6, Corollaries 7 and 8). The bound
+  for q = 3 in section 1 is not new (KLSS proved it with a random construction), and neither is the
+  case r = 1 of Theorem 7, the upper bound of Corollary 6 (KLSS Corollary 11), Proposition 4 (the
+  standard random construction) or Theorem 8 for m-universal sets (ABS, up to a factor 2).
 - Not claimed: any value of beta_q for q >= 3 or of beta_(q,r) for q >= 3, any improvement below
   1.8899 for q = 3, or that h_k = k h_1 for k >= 3. The gap between q * 2^(-(q-1)/q) and
   q^2/(2q - 1) is open for every q >= 3.
@@ -726,9 +874,9 @@ If Theorem 7 is known, please open an issue and we will cite it.
   only in large dimension. They are about the exponential growth rate, not about small cases.
 - `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to
   10 of this README are newer than that preprint. `paper/kakeya-rank-r-f2.tex` is a short
-  self-contained note with section 11.
+  self-contained note with sections 11 and 12.
 
-## 13. The code and the tests
+## 14. The code and the tests
 
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
@@ -738,7 +886,9 @@ the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an 
 `higher_rank.py` (pure Python) holds the section 10 witnesses, bounds and checks
 (`python higher_rank.py table`). `f2_rank.py` (pure Python) holds section 11: subspaces and
 Kakeya sets of F_2^n, the exhaustive search for small n (`python f2_rank.py small`), the slice
-entropies of Lemma 5 and a local search for base points that would break it.
+entropies of Lemma 5 and a local search for base points that would break it. `cubes.py` (pure
+Python) holds section 12: finite groups given by multiplication tables, patterns, the search for
+the least T-universal set (`python cubes.py small`), and the slice entropies of Lemma 6.
 `python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
@@ -759,9 +909,10 @@ entropies of Lemma 5 and a local search for base points that would break it.
 - the exhaustive search of section 9 and its cross-checks;
 - the higher-rank results of section 10 (listed there);
 - the F_2 results of section 11 (listed there);
+- Lemma 6 and Theorem 8 in 25 groups (listed in section 12);
 - every number quoted in this README.
 
-## 14. Sources
+## 15. Sources
 
 - S. Kopparty, V. F. Lev, S. Saraf, M. Sudan, "Kakeya-type sets in finite vector spaces",
   J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 4, 6, 7, 8, 10,
@@ -777,7 +928,10 @@ entropies of Lemma 5 and a local search for base points that would break it.
 - M. Dhar, Z. Dvir, B. Lund, "Simple proofs for Furstenberg sets over finite fields",
   arXiv 1909.03180 (2019).
 - N. Alon, B. Bukh, B. Sudakov, "Discrete Kakeya-type problems and small bases", Israel J. Math.
-  174 (2009) 285-301 (universal sets).
+  174 (2009) 285-301; arXiv 0711.1604 (universal sets; the universal set problem in the concluding
+  remarks).
+- J. Cilleruelo, "Sets of integers that do not contain Hilbert cubes of dimension 3",
+  arXiv 1310.1646 (Hilbert cubes).
 - T. Banakh, V. Gavrylkiv, on difference bases of finite groups, 2019 (the case q = 2).
 - B. Georgiev, J. Gomez-Serrano, T. Tao, A. Z. Wagner, "Mathematical exploration and discovery at
   scale", arXiv 2511.02864 (2025).
