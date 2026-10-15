@@ -3,12 +3,13 @@
 **New upper bound: lim K(n, q)^(1/n) <= q * 2^(-(q-1)/q) for every finite field F_q.**
 **An exact entropy formula for that limit (1.1). Permutation-invariant Kakeya sets over F_3 have
 growth base exactly 2 (new in 1.2). Maps that respect a linear quotient cannot beat the bound
-(new in 1.2).**
+(new in 1.2). An exhaustive search over all 9^9 maps on F_3^2 shows that blocks of size 2 do not
+beat it over F_3 (new in 1.3).**
 
-By MV2 of Munim, Inc. Version 1.2, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.3, 2026-10-15. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
-checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py` and `test_structure.py`.
-Text CC BY 4.0, code Apache-2.0.
+checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py` and
+`test_exact_h2.py`. Text CC BY 4.0, code Apache-2.0.
 
 ## 1. Summary
 
@@ -63,7 +64,9 @@ The rest of the note narrows down where such a map could be:
 - **Section 8 (Theorem 4, new in 1.2).** If P respects a linear quotient (P(x + w) - P(x) lies in a
   subspace W whenever w does), then h(P) >= h_(k-l) + h_l. So a map that beats the bound must
   respect no proper subspace; affine maps never beat it.
-- **Section 9** states the smallest open finite case (maps on F_3^2).
+- **Section 9 (new in 1.3).** For q = 3 and k = 2 the question is settled by an exhaustive search:
+  no map on F_3^2 beats the coordinatewise squares, so h_2 = 2 h_1 over F_3. The first open case
+  over F_3 is now k = 3.
 
 ## 2. Background and prior bounds
 
@@ -363,7 +366,7 @@ particular.
   has h(P) >= 2 h_1. A map on F_q^2 that beats Theorem 1 must respect no line: for each of the
   q + 1 lines W there must be x and w in W with P(x + w) - P(x) outside W.
 - **Induction.** If h_j = j h_1 for every j < k, then no map on F_q^k that respects a proper nonzero
-  subspace beats k h_1.
+  subspace beats k h_1. With section 9, this applies to q = 3 and k = 3.
 
 **Corollary 3 (affine maps).** If P(x) = A x + b for a k x k matrix A over F_q, then
 h(P) >= k (q - 1) log2(q) / q, which is at least k h_1, with equality only for q = 2.
@@ -379,38 +382,60 @@ is the inequality q - 1 >= log2 q. QED
 and (5, 2), and Corollary 3 on all 81 matrices over F_3 and on random affine maps over F_5^2,
 F_3^3 and F_2^3.
 
-## 9. The smallest open case: maps on F_3^2
+## 9. Maps on F_3^2: blocks of size 2 do not beat the bound over F_3 (new in 1.3)
 
-By Corollary 1, beta_3 < 1.8899 would follow from one map P : F_3^2 -> F_3^2 with S(P) > 36,
-that is, from nine lines in nine non-vertical directions of F_3^3 whose three horizontal slices are
-more concentrated, in total entropy, than the coordinatewise squares (which have S = 36, each
-slice with fibre sizes 4, 2, 2, 1). Corollary 2 caps S at 39.80, and by Theorem 4 such a map must
-respect none of the four lines of F_3^2. The same windows for k = 2:
+By Corollary 1, beta_3 < 1.8899 could come from one map P : F_3^2 -> F_3^2 with S(P) > 36: nine
+lines in the nine non-vertical directions of F_3^3 whose three horizontal slices are more
+concentrated, in total, than those of the coordinatewise squares (S = 36, each slice with fibres
+of sizes 4, 2, 2 and 1). Corollary 2 caps S at 39.80.
+
+**Result.** The largest value of S(P) over all 9^9 maps P : F_3^2 -> F_3^2 is exactly 36. So
+h_2 = 2 h_1 for q = 3, and blocks of size 2 cannot improve Theorem 1 over F_3.
+
+*Method.* `exact_h2.py` fixes P(0) = 0 (P -> P + c does not change S) and runs a branch and bound
+over the 9^8 = 43,046,721 remaining maps. Each x gives the progression P(x), P(x) + x, P(x) + 2x,
+one point per slice. The search chooses P(x) for x = 1, ..., 8 in turn and keeps, for each slice,
+how many progressions pass through each point. Adding a point to a cell that already holds c
+points raises S by D(c) = (c+1) log2(c+1) - c log2 c, and D increases with c. So r more
+progressions can raise a slice whose fullest cell holds m points by at most
+D(m) + ... + D(m + r - 1), and every branch whose bound falls below 36 is cut. Nothing with
+S >= 36 is cut, so the search finds the exact maximum.
+
+*Checks.* `test_exact_h2.py` runs the full search (pure Python). It also checks the branch and
+bound against brute force on every map for (q, k) = (2, 1), (3, 1), (5, 1) and (2, 2), and on six
+families of maps on F_3^2 with four or five values fixed (6,561 or 729 maps each). It checks it
+against the theory for q = 2, k = 3, where the maximum must be 24, and recomputes the maximiser's
+score with separate code. This version was committed only after that test passed. An independent
+numpy search over the same 43 million maps (`search_h2.py exhaustive --q 3 --k 2`) is queued as a
+second check, and we will report its result.
+
+**What this does and does not say.** The value of beta_3 is still open between 1.8 and 1.8899.
+Theorem 2 says it is below 1.8899 only if some k has h_k < k h_1, and this rules out k = 2. The
+first open case over F_3 is k = 3: a map on F_3^3 with S(P) > 162 (the ceiling is 179.08). By
+Theorem 4 and this result, such a map must respect no proper subspace of F_3^3. There are 27^26
+maps with P(0) = 0, far too many for this search. For larger q the k = 2 case is still open:
 
 | q | S of the squares = threshold | ceiling from the lower bound |
 |---|---|---|
-| 3 | 36 | 39.80 |
+| 3 | 36 (now known to be the maximum) | 39.80 |
 | 4 | 96 | 103.34 |
 | 5 | 200 | 212.00 |
-
-There are 9^9 maps on F_3^2, and since P -> P + c does not change S, the 9^8 = 43,046,721 maps with
-P(0) = 0 cover them all. `search_h2.py exhaustive --q 3 --k 2` checks every one of them with numpy,
-and `search_h2.py anneal` runs simulated annealing for larger q and k. This version does not include
-their results; we will add them, positive or negative.
 
 ## 10. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
   (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
   Theorem 3 with Lemma 4, Theorem 4 and Corollary 3.
+- Computed (exhaustive, with the checks above): max S = 36 over all maps on F_3^2, so h_2 = 2 h_1
+  for q = 3.
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
-  q = 3, Theorems 2, 3 and 4, and Lemma 4. The bound for q = 3 is not new (KLSS proved it with a
-  random construction).
-- Not claimed: any value of beta_q, any improvement below 1.8899 for q = 3, or that h_k = k h_1.
-  The gap between q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
+  q = 3, Theorems 2, 3 and 4, Lemma 4, and the value h_2 = 2 h_1 for q = 3. The bound for q = 3 is
+  not new (KLSS proved it with a random construction).
+- Not claimed: any value of beta_q, any improvement below 1.8899 for q = 3, or that h_k = k h_1 for
+  k >= 3. The gap between q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
 - The O(n^(2/3) log n) error term means the bound beats earlier constructions only in large
   dimension. The bound is about the exponential growth rate, not about small cases.
-- `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 and 8
+- `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to 9
   of this README are newer than the preprint.
 
 ## 11. The code and the tests
@@ -418,8 +443,9 @@ their results; we will add them, positive or negative.
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
 q = 3 witness, the bound formulas, h(P) and S(P), witness maps of Kakeya sets, a local search, and
-the section 7 quantities. `search_h2.py` holds the exhaustive (numpy) and annealing searches of
-section 9. `python -m unittest -v` checks:
+the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an annealing search.
+`exact_h2.py` is the pure-Python branch and bound of section 9 (`python exact_h2.py --q 3 --k 2`).
+`python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
 - Lemma 2 at the uniform distribution (exactly) and against random and point distributions, and its
@@ -436,7 +462,7 @@ section 9. `python -m unittest -v` checks:
   witness maps of Kakeya sets have h(P) <= log2 |K|; every map tested respects Corollary 2;
 - Theorem 3(a) for random and all deterministic couplings; Lemma 4 and Theorem 3(b) (section 7);
 - Theorem 4 and Corollary 3 (section 8);
-- the exhaustive search against brute force and known values (when numpy is installed);
+- the exhaustive search of section 9 and its cross-checks;
 - every number quoted in this README.
 
 ## 12. Sources
