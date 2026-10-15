@@ -3,12 +3,16 @@ import random
 import unittest
 from itertools import product
 
-from kakeya_entropy import (F3, PREVIOUS, Field, block_points, block_weights, central, class_size,
-                            composition, directions, entropy, entropy_sum, entropy_sum_uniform,
-                            exponent, hoeffding_log2, in_k3, is_kakeya, k3_base, k3_log2_bound,
-                            k3_witness, kakeya_set, line_through, lower_base, min_max_weight,
-                            new_base, q3_peak, q3_peak_brute, split, square_map, theorem_base,
-                            theorem_log2, theta_star, vectors, weight)
+from kakeya_entropy import (F3, PREVIOUS, Field, at_most_two_symbols, block_points, block_weights,
+                            central, class_size, composition, coupling_entropy_sum, directions,
+                            entropy, entropy_sum, entropy_sum_uniform, exponent, h_lower,
+                            hoeffding_log2, improvement_threshold, in_k3, is_kakeya, k3_base,
+                            k3_log2_bound, k3_witness, kakeya_set, kakeya_witness, line_through,
+                            local_search, lower_base, min_max_weight, new_base, q3_peak,
+                            q3_peak_brute, score_ceiling, slice_counts, split, square_map,
+                            square_witness, symmetric_q3_grid_min, theorem_base, theorem_log2,
+                            theta_star, two_symbol_mixtures, vec_add, vec_scale, vectors, weight,
+                            witness_entropy, witness_score)
 
 FIELDS = (2, 3, 4, 5, 7, 8, 9, 11, 13, 16, 25, 27)
 
@@ -292,6 +296,134 @@ class DirectionTests(unittest.TestCase):
     def test_split_and_composition(self):
         self.assertEqual(split((0, 1, 2, 2), 2), [(0, 1), (2, 2)])
         self.assertEqual(composition(F3, (2, 2, 0)), [1, 0, 2])
+
+
+class EntropyFormulaTests(unittest.TestCase):
+    """Section 6: h(P), the score S(P), and the facts Theorem 2 rests on."""
+
+    def test_square_witness_value(self):
+        # The coordinatewise square map has h = k c_q and score exactly k (q - 1) q^k.
+        for q, k in ((2, 1), (2, 2), (3, 1), (3, 2), (4, 2), (5, 2), (3, 3), (2, 3)):
+            F = Field(q)
+            P = square_witness(F, k)
+            self.assertAlmostEqual(witness_entropy(F, k, P), k * exponent(q), places=9)
+            self.assertAlmostEqual(witness_score(F, k, P), improvement_threshold(q, k), places=9)
+
+    def test_score_and_entropy_agree(self):
+        rng = random.Random(11)
+        for q, k in ((3, 2), (4, 2), (5, 1), (2, 3)):
+            F = Field(q)
+            for _ in range(20):
+                P = {x: tuple(rng.randrange(q) for _ in range(k)) for x in vectors(q, k)}
+                h = witness_entropy(F, k, P)
+                self.assertAlmostEqual(h, k * math.log2(q) - witness_score(F, k, P)
+                                       / q ** (k + 1), places=9)
+                self.assertGreaterEqual(h, h_lower(q, k) - 1e-9)
+                self.assertEqual(sum(slice_counts(F, k, P, 0)), q ** k)
+
+    def test_one_dimension_exhaustive(self):
+        # h_1 = c_q: the minimum over all maps f : F_q -> F_q (section 4).
+        for q in (2, 3, 4, 5):
+            F = Field(q)
+            best = min(witness_entropy(F, 1, {(x,): (f[x],) for x in range(q)})
+                       for f in product(range(q), repeat=q))
+            self.assertAlmostEqual(best, exponent(q), places=9)
+
+    def test_q2_dimension_two_exhaustive(self):
+        # h_2 = 1 = 2 c_2 for q = 2, as Theorem 2 and beta_2 = sqrt 2 require.
+        F = Field(2)
+        xs = vectors(2, 2)
+        best = min(witness_entropy(F, 2, dict(zip(xs, images)))
+                   for images in product(xs, repeat=4))
+        self.assertAlmostEqual(best, 1.0, places=9)
+
+    def test_invariances(self):
+        # h(P) is unchanged by P -> P + c and by P -> P + lam * x (which permutes the slices).
+        rng = random.Random(4)
+        for q, k in ((3, 2), (4, 2), (5, 2)):
+            F = Field(q)
+            xs = vectors(q, k)
+            P = {x: tuple(rng.randrange(q) for _ in range(k)) for x in xs}
+            h = witness_entropy(F, k, P)
+            c = tuple(rng.randrange(q) for _ in range(k))
+            lam = rng.randrange(1, q)
+            moved = {x: vec_add(F, P[x], c) for x in xs}
+            sheared = {x: vec_add(F, P[x], vec_scale(F, lam, x)) for x in xs}
+            self.assertAlmostEqual(witness_entropy(F, k, moved), h, places=9)
+            self.assertAlmostEqual(witness_entropy(F, k, sheared), h, places=9)
+
+    def test_kakeya_witness(self):
+        # h(P) <= log2 |K| for the witness map of a Kakeya set K.
+        for q, m, r in ((3, 3, 1), (3, 4, 1), (3, 2, 2), (4, 2, 1), (5, 2, 1)):
+            F = Field(q)
+            n = m * r
+            K = kakeya_set(F, m, r, theta_star(F, m, r))
+            if q == 3 and m >= 3:
+                self.assertLess(len(K), q ** n)
+            P = kakeya_witness(F, n, K)
+            self.assertIsNotNone(P)
+            for x, a in P.items():
+                for t in range(q):
+                    self.assertIn(vec_add(F, a, vec_scale(F, t, x)), K)
+            self.assertLessEqual(witness_entropy(F, n, P), math.log2(len(K)) + 1e-9)
+        self.assertIsNone(kakeya_witness(F3, 2, [(0, 0), (1, 1)]))
+
+    def test_local_search(self):
+        for q, k, steps in ((3, 2, 400), (4, 2, 200), (2, 3, 300)):
+            F = Field(q)
+            score, P = local_search(F, k, steps, seed=q, start=square_witness(F, k))
+            self.assertAlmostEqual(score, witness_score(F, k, P), places=9)
+            self.assertGreaterEqual(score, improvement_threshold(q, k) - 1e-9)
+            self.assertLessEqual(score, score_ceiling(q, k) + 1e-9)
+
+    def test_window_numbers(self):
+        # Section 8: the scores that would beat q 2^(-(q-1)/q) at k = 2.
+        self.assertEqual(improvement_threshold(3, 2), 36)
+        self.assertEqual(improvement_threshold(4, 2), 96)
+        self.assertEqual(improvement_threshold(5, 2), 200)
+        self.assertAlmostEqual(score_ceiling(3, 2), 39.80, delta=0.01)
+        self.assertAlmostEqual(score_ceiling(4, 2), 103.34, delta=0.01)
+        self.assertAlmostEqual(score_ceiling(5, 2), 212.00, delta=0.01)
+        self.assertAlmostEqual(2 * exponent(3), 1.83659, delta=1e-5)
+        self.assertAlmostEqual(h_lower(3, 2), 1.69599, delta=1e-5)
+
+
+class SymmetricSetTests(unittest.TestCase):
+    """Section 7: Kakeya sets invariant under permuting coordinates."""
+
+    def test_coupling_bound(self):
+        # Theorem 3(a): sum_t H >= q log2 q - (q - 1) for every coupling with uniform direction.
+        rng = random.Random(5)
+        for q in (3, 4, 5, 7):
+            F = Field(q)
+            for _ in range(200):
+                kernel = []
+                for x in range(q):
+                    row = [rng.random() ** rng.choice((1, 4, 12)) + 1e-12 for _ in range(q)]
+                    kernel.append([v / sum(row) for v in row])
+                self.assertGreaterEqual(coupling_entropy_sum(F, kernel),
+                                        entropy_sum_uniform(q) - 1e-9)
+            for f in (product(range(q), repeat=q) if q <= 4 else ()):
+                kernel = [[1.0 if y == f[x] else 0.0 for y in range(q)] for x in range(q)]
+                self.assertGreaterEqual(coupling_entropy_sum(F, kernel),
+                                        entropy_sum_uniform(q) - 1e-9)
+
+    def test_two_symbol_direction(self):
+        # Theorem 3(b): max_t H(M_t) > c_3 everywhere; deterministic witnesses give exactly 1.
+        self.assertGreater(symmetric_q3_grid_min(12), exponent(3) + 1e-9)
+        for z in range(3):
+            for w in range(3):
+                k0 = [1.0 if s == z else 0.0 for s in range(3)]
+                k1 = [1.0 if s == w else 0.0 for s in range(3)]
+                self.assertAlmostEqual(max(two_symbol_mixtures(k0, k1)), 1.0, places=12)
+        self.assertAlmostEqual(max(two_symbol_mixtures([1, 0, 0], [1 / 3] * 3)),
+                               2 / 3 * math.log2(3 / 2) + math.log2(6) / 3, places=9)
+
+    def test_two_symbol_set_is_kakeya(self):
+        for n in range(1, 5):
+            K = at_most_two_symbols(n)
+            self.assertEqual(len(K), 3 * 2 ** n - 3)
+            self.assertTrue(is_kakeya(F3, n, K))
 
 
 if __name__ == "__main__":

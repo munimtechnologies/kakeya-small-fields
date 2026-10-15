@@ -1,0 +1,259 @@
+% Kakeya sets over a fixed finite field: an entropy formula for the growth rate.
+% By MV2 of Munim, Inc. Prepared with AI agents working in MV2's name. Text CC BY 4.0.
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Hb}{\mathrm{H}}
+
+\title[Kakeya sets over a fixed finite field]{Kakeya sets over a fixed finite field:\\
+a new upper bound and an entropy formula for the growth rate}
+\author{MV2 (Munim, Inc.)}
+\address{Munim, Inc.}
+\email{munimversion2@gmail.com}
+\date{October 15, 2026}
+
+\begin{abstract}
+Let $K(n,q)$ be the least size of a Kakeya set in $\F_q^n$ and
+$\beta_q=\lim_{n\to\infty}K(n,q)^{1/n}$. Kopparty, Lev, Saraf and Sudan proved
+$q^2/(2q-1)\le\beta_q$ and gave several upper bounds, the best for $q=3$ being
+$3\cdot 2^{-2/3}\approx 1.8899$ by a random construction. We prove
+$\beta_q\le q\,2^{-(q-1)/q}$ for every prime power $q$ with an explicit set. This is below every
+upper bound we found in the literature for $q\ge 4$ (for example $2.3784$ against $2.8284$ at
+$q=4$, and $4.3620$ against $6.3321$ at $q=8$), and matches $1.8899$ explicitly at $q=3$. We then
+show that the averaging behind the construction is lossless: $\beta_q=\inf_k 2^{h_k/k}$, where
+$h_k$ is the least average entropy $\frac1q\sum_{t\in\F_q}\Hb(P(X)+tX)$ over maps
+$P:\F_q^k\to\F_q^k$ with $X$ uniform, and $h_1=\log_2 q-(q-1)/q$. Hence our bound equals $\beta_q$
+if and only if $h_k=kh_1$ for all $k$, and a single finite map with smaller average entropy would
+improve it. Finally, Kakeya sets invariant under permutations of the coordinates have size at least
+$(q\,2^{-(q-1)/q})^{n}/(n+1)^q$, and over $\F_3$ they cannot reach $1.8899^n$.
+\end{abstract}
+
+\maketitle
+
+\noindent\emph{Disclosure.} This paper, its proofs and the accompanying code were researched and
+written with AI agents working in MV2's name. All finite statements are checked by the tests in
+the repository \texttt{github.com/munimtechnologies/kakeya-small-fields}.
+
+\section{Introduction}
+
+A \emph{Kakeya set} in $\F_q^n$ is a set containing a line $\{a+td:t\in\F_q\}$ in every
+direction $d\neq 0$. Dvir proved that Kakeya sets have size at least $c_n q^n$, and the method of
+multiplicities and Bukh--Chao's work give the sharp density $2^{-(n-1)}$ as $q\to\infty$ with $n$
+fixed. The regime of a \emph{fixed} field and growing dimension is different. Since products of
+Kakeya sets are Kakeya sets, $K(m+n,q)\le K(m,q)K(n,q)$ and the limit
+\[
+\beta_q=\lim_{n\to\infty}K(n,q)^{1/n}=\inf_n K(n,q)^{1/n}
+\]
+exists. Kopparty, Lev, Saraf and Sudan (KLSS) \cite{KLSS} proved $\beta_q\ge q^2/(2q-1)$ and
+upper bounds $(q+1)/2$ for odd $q$ (their Theorem 6) and $q\,2^{-2/q}$ (their Theorem 8, by a
+random construction), and called the case $q=3$ most intriguing. Kyureghyan, M\"uller and Wang
+\cite{KMW} improved the bounds for even $q$. For $q=2$, $\beta_2=\sqrt2$.
+
+\begin{theorem}\label{thm:main}
+For every prime power $q$, $\beta_q\le q\,2^{-(q-1)/q}$, with an explicit construction.
+\end{theorem}
+
+The base $q\,2^{-(q-1)/q}=\frac q2 2^{1/q}$ is within a factor $1+0.19/q+O(q^{-2})$ of the lower
+bound $q^2/(2q-1)$.
+
+The construction uses the lines of KLSS, $\{u^2+tu\}$ coordinatewise, but measures points by
+the sizes of their composition classes on blocks of coordinates and shifts the parameter of the
+line independently on each block. The $q$ points of a line then share the cost, and each pays the
+average over $t$ of the entropy of $x\mapsto x^2+tx$ rather than the largest image size.
+
+For a map $P:\F_q^k\to\F_q^k$ and $X$ uniform on $\F_q^k$ put
+\[
+h(P)=\frac1q\sum_{t\in\F_q}\Hb\bigl(P(X)+tX\bigr),\qquad h_k=\min_P h(P),
+\]
+with $\Hb$ the Shannon entropy in bits.
+
+\begin{theorem}\label{thm:formula}
+For every prime power $q$, $\beta_q=\lim_k 2^{h_k/k}=\inf_k 2^{h_k/k}$, and
+$h_1=\log_2q-(q-1)/q$.
+\end{theorem}
+
+\begin{corollary}\label{cor:iff}
+$\beta_q=q\,2^{-(q-1)/q}$ if and only if $h_k=kh_1$ for every $k\ge1$. Any map
+$P:\F_q^k\to\F_q^k$ with $h(P)<kh_1$ gives $\beta_q\le 2^{h(P)/k}<q\,2^{-(q-1)/q}$.
+\end{corollary}
+
+\begin{theorem}\label{thm:sym}
+\textup{(a)} If $K\subseteq\F_q^n$ is a Kakeya set invariant under all permutations of the
+coordinates and $q\mid n$, then $|K|\ge (q\,2^{-(q-1)/q})^n/(n+1)^q$.
+\textup{(b)} There is $\delta>0$ such that every permutation-invariant Kakeya set in $\F_3^n$,
+$n$ even, has $|K|\ge 2^{(c_3+\delta)n}/(n+1)^3$, where $c_3=\log_2 3-2/3$ and
+$2^{c_3}\approx1.8899$.
+\end{theorem}
+
+We searched the literature for bounds on $\beta_q$ with $q$ fixed and for formulas like
+Theorem~\ref{thm:formula} and found none; we would be glad to learn of earlier proofs.
+
+\section{The construction}
+
+Write $c_q=\log_2q-(q-1)/q$. For $y\in\F_q^m$ let $N(y)$ be the number of vectors with the same
+symbol counts as $y$. For integers $m,r\ge1$ and $n=rm$, cut $x\in\F_q^n$ into blocks
+$x^{(1)},\dots,x^{(r)}$ of length $m$ and set
+\[
+w(x)=\sum_{j=1}^r\log_2 N(x^{(j)}),\qquad
+K=\{x: w(x)\le T\},\qquad T=rmc_q+m\log_2 q\sqrt{r\ln q}.
+\]
+$K$ is a union of at most $\binom{m+q-1}{q-1}^r$ products of composition classes, each of size at
+most $2^T$, so $|K|\le\binom{m+q-1}{q-1}^r2^T$, and with $m\asymp n^{1/3}$ this is
+$(q2^{-(q-1)/q})^{n+O(n^{2/3}\log n)}$. It remains to show that $K$ is Kakeya.
+
+Let $g_t(x)=x^2+tx$ on $\F_q$, applied coordinatewise to vectors.
+
+\begin{lemma}\label{lem:entropy}
+For every probability distribution $\tau$ on $\F_q$,
+$\sum_{t\in\F_q}\Hb(g_t\#\tau)\le q\log_2q-(q-1)$, with equality at the uniform distribution.
+\end{lemma}
+
+\begin{proof}
+The left side is concave in $\tau$. It is invariant under translating $\tau$: for odd $q$,
+$g_t(x+b)=g_{t+2b}(x)+\mathrm{const}$ and $2b$ runs over $\F_q$; in characteristic $2$,
+$g_t(x+b)=g_t(x)+\mathrm{const}$. Averaging the translates gives the uniform distribution, which is
+therefore a maximum. There, for odd $q$, every $g_t$ has $(q-1)/2$ fibres of size $2$ and one of
+size $1$, so $\Hb=\log_2q-(q-1)/q$; for even $q$, $g_0$ is a bijection and each $g_t$, $t\ne0$, is
+exactly two-to-one. Both give $q\log_2q-(q-1)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Let $d\ne0$ have blocks $u_j$, and let $a$ have blocks $u_j^2+s_ju_j$ for shifts
+$s_j\in\F_q$. Block $j$ of $a+td$ is $g_{s_j+t}(u_j)$, so
+$w(a+td)=\sum_jv_j(s_j+t)$ with $v_j(s)=\log_2N(g_s(u_j))$. If $u_j$ has symbol distribution
+$\tau_j$ then $v_j(s)\le m\Hb(g_s\#\tau_j)$, so by Lemma~\ref{lem:entropy}
+$\frac1q\sum_sv_j(s)\le mc_q$. Choose the $s_j$ independently and uniformly. For fixed $t$ the
+terms $v_j(s_j+t)\in[0,m\log_2q]$ are independent with mean at most $mc_q$, so by Hoeffding's
+inequality $\Pr[w(a+td)>T]\le q^{-2}$. A union bound over $t$ shows that some choice of shifts puts
+the whole line in $K$.
+\end{proof}
+
+For $q=3$ the shifts can be chosen by an explicit greedy rule (using $\pm x^2$ to realise all six
+orders of the three class sizes on each block), giving an explicit set of size
+$(3/4^{1/3})^{n+O(\sqrt{n\log n})}$; see the repository.
+
+\begin{lemma}[limit of one-coordinate witnesses]\label{lem:limit}
+For every $f:\F_q\to\F_q$ and $X$ uniform on $\F_q$,
+$\sum_t\Hb(f(X)+tX)\ge q\log_2q-(q-1)$.
+\end{lemma}
+
+\begin{proof}
+Two points $x\ne y$ collide under $x\mapsto f(x)+tx$ for exactly one $t$, so the fibres of the
+$q$ maps contain $\binom q2$ pairs in total. A fibre of size $s$ lowers the entropy from $\log_2q$
+by $(s\log_2s)/q$ and uses $\binom s2$ pairs, and $s\log_2s\le 2\binom s2$. So the total reduction
+is at most $q-1$.
+\end{proof}
+
+\section{The entropy formula}
+
+\begin{proof}[Proof of Theorem~\ref{thm:formula}]
+(i) \emph{Subadditivity.} If $P$ acts on $\F_q^k$ and $P'$ on $\F_q^l$, then $P\times P'$ acts on
+$\F_q^{k+l}$ and, $X$ splitting into independent uniform parts, $h(P\times P')=h(P)+h(P')$. Hence
+$h_{k+l}\le h_k+h_l$, and by Fekete's lemma $\lim_k h_k/k=\inf_k h_k/k$.
+
+(ii) \emph{$h_k\le\log_2K(k,q)$.} Let $K_0$ be a Kakeya set in $\F_q^k$. For $x\ne0$ let $P(x)$
+satisfy $P(x)+tx\in K_0$ for all $t$, and let $P(0)\in K_0$. Every $P(X)+tX$ takes values in
+$K_0$, so $h(P)\le\log_2|K_0|$. Therefore $\inf_k2^{h_k/k}\le\inf_kK(k,q)^{1/k}=\beta_q$.
+
+(iii) \emph{$\beta_q\le2^{h_k/k}$.} For a distribution $\tau$ on $\F_q^k$ let
+$\varphi(\tau)=\min_P\frac1q\sum_t\Hb(P(Y)+tY)$ with $Y\sim\tau$. For fixed $P$ each term is
+concave in $\tau$, so $\varphi$ is concave. If $Y'=Y+b$ and $P'(y)=P(y-b)$, then
+$P'(Y')+tY'=P(Y)+tY+tb$, so $\varphi$ is translation invariant. Averaging the translates of $\tau$
+gives the uniform distribution, so $\varphi(\tau)\le h_k$ for all $\tau$.
+
+Now repeat Section 2 over the alphabet $\Sigma=\F_q^k$. Write a point of $\F_q^{kmr}$ as $r$ blocks
+of $m$ letters from $\Sigma$, let $N(y)$ count the words with the same letter counts as $y$, and
+let $K=\{x:\sum_j\log_2N(x^{(j)})\le rmh_k+mk\log_2q\sqrt{r\ln q}\}$. For a direction $d$ whose
+block $j$ has letter distribution $\tau_j$, pick $P_j$ attaining $\varphi(\tau_j)$ and a shift
+$s_j$, and give $a$ the letter $P_j(u)+s_ju$ wherever block $j$ of $d$ has the letter $u$. Block
+$j$ of $a+td$ has letter distribution equal to the law of $P_j(Y)+(s_j+t)Y$, $Y\sim\tau_j$, so its
+cost is at most $m$ times that entropy, whose mean over a uniform $s_j$ is at most
+$m\varphi(\tau_j)\le mh_k$. Hoeffding's inequality with range $mk\log_2q$ and a union bound over
+$t$ give a line in $K$, and
+$|K|\le\binom{m+q^k-1}{q^k-1}^r2^{rmh_k+mk\log_2q\sqrt{r\ln q}}$. Letting $m\asymp n^{1/3}$ gives
+$\beta_q\le2^{h_k/k}$.
+
+(iv) Lemma~\ref{lem:limit} gives $h_1\ge c_q$, and $P(x)=x^2$ attains it
+(Lemma~\ref{lem:entropy}).
+
+Combining (ii) and (iii), $\beta_q\le\inf_k2^{h_k/k}\le\beta_q$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:iff}]
+By subadditivity $h_k\le kh_1$. If $h_k=kh_1$ for all $k$ then $\beta_q=2^{h_1}=q2^{-(q-1)/q}$.
+If $h(P)<kh_1$ for some $P$ on $\F_q^k$ then $\beta_q\le2^{h(P)/k}<2^{h_1}$ by (iii).
+\end{proof}
+
+\begin{remark}
+$P$ chooses one line $\{(t,P(x)+tx)\}$ in each of the $q^k$ non-vertical directions $(1,x)$ of
+$\F_q^{k+1}$, and $h(P)$ is the mean over the $q$ slices $\{t\}\times\F_q^k$ of the entropy of the
+point where a uniformly random one of these lines meets the slice. With
+$S(P)=\sum_t\sum_{\text{fibres}}s\log_2s$, $h(P)=k\log_2q-S(P)/q^{k+1}$, and $h(P)<kh_1$ exactly
+when $S(P)>k(q-1)q^k$. The lower bound $\beta_q\ge q^2/(2q-1)$ gives
+$h_k\ge k\log_2(q^2/(2q-1))$. For $q=3$, $k=2$ an improvement needs $36<S(P)\le39.80$; the
+coordinatewise squares give $S=36$.
+\end{remark}
+
+\begin{question}
+Is $h_k=kh_1$ for all $k$, that is, is $\beta_q=q\,2^{-(q-1)/q}$? This holds for $q=2$. The
+smallest open case is $q=3$, $k=2$: is there $P:\F_3^2\to\F_3^2$ with $S(P)>36$?
+\end{question}
+
+\section{Permutation-invariant sets}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sym}]
+(a) Let $u$ be a direction in which each symbol occurs $n/q$ times and $a+tu$ a line in $K$. Let
+$\pi$ be the empirical joint distribution of the pairs $(u_i,a_i)$; its first marginal is uniform,
+and the symbol distribution of $a+tu$ is the law of $Y+tX$, $(X,Y)\sim\pi$. Since $K$ contains the
+composition class of $a+tu$, $|K|\ge2^{n\Hb(Y+tX)}/(n+1)^q$. Writing
+$\pi(x,y)=\kappa(y\mid x)/q$ as the mixture $\sum_fw_f\pi_f$ of the laws $\pi_f$ of $(X,f(X))$,
+with $w_f=\prod_x\kappa(f(x)\mid x)$, concavity and Lemma~\ref{lem:limit} give
+$\sum_t\Hb(Y+tX)\ge\sum_fw_f\sum_t\Hb(f(X)+tX)\ge q\log_2q-(q-1)$, so some $t$ has
+$\Hb(Y+tX)\ge c_q$.
+
+(b) Let $u$ have $n/2$ zeros and $n/2$ ones, and let the symbols of $a$ have distribution $k_0$
+where $u$ is $0$ and $k_1$ where $u$ is $1$. Point $t$ has distribution
+$M_t(z)=(k_0(z)+k_1(z-t))/2$. It suffices to show $\max_t\Hb(M_t)>h(2/3)=c_3$ for all $k_0,k_1$,
+where $h$ is the binary entropy; compactness then gives $\delta$. Suppose $\Hb(M_t)\le h(2/3)$
+for all $t$. A distribution on three points with largest mass $p<2/3$ has entropy above $h(2/3)$
+(if $p<1/2$ its entropy exceeds $1$; otherwise it is at least $h(p)$). So there are $z_t$ with
+$k_0(z_t)+k_1(z_t-t)\ge4/3$, and $A+B\ge4$ where $A=\sum_tk_0(z_t)$, $B=\sum_tk_1(z_t-t)$. Since
+$z_s=z_t$ forces $z_s-s\ne z_t-t$: if all $z_t$ coincide then $A\le3$, $B=1$; if exactly two
+coincide then $A,B\le2$; if all differ then $A=1$, $B\le3$. Hence $A+B=4$, each $M_t$ has largest
+mass exactly $2/3$, and $\Hb(M_t)\le h(2/3)$ forces $M_t$ to have the shape $(2/3,1/3,0)$. In the
+first case $k_0$ is a point mass and $k_1$ uniform, so $M_t=(2/3,1/6,1/6)$; the third case is
+symmetric; in the second $k_0,k_1$ are point masses and all masses of $M_t$ lie in
+$\{0,1/2,1\}$. Each case is a contradiction.
+\end{proof}
+
+The set of points of $\F_3^n$ using at most two symbols is a permutation-invariant Kakeya set of
+size $3\cdot2^n-3$ (each $g_t(u)$ uses at most two symbols), so for such sets the best base over
+$\F_3$ lies in $(1.8899,2]$; we conjecture it is $2$.
+
+\begin{thebibliography}{9}
+\bibitem{BC} B.~Bukh and T.-W.~Chao, Sharp density bounds on the finite field Kakeya problem,
+\emph{Discrete Analysis} 2021:26, arXiv:2108.00074.
+\bibitem{Csiszar} I.~Csisz\'ar, The method of types, \emph{IEEE Trans. Inform. Theory} 44 (1998),
+2505--2523.
+\bibitem{DKSS} Z.~Dvir, S.~Kopparty, S.~Saraf and M.~Sudan, Extensions to the method of
+multiplicities, with applications to Kakeya sets and mergers, FOCS 2009, arXiv:0901.2529.
+\bibitem{Dvir} Z.~Dvir, On the size of Kakeya sets in finite fields, \emph{J. Amer. Math. Soc.} 22
+(2009), 1093--1097.
+\bibitem{GGTW} B.~Georgiev, J.~G\'omez-Serrano, T.~Tao and A.~Z.~Wagner, Mathematical exploration
+and discovery at scale, arXiv:2511.02864.
+\bibitem{KLSS} S.~Kopparty, V.~F.~Lev, S.~Saraf and M.~Sudan, Kakeya-type sets in finite vector
+spaces, \emph{J. Algebraic Combin.} 34 (2011), 337--355, arXiv:1003.3736.
+\bibitem{KMW} G.~Kyureghyan, P.~M\"uller and Q.~Wang, On the size of Kakeya sets in finite vector
+spaces, \emph{Electron. J. Combin.} 20(3) (2013), \#P36, arXiv:1302.5591.
+\end{thebibliography}
+
+\end{document}

@@ -6,11 +6,18 @@ lam * d^2 + s_j * d on block j (coordinatewise squares, one shift s_j per block)
 good choice of shifts, and the shifts average the q points' costs. This gives
 lim K(n, q)^(1/n) <= q * 2^(-(q - 1)/q) for every prime power q.
 
+Section 6 of the README turns this into an exact formula: lim K(n, q)^(1/n) = inf_k 2^(h_k / k),
+where h_k is the least value of h(P) = (1/q) sum_t H(P(X) + t X) over maps P : F_q^k -> F_q^k
+(X uniform). `witness_entropy` computes h(P); `witness_score` computes the equivalent fibre score.
+
 `python kakeya_entropy.py table` prints the bounds; `python kakeya_entropy.py small` computes the
-exact small cases the tests check. By MV2 of Munim, Inc., 2026-10-14. Researched and written with
-AI agents working in MV2's name. Code Apache-2.0.
+exact small cases the tests check; `python kakeya_entropy.py entropy` prints the section 6 and 8
+numbers; `python kakeya_entropy.py search q k steps [seed]` runs a local search for maps P with a
+large score. By MV2 of Munim, Inc., 2026-10-14. Researched and written with AI agents working in
+MV2's name. Code Apache-2.0.
 """
 import math
+import random
 import sys
 from itertools import product
 
@@ -305,6 +312,130 @@ def k3_base(m, r):
     return 2 ** (k3_log2_bound(m, r) / (r * m))
 
 
+# ---------------------------------------------------------------- the entropy formula (section 6)
+
+def vec_add(F, x, y):
+    return tuple(F.add[a][b] for a, b in zip(x, y))
+
+
+def vec_scale(F, t, x):
+    return tuple(F.mul[t][a] for a in x)
+
+
+def slice_counts(F, k, P, t):
+    """Fibre sizes of x -> P(x) + t x on F_q^k, largest first (P maps vectors to vectors)."""
+    counts = {}
+    for x in vectors(F.q, k):
+        y = vec_add(F, P[x], vec_scale(F, t, x))
+        counts[y] = counts.get(y, 0) + 1
+    return sorted(counts.values(), reverse=True)
+
+
+def witness_score(F, k, P):
+    """S(P) = sum over t in F_q and over the fibres of x -> P(x) + t x of s log2 s."""
+    return sum(s * math.log2(s) for t in range(F.q) for s in slice_counts(F, k, P, t) if s > 1)
+
+
+def witness_entropy(F, k, P):
+    """h(P) = (1/q) sum_t H(P(X) + t X) in bits, X uniform on F_q^k.
+    Equal to k log2 q - S(P) / q^(k+1)."""
+    return sum(entropy(slice_counts(F, k, P, t)) for t in range(F.q)) / F.q
+
+
+def square_witness(F, k):
+    """P(x) = (x_1^2, ..., x_k^2), for which h(P) = k c_q."""
+    return {x: tuple(F.mul[a][a] for a in x) for x in vectors(F.q, k)}
+
+
+def improvement_threshold(q, k):
+    """h(P) < k c_q, which beats q * 2^(-(q-1)/q), exactly when S(P) > k (q - 1) q^k."""
+    return k * (q - 1) * q ** k
+
+
+def h_lower(q, k):
+    """Every P on F_q^k has h(P) >= k log2(q^2 / (2q - 1)) (Theorem 2 and the lower bound)."""
+    return k * math.log2(lower_base(q))
+
+
+def score_ceiling(q, k):
+    """The largest S(P) the lower bound allows: q^(k+1) (k log2 q - h_lower(q, k))."""
+    return q ** (k + 1) * (k * math.log2(q) - h_lower(q, k))
+
+
+def kakeya_witness(F, k, K):
+    """A map P whose lines {P(x) + t x : t} all lie in K, or None if K is not a Kakeya set of
+    F_q^k. Then every slice of P lies in K, so h(P) <= log2 |K|."""
+    K = set(K)
+    P = {}
+    for x in vectors(F.q, k):
+        mults = [vec_scale(F, t, x) for t in range(F.q)]
+        a = next((a for a in sorted(K) if all(vec_add(F, a, v) in K for v in mults)), None)
+        if a is None:
+            return None
+        P[x] = a
+    return P
+
+
+def local_search(F, k, steps, seed=0, start=None):
+    """Hill climbing on S(P): change one value P(x) at random and keep the change unless S drops.
+    Returns (best S, best P)."""
+    rng = random.Random(seed)
+    xs = vectors(F.q, k)
+    P = dict(start) if start else {x: tuple(rng.randrange(F.q) for _ in range(k)) for x in xs}
+    score = witness_score(F, k, P)
+    best = (score, dict(P))
+    for _ in range(steps):
+        x = rng.choice(xs)
+        old = P[x]
+        P[x] = tuple(rng.randrange(F.q) for _ in range(k))
+        new = witness_score(F, k, P)
+        if new >= score - 1e-12:
+            score = new
+            if score > best[0] + 1e-12:
+                best = (score, dict(P))
+        else:
+            P[x] = old
+    return best
+
+
+# ---------------------------------------------------------------- symmetric sets (section 7)
+
+def coupling_entropy_sum(F, kernel):
+    """sum over t of H(a + t u) when u is uniform on F_q and a, given u = x, has distribution
+    kernel[x]. Theorem 3(a): at least q log2 q - (q - 1) for every kernel."""
+    total = 0.0
+    for t in range(F.q):
+        dist = [0.0] * F.q
+        for x in range(F.q):
+            for y in range(F.q):
+                dist[F.add[y][F.mul[t][x]]] += kernel[x][y] / F.q
+        total += entropy(dist)
+    return total
+
+
+def two_symbol_mixtures(k0, k1):
+    """q = 3, direction half 0 and half 1, witness symbols distributed k0 where the direction is 0
+    and k1 where it is 1: point t has distribution M_t(z) = (k0(z) + k1(z - t)) / 2.
+    Returns [H(M_0), H(M_1), H(M_2)]."""
+    return [entropy([(k0[z] + k1[(z - t) % 3]) / 2 for z in range(3)]) for t in range(3)]
+
+
+def simplex_grid(steps):
+    return [(a / steps, b / steps, (steps - a - b) / steps)
+            for a in range(steps + 1) for b in range(steps + 1 - a)]
+
+
+def symmetric_q3_grid_min(steps):
+    """min over a grid of (k0, k1) of max_t H(M_t). Theorem 3(b): the true minimum exceeds c_3."""
+    grid = simplex_grid(steps)
+    return min(max(two_symbol_mixtures(k0, k1)) for k0 in grid for k1 in grid)
+
+
+def at_most_two_symbols(n):
+    """The permutation-invariant Kakeya set of F_3^n of points using at most two symbols."""
+    return [x for x in vectors(3, n) if len(set(x)) <= 2]
+
+
 # ---------------------------------------------------------------- command line
 
 def print_table():
@@ -328,5 +459,29 @@ def print_small():
         print(f"K3 m={m} r={r} n={m * r}: base <= {k3_base(m, r):.5f}")
 
 
+def print_entropy():
+    print(" q  k  h(square)  h lower bound  S(square) = threshold  S ceiling")
+    for q, k in ((2, 2), (3, 2), (3, 3), (4, 2), (5, 2), (7, 2)):
+        F = Field(q)
+        h = witness_entropy(F, k, square_witness(F, k)) if q ** k <= 49 else k * exponent(q)
+        print(f"{q:2d} {k:2d}  {h:.5f}    {h_lower(q, k):.5f}        "
+              f"{improvement_threshold(q, k):6d}               {score_ceiling(q, k):.2f}")
+    print(f"q=3 symmetric sets, grid min of max_t H(M_t): {symmetric_q3_grid_min(30):.5f} "
+          f"(c_3 = {exponent(3):.5f})")
+
+
+def print_search(q, k, steps, seed=0):
+    F = Field(q)
+    score, P = local_search(F, k, steps, seed, start=square_witness(F, k))
+    print(f"q={q} k={k}: best S = {score:.6f}, threshold {improvement_threshold(q, k)}, "
+          f"h = {witness_entropy(F, k, P):.6f}, k c_q = {k * exponent(q):.6f}")
+    for t in range(q):
+        print(f"  slice t={t}: fibres {slice_counts(F, k, P, t)}")
+
+
 if __name__ == "__main__":
-    {"table": print_table, "small": print_small}[sys.argv[1] if len(sys.argv) > 1 else "table"]()
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "table"
+    if cmd == "search":
+        print_search(*(int(a) for a in sys.argv[2:6]))
+    else:
+        {"table": print_table, "small": print_small, "entropy": print_entropy}[cmd]()
