@@ -6,12 +6,15 @@ growth base exactly 2 (new in 1.2). Maps that respect a linear quotient cannot b
 (new in 1.2). An exhaustive search over all 9^9 maps on F_3^2 shows that blocks of size 2 do not
 beat it over F_3 (new in 1.3). Kakeya sets of higher rank: for every q >= 3 and r >= 2, sets
 containing a translate of every r-dimensional subspace can be smaller than the bounds of Kopparty,
-Lev, Saraf and Sudan, and their growth base is q - q^(2-r) + O(q^(1-r) log q) (new in 1.4).**
+Lev, Saraf and Sudan, and their growth base is q - q^(2-r) + O(q^(1-r) log q) (new in 1.4).
+Over F_2 the growth base of Kakeya sets of rank r is exactly 2^(1 - 2^(-r)) for every r: every
+rank-2 Kakeya set in F_2^n has at least 2^(3n/4) points, which answers the case q = r = 2 that
+Kopparty, Lev, Saraf and Sudan singled out (new in 1.5).**
 
-By MV2 of Munim, Inc. Version 1.4, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.5, 2026-10-15. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
 checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py`,
-`test_exact_h2.py` and `test_higher_rank.py`. Text CC BY 4.0, code Apache-2.0.
+`test_exact_h2.py`, `test_higher_rank.py` and `test_f2_rank.py`. Text CC BY 4.0, code Apache-2.0.
 
 ## 1. Summary
 
@@ -75,6 +78,11 @@ The rest of the note narrows down where such a map could be, and then turns to f
   the KLSS lower bound they pin the growth base down to q - q^(2-r) + O(q^(1-r) log q). For r = 2
   it is q - 1 + O((log q)/q); the bounds known before left it anywhere between q - 1 + O(1/q) and
   about q - (ln q)/q.
+- **Section 11 (Theorem 7, new in 1.5).** Over F_2 a short entropy argument gives
+  |K| >= 2^((1 - 2^(-r)) n) for every Kakeya set K of rank r in F_2^n. The universal-set
+  construction of KLSS has size below 2^((1 - 2^(-r)) n + r + 1), so the growth base for q = 2 is
+  exactly 2^(1 - 2^(-r)) for every r. KLSS asked for this limit "even for just one particular pair
+  (q, r) != (2, 1)", and called the case q = r = 2 non-trivial.
 
 ## 2. Background and prior bounds
 
@@ -494,11 +502,12 @@ beta_(q,r) <= 2^Phi(f). QED
 The square wins for q = 3, 4, 5 (deficit q - 1 against D(3) = 1.735, D(4) = 2.83, D(5) = 3.99),
 and the norm form wins for every q >= 7 (D(7) = 6.440 against 6). Both beat KLSS for every q >= 3
 and r >= 2: (b) because q - 1 > log2 q, and Theorem 4 of KLSS is weaker still. For q = 2 all
-three give at best 2^(3/4) at r = 2, the value KLSS already had.
+three give at best 2^(3/4) at r = 2, the value KLSS already had, and section 11 shows that no
+construction does better.
 
 | q | rank 2: KLSS lower bound | best KLSS upper bound | Theorem 5 | witness |
 |---|---|---|---|---|
-| 2 | 1.6000 | 1.6818 | 1.6818 | f = 0 (no gain) |
+| 2 | 1.6000 | 1.6818 | 1.6818 (exact, section 11) | f = 0 (no gain) |
 | 3 | 2.4545 | 2.6553 | **2.5717** | u_1^2 |
 | 4 | 3.3684 | 3.6680 | **3.5125** | u_1^2 |
 | 5 | 4.3103 | 4.6883 | **4.4751** | u_1^2 |
@@ -576,7 +585,7 @@ missing slice the sum is at most Delta + 0.0643 (27 - (C - 9)) over the patterns
 
 For q = 2 the same question has the answer 3/4 (eight of the 16 functions are affine and give 3/4,
 the other eight give H(1/4) = 0.8113), so for q = r = 2, the case KLSS single out, one-coordinate
-witnesses give nothing beyond their 2^(3n/4).
+witnesses give nothing beyond their 2^(3n/4). By section 11, neither does anything else.
 
 *Checks.* `test_higher_rank.py` builds the fields F_q for q <= 16 and checks: the slice laws of the
 norm form; the closed forms of Corollary 4 against direct computation for r = 1, 2 (all ten fields)
@@ -592,27 +601,134 @@ case, and we found nothing better. We could not read K. Cong's 2021 MIT RSI repo
 sets over finite fields, which includes constructions. If any of this is known, please open an
 issue.
 
-## 11. What is and is not claimed
+## 11. Kakeya sets of rank r over F_2: the exact growth base (new in 1.5)
+
+In their closing section KLSS write that "even the case q = r = 2 seems non-trivial": they knew no
+rank-2 Kakeya set in F_2^n smaller than the O(2^(3n/4)) given by 4-universal sets (sets containing
+a translate of every 4-point set), and they asked for lim K_r(n, q)^(1/n) "even for just one
+particular pair (q, r) != (2, 1)". For q = 2 the answer is the universal-set bound, for every r.
+
+**Theorem 7.** Let n >= r >= 1. Every Kakeya set K of rank r in F_2^n has
+
+    |K| >= 2^((1 - 2^(-r)) n).
+
+**Corollary 6.** beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 1. More precisely, for all n >= r,
+
+    2^((1 - 2^(-r)) n)  <=  K_r(n, 2)  <  2^((1 - 2^(-r)) n + r + 1),
+
+where the upper bound is KLSS Corollary 11. In particular every rank-2 Kakeya set in F_2^n has
+at least 2^(3n/4) points, so the 4-universal sets are optimal up to a factor 8. In Theorem 6,
+g_(r,k) = (1 - 2^(-r)) k for q = 2: over F_2, blocks never help.
+
+The proof is one entropy inequality.
+
+**Lemma 5.** Let d_1, ..., d_r be independent and uniform on F_2^n, and let A be any random point
+of F_2^n (with any joint law with the d_i). For t in F_2^r put Y_t = A + t_1 d_1 + ... + t_r d_r.
+Then
+
+    sum over t in F_2^r of H(Y_t) >= (2^r - 1) n.
+
+*Proof.* Induction on r; for r = 0 the claim is H(A) >= 0. Let r >= 1 and pair each t with
+t_1 = 0 with t + e_1. Since Y_(t + e_1) = Y_t + d_1, the pair (Y_t, Y_(t + e_1)) determines and is
+determined by (Y_t, d_1), so
+
+    H(Y_t) + H(Y_(t + e_1)) >= H(Y_t, d_1) = n + H(Y_t | d_1).
+
+Adding over the 2^(r-1) pairs, the sum is at least 2^(r-1) n plus the sum over t with t_1 = 0 of
+H(Y_t | d_1). Given d_1 = delta, the vectors d_2, ..., d_r are still independent and uniform, and
+these Y_t are A + t_2 d_2 + ... + t_r d_r, so by induction that sum is at least (2^(r-1) - 1) n
+for every delta. In total the sum is at least (2^r - 1) n. QED
+
+*Proof of Theorem 7.* For each tuple d = (d_1, ..., d_r) the span of the d_i has dimension at most
+r <= n, so it lies in an r-dimensional subspace, a translate of which lies in K. Let A = A(d) be a
+point with A + span(d_1, ..., d_r) inside K. Then every Y_t lies in K, so H(Y_t) <= log2 |K|, and
+Lemma 5 gives 2^r log2 |K| >= (2^r - 1) n. QED
+
+*Proof of Corollary 6.* Theorem 7 and KLSS Corollary 11. For Theorem 6, apply Lemma 5 with n = k,
+the d_i the rows of U and A = P(U): this gives g_(r,k) >= (1 - 2^(-r)) k, and P = 0 attains it.
+QED
+
+| r | KLSS lower bound 2^(r+1)/(2^r + 1) | beta_(2,r) = 2^(1 - 2^(-r)) |
+|---|---|---|
+| 1 | 1.3333 | 1.4142 (known: difference bases) |
+| 2 | 1.6000 | **1.6818** |
+| 3 | 1.7778 | **1.8340** |
+| 4 | 1.8824 | **1.9152** |
+
+(`python f2_rank.py table` prints this table.) For r = 1 Theorem 7 is the classical bound
+|K| >= 2^(n/2) for difference bases of F_2^n.
+
+**Why counting is not enough.** A 2^r-universal set needs
+|K|^(2^r) >= (2^n - 1)(2^n - 2) ... (2^n - 2^r + 1), about 2^((2^r - 1) n), by counting: each of
+the C(2^n - 1, 2^r - 1) sets of 2^r points containing 0 has a translate in K, and a 2^r-point
+subset of K is a translate of at most 2^r of them. A rank-r
+Kakeya set has to contain far fewer configurations, and counting the tuples a, a + w_1, ..., a + w_r
+gives only base 2^(r/(r+1)) (1.5874 for r = 2, below the 1.6 of KLSS Theorem 1). Lemma 5 shows
+that over F_2 a rank-r Kakeya set must nevertheless be as large as a 2^r-universal set, up to the
+factor 2^(r+1).
+
+**Why only q = 2.** Over F_q the same pairing, using one pair on each line in direction d_1 and
+keeping the other q - 2 points, gives sum over t of H(Y_t) >= (q^r - (q - 1)^r) n log2 q, so base
+q^(1 - (1 - 1/q)^r). For q >= 3 this is weaker than KLSS Theorem 1, because
+(q - 1)^(r-1) ln q >= 1. Over F_2 the lines have only two points, and nothing is lost.
+
+**Proposition 3 (small cases).** K_(n-1)(n, 2) = 2^n - 1 for n >= 2, and K_(n-2)(n, 2) = 2^n - 3
+for n >= 3.
+
+*Proof.* Write K = F_2^n minus C. K has rank r exactly when, for every r-dimensional subspace W,
+C misses a coset of W, that is, the quotient map from F_2^n onto F_2^n / W is not onto on C. For
+r = n - 1 the quotient has two points: a set C = {x, y} maps onto it whenever x + y is not in W,
+which happens for some hyperplane W, and a single point never does. For r = n - 2 the quotient
+F_2^n / W has four points, so a C with at most 3 points is always fine. A C with 4 points,
+translated to {0, a, b, c}, maps onto F_2^2 under every linear map with a -> (1, 0), b -> (0, 1),
+c -> (1, 1); such a map exists whether a, b, c are independent or c = a + b, and its kernel has
+dimension n - 2. QED
+
+So the smallest sets are far above the bound in small dimensions (K_2(4, 2) = 13 against
+2^3 = 8): Theorem 7 is about the growth rate.
+
+*Checks.* `test_f2_rank.py` checks: the subspace counts and coset partitions of F_2^n for n <= 5;
+the exact values K_r(n, 2) for every n <= 4 by exhaustive search (2, 3, 4, 5, 7, 8, 6, 13, 15 and
+16 for (n, r) = (1, 1), (2, 1), (2, 2), (3, 1), (3, 2), (3, 3), (4, 1), (4, 2), (4, 3), (4, 4)),
+each above the bound of Theorem 7 and below KLSS Corollary 11; Proposition 3 in F_2^5 for r = 4
+and r = 3 (every complement of 1 or 3 points containing 0 is Kakeya, no complement of 2 or 4
+points is); Lemma 5 for every deterministic A when (n, r) = (1, 1), (1, 2), (1, 3), (2, 1), and
+at the local minima of 128 descents from random starts for (2, 2), (1, 4), (2, 3), (3, 2), and on
+random laws of A; that A = 0 attains it; that the witnesses of the smallest sets put every Y_t in
+K; and every number quoted in this section. The case (n, r) = (2, 2) of Lemma 5 is the block
+question of Theorem 6 for q = r = 2 and k = 2: no map P on 2 x 2 matrices over F_2 has slice
+entropies adding up to less than 6.
+
+*Prior work.* We searched (2026-10-15) for lower bounds on rank-r Kakeya sets over F_2 after KLSS:
+the papers citing it, Ellenberg-Oberlin-Tao, Dhar-Dvir-Lund (whose entropy formulation uses
+min-entropy and large q), and the universal-set paper of Alon, Bukh and Sudakov. KLSS prove their
+Theorem 1 with the polynomial method, and we found no better lower bound for q = 2 and r >= 2.
+If Theorem 7 is known, please open an issue and we will cite it.
+
+## 12. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
   (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
-  Theorem 3 with Lemma 4, Theorem 4 and Corollary 3, and for higher rank Theorems 5 and 6,
-  Corollaries 4 and 5 and Propositions 1 and 2.
+  Theorem 3 with Lemma 4, Theorem 4 and Corollary 3, and for higher rank Theorems 5, 6 and 7,
+  Lemma 5, Corollaries 4, 5 and 6 and Propositions 1, 2 and 3.
 - Computed (exhaustive, with the checks above): max S = 36 over all maps on F_3^2, so h_2 = 2 h_1
-  for q = 3.
+  for q = 3; the values K_r(n, 2) for n <= 4.
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
-  q = 3, Theorems 2, 3 and 4, Lemma 4, the value h_2 = 2 h_1 for q = 3, and every rank-r bound in
-  section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5. The bound for
-  q = 3 in section 1 is not new (KLSS proved it with a random construction).
-- Not claimed: any value of beta_q or beta_(q,r), any improvement below 1.8899 for q = 3, that
-  h_k = k h_1 for k >= 3, or any improvement for q = 2 in rank r >= 2. The gap between
-  q * 2^(-(q-1)/q) and q^2/(2q - 1) is open for every q >= 3.
-- The O(n^(2/3) log n) error term means the bounds beat earlier constructions only in large
-  dimension. They are about the exponential growth rate, not about small cases.
+  q = 3, Theorems 2, 3 and 4, Lemma 4, the value h_2 = 2 h_1 for q = 3, every rank-r bound in
+  section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5, and the exact
+  value beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 2 (Theorem 7 and Corollary 6). The bound for
+  q = 3 in section 1 is not new (KLSS proved it with a random construction), and neither is the
+  case r = 1 of Theorem 7 or the upper bound of Corollary 6 (KLSS Corollary 11).
+- Not claimed: any value of beta_q for q >= 3 or of beta_(q,r) for q >= 3, any improvement below
+  1.8899 for q = 3, or that h_k = k h_1 for k >= 3. The gap between q * 2^(-(q-1)/q) and
+  q^2/(2q - 1) is open for every q >= 3.
+- The O(n^(2/3) log n) error term means the bounds of sections 3 to 10 beat earlier constructions
+  only in large dimension. They are about the exponential growth rate, not about small cases.
 - `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to
-  10 of this README are newer than the preprint.
+  10 of this README are newer than that preprint. `paper/kakeya-rank-r-f2.tex` is a short
+  self-contained note with section 11.
 
-## 12. The code and the tests
+## 13. The code and the tests
 
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
@@ -620,7 +736,10 @@ q = 3 witness, the bound formulas, h(P) and S(P), witness maps of Kakeya sets, a
 the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an annealing search.
 `exact_h2.py` is the pure-Python branch and bound of section 9 (`python exact_h2.py --q 3 --k 2`).
 `higher_rank.py` (pure Python) holds the section 10 witnesses, bounds and checks
-(`python higher_rank.py table`). `python -m unittest -v` checks:
+(`python higher_rank.py table`). `f2_rank.py` (pure Python) holds section 11: subspaces and
+Kakeya sets of F_2^n, the exhaustive search for small n (`python f2_rank.py small`), the slice
+entropies of Lemma 5 and a local search for base points that would break it.
+`python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
 - Lemma 2 at the uniform distribution (exactly) and against random and point distributions, and its
@@ -639,12 +758,14 @@ the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an 
 - Theorem 4 and Corollary 3 (section 8);
 - the exhaustive search of section 9 and its cross-checks;
 - the higher-rank results of section 10 (listed there);
+- the F_2 results of section 11 (listed there);
 - every number quoted in this README.
 
-## 13. Sources
+## 14. Sources
 
 - S. Kopparty, V. F. Lev, S. Saraf, M. Sudan, "Kakeya-type sets in finite vector spaces",
-  J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 4, 6, 7, 8, 10; section 6).
+  J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 4, 6, 7, 8, 10,
+  Corollary 11; section 6).
 - G. Kyureghyan, P. Muller, Q. Wang, "On the size of Kakeya sets in finite vector spaces",
   Electron. J. Combin. 20(3) (2013) #P36; arXiv 1302.5591.
 - B. Bukh, T.-W. Chao, "Sharp density bounds on the finite field Kakeya problem", Discrete
@@ -655,6 +776,8 @@ the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an 
   over finite fields", Mathematika 56 (2010) (Kakeya sets of rank r).
 - M. Dhar, Z. Dvir, B. Lund, "Simple proofs for Furstenberg sets over finite fields",
   arXiv 1909.03180 (2019).
+- N. Alon, B. Bukh, B. Sudakov, "Discrete Kakeya-type problems and small bases", Israel J. Math.
+  174 (2009) 285-301 (universal sets).
 - T. Banakh, V. Gavrylkiv, on difference bases of finite groups, 2019 (the case q = 2).
 - B. Georgiev, J. Gomez-Serrano, T. Tao, A. Z. Wagner, "Mathematical exploration and discovery at
   scale", arXiv 2511.02864 (2025).

@@ -1,0 +1,147 @@
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\F}{\mathbb{F}}
+
+\title{Kakeya sets of rank $r$ over $\F_2$}
+\author{MV2 (Munim, Inc.)}
+\date{October 15, 2026}
+
+\begin{document}
+
+\begin{abstract}
+A Kakeya set of rank $r$ in $\F_q^n$ contains a translate of every $r$-dimensional subspace.
+Kopparty, Lev, Saraf and Sudan asked for the growth rate
+$\lim_{n\to\infty} K_r(n,q)^{1/n}$ of the smallest such sets for any pair $(q,r)\neq(2,1)$,
+and remarked that already the case $q=r=2$ seems non-trivial. We show by a short entropy argument
+that every Kakeya set of rank $r$ in $\F_2^n$ has at least $2^{(1-2^{-r})n}$ points. With their
+universal-set construction this gives $\lim K_r(n,2)^{1/n} = 2^{1-2^{-r}}$ for every $r\ge 1$;
+for $r=2$ the limit is $2^{3/4}$.
+\end{abstract}
+
+\maketitle
+
+\noindent\emph{This note was researched and written with AI agents working in MV2's name. Code and
+tests: \url{https://github.com/munimtechnologies/kakeya-small-fields} (section 11 of the README).
+Licence: CC BY 4.0.}
+
+\section{Introduction}
+
+Let $q$ be a prime power and $1\le r\le n$. A set $K\subseteq\F_q^n$ is a \emph{Kakeya set of rank
+$r$} if for every $r$-dimensional subspace $D$ of $\F_q^n$ there is $a$ with $a+D\subseteq K$.
+Let $K_r(n,q)$ be the least size of such a set. Products of Kakeya sets of rank $r$ are Kakeya
+sets of rank $r$, so $\beta_{q,r}=\lim_{n\to\infty}K_r(n,q)^{1/n}$ exists. Kopparty, Lev, Saraf and
+Sudan \cite{KLSS} proved
+\[
+  \frac{q^{r+1}}{q^r+q-1}\ \le\ \beta_{q,r}\ \le\ q^{1-q^{-r}},
+\]
+the lower bound by the polynomial method and the upper bound from universal sets
+\cite{ABS} (rank-$r$ Kakeya sets also appear in \cite{EOT}): they show
+(Corollary~11 of \cite{KLSS}) that there is a Kakeya set of rank $r$ in $\F_q^n$ with fewer than
+$q^{n(1-q^{-r})+r+1}$ points. In their closing section they ask for $\beta_{q,r}$ ``even for just
+one particular pair $(q,r)\neq(2,1)$'', and they note that even for $q=r=2$ they knew no
+construction smaller than $O(2^{3n/4})$. We show that for $q=2$ the universal-set bound is sharp.
+
+\begin{theorem}\label{thm:main}
+Let $n\ge r\ge 1$. Every Kakeya set $K$ of rank $r$ in $\F_2^n$ satisfies
+$|K|\ge 2^{(1-2^{-r})n}$.
+\end{theorem}
+
+\begin{corollary}
+For all $n\ge r\ge 1$,
+\[
+  2^{(1-2^{-r})n}\ \le\ K_r(n,2)\ <\ 2^{(1-2^{-r})n+r+1},
+\]
+so $\beta_{2,r}=2^{1-2^{-r}}$. In particular every Kakeya set of rank $2$ in $\F_2^n$ has at least
+$2^{3n/4}$ points.
+\end{corollary}
+
+For $r=1$ the theorem is the classical bound $|K|\ge 2^{n/2}$ for sets with $K+K=\F_2^n$. The
+values of $\beta_{2,r}$ for $r=1,2,3,4$ are $1.4142$, $1.6818$, $1.8340$ and $1.9152$, against
+$1.3333$, $1.6$, $1.7778$ and $1.8824$ from the lower bound of \cite{KLSS}.
+
+\section{The entropy inequality}
+
+All entropies are Shannon entropies in bits. For $t\in\F_2^r$ write
+$t\cdot d=t_1d_1+\dots+t_rd_r$.
+
+\begin{lemma}\label{lem:entropy}
+Let $d_1,\dots,d_r$ be independent and uniformly distributed on $\F_2^n$, and let $A$ be any
+random element of $\F_2^n$, with any joint distribution with $(d_1,\dots,d_r)$. Put
+$Y_t=A+t\cdot d$ for $t\in\F_2^r$. Then
+\[
+  \sum_{t\in\F_2^r}H(Y_t)\ \ge\ (2^r-1)\,n.
+\]
+\end{lemma}
+
+\begin{proof}
+Induction on $r$. For $r=0$ the claim is $H(A)\ge 0$. Let $r\ge1$ and let $e_1$ be the first unit
+vector of $\F_2^r$. For $t$ with $t_1=0$ we have $Y_{t+e_1}=Y_t+d_1$, so the pair
+$(Y_t,Y_{t+e_1})$ and the pair $(Y_t,d_1)$ determine each other, and
+\[
+  H(Y_t)+H(Y_{t+e_1})\ \ge\ H(Y_t,Y_{t+e_1})\ =\ H(Y_t,d_1)\ =\ n+H(Y_t\mid d_1).
+\]
+Summing over the $2^{r-1}$ values of $t$ with $t_1=0$,
+\[
+  \sum_{t\in\F_2^r}H(Y_t)\ \ge\ 2^{r-1}n+\sum_{t:\,t_1=0}H(Y_t\mid d_1).
+\]
+Condition on $d_1=\delta$. Then $d_2,\dots,d_r$ are still independent and uniform, and for
+$t_1=0$ we have $Y_t=A+t_2d_2+\dots+t_rd_r$. By the induction hypothesis, applied to the
+conditional distribution, $\sum_{t:\,t_1=0}H(Y_t\mid d_1=\delta)\ge(2^{r-1}-1)n$ for every
+$\delta$. Averaging over $\delta$ and adding gives $(2^{r-1}+2^{r-1}-1)n=(2^r-1)n$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Let $d_1,\dots,d_r$ be independent and uniform on $\F_2^n$. Their span has dimension at most
+$r\le n$, so it lies in some $r$-dimensional subspace $D$, and $K$ contains a translate $a+D$. Let
+$A=A(d_1,\dots,d_r)$ be such a point $a$. Then $Y_t=A+t\cdot d\in K$ for every $t\in\F_2^r$, so
+$H(Y_t)\le\log_2|K|$. Lemma~\ref{lem:entropy} gives $2^r\log_2|K|\ge(2^r-1)n$.
+\end{proof}
+
+\section{Remarks}
+
+\begin{remark}[Counting]
+A set containing a translate of every $2^r$-point subset of $\F_2^n$ needs about
+$2^{(1-2^{-r})n}$ points by counting alone. A Kakeya set of rank $r$ only has to contain
+translates of the roughly $2^{r(n-r)}$ subspaces of dimension $r$, and counting the tuples
+$(a,a+w_1,\dots,a+w_r)$ inside $K$ gives only $|K|\gtrsim 2^{rn/(r+1)}$ (base $2^{2/3}\approx
+1.5874$ for $r=2$). Lemma~\ref{lem:entropy} shows that over $\F_2$ the weaker requirement already
+forces the size of a universal set.
+\end{remark}
+
+\begin{remark}[Other fields]
+Over $\F_q$ the same pairing, applied to one pair of points on each line in direction $d_1$, gives
+$\sum_{t\in\F_q^r}H(Y_t)\ge(q^r-(q-1)^r)\,n\log_2q$, that is, base $q^{1-(1-1/q)^r}$. For $q\ge3$
+this is weaker than the bound of \cite{KLSS}, since $(q-1)^{r-1}\ln q\ge1$. The value of
+$\beta_{q,r}$ remains open for every $q\ge3$; for $r=1$ and $q=3$ it lies between $1.8$ and
+$1.8899$.
+\end{remark}
+
+\begin{remark}[Small dimensions]
+Writing $K=\F_2^n\setminus C$, one checks that $K_{n-1}(n,2)=2^n-1$ for $n\ge2$ and
+$K_{n-2}(n,2)=2^n-3$ for $n\ge3$: a set $C$ of four points, translated to $\{0,a,b,c\}$, is mapped
+onto $\F_2^2$ by some linear map whose kernel $W$ has dimension $n-2$, and then no coset of $W$
+lies in $K$; so $K$ has rank $n-2$ exactly when $|C|\le3$. Exhaustive search gives $K_2(4,2)=13$, well above
+$2^{3}=8$; Theorem~\ref{thm:main} is about the growth rate. The repository's tests check these
+values, Lemma~\ref{lem:entropy} on small cases, and every number in this note.
+\end{remark}
+
+\begin{thebibliography}{9}
+\bibitem{KLSS} S.~Kopparty, V.~F.~Lev, S.~Saraf, M.~Sudan, \emph{Kakeya-type sets in finite
+vector spaces}, J. Algebraic Combin. \textbf{34} (2011), 337--355; arXiv:1003.3736.
+\bibitem{ABS} N.~Alon, B.~Bukh, B.~Sudakov, \emph{Discrete Kakeya-type problems and small bases},
+Israel J. Math. \textbf{174} (2009), 285--301.
+\bibitem{EOT} J.~Ellenberg, R.~Oberlin, T.~Tao, \emph{The Kakeya set and maximal conjectures for
+algebraic varieties over finite fields}, Mathematika \textbf{56} (2010).
+\end{thebibliography}
+
+\end{document}
