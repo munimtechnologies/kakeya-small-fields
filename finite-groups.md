@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7, 2026-10-16. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.1, 2026-10-16. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -9,6 +9,10 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
+
+Version 1.7.1 adds Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19 to section 14. They
+settle the case Z_4^4 x Z_2^2 that 1.7 left open. README sections 14 and 15 still describe 1.7;
+where they differ, this file is the current statement.
 
 ## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
 
@@ -448,7 +452,8 @@ the Q-rows for h in H_0, shows that every Q_(h') kills span sigma(H_0). (ii) On 
 rho(h) = g^2 mod 2A is well defined and quadratic. Split it as (sigma, rho_2). Then
 F(h) = det(I + P_h + D(sigma(h))) prod_j (1 + rho_2,j(h)) is the indicator of 0 on H_0, by the same
 three cases as Theorem 16 plus "rho_2(h) != 0 kills the product". Its degree is <= (a + s) + 2b.
-QED
+QED (The degree count uses a basis of A in which span sigma(H_0) is spanned by the first s basis
+vectors, so that D(sigma(h)) has at most s non-zero entries.)
 
 **Theorem 18 (full rank Q).** In the setting of Theorem 17 let b >= 2 and rank Q = ab, i.e.
 Q(H) = Hom(F_2^a, F_2^b). Then beta(H, H_0) = 0, sigma(H_0) = 0, and every P_h with h in H_0 kills
@@ -470,25 +475,121 @@ lies in Omega, so x^4 = 1. Cases: s >= 1 (Theorem 17: n <= a + 2b + ab - s(b-1) 
 s = 0 with rank Q <= ab - 1; s = 0 with rank Q = ab (above). Each gives n <= a + 2b + ab - 1, and
 n <= 2a + 3b is what |L| <= |Omega|^4 needs. QED
 The step lam = 0 fails for b = 1 (the symmetric zero-diagonal matrices solve it), so b >= 2 is
-needed. The next open cases are (4, 2) and (3, 3) with s <= 1, and (5, 2).
+needed.
 
-*Status of Theorems 16 to 18.* They are proved by hand above. Their exact checks are
-`cube_groups/z4degree.py` (Theorem 16), `cube_groups/z4z2.py` (Theorem 17) and
-`cube_groups/hommap.py` (the linear-algebra step of Theorem 18: the solution space of
-M lam(M) = 0 is 0 for b >= 2, and a(a-1)/2-dimensional for b = 1). They are committed in a
-separate commit that lands only if their unit tests pass, and their full runs had not finished
-when 1.7 was released. We will report the results in the next version.
+The rest of this section (new in 1.7.1) settles (a, b) = (4, 2). Keep the setting of Theorem 17,
+write W = Q(H) and r = dim W = rank Q, and let N(W) be the set of vectors killed by every map in W.
+The first step of Theorem 18's proof works for any W: for h' in H_0, l = beta(., h') maps H_0 into
+N(W), and modulo N(W) it is lam(Q_h) for a linear lam : W -> F_2^a / N(W) with M lam(M) = 0 for
+every M in W. Write Lam(W) for the space of such lam.
+
+**Lemma 15 (a quadratic equation).** Let q be a non-zero quadratic form on an F_2-space V with polar
+form B, let u != 0 be a vector, and let p : V -> F_2^a be linear with
+
+    q(h) p(h') = B(h, h') (u + p(h))     for all h, h' in V.
+
+Then p(h') = B(h*, h') u for every h* with q(h*) = 1. Write p = pi u. Then rank B <= 2; if B = 0
+then pi = 0; and if B != 0 then q vanishes on rad B.
+*Proof.* Put h = h*: p(h') = B(h*, h') (u + p(h*)), and h' = h* gives p(h*) = 0 because B is
+alternating. So p = pi u with pi = B(h*, .) for every such h*. Hence q = 1 only on h* + R, where
+R = rad B. If B = 0 then pi = 0. Let B != 0. For h outside R with q(h) = 0, choose h' with
+B(h, h') = 1; the equation gives pi(h) = 1, that is B(h*, h) = 1. If h* were in R, every h outside
+R would have q(h) = 0 (q = 1 only on h* + R = R) and B(h*, h) = 0, which is impossible since B != 0
+gives such h. So h* is not in R, and q vanishes on R. If
+dim V/R >= 4, the B-orthogonal of h* in V/R has dimension >= 3 and contains a class other than 0
+and h* + R; its elements h lie outside R and outside h* + R, so q(h) = 0 and B(h*, h) = 0, a
+contradiction. So rank B = dim V/R <= 2. QED
+
+**Lemma 16 (rank-1 maps span a hyperplane).** For C != 0 in Hom(F_2^a, F_2^b), the rank-1 maps in
+C^perp = {M : tr(C^T M) = 0} span C^perp.
+*Proof.* A D orthogonal to all of them satisfies u^T D v = 0 whenever u^T C v = 0. For each u this
+forces D^T u in {0, C^T u}, so F_2^b is the union of the subspaces ker D^T and ker (D + C)^T. One of
+them is everything, so D = 0 or D = C. QED
+
+**Proposition 17 (squares in a line).** In the setting of Theorem 17 (any b >= 0), suppose that
+S = span sigma(H) has dimension <= 1. Then e <= 2 (if S = 0) or n <= a + 2b + 3. So the answer is
+yes whenever dim S <= 1 and a + b >= 3.
+*Proof.* If S = 0, every square lies in Omega and x^4 = 1. Let S = span(u), so sigma = q u and
+beta = B u for a quadratic form q on H with polar form B. The P-rows of the identity of
+Theorem 17 read q(h) P_(h') u = B(h, h') (u + P_h u), so by Lemma 15 (with p(h) = P_h u),
+rank B <= 2. Now let X = L/Omega and let u-bar in X be the image of a lift of u. A/Omega is central
+in X, and every square and every commutator of X lies in <u-bar>, which is central of order 2. So
+X/<u-bar> is elementary abelian of dimension a + n - 1, and squaring defines a quadratic form on it
+whose polar form is the commutator, that is B pulled back from H, of rank 2 rho <= 2. Its radical
+has a subspace of codimension <= 1 on which the form vanishes, and a complement contains a totally
+singular subspace of dimension >= rho - 1, so there is a totally singular subspace T of
+dimension >= (a + n - 1) - rho - 2. Its preimage Y-bar in X is elementary abelian of dimension
+dim T + 1, and y -> y^2 maps it into Omega: a k-tuple of quadratic forms that vanishes only at 1,
+because an element squaring to 1 is an involution, so lies in Omega. Chevalley-Warning gives
+dim T + 1 <= 2k, so a + n - rho - 2 <= 2a + 2b and n <= a + 2b + 3. QED
+
+**Proposition 18 (hyperplanes of maps).** Let b >= 2 and let W <= Hom(F_2^a, F_2^b) have
+codimension <= 1. Then N(W) = 0 and Lam(W) = 0.
+*Proof.* The maps killing a fixed v != 0 have codimension b >= 2, so N(W) = 0. Codimension 0 is
+Theorem 18's lemma. Let W = C^perp and lam in Lam(W), so M lam(M) = 0 and
+M lam(M') + M' lam(M) = 0 on W. Take M = u v^T of rank 1 in W and w = lam(M). As in Theorem 18,
+M' w lies in span(u) for every M' in W. If w != 0, the image of W under M' -> M' w is F_2^b unless
+C = z w^T, in which case it is z^perp, of dimension b - 1. So b = 2, C = z w^T and z^T u = 0. Choose
+v' with v'^T w = 1 and put M'' = u v'^T, which lies in W. The same argument gives lam(M'') in
+{0, w}, and M'' lam(M'') = 0 gives v'^T lam(M'') = 0, so lam(M'') = 0. Then
+M lam(M'') + M'' lam(M) = u (v'^T w) = u != 0, a contradiction. So lam vanishes on the rank-1 maps
+of W, which span W by Lemma 16. QED
+Without the equations M lam(M) = 0 (keeping only the polar ones) this fails exactly when b = 2 and
+rank C = 1: if C = z w^T, u_0 is the non-zero vector with z^T u_0 = 0 and y^T u_0 = 1, then
+lam(M) = (y^T M w) w solves them.
+
+**Theorem 19 ((a, b) = (4, 2)).** If L has a self-centralising normal subgroup A ~ Z_4^4 x Z_2^2,
+then |L| <= |Omega|^4. So the answer is yes, and together with Theorems 17 and 18 it is yes for
+every Z_4^a x Z_2^b with a <= 2, b <= 1 or (a - 1)(b - 1) <= 3.
+*Proof.* We need n <= 2a + 3b = 14 when e = 3. By Proposition 17 we may take dim S >= 2. Theorem 17
+gives n_0 <= 8 + s and r <= 2(4 - s), so n <= 16 - s and s >= 2 is done.
+(s = 0.) If r <= 6, n <= 8 + 6. If r >= 7, W has codimension <= 1, so by Proposition 18 the map lam
+is 0 for every h' in H_0, that is beta(H, H_0) = 0. As in Theorem 18, every P_(h') with h' in H_0
+then kills S, and n_0 <= a - dim S + 2b <= 6, so n <= 6 + 8.
+(s = 1.) Let sigma(H_0) span span(u). Then W kills u, so r <= 6, and r <= 5 gives n <= 9 + 5. If
+r = 6, W is all of Hom(F_2^4 / span(u), F_2^2) and N(W) = span(u). Theorem 18's lemma for
+Hom(F_2^3, F_2^2) gives lam = 0, so beta(h', h) = gamma(h', h) u for h' in H and h in H_0. Write
+sigma = q u on H_0, with polar form B = gamma on H_0, and choose a basis of A with u first. The
+P-rows of the identity give, for h in H_0 and h' in H,
+
+    q(h) P_(h') u = gamma(h', h) (u + P_h u).
+
+Taking h = h* with q(h*) = 1 shows P_(h') u = pi(h') u for all h' in H, with pi = gamma(., h*), and so
+q(h) pi(h') = gamma(h', h) (1 + pi(h)). Restricted to H_0 this is Lemma 15. If B = 0, then
+P_h u = 0 on H_0 and q is linear, so the first column of I + P_h + D(sigma(h)) is (1 + q(h)) u.
+Its determinant has degree <= 1 + (a - 1) = a, and n_0 <= a + 2b = 8. If B != 0, then rank B = 2,
+and q and pi vanish on R = rad B, so the displayed equation gives gamma(H, R) = 0. For h in R this
+means beta(H, h) = 0 and sigma(h) = 0, so P_h kills S. Theorem 17's indicator restricted to R then
+has degree <= a - dim S + 2b <= 6. So n_0 = dim R + 2 <= 8. In every case n <= 14. QED
+
+The same tools also sharpen Theorem 18: if rank Q = ab, Proposition 17 forces dim S >= 2 (or
+n <= a + 2b + 3), so n <= a + 2b + ab - 2. The s = 1 part of the proof uses only b >= 2: for every
+such (a, b), s = 1 gives n <= a + b + ab or n <= a + 2b + 3 (with dim S >= 2, n_0 <= a + 2b when
+r = b(a - 1), and n_0 <= a + 1 + 2b otherwise). The next open cases are (a, b) = (3, 3) and (5, 2). For (3, 3), where n <= 15 is
+needed, s = 1 is therefore settled, and two cases are left: s = 0 with r = 9 and dim S = 2, and
+s = 0 with r = 7.
+
+*Status of Theorems 16 to 19.* They are proved by hand above. The full run of
+`cube_groups/z4degree.py` (Theorem 16) passed on 2026-10-16: 6 of 6 groups consistent, and both
+controls behave as predicted. `cube_groups/z4z2.py` (Theorem 17) and `cube_groups/hommap.py` (the
+lemma in Theorem 18) passed their unit tests when they were committed; their full runs are queued.
+`cube_groups/case42.py` checks the linear-algebra steps of Lemmas 15 and 16, Proposition 18 (with
+the polar-only control), the counting step of Proposition 17, and tabulates Lam(W) over every W of
+codimension 2 for the next cases. It is committed separately, only if its unit tests pass, and its
+full run is queued. The group-theoretic steps of Proposition 17 and Theorem 19 are checked by hand
+only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
-Z_4^k; a self-centralising normal Z_4^a x Z_2; Z_4^3 x Z_2^2; Z_4^a x Z_2^b when
-ab - s(b-1) <= a + b; and every (a, b) with (a - 1)(b - 1) <= 2. Computed:
-true on every subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order
-256. An exact search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no
-counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with b >= 2 and small s;
-homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly
-three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the
-case k = 2 is not claimed.
+Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 2, when b <= 1, when
+ab - s(b-1) <= a + b, when dim span sigma(H) <= 1 and a + b >= 3, and whenever
+(a - 1)(b - 1) <= 3 (including (3, 2) and (4, 2)). Computed: true on every subgroup of Q_16, Q_32,
+Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact search over all 324
+conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no counterexample with A ~ Z_4^3, as
+Theorem 16 predicts. Open: Z_4^a x Z_2^b with (a - 1)(b - 1) >= 4 and a, b >= 2, starting with
+(3, 3) and (5, 2); homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the
+2-groups with exactly three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could
+not read it, so the case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -519,14 +620,15 @@ concordance below maps them to this file.
 | prop31_cubes.py, twosided.py | Proposition 11, Lemma 7, b values, Stab_R(K) = H with core 1 | passed |
 | theorem29.py | Theorem 13, Theorem 12 set form, Propositions 7, 8 and 10 (LP) | passed |
 | fibre.py | Theorem 10, Proposition 9, b(Gamma) by brute force | passed |
-| z4degree.py | Theorem 16 | not finished at release |
-| z4z2.py | Theorem 17 | not finished at release |
-| hommap.py | the lemma in Theorem 18 | not finished at release |
+| z4degree.py | Theorem 16 (Q_8, Q_8^2, Q_8^3, P_32, Q_8 x P_32, P_32^2; two controls) | passed |
+| z4z2.py | Theorem 17 | unit tests passed; full run queued |
+| hommap.py | the lemma in Theorem 18 | unit tests passed; full run queued |
+| case42.py | Lemmas 15 and 16, Proposition 18, the counting step of Proposition 17 | queued (new in 1.7.1) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
-uniqueness claim in Proposition 10, and (until their runs finish) Theorems 16 to 18. Two numbers
-come from full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of
-Proposition 9 and the order-2048 group checks.
+uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17 and Theorem 19, and
+(until their runs finish) Theorems 17 to 19. Two numbers come from full runs that are too slow for
+the unit tests: the Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -538,7 +640,8 @@ Prop 12 -> Proposition 13; Prop 11' and Lemma 26 -> Proposition 14; Prop 14 -> P
 Cor 15a -> Corollary 11; Theorem 16 -> Theorem 14; Lemma 17 -> Lemma 10; Theorem 19 -> Theorem 15;
 Prop 18 -> Proposition 16; Lemma 20 -> Lemma 11; Lemma 21 -> Lemma 12; Lemma 22 -> Lemma 13;
 Lemma 38a -> Lemma 14; Theorem 38 -> Theorem 16; Theorem 39 -> Theorem 17; Theorem 40 ->
-Theorem 18.
+Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.1 is checked by
+`case42.py`, whose docstring already uses the labels of this file.
 
 ## Sources for this file
 
