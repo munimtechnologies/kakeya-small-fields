@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.2, 2026-10-16. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.3, 2026-10-16. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,10 +10,13 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
-Version 1.7.2 adds Lemma 17, Proposition 19 and Theorem 20 to section 14. They settle the case
-Z_4^3 x Z_2^3. Version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19, which
-settle Z_4^4 x Z_2^2. README sections 14 and 15 still describe 1.7; where they differ, this file is
-the current statement.
+Version 1.7.3 adds Lemmas 18 and 19, Theorem 21 and Corollary 12 to section 14. One argument now
+handles every case in which the action has large rank, and the answer is yes for every
+Z_4^a x Z_2^b with a <= 3 (every b), b <= 1 or (a, b) = (4, 2). This contains the earlier cases and
+settles Z_4^3 x Z_2^4. Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20 (Z_4^3 x Z_2^3),
+and version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19 (Z_4^4 x Z_2^2).
+README sections 14 and 15 still describe 1.7; where they differ, this file is the current
+statement.
 
 ## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
 
@@ -604,7 +607,9 @@ killed by every rank-1 map of W, and lam(M) = 0 by (1). QED
 Both hypotheses are needed. At c = b, the 2^a - 1 subspaces K_w have N(K_w) = span(w). At c = b - 1,
 on each of the (2^a - 1)(2^b - 1) subspaces W = {M : M w in span(u)}, the polar equations alone are
 solved by lam(M) = (y^T M w) w with y^T u = 1. So the diagonal equations M lam(M) = 0 are needed,
-as after Proposition 18.
+as after Proposition 18. (The full run of case33.py also found that on every other W of
+codimension b - 1 the polar equations alone already force lam = 0, for all nine pairs (a, b) it
+checks, up to (3, 3) and (2, 4).)
 
 **Theorem 20 ((a, b) = (3, 3)).** If L has a self-centralising normal subgroup A ~ Z_4^3 x Z_2^3,
 then |L| <= |Omega|^4. So the answer is yes for every Z_4^a x Z_2^b with a <= 2, b <= 1,
@@ -617,38 +622,107 @@ so N(W) = 0 and Lam(W) = 0 by Proposition 19, and the step before Lemma 15 gives
 As in Theorem 18, every P_(h') with h' in H_0 then kills S, and n_0 <= a - dim S + 2b <= 7. So
 n <= 7 + 8 = 15. QED
 
-In general, for b >= 2 and s = 0, Proposition 19 gives n_0 <= a + 2b - dim S whenever
-r >= ab - b + 1, and Lemma 17 gives r <= ab - 1 when a <= b and dim S >= 1. This is not enough
-for the next cases. `cube_groups/case33.py` lists the cases the tools leave open, for example
-s = 0, dim S = 2, r = 8 for (5, 2) (n <= 17, need 16); s = 0, r = 9 for (4, 3) (n <= 19, need 17);
-and s = 1, r = 7 for (3, 4) (n <= 19, need 18).
+The rest of this section (new in 1.7.3) replaces the case analyses of Theorems 18 to 20 by one
+argument for every W of large dimension, and settles a = 3 for every b. Keep the setting of
+Theorem 17, with W = Q(H), r = dim W, S = span sigma(H), and for y != 0 in F_2^b put
 
-*Status of Theorems 16 to 20.* They are proved by hand above. The full runs of
-`cube_groups/z4degree.py` (Theorem 16: 6 of 6 groups consistent, both controls as predicted) and
-`cube_groups/z4z2.py` (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the
-control with a non-central involution fails as predicted) passed on 2026-10-16.
-`cube_groups/hommap.py` (the lemma in Theorem 18) and `cube_groups/case42.py` (the linear-algebra
-steps of Lemmas 15 and 16 and Proposition 18 with its polar-only control, the counting step of
-Proposition 17, and a table of Lam(W) in codimension 2) passed their unit tests when they were
-committed; their full runs are queued. `cube_groups/case33.py` (new in 1.7.2) checks
-Proposition 19 over every W of codimension <= b - 1 for nine pairs (a, b), up to (3, 3) and (2, 4),
-with both controls; the linear core of Lemma 17; and the case count of Theorem 20 (the tools of
-1.7.1 alone leave (3, 3) open, and with Proposition 19 and Lemma 17 the largest bound is 15). It is
-committed separately, only if its unit tests pass, and its full run is queued. The group-theoretic
-steps of Proposition 17 and Theorems 19 and 20 are checked by hand only.
+    V_y = {x in F_2^a : y^T M x = 0 for every M in W},     d_y = dim V_y.
+
+**Lemma 18 (subspaces where sigma vanishes).** If T <= H is a subspace with sigma(T) = 0, then
+dim T <= a + 2b.
+*Proof.* Let Y be the preimage of T in L. Since beta is the polar form of sigma, beta(T, T) = 0. So
+Y/Omega is generated by the central subgroup A/Omega of L/Omega and by elements whose squares and
+commutators lie in Omega: it is elementary abelian of dimension a + dim T. Omega is central of
+exponent 2, so y -> y^2 is a well-defined map from Y/Omega to Omega, and
+(yz)^2 = y^2 z^2 [z, y] with [z, y] in Omega bilinear. So it is a k-tuple of quadratic forms in
+a + dim T variables. It vanishes only at the identity, because an element with y^2 = 1 is an
+involution and lies in Omega. Chevalley-Warning gives a + dim T <= 2k = 2a + 2b. QED
+This is the last step of the proof of Proposition 17, stated on its own.
+
+**Lemma 19 (slices).** Let W <= Hom(F_2^a, F_2^b). For every basis y_1, ..., y_b of F_2^b,
+
+    d_(y_1) + ... + d_(y_b) <= codim W.
+
+So if codim W < 2b (that is, r >= b(a - 2) + 1), some y has d_y <= 1. This is sharp: at
+codim W = 2b, every d_y >= 2 exactly when W = K_X = {M : M X = 0} with dim X = 2, and then every
+d_y = 2.
+*Proof.* Pair Hom(F_2^a, F_2^b) with F_2^a (x) F_2^b by <M, x (x) y> = y^T M x. Then
+V_y (x) y = W^perp n (F_2^a (x) y), where W^perp has dimension codim W. For a basis y_i these
+pieces are independent: if sum x_i (x) y_i = 0, read it as the a x b matrix sum x_i y_i^T and
+multiply by w_j with y_i^T w_j = 1 if i = j and 0 otherwise; this gives x_j = 0. For sharpness, if
+codim W = 2b and every d_y >= 2, then W^perp is the direct sum of the X_i (x) y_i with
+X_i = V_(y_i) of dimension 2. An element of W^perp in F_2^a (x) (y_i + y_j) has the form
+x (x) (y_i + y_j) with x in X_i n X_j, so V_(y_i + y_j) = X_i n X_j has dimension 2 only if
+X_i = X_j. So all X_i are one X, W^perp = X (x) F_2^b and W = K_X. QED
+
+**Theorem 21 (large rank).** In the setting of Theorem 17, suppose that some y != 0 has
+dim(V_y n S) <= 1. Then n <= 2a + 2b + 1, and n <= 2a + 2b - d_y if V_y n S = 0. So
+|L| <= |Omega|^4 when b >= 1. By Lemma 19 this applies whenever r >= b(a - 2) + 1. In particular,
+if Q has full rank then every V_y = 0 and n <= 2a + 2b, for every a and every b >= 1.
+*Proof.* Let U_y = {M in W : y^T M = 0} and T_y = {h in H : Q_h in U_y}, a subspace containing H_0.
+The map W -> (F_2^a)*, M -> y^T M, has image the annihilator of V_y, so dim U_y = r - a + d_y and
+dim T_y = n - a + d_y. For h in T_y, Lemma 17 puts every Q_(h') sigma(h) in Im Q_h, which lies in
+ker y^T. So y^T M sigma(h) = 0 for every M in W, that is sigma(h) is in V_y, and
+sigma(T_y) <= V_y n S. If V_y n S = 0, Lemma 18 gives n - a + d_y <= a + 2b. Otherwise
+V_y n S = span(v); write sigma = q v on T_y, with q a quadratic form with polar form B, so that
+beta = B v on T_y. For h and h' in T_y the P-rows of the identity of Theorem 17 read
+
+    q(h) P_(h') v = B(h, h') (v + P_h v),
+
+which is Lemma 15 with u = v and p(h) = P_h v. So either q = 0; or B = 0 and q is linear, and
+sigma vanishes on ker q, of codimension 1; or rank B = 2 and q vanishes on rad B, of codimension 2.
+In each case sigma vanishes on a subspace of T_y of codimension <= 2, and Lemma 18 gives
+n - a + d_y - 2 <= a + 2b, with d_y >= 1. Finally, n <= 2a + 2b + 1 <= 2a + 3b is what
+|L| <= |Omega|^4 needs. If Q has full rank, y^T M x runs over all of F_2 as M varies, for every
+x != 0, so V_y = 0. QED
+
+**Corollary 12 (a <= 3 and (4, 2)).** If L has a self-centralising normal subgroup
+A ~ Z_4^a x Z_2^b with b = 0 or (a - 3)(b - 1) <= 1, then |L| <= |Omega|^4, and the answer is yes.
+So the answer is yes whenever a <= 3 (every b), b <= 1, or (a, b) = (4, 2). This contains
+Theorems 18 to 20 and settles, for example, (3, 4) and (3, 5).
+*Proof.* b = 0 is Theorem 16, so let b >= 1. If a + b <= 2, then a <= 2 and Theorem 17 applies. If
+dim S = 0, then e <= 2, and if dim S = 1, Proposition 17 gives n <= a + 2b + 3 <= 2a + 3b. Let
+dim S >= 2. If r >= b(a - 2) + 1, use Theorem 21. Otherwise r <= min(b(a - 2), b(a - s)), and
+Theorem 17 gives n <= a + s + 2b + r. This is at most a + ab + 2 when s <= 2, and at most
+a + 2b + ab - s(b - 1) <= a + ab - b + 3 when s >= 3. Both are <= 2a + 3b when
+(a - 3)(b - 1) <= 1. QED
+
+For (a, b) = (5, 2) and (4, 3) the same count leaves exactly one case: s = 2, r = b(a - 2) and
+n_0 = a + 2 + 2b (equality in Theorem 17). Then W is all of K_X with X = span sigma(H_0) of
+dimension 2, and V_y = X for every y, so Theorem 21 does not apply. A two-dimensional form of
+Lemma 15 (sigma with values in a plane rather than a line) would settle both. `cube_groups/thm21.py`
+checks Lemma 19 over every W of codimension <= 2b for (a, b) up to (4, 2), (2, 3) and (2, 4),
+including the sharpness count at codimension 2b, and recomputes the case count of Corollary 12 for
+every a <= 8 and b <= 8.
+
+*Status of Theorems 16 to 21.* They are proved by hand above. Full runs in a sealed container
+passed on 2026-10-16, and every number matched its prediction: `cube_groups/z4degree.py`
+(Theorem 16: 6 of 6 groups consistent, both controls as predicted); `cube_groups/z4z2.py`
+(Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the control with a
+non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in Theorem 18: the
+predicted nullity for every a <= 5 and b <= 4, and brute force agrees on 8 small pairs);
+`cube_groups/case42.py` (Lemma 15 for n <= 5, Lemma 16, Proposition 18 for 7 pairs up to (5, 2),
+(3, 3) and (2, 4) with its polar-only control, the counting step of Proposition 17, and the table of
+N(W) and Lam(W) in codimension 2); and `cube_groups/case33.py` (Proposition 19 over every W of
+codimension <= b - 1 for nine pairs up to (3, 3) and (2, 4), both controls, the linear core of
+Lemma 17, and the case count of Theorem 20). `cube_groups/thm21.py` (new in 1.7.3) is committed
+separately, only if its unit tests pass, and its full run is queued. It also re-checks, on the
+explicit groups of z4z2.py, that sigma(T_y) lies in V_y and that Lemma 18 holds; those groups are
+small, so this is only a consistency check. The group-theoretic steps of Proposition 17, Lemma 18,
+Theorems 19 to 21 and Corollary 12 are checked by hand only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
-Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 2, when b <= 1, when
-ab - s(b-1) <= a + b, when dim span sigma(H) <= 1 and a + b >= 3, when rank Q = ab and a <= b,
-whenever (a - 1)(b - 1) <= 3 (including (3, 2) and (4, 2)), and for (3, 3). Computed: true on every
+Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 3 (every b), when b <= 1, when
+(a, b) = (4, 2), when rank Q >= b(a - 2) + 1 (in particular when Q has full rank), when
+ab - s(b - 1) <= a + b, and when dim span sigma(H) <= 1 and a + b >= 3. Computed: true on every
 subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact
 search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no
-counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with b = 2 and a >= 5,
-or with a, b >= 3 other than (3, 3), starting with (5, 2), (4, 3) and (3, 4); homocyclic
-Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly three
-involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the case
-k = 2 is not claimed.
+counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with
+(a - 3)(b - 1) >= 2, starting with (5, 2) and (4, 3), where only the case s = 2, W = K_X is left;
+homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly
+three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the
+case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -681,13 +755,14 @@ concordance below maps them to this file.
 | fibre.py | Theorem 10, Proposition 9, b(Gamma) by brute force | passed |
 | z4degree.py | Theorem 16 (Q_8, Q_8^2, Q_8^3, P_32, Q_8 x P_32, P_32^2; two controls) | passed |
 | z4z2.py | Theorem 17 (10 groups; control), the identity behind Lemma 17 | passed |
-| hommap.py | the lemma in Theorem 18 | unit tests passed; full run queued |
-| case42.py | Lemmas 15 and 16, Proposition 18, the counting step of Proposition 17 | unit tests passed; full run queued |
-| case33.py | Proposition 19 (two controls), the linear core of Lemma 17, the case count of Theorem 20 | queued (new in 1.7.2) |
+| hommap.py | the lemma in Theorem 18 | passed |
+| case42.py | Lemmas 15 and 16, Proposition 18, the counting step of Proposition 17 | passed |
+| case33.py | Proposition 19 (two controls), the linear core of Lemma 17, the case count of Theorem 20 | passed |
+| thm21.py | Lemma 19 (with its sharpness count), the case count of Corollary 12, a group check of Lemma 18 and Theorem 21 | queued (new in 1.7.3) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
-uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17 and Theorems 19 and
-20, and (until their runs finish) Theorems 18 to 20 and Propositions 18 and 19. Two numbers come from
+uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
+Theorems 19 to 21 and Corollary 12, and (until its run finishes) Lemma 19. Two numbers come from
 full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of Proposition 9 and the
 order-2048 group checks.
 
@@ -702,8 +777,8 @@ Cor 15a -> Corollary 11; Theorem 16 -> Theorem 14; Lemma 17 -> Lemma 10; Theorem
 Prop 18 -> Proposition 16; Lemma 20 -> Lemma 11; Lemma 21 -> Lemma 12; Lemma 22 -> Lemma 13;
 Lemma 38a -> Lemma 14; Theorem 38 -> Theorem 16; Theorem 39 -> Theorem 17; Theorem 40 ->
 Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.1 is checked by
-`case42.py`, and Theorem 20 of 1.7.2 by `case33.py`. The docstrings of those two modules already use
-the labels of this file.
+`case42.py`, Theorem 20 of 1.7.2 by `case33.py`, and Lemma 19, Theorem 21 and Corollary 12 of
+1.7.3 by `thm21.py`. The docstrings of those three modules already use the labels of this file.
 
 ## Sources for this file
 
