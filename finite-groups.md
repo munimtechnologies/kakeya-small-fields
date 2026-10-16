@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.3, 2026-10-16. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.4, 2026-10-16. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,13 +10,14 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
-Version 1.7.3 adds Lemmas 18 and 19, Theorem 21 and Corollary 12 to section 14. One argument now
-handles every case in which the action has large rank, and the answer is yes for every
-Z_4^a x Z_2^b with a <= 3 (every b), b <= 1 or (a, b) = (4, 2). This contains the earlier cases and
-settles Z_4^3 x Z_2^4. Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20 (Z_4^3 x Z_2^3),
-and version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19 (Z_4^4 x Z_2^2).
-README sections 14 and 15 still describe 1.7; where they differ, this file is the current
-statement.
+Version 1.7.4 adds Lemma 20, Theorem 22 and Corollary 13 to section 14. A two-dimensional form of
+the last step of Theorem 21 settles the two cases that 1.7.3 left open, and the answer is now yes
+for every Z_4^a x Z_2^b with a <= 4 (every b), b <= 1 or (a, b) = (5, 2). Version 1.7.3 added
+Lemmas 18 and 19, Theorem 21 and Corollary 12 (one argument for every action of large rank, which
+settled a <= 3 for every b). Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20
+(Z_4^3 x Z_2^3), and version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19
+(Z_4^4 x Z_2^2). README sections 14 and 15 still describe 1.7; where they differ, this file is the
+current statement.
 
 ## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
 
@@ -689,13 +690,66 @@ a + 2b + ab - s(b - 1) <= a + ab - b + 3 when s >= 3. Both are <= 2a + 3b when
 
 For (a, b) = (5, 2) and (4, 3) the same count leaves exactly one case: s = 2, r = b(a - 2) and
 n_0 = a + 2 + 2b (equality in Theorem 17). Then W is all of K_X with X = span sigma(H_0) of
-dimension 2, and V_y = X for every y, so Theorem 21 does not apply. A two-dimensional form of
-Lemma 15 (sigma with values in a plane rather than a line) would settle both. `cube_groups/thm21.py`
-checks Lemma 19 over every W of codimension <= 2b for (a, b) up to (4, 2), (2, 3) and (2, 4),
-including the sharpness count at codimension 2b, and recomputes the case count of Corollary 12 for
-every a <= 8 and b <= 8.
+dimension 2, and V_y = X for every y, so Theorem 21 does not apply. The rest of this section (new
+in 1.7.4) proves the two-dimensional form of Lemma 15 that this case needs, and with it settles
+every a <= 4 and (5, 2).
 
-*Status of Theorems 16 to 21.* They are proved by hand above. Full runs in a sealed container
+**Lemma 20 (squares in a plane).** Let X be a 2-dimensional F_2-space, V an F_2-space,
+sigma : V -> X a quadratic map with polar form beta, and alpha : V -> End(X) a linear map with
+
+    alpha(h') sigma(h) = (I + alpha(h)) beta(h, h')     for all h, h' in V.
+
+Let K = ker alpha. Then beta(K, K) = 0, sigma is additive on K, and
+
+    rank alpha + dim sigma(K) <= 4,
+
+so sigma vanishes on K_0 = K n ker sigma, a subspace of codimension <= 4.
+*Proof.* For h and h' in K the identity reads 0 = beta(h, h'). So sigma is additive on K, sigma(K)
+is a subspace, and K_0 has codimension rank alpha + dim sigma(K). For h in K and any h', the
+identity gives alpha(h') sigma(h) = beta(h, h'), and with h and h' exchanged it gives
+0 = (I + alpha(h')) beta(h', h). Together, A^2 x = A x for every A in alpha(V) and every x in
+sigma(K). If sigma(K) = 0, then rank alpha <= dim End(X) = 4. If sigma(K) = span(x) with x != 0,
+then alpha(V) is not all of End(X): for y outside span(x), the A with A x = y and A y = 0 has
+A^2 x = 0 != A x. So rank alpha <= 3. If sigma(K) = X, every A in alpha(V) is idempotent, and
+(A + B)^2 = A + B gives AB = BA, so alpha(V) is a commuting subspace of End(X). A commuting
+subspace that contains a non-scalar A lies in span(I, A), so rank alpha <= 2. QED
+With dim X = 1 the same argument gives codimension <= 2, which is the last step of Theorem 21
+without Lemma 15. Each of the bounds 4, 3 and 2 is the largest dimension of a subspace of End(X)
+with the property used (all of End(X); the maps that send x into span(x); the diagonal matrices in
+a basis), and `cube_groups/thm22.py` checks this over all 67 subspaces of M_2(F_2).
+
+**Theorem 22 (a slice that meets S in a plane).** In the setting of Theorem 17, suppose that some
+y != 0 has dim(V_y n S) = 2. Then n <= 2a + 2b + 4 - d_y <= 2a + 2b + 2. With Theorem 21: if some
+y has dim(V_y n S) <= 2, then n <= 2a + 2b + 2, and |L| <= |Omega|^4 when b >= 2. By Lemma 19
+this applies whenever r >= b(a - 3) + 1, and it applies whenever dim S <= 2.
+*Proof.* Let X = V_y n S and let T_y be as in the proof of Theorem 21, so dim T_y = n - a + d_y and
+sigma(T_y) <= X; then beta(T_y, T_y) <= X as well. Choose a complement of X in F_2^a and, for h in
+T_y, let alpha(h) in End(X) be P_h restricted to X followed by the projection onto X along that
+complement. The P-rows of the identity of Theorem 17, P_(h') sigma(h) = (I + P_h) beta(h, h'), hold
+for all h and h' in H. For h and h' in T_y, sigma(h) and beta(h, h') lie in X, and projecting onto X
+gives alpha(h') sigma(h) = (I + alpha(h)) beta(h, h'). So Lemma 20 on V = T_y gives a subspace of
+T_y of codimension <= 4 on which sigma vanishes, and Lemma 18 gives n - a + d_y - 4 <= a + 2b, with
+d_y >= dim X = 2. For the last sentence: if codim W <= 3b - 1, Lemma 19 gives a basis vector y_i
+with d_(y_i) <= 2, and then dim(V_(y_i) n S) <= 2. QED
+
+**Corollary 13 (a <= 4 and (5, 2)).** If L has a self-centralising normal subgroup
+A ~ Z_4^a x Z_2^b with b = 0 or (a - 4)(b - 1) <= 1, then |L| <= |Omega|^4, and the answer is yes.
+So the answer is yes whenever a <= 4 (every b), b <= 1, or (a, b) = (5, 2). This contains
+Corollary 12 and settles, for example, (4, 3), (4, 4) and (5, 2).
+*Proof.* b <= 1 is Theorems 16 and 17, so let b >= 2. If S = 0, then e <= 2, which is settled. If
+dim S <= 2 or r >= b(a - 3) + 1, Theorem 22 gives n <= 2a + 2b + 2 <= 2a + 3b. Otherwise
+dim S >= 3 and r <= min(b(a - 3), b(a - s)), and Theorem 17 gives n <= a + s + 2b + r. For s <= 3
+this is at most a + 3 + 2b + b(a - 3), and for s >= 3 at most
+a + 2b + ab - s(b - 1) <= a + 2b + ab - 3(b - 1). Both equal a + ab - b + 3, which is <= 2a + 3b
+exactly when (a - 4)(b - 1) <= 1. QED
+
+For (a, b) = (6, 2) and (5, 3) the same count leaves exactly one case: s = 3, r = b(a - 3) and
+n_0 = a + 3 + 2b, so W = K_X with X = span sigma(H_0) of dimension 3 and V_y = X for every y. A
+three-dimensional Lemma 20 would settle both if it gave a subspace of T_y of codimension <= b + 3
+on which sigma vanishes (Lemma 18 then gives n <= 2a + 3b). The argument above is too weak there:
+when sigma(K) = 0 it only bounds the codimension by dim End(X) = 9.
+
+*Status of Theorems 16 to 22.* They are proved by hand above. Full runs in a sealed container
 passed on 2026-10-16, and every number matched its prediction: `cube_groups/z4degree.py`
 (Theorem 16: 6 of 6 groups consistent, both controls as predicted); `cube_groups/z4z2.py`
 (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the control with a
@@ -705,30 +759,43 @@ predicted nullity for every a <= 5 and b <= 4, and brute force agrees on 8 small
 (3, 3) and (2, 4) with its polar-only control, the counting step of Proposition 17, and the table of
 N(W) and Lam(W) in codimension 2); and `cube_groups/case33.py` (Proposition 19 over every W of
 codimension <= b - 1 for nine pairs up to (3, 3) and (2, 4), both controls, the linear core of
-Lemma 17, and the case count of Theorem 20). `cube_groups/thm21.py` (new in 1.7.3) is committed
-separately, only if its unit tests pass, and its full run is queued. It also re-checks, on the
-explicit groups of z4z2.py, that sigma(T_y) lies in V_y and that Lemma 18 holds; those groups are
-small, so this is only a consistency check. The group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 21 and Corollary 12 are checked by hand only.
+Lemma 17, and the case count of Theorem 20). `cube_groups/thm21.py` (new in 1.7.3) checks Lemma 19
+over every W of codimension <= 2b for (a, b) up to (4, 2), (2, 3) and (2, 4), including the
+sharpness count at codimension 2b, recomputes the case count of Corollary 12 for every a <= 8 and
+b <= 8, and re-checks, on the explicit groups of z4z2.py, that sigma(T_y) lies in V_y and that
+Lemma 18 holds; those groups are small, so this is only a consistency check. Its unit tests passed
+when it was committed, and its full run is queued. `cube_groups/thm22.py` (new in 1.7.4) is
+committed separately, only if its unit tests pass, and its full run is queued. It solves the
+identity of Lemma 20 for every subspace C of M_2(F_2) and every dimension m = 2 to 8 of V (two
+random maps alpha onto C each, 904 systems), checks every claim of the lemma on each solution
+sigma (all of them, or 64 random ones), checks the table of largest subspaces used in its proof,
+runs a control (some of 200 random sigma on F_2^7 vanish on no subspace of codimension <= 4, so the
+identity is needed), and recomputes the case count of Corollary 13 for every a <= 8 and b <= 8. The
+group-theoretic steps of Proposition 17, Lemma 18, Theorems 19 to 22 and Corollaries 12 and 13 are
+checked by hand only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
-Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 3 (every b), when b <= 1, when
-(a, b) = (4, 2), when rank Q >= b(a - 2) + 1 (in particular when Q has full rank), when
-ab - s(b - 1) <= a + b, and when dim span sigma(H) <= 1 and a + b >= 3. Computed: true on every
-subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact
-search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no
-counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with
-(a - 3)(b - 1) >= 2, starting with (5, 2) and (4, 3), where only the case s = 2, W = K_X is left;
-homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly
-three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the
-case k = 2 is not claimed.
+Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 4 (every b), when b <= 1, when
+(a, b) = (5, 2), when rank Q >= b(a - 2) + 1 (in particular when Q has full rank), when b >= 2 and
+rank Q >= b(a - 3) + 1, when b >= 2 and dim span sigma(H) <= 2, when ab - s(b - 1) <= a + b, and
+when dim span sigma(H) <= 1 and a + b >= 3. Computed: true on every subgroup of Q_16, Q_32, Q_8^2
+and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact search over all 324 conjugacy
+classes of 7-dimensional subspaces of M_3(F_2) found no counterexample with A ~ Z_4^3, as
+Theorem 16 predicts. Open: Z_4^a x Z_2^b with (a - 4)(b - 1) >= 2, starting with (6, 2) and
+(5, 3), where only the case s = 3, W = K_X is left; homocyclic Z_(2^m)^k with m >= 3; the general
+case. A classification of the 2-groups with exactly three involutions (k = 2) is in Janko,
+J. Algebra 291 (2005) 505-533. We could not read it, so the case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
-2-groups (1963) are the case e = 2 in a special setting. The tools (quadratic maps, Chevalley-
-Warning, determinants of degree-bounded matrices) are standard, so a specialist may know these
-bounds. Please open an issue if so.
+2-groups (1963) are the case e = 2 in a special setting. In section 2 of arXiv math/0009003, Bovdi
+and Dokuchaev consider a non-abelian 2-group G of exponent 4 whose involutions are central, with
+Phi(G) = Omega(G) of order 4, and cite a result of N. Blackburn (Huppert and Blackburn, Finite
+Groups II, Theorem VIII.5.4) for |G| <= |Omega(G)|^3. That is our bound for e = 2 in their setting,
+so the case e = 2 may well be known more generally; we have not read Blackburn's theorem. The
+tools (quadratic maps, Chevalley-Warning, determinants of degree-bounded matrices) are standard, so
+a specialist may know these bounds. Please open an issue if so.
 
 ## Verification table
 
@@ -759,12 +826,13 @@ concordance below maps them to this file.
 | case42.py | Lemmas 15 and 16, Proposition 18, the counting step of Proposition 17 | passed |
 | case33.py | Proposition 19 (two controls), the linear core of Lemma 17, the case count of Theorem 20 | passed |
 | thm21.py | Lemma 19 (with its sharpness count), the case count of Corollary 12, a group check of Lemma 18 and Theorem 21 | queued (new in 1.7.3) |
+| thm22.py | Lemma 20 (904 systems; control), the subspace table in its proof, the case count of Corollary 13 | queued (new in 1.7.4) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
 uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 21 and Corollary 12, and (until its run finishes) Lemma 19. Two numbers come from
-full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of Proposition 9 and the
-order-2048 group checks.
+Theorems 19 to 22 and Corollaries 12 and 13, and (until their runs finish) Lemmas 19 and 20. Two
+numbers come from full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of
+Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -777,8 +845,9 @@ Cor 15a -> Corollary 11; Theorem 16 -> Theorem 14; Lemma 17 -> Lemma 10; Theorem
 Prop 18 -> Proposition 16; Lemma 20 -> Lemma 11; Lemma 21 -> Lemma 12; Lemma 22 -> Lemma 13;
 Lemma 38a -> Lemma 14; Theorem 38 -> Theorem 16; Theorem 39 -> Theorem 17; Theorem 40 ->
 Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.1 is checked by
-`case42.py`, Theorem 20 of 1.7.2 by `case33.py`, and Lemma 19, Theorem 21 and Corollary 12 of
-1.7.3 by `thm21.py`. The docstrings of those three modules already use the labels of this file.
+`case42.py`, Theorem 20 of 1.7.2 by `case33.py`, Lemma 19, Theorem 21 and Corollary 12 of 1.7.3 by
+`thm21.py`, and Lemma 20, Theorem 22 and Corollary 13 of 1.7.4 by `thm22.py`. The docstrings of
+those four modules already use the labels of this file.
 
 ## Sources for this file
 
@@ -793,6 +862,9 @@ Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.
 - G. Higman, "Suzuki 2-groups", Illinois J. Math. 7 (1963).
 - D. A. Craven, A. Glesser, "Fusion systems on small p-groups", arXiv 1007.1639.
 - N. Alon, B. Bukh, B. Sudakov, arXiv 0711.1604 (the universal set problem).
+- V. Bovdi, M. Dokuchaev, "Group algebras whose involutory units commute", arXiv math/0009003
+  (section 2 cites Blackburn's bound for exponent 4).
+- B. Huppert, N. Blackburn, Finite Groups II, Springer, Theorem VIII.5.4 (not read by us).
 
 ## Licence
 
