@@ -1,0 +1,299 @@
+# Copyright 2026 MV2 of Munim, Inc. Licensed under the Apache License, Version 2.0 (Apache-2.0).
+"""Checks for Lemma 13 (draft for kakeya-small-fields 1.7): Lemma 11 beyond Hamiltonian groups.
+
+Lemma 13. Let G be a finite group of nilpotency class at most 2 whose derived subgroup G' has
+exponent dividing a prime p, and in which every element of order p is central. Then every
+subgroup L of G satisfies
+    |L n Z(G)|^3 >= |L|   if p = 2,        |L n Z(G)|^2 >= |L|   if p is odd.
+Hence |L n yLy^(-1)| >= |L|^(1/3) (p = 2) or |L|^(1/2) (p odd) for every y. The hypotheses pass to
+direct powers G^m and to G x A with A abelian.
+
+Proof idea: l -> l^p maps L into L n Z. For p odd it is a homomorphism whose kernel (the elements
+of order p) is central, so |L| <= |L n Z|^2. For p = 2 it induces a quadratic map
+L/(L n Z) -> (L n Z)/(L n Z)^2 whose only zero is 0, and Chevalley-Warning bounds the dimension.
+
+Both exponents are attained: Q_8^3 with the diagonal Q_8 gives 1/3 (Proposition 12), and the group
+P(p) of order p^5 below with L = <x> gives 1/2. Consequences: Proposition 6 never breaks the
+abelian r = 2 exponent 3/8 in these groups or their powers, while for r = 3 powers of P(p) break
+it (P(3)^16, P(5)^11, P(7)^9). In contrast, a group with a non-central element x of prime order
+has lambda = 0 in G^2 (L = <(x, x)>, y = (g, 1)), so its powers break every r >= 2.
+
+The script checks the hypotheses and the lemma on every subgroup of small groups, and reports
+the least exponent log|L n yLy^(-1)| / log|L| in Q_16, which lies outside the lemma (class 3).
+
+    python pcentral_cubes.py --out-dir OUT
+"""
+import argparse
+import itertools
+import json
+import math
+import os
+
+
+# ---- groups as multiplication tables on 0..n-1, identity 0 --------------------------------
+
+def table_from(elems, mul):
+    index = {x: n for n, x in enumerate(elems)}
+    return [[index[mul(a, b)] for b in elems] for a in elems]
+
+
+def p_group(p):
+    """P(p): triples (a, b, c), a, b mod p^2, c mod p, (a,b,c)(a',b',c') = (a+a', b+b', c+c'+b a').
+    Order p^5, class 2, G' = {(0, 0, c)}, Z = {(p*, p*, *)}; every element of order p is central
+    when p is odd. x = (1, 0, 0), y = (0, 1, 0)."""
+    q = p * p
+    elems = [(a, b, c) for a in range(q) for b in range(q) for c in range(p)]
+
+    def mul(u, v):
+        return ((u[0] + v[0]) % q, (u[1] + v[1]) % q, (u[2] + v[2] + u[1] * v[0]) % p)
+    return table_from(elems, mul), elems
+
+
+def q8_z2():
+    """Q_8 x Z_2 as (e, s, u): u in F_2^2, s in F_2 with cocycle beta(u, u') = u1u1' + u2u2' + u1u2'
+    (so every u != 0 squares to the central s = 1), e in Z_2."""
+    elems = [(e, s, u1, u2) for e in range(2) for s in range(2) for u1 in range(2) for u2 in range(2)]
+
+    def mul(a, b):
+        beta = a[2] * b[2] + a[3] * b[3] + a[2] * b[3]
+        return ((a[0] + b[0]) % 2, (a[1] + b[1] + beta) % 2, (a[2] + b[2]) % 2, (a[3] + b[3]) % 2)
+    return table_from(elems, mul)
+
+
+def z4_z4():
+    """Z_4 x| Z_4: (i, j)(i', j') = (i + (-1)^j i', j + j')."""
+    elems = [(i, j) for i in range(4) for j in range(4)]
+
+    def mul(a, b):
+        return ((a[0] + (-1) ** a[1] * b[0]) % 4, (a[1] + b[1]) % 4)
+    return table_from(elems, mul)
+
+
+def dihedral(n):
+    """D_n of order 2n: (k, f) is the map x -> (-1)^f x + k on Z_n."""
+    elems = [(k, f) for f in range(2) for k in range(n)]
+
+    def mul(a, b):
+        return ((a[0] + (-1) ** a[1] * b[0]) % n, (a[1] + b[1]) % 2)
+    return table_from(elems, mul)
+
+
+def quaternion16():
+    """Q_16 = <a, b | a^8 = 1, b^2 = a^4, b a b^(-1) = a^(-1)>, elements a^i b^j, j in {0, 1}."""
+    elems = [(i, j) for j in range(2) for i in range(8)]
+
+    def mul(u, v):
+        i, j = u
+        k, l = v
+        i2 = (i + (-1) ** j * k) % 8
+        if j and l:
+            i2 = (i2 + 4) % 8
+        return (i2, (j + l) % 2)
+    return table_from(elems, mul)
+
+
+def power_table(T, m):
+    n = len(T)
+    elems = list(itertools.product(range(n), repeat=m))
+    return table_from(elems, lambda a, b: tuple(T[x][y] for x, y in zip(a, b)))
+
+
+# ---- basic structure ----------------------------------------------------------------------
+
+def inverses(T):
+    n = len(T)
+    inv = [0] * n
+    for a in range(n):
+        for b in range(n):
+            if T[a][b] == 0:
+                inv[a] = b
+                break
+    return inv
+
+
+def centre(T):
+    n = len(T)
+    return frozenset(a for a in range(n) if all(T[a][b] == T[b][a] for b in range(n)))
+
+
+def order(T, a):
+    k, x = 1, a
+    while x != 0:
+        x = T[x][a]
+        k += 1
+    return k
+
+
+def commutators(T):
+    inv = inverses(T)
+    n = len(T)
+    return {T[T[inv[a]][inv[b]]][T[a][b]] for a in range(n) for b in range(n)}
+
+
+def hypotheses(T, p):
+    """(class <= 2, G' has exponent dividing p, every element of order p is central)."""
+    Z = centre(T)
+    comms = commutators(T)
+    class2 = comms <= Z
+    # In class 2 the derived subgroup is generated by commuting central commutators.
+    exp_p = all(order(T, c) in (1, p) for c in comms)
+    omega = all(a in Z for a in range(len(T)) if order(T, a) == p)
+    return class2, exp_p, omega
+
+
+# ---- subgroups ----------------------------------------------------------------------------
+
+def closure(T, start, gens):
+    S = set(start)
+    frontier = list(S)
+    while frontier:
+        new = []
+        for x in frontier:
+            row = T[x]
+            for g in gens:
+                y = row[g]
+                if y not in S:
+                    S.add(y)
+                    new.append(y)
+        frontier = new
+    return frozenset(S)
+
+
+def all_subgroups(T):
+    """Every subgroup, by adjoining one element at a time; one closure per left coset gS."""
+    n = len(T)
+    trivial = frozenset([0])
+    gens = {trivial: []}
+    stack = [trivial]
+    while stack:
+        S = stack.pop()
+        seen = set(S)
+        for g in range(n):
+            if g in seen:
+                continue
+            seen.update(T[g][s] for s in S)
+            U = closure(T, S, gens[S] + [g])
+            if U not in gens:
+                gens[U] = gens[S] + [g]
+                stack.append(U)
+    return list(gens)
+
+
+def two_generated_subgroups(T):
+    n = len(T)
+    found = set()
+    for a in range(n):
+        for b in range(a, n):
+            found.add(closure(T, [0], [a, b]))
+    return list(found)
+
+
+def conj_intersection(T, inv, L, y):
+    return sum(1 for x in L if T[T[y][x]][inv[y]] in L)
+
+
+def lemma_summary(T, subgroups, k):
+    """k = 3 for p = 2, k = 2 for odd p. Checks |L n Z|^k >= |L| and the conjugate bound."""
+    Z = centre(T)
+    inv = inverses(T)
+    n = len(T)
+    rows = []
+    for L in subgroups:
+        c = len(L & Z)
+        least = min(conj_intersection(T, inv, L, y) for y in range(n))
+        rows.append((len(L), c, least))
+    nontrivial = [row for row in rows if row[0] > 1]
+    return {
+        "subgroups": len(rows),
+        "centre_bound_holds": all(c ** k >= s for s, c, _ in rows),
+        "intersection_bound_holds": all(i ** k >= s for s, _, i in rows),
+        "equality_cases": sorted({(s, i) for s, _, i in nontrivial if i ** k == s and i < s}),
+        "least_exponent": min(math.log(i) / math.log(s) for s, _, i in nontrivial),
+    }
+
+
+def least_exponent(T, subgroups):
+    """min over L != 1 and y of log|L n yLy^(-1)| / log|L|, with a witness (|L|, |I|)."""
+    inv = inverses(T)
+    best = None
+    for L in subgroups:
+        if len(L) == 1:
+            continue
+        i = min(conj_intersection(T, inv, L, y) for y in range(len(T)))
+        e = math.log(i) / math.log(len(L))
+        if best is None or e < best[0]:
+            best = (e, len(L), i)
+    return best
+
+
+# ---- the examples -------------------------------------------------------------------------
+
+def p_group_example(p):
+    """|L| and |L n yLy^(-1)| for L = <x>, y = (0, 1, 0) in P(p), without building the table."""
+    q = p * p
+
+    def mul(u, v):
+        return ((u[0] + v[0]) % q, (u[1] + v[1]) % q, (u[2] + v[2] + u[1] * v[0]) % p)
+    L = {(k, 0, 0) for k in range(q)}
+    y, yi = (0, 1, 0), (0, q - 1, 0)
+    return len(L), sum(1 for x in L if mul(mul(y, x), yi) in L)
+
+
+def diagonal_prime_order(T, x, g):
+    """In G^2: L = <(x, x)>, y = (g, 1). Returns (|L|, |L n yLy^(-1)|)."""
+    T2 = power_table(T, 2)
+    n = len(T)
+    L = closure(T2, [0], [x * n + x])
+    return len(L), conj_intersection(T2, inverses(T2), L, g * n)
+
+
+def abelian_bound_fails_sizes(ksize, dsize, r):
+    """Exact integer test of |K|^(r 2^r) < |D|^(2^r - 1), i.e. |K| < |D|^((1 - 2^-r)/r)."""
+    return ksize ** (r * 2 ** r) < dsize ** (2 ** r - 1)
+
+
+def least_power(lsize, isize, r, limit=200):
+    """Least m with 2 |L|^m < (|L|^(r+1)/|I|)^(m (1 - 2^-r)/r) in G^m, exact integers."""
+    unit = lsize ** (r + 1) // isize
+    for m in range(1, limit):
+        if abelian_bound_fails_sizes(2 * lsize ** m, unit ** m, r):
+            return m
+    return None
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out-dir", default=".")
+    args = ap.parse_args()
+    out = {"hypotheses": {}, "lemma": {}, "examples": {}, "least_power": {}, "outside": {}}
+    groups = [("Q8xZ2", q8_z2(), 2), ("Z4xZ4 semidirect", z4_z4(), 2),
+              ("P(3)", p_group(3)[0], 3), ("D4 (control)", dihedral(4), 2)]
+    for name, T, p in groups:
+        out["hypotheses"][name] = hypotheses(T, p)
+        print("hypotheses", name, out["hypotheses"][name], flush=True)
+    for name, T, p in groups[:3]:
+        out["lemma"][name] = lemma_summary(T, all_subgroups(T), 3 if p == 2 else 2)
+        print("lemma", name, out["lemma"][name], flush=True)
+    for p in (3, 5):
+        out["examples"]["P(%d) <x>" % p] = p_group_example(p)
+        print("P(%d), L = <x>: (|L|, |I|) =" % p, out["examples"]["P(%d) <x>" % p], flush=True)
+    for name, T, x, g in (("S3", dihedral(3), 3, 1), ("D4", dihedral(4), 4, 1)):
+        out["examples"][name + " diagonal"] = diagonal_prime_order(T, x, g)
+        print(name, "diagonal (|L|, |I|) =", out["examples"][name + " diagonal"], flush=True)
+    for p in (3, 5, 7):
+        out["least_power"]["P(%d)" % p] = {r: least_power(p * p, p, r) for r in (2, 3, 4)}
+        print("P(%d) least powers r=2,3,4:" % p, out["least_power"]["P(%d)" % p], flush=True)
+    Q16 = quaternion16()
+    out["outside"]["Q16 hypotheses (p=2)"] = hypotheses(Q16, 2)
+    out["outside"]["Q16 least exponent"] = least_exponent(Q16, all_subgroups(Q16))
+    print("Q16", out["outside"], flush=True)
+    Q16sq = power_table(Q16, 2)
+    out["outside"]["Q16^2 2-generated least exponent"] = least_exponent(Q16sq, two_generated_subgroups(Q16sq))
+    print("Q16^2 2-generated", out["outside"]["Q16^2 2-generated least exponent"], flush=True)
+    os.makedirs(args.out_dir, exist_ok=True)
+    with open(os.path.join(args.out_dir, "pcentral_cubes.json"), "w") as f:
+        json.dump(out, f, indent=1)
+
+
+if __name__ == "__main__":
+    main()

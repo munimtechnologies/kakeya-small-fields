@@ -12,13 +12,15 @@ rank-2 Kakeya set in F_2^n has at least 2^(3n/4) points, which answers the case 
 Kopparty, Lev, Saraf and Sudan singled out (new in 1.5). The same argument works in every finite
 group: a set containing a translate of every r-dimensional cube {a + sum of d_i over i in S} of a
 group of order N has at least N^(1 - 2^(-r)) elements, which is sharp up to a logarithmic factor
-(new in 1.6).**
+(new in 1.6). When only a family D of cubes must be covered, abelian groups need |D|^((1 - 2^(-r))/r)
+points, non-abelian groups can need fewer, and the loss is measured by conjugacy classes
+(new in 1.7, in finite-groups.md).**
 
-By MV2 of Munim, Inc. Version 1.6, 2026-10-15. This note and its code were researched and written
+By MV2 of Munim, Inc. Version 1.7, 2026-10-16. This note and its code were researched and written
 with AI agents working in MV2's name; every claim below is proved here, and the finite cases are
 checked by the tests in `test_kakeya_entropy.py`, `test_search_h2.py`, `test_structure.py`,
-`test_exact_h2.py`, `test_higher_rank.py`, `test_f2_rank.py` and `test_cubes.py`. Text CC BY 4.0,
-code Apache-2.0.
+`test_exact_h2.py`, `test_higher_rank.py`, `test_f2_rank.py`, `test_cubes.py` and `cube_groups/`.
+No human mathematician has checked the proofs. Text CC BY 4.0, code Apache-2.0.
 
 ## 1. Summary
 
@@ -93,6 +95,16 @@ The rest of the note narrows down where such a map could be, and then turns to f
   generally, any configuration of m points whose coefficients are 0 and 1 needs N^(1 - 1/m), as
   many as m points in general position, although counting gives only N^(r/(r+1)) for cubes. This
   settles a natural family of cases of the "universal set problem" of Alon, Bukh and Sudakov.
+- **Section 13 (new in 1.7, in `finite-groups.md`).** If K only has to contain a translate of the
+  cube of every r-tuple in a family D, abelian groups give |K| >= |D|^((1 - 2^(-r))/r), and this
+  is sharp (Theorem 9). Non-abelian groups can do better, down to |D|^(1/(r+1)) (Propositions 5
+  and 6), even in nilpotent groups. The loss is measured by a fibre count that is at most the
+  largest conjugacy class size b(G): |K|^8 b(G) >= |D|^3 for squares, which is sharp
+  (Theorems 10 to 13). For r = 3 the right loss exponent is between 1/6 and 1/4.
+- **Section 14 (new in 1.7, in `finite-groups.md`).** An appendix on 2-groups whose involutions
+  are all central: is |L| <= |Omega_1(L)|^(e+1)? Settled for class 2 and for groups with a
+  self-centralising normal subgroup Z_4^k, Z_4^a x Z_2, or Z_4^a x Z_2^b with
+  (a - 1)(b - 1) <= 2. The general case is open.
 
 ## 2. Background and prior bounds
 
@@ -826,7 +838,8 @@ that the d whose cubes K must contain are all of G^r, each once. The exponents o
 fails.
 
 **Where the method stops.** The proof needs coefficients 0 and 1: the two points of each pair must
-differ by a single d_r. For a progression {a, a + d, a + 2d} it gives only |K| >= N^(1/3). For
+differ by a single d_r. For a progression {a, a + d, a + 2d} it gives only |K| >= N^(1/3), and
+there the trivial bound is better: K - K contains every d, so |K|^2 >= N and |K| >= N^(1/2). For
 k-term progressions in Z_p this is a Kakeya-type problem; ABS recall Bourgain's observation that
 strong lower bounds there would imply the Euclidean Kakeya conjecture, and it stays open. Over
 F_q with q >= 3, a Kakeya set of rank r must contain the images of all of F_q^r, and section 11
@@ -849,34 +862,69 @@ work on Hilbert cubes we found (for example Cilleruelo, arXiv 1310.1646) is abou
 contain no cube, and ABS bound k-universal sets by counting. The argument is elementary, so it may
 be known; if so, please open an issue and we will cite it.
 
-## 13. What is and is not claimed
+## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
+
+This section is in [`finite-groups.md`](finite-groups.md), with its proofs and checks. In short:
+if K must contain a left translate of the cube {A d_1^(t_1) ... d_r^(t_r)} only for the r-tuples
+d in a family D, then
+
+- in every finite abelian group |K| >= |D|^((1 - 2^(-r))/r), and this is sharp (Theorem 9);
+- in every finite group |K| >= |D|^(1/(r+1)), and this is sharp up to a factor 2 in AGL(1, q)
+  and up to a constant in nilpotent groups of class 2 (Propositions 5 and 6). So the abelian
+  bound fails in some non-abelian groups, and it holds in every power of G only when G is abelian
+  (Corollary 10);
+- the loss is measured by a fibre count beta(D) <= b(G) <= |G'|, where b(G) is the largest
+  conjugacy class size: |K|^8 beta(D) >= |D|^3 for squares, with the exponent 1/8 sharp
+  (Theorems 10 and 11), and |K|^24 b(G)^6 >= |D|^7 for r = 3 (Theorem 12). The right loss exponent
+  for r = 3 lies between 1/6 and 1/4 (Theorem 13 and section 13 E);
+- in powers of a group the single-subgroup constructions are governed by the central density of
+  subgroups (Propositions 12 to 15, Theorem 14).
+
+## 14. Appendix: 2-groups whose involutions are all central (new in 1.7)
+
+Also in [`finite-groups.md`](finite-groups.md). For a finite 2-group L of exponent 2^e whose
+involutions are all central, is |L| <= |Omega_1(L)|^(e+1)? The generalised quaternion groups show
+that e + 1 cannot be lowered. The answer is yes for e <= 2, for class 2 (Theorem 15), when
+x -> x^(2^(e-1)) is a homomorphism (Proposition 16), and when L has a self-centralising normal
+subgroup Z_4^k (Theorem 16) or Z_4^a x Z_2^b with ab - s(b - 1) <= a + b or
+(a - 1)(b - 1) <= 2 (Theorems 17 and 18). The general case is open.
+
+## 15. What is and is not claimed
 
 - Proved here: Theorem 1 for every prime power q, Lemma 2, the limit of one-coordinate witnesses
   (section 4), the deterministic q = 3 version, the entropy formula (Theorem 2 and its corollaries),
   Theorem 3 with Lemma 4, Theorem 4 and Corollary 3, and for higher rank Theorems 5, 6 and 7,
   Lemma 5, Corollaries 4, 5 and 6 and Propositions 1, 2 and 3; for finite groups Lemma 6,
-  Theorem 8, Proposition 4 and Corollaries 7 and 8.
+  Theorem 8, Proposition 4 and Corollaries 7 and 8; in `finite-groups.md`, Theorems 9 to 18,
+  Lemmas 7 to 14, Propositions 5 to 16 and Corollaries 9 to 11.
 - Computed (exhaustive, with the checks above): max S = 36 over all maps on F_3^2, so h_2 = 2 h_1
   for q = 3; the values K_r(n, 2) for n <= 4; the least 2-cube-universal sets of 25 groups of
-  order at most 16, each at least N^(3/4).
+  order at most 16, each at least N^(3/4); and the checks listed in the verification table of
+  `finite-groups.md`.
 - New, as far as we could find: every bound in the table for q >= 4, the explicit construction at
   q = 3, Theorems 2, 3 and 4, Lemma 4, the value h_2 = 2 h_1 for q = 3, every rank-r bound in
   section 10 for q >= 3 and r >= 2, including the second-order term of Corollary 5, the exact
-  value beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 2 (Theorem 7 and Corollary 6), and the lower
-  bound of Theorem 8 for patterns with linear relations (Lemma 6, Corollaries 7 and 8). The bound
-  for q = 3 in section 1 is not new (KLSS proved it with a random construction), and neither is the
-  case r = 1 of Theorem 7, the upper bound of Corollary 6 (KLSS Corollary 11), Proposition 4 (the
-  standard random construction) or Theorem 8 for m-universal sets (ABS, up to a factor 2).
+  value beta_(2,r) = 2^(1 - 2^(-r)) for every r >= 2 (Theorem 7 and Corollary 6), the lower
+  bound of Theorem 8 for patterns with linear relations (Lemma 6, Corollaries 7 and 8),
+  Theorems 9 to 13 and 15 to 18, Propositions 5 to 11 and 13 to 15, and the use of Theorem 14.
+  The bound for q = 3 in section 1 is not new (KLSS proved it with a random construction), and
+  neither is the case r = 1 of Theorem 7, the upper bound of Corollary 6 (KLSS Corollary 11),
+  Proposition 4 (the standard random construction), Theorem 8 for m-universal sets (ABS, up to a
+  factor 2), the group theory behind Theorem 14 (Xu), Lemma 14 (very likely known) or the
+  Chevalley-Warning steps.
 - Not claimed: any value of beta_q for q >= 3 or of beta_(q,r) for q >= 3, any improvement below
   1.8899 for q = 3, or that h_k = k h_1 for k >= 3. The gap between q * 2^(-(q-1)/q) and
-  q^2/(2q - 1) is open for every q >= 3.
+  q^2/(2q - 1) is open for every q >= 3. Also not claimed: the r = 3 loss exponent of section 13,
+  the case k = 2 of section 14, and the general question of section 14.
 - The O(n^(2/3) log n) error term means the bounds of sections 3 to 10 beat earlier constructions
   only in large dimension. They are about the exponential growth rate, not about small cases.
+- No human mathematician has checked the proofs in this repository. The finite checks are exact,
+  but they test the statements only on the cases listed.
 - `paper/kakeya-small-fields.tex` covers Theorems 1 to 3 in their version 1.1 form. Sections 7 to
   10 of this README are newer than that preprint. `paper/kakeya-rank-r-f2.tex` is a short
   self-contained note with sections 11 and 12.
 
-## 14. The code and the tests
+## 16. The code and the tests
 
 `kakeya_entropy.py` is pure Python with no dependencies. It implements F_q for q in {2, 3, 4, 5, 7,
 8, 9, 11, 13, 16, 25, 27}, the maps g_t, the entropy sums, the block construction, the deterministic
@@ -888,7 +936,9 @@ the section 7 quantities. `search_h2.py` holds a numpy exhaustive search and an 
 Kakeya sets of F_2^n, the exhaustive search for small n (`python f2_rank.py small`), the slice
 entropies of Lemma 5 and a local search for base points that would break it. `cubes.py` (pure
 Python) holds section 12: finite groups given by multiplication tables, patterns, the search for
-the least T-universal set (`python cubes.py small`), and the slice entropies of Lemma 6.
+the least T-universal set (`python cubes.py small`), and the slice entropies of Lemma 6. The folder
+`cube_groups/` (pure Python) holds the checks of sections 13 and 14, one module per group of
+statements, each with its own test file; the verification table in `finite-groups.md` lists them.
 `python -m unittest -v` checks:
 
 - the field tables, and the fibre structure of x^2 + t x in all twelve fields;
@@ -910,9 +960,10 @@ the least T-universal set (`python cubes.py small`), and the slice entropies of 
 - the higher-rank results of section 10 (listed there);
 - the F_2 results of section 11 (listed there);
 - Lemma 6 and Theorem 8 in 25 groups (listed in section 12);
+- the finite-group results of sections 13 and 14 (listed in `finite-groups.md`);
 - every number quoted in this README.
 
-## 15. Sources
+## 17. Sources
 
 - S. Kopparty, V. F. Lev, S. Saraf, M. Sudan, "Kakeya-type sets in finite vector spaces",
   J. Algebraic Combin. 34 (2011) 337-355; arXiv 1003.3736 (Theorems 1, 4, 6, 7, 8, 10,
@@ -937,6 +988,8 @@ the least T-universal set (`python cubes.py small`), and the slice entropies of 
   scale", arXiv 2511.02864 (2025).
 - T. Tao, "New Nikodym set constructions over finite fields", arXiv 2511.07721 (2025).
 - I. Csiszar, "The method of types", IEEE Trans. Inform. Theory 44 (1998) 2505-2523 (class sizes).
+- T. Tao, "Product set estimates for non-commutative groups", Combinatorica 28 (2008);
+  arXiv math/0601431. The other sources for sections 13 and 14 are listed in `finite-groups.md`.
 - MV2 of Munim, Inc., kakeya-conjecture (exposition, K(3, 3) = 13, the base-1.9626 construction),
   https://github.com/munimtechnologies/kakeya-conjecture
 
