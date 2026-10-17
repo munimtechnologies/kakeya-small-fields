@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.4, 2026-10-16. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.5, 2026-10-17. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,14 +10,18 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
-Version 1.7.4 adds Lemma 20, Theorem 22 and Corollary 13 to section 14. A two-dimensional form of
-the last step of Theorem 21 settles the two cases that 1.7.3 left open, and the answer is now yes
-for every Z_4^a x Z_2^b with a <= 4 (every b), b <= 1 or (a, b) = (5, 2). Version 1.7.3 added
-Lemmas 18 and 19, Theorem 21 and Corollary 12 (one argument for every action of large rank, which
-settled a <= 3 for every b). Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20
-(Z_4^3 x Z_2^3), and version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19
-(Z_4^4 x Z_2^2). README sections 14 and 15 still describe 1.7; where they differ, this file is the
-current statement.
+Version 1.7.5 adds Lemmas 21 to 23 and Proposition 20 to section 14. They reduce what is left of
+the Z_4^a x Z_2^b family to one question of linear algebra over F_2, about the number M(t) defined
+before Lemma 21: M(t) <= t + 1 for every t would settle the whole family. We prove M(t) >= t,
+compute M(1) = 1 and M(2) = 2 exactly, find no case with t = 3 that needs more than 3, and state a
+normal form (Lemma 23) that would give M(t) = t; we prove it when the action has rank <= 1, and
+its general case is a conjecture. The full computer checks of Lemmas 19 and 20 passed. Version
+1.7.4 added Lemma 20, Theorem 22 and Corollary 13 (the answer is yes for every Z_4^a x Z_2^b with
+a <= 4 (every b), b <= 1 or (a, b) = (5, 2)). Version 1.7.3 added Lemmas 18 and 19, Theorem 21 and
+Corollary 12 (one argument for every action of large rank, which settled a <= 3 for every b).
+Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20 (Z_4^3 x Z_2^3), and version 1.7.1
+added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19 (Z_4^4 x Z_2^2). README sections 14
+and 15 still describe 1.7; where they differ, this file is the current statement.
 
 ## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
 
@@ -749,43 +753,152 @@ three-dimensional Lemma 20 would settle both if it gave a subspace of T_y of cod
 on which sigma vanishes (Lemma 18 then gives n <= 2a + 3b). The argument above is too weak there:
 when sigma(K) = 0 it only bounds the codimension by dim End(X) = 9.
 
-*Status of Theorems 16 to 22.* They are proved by hand above. Full runs in a sealed container
-passed on 2026-10-16, and every number matched its prediction: `cube_groups/z4degree.py`
-(Theorem 16: 6 of 6 groups consistent, both controls as predicted); `cube_groups/z4z2.py`
-(Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the control with a
-non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in Theorem 18: the
-predicted nullity for every a <= 5 and b <= 4, and brute force agrees on 8 small pairs);
-`cube_groups/case42.py` (Lemma 15 for n <= 5, Lemma 16, Proposition 18 for 7 pairs up to (5, 2),
-(3, 3) and (2, 4) with its polar-only control, the counting step of Proposition 17, and the table of
-N(W) and Lam(W) in codimension 2); and `cube_groups/case33.py` (Proposition 19 over every W of
+The rest of this section (new in 1.7.5) measures exactly how much codimension Lemma 20 needs, and
+shows that this one number decides the whole family. Let X be an F_2-space of dimension t and call
+a *system* a quadratic map sigma : V -> X with polar form beta, together with a linear map
+alpha : V -> End(X), written h -> A_h, satisfying the identity of Lemma 20,
+
+    A_(h') sigma(h) = (I + A_h) beta(h, h')     for all h, h' in V.          (*)
+
+Let M(t) be the largest, over all systems, of the least codimension of a subspace of V on which
+sigma vanishes. By Lemma 21(a) below, M(t) <= t^2 + t, so it is finite.
+
+**Proposition 20 (reduction to M(t)).** In the setting of Theorem 17 with b >= 1, let y != 0 and
+t = dim(V_y n S). Then
+
+    n <= 2a + 2b + M(t) - d_y <= 2a + 2b + M(t) - t.
+
+So: (a) if M(t) <= t + 1 for every t <= a, then |L| <= |Omega|^4 for every self-centralising normal
+Z_4^a x Z_2^b with b >= 1, and with Theorem 16 the answer is yes for the whole family. (b) If some y
+has dim(V_y n S) <= 2, then n <= 2a + 2b; for dim(V_y n S) = 2 this uses the computed value
+M(2) = 2 below, so that case is computer-assisted. (c) The open cases (6, 2) and (5, 3) need only
+M(3) <= b + 3, that is M(3) <= 5 for (6, 2) and M(3) <= 6 for (5, 3).
+*Proof.* Repeat the proof of Theorem 22 with X = V_y n S of any dimension t. The projected maps
+alpha(h) make (sigma, alpha) on T_y a system, because the P-rows of the identity of Theorem 17 hold
+on all of H and sigma(h), beta(h, h') lie in X for h, h' in T_y. So sigma vanishes on a subspace of
+T_y of codimension <= M(t), and Lemma 18 gives n - a + d_y - M(t) <= a + 2b, with d_y >= t because
+X <= V_y. For (a), M(t) - t <= 1 <= b gives n <= 2a + 3b. For (b), use M(0) = 0, M(1) = 1
+(Lemma 22) and M(2) = 2. For (c), the case left by Corollary 13 has t = d_y = 3. QED
+
+**Lemma 21 (reduced systems).** Let (sigma, alpha) be a system, K = ker alpha and
+K_0 = K n ker sigma. (a) K_0 lies in the radical of beta, so sigma and alpha factor through V/K_0,
+and the quotient is again a system, of dimension rank alpha + dim sigma(K) <= t^2 + t.
+(b) A_h sigma(h) = 0, and A_(h') sigma(h) lies in Im(I + A_h) for all h and h'.
+(c) If t >= 2 and alpha(V) = End(X), then sigma = 0.
+So M(t) is the largest least codimension over the systems on V = C x F_2^y with alpha the
+projection onto a subspace C of End(X) and 0 <= y <= t: a finite list.
+*Proof.* (a) For k in K_0, (*) with h = k reads 0 = beta(k, h'). So k is in rad beta, and
+sigma(h + k) = sigma(h) + sigma(k) + beta(h, k) = sigma(h); A_(h + k) = A_h. The dimension
+count is Lemma 20's: K/K_0 is isomorphic to sigma(K), because sigma is additive on K. Two linear
+maps onto C whose kernels have the same dimension differ by an automorphism of V, which carries
+solutions to solutions. (b) h' = h in (*) gives the first claim (beta is alternating); (*) itself
+gives the second. (c) Suppose sigma(h) = x != 0 and put A = A_h. Since alpha(V) x = X, (b)
+makes I + A invertible. So sigma vanishes at every h' whose A_(h') = B has eigenvalue 1. For
+such h', (*) with the roles exchanged gives 0 = (I + B) beta(h, h'), and (*) itself gives
+B x = (I + A) beta(h, h'). Hence (I + B)(I + A)^(-1) B x = 0 for every B with eigenvalue 1. Since
+A x = 0, (I + A)^(-1) x = x. Pick z outside {0, x} and put w = (I + A)^(-1) z; then w is not 0 or x,
+so x and w are independent. Let B x = z, and B w = x + w + z if t = 2; if t >= 3, let B w = 0, B u = u
+for a third basis vector u, and B = 0 on the rest of a basis. In both cases B has eigenvalue 1
+(on x + w, or on u) and (I + B) w != 0 (it is x + z, or w), a contradiction. QED
+
+**Lemma 22 (Lemma 15 needs only codimension 1).** In the setting of Lemma 15, q vanishes on a
+subspace of codimension 1. So M(1) = 1, and in Theorem 21 the case V_y n S = span(v) gives
+n <= 2a + 2b + 1 - d_y <= 2a + 2b.
+*Proof.* If B = 0, q is linear and vanishes on its kernel. If B != 0, the proof of Lemma 15 shows
+that q vanishes on R = rad B, that dim V/R = 2, and that q = 1 only on the coset h* + R. Pick c
+outside R and outside h* + R. On R + span(c), q(c + r) = q(c) + q(r) + B(c, r) = 0. The system
+q = x_1 x_2 + x_2, p = x_1 on F_2^2 satisfies Lemma 15's equation and q != 0, so codimension 1
+is needed. QED
+
+**Lemma 23 (a normal form).** Let (sigma, alpha) be a system with dim X = t.
+(a) For every h, sigma(h) lies in ker A_h, and ker A_h lies in Im(I + A_h).
+(b) If sigma(h) = (I + A_h) lam(h) for a linear map lam : V -> X, then sigma vanishes on ker lam,
+a subspace of codimension <= t. For a given linear lam, the map h -> (I + A_h) lam(h) satisfies (*)
+if and only if A_h (I + A_h) lam(h') + (A_h A_(h') + A_(h') A_h) lam(h) = 0 for all h and h'.
+(c) If rank alpha <= 1 (in particular if t = 1), every system has the form of (b). More generally,
+if the form holds on one complement of K = ker alpha, it holds on V, with lam = sigma on K.
+(d) M(t) >= t. On V = F_2^(2t) with coordinates (u, v), the maps A_h = diag(u_1, ..., u_t) and
+sigma_i(h) = (1 + u_i) v_i form a system; sigma vanishes on {v = 0} and on no subspace of
+codimension < t.
+*Proof.* (a) Lemma 21(b) gives A_h sigma(h) = 0. Let X_0 be the set of vectors killed by some power
+of A_h. A_h is nilpotent on X_0, so I + A_h maps X_0 onto itself, and ker A_h <= X_0 <= Im(I + A_h).
+(b) The first claim is clear. Expanding sigma(h + h') gives beta(h, h') = A_h lam(h') + A_(h') lam(h),
+and then (I + A_h) beta(h, h') + A_(h') sigma(h) is exactly the displayed expression.
+(c) For h and h' in K, (*) reads 0 = beta(h, h'), so sigma is additive on K. Let C' be a complement
+of K on which sigma(c) = (I + A_c) lam(c) with lam linear, and put lam = sigma on K. For k in K and
+c in C', (*) with h = k and h' = c gives beta(k, c) = A_c sigma(k), so
+sigma(c + k) = sigma(c) + sigma(k) + A_c sigma(k) = (I + A_c)(lam(c) + lam(k)), and A_(c + k) = A_c.
+If rank alpha = 0, C' = 0. If rank alpha = 1, C' = span(e), and by (a) there is a v with
+(I + A_e) v = sigma(e); put lam(e) = v.
+(d) beta_i(h, h') = u'_i v_i + u_i v'_i, and (1 + u_i) beta_i(h, h') = u'_i (1 + u_i) v_i, which is
+the i-th entry of A_(h') sigma(h), since u_i (1 + u_i) = 0. (This is the form of (b) with lam = v.)
+In the coordinates (u_i, v_i), the zero set of sigma_i is {(0, 0), (1, 0), (1, 1)}, which contains
+no 2-dimensional subspace. So a subspace U on which sigma vanishes projects to a subspace of
+dimension <= 1 in each of the t coordinate planes, dim U <= t, and its codimension is >= t. QED
+
+**Conjecture (normal form).** Every system has the form of Lemma 23(b). By Lemma 23(c) it is enough
+to prove this when alpha is one-to-one. It would give M(t) = t, hence n <= 2a + 2b in the setting of
+Theorem 17 whenever b >= 1 (Proposition 20), and the answer yes for every Z_4^a x Z_2^b.
+The pointwise choice in the proof of Lemma 23(a) is not enough: in Lemma 23(d) the unique solution
+w of (I + A_h) w = sigma(h) with w killed by a power of A_h is sigma(h) itself, which is not linear
+in h. A proof has to choose lam globally.
+
+*Computation.* `cube_groups/plane_search.py` (full run on 2026-10-16; every pre-registered
+prediction matched) uses Lemma 21 to list the systems. For t = 1, the 4 systems give M(1) = 1. For
+t = 2, all 67 subspaces C of M_2(F_2) with y <= 2 (201 systems, every solution sigma examined and
+every least codimension computed exactly by a branch-and-bound search) give M(2) = 2, attained by
+20 systems; the three systems with C = End(X) have no non-zero solution (Lemma 21(c)), and K_0 lay
+in rad beta every time (Lemma 21(a)). For t = 3 it examined 864 systems built from 18 structured
+subspaces of M_3(F_2) (diagonal, triangular, symmetric, the field F_8, Jordan blocks, maps fixing a
+line or a plane, and others) and random subspaces of them, 52 of them only on sampled solutions.
+The largest least codimension found is 3 (in 23 systems), none needs 4 or more, and C = End(X) again
+has no non-zero solution. So M(1) = 1, M(2) = 2, and M(3) >= 3 by Lemma 23(d); the samples are
+consistent with M(3) = 3, which would settle (6, 2) and (5, 3). `cube_groups/normal_form.py` (new
+in 1.7.5, queued) tests the conjecture itself, by ranks: for every system with t <= 2, for t = 3
+systems like those above, for every C of dimension <= 2 in M_3(F_2), and for some t = 4 systems, it
+asks whether every solution of (*) has the form of Lemma 23(b). It will be added to the repository
+once its full run has been graded.
+
+*Status of Theorems 16 to 22 and Lemmas 21 to 23.* They are proved by hand above. Full runs in a
+sealed container passed on 2026-10-15 and 2026-10-16, and every number matched its prediction:
+`cube_groups/z4degree.py` (Theorem 16: 6 of 6 groups consistent, both controls as predicted);
+`cube_groups/z4z2.py` (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the
+control with a non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in
+Theorem 18: the predicted nullity for every a <= 5 and b <= 4, and brute force agrees on 8 small
+pairs); `cube_groups/case42.py` (Lemma 15 for n <= 5, Lemma 16, Proposition 18 for 7 pairs up to
+(5, 2), (3, 3) and (2, 4) with its polar-only control, the counting step of Proposition 17, and the
+table of N(W) and Lam(W) in codimension 2); `cube_groups/case33.py` (Proposition 19 over every W of
 codimension <= b - 1 for nine pairs up to (3, 3) and (2, 4), both controls, the linear core of
-Lemma 17, and the case count of Theorem 20). `cube_groups/thm21.py` (new in 1.7.3) checks Lemma 19
-over every W of codimension <= 2b for (a, b) up to (4, 2), (2, 3) and (2, 4), including the
-sharpness count at codimension 2b, recomputes the case count of Corollary 12 for every a <= 8 and
-b <= 8, and re-checks, on the explicit groups of z4z2.py, that sigma(T_y) lies in V_y and that
-Lemma 18 holds; those groups are small, so this is only a consistency check. Its unit tests passed
-when it was committed, and its full run is queued. `cube_groups/thm22.py` (new in 1.7.4) is
-committed separately, only if its unit tests pass, and its full run is queued. It solves the
-identity of Lemma 20 for every subspace C of M_2(F_2) and every dimension m = 2 to 8 of V (two
-random maps alpha onto C each, 904 systems), checks every claim of the lemma on each solution
-sigma (all of them, or 64 random ones), checks the table of largest subspaces used in its proof,
-runs a control (some of 200 random sigma on F_2^7 vanish on no subspace of codimension <= 4, so the
-identity is needed), and recomputes the case count of Corollary 13 for every a <= 8 and b <= 8. The
-group-theoretic steps of Proposition 17, Lemma 18, Theorems 19 to 22 and Corollaries 12 and 13 are
-checked by hand only.
+Lemma 17, and the case count of Theorem 20); `cube_groups/thm21.py` (Lemma 19 over every W of
+codimension <= 2b for nine pairs (a, b) up to (4, 2), (2, 3) and (2, 4), with no violation and the
+predicted sharpness counts at codimension 2b; the case count of Corollary 12 for every a <= 8 and
+b <= 8; and, on the explicit groups of z4z2.py and its control, that sigma(T_y) lies in V_y and
+that Lemma 18 holds, which is only a consistency check because those groups are small);
+`cube_groups/thm22.py` (Lemma 20 on 904 systems, every subspace C of M_2(F_2) with m = 2 to 8,
+with no violation of any of its claims, rank alpha + dim sigma(K) <= 4 and codim K_0 <= 4 every
+time; the table of largest subspaces in its proof; the control, where 87 of 200 random sigma on
+F_2^7 vanish on no subspace of codimension <= 4, so the identity is needed; and the case count of
+Corollary 13 for every a <= 8 and b <= 8, which leaves (6, 2) and (5, 3) open with s = 3 and r = 6
+only); and `cube_groups/plane_search.py` (Lemmas 21(a) and 21(c), Lemma 22, and the values of M(t)
+above). The group-theoretic steps of Proposition 17, Lemma 18, Theorems 19 to 22, Corollaries 12
+and 13 and Proposition 20 are checked by hand only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
 Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 4 (every b), when b <= 1, when
 (a, b) = (5, 2), when rank Q >= b(a - 2) + 1 (in particular when Q has full rank), when b >= 2 and
 rank Q >= b(a - 3) + 1, when b >= 2 and dim span sigma(H) <= 2, when ab - s(b - 1) <= a + b, and
-when dim span sigma(H) <= 1 and a + b >= 3. Computed: true on every subgroup of Q_16, Q_32, Q_8^2
-and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact search over all 324 conjugacy
-classes of 7-dimensional subspaces of M_3(F_2) found no counterexample with A ~ Z_4^3, as
-Theorem 16 predicts. Open: Z_4^a x Z_2^b with (a - 4)(b - 1) >= 2, starting with (6, 2) and
-(5, 3), where only the case s = 3, W = K_X is left; homocyclic Z_(2^m)^k with m >= 3; the general
-case. A classification of the 2-groups with exactly three involutions (k = 2) is in Janko,
-J. Algebra 291 (2005) 505-533. We could not read it, so the case k = 2 is not claimed.
+when dim span sigma(H) <= 1 and a + b >= 3. Reduced: by Proposition 20, every remaining
+Z_4^a x Z_2^b case follows from M(t) <= t + 1, a statement about quadratic maps over F_2 alone;
+M(t) >= t, M(1) = 1 and M(2) = 2, and the normal-form conjecture would give M(t) = t. Computed:
+true on every subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to
+order 256. An exact search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2)
+found no counterexample with A ~ Z_4^3, as Theorem 16 predicts. No t = 3 system among 864 needs
+codimension 4. Open: Z_4^a x Z_2^b with (a - 4)(b - 1) >= 2, starting with (6, 2) and (5, 3),
+where only the case s = 3, W = K_X is left and M(3) <= 5 would settle both; homocyclic
+Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly three
+involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the case
+k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -825,14 +938,16 @@ concordance below maps them to this file.
 | hommap.py | the lemma in Theorem 18 | passed |
 | case42.py | Lemmas 15 and 16, Proposition 18, the counting step of Proposition 17 | passed |
 | case33.py | Proposition 19 (two controls), the linear core of Lemma 17, the case count of Theorem 20 | passed |
-| thm21.py | Lemma 19 (with its sharpness count), the case count of Corollary 12, a group check of Lemma 18 and Theorem 21 | queued (new in 1.7.3) |
-| thm22.py | Lemma 20 (904 systems; control), the subspace table in its proof, the case count of Corollary 13 | queued (new in 1.7.4) |
+| thm21.py | Lemma 19 (with its sharpness count), the case count of Corollary 12, a group check of Lemma 18 and Theorem 21 | passed |
+| thm22.py | Lemma 20 (904 systems; control), the subspace table in its proof, the case count of Corollary 13 | passed |
+| plane_search.py | Lemmas 21 and 22; M(1) = 1 and M(2) = 2 exactly (201 systems); 864 systems with t = 3 | passed (new in 1.7.5) |
+| normal_form.py | the normal-form conjecture after Lemma 23, and Lemma 23(a), (c), (d) | queued (new in 1.7.5; added after its run) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
 uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 22 and Corollaries 12 and 13, and (until their runs finish) Lemmas 19 and 20. Two
-numbers come from full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of
-Proposition 9 and the order-2048 group checks.
+Theorems 19 to 22, Corollaries 12 and 13 and Proposition 20, Lemma 21(b), and (until its run
+finishes) Lemma 23. Two numbers come from full runs that are too slow for the unit tests: the
+Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -846,8 +961,10 @@ Prop 18 -> Proposition 16; Lemma 20 -> Lemma 11; Lemma 21 -> Lemma 12; Lemma 22 
 Lemma 38a -> Lemma 14; Theorem 38 -> Theorem 16; Theorem 39 -> Theorem 17; Theorem 40 ->
 Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.1 is checked by
 `case42.py`, Theorem 20 of 1.7.2 by `case33.py`, Lemma 19, Theorem 21 and Corollary 12 of 1.7.3 by
-`thm21.py`, and Lemma 20, Theorem 22 and Corollary 13 of 1.7.4 by `thm22.py`. The docstrings of
-those four modules already use the labels of this file.
+`thm21.py`, Lemma 20, Theorem 22 and Corollary 13 of 1.7.4 by `thm22.py`, and Lemmas 21 and 22 of
+1.7.5 by `plane_search.py` (its docstring calls them "draft Lemma 21" and "draft Lemma 22", and
+uses the system sigma = x_1 x_2, alpha = x_1 + x_2 as its example for M(1) = 1). The docstrings of
+these five modules already use the labels of this file.
 
 ## Sources for this file
 
