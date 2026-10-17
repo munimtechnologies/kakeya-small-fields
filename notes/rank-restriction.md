@@ -5,9 +5,9 @@ addendum to section 14 of [finite-groups.md](../finite-groups.md) (version 1.7.9
 continues from there (Lemma 30, Theorem 26, Proposition 24, Corollary 17), and the note will be
 merged into finite-groups.md in a later version. It was researched and written with AI agents
 working in MV2's name. The proofs are by hand; `cube_groups/m6_sharp.py` checks them on examples
-and random systems (its unit tests gate this release, and its full run is queued with
-pre-registered predictions). No human mathematician has checked the proofs. Text CC BY 4.0, code
-Apache-2.0.
+and random systems. Its unit tests gated this release, and its full run passed on 2026-10-17 with
+every pre-registered prediction matched (see Computation). No human mathematician has checked the
+proofs. Text CC BY 4.0, code Apache-2.0.
 
 ## What changes
 
@@ -191,8 +191,14 @@ The unit tests check Lemma 30 by hand-verified values:
 - on a pair that is not a system, where (a) fails.
 
 They also check the table and the settled cases. These tests passed before this version was
-published. The full run is queued with pre-registered predictions, and its result will be recorded
-when finite-groups.md absorbs this note.
+published.
+
+The full run (2026-10-17, 68 seconds on one CPU, predictions written down before it ran) passed
+with every graded prediction matched. For t = 3, 4 and 5 it made 8,106 checks of Lemma 30(a) and
+checked Lemma 30(b) at 5,916 vectors of 1,038 maximal anisotropic subspaces, with no failure. The
+largest anisotropic subspace it found had dimension exactly t for each t. The controls did fail as
+they should: part (a) failed on all 300 pairs that are not systems, and the rank t - 1 claim failed
+599 times on the anisotropic maps that are not systems. The table and the settled cases matched.
 
 ## Prior work
 
