@@ -30,7 +30,10 @@ Vectors of F_2^m are int bitmasks. A 2 x 2 matrix is a 4-bit mask with entry (r,
 A quadratic map sigma = (q_1, q_2) is stored as two 2^m-bit masks (bit h of the first is q_1(h)).
 Pure Python, no dependencies.
 
-Usage: python thm22.py [--out-dir DIR]
+The full Lemma 20 run (m = 2..8, 904 systems) can be split so that a slow machine finishes it in
+parts: `--m-list 2,3,4,5,6` gives 636 systems and `--part lemma20 --m-list 7,8` the other 268.
+
+Usage: python thm22.py [--out-dir DIR] [--m-list 2,3,...] [--part all|lemma20] [--out-name NAME]
 """
 import argparse
 import itertools
@@ -365,19 +368,35 @@ def settled_predicted(a, b):
 BOUND_CASES = [(5, 2), (4, 3), (4, 8), (6, 2), (5, 3), (7, 2), (8, 1)]
 
 
+def write_out(out, out_dir, name):
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, name), "w") as f:
+        json.dump(out, f, indent=1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out-dir", default=".")
+    ap.add_argument("--m-list", default="2,3,4,5,6,7,8",
+                    help="dimensions m of V for the Lemma 20 run, comma-separated")
+    ap.add_argument("--part", choices=["all", "lemma20"], default="all",
+                    help="all: every check; lemma20: only the Lemma 20 systems")
+    ap.add_argument("--out-name", default="thm22.json")
     args = ap.parse_args()
-    out = {}
+    m_list = tuple(int(x) for x in args.m_list.split(","))
+    out = {"m_list": list(m_list), "part": args.part}
+    if args.part == "lemma20":
+        st = lemma20_run(m_list=m_list, verbose=True)
+        out["lemma20"] = st
+        out["all_match"] = st["match"]
+        print(f"lemma20: {json.dumps(st, sort_keys=True)}", flush=True)
+        print(f"SUMMARY all_match {st['match']}", flush=True)
+        write_out(out, args.out_dir, args.out_name)
+        return
     tab = m2_table()
     out["m2_table"] = tab
     ok = tab == M2_TABLE_PREDICTED
     print(f"m2 table (dim U -> largest dim C): {tab}, match {ok}", flush=True)
-    st = lemma20_run(verbose=True)
-    out["lemma20"] = st
-    ok = ok and st["match"]
-    print(f"lemma20: {json.dumps(st, sort_keys=True)}", flush=True)
     ctl = control_run()
     out["control"] = ctl
     ok = ok and ctl["match"]
@@ -403,11 +422,14 @@ def main():
     ok = ok and out["bounds"]["5,2"]["settled"] and out["bounds"]["4,3"]["settled"]
     ok = ok and out["bounds"]["6,2"]["open"] == [[3, d, 6, 19] for d in range(3, 7)]
     ok = ok and out["bounds"]["5,3"]["open"] == [[3, d, 6, 20] for d in range(3, 6)]
+    print(f"case counts and table: all_match {ok}", flush=True)
+    st = lemma20_run(m_list=m_list, verbose=True)
+    out["lemma20"] = st
+    ok = ok and st["match"]
+    print(f"lemma20: {json.dumps(st, sort_keys=True)}", flush=True)
     out["all_match"] = ok
     print(f"SUMMARY all_match {ok}", flush=True)
-    os.makedirs(args.out_dir, exist_ok=True)
-    with open(os.path.join(args.out_dir, "thm22.json"), "w") as f:
-        json.dump(out, f, indent=1)
+    write_out(out, args.out_dir, args.out_name)
 
 
 if __name__ == "__main__":

@@ -72,6 +72,15 @@ class TestLemma20(unittest.TestCase):
         self.assertEqual(dims, {"0", "1", "2"})
         self.assertGreater(st["sigmas_spanning_X"], 0)
 
+    def test_split_runs_cover_904_systems(self):
+        # The counts only depend on which m are run: 2 trials for each subspace C of M_2(F_2)
+        # (1, 15, 35, 15, 1 of dimension 0..4) and each m >= dim C.
+        def systems(m_list):
+            return sum(2 * cnt for d, cnt in enumerate([1, 15, 35, 15, 1]) for m in m_list if m >= d)
+        self.assertEqual(systems((2, 3, 4, 5, 6)), 636)
+        self.assertEqual(systems((7, 8)), 268)
+        self.assertEqual(systems((2, 3, 4, 5, 6, 7, 8)), 904)
+
 
 class TestCaseBounds(unittest.TestCase):
     def test_settled_table(self):
