@@ -2,11 +2,13 @@
 
 MV2 of Munim, Inc., 2026-10-17. Added to kakeya-small-fields after version 1.7.10, next to
 [case-b-shapes.md](case-b-shapes.md) and [case-b.md](case-b.md). Numbering continues from
-case-b-shapes.md (Lemma 38, Lemma 39, Corollary 21, Lemma 40). This is partial progress: it settles no
-new case of Corollary 17. It was researched and written with AI agents working in MV2's name. The
-proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices over F_2 and
-their orbits, checked against hand counts, and its unit tests gated the commit that added it. Lemma 40
-was added later by hand, with no computer check yet. No human mathematician has checked the proofs.
+case-b-shapes.md (Lemma 38, Lemma 39, Corollary 21, Lemma 40, Lemma 41). This is partial progress: it
+settles no new case of Corollary 17. It was researched and written with AI agents working in MV2's
+name. The proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices
+over F_2 and their orbits, checked against hand counts, and its unit tests gated the commit that
+added it. Lemma 40 was added later by hand, with no computer check yet. Lemma 41 and
+`cube_groups/shape_c2.py` were added after that; the unit tests of shape_c2.py check the counts of
+Lemma 41 against hand counts. No human mathematician has checked the proofs.
 Text CC BY 4.0, code Apache-2.0.
 
 ## What changes
@@ -22,12 +24,17 @@ Text CC BY 4.0, code Apache-2.0.
   into one exact search per orbit of commuting pairs of 3 x 3 matrices over F_2 under
   GL_3(F_2) x GL_2(F_2). There are 7,456 commuting pairs; `cube_groups/shape_c.py` computes the
   orbits and their representatives.
-- **Lemma 40** (new, by hand). When U+ has dimension 2, the map G on ker A_u that comes from W has one
+- **Lemma 40** (by hand). When U+ has dimension 2, the map G on ker A_u that comes from W has one
   of three forms (G^2 = 0, G^2 = I, or G^2 + G + I = 0), and each form fixes how the single matrix M
   of U+ acts on the value q of sigma on W. If neither M nor M + I is singular, then ker A_u lies in
   Im A_u.
-- The split search (job m13) was queued on 2026-10-17, together with the same split at t = 5, where
-  for rank 3 it decides all of Case B (14 instances). Its predictions were written down first.
+- **Lemma 41** (new, by hand). When U+ has dimension 2, the vector M q alone decides which form of
+  Lemma 40 holds, and a Case B element can be moved to a normal form in which M, q, the value of sigma
+  on W and several more values are fixed. Case B at t = 5, rank 3, then splits into 47 exact searches
+  instead of 14. `cube_groups/shape_c2.py` builds them; it is prepared, not run.
+- The split search of Lemma 39 (job m13) was queued on 2026-10-17, together with the same split at
+  t = 5, where for rank 3 it decides all of Case B (14 instances). Its predictions were written down
+  first.
 
 ## Setting
 
@@ -45,8 +52,8 @@ vanishes on N x N. Then (Proposition 27(c)) sigma maps N linearly onto X_1, A_n 
 in R for n in N, and for h in W, beta(h, N) lies in X_1 and A_h maps X_1 into itself.
 
 The assumption 2 rho <= t is used only in Lemma 38(c) (through Lemma 36). Lemma 38(a), (b), (d),
-(e), Lemma 39 and Lemma 40 hold for every u in Case B with beta = 0 on N, without it; in particular
-for t = 5 and rank 3 (k = 2), where 2 rho = 6 > t.
+(e), Lemma 39, Lemma 40 and Lemma 41 hold for every u in Case B with beta = 0 on N, without it; in
+particular for t = 5 and rank 3 (k = 2), where 2 rho = 6 > t.
 
 Write [x] for the class of x in X/X_1. As A_u has kernel X_1 and image R, it induces an isomorphism
 T : X/X_1 -> R, T[x] = A_u x. Since x0 lies in X_1 but not in P, P + X_1 = X, so [P] = X/X_1.
@@ -145,7 +152,8 @@ invertible, (i) is impossible; if M + I is invertible, (ii) is impossible. QED
 
 The proof uses only Lemma 38(a), (d) and (e), so it holds without 2 rho <= t. It agrees with Lemma
 38(c) where that applies: if M is invertible, then beta(v, W) = span(G e_1) must miss span(e_1), so
-a = 1. Lemma 40 is not used in the split search below, so a run of that search does not depend on it.
+a = 1. Lemma 40 is not used in the split search of job m13, so a run of that search does not depend on
+it. The finer split of Lemma 41 below does use it.
 
 ## Lemma 39 (symmetries of the normal form of shape (c))
 
@@ -188,6 +196,53 @@ with all of its ordered bases.
 For k = 2 there is a single matrix M_1 and no recombination, so the orbits are the similarity classes
 of M_(t-2)(F_2): 14 of them at t = 5.
 
+## Lemma 41 (a finer normal form when U+ has dimension 2)
+
+Let k = 2 and use the normal form of Lemmas 35, 37 and 39: u = v_0, v = v_1 with sigma(v) = e_1,
+w = v_2 with phi(w) = e_1, x0 = e_0, X_1 = span(e_0, e_1), and M = M_v in the basis [e_2], ...,
+[e_(t-1)] of X/X_1. Put q = [sigma(w)], and identify q with its coordinates in that basis.
+
+**Lemma 41.** (a) The three cases of Lemma 40 are told apart by M q: case (i) holds iff M q = 0,
+case (ii) iff M q = q, and case (iii) iff M q is neither 0 nor q.
+
+(b) If some anisotropic system with dim X = t and dim V = t + 1 has a Case B element of rank t - 2,
+then it has one in this normal form where M is any chosen matrix of its similarity class, q is any
+chosen vector of its orbit under the centraliser C(M) of M in GL_(t-2)(F_2), and
+
+    case   beta(v, w)    sigma(w) - (q on e_2, ..., e_(t-1))    A_w e_0, A_w e_1    T q         also
+    (i)    0             0                                      e_1, 0              e_1
+    (ii)   x0            0 or x0                                e_1, x0             x0 + e_1
+    (iii)  x0 + e_1      0                                      e_1, x0 + e_1       x0          T M q = e_1
+
+*Proof.* (a) Each case of Lemma 40 implies the condition on M q in its row (in (iii), T q = x0 and
+T M q = e_1 are independent, so M q is neither 0 nor q, as T is one-to-one), and exactly one case
+holds. The conditions exclude each other, so M q decides the case.
+
+(b) By Lemma 39 (with k = 2 there is no recombination) we may take M to be the chosen matrix of its
+class. For g in C(M), Lemma 39 with this g keeps M (g^(-1) M g = M) and keeps w, and the new
+coordinates of sigma(w) modulo X_1 are g^(-1) q; so q can be moved anywhere in its C(M)-orbit. The
+case is the same for g^(-1) q by (a), as M g^(-1) q = g^(-1) M q. beta(v, w) = G e_1 = a x0 + b e_1 with
+(a, b) as in Lemma 40, and A_w e_0 = G x0 = e_1, A_w e_1 = G e_1 (Lemma 38(d)); T q and T M q are
+Lemma 40. Finally, replace w by w + n for n in N. This keeps phi(w) = e_1, beta(v, w) (beta vanishes
+on N), A_w on X_1 (A_n kills X_1) and q (sigma(n) and beta(w, n) lie in X_1), so the normal form is
+kept, and it adds sigma(n) + beta(w, n) to sigma(w): x0 + e_1 for n = u and e_1 + beta(v, w) for n = v.
+These span X_1 in cases (i) (e_1) and (iii) (x0), so the part of sigma(w) in X_1 can be made 0; in
+case (ii) both are x0 + e_1, so that part can be made 0 or x0. QED
+
+Counting the orbits of C(M) on the non-zero vectors of F_2^(t-2), class by class, gives 2, 10 and
+38 pairs (M, q) for t = 3, 4 and 5; case (ii) has two choices for sigma(w), so there are 3, 13 and 47
+instances. For t = 5 (m = 3), with the module structure of F_2^3 under M: the classes 0, I and the
+two irreducible cubics have one orbit each (C(M) is GL_3(F_2) or the multiplicative group of F_8,
+transitive); the rank-1 nilpotent, the regular nilpotent and their shifts by I have three (by height);
+the diagonalisable split classes have three, the non-diagonalisable ones five; and
+(x + 1)(x^2 + x + 1) and x (x^2 + x + 1) have three. Of the 38 pairs, 9 are in case (i), 9 in case (ii)
+and 20 in case (iii). The centralisers have orders 168, 168, 8, 8, 4, 4, 6, 6, 2, 2, 7, 7, 3 and 3
+(168 divided by the class sizes of the sum above).
+
+Lemma 41 is a normal form, not a contradiction. In case (iii), X_1 lies in R, so A_u^2 has rank 1 and
+X_2 = ker A_u^2 is a hyperplane; the 5-dimensional subspace U = {h : [phi(h)] in span(q, M q)} would
+give a contradiction with A(4) = 4 (Lemma 26(a)) if sigma(U) lay in X_2, but we have not shown that.
+
 ## The split search (job m13, queued)
 
 `cube_groups/shape_c.py` takes the CNF of case_b_shapes.py for shape (c) and adds the parity equations
@@ -209,6 +264,15 @@ and m13 both decide shape (c) at (6, 3), they must agree. In a verified model th
 Proposition 26(a) and Lemma 38: M_u = I, the M_n commute, (5) holds, and M_n q(y) lies in D. Its
 results will be added here.
 
+## The finer search at k = 2 (shape_c2.py, prepared)
+
+`cube_groups/shape_c2.py` adds to the CNF of shape_c.py (for k = 2 and the chosen M) the values of
+Lemma 41(b): unit clauses for sigma(w), beta(v, w), A_w e_0 and A_w e_1, and parity equations for T q
+(and T M q in case (iii)) on the columns of A_u. It adds no variables. By Lemma 41, Case B at (t, 2)
+exists if and only if one of its 3, 13 or 47 instances (t = 3, 4, 5) is satisfiable. An UNSAT answer
+here depends on Lemmas 38 to 41 (by hand), unlike the searches of case_b.py and shape_c.py, which use
+fewer of them. It is meant for whatever m13 leaves undecided at t = 5 and has not been run.
+
 ## Computation
 
 The unit tests of `cube_groups/shape_c.py` (which gated its commit) check:
@@ -223,6 +287,17 @@ The unit tests of `cube_groups/shape_c.py` (which gated its commit) check:
 - that the parity equations add exactly the predicted clauses and no variables, that coordinates
   built to satisfy (S) are accepted and give back M_u = I and M_(v_i) = M_i, and that changing one
   bit of a column of A_(v_i) is rejected.
+
+The unit tests of `cube_groups/shape_c2.py` check:
+
+- the counts of Lemma 41 against the hand counts above: 2, 10 and 38 pairs (M, q), 3, 13 and 47
+  instances, 9, 9 and 20 pairs in cases (i), (ii) and (iii) at t = 5, the centraliser orders for
+  t = 3, 4 and 5, and that the orbit sizes add up and divide the centraliser orders;
+- that the case of Lemma 41(a) is constant on every C(M)-orbit and that each representative is the
+  least vector of its orbit;
+- that the added clauses are exactly the predicted number with no new variables, and that coordinates
+  built with the fixed values are accepted while every one-bit change of sigma(w), beta(v, w), A_w e_0,
+  A_w e_1 or of a column of A_u that T q depends on is rejected.
 
 ## Prior work
 
