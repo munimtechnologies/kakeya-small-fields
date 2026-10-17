@@ -115,8 +115,9 @@ instances may not finish in time. We have no proof of Question R. In the case t 
 dim V = t + 1, the proof of Lemma 30 forces codim U+ = t - 1 and U+ = span(u, v) with sigma(v)
 outside span(sigma(u)). Then either beta(u, .) maps V onto X with kernel span(u), or its image is a
 hyperplane that misses sigma(u), with kernel span(u, v). In the second case A_v also kills
-ker A_u, so every element of span(u, v) has rank <= t - 2. We have found no contradiction in either
-case.
+ker A_u, so every element of span(u, v) has rank <= t - 2. [question-r.md](question-r.md) shows
+that the first case needs t >= 5 and pins down its shape at t = 5 (Proposition 25). We have found no
+contradiction in the second case.
 
 ## Running it
 
