@@ -20,7 +20,10 @@ this commit. No human mathematician has checked the proofs. Text CC BY 4.0, code
 - **Lemma 35** puts any Case B element in a normal form that fixes sigma(u), all of beta(u, .) and k
   columns of A_u. `cube_groups/case_b.py` turns it into an exact SAT search. Its UNSAT answer for
   (t, k) = (6, 3) would give A(6) <= 7, and for (7, 4) it would give A(7) <= 9, which settles
-  Z_4^10 x Z_2^2 (Corollary 18). The search is queued, with its predictions written down first.
+  Z_4^10 x Z_2^2 (Corollary 18).
+- **The search ran** (job m11-caseb-v1, 2026-10-17): every pre-registered prediction held, but the
+  three open instances, (6, 3), (7, 4) and (5, 2), reached their time limits undecided. See
+  "Results" below. A(6) <= 7 and A(7) <= 9 are still open.
 
 ## Setting
 
@@ -187,20 +190,52 @@ and (Q) for (*), and anisotropy) without its echelon form, and fixes by unit cla
 sigma(v_0) = e_0, beta(v_0, v_i) as in Lemma 35, and the first k columns of A_(v_0). By Lemma 35 the
 CNF is satisfiable if and only if some anisotropic system with these (t, k) has such an element.
 This fixes sigma(u), all of beta(u, .) and k columns of A_u. The plain encoding had to search over
-all of these too, and it did not decide (t, dim V) = (4, 5) within 30 minutes (sat-search.md). Whether
-the normal form is enough for t = 6 and 7 is what the run will show. Proposition 27 is not used in
-the CNF, so an answer does not depend on it.
+all of these too, and it did not decide (t, dim V) = (4, 5) within 30 minutes (sat-search.md).
+Proposition 27 is not used in the CNF, so an answer does not depend on it.
 
-The run (job m11-caseb-v1, one CPU, queued on 2026-10-17) has pre-registered predictions: SAT for
-(t, k) = (2, 1), where the system below is a model, and UNSAT for (3, 2) (A(3) = 3) and (4, 2)
-(A(4) = 4). (6, 3), (7, 4) and (5, 2) are exploratory: UNSAT gives A(6) <= 7, A(7) <= 9, and no Case B
-element of rank 3 at t = 5. A verified SAT model would be an anisotropic system with dim V > t. Its
-results will be added here.
+The run (job m11-caseb-v1, one CPU) had pre-registered predictions: SAT for (t, k) = (2, 1), where
+the system below is a model, and UNSAT for (3, 2) (A(3) = 3) and (4, 2) (A(4) = 4). (6, 3), (7, 4)
+and (5, 2) were exploratory: UNSAT would give A(6) <= 7, A(7) <= 9, and no Case B element of rank 3
+at t = 5. A verified SAT model would be an anisotropic system with dim V > t.
 
 The example for (2, 1): V = span(u, f), A_u = E_11 (it kills e_0 and fixes e_1), A_f = 0,
 sigma(u) = e_0, sigma(f) = e_1, beta(u, f) = e_1. It is an anisotropic system (sigma(u + f) = e_0), and
 u and u + f satisfy the hypotheses of Lemma 35, while f does not (beta(f, V) = span(e_1) contains
 sigma(f)).
+
+## Results (job m11-caseb-v1, 2026-10-17)
+
+The job ran on one CPU from 16:49 to 19:22 UTC on 2026-10-17 (solver CaDiCaL 1.9.5 through
+python-sat), with the predictions above written down before it was queued. **Every graded prediction
+held:**
+
+| check | predicted | result |
+|---|---|---|
+| unit tests of case_b.py (6) | pass | pass |
+| selfcheck | all true | all true: Lemma 34 (9,216 candidates, 24 systems, 6 + 18, none other); 40 random scrambles of the example, 80 normal forms reached and accepted, 320 one-bit changes all rejected, CNF and brute force agree everywhere |
+| (2, 1) | SAT, verified | SAT in 0.22 s (48 variables, 161 clauses); the model is the example above (A_u = E_11, A_f = 0) and passed the brute-force checks; ranks 0, 1, 1 |
+| (3, 2) | UNSAT | UNSAT in 0.27 s (666 variables, 3,249 clauses) |
+| (4, 2) | UNSAT | UNSAT in 1.02 s (2,252 variables, 12,099 clauses) |
+
+**The open instances were not decided.** (6, 3) reached its 60-minute limit, (7, 4) its 50-minute
+limit and (5, 2) its 40-minute limit, all UNKNOWN. So this search settles nothing new: A(6) <= 7,
+A(7) <= 9 and Case B at t = 5, rank 3, stay open.
+
+What the run does show:
+
+- The normal form helps a great deal at small sizes. With it, Case B at (t, dim V) = (4, 5) is
+  refuted in about a second, while the plain encoding of sat-search.md did not decide (4, 5) (all of
+  it, not only Case B) in 30 minutes. The UNSAT answers at (3, 2) and (4, 2) agree with
+  Proposition 21 and Theorem 26. They check only the Case B part, and they are computer results
+  that rely on the encoding.
+- It is not enough at t >= 5. The finer searches in [case-b-shapes.md](case-b-shapes.md) (job
+  m12, which also fixes a basis of U+ and its values) and [shape-c.md](shape-c.md) (job m13, which
+  also fixes the commuting matrices of Lemma 38, one instance per orbit) are the next attempts. Both
+  were waiting for compute when this was written.
+
+The raw results (one JSON file per instance, and the grader's output) are kept with the job's logs,
+not in this repository; the numbers above are copied from them. The run can be repeated with the
+commands in the module docstring of `cube_groups/case_b.py`.
 
 ## Computation
 
