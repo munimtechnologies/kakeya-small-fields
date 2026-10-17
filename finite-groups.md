@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.5, 2026-10-17. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.6, 2026-10-17. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,18 +10,23 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
-Version 1.7.5 adds Lemmas 21 to 23 and Proposition 20 to section 14. They reduce what is left of
-the Z_4^a x Z_2^b family to one question of linear algebra over F_2, about the number M(t) defined
-before Lemma 21: M(t) <= t + 1 for every t would settle the whole family. We prove M(t) >= t,
-compute M(1) = 1 and M(2) = 2 exactly, find no case with t = 3 that needs more than 3, and state a
-normal form (Lemma 23) that would give M(t) = t; we prove it when the action has rank <= 1, and
-its general case is a conjecture. The full computer checks of Lemmas 19 and 20 passed. Version
-1.7.4 added Lemma 20, Theorem 22 and Corollary 13 (the answer is yes for every Z_4^a x Z_2^b with
-a <= 4 (every b), b <= 1 or (a, b) = (5, 2)). Version 1.7.3 added Lemmas 18 and 19, Theorem 21 and
-Corollary 12 (one argument for every action of large rank, which settled a <= 3 for every b).
-Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20 (Z_4^3 x Z_2^3), and version 1.7.1
-added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19 (Z_4^4 x Z_2^2). README sections 14
-and 15 still describe 1.7; where they differ, this file is the current statement.
+Version 1.7.6 corrects section 14. The normal-form conjecture stated after Lemma 23 in version
+1.7.5 is false: Example 1 is a system with t = 3 that has no normal form. It was found by hand and
+confirmed by `cube_groups/nf_pencil.py`, and Lemma 24 gives an exact criterion for the normal form.
+Version 1.7.6 also adds Lemma 25 (zeros of sigma, and the matrices A for which A and I + A are both
+invertible), Proposition 21 (a computation: with t = 3, every system on a space of dimension 4 has
+a non-zero zero) and Theorem 23. Theorem 23 proves 3 <= M(3) <= 7. It also reduces M(3) <= 5, which
+would settle the open cases (6, 2) and (5, 3), to systems whose image contains no element of order
+7. The full runs of `normal_form.py` and `nf_pencil.py` passed. Version 1.7.5 added Lemmas 21 to 23
+and Proposition 20. They reduce what is left of the Z_4^a x Z_2^b family to one question of linear
+algebra over F_2, about the number M(t) defined before Lemma 21: M(t) <= t + 1 for every t would
+settle the whole family. Version 1.7.4 added Lemma 20, Theorem 22 and Corollary 13 (the answer is
+yes for every Z_4^a x Z_2^b with a <= 4 (every b), b <= 1 or (a, b) = (5, 2)). Version 1.7.3 added
+Lemmas 18 and 19, Theorem 21 and Corollary 12 (one argument for every action of large rank, which
+settled a <= 3 for every b). Version 1.7.2 added Lemma 17, Proposition 19 and Theorem 20
+(Z_4^3 x Z_2^3), and version 1.7.1 added Lemmas 15 and 16, Propositions 17 and 18 and Theorem 19
+(Z_4^4 x Z_2^2). README sections 14 and 15 still describe 1.7; where they differ, this file is the
+current statement.
 
 ## 13. Cubes for part of the tuples: abelian versus non-abelian groups (new in 1.7)
 
@@ -836,14 +841,77 @@ In the coordinates (u_i, v_i), the zero set of sigma_i is {(0, 0), (1, 0), (1, 1
 no 2-dimensional subspace. So a subspace U on which sigma vanishes projects to a subspace of
 dimension <= 1 in each of the t coordinate planes, dim U <= t, and its codimension is >= t. QED
 
-**Conjecture (normal form).** Every system has the form of Lemma 23(b). By Lemma 23(c) it is enough
-to prove this when alpha is one-to-one. It would give M(t) = t, hence n <= 2a + 2b in the setting of
-Theorem 17 whenever b >= 1 (Proposition 20), and the answer yes for every Z_4^a x Z_2^b.
-The pointwise choice in the proof of Lemma 23(a) is not enough: in Lemma 23(d) the unique solution
-w of (I + A_h) w = sigma(h) with w killed by a power of A_h is sigma(h) itself, which is not linear
-in h. A proof has to choose lam globally.
+Version 1.7.5 conjectured at this point that every system has the form of Lemma 23(b). **That is
+false**: Example 1 below has no normal form. Lemma 23 and everything before it are unaffected, but
+the normal form cannot be the route to M(t) = t, which stays open. The rest of this section is new
+in 1.7.6.
 
-*Computation.* `cube_groups/plane_search.py` (full run on 2026-10-16; every pre-registered
+**Lemma 24 (when the normal form holds).** Let alpha be one-to-one (by Lemma 23(c) this case is
+enough), with basis e_1, ..., e_r of V, A_i = A_(e_i), q_i = sigma(e_i), b_ij = beta(e_i, e_j) and
+Fix(A) = ker(I + A).
+(a) (*) holds if and only if A_j q_i = (I + A_i) b_ij for all i and j (with b_ii = 0) and
+A_k b_ij + A_i b_jk + A_j b_ik = 0 for all distinct i, j and k.
+(b) sigma has the form of Lemma 23(b) if and only if there are f_i in Fix(A_i) with
+
+    f_i + f_j + b_ij  in  Fix(A_i + A_j)     for all i < j.
+
+(c) For a *pencil* (r = 2, b = b_12) the form holds if and only if b lies in
+Fix(A_1) + Fix(A_2) + Fix(A_1 + A_2). It holds when one of A_1, A_2, A_1 + A_2 is invertible, and
+for every pencil when t = 2.
+*Proof.* (a) Both sides of (*) are linear in h', so take h' = e_k. Then
+Q_k(h) = A_k sigma(h) + (I + A_h) beta(h, e_k) is a quadratic map with Q_k(0) = 0, so it vanishes if
+and only if it vanishes at each e_i and its polar form vanishes at each pair e_i, e_j. The first
+gives A_k q_i = (I + A_i) b_ik; the polar form of h -> A_h beta(h, e_k) at (e_i, e_j) is
+A_i b_jk + A_j b_ik, and that of h -> A_k sigma(h) is A_k b_ij. For k in {i, j} the polar condition
+is empty.
+(b) By (a), A_i q_i = 0, so (I + A_i) q_i = q_i and the solutions of (I + A_i) lam_i = q_i are
+lam_i = q_i + f_i with f_i in Fix(A_i). The quadratic maps sigma and h -> (I + A_h) lam(h) agree at
+each e_i; their polar forms at (e_i, e_j) are b_ij and A_i lam_j + A_j lam_i. By (a),
+A_j q_i + A_i q_j = (A_i + A_j) b_ij, and with A_i f_i = f_i one checks
+A_j f_i + A_i f_j = (I + A_i + A_j)(f_i + f_j). So the polar forms agree if and only if
+(I + A_i + A_j)(f_i + f_j) = (I + A_i + A_j) b_ij, which is the displayed condition.
+(c) The first sentence is (b) for r = 2. If A_1 is invertible, then q_1 = 0 and (a) gives
+(I + A_1) b = A_2 q_1 = 0, so b is in Fix(A_1); A_2 is the same, and for A_1 + A_2 use the basis
+e_1, e_1 + e_2, for which beta is still b. For t = 2, suppose no element of the pencil is invertible.
+The non-zero singular 2 x 2 matrices have rank 1 and are nilpotent (Fix = 0) or idempotent (Fix =
+their image, a line). No pencil in M_2(F_2) is nilpotent throughout (the three non-zero nilpotents
+add to invertible matrices), so if the three Fix spaces do not span X, they all lie in one line l and
+some element of the pencil is idempotent with image l; change the basis of the pencil so that this
+element is A_1. In a basis (u, w) of X with A_1 = E_11, l = span(u), (a) gives q_1 = x w and
+A_2 q_1 = (I + A_1) b = b_2 w, where b = b_1 u + b_2 w. If x = 0 or b_2 = 0, b is in l. Otherwise
+A_2 w = w, so A_2 = [[a, 0], [c, 1]], and singular means a = 0; then Fix(A_2) = span(w) is not in l,
+a contradiction. QED
+
+**Example 1 (no normal form).** Let t = 3 and V = F_2^2, with (1-based matrix entries)
+
+    A_1 = E_11,   A_2 = E_12 + E_13 + E_21 + E_22,   A_1 + A_2 = E_11 + E_12 + E_13 + E_21 + E_22,
+    sigma(e_1) = e_2 + e_3,   sigma(e_2) = e_1 + e_2 + e_3,   beta(e_1, e_2) = e_2,
+
+so sigma(e_1 + e_2) = e_1 + e_2. This is a system with no normal form, and sigma vanishes only at 0,
+so its least codimension is 2 = dim V.
+*Proof.* Lemma 24(a): A_1 q_1 = 0, A_2 q_2 = 0, A_2 q_1 = e_2 = (I + A_1) e_2 and
+A_1 q_2 = e_1 = (I + A_2) e_2, so (*) holds. Fix(A_1) = span(e_1), and A_2 and A_1 + A_2 fix no
+non-zero vector, so Fix(A_1) + Fix(A_2) + Fix(A_1 + A_2) = span(e_1) does not contain b = e_2, and
+Lemma 24(c) applies. Directly: lam(e_1) is e_2 + e_3 or e_1 + e_2 + e_3, lam(e_2) must be
+e_1 + e_2 + e_3, and then (I + A_1 + A_2) lam(e_1 + e_2) is 0 or e_2, never
+sigma(e_1 + e_2) = e_1 + e_2. QED
+The example needs only codimension 2 < t, so it says nothing against M(t) = t. Its solution space
+is 1-dimensional and stays so when y = 1, 2 or 3 kernel directions are added.
+
+*Computation (the normal form).* `cube_groups/normal_form.py` (full run on 2026-10-17; every graded
+prediction matched) asks for each system whether every solution of (*) has the normal form. All 4
+systems with t = 1 and all 201 with t = 2 do. With t = 3, 2,772 of the 175,784 systems with
+dim C <= 2 and y <= 3 do not (none with dim C = 1, as Lemma 23(c) says), and 4 of 688 structured
+systems do not; with t = 4, 3 of 309 do not. `cube_groups/nf_pencil.py` (full run on 2026-10-17;
+every graded prediction matched) checks Example 1 and Lemma 24. Of the 43,435 pencils in M_3(F_2),
+693 (756 systems) have no normal form; none of them contains an invertible matrix, and all 756
+systems are anisotropic (defined below). Brute force agrees with Lemma 24(c) on 4,581 systems, all
+35 pencils in M_2(F_2) have the normal form, and 60 of 3,000 random pencils in M_4(F_2) do not.
+Lemma 24(b) agrees with brute force on every 3-dimensional C in M_2(F_2) and on 400 random ones in
+M_3(F_2), where the 135 solutions sampled all had the normal form. The solutions outside the normal
+form that were sampled all vanish on a subspace of codimension <= t.
+
+*Computation (M(t)).* `cube_groups/plane_search.py` (full run on 2026-10-16; every pre-registered
 prediction matched) uses Lemma 21 to list the systems. For t = 1, the 4 systems give M(1) = 1. For
 t = 2, all 67 subspaces C of M_2(F_2) with y <= 2 (201 systems, every solution sigma examined and
 every least codimension computed exactly by a branch-and-bound search) give M(2) = 2, attained by
@@ -852,15 +920,98 @@ in rad beta every time (Lemma 21(a)). For t = 3 it examined 864 systems built fr
 subspaces of M_3(F_2) (diagonal, triangular, symmetric, the field F_8, Jordan blocks, maps fixing a
 line or a plane, and others) and random subspaces of them, 52 of them only on sampled solutions.
 The largest least codimension found is 3 (in 23 systems), none needs 4 or more, and C = End(X) again
-has no non-zero solution. So M(1) = 1, M(2) = 2, and M(3) >= 3 by Lemma 23(d); the samples are
-consistent with M(3) = 3, which would settle (6, 2) and (5, 3). `cube_groups/normal_form.py` (new
-in 1.7.5, queued) tests the conjecture itself, by ranks: for every system with t <= 2, for t = 3
-systems like those above, for every C of dimension <= 2 in M_3(F_2), and for some t = 4 systems, it
-asks whether every solution of (*) has the form of Lemma 23(b). It will be added to the repository
-once its full run has been graded.
+has no non-zero solution. So M(1) = 1, M(2) = 2 and 3 <= M(3) <= 7 (Lemma 23(d) and Theorem 23
+below); the samples are consistent with M(3) = 3.
 
-*Status of Theorems 16 to 22 and Lemmas 21 to 23.* They are proved by hand above. Full runs in a
-sealed container passed on 2026-10-15 and 2026-10-16, and every number matched its prediction:
+Call a system *anisotropic* if sigma(h) != 0 for every h != 0. Then A_h is singular for every h
+outside K (Lemma 21(b)), restrictions to subspaces stay anisotropic, and the least codimension is
+dim V. So an anisotropic system with dim V = t + 1 would give M(t) > t.
+
+**Proposition 21 (anisotropic systems; computed).** (a) For t = 1 and t = 2 the largest anisotropic
+systems have dim V = t. (b) For t = 3 there are anisotropic systems with dim V = 3 (for example 14
+of the 52,157 systems whose C is a 3-dimensional subspace of singular matrices and y = 0 have one;
+Example 1 is one with dim V = 2), but none with dim V = 4. (c) So for t = 3 every system with
+dim V >= 4 has a non-zero zero of sigma, and its least codimension is at most dim V - 1.
+*Computation.* `cube_groups/nf_pencil.py` lists every subspace C of M_t(F_2) whose non-zero
+elements are all singular (for t = 3 there are 343, 13,279, 52,157 and 22,050 of dimensions 1 to
+4) and, for every y = dim V - dim C <= t, examines every solution of (*). For t = 3 and dim V = 4
+that is 87,829 systems, and no solution is anisotropic. Every system with dim V = 4 is one of these
+up to a change of basis of V, or has an invertible A_h with h != 0 and then sigma(h) = 0 by
+Lemma 21(b), or has alpha = 0, in which case sigma is linear on F_2^4. For (c), restrict to any
+4-dimensional subspace. QED (computer-assisted)
+
+Write LC(V) for the least codimension of a subspace of V on which sigma vanishes, and call a
+matrix A *good* if A and I + A are both invertible.
+
+**Lemma 25 (zeros of sigma).** Let (sigma, alpha) be a system.
+(a) If sigma(u) = 0, then beta(u, h) lies in Fix(A_u) for every h. So u^perp = {h : beta(u, h) = 0}
+has codimension at most dim Fix(A_u), and if u != 0 and W is a complement of span(u) in u^perp,
+then LC(V) <= codim(u^perp) + LC(W), where W carries the restricted system.
+(b) If A_u is invertible, then sigma(u) = 0. If A_u is good, then u also lies in the radical of
+beta. The span R of all u with A_u good lies in the radical of beta, sigma vanishes on R, and
+sigma(h + r) = sigma(h) for every r in R.
+(c) Let S be the span of the good elements of alpha(V), E a complement of S in alpha(V) and
+W = alpha^(-1)(E). Then E contains no good element, dim W = dim V - dim S, and LC(V) <= LC(W).
+*Proof.* (a) Put h = u in (*): 0 = A_(h') sigma(u) = (I + A_u) beta(u, h'). Since beta is
+alternating, u lies in u^perp. If sigma vanishes on a subspace U of W, then for w in U,
+sigma(w + u) = sigma(w) + sigma(u) + beta(w, u) = 0, so sigma vanishes on U + span(u), whose
+codimension in V is codim(u^perp) + (dim W - dim U).
+(b) A_u sigma(u) = 0 by Lemma 21(b). If A_u is good, Fix(A_u) = 0 and (a) gives beta(u, .) = 0. So
+R lies in the radical, and sigma(u + r) = sigma(u) + sigma(r) + beta(u, r) shows by induction that
+sigma vanishes on R. Then sigma(h + r) = sigma(h) + sigma(r) + beta(h, r) = sigma(h).
+(c) A good element of E would lie in S n E = 0. Choose u_1, ..., u_s in V such that the A_(u_i)
+are good and form a basis of S, and put R' = span(u_i). Then V = W + R', and W n R' = 0 because
+alpha is one-to-one on R' and alpha(R') n E = 0. If sigma vanishes on U <= W, it vanishes on
+U + R' by (b), and U + R' has the same codimension in V as U has in W. QED
+
+For t = 3 the good matrices are exactly the 48 elements of order 7 of GL_3(F_2): a good A has no
+eigenvalue in F_2, so its characteristic polynomial is x^3 + x + 1 or x^3 + x^2 + 1. Each of them
+generates a copy F_2[A] of the field F_8 inside M_3(F_2), whose non-zero elements are I and six
+elements of order 7, so there are 8 such copies.
+
+**Theorem 23 (t = 3).** Let t = 3.
+(a) Every system with dim V >= 4 has LC(V) <= dim V - 1 (Proposition 21).
+(b) Every system with dim V <= 7 has LC(V) <= 5.
+(c) Every hyperplane of M_3(F_2) contains at least 16 elements of order 7, so a subspace with no
+element of order 7 has dimension at most 7; the stabilisers of a line and of a plane are such
+subspaces of dimension 7. By Lemma 25(c), M(3) is the largest LC over the reduced systems of
+Lemma 21 whose C has no element of order 7; these have dim C <= 7 and dim V = dim C + y <= 10.
+(d) M(3) <= 7, and LC(V) <= 6 whenever dim V <= 8. More generally, if s is the dimension of the
+span of the elements of order 7 in alpha(V), then LC(V) <= 5 whenever dim(V/K_0) - s <= 7, and
+LC(V) <= 6 whenever dim(V/K_0) - s <= 8.
+So M(3) <= 5, which would settle (6, 2) and (5, 3) by Proposition 20(c), now needs only the reduced
+systems whose C has no element of order 7, with 5 <= dim C <= 7 and dim C + y >= 8. M(3) <= 6, which
+would settle (5, 3), needs only those with dim C + y >= 9.
+*Proof.* (b) If dim V <= 5 there is nothing to prove, and dim V = 6 is (a). Let dim V = 7. If I is
+not in alpha(V), let u be any non-zero zero of sigma. Otherwise choose a hyperplane H of alpha(V)
+that does not contain I, and a non-zero zero u of sigma in alpha^(-1)(H), which has dimension
+6 >= 4. Either way A_u != I, so dim Fix(A_u) <= 2, and Lemma 25(a) gives LC(V) <= c + LC(W) with
+c = codim(u^perp) <= 2 and dim W = 6 - c. By (a), LC(W) <= 5, 4 and 3 for c = 0, 1 and 2.
+(c) Let F be one of the 8 copies of F_8, and let f(X) = tr(M X) be a non-zero linear form. The
+kernel of f on F has dimension >= 2, so it contains at least three non-zero elements of F, and at
+least two of them have order 7. The copies share no element of order 7, so the hyperplane ker f
+contains at least 16 of them. An element of order 7 has an irreducible characteristic polynomial,
+so it fixes no line and no plane. The rest is Lemma 25(c) applied to a reduced system: there
+dim V = dim C + dim sigma(K) by Lemma 21(a), and dim sigma(K) <= 3.
+(d) Let L(m) be the largest LC over the systems with dim V = m. For m >= 5 the argument of (b) gives
+a non-zero zero u with A_u != I, so L(m) <= max(L(m - 1), 1 + L(m - 2), 2 + L(m - 3)). With
+L(4) <= 3, L(5) <= 4, L(6) <= 5 and L(7) <= 5 this gives L(8) <= 6, L(9) <= 7 and L(10) <= 7, and
+by (c) only dim V <= 10 matters. For the last sentence, pass to the reduced system V/K_0
+(Lemma 21(a)) and apply (b), or L(8) <= 6, to W in Lemma 25(c), which has dimension
+dim(V/K_0) - s. QED (computer-assisted through Proposition 21)
+
+*Computation (queued).* `cube_groups/m3_core.py` (new in 1.7.6, queued on 2026-10-17 with
+pre-registered predictions) checks Lemma 25 and Theorem 23(a) and (b) on random systems, and the
+facts about elements of order 7 used in (c). It also lists, up to conjugacy, every subspace of
+M_3(F_2) of dimension 5 to 7 with no element of order 7. For each such C and each y with
+dim C + y >= 8, it checks every solution of (*) for a vanishing subspace of codimension <= 5. If
+that run finishes with no exception and with every solution examined, then M(3) <= 5, and (6, 2)
+and (5, 3) are settled (computer-assisted). This file will claim that only after the run has been
+graded.
+
+*Status of Theorems 16 to 23 and Lemmas 21 to 25.* They are proved by hand above. Full runs in a
+sealed container passed on 2026-10-15, 2026-10-16 and 2026-10-17, and every graded number matched
+its prediction:
 `cube_groups/z4degree.py` (Theorem 16: 6 of 6 groups consistent, both controls as predicted);
 `cube_groups/z4z2.py` (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the
 control with a non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in
@@ -879,9 +1030,12 @@ with no violation of any of its claims, rank alpha + dim sigma(K) <= 4 and codim
 time; the table of largest subspaces in its proof; the control, where 87 of 200 random sigma on
 F_2^7 vanish on no subspace of codimension <= 4, so the identity is needed; and the case count of
 Corollary 13 for every a <= 8 and b <= 8, which leaves (6, 2) and (5, 3) open with s = 3 and r = 6
-only); and `cube_groups/plane_search.py` (Lemmas 21(a) and 21(c), Lemma 22, and the values of M(t)
-above). The group-theoretic steps of Proposition 17, Lemma 18, Theorems 19 to 22, Corollaries 12
-and 13 and Proposition 20 are checked by hand only.
+only); `cube_groups/plane_search.py` (Lemmas 21(a) and 21(c), Lemma 22, and the values of M(t)
+above); `cube_groups/normal_form.py` (Lemma 23(a) pointwise, Lemma 23(c) on every system with
+dim C = 1, Lemma 23(d) for t = 1, 2, 3, and the normal-form counts above); and
+`cube_groups/nf_pencil.py` (Example 1, Lemma 24(a) and (c) against the identity and brute force,
+Lemma 24(b) on 3-dimensional C, and Proposition 21). The group-theoretic steps of Proposition 17,
+Lemma 18, Theorems 19 to 22, Corollaries 12 and 13 and Proposition 20 are checked by hand only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
@@ -889,16 +1043,19 @@ Z_4^k; a self-centralising normal Z_4^a x Z_2^b when a <= 4 (every b), when b <=
 (a, b) = (5, 2), when rank Q >= b(a - 2) + 1 (in particular when Q has full rank), when b >= 2 and
 rank Q >= b(a - 3) + 1, when b >= 2 and dim span sigma(H) <= 2, when ab - s(b - 1) <= a + b, and
 when dim span sigma(H) <= 1 and a + b >= 3. Reduced: by Proposition 20, every remaining
-Z_4^a x Z_2^b case follows from M(t) <= t + 1, a statement about quadratic maps over F_2 alone;
-M(t) >= t, M(1) = 1 and M(2) = 2, and the normal-form conjecture would give M(t) = t. Computed:
-true on every subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to
-order 256. An exact search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2)
-found no counterexample with A ~ Z_4^3, as Theorem 16 predicts. No t = 3 system among 864 needs
-codimension 4. Open: Z_4^a x Z_2^b with (a - 4)(b - 1) >= 2, starting with (6, 2) and (5, 3),
-where only the case s = 3, W = K_X is left and M(3) <= 5 would settle both; homocyclic
-Z_(2^m)^k with m >= 3; the general case. A classification of the 2-groups with exactly three
-involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could not read it, so the case
-k = 2 is not claimed.
+Z_4^a x Z_2^b case follows from M(t) <= t + 1, a statement about quadratic maps over F_2 alone.
+Known: M(t) >= t, M(1) = 1, M(2) = 2 and 3 <= M(3) <= 7. The natural normal form that would have
+given M(t) = t fails (Example 1), and whether M(t) = t is open. In the open cases (6, 2) and
+(5, 3), Theorem 23 settles every instance in which the system of Proposition 20 on T_y has
+dim(T_y/K_0) - s <= 7 (and, for (5, 3), <= 8); what is left are systems whose image has no element
+of order 7, and a computer check of all of them is queued. Computed: true on every subgroup of
+Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact search over
+all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no counterexample with
+A ~ Z_4^3, as Theorem 16 predicts. No t = 3 system among 864 needs codimension 4. Open:
+Z_4^a x Z_2^b with (a - 4)(b - 1) >= 2, starting with (6, 2) and (5, 3), where only the case s = 3,
+W = K_X is left and M(3) <= 5 would settle both; homocyclic Z_(2^m)^k with m >= 3; the general case.
+A classification of the 2-groups with exactly three involutions (k = 2) is in Janko, J. Algebra 291
+(2005) 505-533. We could not read it, so the case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -915,7 +1072,7 @@ a specialist may know these bounds. Please open an issue if so.
 Every module below is in `cube_groups/` (pure Python, no dependencies). `python -m unittest -v` at
 the top of the repository runs all their unit tests, and running a module as a script
 (`python cube_groups/<module>.py --help`) runs its full check. The full runs were done in a sealed container on
-2026-10-15 and 2026-10-16. The module docstrings use the labels of our working drafts; the
+2026-10-15, 2026-10-16 and 2026-10-17. The module docstrings use the labels of our working drafts; the
 concordance below maps them to this file.
 
 | module | statements | full run |
@@ -940,14 +1097,17 @@ concordance below maps them to this file.
 | case33.py | Proposition 19 (two controls), the linear core of Lemma 17, the case count of Theorem 20 | passed |
 | thm21.py | Lemma 19 (with its sharpness count), the case count of Corollary 12, a group check of Lemma 18 and Theorem 21 | passed |
 | thm22.py | Lemma 20 (904 systems; control), the subspace table in its proof, the case count of Corollary 13 | passed |
-| plane_search.py | Lemmas 21 and 22; M(1) = 1 and M(2) = 2 exactly (201 systems); 864 systems with t = 3 | passed (new in 1.7.5) |
-| normal_form.py | the normal-form conjecture after Lemma 23, and Lemma 23(a), (c), (d) | queued (new in 1.7.5; added after its run) |
+| plane_search.py | Lemmas 21 and 22; M(1) = 1 and M(2) = 2 exactly (201 systems); 864 systems with t = 3 | passed |
+| normal_form.py | Lemma 23(a), (c), (d); the normal form on every system with t <= 2, and with t = 3 and dim C <= 2 | passed (new in 1.7.6) |
+| nf_pencil.py | Example 1, Lemma 24, Proposition 21 (anisotropic systems) | passed (new in 1.7.6) |
+| m3_core.py | Lemma 25, Theorem 23 (a)-(c), the systems left by Theorem 23 | queued (new in 1.7.6) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
 uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 22, Corollaries 12 and 13 and Proposition 20, Lemma 21(b), and (until its run
-finishes) Lemma 23. Two numbers come from full runs that are too slow for the unit tests: the
-Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
+Theorems 19 to 22, Corollaries 12 and 13 and Proposition 20, Lemma 21(b), and (until the run of
+m3_core.py has been graded) Lemma 25 and Theorem 23, which also uses the computed Proposition 21.
+Two numbers come from full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of
+Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -964,7 +1124,11 @@ Theorem 18. So `theorem19.py` checks Theorem 15 here; the new Theorem 19 of 1.7.
 `thm21.py`, Lemma 20, Theorem 22 and Corollary 13 of 1.7.4 by `thm22.py`, and Lemmas 21 and 22 of
 1.7.5 by `plane_search.py` (its docstring calls them "draft Lemma 21" and "draft Lemma 22", and
 uses the system sigma = x_1 x_2, alpha = x_1 + x_2 as its example for M(1) = 1). The docstrings of
-these five modules already use the labels of this file.
+these five modules already use the labels of this file. In 1.7.6, `normal_form.py` checks Lemma 23
+(its docstring still states the refuted conjecture as a question), `nf_pencil.py` checks Example 1,
+Lemma 24 (its docstring calls it "draft Lemma 24") and Proposition 21, and `m3_core.py` uses the
+labels of this file. The note `notes/normal-form-counterexample.md` is the first write-up of
+Example 1 and Lemma 24.
 
 ## Sources for this file
 
