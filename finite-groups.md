@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.7, 2026-10-17. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.8, 2026-10-17. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,13 +10,20 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
+Version 1.7.8 reports the full runs of `cube_groups/m3_core.py` and `cube_groups/m3_exact.py`
+(every graded prediction matched) and adds Lemmas 27 and 28 and Corollary 15. If the maps A_h of a
+system share an invariant subspace, the system splits into two smaller ones (Lemma 27); if they all
+map a hyperplane into a line outside it, an anisotropic system has dim V <= t (Lemma 28). So at
+the least t where A(t) = t fails, a counterexample needs an irreducible space of singular
+matrices, and the first open case (8, 2) now needs only the irreducible spaces of matrices of rank
+<= 2 in M_5(F_2) that are not of Lemma 28's form.
 Version 1.7.7 determines M(3) = 3 and extends the answer to the question of section 14 to every
 Z_4^a x Z_2^b with b <= 1 or a <= max(7, b + 2). The new tool is Lemma 26: at a zero u of sigma,
 the subspace where beta(., u) vanishes carries a smaller system, with values in ker A_u. With it,
 Theorem 24 bounds M(t) by the largest anisotropic systems: M(t) <= 2t for every t, and M(3) = 3
 with the computation of Proposition 21. Proposition 22 bounds the anisotropic systems for t = 4
 and 5, and Corollary 14 counts the cases. This settles (6, 2) and (5, 3), the cases left open in
-1.7.6, and every a <= 7. Theorem 23 and its queued search are superseded but remain true.
+1.7.6, and every a <= 7. Theorem 23 and its search are superseded but remain true.
 Version 1.7.6 corrected section 14. The normal-form conjecture stated after Lemma 23 in version
 1.7.5 is false: Example 1 is a system with t = 3 that has no normal form. It was found by hand and
 confirmed by `cube_groups/nf_pencil.py`, and Lemma 24 gives an exact criterion for the normal form.
@@ -1006,14 +1013,18 @@ by (c) only dim V <= 10 matters. For the last sentence, pass to the reduced syst
 (Lemma 21(a)) and apply (b), or L(8) <= 6, to W in Lemma 25(c), which has dimension
 dim(V/K_0) - s. QED (computer-assisted through Proposition 21)
 
-*Computation (queued).* `cube_groups/m3_core.py` (new in 1.7.6, queued on 2026-10-17 with
-pre-registered predictions) checks Lemma 25 and Theorem 23(a) and (b) on random systems, and the
-facts about elements of order 7 used in (c). It also lists, up to conjugacy, every subspace of
-M_3(F_2) of dimension 5 to 7 with no element of order 7, and checks every solution of (*) on them
-for a vanishing subspace of codimension <= 5. Theorem 24 below makes this search unnecessary for
-M(3); it is now a consistency check, and must find no system that needs codimension 4 or more.
+*Computation.* `cube_groups/m3_core.py` (new in 1.7.6; full run on 2026-10-17, every graded
+prediction matched) checks Lemma 25 and Theorem 23(a) and (b) on random systems, and the facts
+about elements of order 7 used in (c): there are 48, they span M_3(F_2), every hyperplane contains
+at least 16 of them (some exactly 16), no 8-dimensional subspace avoids them, and the 14
+stabilisers do. It lists, up to conjugacy, every subspace of M_3(F_2) of dimension 5, 6 and 7 with
+no element of order 7 (167,629, 5,279 and 22 of them, in 1,192, 68 and 3 classes) and examines
+every solution of (*) on the systems they give: none needs codimension above 5, and in the 940
+cases where it computed the least codimension exactly, it was 1 or 2. Theorem 24 below makes this
+search unnecessary for M(3); it is now a consistency check, and it agrees.
 
-The rest of this section is new in 1.7.7. It replaces the search of Theorem 23 by one lemma.
+From here to the computation after Corollary 14, this section is new in 1.7.7. It replaces the
+search of Theorem 23 by one lemma.
 
 **Lemma 26 (restriction at a vector).** Let (sigma, alpha) be a system, u in V, rho = rank A_u,
 X_1 = ker A_u and U = {h in V : beta(h, u) = 0}.
@@ -1076,8 +1087,9 @@ have order 7 is I. Besides the 14 stabilisers there are at least 8 more. Identif
 and let C_F = {z -> e z + a z^2 + b z^4 : e in F_2, a, b in F}, a 7-dimensional space. If a b != 0,
 the map z -> a z^2 + b z^4 kills the square root of a/b. If b = 0 != a, then z + a z^2 kills 1/a.
 If a = 0 != b, then z + b z^4 kills the cube root of 1/b, which exists because 3 is prime to 7. So
-no A in C_F has A and I + A both invertible. Whether there are more than these 22 is left to the
-queued run of `m3_core.py`.
+no A in C_F has A and I + A both invertible. The full run of `m3_core.py` found exactly 22 such
+subspaces, in 3 conjugacy classes of sizes 7, 7 and 8, so the 14 stabilisers and the 8 spaces C_F
+are all of them (this count is computed, not proved by hand).
 
 **Proposition 22 (anisotropic systems).** Let (sigma, alpha) be anisotropic with dim X = t. Then
 every A_h is singular, and:
@@ -1130,14 +1142,108 @@ follow from A(t) = t, which is true for t <= 3.
 random solutions with t = 2 and 3, on Example 1 and on the system of Lemma 23(d), and Theorem 24
 (every least codimension <= t) on those solutions; Lemma 26(c) for invertible A_u; Proposition 22(b)
 on the common-image and common-kernel spaces with t = 2 and 3; and the case count of Corollary 14
-for every a <= 14 and b <= 12. These unit tests passed before this version was published. A full
-run (Lemma 26 on random systems with t = 2, 3 and 4, Proposition 22(b) on every subspace of the
-rank-1 spaces with t <= 4, and a random search for anisotropic systems with t = 4 and dim V = 5, 6
-and 7) is queued with pre-registered predictions.
+for every a <= 14 and b <= 12. These unit tests passed before 1.7.7 was published. The full run
+(on 2026-10-17; every graded prediction matched) checked Lemma 26 at 1,408 vectors of 279 random
+solutions on 360 systems with t = 2, 3 and 4 (1,097 of them zeros of sigma) with no violation, and
+the largest least codimensions it found were 2, 3 and 4 for t = 2, 3 and 4. It checked
+Proposition 22(b) on 804 systems over every subspace of the common-image and common-kernel spaces
+with t <= 4 (6,241 solutions) with no violation; the anisotropic systems there had dim V <= t. A
+random search over 1,140 systems with t = 4 and dim V = 5, 6 and 7 (858,020 solutions) found no
+anisotropic system. Most of the spaces it used are reducible in the sense of Lemma 27 below, where
+dim V <= 4 is now proved, so this search says little about A(4). The case count of Corollary 14
+matched for every a <= 14 and b <= 12.
 
-*Status of Theorems 16 to 24 and Lemmas 21 to 26.* They are proved by hand above. Full runs in a
-sealed container passed on 2026-10-15, 2026-10-16 and 2026-10-17, and every graded number matched
-its prediction:
+The rest of this section is new in 1.7.8. It shows that only irreducible spaces of matrices can
+stand between the results above and A(t) = t. Call a subspace Y of X *invariant* if A_h Y <= Y for
+every h, and call alpha(V) *irreducible* if 0 and X are its only invariant subspaces.
+
+**Lemma 27 (invariant subspaces).** Let (sigma, alpha) be a system and Y an invariant subspace of
+dimension d, with 0 < d < t. Then:
+(a) sigma modulo Y, with the maps that the A_h induce on X/Y, is a system with t - d;
+(b) on every subspace U of V on which sigma modulo Y vanishes, sigma with the restrictions of the
+A_h to Y is a system with d;
+(c) LC(V) <= M(t - d) + M(d), and an anisotropic system has dim V <= M(t - d) + A(d).
+*Proof.* (a) Since Y is invariant, A_h and I + A_h induce maps on X/Y, and (*) holds modulo Y.
+(b) For h and h' in U, sigma(h) and beta(h, h') = sigma(h + h') + sigma(h) + sigma(h') lie in Y,
+so (*) for h, h' in U is an identity between vectors of Y, in which only the restrictions of A_h
+and A_(h') to Y occur. (c) By (a) there is such a U of codimension <= M(t - d), and by (b) a
+subspace of U, of codimension <= M(d) in U, on which sigma vanishes. If the system is anisotropic,
+so is its restriction to U, and dim U <= A(d). QED
+
+A linear space of matrices of rank <= 1 has a common image line or a common kernel hyperplane
+(proof of Proposition 22(b)), and both are invariant. So for t >= 2 an irreducible alpha(V) contains
+a matrix of rank >= 2 (and alpha(V) = 0 is not irreducible). In the common-kernel case, Lemma 27
+with Y = ker f_0 sharpens Proposition 22(b) to dim V <= M(1) + A(t - 1) = 1 + A(t - 1).
+
+**Lemma 28 (a hyperplane mapped into a line).** Let X = P + span(q) with P a hyperplane and q not
+in P, and suppose that every A_h maps P into span(q). Then sigma vanishes on a subspace of
+codimension <= t, and an anisotropic system has dim V <= t.
+*Proof.* Write sigma(h) = sigma_P(h) + tau(h) q with sigma_P(h) in P, so that tau is a quadratic
+form, with polar form b, and write A_h q = pi(h) + mu(h) q with pi : V -> P linear. If pi = 0, every
+A_h has image in span(q), and the common-image part of the proof of Proposition 22(b) applies:
+beta takes values in span(q), sigma modulo q is linear and vanishes on a subspace U' of
+codimension <= t - 1, and on U' sigma is a system with t = 1 (Lemma 26(a)), so it vanishes on a
+subspace of U' of codimension <= M(1) = 1; an anisotropic system has dim U' <= A(1) = 1. Now let
+pi != 0. Since A_(h') sigma_P(h) lies in span(q), the P-part of (*) reads
+
+    tau(h) pi(h') = beta_P(h, h') + b(h, h') pi(h),
+
+where beta_P is the P-part of beta. With h' = h this gives tau(h) pi(h) = 0. Exchanging h and h'
+and adding (beta_P is symmetric) gives (tau(h) + b(h, h')) pi(h') = (tau(h') + b(h, h')) pi(h).
+Fix h_0 with pi(h_0) != 0; for k in ker pi this gives tau(k) = b(k, h_0). So tau vanishes on
+W = {h : b(h, h_0) = 0}, a subspace of codimension <= 1: on W n ker pi because tau = b(., h_0)
+there, and on W outside ker pi because tau(h) pi(h) = 0. Hence sigma(W) lies in P. By the last
+sentence of Lemma 26(a), with X' = P and the complement span(q), sigma on W is a system whose maps
+are A_h restricted to P and projected onto P along span(q), that is 0. So (*) on W reads
+beta(h, h') = 0: sigma is linear on W and vanishes on its kernel, of codimension <= t - 1 in W. If
+the system is anisotropic, sigma is one-to-one on W, so dim W <= t - 1 and dim V <= t. QED
+If q lies in P instead, span(q) is invariant and Lemma 27 applies. The matrices of Lemma 28 have
+rank <= 2, and for t >= 2 the whole space {A : A P <= span(q)}, of dimension 2t - 1, is
+irreducible: an invariant subspace containing some p != 0 in P contains A p = q for a suitable A,
+and then all of X, since A q can be any vector; and a line span(p + q) with p in P is moved off
+itself by an A with A p = 0 and A q outside it.
+
+**Corollary 15 (where an anisotropic system with dim V > t must live).** Let t >= 2 and suppose that
+A(s) = s for every s < t, so that M(s) = s for every s < t (Theorem 24). If an anisotropic system
+has dim V > t, then alpha(V) is irreducible, its elements are all singular, it contains a matrix
+of some rank rho >= 2, and then dim V <= 2t - rho; and there is no hyperplane P and vector q
+outside P with A_h P <= span(q) for every h. In particular:
+(a) A(4) >= 5 would need such a space in M_4(F_2), and A(4) = 6 would need one whose elements all
+have rank <= 2;
+(b) whatever A(4) is, an anisotropic system with t = 5 and dim V >= 8 would need an irreducible
+space of matrices of rank <= 2 in M_5(F_2), not of the form of Lemma 28. If there is none, then
+A(5) <= 7, and the count after Corollary 14 settles (8, 2).
+*Proof.* If alpha(V) is reducible, Lemma 27 gives dim V <= M(t - d) + A(d) = t. Lemma 28 gives
+dim V <= t, and alpha(V) = 0 gives a linear one-to-one sigma. The elements are singular by
+Proposition 22, and an element of rank rho gives dim V <= t + A(t - rho) = 2t - rho by
+Proposition 22(a). (a) With A(1), A(2), A(3) = 1, 2, 3, an element of rank 3 gives dim V <= 5.
+(b) Let t = 5. If alpha(V) is reducible, Lemma 27 gives dim V <= max(M(4) + A(1), M(3) + A(2),
+M(2) + A(3), M(1) + A(4)) <= 7, using M(4) <= 6 and A(4) <= 6 (Proposition 22). An element of rank
+rho >= 3 gives dim V <= 5 + A(5 - rho) <= 7. Lemma 28 excludes its form. QED (computer-assisted
+through Proposition 21, which gives A(2) and A(3).)
+
+Spaces of matrices of rank at most 2 have been classified. According to the abstract of
+C. de Seguins Pazzis, "Primitive spaces of matrices with upper rank two over the field with two
+elements" (arXiv 1405.1575), the classification was known over every field with more than two
+elements, and that paper completes it over F_2. We have not read it, so nothing here depends on
+it. Checking the irreducible spaces of rank at most 2 in M_4(F_2) and M_5(F_2) against Lemma 28 is
+the natural next step, for A(4) and for (8, 2).
+
+*Computation (queued).* `cube_groups/m4_irred.py` (new in 1.7.8) checks Lemma 27 on random systems
+with t = 3 and 4 whose alpha(V) keeps a coordinate subspace invariant (the quotient and restricted
+systems, LC(V) <= codim U + LC(U), and LC(V) <= t), and Lemma 28 on random systems with t = 3 and 4
+that map a coordinate hyperplane into a line (tau pi = 0, the subspace W, beta = 0 on W, and
+LC(V) <= t). It also searches for anisotropic systems with t = 4 and dim V = 5 and 6 over random
+irreducible spaces of singular matrices: subspaces of the spaces {A : A P <= Q} with
+(codim P, dim Q) = (1, 1), (1, 2) and (2, 1), and random ones, with reducible spaces as a control.
+A second control counts how many random quadratic maps F_2^5 -> F_2^4 are anisotropic (about one
+in seven is expected), which shows that the identity (*) is what rules them out. Its unit tests
+passed before this version was published, and its full run is queued with pre-registered
+predictions.
+
+*Status of Theorems 16 to 24, Lemmas 21 to 28 and Corollary 15.* They are proved by hand above.
+Full runs in a sealed container passed on 2026-10-15, 2026-10-16 and 2026-10-17, and every graded
+number matched its prediction:
 `cube_groups/z4degree.py` (Theorem 16: 6 of 6 groups consistent, both controls as predicted);
 `cube_groups/z4z2.py` (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the
 control with a non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in
@@ -1158,12 +1264,13 @@ F_2^7 vanish on no subspace of codimension <= 4, so the identity is needed; and 
 Corollary 13 for every a <= 8 and b <= 8, which leaves (6, 2) and (5, 3) open with s = 3 and r = 6
 only); `cube_groups/plane_search.py` (Lemmas 21(a) and 21(c), Lemma 22, and the values of M(t)
 above); `cube_groups/normal_form.py` (Lemma 23(a) pointwise, Lemma 23(c) on every system with
-dim C = 1, Lemma 23(d) for t = 1, 2, 3, and the normal-form counts above); and
+dim C = 1, Lemma 23(d) for t = 1, 2, 3, and the normal-form counts above);
 `cube_groups/nf_pencil.py` (Example 1, Lemma 24(a) and (c) against the identity and brute force,
-Lemma 24(b) on 3-dimensional C, and Proposition 21). The full runs of `m3_core.py` (Lemma 25,
-Theorem 23) and `m3_exact.py` (Lemma 26, Theorem 24, Proposition 22, Corollary 14) are queued; the
-unit tests of `m3_exact.py` passed. The group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 22, Corollaries 12 to 14 and Proposition 20 are checked by hand only.
+Lemma 24(b) on 3-dimensional C, and Proposition 21); `cube_groups/m3_core.py` (Lemma 25,
+Theorem 23 and the search after it); and `cube_groups/m3_exact.py` (Lemma 26, Theorem 24,
+Proposition 22(b) and the case count of Corollary 14). The full run of `cube_groups/m4_irred.py`
+(Lemmas 27 and 28) is queued; its unit tests passed. The group-theoretic steps of Proposition 17,
+Lemma 18, Theorems 19 to 22, Corollaries 12 to 14 and Proposition 20 are checked by hand only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
@@ -1172,15 +1279,17 @@ a <= b + 2 (Corollary 14), and also when rank Q >= b(a - 2) + 1 (in particular w
 rank), when ab - s(b - 1) <= a + b, and when dim span sigma(H) <= 1 and a + b >= 3. Reduced: by
 Proposition 20 and Theorem 24, every remaining Z_4^a x Z_2^b case follows from A(t) <= t + 1 for
 every t, a statement about anisotropic quadratic maps over F_2 alone; the first open case (8, 2)
-needs only A(5) <= 7. Known: M(1) = 1, M(2) = 2, M(3) = 3 and M(t) <= 2t for every t;
-A(t) = t for t <= 3, 4 <= A(4) <= 6, A(5) <= 8 and t <= A(t) <= 2t. Whether A(t) = t (equivalently,
-M(t) = t) for every t is open. Computed: true on every subgroup of Q_16, Q_32, Q_8^2 and
-Q_16 x Q_8, and of nine class-2 groups up to order 256. An exact search over all 324 conjugacy
-classes of 7-dimensional subspaces of M_3(F_2) found no counterexample with A ~ Z_4^3, as
-Theorem 16 predicts. Open: Z_4^a x Z_2^b with a >= max(8, b + 3), starting with (8, 2), (8, 3),
-(8, 4) and (8, 5); homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the
-2-groups with exactly three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We could
-not read it, so the case k = 2 is not claimed.
+needs only A(5) <= 7, and by Corollary 15 only an irreducible space of matrices of rank <= 2 in
+M_5(F_2), not of the form of Lemma 28, could stand in its way. Known: M(1) = 1, M(2) = 2, M(3) = 3
+and M(t) <= 2t for every t; A(t) = t for t <= 3, 4 <= A(4) <= 6, A(5) <= 8 and t <= A(t) <= 2t; at
+the least t where A(t) = t fails (if there is one), every counterexample has an irreducible
+alpha(V) (Corollary 15). Whether A(t) = t (equivalently, M(t) = t) for every t is open. Computed:
+true on every subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order
+256. An exact search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no
+counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with a >= max(8, b + 3),
+starting with (8, 2), (8, 3), (8, 4) and (8, 5); homocyclic Z_(2^m)^k with m >= 3; the general
+case. A classification of the 2-groups with exactly three involutions (k = 2) is in Janko,
+J. Algebra 291 (2005) 505-533. We could not read it, so the case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -1195,8 +1304,8 @@ maps, including the map A -> A + A^2 on gl_n(F_2). From its abstract and a searc
 text (we have not read it in full), it appears to record the Chevalley-Warning bound for quadratic
 maps with no non-trivial zero, with equality for Q_8^m, which is the argument of Lemma 10. We found
 nothing on the identity (*) or on M(t). The tools (quadratic maps, Chevalley-Warning, determinants
-of degree-bounded matrices, spaces of rank-1 matrices) are standard, so a specialist may know
-these bounds. Please open an issue if so.
+of degree-bounded matrices, spaces of rank-1 matrices, invariant subspaces) are standard, so a
+specialist may know these bounds. Please open an issue if so.
 
 ## Verification table
 
@@ -1231,16 +1340,17 @@ concordance below maps them to this file.
 | plane_search.py | Lemmas 21 and 22; M(1) = 1 and M(2) = 2 exactly (201 systems); 864 systems with t = 3 | passed |
 | normal_form.py | Lemma 23(a), (c), (d); the normal form on every system with t <= 2, and with t = 3 and dim C <= 2 | passed (new in 1.7.6) |
 | nf_pencil.py | Example 1, Lemma 24, Proposition 21 (anisotropic systems) | passed (new in 1.7.6) |
-| m3_core.py | Lemma 25, Theorem 23 (a)-(c), the systems left by Theorem 23 | queued (new in 1.7.6) |
-| m3_exact.py | Lemma 26, Theorem 24 (t <= 4), Proposition 22(b), the case count of Corollary 14 | unit tests passed; full run queued (new in 1.7.7) |
+| m3_core.py | Lemma 25, Theorem 23 (a)-(c), the systems left by Theorem 23, the count of 22 in the Remark | passed (new in 1.7.6) |
+| m3_exact.py | Lemma 26, Theorem 24 (t <= 4), Proposition 22(b), the case count of Corollary 14 | passed (new in 1.7.7) |
+| m4_irred.py | Lemmas 27 and 28; anisotropic systems with t = 4 over irreducible spaces | unit tests passed; full run queued (new in 1.7.8) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
 uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
 Theorems 19 to 22, Corollaries 12 to 14 and Proposition 20, Lemma 21(b), the Remark after
-Theorem 24, and (until the runs of m3_core.py and m3_exact.py have been graded) Lemma 25,
-Theorem 23, Lemma 26, Theorem 24 and Proposition 22, which also use the computed Proposition 21.
-Two numbers come from full runs that are too slow for the unit tests: the Gamma(3; 4, 4) slacks of
-Proposition 9 and the order-2048 group checks.
+Theorem 24 (except the count of 22 in (b), which is computed), Corollary 15, and (until the run of
+m4_irred.py has been graded) Lemmas 27 and 28. Lemma 25, Theorem 23, Theorem 24, Proposition 22 and
+Corollary 15 also use the computed Proposition 21. Two numbers come from full runs that are too slow
+for the unit tests: the Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -1261,8 +1371,9 @@ these five modules already use the labels of this file. In 1.7.6, `normal_form.p
 (its docstring still states the refuted conjecture as a question), `nf_pencil.py` checks Example 1,
 Lemma 24 (its docstring calls it "draft Lemma 24") and Proposition 21, and `m3_core.py` uses the
 labels of this file. In 1.7.7, `m3_exact.py` uses the labels of this file; its "Lemma 26" is the
-Lemma 26 of section 14, not the old draft label mapped to Proposition 14 above. The note
-`notes/normal-form-counterexample.md` is the first write-up of Example 1 and Lemma 24.
+Lemma 26 of section 14, not the old draft label mapped to Proposition 14 above. In 1.7.8,
+`m4_irred.py` uses the labels of this file. The note `notes/normal-form-counterexample.md` is the
+first write-up of Example 1 and Lemma 24.
 
 ## Sources for this file
 
@@ -1282,6 +1393,8 @@ Lemma 26 of section 14, not the old draft label mapped to Proposition 14 above. 
 - B. Huppert, N. Blackburn, Finite Groups II, Springer, Theorem VIII.5.4 (not read by us).
 - J. Pakianathan, E. Yalcin, "Quadratic maps and Bockstein closed group extensions",
   arXiv math/0606374 (abstract read; see the prior-work note of section 14).
+- C. de Seguins Pazzis, "Primitive spaces of matrices with upper rank two over the field with two
+  elements", arXiv 1405.1575 (abstract read; see the note after Corollary 15).
 
 ## Licence
 
