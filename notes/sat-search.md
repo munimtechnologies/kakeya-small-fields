@@ -3,12 +3,13 @@
 MV2 of Munim, Inc., 2026-10-17. Added to kakeya-small-fields after version 1.7.10. This note
 describes `cube_groups/sat_aniso.py` and `cube_groups/rank_classes.py`, two exact computer searches
 for the anisotropic systems of section 14 of [finite-groups.md](../finite-groups.md) and of
-[rank-restriction.md](rank-restriction.md). **The first full run (sat_aniso.py) has finished:**
-every graded prediction held, but the three hard instances, (t, d) = (4, 5), (5, 6) and (6, 7), ran
-out of time without an answer (see Results). The run of rank_classes.py is still queued, and its
-results will be added here whether or not its predictions hold. The code was researched and written
-with AI agents working in MV2's name. Its unit tests gate this commit; they need no SAT solver. No
-human mathematician has checked it. Text CC BY 4.0, code Apache-2.0.
+[rank-restriction.md](rank-restriction.md). **Both first full runs have finished:** every graded
+prediction that was decided held, but the hard instances ran out of time without an answer. The
+split by similarity class (rank_classes.py) decided 4 of the 23 cases for (t, d) = (4, 5) and none
+for (5, 6) or (6, 8); see Results. So neither run settles a new case, and A(5) is still open. The
+code was researched and written with AI agents working in MV2's name. Its unit tests gate this
+commit; they need no SAT solver. No human mathematician has checked it. Text CC BY 4.0, code
+Apache-2.0.
 
 ## The question
 
@@ -124,7 +125,36 @@ decided, so the plain search gives no second proof of A(4) = 4; we had guessed i
 five minutes, and that guess was wrong. The step from d = t to d = t + 1 is where the plain encoding
 becomes hard. That is why rank_classes.py splits the search by the class of one element.
 
-**rank_classes.py:** queued, no results yet.
+**rank_classes.py** (run on 2026-10-17 from 12:57 to 15:54 UTC, one CPU, 1 GB, CaDiCaL 1.9.5; job
+m8-rank-classes-v1). The 11 unit tests passed. The selfcheck passed: the class counts for
+t = 1, ..., 5 are 2, 6, 14, 34, 74 (singular 1, 3, 8, 20, 47); the ranks of the 74 classes for t = 5
+are 0: 1, 1: 2, 2: 6, 3: 13, 4: 25, 5: 27; there are 14 classes of rank 3 for t = 6; the
+representatives agree with the GL(t, 2) orbits found by brute force for t = 1, ..., 4; and on 120
+random cases (39 accepted, 17 classes hit) the normalised class CNF agreed with the brute-force
+check every time. The instance counts were as predicted: 23 for (4, 5), and 25, 19 and 13 for
+(5, 6) at rank 4, rank 3 and ranks 0 to 2. Each group of instances had a total time budget, and
+instances left when it ran out are SKIPPED.
+
+    (t, d)  ranks   budget per instance / group   UNSAT   UNKNOWN   SKIPPED   SAT
+    (3,3)   0       2 / 4 min (positive control)  -       -         -         1, verified
+    (5,5)   0       4 / 5 min (positive control)  -       -         -         1, verified
+    (4,5)   0-3     3 / 30 min                    4       8         11        0
+    (5,6)   4       2 / 20 min                    0       10        15        0
+    (5,6)   3       8 / 75 min                    0       10        9         0
+    (5,6)   0-2     5 / 30 min                    0       6         7         0
+    (6,8)   3       2 / 20 min                    0       10        12        0
+
+The four decided instances for (4, 5) are rank-3 classes (classes 14, 20, 21 and 22 of the run's
+list), solved in 166, 107, 147 and 63 seconds; the other rank-3 classes reached the 3-minute limit.
+So every graded prediction that was decided held (the selfcheck, the unit tests, both positive
+controls and 4 of the 23 instances for (4, 5)), and no instance anywhere came back SAT. But the
+predictions that mattered were not decided: there is no lemma-free proof of A(4) = 4, no answer for
+rank 4 at (5, 6), and nothing on A(5) or Question R. Our exploratory guess that each (4, 5) instance
+would take under a minute was wrong. Fixing one matrix to its rational canonical form is not enough
+symmetry breaking for one CPU. The searches of [case-b.md](case-b.md) and
+[case-b-shapes.md](case-b-shapes.md) fix much more (sigma(u), all of beta(u, .), part of A_u, and a
+basis of U+ with its values) and target only the configuration that Corollary 18 leaves open; their
+runs are queued.
 
 ## An open question the runs probe
 
@@ -137,9 +167,9 @@ dim V <= t?
 
 For t <= 4 the answer is yes, because A(t) = t there. For t = 5, a yes for rank 3 = t - 2 would give
 A(5) = 5 through the remark after Proposition 24. With rho = 3 and t = 7 it would give A(7) <= 9,
-which settles Z_4^10 x Z_2^2. The run for (5, 6) at rank 3 decides Question R for t = 5. The run
-for (6, 8) at rank 3 tests a consequence for t = 6 (a yes there means no such system), but those
-instances may not finish in time. We have no proof of Question R. In the case t - rho = 2 with
+which settles Z_4^10 x Z_2^2. The run of rank_classes.py did not decide any instance for (5, 6) at
+rank 3 or for (6, 8) at rank 3 (see Results), so Question R is open for t = 5 and t = 6. We have no
+proof of Question R. In the case t - rho = 2 with
 dim V = t + 1, the proof of Lemma 30 forces codim U+ = t - 1 and U+ = span(u, v) with sigma(v)
 outside span(sigma(u)). Then either beta(u, .) maps V onto X with kernel span(u), or its image is a
 hyperplane that misses sigma(u), with kernel span(u, v). In the second case A_v also kills

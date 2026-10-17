@@ -168,6 +168,16 @@ gated this commit) assert:
 - on a pair with t = 4 and k = 2 whose only failing hypothesis is Im(I + A_v) in R, that the
   hypothesis is needed.
 
+**Full run** (job m10-tight-v1, 2026-10-17 from 16:33 to 16:37 UTC, one CPU). The whole check ran
+for all nine (t, k), with predictions written down before the run, and every prediction held. The
+7 unit tests passed. No pair failed a hypothesis or a conclusion anywhere. There is no survivor for
+any (t, k) with t <= 2k: the candidate counts were 12, 256, 24, 16,384, 1,280, 48, 196,608, 5,120
+and 96 for (3, 2), (4, 2), (4, 3), (5, 2), (5, 3), (5, 4), (6, 3), (6, 4) and (6, 5), and only
+(4, 2) and (6, 3) have candidates A_v of low rank (8 and 192, which make 48 and 32,256 pairs with
+A_u, none surviving). For (5, 2), where t = 2k + 1, 1,312 of the 16,384 candidates have low rank,
+and 14,208 of the 220,416 pairs survive (8,064 with x0 outside R and R n X_1 of dimension 1, and
+6,144 with x0 in R and R n X_1 = X_1), each with every conclusion of Lemma 33.
+
 ## Prior work
 
 As for rank-restriction.md and question-r.md: searches on 2026-10-15 to 2026-10-17 found nothing on

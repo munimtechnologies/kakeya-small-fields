@@ -98,8 +98,9 @@ Lemma 32 alone cannot exclude t = 5. Take x0 = e_0, z = e_1, R = span(e_1, e_2, 
 and e_1, fix e_2 and e_3 and send e_4 to e_1, and let A_v fix e_0, e_3 and e_4 and kill e_1 and e_2.
 Then every hypothesis and conclusion of Lemma 32 holds (A_w fixes e_0 and e_2, kills e_1 and e_3, and
 sends e_4 to e_1 + e_4). So excluding Case A at t = 5 needs the rest of (*), not only these three
-elements. Case B is open for every t >= 4. The exact search of sat-search.md decides Question R for
-t = 5 directly, whatever the case.
+elements. Case B is open for every t >= 4. The exact search of sat-search.md was meant to decide
+Question R for t = 5 directly, whatever the case, but its run did not decide those instances in
+time (see the Results of sat-search.md).
 
 ## Computation
 
@@ -120,6 +121,15 @@ reduced versions of each.
   and 2 x 168 x 512 = 172,032 pairs for t = 3, 4 and 5. The tests assert these counts, that no pair
   survives the rank conditions for t = 3 or 4, that every surviving pair for t = 5 has all the
   conclusions, that some pair survives, and that the example above is one of them.
+
+**Full run** (job qr-casea-v1, 2026-10-17 from 16:17 to 16:20 UTC, one CPU). All three parts ran
+in full, with predictions written down before the run, and every prediction held. The 8 unit tests
+passed. casea: 2, 192 and 172,032 pairs for t = 3, 4 and 5, no hypothesis failure, no survivor for
+t = 3 or 4, and for t = 5 11,136 survivors (8,064 with x0 outside R and 3,072 with x0 in R), every
+one with all the conclusions of Lemma 32. identity: no failure of Lemma 31 on any of the 2,080 pairs
+checked (100 and 1,000 for the diagonal systems with t = 2 and 3, of which 36 and 488 have
+sigma(u) != 0; 298 and 682 for 20 random systems each with t = 3 and 4). control: no random pair was
+a system, and Lemma 31 failed on 47 of the 50.
 
 ## Prior work
 
