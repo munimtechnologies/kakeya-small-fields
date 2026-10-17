@@ -3,11 +3,12 @@
 MV2 of Munim, Inc., 2026-10-17. Added to kakeya-small-fields after version 1.7.10. This note
 describes `cube_groups/sat_aniso.py` and `cube_groups/rank_classes.py`, two exact computer searches
 for the anisotropic systems of section 14 of [finite-groups.md](../finite-groups.md) and of
-[rank-restriction.md](rank-restriction.md). **No results are reported here yet.** The full runs are
-queued with predictions written down before they run, and their results will be added to this note
-(version 1.7.11) whether or not the predictions hold. The code was researched and written with AI
-agents working in MV2's name. Its unit tests gate this commit; they need no SAT solver. No human
-mathematician has checked it. Text CC BY 4.0, code Apache-2.0.
+[rank-restriction.md](rank-restriction.md). **The first full run (sat_aniso.py) has finished:**
+every graded prediction held, but the three hard instances, (t, d) = (4, 5), (5, 6) and (6, 7), ran
+out of time without an answer (see Results). The run of rank_classes.py is still queued, and its
+results will be added here whether or not its predictions hold. The code was researched and written
+with AI agents working in MV2's name. Its unit tests gate this commit; they need no SAT solver. No
+human mathematician has checked it. Text CC BY 4.0, code Apache-2.0.
 
 ## The question
 
@@ -82,7 +83,7 @@ accepts exactly the anisotropic systems, on random examples.
 
 ## What the runs test
 
-The two runs (queued 2026-10-17) and their pre-registered predictions are:
+Both runs were queued on 2026-10-17 with these predictions written down before they ran:
 
 - **sat_aniso.py:** SAT with verified models for (t, d) = (1, 1), ..., (5, 5) (positive controls);
   UNSAT for (1, 2), (2, 3), (3, 4), (2, 4) and (4, 5), the last re-checked with a second solver. A
@@ -97,6 +98,33 @@ The two runs (queued 2026-10-17) and their pre-registered predictions are:
 A verified SAT answer for (4, 5) would refute Theorem 26, and we would withdraw it here. A verified
 SAT answer for (5, 6) would be the first anisotropic system with dim V > t. It would be published
 with its matrices.
+
+## Results
+
+**sat_aniso.py** (run on 2026-10-17 from 10:05 to 12:36 UTC, one CPU, 1 GB, python-sat with
+CaDiCaL 1.9.5 unless Glucose 4 is named; wall-clock seconds per instance). The 9 unit tests passed. The selfcheck passed: on 160 cases (98
+systems, 60 of them anisotropic) the coefficient equations, the CNF and the echelon normalisation
+agreed with the brute-force check every time.
+
+    (t, d)            prediction           result                        seconds
+    (1,1) ... (5,5)   SAT, verified        SAT, model verified           < 0.5 each
+    (2,4) without (*) SAT, anisotropic     SAT, anisotropic, not (*)     0.2
+    (1,2)             UNSAT                UNSAT                         0.2
+    (2,3)             UNSAT                UNSAT                         0.2
+    (3,4)             UNSAT                UNSAT                         0.3
+    (3,4) Glucose 4   UNSAT                UNSAT                         0.3
+    (2,4)             UNSAT                UNSAT                         0.2
+    (4,5)             UNSAT                UNKNOWN (budget 30 min)       1800
+    (4,5) Glucose 4   UNSAT                UNKNOWN (budget 15 min)       900
+    (5,6)             exploratory          UNKNOWN (budget 90 min)       5400
+    (6,7)             exploratory          UNKNOWN (budget 15 min)       900
+
+Every graded prediction that was decided held (11 of 11). The prediction for (4, 5) was not
+decided, so the plain search gives no second proof of A(4) = 4; we had guessed it would take under
+five minutes, and that guess was wrong. The step from d = t to d = t + 1 is where the plain encoding
+becomes hard. That is why rank_classes.py splits the search by the class of one element.
+
+**rank_classes.py:** queued, no results yet.
 
 ## An open question the runs probe
 
@@ -116,8 +144,10 @@ dim V = t + 1, the proof of Lemma 30 forces codim U+ = t - 1 and U+ = span(u, v)
 outside span(sigma(u)). Then either beta(u, .) maps V onto X with kernel span(u), or its image is a
 hyperplane that misses sigma(u), with kernel span(u, v). In the second case A_v also kills
 ker A_u, so every element of span(u, v) has rank <= t - 2. [question-r.md](question-r.md) shows
-that the first case needs t >= 5 and pins down its shape at t = 5 (Proposition 25). We have found no
-contradiction in the second case.
+that the first case needs t >= 5 and pins down its shape at t = 5 (Proposition 25).
+[tight-cases.md](tight-cases.md) extends the two cases to every rank and shows that the first case
+needs 2 rho >= t + 1. So at t = 6 and t = 7 only the second case stands between Proposition 24 and
+A(6) <= 7 and A(7) <= 9 (Corollary 18). We have found no contradiction in the second case.
 
 ## Running it
 
