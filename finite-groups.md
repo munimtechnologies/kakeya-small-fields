@@ -1,6 +1,6 @@
 # Cube translates in finite groups: partial families, and 2-groups with central involutions
 
-By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.8, 2026-10-17. This file holds
+By MV2 of Munim, Inc. Part of kakeya-small-fields version 1.7.9, 2026-10-17. This file holds
 sections 13 and 14 of the README (https://github.com/munimtechnologies/kakeya-small-fields). It
 was researched and written with AI agents working in MV2's name. Every statement is proved below,
 and most are also checked by exact finite computations (the table at the end says which). **No
@@ -10,12 +10,21 @@ already known, please open an issue. Text CC BY 4.0, code Apache-2.0.
 Numbering continues from the README: version 1.6 ends with Proposition 4, Lemma 6, Theorem 8 and
 Corollary 8, so this file starts at Theorem 9, Lemma 7, Proposition 5 and Corollary 9.
 
-Version 1.7.8 reports the full runs of `cube_groups/m3_core.py` and `cube_groups/m3_exact.py`
-(every graded prediction matched) and adds Lemmas 27 and 28 and Corollary 15. If the maps A_h of a
+Version 1.7.9 reports the full run of `cube_groups/m4_irred.py` (every graded prediction matched,
+so Lemmas 27 and 28 are now computer-checked too) and settles the first open case (8, 2) of
+section 14, together with (8, 3), (8, 4), (8, 5), (9, 5), (9, 6) and (10, 7). The new step is
+Lemma 29: for t >= 4, the published classification of spaces of matrices of rank at most 2 over F_2
+(C. de Seguins Pazzis, Linear Multilinear Algebra 64 (2016)) shows that every irreducible such
+space in M_t(F_2) has the form of Lemma 28. With Corollary 15 this gives A(4) <= 5 and A(5) <= 7
+(Theorem 25), Proposition 23 bounds A(t) for larger t, and Corollary 16 counts the cases again: the
+answer is yes for every Z_4^a x Z_2^b with b <= 1 or a <= max(8, b + 2), and for (9, 5), (9, 6) and
+(10, 7). The checks for these are in `cube_groups/m5_rank2.py`.
+Version 1.7.8 reported the full runs of `cube_groups/m3_core.py` and `cube_groups/m3_exact.py`
+(every graded prediction matched) and added Lemmas 27 and 28 and Corollary 15. If the maps A_h of a
 system share an invariant subspace, the system splits into two smaller ones (Lemma 27); if they all
 map a hyperplane into a line outside it, an anisotropic system has dim V <= t (Lemma 28). So at
 the least t where A(t) = t fails, a counterexample needs an irreducible space of singular
-matrices, and the first open case (8, 2) now needs only the irreducible spaces of matrices of rank
+matrices, and the first open case (8, 2) needed only the irreducible spaces of matrices of rank
 <= 2 in M_5(F_2) that are not of Lemma 28's form.
 Version 1.7.7 determines M(3) = 3 and extends the answer to the question of section 14 to every
 Z_4^a x Z_2^b with b <= 1 or a <= max(7, b + 2). The new tool is Lemma 26: at a zero u of sigma,
@@ -1136,7 +1145,8 @@ through Proposition 21, via Theorem 24 and Proposition 22.)
 
 For the first open case (8, 2), the same count needs tau >= 5, that is E(5) <= 2, which holds if
 A(5) <= 7. For (8, b) with 3 <= b <= 5 it needs tau >= 6, which holds if A(6) <= 6 + b. Both would
-follow from A(t) = t, which is true for t <= 3.
+follow from A(t) = t, which is true for t <= 3. (Theorem 25 and Proposition 23 below prove both
+bounds, and Corollary 16 settles these cases.)
 
 *Computation (new in 1.7.7).* `cube_groups/m3_exact.py` checks Lemma 26 at every vector of
 random solutions with t = 2 and 3, on Example 1 and on the system of Lemma 23(d), and Theorem 24
@@ -1153,9 +1163,10 @@ anisotropic system. Most of the spaces it used are reducible in the sense of Lem
 dim V <= 4 is now proved, so this search says little about A(4). The case count of Corollary 14
 matched for every a <= 14 and b <= 12.
 
-The rest of this section is new in 1.7.8. It shows that only irreducible spaces of matrices can
-stand between the results above and A(t) = t. Call a subspace Y of X *invariant* if A_h Y <= Y for
-every h, and call alpha(V) *irreducible* if 0 and X are its only invariant subspaces.
+From here to the computation after Corollary 15, this section is new in 1.7.8. It shows that only
+irreducible spaces of matrices can stand between the results above and A(t) = t. Call a subspace Y
+of X *invariant* if A_h Y <= Y for every h, and call alpha(V) *irreducible* if 0 and X are its only
+invariant subspaces.
 
 **Lemma 27 (invariant subspaces).** Let (sigma, alpha) be a system and Y an invariant subspace of
 dimension d, with 0 < d < t. Then:
@@ -1222,28 +1233,122 @@ M(2) + A(3), M(1) + A(4)) <= 7, using M(4) <= 6 and A(4) <= 6 (Proposition 22). 
 rho >= 3 gives dim V <= 5 + A(5 - rho) <= 7. Lemma 28 excludes its form. QED (computer-assisted
 through Proposition 21, which gives A(2) and A(3).)
 
-Spaces of matrices of rank at most 2 have been classified. According to the abstract of
-C. de Seguins Pazzis, "Primitive spaces of matrices with upper rank two over the field with two
-elements" (arXiv 1405.1575), the classification was known over every field with more than two
-elements, and that paper completes it over F_2. We have not read it, so nothing here depends on
-it. Checking the irreducible spaces of rank at most 2 in M_4(F_2) and M_5(F_2) against Lemma 28 is
-the natural next step, for A(4) and for (8, 2).
+*Computation.* `cube_groups/m4_irred.py` (new in 1.7.8; full run on 2026-10-17, every graded
+prediction matched) checks Lemma 27 on 240 random systems with t = 3 and 4 whose alpha(V) keeps a
+coordinate subspace invariant (471 solutions: the quotient and restricted systems,
+LC(V) <= codim U + LC(U), and LC(V) <= t, with no violation), and Lemma 28 on 239 random systems
+with t = 3 and 4 that map a coordinate hyperplane into a line (363 solutions, 321 of them with
+pi != 0: tau pi = 0, the subspace W, beta = 0 on W, and LC(V) <= t, with no violation). It also
+searched 254 systems with t = 4 and dim V = 5 and 6 (3,007 solutions) over irreducible subspaces
+of the spaces {A : A P <= Q} with (codim P, dim Q) = (1, 1), (1, 2) and (2, 1), over random
+irreducible spaces of singular matrices, and over reducible spaces as a control, and found no
+anisotropic system. A second control found 41 anisotropic maps among 300 random quadratic maps
+F_2^5 -> F_2^4 (about 40 were expected), which shows that the identity (*) is what rules them out.
+The irreducible (1, 1) spaces are of Lemma 28's form, so there the search confirms a proved bound;
+for the other spaces it is a sample, not a proof.
 
-*Computation (queued).* `cube_groups/m4_irred.py` (new in 1.7.8) checks Lemma 27 on random systems
-with t = 3 and 4 whose alpha(V) keeps a coordinate subspace invariant (the quotient and restricted
-systems, LC(V) <= codim U + LC(U), and LC(V) <= t), and Lemma 28 on random systems with t = 3 and 4
-that map a coordinate hyperplane into a line (tau pi = 0, the subspace W, beta = 0 on W, and
-LC(V) <= t). It also searches for anisotropic systems with t = 4 and dim V = 5 and 6 over random
-irreducible spaces of singular matrices: subspaces of the spaces {A : A P <= Q} with
-(codim P, dim Q) = (1, 1), (1, 2) and (2, 1), and random ones, with reducible spaces as a control.
-A second control counts how many random quadratic maps F_2^5 -> F_2^4 are anisotropic (about one
-in seven is expected), which shows that the identity (*) is what rules them out. Its unit tests
-passed before this version was published, and its full run is queued with pre-registered
-predictions.
+The rest of this section is new in 1.7.9. It answers the question left by Corollary 15(b).
 
-*Status of Theorems 16 to 24, Lemmas 21 to 28 and Corollary 15.* They are proved by hand above.
-Full runs in a sealed container passed on 2026-10-15, 2026-10-16 and 2026-10-17, and every graded
-number matched its prediction:
+Spaces of matrices of rank at most 2 have been classified. Over fields with more than two elements
+this goes back to Atkinson and Lloyd (1980) and Atkinson (1983); C. de Seguins Pazzis completed it
+over F_2 ("Primitive spaces of matrices with upper rank two over the field with two elements",
+Linear Multilinear Algebra 64 (2016) 1321-1353, arXiv 1405.1575). We use one statement from that
+paper, its Theorem 3.5, which we read in the arXiv version; we have not checked its proof. Call two
+subspaces C and C' of M_(n,p)(F_2) *equivalent* if C' = S C T with S and T invertible, and let
+R(s, r) be the space of n x p matrices whose bottom-right (n - s) x (p - r) block is 0. Theorem 3.5
+says: if n, p >= 3 and the largest rank of an element of C is 2, then C is equivalent to a subspace
+of R(2, 0), of R(0, 2) or of R(1, 1), or to a subspace of M_3(F_2) padded with zeros to n x p (the
+3 x 3 spaces that occur are the primitive subspaces of the space J_3 of upper triangular matrices
+with diagonal (a, a + b, b), and three further spaces: the alternating matrices A_3, and spaces U_3
+and V_3 listed in the paper).
+
+**Lemma 29 (irreducible spaces of rank <= 2).** Let t >= 4 and let C be an irreducible subspace of
+End(X) whose elements all have rank <= 2. Then there are a hyperplane P and a vector q outside P
+with A P <= span(q) for every A in C, which is the form of Lemma 28.
+*Proof.* C is not 0, and if every element had rank <= 1, the common image line or common kernel
+hyperplane (proof of Proposition 22(b)) would be invariant. So the largest rank in C is 2, and
+Theorem 3.5 applies with n = p = t. Written with subspaces of X, its cases say: (i) the images of
+all elements of C lie in one subspace of dimension 2; (ii) all elements kill one subspace of
+dimension t - 2; (iii) all elements map one hyperplane P into one line span(q); (iv) all elements
+kill one subspace of dimension t - 3. A subspace that contains every image is invariant, and so is
+a subspace that every element kills. Since t >= 4, the subspaces in (i), (ii) and (iv) are neither
+0 nor X, so C would not be irreducible. So (iii) holds, and q is not in P, because otherwise span(q)
+would be invariant. QED (uses Theorem 3.5 of de Seguins Pazzis.)
+The lemma fails for t = 3: the alternating matrices A_3 form an irreducible space of matrices of
+rank 2 in M_3(F_2), and they map no plane into a line, because an element whose kernel line lies
+outside the plane is one-to-one on it. This agrees with the computed A(3) = 3.
+
+**Theorem 25 (A(4) <= 5 and A(5) <= 7).** 4 <= A(4) <= 5 and 5 <= A(5) <= 7, so M(4) <= 5 and
+M(5) <= 7 by Theorem 24. An anisotropic system with t = 4 and dim V = 5 needs an irreducible
+alpha(V) of singular matrices with an element of rank 3; one with t = 5 and dim V = 7 needs an
+irreducible alpha(V) whose elements all have rank <= 3, some of them rank 3.
+*Proof.* For t = 4, Corollary 15 applies (A(s) = s for s <= 3): an anisotropic system with
+dim V > 4 has an irreducible alpha(V), not of Lemma 28's form, so by Lemma 29 some element has
+rank >= 3. It is singular, so its rank is 3, and Proposition 22(a) gives dim V <= 4 + A(1) = 5.
+Theorem 24 then gives M(4) <= 4 + 1 = 5. For t = 5, take an anisotropic system. If alpha(V) is
+reducible, Lemma 27(c) gives dim V <= max(M(4) + A(1), M(3) + A(2), M(2) + A(3), M(1) + A(4)) =
+max(6, 5, 5, 6) = 6. If it is irreducible and all its elements have rank <= 2, Lemmas 29 and 28
+give dim V <= 5. An element of rank 4 gives dim V <= 5 + A(1) = 6, and one of rank 3 gives
+dim V <= 5 + A(2) = 7 (Proposition 22(a)). So A(5) <= 7, and M(5) <= 5 + 2 = 7. The lower bounds
+are A(t) >= t. QED (computer-assisted through Proposition 21, which gives A(2) and A(3); uses
+Theorem 3.5 of de Seguins Pazzis through Lemma 29.)
+
+**Proposition 23 (anisotropic systems for larger t).** For every t >= 4,
+
+    A(t) <= min( 2t, max( t + A(t - 3), max over 0 < d < t of M(t - d) + A(d) ) ).
+
+With M(s) <= s + E(s), where E(s) = max over r <= s of (A(r) - r) (Theorem 24), this gives
+
+    t          1  2  3  4  5  6   7   8   9
+    A(t) <=    1  2  3  5  7  9  12  15  18
+    E(t) <=    0  0  0  1  2  3   5   7   9
+
+and from t = 9 on it gives only the Chevalley-Warning bound A(t) <= 2t, so E(t) <= t.
+*Proof.* Take an anisotropic system with dim V > t. If alpha(V) has an invariant subspace of
+dimension d with 0 < d < t, Lemma 27(c) applies. Otherwise alpha(V) is irreducible, and Lemmas 29
+and 28 show that some element has rank rho >= 3; Proposition 22(a) and monotonicity give
+dim V <= t + A(t - rho) <= t + A(t - 3). The table follows by induction on t. For example,
+A(6) <= max(6 + A(3), M(5) + A(1), M(4) + A(2), M(3) + A(3), M(2) + A(4), M(1) + A(5)) =
+max(9, 8, 7, 6, 7, 8) = 9. QED (computer-assisted through Proposition 21; uses Theorem 3.5 of
+de Seguins Pazzis through Lemma 29.)
+For every t from 4 to 8, the term t + A(t - 3) from elements of rank 3 sets the bound in the table.
+For t = 6, every other case gives dim V <= 8 (an element of rank >= 4 gives 6 + A(2) = 8). So an
+anisotropic system with t = 6 and dim V = 9 needs an irreducible space in M_6(F_2) whose elements
+all have rank <= 3, some of them rank 3.
+
+**Corollary 16 (a <= 8, and a <= b + 2).** If L has a self-centralising normal subgroup
+A ~ Z_4^a x Z_2^b with b <= 1, with a <= max(8, b + 2), or with (a, b) = (9, 5), (9, 6) or
+(10, 7), then |L| <= |Omega|^4, and the answer is yes. This contains Corollary 14 and settles
+(8, 2), (8, 3), (8, 4) and (8, 5), the first open cases of 1.7.8. The first open cases are now
+(9, 2), (9, 3), (9, 4), (10, 5), (10, 6), (11, 7) and (b + 3, b) for b >= 8.
+*Proof.* Repeat the proof of Corollary 14 with the bounds E(t) of Proposition 23. Now
+tau >= min(a, 5) when b = 2, tau >= min(a, 6) when b = 3 or 4, tau >= min(a, 7) when b = 5 or 6,
+tau >= min(a, 8) when b = 7, and tau >= min(a, b) when b >= 8 (as E(t) <= 7 for t <= 8 and
+E(t) <= t). The condition (a - tau - 2)(b - 1) <= 1 then reads a <= 8 for 2 <= b <= 4, a <= 9 for
+b = 5 and 6, a <= 10 for b = 7, and a <= b + 2 for b >= 8. QED (computer-assisted through
+Proposition 21; uses Theorem 3.5 of de Seguins Pazzis through Lemma 29.)
+
+By the same count, (9, 2) follows from A(6) <= 8, (9, 3) from A(7) <= 10, (9, 4) from A(7) <= 11,
+(10, 5) and (10, 6) from A(8) <= 8 + b, and (11, 7) from A(9) <= 16. A(t) = t for every t would
+settle every case.
+
+*Computation (queued).* `cube_groups/m5_rank2.py` (new in 1.7.9) checks the bounds of
+Proposition 23 and the case count of Corollary 16 for every a <= 14 and b <= 12. It tests the way
+Lemma 29 reads Theorem 3.5: it grows random spaces of matrices of rank <= 2 in M_t(F_2) for
+t = 3, 4 and 5 (from 0, and for t >= 4 also from zero-padded copies of the 3 x 3 spaces of the
+paper) and checks that for t = 4 and 5 each of them, and each of their initial parts, has a common
+kernel vector, or images in a plane, or a hyperplane mapped into a line, and that every irreducible
+one has the form of Lemma 28. It checks the same for every 2-dimensional space of matrices of
+rank <= 2 in M_4(F_2), up to equivalence. As a control it checks that A_3, U_3, V_3 and the
+5-dimensional space of upper triangular matrices with diagonal (a, a + b, b), as transcribed from
+the paper, have largest rank 2 and none of these three properties in M_3(F_2), so the test can
+fail. Its unit tests passed before this version was published, and its full run is queued with
+pre-registered predictions.
+
+*Status of Theorems 16 to 25, Lemmas 21 to 29, Propositions 20 to 23 and Corollaries 12 to 16.*
+They are proved by hand above; Lemma 29, and through it Theorem 25, Proposition 23 and
+Corollary 16, also use Theorem 3.5 of de Seguins Pazzis. Full runs in a sealed container passed on
+2026-10-15, 2026-10-16 and 2026-10-17, and every graded number matched its prediction:
 `cube_groups/z4degree.py` (Theorem 16: 6 of 6 groups consistent, both controls as predicted);
 `cube_groups/z4z2.py` (Theorem 17: 10 of 10 groups consistent, 4 of them with rank Q > 0, and the
 control with a non-central involution fails as predicted); `cube_groups/hommap.py` (the lemma in
@@ -1267,29 +1372,34 @@ above); `cube_groups/normal_form.py` (Lemma 23(a) pointwise, Lemma 23(c) on ever
 dim C = 1, Lemma 23(d) for t = 1, 2, 3, and the normal-form counts above);
 `cube_groups/nf_pencil.py` (Example 1, Lemma 24(a) and (c) against the identity and brute force,
 Lemma 24(b) on 3-dimensional C, and Proposition 21); `cube_groups/m3_core.py` (Lemma 25,
-Theorem 23 and the search after it); and `cube_groups/m3_exact.py` (Lemma 26, Theorem 24,
-Proposition 22(b) and the case count of Corollary 14). The full run of `cube_groups/m4_irred.py`
-(Lemmas 27 and 28) is queued; its unit tests passed. The group-theoretic steps of Proposition 17,
-Lemma 18, Theorems 19 to 22, Corollaries 12 to 14 and Proposition 20 are checked by hand only.
+Theorem 23 and the search after it); `cube_groups/m3_exact.py` (Lemma 26, Theorem 24,
+Proposition 22(b) and the case count of Corollary 14); and `cube_groups/m4_irred.py` (Lemmas 27
+and 28, and the search over irreducible spaces with t = 4). The full run of
+`cube_groups/m5_rank2.py` (Lemma 29 on random spaces, Proposition 23 and the case count of
+Corollary 16) is queued; its unit tests passed. The group-theoretic steps of Proposition 17,
+Lemma 18, Theorems 19 to 22, Corollaries 12 to 14 and 16 and Proposition 20 are checked by hand
+only.
 
 **Where the question stands.** Proved: e <= 2; class 2 (Theorem 15); e = 3 with x -> x^4 a
 homomorphism; groups with a unique-involution series of length k; a self-centralising normal
-Z_4^k; a self-centralising normal Z_4^a x Z_2^b when b <= 1, when a <= 7 (every b) and when
-a <= b + 2 (Corollary 14), and also when rank Q >= b(a - 2) + 1 (in particular when Q has full
-rank), when ab - s(b - 1) <= a + b, and when dim span sigma(H) <= 1 and a + b >= 3. Reduced: by
-Proposition 20 and Theorem 24, every remaining Z_4^a x Z_2^b case follows from A(t) <= t + 1 for
-every t, a statement about anisotropic quadratic maps over F_2 alone; the first open case (8, 2)
-needs only A(5) <= 7, and by Corollary 15 only an irreducible space of matrices of rank <= 2 in
-M_5(F_2), not of the form of Lemma 28, could stand in its way. Known: M(1) = 1, M(2) = 2, M(3) = 3
-and M(t) <= 2t for every t; A(t) = t for t <= 3, 4 <= A(4) <= 6, A(5) <= 8 and t <= A(t) <= 2t; at
-the least t where A(t) = t fails (if there is one), every counterexample has an irreducible
-alpha(V) (Corollary 15). Whether A(t) = t (equivalently, M(t) = t) for every t is open. Computed:
+Z_4^k; a self-centralising normal Z_4^a x Z_2^b when b <= 1, when a <= 8 (every b), when
+a <= b + 2, and for (9, 5), (9, 6) and (10, 7) (Corollary 16), and also when rank Q >= b(a - 2) + 1
+(in particular when Q has full rank), when ab - s(b - 1) <= a + b, and when dim span sigma(H) <= 1
+and a + b >= 3. Reduced: by Proposition 20 and Theorem 24, every remaining Z_4^a x Z_2^b case
+follows from A(t) <= t + 1 for every t, a statement about anisotropic quadratic maps over F_2
+alone; the first open case (9, 2) needs only A(6) <= 8, and by Proposition 23 only an irreducible
+space of matrices in M_6(F_2) of largest rank 3 could stand in its way. Known: M(1) = 1, M(2) = 2,
+M(3) = 3, M(4) <= 5, M(5) <= 7 and M(t) <= 2t for every t; A(t) = t for t <= 3, 4 <= A(4) <= 5,
+5 <= A(5) <= 7, A(6) <= 9 and t <= A(t) <= 2t; at the least t where A(t) = t fails (if there is
+one), every counterexample has an irreducible alpha(V) (Corollary 15), and for t >= 4 an element
+of rank >= 3 (Lemma 29). Whether A(t) = t (equivalently, M(t) = t) for every t is open. Computed:
 true on every subgroup of Q_16, Q_32, Q_8^2 and Q_16 x Q_8, and of nine class-2 groups up to order
 256. An exact search over all 324 conjugacy classes of 7-dimensional subspaces of M_3(F_2) found no
-counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with a >= max(8, b + 3),
-starting with (8, 2), (8, 3), (8, 4) and (8, 5); homocyclic Z_(2^m)^k with m >= 3; the general
-case. A classification of the 2-groups with exactly three involutions (k = 2) is in Janko,
-J. Algebra 291 (2005) 505-533. We could not read it, so the case k = 2 is not claimed.
+counterexample with A ~ Z_4^3, as Theorem 16 predicts. Open: Z_4^a x Z_2^b with b >= 2 and
+a >= max(9, b + 3), other than (9, 5), (9, 6) and (10, 7), starting with (9, 2), (9, 3), (9, 4),
+(10, 5) and (10, 6); homocyclic Z_(2^m)^k with m >= 3; the general case. A classification of the
+2-groups with exactly three involutions (k = 2) is in Janko, J. Algebra 291 (2005) 505-533. We
+could not read it, so the case k = 2 is not claimed.
 
 *Prior work.* Searches on 2026-10-15 and 2026-10-16 found no statement of this question. The
 literature's "2-central" means Omega_2 <= Z, which is a stronger hypothesis. Higman's Suzuki
@@ -1303,9 +1413,10 @@ on 2026-10-17 found Pakianathan and Yalcin, "Quadratic maps and Bockstein closed
 maps, including the map A -> A + A^2 on gl_n(F_2). From its abstract and a search summary of its
 text (we have not read it in full), it appears to record the Chevalley-Warning bound for quadratic
 maps with no non-trivial zero, with equality for Q_8^m, which is the argument of Lemma 10. We found
-nothing on the identity (*) or on M(t). The tools (quadratic maps, Chevalley-Warning, determinants
-of degree-bounded matrices, spaces of rank-1 matrices, invariant subspaces) are standard, so a
-specialist may know these bounds. Please open an issue if so.
+nothing on the identity (*) or on M(t). Lemma 29 is a direct consequence of the classification of
+de Seguins Pazzis; only its use here is ours. The tools (quadratic maps, Chevalley-Warning,
+determinants of degree-bounded matrices, spaces of matrices of bounded rank, invariant subspaces)
+are standard, so a specialist may know these bounds. Please open an issue if so.
 
 ## Verification table
 
@@ -1342,15 +1453,17 @@ concordance below maps them to this file.
 | nf_pencil.py | Example 1, Lemma 24, Proposition 21 (anisotropic systems) | passed (new in 1.7.6) |
 | m3_core.py | Lemma 25, Theorem 23 (a)-(c), the systems left by Theorem 23, the count of 22 in the Remark | passed (new in 1.7.6) |
 | m3_exact.py | Lemma 26, Theorem 24 (t <= 4), Proposition 22(b), the case count of Corollary 14 | passed (new in 1.7.7) |
-| m4_irred.py | Lemmas 27 and 28; anisotropic systems with t = 4 over irreducible spaces | unit tests passed; full run queued (new in 1.7.8) |
+| m4_irred.py | Lemmas 27 and 28; anisotropic systems with t = 4 over irreducible spaces | passed (new in 1.7.8) |
+| m5_rank2.py | Lemma 29 on random spaces (t = 3, 4, 5) and on every 2-dimensional one in M_4(F_2); the 3 x 3 spaces of the paper; Proposition 23 and the case count of Corollary 16 | unit tests passed; full run queued (new in 1.7.9) |
 
 Proved by hand only: Proposition 14, Lemma 8, Lemma 10, Proposition 16, Lemmas 11, 12 and 14, the
 uniqueness claim in Proposition 10, the group-theoretic steps of Proposition 17, Lemma 18,
-Theorems 19 to 22, Corollaries 12 to 14 and Proposition 20, Lemma 21(b), the Remark after
-Theorem 24 (except the count of 22 in (b), which is computed), Corollary 15, and (until the run of
-m4_irred.py has been graded) Lemmas 27 and 28. Lemma 25, Theorem 23, Theorem 24, Proposition 22 and
-Corollary 15 also use the computed Proposition 21. Two numbers come from full runs that are too slow
-for the unit tests: the Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
+Theorems 19 to 22, Corollaries 12 to 14 and 16 and Proposition 20, Lemma 21(b), the Remark after
+Theorem 24 (except the count of 22 in (b), which is computed), Corollary 15, and Lemma 29 and
+Theorem 25, which also rest on Theorem 3.5 of de Seguins Pazzis (`m5_rank2.py` tests Lemma 29 only
+on samples). Lemma 25, Theorems 23 to 25, Propositions 22 and 23 and Corollaries 15 and 16 also use
+the computed Proposition 21. Two numbers come from full runs that are too slow for the unit tests:
+the Gamma(3; 4, 4) slacks of Proposition 9 and the order-2048 group checks.
 
 **Concordance (draft label in the code -> label here).** Theorem 9 / Cor 9 -> Theorem 9 /
 Corollary 9; Prop 5 -> Proposition 5; Prop 6 -> Proposition 6; Cor 10 -> Corollary 10;
@@ -1372,8 +1485,9 @@ these five modules already use the labels of this file. In 1.7.6, `normal_form.p
 Lemma 24 (its docstring calls it "draft Lemma 24") and Proposition 21, and `m3_core.py` uses the
 labels of this file. In 1.7.7, `m3_exact.py` uses the labels of this file; its "Lemma 26" is the
 Lemma 26 of section 14, not the old draft label mapped to Proposition 14 above. In 1.7.8,
-`m4_irred.py` uses the labels of this file. The note `notes/normal-form-counterexample.md` is the
-first write-up of Example 1 and Lemma 24.
+`m4_irred.py` uses the labels of this file, and in 1.7.9 so does `m5_rank2.py` (its "Theorem 25" is
+the Theorem 25 of section 14, not the old draft label mapped to Theorem 11 above). The note
+`notes/normal-form-counterexample.md` is the first write-up of Example 1 and Lemma 24.
 
 ## Sources for this file
 
@@ -1394,7 +1508,12 @@ first write-up of Example 1 and Lemma 24.
 - J. Pakianathan, E. Yalcin, "Quadratic maps and Bockstein closed group extensions",
   arXiv math/0606374 (abstract read; see the prior-work note of section 14).
 - C. de Seguins Pazzis, "Primitive spaces of matrices with upper rank two over the field with two
-  elements", arXiv 1405.1575 (abstract read; see the note after Corollary 15).
+  elements", Linear Multilinear Algebra 64 (2016) 1321-1353; arXiv 1405.1575 (the statements of
+  Theorems 1.5, 3.5 and 3.6 read in the arXiv version; Lemma 29 uses Theorem 3.5; proofs not
+  checked by us).
+- M. D. Atkinson, S. Lloyd, "Primitive spaces of matrices of bounded rank", J. Austral. Math. Soc.
+  Ser. A 30 (1980) 473-482, and M. D. Atkinson, "Primitive spaces of matrices of bounded rank II",
+  J. Austral. Math. Soc. Ser. A 34 (1983) 306-315 (not read by us; cited by de Seguins Pazzis).
 
 ## Licence
 
