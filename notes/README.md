@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-18, release v1.7.16)
+## Status (2026-10-18, release v1.7.17)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -30,9 +30,11 @@ A(t) = t for every t would settle the whole family.
   (10, 5), (11, 5), (10, 6), (11, 6), (10, 7), (11, 7), (12, 7), (11, 8), (12, 8), (12, 9), (13, 9),
   (13, 10), (14, 11) (Corollary 34). The first open cases are (11, 2), (11, 3), (11, 4), (12, 5),
   (12, 6), (13, 7), (13, 8), (14, 9), (14, 10), (15, 11), (15, 12) and (b + 3, b) for b >= 13.
-- Partial progress ([a8.md](a8.md)): Lemma 60 (an element of U+ with zero map whose C contains x0
-  forces Im A_u n ker A_u = 0); rank 4 at t = 8 is in shape (c) unless A(6) = 7 (Proposition 28);
-  Case B at rank 4 and t = 6 comes down to 32 matrix classes, searched by job m23.
+- Partial progress ([a8.md](a8.md), [a9.md](a9.md)): Lemma 60 (an element of U+ with zero map
+  whose C contains x0 forces Im A_u n ker A_u = 0); rank 4 at t = 8 is in shape (c) unless
+  A(6) = 7 (Proposition 28). Rank 4 at t = 6 is two finite searches: Case B comes down to 32
+  matrix classes (job m23) and Case A to 21 normal forms (Lemma 61, job m24). If both find
+  everything UNSAT, A(6) = 6 comes down to elements of rank 3 (Corollary 37).
 - Open next: A(6) = 6 (which would also give A(9) <= 13, Remark after Theorem 30), and A(8) <= 10,
   which would settle (11, 2). Both need a bound for elements of rank 3 whose Lemma 30 bound has
   slack 1 (a8.md, last section).
@@ -56,7 +58,8 @@ A(t) = t for every t would settle the whole family.
 | [a6-d2.md](a6-d2.md) | Lemma 56 (the block Abar_u of A_u: rank 1 when d = 2, two types J and E, conjugated by the symmetries); the search of shape (c) at t = 6 with d = 2 split by (M_1, M_2, Abar_u) (job m19: all 382 instances UNSAT) |
 | [a6.md](a6.md) | Theorem 28, A(6) <= 7 (computer-assisted); Corollaries 29, 30 (the table; Z_4^12 x Z_2^7 settled); results of the robustness search m20 |
 | [a7.md](a7.md) | Lemma 57 and Corollary 31 (only shape (c) at t = 7, with A_u^2 = 0); Lemma 58 and Corollary 32; Lemma 59 (no element of U+ with zero map); Theorem 29, A(7) <= 9, and Theorem 30, A(8) <= 11 (by hand); Corollaries 33, 34 (the table; Z_4^10 x Z_2^2, Z_4^10 x Z_2^3, Z_4^13 x Z_2^9, Z_4^14 x Z_2^11 settled); results of jobs m21 and m22 |
-| [a8.md](a8.md) | Lemma 60 (zero maps in U+, for every tight Case B); Corollary 35 (none in shape (c) at t = 6 and at t = 8, rank 4); Proposition 28 (rank 4 at t = 8); Corollary 36 and job m23 (rank 4 at t = 6); what A(6) = 6 and A(8) <= 10 still need |
+| [a8.md](a8.md) | Lemma 60 (zero maps in U+, for every tight Case B); Corollary 35 (none in shape (c) at t = 6 and at t = 8, rank 4); Proposition 28 (rank 4 at t = 8); Corollary 36 and job m23 (rank 4 at t = 6, Case B); what A(6) = 6 and A(8) <= 10 still need |
+| [a9.md](a9.md) | Lemma 61 (Case A at rank 4 and t = 6: 21 normal forms, checked by exact linear algebra); job m24; Corollary 37 (if m23 and m24 are all UNSAT, A(6) = 6 comes down to rank 3); why Lemma 52 does not carry over to t = 6 |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22), and which use Theorem 3.5 of
