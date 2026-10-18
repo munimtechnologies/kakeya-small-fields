@@ -3,14 +3,15 @@
 MV2 of Munim, Inc., 2026-10-17 and 2026-10-18. Added to kakeya-small-fields after version 1.7.10,
 next to [case-b-shapes.md](case-b-shapes.md) and [case-b.md](case-b.md). Numbering continues from
 case-b-shapes.md (Lemma 38, Lemma 39, Corollary 21, Lemma 40, Lemma 41, then Lemma 46 and Corollary
-23, added on 2026-10-18 after Corollary 22 of case-b-shapes.md). This is partial progress: it settles
-no new case of Corollary 17. It was researched and written with AI agents working in MV2's name. The
-proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices over F_2
-and their orbits, checked against hand counts, and its unit tests gated the commit that added it.
-Lemma 40 was added later by hand, with no computer check yet. Lemma 41 and `cube_groups/shape_c2.py`
-were added after that; the unit tests of shape_c2.py check the counts of Lemma 41 against hand
-counts. Lemma 46 and Corollary 23 are hand proofs with no computer check. No human mathematician has
-checked the proofs. Text CC BY 4.0, code Apache-2.0.
+23, added on 2026-10-18 after Corollary 22 of case-b-shapes.md). It settles no case of Corollary 17
+by itself; with the run of job m13 and Lemma 47 of [case-a.md](case-a.md) it rules out Case B at
+t = 5 and rank 3 (Corollary 24 there). It was researched and written with AI agents working in MV2's
+name. The proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices
+over F_2 and their orbits, checked against hand counts, and its unit tests gated the commit that
+added it. Lemma 40 was added later by hand, with no computer check yet. Lemma 41 and
+`cube_groups/shape_c2.py` were added after that; the unit tests of shape_c2.py check the counts of
+Lemma 41 against hand counts. Lemma 46 and Corollary 23 are hand proofs with no computer check. No
+human mathematician has checked the proofs. Text CC BY 4.0, code Apache-2.0.
 
 Since Corollary 22 of [case-b-shapes.md](case-b-shapes.md) (2026-10-18), shape (c) is the only shape
 left at (t, k) = (6, 3): A(6) <= 7 holds if and only if no anisotropic system with t = 6 and
@@ -36,18 +37,20 @@ dim V = 8 has an element of rank 3 in Case B in shape (c).
 - **Lemma 41** (by hand). When U+ has dimension 2, the vector M q alone decides which form of
   Lemma 40 holds, and a Case B element can be moved to a normal form in which M, q, the value of sigma
   on W and several more values are fixed. Case B at t = 5, rank 3, then splits into 47 exact searches
-  instead of 14. `cube_groups/shape_c2.py` builds them; it is prepared, not run.
-- **Lemma 46** (new, by hand). An element h_y of W acts on X / ker A_u like the matrix M of the
-  element of U+ with the same value y, up to a map into the small subspace [Im A_u]. Since every map
-  A_h kills sigma(h), this gives **(G_y + G_y^2) y in Im A_u^2 n ker A_u** for every y in Y.
-- **Corollary 23** (new, by hand). At t = 6, unless A_u is nilpotent with Jordan blocks of sizes 3, 2
+  instead of 14. `cube_groups/shape_c2.py` builds them; they are no longer needed at t = 5 (see below).
+- **Lemma 46** (by hand). An element h_y of W acts on X / ker A_u like the matrix M of the element of
+  U+ with the same value y, up to a map into the small subspace [Im A_u]. Since every map A_h kills
+  sigma(h), this gives **(G_y + G_y^2) y in Im A_u^2 n ker A_u** for every y in Y.
+- **Corollary 23** (by hand). At t = 6, unless A_u is nilpotent with Jordan blocks of sizes 3, 2
   and 1, the three matrices M_n with sigma(n) in Y \ {0} are all singular, and so is every G_y with
   y != 0. In every case the M_n have a common invariant plane, so the 5 orbits of commuting pairs
   whose matrices generate a copy of the field F_8 contain no model. At t = 5 the lemma adds linear
   conditions on Im A_u^2 to cases (ii) and (iii) of Lemma 40.
-- The split search of Lemma 39 (job m13) was queued on 2026-10-17, together with the same split at
-  t = 5, where for rank 3 it decides all of Case B (14 instances). Its predictions were written down
-  first. It had not run by 01:30 UTC on 2026-10-18.
+- **The split search of Lemma 39 ran** (job m13-shapec-v1, 2026-10-17 23:39 to 2026-10-18 01:55 UTC).
+  Every graded prediction held. At t = 5 (k = 2, where shape (c) is all of Case B) it refuted 12 of
+  the 14 instances; the other two (M = 0 and M = I) are ruled out by hand in Lemma 47 of
+  [case-a.md](case-a.md), so **Case B does not occur at t = 5 and rank 3** (Corollary 24 there). At
+  (6, 3) every instance it reached (30 of 38) hit its 4-minute limit, so A(6) <= 7 is still open.
 
 ## Setting
 
@@ -301,7 +304,7 @@ second form of (c) gives, in the cases of Lemma 40 ((G + G^2) e_1 is 0, x0 + e_1
 - case (iii): e_1 lies in Im A_u^2. There X_1 lies in R, so Im A_u^2 = A_u(R) has dimension
   rho - 2 = 1 at t = 5, hence **Im A_u^2 = span(e_1), A_u^3 = 0 and L = span(M q)**.
 
-These are extra conditions for the 47 instances of Lemma 41. shape_c2.py does not use them yet.
+These are extra conditions for the 47 instances of Lemma 41. shape_c2.py does not use them.
 
 ## Corollary 23 (t = 6: singular matrices and a common invariant plane)
 
@@ -356,41 +359,44 @@ That gives 5 orbits; the two line orbits are those of the two irreducible cubics
 
 What Corollary 23 does for the search at (6, 3). Part (d) removes 5 orbits outright. Part (a) says
 more: an orbit in which span(M_(v_1), M_(v_2)) contains an invertible matrix can hold a model only if
-A_u has Jordan blocks 3, 2, 1. These are new constraints for a later search; job m13, already queued,
-does not use them, so its answers do not depend on Lemma 46 or Corollary 23. Neither result is a
-contradiction in the remaining cases, and A(6) <= 7 is still open.
+A_u has Jordan blocks 3, 2, 1. These are new constraints for a later search; job m13 did not use
+them, so its answers do not depend on Lemma 46 or Corollary 23. Neither result is a contradiction in
+the remaining cases, and A(6) <= 7 is still open.
 
-## The split search (job m13, queued)
+## The split search (job m13, ran on 2026-10-17 and 2026-10-18)
 
 `cube_groups/shape_c.py` takes the CNF of case_b_shapes.py for shape (c) and adds the parity equations
 (S) for one representative (M_1, ..., M_(k-1)) of each orbit (the least pair of the orbit). For
 t - k <= 3 each equation has at most four variables, so no variables are added. Shape (c) at (t, k)
-exists if and only if one of these CNFs is satisfiable (Lemmas 37, 38(b), 39). Each instance fixes
-the pair (M_(v_1), M_(v_2)), which the plain shape (c) search had to find together with everything
-else; whether that makes the instances easy enough for one CPU is what the run will show.
+exists if and only if one of these CNFs is satisfiable (Lemmas 37, 38(b), 39).
 
-The job (m13-shapec-v1, one CPU) was queued on 2026-10-17, after the plain normal-form search of
-[case-b.md](case-b.md) left (6, 3) and (5, 2) undecided, and while m12 ([case-b-shapes.md](case-b-shapes.md))
-was still waiting for compute. It had not run by 01:30 UTC on 2026-10-18. It solves every orbit at
-(t, k) = (3, 2), (4, 2), (6, 3) and (5, 2), each instance with a time limit of 2 to 4 minutes. Its
-predictions were written down before it was queued: UNSAT for every orbit at (3, 2) (2 orbits) and
-(4, 2) (6 orbits), since A(3) = 3 and A(4) = 4. (6, 3) and (5, 2) are exploratory. UNSAT for every
-orbit at (6, 3) rules out shape (c) at t = 6; with Lemma 42 and Corollary 22 of case-b-shapes.md
-(which rule out the other shapes by hand), that gives A(6) <= 7. UNSAT for all 14 orbits at (5, 2)
-rules out Case B at t = 5, rank 3, dim V = 6 (for k = 2 shape (c) is all of Case B). In a verified
-model the grader checks Proposition 26(a) and Lemma 38: M_u = I, the M_n commute, (5) holds, and
-M_n q(y) lies in D. Corollary 23 adds checks that a verified model at (6, 3) must also pass: the M_n
-have a common invariant plane, and unless A_u has Jordan blocks 3, 2, 1, M_(n_y) q(y) = 0 for y in Y.
-Its results will be added here.
+The job (m13-shapec-v1, one CPU, 1 GB) was queued on 2026-10-17 and ran from 23:39 UTC on 2026-10-17
+to 01:55 UTC on 2026-10-18. Its predictions were written down before it was queued: UNSAT for every
+orbit at (3, 2) (2 orbits) and (4, 2) (6 orbits), since A(3) = 3 and A(4) = 4, with (6, 3) and (5, 2)
+exploratory. Results:
+
+    (t, k)   instances   budget per instance / group   UNSAT   UNKNOWN   SKIPPED   SAT
+    (3, 2)        2           2 / 5 min                   2        -         -       -
+    (4, 2)        6           4 / 15 min                  6        -         -       -
+    (6, 3)       38           4 / 120 min                 -       30         8       -
+    (5, 2)       14           3 / 42 min                 12        2         -       -
+
+Every graded prediction held (the unit tests, the selfcheck and the 8 control instances). At (5, 2)
+the two undecided instances were M = 0 and M = I; Lemma 47 of [case-a.md](case-a.md) rules them out
+by hand, which gives Corollary 24 there: **no anisotropic system with t = 5 and dim V = 6 has an
+element of rank 3 in Case B.** At (6, 3) nothing was decided: 30 orbits reached the 4-minute limit
+and the last 8 (in the order of the orbit list) were not reached. A(6) <= 7 is still open. A later
+search at (6, 3) can drop the 5 field orbits of Corollary 23(d) and add the conditions of Corollary
+23(a). [case-a.md](case-a.md) gives the times of the (5, 2) instances.
 
 ## The finer search at k = 2 (shape_c2.py, prepared)
 
 `cube_groups/shape_c2.py` adds to the CNF of shape_c.py (for k = 2 and the chosen M) the values of
 Lemma 41(b): unit clauses for sigma(w), beta(v, w), A_w e_0 and A_w e_1, and parity equations for T q
 (and T M q in case (iii)) on the columns of A_u. It adds no variables. By Lemma 41, Case B at (t, 2)
-exists if and only if one of its 3, 13 or 47 instances (t = 3, 4, 5) is satisfiable. An UNSAT answer
-here depends on Lemmas 38 to 41 (by hand), unlike the searches of case_b.py and shape_c.py, which use
-fewer of them. It is meant for whatever m13 leaves undecided at t = 5 and has not been run.
+exists if and only if one of its 3, 13 or 47 instances (t = 3, 4, 5) is satisfiable. It was meant for
+whatever m13 left undecided at t = 5; since Corollary 24 of case-a.md settles Case B at t = 5, it has
+not been run and is no longer needed there.
 
 ## Computation
 
