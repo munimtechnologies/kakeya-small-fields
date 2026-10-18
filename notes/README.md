@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-18, release v1.7.14)
+## Status (2026-10-18, after release v1.7.14)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -26,8 +26,11 @@ A(t) = t for every t would settle the whole family.
   (10, 6), (11, 6), (10, 7), (11, 7), (12, 7), (11, 8), (12, 8), (12, 9), (13, 10) (Corollary 30).
   The first open cases are (10, 2), (10, 3), (11, 4), (12, 5), (12, 6), (13, 7), (13, 8), (13, 9),
   (14, 10), (14, 11), (15, 12) and (b + 3, b) for b >= 13.
-- Open next: A(6) = 6, and A(7) <= 9 (no system with t = 7 and dim V = 10 with an element of rank
-  3), which would settle (10, 2).
+- **Toward A(7) <= 9** ([a7.md](a7.md), by hand): in an anisotropic system with t = 7 and
+  dim V = 10, every element of rank 3 is in shape (c) and has Im A_u inside ker A_u (Corollary 31),
+  and it can be put in a normal form with M_1 = 0 (Corollary 32). The 16 searches that this leaves
+  (job m21) were queued on 2026-10-18; if all are UNSAT, A(7) <= 9 settles (10, 2).
+- Open next: A(6) = 6, and the result of m21.
 
 ## The notes, in order
 
@@ -47,6 +50,7 @@ A(t) = t for every t would settle the whole family.
 | [a6-d3.md](a6-d3.md) | the search of shape (c) at t = 6 with A_u^2 = 0, using Lemma 46 as linear conditions (job m18: all 16 instances UNSAT) |
 | [a6-d2.md](a6-d2.md) | Lemma 56 (the block Abar_u of A_u: rank 1 when d = 2, two types J and E, conjugated by the symmetries); the search of shape (c) at t = 6 with d = 2 split by (M_1, M_2, Abar_u) (job m19: all 382 instances UNSAT) |
 | [a6.md](a6.md) | Theorem 28, A(6) <= 7 (computer-assisted); Corollaries 29, 30 (the table; Z_4^12 x Z_2^7 settled); the robustness search m20 |
+| [a7.md](a7.md) | Lemma 57 (no value of U+ in Z_N at t = 7); Corollary 31 (only shape (c) at t = 7, with A_u^2 = 0); Lemma 58 and Corollary 32 (an element of U+ with zero map, the normal form M_1 = 0); the search m21 toward A(7) <= 9 |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19), and which use Theorem 3.5 of C. de Seguins Pazzis
