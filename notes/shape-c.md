@@ -1,15 +1,20 @@
 # Shape (c) of Case B: commuting matrices, an invariant plane, and a finer split
 
-MV2 of Munim, Inc., 2026-10-17. Added to kakeya-small-fields after version 1.7.10, next to
-[case-b-shapes.md](case-b-shapes.md) and [case-b.md](case-b.md). Numbering continues from
-case-b-shapes.md (Lemma 38, Lemma 39, Corollary 21, Lemma 40, Lemma 41). This is partial progress: it
-settles no new case of Corollary 17. It was researched and written with AI agents working in MV2's
-name. The proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices
-over F_2 and their orbits, checked against hand counts, and its unit tests gated the commit that
-added it. Lemma 40 was added later by hand, with no computer check yet. Lemma 41 and
-`cube_groups/shape_c2.py` were added after that; the unit tests of shape_c2.py check the counts of
-Lemma 41 against hand counts. No human mathematician has checked the proofs.
-Text CC BY 4.0, code Apache-2.0.
+MV2 of Munim, Inc., 2026-10-17 and 2026-10-18. Added to kakeya-small-fields after version 1.7.10,
+next to [case-b-shapes.md](case-b-shapes.md) and [case-b.md](case-b.md). Numbering continues from
+case-b-shapes.md (Lemma 38, Lemma 39, Corollary 21, Lemma 40, Lemma 41, then Lemma 46 and Corollary
+23, added on 2026-10-18 after Corollary 22 of case-b-shapes.md). This is partial progress: it settles
+no new case of Corollary 17. It was researched and written with AI agents working in MV2's name. The
+proofs are by hand; `cube_groups/shape_c.py` counts the commuting pairs of 3 x 3 matrices over F_2
+and their orbits, checked against hand counts, and its unit tests gated the commit that added it.
+Lemma 40 was added later by hand, with no computer check yet. Lemma 41 and `cube_groups/shape_c2.py`
+were added after that; the unit tests of shape_c2.py check the counts of Lemma 41 against hand
+counts. Lemma 46 and Corollary 23 are hand proofs with no computer check. No human mathematician has
+checked the proofs. Text CC BY 4.0, code Apache-2.0.
+
+Since Corollary 22 of [case-b-shapes.md](case-b-shapes.md) (2026-10-18), shape (c) is the only shape
+left at (t, k) = (6, 3): A(6) <= 7 holds if and only if no anisotropic system with t = 6 and
+dim V = 8 has an element of rank 3 in Case B in shape (c).
 
 ## What changes
 
@@ -28,13 +33,21 @@ Text CC BY 4.0, code Apache-2.0.
   of three forms (G^2 = 0, G^2 = I, or G^2 + G + I = 0), and each form fixes how the single matrix M
   of U+ acts on the value q of sigma on W. If neither M nor M + I is singular, then ker A_u lies in
   Im A_u.
-- **Lemma 41** (new, by hand). When U+ has dimension 2, the vector M q alone decides which form of
+- **Lemma 41** (by hand). When U+ has dimension 2, the vector M q alone decides which form of
   Lemma 40 holds, and a Case B element can be moved to a normal form in which M, q, the value of sigma
   on W and several more values are fixed. Case B at t = 5, rank 3, then splits into 47 exact searches
   instead of 14. `cube_groups/shape_c2.py` builds them; it is prepared, not run.
+- **Lemma 46** (new, by hand). An element h_y of W acts on X / ker A_u like the matrix M of the
+  element of U+ with the same value y, up to a map into the small subspace [Im A_u]. Since every map
+  A_h kills sigma(h), this gives **(G_y + G_y^2) y in Im A_u^2 n ker A_u** for every y in Y.
+- **Corollary 23** (new, by hand). At t = 6, unless A_u is nilpotent with Jordan blocks of sizes 3, 2
+  and 1, the three matrices M_n with sigma(n) in Y \ {0} are all singular, and so is every G_y with
+  y != 0. In every case the M_n have a common invariant plane, so the 5 orbits of commuting pairs
+  whose matrices generate a copy of the field F_8 contain no model. At t = 5 the lemma adds linear
+  conditions on Im A_u^2 to cases (ii) and (iii) of Lemma 40.
 - The split search of Lemma 39 (job m13) was queued on 2026-10-17, together with the same split at
   t = 5, where for rank 3 it decides all of Case B (14 instances). Its predictions were written down
-  first.
+  first. It had not run by 01:30 UTC on 2026-10-18.
 
 ## Setting
 
@@ -52,8 +65,8 @@ vanishes on N x N. Then (Proposition 27(c)) sigma maps N linearly onto X_1, A_n 
 in R for n in N, and for h in W, beta(h, N) lies in X_1 and A_h maps X_1 into itself.
 
 The assumption 2 rho <= t is used only in Lemma 38(c) (through Lemma 36). Lemma 38(a), (b), (d),
-(e), Lemma 39, Lemma 40 and Lemma 41 hold for every u in Case B with beta = 0 on N, without it; in
-particular for t = 5 and rank 3 (k = 2), where 2 rho = 6 > t.
+(e), Lemma 39, Lemma 40, Lemma 41 and Lemma 46 hold for every u in Case B with beta = 0 on N, without
+it; in particular for t = 5 and rank 3 (k = 2), where 2 rho = 6 > t.
 
 Write [x] for the class of x in X/X_1. As A_u has kernel X_1 and image R, it induces an isomorphism
 T : X/X_1 -> R, T[x] = A_u x. Since x0 lies in X_1 but not in P, P + X_1 = X, so [P] = X/X_1.
@@ -118,7 +131,7 @@ both have dimension 3, so R = X_1. If d = 2, then by Lemma 38(e) the q(y) span a
 dimension at least 2, so they span D, and M_n D lies in D for every n. QED
 
 So in shape (c) at t = 6, the commuting space {M_n} contains I, and if it has no common invariant
-plane, then A_u^2 = 0.
+plane, then A_u^2 = 0. Corollary 23 below shows that it always has one.
 
 ## Lemma 40 (U+ of dimension 2)
 
@@ -242,6 +255,110 @@ and 20 in case (iii). The centralisers have orders 168, 168, 8, 8, 4, 4, 6, 6, 2
 Lemma 41 is a normal form, not a contradiction. In case (iii), X_1 lies in R, so A_u^2 has rank 1 and
 X_2 = ker A_u^2 is a hyperplane; the 5-dimensional subspace U = {h : [phi(h)] in span(q, M q)} would
 give a contradiction with A(4) = 4 (Lemma 26(a)) if sigma(U) lay in X_2, but we have not shown that.
+Lemma 46 below adds that in case (iii) the image of A_u^2 is exactly span(e_1).
+
+## Lemma 46 (an element of W on X / X_1)
+
+For y in Y let n_y be the element of N with sigma(n_y) = y (sigma maps N one-to-one onto X_1). In the
+normal form, n_y runs over N_Y = sigma^(-1)(Y) = span(v_1, ..., v_(k-1)). As A_(h_y) maps X_1 into
+itself, it induces a linear map Abar_y of X/X_1. Put
+
+    L = [R] = (R + X_1)/X_1,  a subspace of X/X_1 of dimension rho - d,
+
+so that T(L) = A_u(R) = Im A_u^2 and T(L n D) = Im A_u^2 n X_1 (T maps L onto Im A_u^2 and D onto
+X_1 n R, and Im A_u^2 lies in R).
+
+**Lemma 46.** In the setting above (shape (c); 2 rho <= t is not needed), for every y in Y:
+
+(a) Abar_y xi + M_(n_y) xi lies in L for every xi in X/X_1;
+
+(b) T q(y) = y + G_y y;
+
+(c) M_(n_y) q(y) lies in L n D. Equivalently,
+
+        G_y T q(y) = (G_y + G_y^2) y   lies in   Im A_u^2 n ker A_u.
+
+*Proof.* (a) (*) with h -> n_y and h' -> h gives A_h y = (I + A_(n_y)) beta(n_y, h). (Q) with
+h_1 = u, h_2 = h and h' = h_y gives A_(h_y) phi(h) = A_u beta(h, h_y) + A_h y. Together
+
+    A_(h_y) phi(h) = beta(n_y, h) + A_(n_y) beta(n_y, h) + A_u beta(h, h_y).
+
+The last two terms lie in R (the image of every A_n with n in N lies in R), so their classes lie in
+L, and [beta(n_y, h)] = M_(n_y) [phi(h)] by Lemma 38(a). The classes [phi(h)] fill X/X_1.
+
+(b) (5) with n = u reads T q(y) = (G_y + G_y^2) x0 = y + G_y y, as G_y x0 = y.
+
+(c) In every system, (*) with h' = h gives A_h sigma(h) = (I + A_h) beta(h, h) = 0. With h = h_y,
+whose value has class q(y), this says Abar_y q(y) = 0, so M_(n_y) q(y) lies in L by (a). By (5) with
+n = n_y, T M_(n_y) q(y) = (G_y + G_y^2) y, which lies in X_1, so M_(n_y) q(y) also lies in D. Applying
+T gives the second form, and (G_y + G_y^2) y = G_y (y + G_y y) = G_y T q(y) by (b). QED
+
+The new input is A_(h_y) sigma(h_y) = 0, used at an element of W, not of U+. For k = 2 the
+second form of (c) gives, in the cases of Lemma 40 ((G + G^2) e_1 is 0, x0 + e_1 and e_1 there):
+
+- case (i): nothing new;
+- case (ii): x0 + e_1 = T q lies in Im A_u^2; equivalently, some vector of R = Im A_u has class q;
+- case (iii): e_1 lies in Im A_u^2. There X_1 lies in R, so Im A_u^2 = A_u(R) has dimension
+  rho - 2 = 1 at t = 5, hence **Im A_u^2 = span(e_1), A_u^3 = 0 and L = span(M q)**.
+
+These are extra conditions for the 47 instances of Lemma 41. shape_c2.py does not use them yet.
+
+## Corollary 23 (t = 6: singular matrices and a common invariant plane)
+
+**Corollary 23.** Let t = 6, k = 3, dim V = 8 and let u be in shape (c).
+
+(a) Unless A_u is nilpotent with Jordan blocks of sizes 3, 2 and 1 (rank A_u^2 = 1 and A_u^3 = 0),
+    M_(n_y) q(y) = 0 and G_y T q(y) = 0 for every y in Y. Then the three matrices M_n with n in
+    N_Y \ {0} are singular, and every G_y with y != 0 is singular.
+
+(b) In the situation of (a), for each y != 0 put z = G_y y. Either z = 0 (then T q(y) = y), or
+    x0, y, z is a basis of X_1 with G_y: x0 -> y, y -> z, z -> z (then G_y has rank 2, T q(y) = y + z,
+    and q(y) spans a line that is invariant under every M_n).
+
+(c) If A_u^2 = 0, then Abar_y = M_(n_y), and rank G_y + rank M_(n_y) <= 3 for every y in Y. If
+    moreover M_n is invertible, then M_m is singular for every m in N with sigma(m) in beta(n, W).
+
+(d) In every case the M_n (n in N) have a common invariant plane. So no orbit of commuting pairs
+    (M_(v_1), M_(v_2)) whose matrices generate a field F_8 contains a model; there are 5 such orbits.
+
+*Proof.* (a) By Proposition 27(c4), d is 2 or 3. If d = 3, then R = X_1 and A_u^2 = 0, so
+Im A_u^2 = 0. If d = 2, A_u maps R onto Im A_u^2 with kernel R n X_1 of dimension 2, so Im A_u^2 is
+a line; it meets ker A_u only if it lies in ker A_u, that is, if A_u^3 = 0. A nilpotent map of rank 3
+on F_2^6 with rank A_u^2 = 1 and A_u^3 = 0 has Jordan blocks 3, 2, 1. Outside that case
+Im A_u^2 n ker A_u = 0, and Lemma 46(c) gives G_y T q(y) = 0 and, as T is one-to-one on L n D,
+M_(n_y) q(y) = 0. q(y) != 0 (Lemma 38(e)) and T q(y) != 0, so M_(n_y) and G_y are singular.
+
+(b) G_y T q(y) = 0 with T q(y) = y + z reads G_y y = G_y^2 y, that is, G_y z = z. If z != 0, then
+z != y (T q(y) != 0), z != x0 (else G_y x0 = x0, but G_y x0 = y != x0, as x0 is not in Y), and
+z != x0 + y (else G_y z = y + z = x0 != z). So x0, y, z is a basis of X_1. Then G_y + G_y^2 sends x0 to
+y + z and kills y and z, so by (5) T M_n q(y) = (G_y + G_y^2) sigma(n) lies in span(y + z) =
+span(T q(y)) for every n in N.
+
+(c) If A_u^2 = 0, then R = X_1 and L = 0, so Abar_y = M_(n_y) by Lemma 46(a). A_(h_y) keeps X_1, so its
+rank is at least rank G_y + rank Abar_y. Every A_h has rank at most 3: an element of rank 4 would give
+dim V <= t + A(1) = 7 by Lemma 30. For the last claim, n is a Case B element with the same X_1, R, N
+and W (Lemma 38(c)); in the setting of n, the matrix of m is M_n^(-1) M_m (A_m = T M_m [.] =
+(T M_n) M_n^(-1) M_m [.], and T M_n is the map that A_n induces), its Y is beta(n, W), and A_n^2 = 0
+as R = X_1 = ker A_n. Part (a) for n says that M_n^(-1) M_m is singular.
+
+(d) If the M_n had no common invariant plane, then A_u^2 = 0 by Corollary 21, and by (a) every M_n
+with n in N_Y is singular. If one of them were non-zero, its kernel (if it has rank 1) or its image
+(if it has rank 2) would be a plane, invariant under every M_m because the M_m commute with it. So
+M_n = 0 for n in N_Y, and as N = span(u) + N_Y and M_u = I, every M_n is 0 or I, and every plane is
+invariant. Either way there is a contradiction. If the M_n generate a field K = F_8, then F_2^3 is a
+1-dimensional K-space and has no invariant plane, so these orbits are empty. To count them: all
+subfields F_8 of M_3(F_2) are conjugate, and the stabiliser of one of them acts on it through its
+whole Galois group (of order 3). So the orbits correspond to the Galois orbits of the subspaces
+S = span(M_(v_1), M_(v_2)) of K not inside F_2 (GL_2(F_2) is transitive on the pairs that span a given
+S): lines span(a) with a outside F_2 (6 of them, 2 orbits) and planes (7 of them, the kernels of
+x -> Tr(b x), 3 orbits, from the classes {1}, {a, a^2, a^4}, {a^3, a^6, a^5} of b under squaring).
+That gives 5 orbits; the two line orbits are those of the two irreducible cubics. QED
+
+What Corollary 23 does for the search at (6, 3). Part (d) removes 5 orbits outright. Part (a) says
+more: an orbit in which span(M_(v_1), M_(v_2)) contains an invertible matrix can hold a model only if
+A_u has Jordan blocks 3, 2, 1. These are new constraints for a later search; job m13, already queued,
+does not use them, so its answers do not depend on Lemma 46 or Corollary 23. Neither result is a
+contradiction in the remaining cases, and A(6) <= 7 is still open.
 
 ## The split search (job m13, queued)
 
@@ -254,15 +371,17 @@ else; whether that makes the instances easy enough for one CPU is what the run w
 
 The job (m13-shapec-v1, one CPU) was queued on 2026-10-17, after the plain normal-form search of
 [case-b.md](case-b.md) left (6, 3) and (5, 2) undecided, and while m12 ([case-b-shapes.md](case-b-shapes.md))
-was still waiting for compute. It solves every orbit at (t, k) = (3, 2), (4, 2), (6, 3) and (5, 2),
-each instance with a time limit of 2 to 4 minutes. Its predictions were written down before it was
-queued: UNSAT for every orbit at (3, 2) (2 orbits) and (4, 2) (6 orbits), since A(3) = 3 and
-A(4) = 4. (6, 3) and (5, 2) are exploratory. UNSAT for every orbit at (6, 3) rules out shape (c) at
-t = 6; with m12's shapes (d1), (d2c0), (d2c1) also UNSAT, that gives A(6) <= 7. UNSAT for all 14 orbits
-at (5, 2) rules out Case B at t = 5, rank 3, dim V = 6 (for k = 2 shape (c) is all of Case B). If m12
-and m13 both decide shape (c) at (6, 3), they must agree. In a verified model the grader checks
-Proposition 26(a) and Lemma 38: M_u = I, the M_n commute, (5) holds, and M_n q(y) lies in D. Its
-results will be added here.
+was still waiting for compute. It had not run by 01:30 UTC on 2026-10-18. It solves every orbit at
+(t, k) = (3, 2), (4, 2), (6, 3) and (5, 2), each instance with a time limit of 2 to 4 minutes. Its
+predictions were written down before it was queued: UNSAT for every orbit at (3, 2) (2 orbits) and
+(4, 2) (6 orbits), since A(3) = 3 and A(4) = 4. (6, 3) and (5, 2) are exploratory. UNSAT for every
+orbit at (6, 3) rules out shape (c) at t = 6; with Lemma 42 and Corollary 22 of case-b-shapes.md
+(which rule out the other shapes by hand), that gives A(6) <= 7. UNSAT for all 14 orbits at (5, 2)
+rules out Case B at t = 5, rank 3, dim V = 6 (for k = 2 shape (c) is all of Case B). In a verified
+model the grader checks Proposition 26(a) and Lemma 38: M_u = I, the M_n commute, (5) holds, and
+M_n q(y) lies in D. Corollary 23 adds checks that a verified model at (6, 3) must also pass: the M_n
+have a common invariant plane, and unless A_u has Jordan blocks 3, 2, 1, M_(n_y) q(y) = 0 for y in Y.
+Its results will be added here.
 
 ## The finer search at k = 2 (shape_c2.py, prepared)
 
@@ -299,10 +418,13 @@ The unit tests of `cube_groups/shape_c2.py` check:
   built with the fixed values are accepted while every one-bit change of sigma(w), beta(v, w), A_w e_0,
   A_w e_1 or of a column of A_u that T q depends on is rejected.
 
+Lemma 46 and Corollary 23 have no computer check yet. The count of 5 field orbits in Corollary 23(d)
+is by hand; shape_c.py lists the orbits and can confirm it in a later test.
+
 ## Prior work
 
 Commuting pairs of matrices over finite fields are classical (Feit and Fine, 1960, count them). As for
-the earlier notes, searches on 2026-10-15 to 2026-10-17 found nothing on the identity (*), on A(t) or
-on Question R, so the use of the commuting matrices M_n here appears to be new; the tools are
-elementary, so a specialist may know them. Please open an issue at
+the earlier notes, searches on 2026-10-15 to 2026-10-18 found nothing on the identity (*), on A(t) or
+on Question R other than MV2's own posts, so the use of the commuting matrices M_n here appears to be
+new; the tools are elementary, so a specialist may know them. Please open an issue at
 https://github.com/munimtechnologies/kakeya-small-fields if so, or if you find an error.
