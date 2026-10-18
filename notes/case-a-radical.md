@@ -3,9 +3,10 @@
 MV2 of Munim, Inc., 2026-10-18. Added to kakeya-small-fields after version 1.7.12, next to
 [case-a.md](case-a.md) and [question-r.md](question-r.md). Numbering continues from case-a.md
 (Lemma 50, Lemma 51, Corollary 25). It was researched and written with AI agents working in MV2's
-name. Everything here is a proof by hand with no computer check yet. It settles no new case: A(5) = 5
-still waits on the exact search of case-a.md (job m15, queued on 2026-10-18 and not yet run when
-this was written). No human mathematician has checked the proofs. Text CC BY 4.0.
+name. Everything here is a proof by hand. When it was written it settled no new case; later the same
+day, Lemma 52 of [a5.md](a5.md) grew out of Lemma 51(c) and proved A(5) = 5, and the search designed
+below (job m16) ran and agreed (Results of job m16, below). No human mathematician has checked the
+proofs. Text CC BY 4.0.
 
 ## What changes
 
@@ -179,19 +180,40 @@ facts that it would otherwise have to find for itself. Job m15 does not use them
 not depend on Lemmas 50 and 51.
 
 `cube_groups/case_a2.py` builds these 23 instances at t = 5 (and 2 control instances at t = 4, where
-Corollary 25(b) predicts UNSAT). It goes into the repository only through a commit gated by its unit
+Corollary 25(b) predicts UNSAT). It went into the repository through a commit gated by its unit
 tests, which compare each added constraint with a direct check on random coordinates. It was queued as
 job m16 on 2026-10-18, with its predictions written down first. Its UNSAT answers count only together
 with the hand proofs of Lemma 51 and Corollary 25, so m15 stays the primary search and m16 is a cross-check.
 A verified SAT answer from either job would be a real anisotropic system with t = 5 and dim V = 6.
 
+## Results of job m16 (added 2026-10-18)
+
+Job m16-caseb-v1 ran on 2026-10-18 from 08:22 to 08:26 UTC on one CPU (cadical195), after job m15
+(06:59 to 07:02 UTC, reported in [a5.md](a5.md)) and after Lemma 52 was found. Its predictions were
+written at about 04:30 UTC, before either job ran:
+
+    t    instances   prediction            result
+    4        2       UNSAT (control)       2 UNSAT
+    5       23       exploratory           23 UNSAT, each in under 1 second (0.4 to 0.6 s wall)
+
+The selfcheck (planes: 0, 2 and 23 for t = 3, 4 and 5; 3 planes per orbit of A_u with e_0 outside
+R and 2 with e_0 in R at t = 5) and the 7 unit tests passed, and every graded prediction held. No
+instance was UNKNOWN or SKIPPED, so the consistency check with m15 is complete: every orbit is UNSAT
+in both encodings. The ungraded guess that m16's instances would be faster than m15's cannot be
+told apart at this size (all took under a second in both jobs).
+
+So, conditional on Lemma 51 and Corollary 25, the search finds no Case A element at t = 5, which
+Lemma 52 of a5.md proves by hand and job m15 finds without these conditions. The three routes agree.
+This is a computer check without proof certificates.
+
 ## What it does not settle
 
-Lemma 51 does not rule out Case A at t = 5. With Rad a plane, the form C on X / Rad (dimension 3,
-values in F_2^2) is non-degenerate, has diagonal [.] and unit [x0], and kills R / Rad against R + span(x0).
-Such forms exist, so a contradiction needs more of (d) of Lemma 50 than its reduction modulo R. If Rad
-were invariant under every A_h, Lemma 27(c) would give dim V <= M(3) + A(2) = 5 and finish the case,
-but we have not shown this.
+Lemma 51 does not rule out Case A at t = 5 by itself. With Rad a plane, the form C on X / Rad
+(dimension 3, values in F_2^2) is non-degenerate, has diagonal [.] and unit [x0], and kills R / Rad
+against R + span(x0). Such forms exist, so a contradiction needs more of (d) of Lemma 50 than its
+reduction modulo R. Lemma 52 of a5.md supplies it: the coset maps of Lemma 51(d) at p = x0 and
+p = x0 + z, restricted to R, have rank at most 1, and that is already a contradiction. Whether Rad is
+invariant under every A_h is still not known; it is no longer needed at t = 5.
 
 ## Prior work
 
