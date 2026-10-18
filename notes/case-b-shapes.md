@@ -1,13 +1,14 @@
-# Case B by shape: a shared-kernel lemma, rank bounds in shape (d2), and a split search
+# Case B by shape: a shared-kernel lemma, shape (d2) ruled out at t = 6, and a split search
 
-MV2 of Munim, Inc., 2026-10-17. Added to kakeya-small-fields after version 1.7.10, next to
-[case-b.md](case-b.md), [tight-cases.md](tight-cases.md) and [sat-search.md](sat-search.md).
+MV2 of Munim, Inc., 2026-10-17 and 2026-10-18. Added to kakeya-small-fields after version 1.7.10,
+next to [case-b.md](case-b.md), [tight-cases.md](tight-cases.md) and [sat-search.md](sat-search.md).
 Numbering continues from case-b.md (Lemma 36, Lemma 37, Corollary 20). Lemmas 42 and 43 were added
-later the same day, after Lemma 41 of [shape-c.md](shape-c.md). This is partial progress: it settles
-no new case of Corollary 17. It was researched and written with AI agents working in MV2's name. The
-proofs are by hand; `cube_groups/case_b_shapes.py` checks the case split of Proposition 27
-exhaustively on the systems that U+ carries, and its unit tests gated the first version of this
-note. No human mathematician has checked the proofs. Text CC BY 4.0, code Apache-2.0.
+later on 2026-10-17, after Lemma 41 of [shape-c.md](shape-c.md); Lemmas 44 and 45 and Corollary 22
+were added on 2026-10-18. This is partial progress: it settles no new case of Corollary 17. It was
+researched and written with AI agents working in MV2's name. The proofs are by hand;
+`cube_groups/case_b_shapes.py` checks the case split of Proposition 27 exhaustively on the systems
+that U+ carries, and its unit tests gated the first version of this note. No human mathematician has
+checked the proofs. Text CC BY 4.0, code Apache-2.0.
 
 ## What changes
 
@@ -22,14 +23,21 @@ note. No human mathematician has checked the proofs. Text CC BY 4.0, code Apache
   (shapes c, d1, d2 with delta in P, d2 with delta + x0 in P). UNSAT for all four gives A(6) <= 7.
 - **The search ran** (job m12-shapes-v1, 2026-10-17). Every graded prediction held. At t = 6 and
   dim V = 8 the solver found shapes (d1), (d2c0) and (d2c1) unsatisfiable within 2 seconds each, but
-  shape (c) was still undecided when its 50-minute limit ran out. So, if the encoding is right, every
-  rank-3 Case B element at t = 6, dim V = 8 is in shape (c). A(6) <= 7 now depends only on shape
-  (c), which job m13 (shape-c.md) splits by orbits. See "Results" below.
-- **Lemma 42 (new, by hand).** x0 = sigma(u) is never in the span of beta(U+, U+). So shape (d1)
-  never occurs, for any t (in the setting below). This gives a hand proof of the first of the three UNSAT answers.
-- **Lemma 43 (new, by hand).** In shape (d2), beta(n_2, V) lies in Im A_u and A_(n_2) has rank at
-  most t - 5. At t = 6 that is rank <= 1, one better than Corollary 20(a). This does not rule out
-  shape (d2) by hand; the solver did that at t = 6.
+  shape (c) was still undecided when its 50-minute limit ran out. See "Results" below.
+- **Lemma 42 (by hand).** x0 = sigma(u) is never in the span of beta(U+, U+). So shape (d1) never
+  occurs, for any t (in the setting below).
+- **Lemma 43 (by hand).** In shape (d2), beta(n_2, V) lies in Im A_u and A_(n_2) has rank at
+  most t - 5.
+- **Lemma 44 (new, by hand).** An element n of U+ whose value sigma(n) lies in the span of
+  beta(U+, U+) and in beta(n, V) gives t + k - 1 <= rho + A(t - s - 1), where s = rank A_n. At
+  (t, k) = (6, 3) and (7, 4) this forces A_n = 0.
+- **Lemma 45 (new, by hand).** In shape (d2), if A_(n_2) = 0, then span(delta) is invariant under
+  every A_h.
+- **Corollary 22 (new, by hand).** Shape (d2) never occurs at t = 6. With Lemma 42: **in an
+  anisotropic system with t = 6 and dim V = 8, every element of rank 3 in Case B is in shape (c).**
+  This is now a hand proof; before, the shapes (d2c0) and (d2c1) were ruled out only by the solver
+  (m12), with no certificate. A(6) <= 7 is equivalent to: shape (c) does not occur at
+  (t, k) = (6, 3). Job m13 ([shape-c.md](shape-c.md)) searches exactly that.
 - A census of every anisotropic system that U+ can carry at k = 3 (192 of them) confirms the case
   split of Proposition 27 at that level: 24 of shape c, 24 of shape d1, 144 of shape d2, none other.
 
@@ -113,7 +121,7 @@ QED
 
 Corollary 20 holds for t = 4, 5, 6. At t = 6 it says that in shape (d2) A_(n_2) has rank <= 2, and
 that A_(u + n_2) has rank <= 2 too when delta + x0 lies in P. Lemma 43 below improves the first
-bound to rank <= 1.
+bound to rank <= 1, Lemma 44 to rank 0, and Corollary 22 rules shape (d2) out at t = 6.
 
 ## Lemma 42 (x0 is never a value of beta on U+)
 
@@ -150,8 +158,69 @@ system with values in Z', so 5 <= dim K <= A(t - s). If s >= t - 4, then A(t - s
 (Theorem 26), a contradiction. So s <= t - 5. QED
 
 The same argument works for any n in N with sigma(n) in Z_N: then beta(n, V) lies in R and
-2k - 1 <= dim ker beta(n, .) <= A(t - rank A_n). Lemma 43 does not rule out shape (d2) by hand. The
-solver did that at t = 6.
+2k - 1 <= dim ker beta(n, .) <= A(t - rank A_n). Lemma 44 below uses Lemma 30 instead of the kernel
+of beta(n, .), and gives more.
+
+## Lemma 44 (an element of U+ whose value is a value of beta on U+)
+
+**Lemma 44.** In the setting above, let n != 0 be in N with sigma(n) in Z_N, and suppose that
+sigma(n) lies in beta(n, V). Let s = rank A_n. Then
+
+    t + k - 1 <= rho + A(t - s - 1).
+
+At (t, k) = (6, 3) and at (t, k) = (7, 4) (rho = 3 in both), this forces A_n = 0.
+
+*Proof.* As in the proof of Lemma 43, (*) with h -> n and h' -> h gives
+A_h sigma(n) = (I + A_n) beta(n, h); the left side lies in R by (Z), and A_n beta(n, h) lies in R by
+Proposition 26(e). So beta(n, V) lies in R and has dimension at most rho. Apply Lemma 30 to the
+element n: its U+ is U+(n) = {h : beta(n, h) in span(sigma(n))}, and since sigma(n) lies in beta(n, V),
+codim U+(n) = dim beta(n, V) - 1 <= rho - 1. Lemma 30(b) gives dim U+(n) <= 1 + A(t - s - 1). So
+t + k - 1 = dim V <= (rho - 1) + 1 + A(t - s - 1).
+
+At (6, 3): 8 <= 3 + A(5 - s). If s >= 1, then A(5 - s) = 5 - s <= 4 (Theorem 26), and 8 <= 7 fails.
+At (7, 4): 10 <= 3 + A(6 - s). If s >= 1, then A(6 - s) <= A(5) <= 6 (Proposition 24), and
+10 <= 9 fails. So s = 0 in both cases. QED
+
+Lemma 44 needs no shape. At (7, 4) it says: in Case B, every n in U+ whose value is a non-zero value
+of beta on U+ and lies in beta(n, V) has A_n = 0.
+
+## Lemma 45 (an element of U+ with A_n = 0)
+
+**Lemma 45.** In the setting above, let n be in N with A_n = 0, put z = sigma(n), and let m be in V
+with beta(n, m) = z. Then A_h z = beta(n, h) for every h, beta(n, V) lies in X_1, and A_m fixes
+every vector of beta(n, V). If X_1 n Fix(A_m) = span(z), then span(z) is invariant under every A_h.
+
+*Proof.* (*) with h -> n and h' -> h gives A_h z = (I + A_n) beta(n, h) = beta(n, h). (Q) with
+h_1 = n, h_2 = h gives A_(h') beta(n, h) = A_n beta(h, h') + A_h beta(n, h') = A_h beta(n, h'), and
+with h = m this reads A_(h') z = A_m beta(n, h'), that is, beta(n, h') = A_m beta(n, h'). By (4),
+A_u beta(n, h) = A_n phi(h) = 0, so beta(n, V) lies in X_1. Together, beta(n, V) lies in
+X_1 n Fix(A_m), and if that is span(z), then A_h z = beta(n, h) lies in span(z) for every h. QED
+
+## Corollary 22 (shape (d2) does not occur at t = 6)
+
+**Corollary 22.** Let t = 6 and k = 3. No anisotropic system with dim V = 8 has an element of rank 3
+in shape (d2). With Lemma 42, every element of rank 3 in Case B in such a system is in shape (c).
+
+*Proof.* Take n_1, n_2 as in shape (d2): sigma(n_2) = delta = beta(n_1, n_2) lies in Z_N and in
+beta(n_2, V). By Lemma 44, A_(n_2) = 0. Apply Lemma 45 with n = n_2, z = delta and m = n_1
+(beta(n_2, n_1) = delta). A_(n_1) kills x0 and a and fixes delta, and x0, a, delta is a basis of X_1,
+so a vector c_0 x0 + c_1 a + c_2 delta of X_1 is fixed by A_(n_1) only if it equals c_2 delta: so
+X_1 n Fix(A_(n_1)) = span(delta), and span(delta) is invariant under every A_h. Then alpha(V) is
+reducible, and Lemma 27(c) with an invariant subspace of dimension 1 gives
+dim V <= M(5) + A(1) <= 6 + 1 = 7 (M(5) <= 5 + E(5) <= 6 by Theorem 24, as A(5) <= 6 by Proposition
+24; this is the bound for reducible alpha(V) in the proof of Corollary 18(b)). This contradicts
+dim V = 8. QED
+
+So at t = 6 the shapes (d1), (d2c0) and (d2c1) of Lemma 37 are ruled out by hand, in agreement with
+the three UNSAT answers of job m12 below, and with Corollary 18(b):
+
+    A(6) <= 7  if and only if  no anisotropic system with t = 6 and dim V = 8 has an element of
+    rank 3 in Case B whose U+ carries beta = 0 (shape (c)).
+
+The proof of Corollary 22 uses Lemma 30, Theorem 26 (A(4) = 4, through Lemma 29 and Theorem 3.5 of
+de Seguins Pazzis, arXiv 1405.1575), Proposition 24 (A(5) <= 6), Theorem 24 and Lemma 27, as
+Corollary 18 does. At t = 4 and t = 5 shape (d2) is empty for a simpler reason: there dim V = t + 2
+exceeds A(4) = 4 and A(5) <= 6.
 
 ## Lemma 37 (normal forms by shape)
 
@@ -182,7 +251,8 @@ vectors of Y = P n ker A_u, so the proof of Lemma 35 can start from them, and fr
 v_1, v_2 as the start of a basis of ker phi. QED
 
 So Case B at (t, k) = (6, 3) exists if and only if one of the four forms c, d1, d2c0, d2c1 has a
-model, and for k = 2 if and only if form c does. By Lemma 42, form d1 never has one.
+model, and for k = 2 if and only if form c does. By Lemma 42, form d1 never has one, and by
+Corollary 22, forms d2c0 and d2c1 have none at (6, 3).
 
 ## The census of systems on U+ (k = 3)
 
@@ -197,7 +267,8 @@ the 24 systems of Lemma 34 on U+/span(u) with values in X_1/span(e_0) has 8 lift
 sigma(n_1), sigma(n_2) and b), and in each lift the maps are determined. This checks the case split
 of Proposition 27(c1) and (d) for the projected maps; that the values hold for the maps themselves is
 the hand proof. (The 24 systems of shape d1 exist on U+ alone; Lemma 42 rules them out only inside a
-whole Case B system, where P is a hyperplane.)
+whole Case B system, where P is a hyperplane. Likewise the 144 systems of shape d2 exist on U+ alone,
+and Corollary 22 rules them out only inside a whole system with t = 6 and dim V = 8.)
 
 ## The exact search
 
@@ -234,18 +305,15 @@ The exploratory instances at (t, k) = (6, 3), dim V = 8 (23,112 variables, 136,0
 
 What this shows, and what it does not:
 
-- If the encoding is right, **every element of rank 3 in Case B at t = 6, dim V = 8 is in shape (c).**
-  With Corollary 18(b), A(6) <= 7 now depends only on shape (c). These are solver answers without a
-  proof certificate (no DRAT proof was saved). Their soundness rests on the CNF of case_b.py, whose
-  selfcheck in m11 agreed with brute force everywhere and which found the satisfiable instance
-  (2, 1), and on the unit clauses of Lemma 37, which the unit tests check one bit at a time. No satisfiable
-  instance of forms d1 or d2 is known at any size to serve as a positive control.
-- For form d1 the answer now also has a short hand proof (Lemma 42), valid for every t. For form d2,
-  Lemma 43 explains part of it (A_(n_2) has rank <= 1 at t = 6) but not all.
+- The three UNSAT answers at (6, 3) now all have hand proofs: Lemma 42 for form d1 (every t) and
+  Corollary 22 for forms d2c0 and d2c1 (t = 6). The solver answers came first and have no proof
+  certificate (no DRAT proof was saved); the hand proofs do not depend on them. Their agreement is a
+  check on the encoding of case_b.py and the unit clauses of Lemma 37, and the other way round.
 - Shape (c) at (6, 3) did not finish in 50 minutes, just as the plain search of m11 did not finish
   (6, 3) in 60 minutes. Job m13 of [shape-c.md](shape-c.md) splits shape (c) into one instance per
-  orbit of the commuting matrices of Lemma 38; it was queued on 2026-10-17 and has not run yet.
-  If every orbit comes back UNSAT, A(6) <= 7 follows (Corollary 18).
+  orbit of the commuting matrices of Lemma 38; it was queued on 2026-10-17 and had not run by
+  00:30 UTC on 2026-10-18. If every orbit comes back UNSAT, A(6) <= 7 follows (Corollary 18 and
+  Corollary 22).
 
 ## Computation
 
@@ -257,8 +325,8 @@ The unit tests of `cube_groups/case_b_shapes.py` (which gated the first version 
   of case_b.py, that these clauses accept coordinates carrying the form's values, and that changing
   one fixed bit leaves the form.
 
-Lemmas 42 and 43 are hand proofs with no computer check of their own beyond the agreement with the
-m12 answers above.
+Lemmas 42 to 45 and Corollary 22 are hand proofs with no computer check of their own beyond the
+agreement with the m12 answers above.
 
 ## Prior work
 
