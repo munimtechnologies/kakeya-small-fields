@@ -10,27 +10,27 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-18, after release v1.7.14)
+## Status (2026-10-18, release v1.7.15)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
   and found all of their t = 5 instances UNSAT (9 and 23 of them).
 - **A(6) <= 7 and M(6) <= 7** (Theorem 28, [a6.md](a6.md), computer-assisted): no anisotropic
-  system with t = 6 has dim V = 8. Shape (c) was the only case left (Corollaries 18 and 22); it splits
-  by d = dim(X_1 n R) in {2, 3}, and the searches m18 (d = 3, [a6-d3.md](a6-d3.md)) and m19 (d = 2,
-  [a6-d2.md](a6-d2.md)) found all 16 + 382 of their instances UNSAT on 2026-10-18, with every
-  pre-registered prediction held. No proof certificates were saved. A third search, m20, which drops
-  most of the hand results behind m18 and m19, is queued as a robustness check.
-- Bounds: A(6..12) <= 7, 10, 12, 14, 17, 21, 24 (Corollary 29).
-- The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 4), (10, 5), (11, 5),
-  (10, 6), (11, 6), (10, 7), (11, 7), (12, 7), (11, 8), (12, 8), (12, 9), (13, 10) (Corollary 30).
-  The first open cases are (10, 2), (10, 3), (11, 4), (12, 5), (12, 6), (13, 7), (13, 8), (13, 9),
-  (14, 10), (14, 11), (15, 12) and (b + 3, b) for b >= 13.
-- **Toward A(7) <= 9** ([a7.md](a7.md), by hand): in an anisotropic system with t = 7 and
-  dim V = 10, every element of rank 3 is in shape (c) and has Im A_u inside ker A_u (Corollary 31),
-  and it can be put in a normal form with M_1 = 0 (Corollary 32). The 16 searches that this leaves
-  (job m21) were queued on 2026-10-18; if all are UNSAT, A(7) <= 9 settles (10, 2).
-- Open next: A(6) = 6, and the result of m21.
+  system with t = 6 has dim V = 8. The searches m18 and m19 found all 16 + 382 of their instances
+  UNSAT. The robustness search m20, which drops most of the hand results, found no model and
+  re-decided 565 of the 569 d = 2 triples UNSAT, but none of the 38 d = 3 orbits within its budget.
+- **A(7) <= 9 and M(7) <= 9** (Theorem 29, [a7.md](a7.md), by hand): an element of U+ with zero
+  map would have to exist (Schur's bound), and Lemma 59 shows it cannot. The search m21 agrees on 15
+  of its 16 instances (the last one timed out); m22 re-runs that one for longer.
+- **A(8) <= 11 and M(8) <= 11** (Theorem 30, [a7.md](a7.md), by hand, using Theorem 27): Lemma 57
+  holds at t = 8 and forces shape (c), which rank 3 cannot have there.
+- Bounds: A(6..12) <= 7, 9, 11, 14, 17, 20, 23 (Corollary 33).
+- The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 2), (10, 3), (10, 4),
+  (10, 5), (11, 5), (10, 6), (11, 6), (10, 7), (11, 7), (12, 7), (11, 8), (12, 8), (12, 9), (13, 9),
+  (13, 10), (14, 11) (Corollary 34). The first open cases are (11, 2), (11, 3), (11, 4), (12, 5),
+  (12, 6), (13, 7), (13, 8), (14, 9), (14, 10), (15, 11), (15, 12) and (b + 3, b) for b >= 13.
+- Open next: A(6) = 6 (which would also give A(9) <= 13, Remark after Theorem 30), and A(8) <= 10,
+  which would settle (11, 2).
 
 ## The notes, in order
 
@@ -49,8 +49,8 @@ A(t) = t for every t would settle the whole family.
 | [a6-coset.md](a6-coset.md) | Lemmas 53 to 55; Corollary 28 (constraints on shape (c) at t = 6; design of the next search) |
 | [a6-d3.md](a6-d3.md) | the search of shape (c) at t = 6 with A_u^2 = 0, using Lemma 46 as linear conditions (job m18: all 16 instances UNSAT) |
 | [a6-d2.md](a6-d2.md) | Lemma 56 (the block Abar_u of A_u: rank 1 when d = 2, two types J and E, conjugated by the symmetries); the search of shape (c) at t = 6 with d = 2 split by (M_1, M_2, Abar_u) (job m19: all 382 instances UNSAT) |
-| [a6.md](a6.md) | Theorem 28, A(6) <= 7 (computer-assisted); Corollaries 29, 30 (the table; Z_4^12 x Z_2^7 settled); the robustness search m20 |
-| [a7.md](a7.md) | Lemma 57 (no value of U+ in Z_N at t = 7); Corollary 31 (only shape (c) at t = 7, with A_u^2 = 0); Lemma 58 and Corollary 32 (an element of U+ with zero map, the normal form M_1 = 0); the search m21 toward A(7) <= 9 |
+| [a6.md](a6.md) | Theorem 28, A(6) <= 7 (computer-assisted); Corollaries 29, 30 (the table; Z_4^12 x Z_2^7 settled); results of the robustness search m20 |
+| [a7.md](a7.md) | Lemma 57 and Corollary 31 (only shape (c) at t = 7, with A_u^2 = 0); Lemma 58 and Corollary 32; Lemma 59 (no element of U+ with zero map); Theorem 29, A(7) <= 9, and Theorem 30, A(8) <= 11 (by hand); Corollaries 33, 34 (the table; Z_4^10 x Z_2^2, Z_4^10 x Z_2^3, Z_4^13 x Z_2^9, Z_4^14 x Z_2^11 settled); results of job m21 |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19), and which use Theorem 3.5 of C. de Seguins Pazzis
