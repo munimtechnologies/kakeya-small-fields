@@ -206,9 +206,25 @@ A(t) = t for every t would settle the whole family.
   o007_c004, o007_c007 and o009_c000 UNSAT, so **four more classes of (B6) are empty**
   (Corollaries 87 to 90, [a64.md](a64.md), computer-assisted) and **(B6) stands at 43 of 68**. Job
   m74 matched Proposition 34 by machine and counted the split of the three open classes of (B5)
-  exactly: 12458 instances of rank 1 and 2 ([a64.md](a64.md)). 28 classes remain: 25 of (B6) and 3
-  of (B5). Jobs m76 (the splits of o009_c002, o009_c009 and o012_c001) and m77 (the splits of
-  o009_c001 and o009_c004) are queued, and m65 is staged, with their predictions.
+  exactly: 12458 instances of rank 1 and 2 ([a64.md](a64.md)). Job m76b found all 3584 split
+  instances of o012_c001 UNSAT, the last class of (B6) with d = 0 (Corollary 91, [a65.md](a65.md),
+  computer-assisted), and jobs m76a-v2, m77a and m77b closed o009_c002, o009_c009, o009_c001 and
+  o009_c004 (Corollaries 92 to 95, [a66.md](a66.md), computer-assisted), so **every class of (B6)
+  with a UNSAT rank-0 sweep is closed and (B6) stands at 48 of 68**. Jobs m75a, m75b and m78 split
+  the three classes of (B5) with d = 2 under Proposition 34, so **o004_c001 and o006_c000 of (B5)
+  are empty** (Corollaries 96 and 97, [a67.md](a67.md), computer-assisted), and job m80r closed the
+  last 7 of o005_c005's 6720 split instances in 11 to 38 s each, so **o005_c005 is empty**
+  (Corollary 98, [a68.md](a68.md), computer-assisted) and **(B5) is empty** (Proposition 35,
+  below). Jobs m79a and m79b split three classes of (B6) with an open sweep, o008_c000, o008_c001
+  and o008_c003, and left 21, 7 and 14 of their 5285 instances open ([a68.md](a68.md)); job m82
+  re-runs those 42 and splits o010_c003 and o010_c005, and job m81 splits o009_c005 and o009_c006,
+  all queued with their predictions.
+- **(B5) is empty at t = 7 and dim V = 9** (Proposition 35, [a68.md](a68.md), computer-assisted):
+  all 420 classes of A_u in (B5) are UNSAT, 409 searched whole (jobs m42 to m59b) and 11 split by
+  the second matrix under Propositions 32 and 34 and Lemma 93 (jobs m59b to m80r). It rests on
+  solver answers saved without proof certificates and on hand lemmas no human mathematician has
+  checked. **So A(7) <= 8 is now exactly the statement that (B6) is empty**, and 20 of its 68
+  classes are left, all with d = 1 or 2 and an open rank-0 sweep, about 41300 split instances.
 - Open next: A(7) <= 8, which would settle (13, 8); A(8) <= 10, which would settle (11, 2);
   A(9) <= 12, which would settle (11, 3); and A(7) = 7, which would carry the argument of Theorem
   32 to t = 10.
@@ -289,8 +305,12 @@ A(t) = t for every t would settle the whole family.
 | [a62.md](a62.md) | results of jobs m72a and m72b (36 and 32 graded checks held; all 80 open split instances of six classes UNSAT in CaDiCaL within 245 s, and every split instance of o012_c009 and o012_c004 UNSAT, median 1.27 s, so **Corollaries 76 to 83 (computer-assisted): the classes o004_c000, o006_c000, o008_c004, o003_c004, o003_c002, o003_c003, o012_c009 and o012_c004 of (B6) are empty; (B6) at 36 of 68**; re-runs at the same place in two classes of the same pair orbit took similar time, 20 of 21 pairs within a factor of 3, as guessed before the run); job m76 (the splits of o009_c002, o009_c009 and o012_c001, through m69.py unchanged, with rules written before it ran; queued); 35 classes left for A(7) <= 8 |
 | [a63.md](a63.md) | results of job m73a (32 graded checks held; the 13 open split instances of o008_c002 UNSAT in CaDiCaL within 57 s, and every split instance of o009_c003 and o007_c001 UNSAT, median 1.27 s, so **Corollaries 84 to 86 (computer-assisted): the classes o008_c002, o009_c003 and o007_c001 of (B6) with d = 1 are empty; (B6) at 39 of 68**; the six re-run roots shared with o010_c002 were the six slowest of the 13 (an observation)); job m77 (the splits of o009_c001 and o009_c004, the last two classes with d = 1 and a UNSAT sweep, through m69.py unchanged, with rules written before it runs; written, queued by the next run); 32 classes left for A(7) <= 8 |
 | [a64.md](a64.md) | results of jobs m73b and m74 (34 and 15 graded checks held; the 6 open split instances of o010_c002 UNSAT in CaDiCaL within 81 s, and every split instance of o007_c004, o007_c007 and o009_c000 UNSAT, median 1.07 to 1.12 s, so **Corollaries 87 to 90 (computer-assisted): the classes o010_c002, o007_c004, o007_c007 and o009_c000 of (B6) with d = 1 are empty; (B6) at 43 of 68**; every guess of m73-predictions.md held, among them the six roots shared by o008_c002 and o010_c002 closing together, 5 of 6 within a factor of 2; **Proposition 34 matched by machine: |G| = 2048, 512, 1024, |Adm| = 405566, 2367, 7615 and 4133 classes, 12458 of rank 1 and 2**); job m76b re-run unchanged as m76b-v2 after its host stopped it; job m77 (the splits of o009_c001 and o009_c004; queued); 28 classes left for A(7) <= 8 |
+| [a65.md](a65.md) | result of job m76b-v2 (22 of 22 graded checks held; all 3584 split instances of o012_c001 UNSAT, median 1.03 s, so **Corollary 91 (computer-assisted): the class o012_c001 of (B6), the last with d = 0, is empty; (B6) at 44 of 68**); job m76a stopped by its host before its grade step, re-run unchanged as m76a-v2; job m75 (the second-matrix split of the three (B5) classes with d = 2 counted by Proposition 34, with rules written before it ran) |
+| [a66.md](a66.md) | results of jobs m76a-v2, m77a, m77b and m75a (24, 22, 22 and 22 graded checks held; all split instances of o009_c002, o009_c009, o009_c001 and o009_c004 UNSAT, median 1.02 to 1.12 s, so **Corollaries 92 to 95 (computer-assisted): four more classes of (B6) with d = 1 are empty; every class of (B6) with a UNSAT sweep is closed; (B6) at 48 of 68**; 2083 of the 2084 split instances of o004_c001 of (B5) UNSAT, one open of rank 1); job m78 (the split of o005_c005 in two halves and a re-run of the open instance); job m79 (the splits of o008_c000, o008_c001 and o008_c003, d = 1 with an open sweep, rank-0 instances with Lemma 93 (b)) |
+| [a67.md](a67.md) | results of jobs m75b and m78 (22 and 23 graded checks held; o006_c000 all 3654 UNSAT and o004_c001's last instance UNSAT in 9.89 s, so **Corollaries 96 and 97 (computer-assisted): two more classes of (B5) with d = 2 are empty; (B5) at 419 of 420**; 6713 of the 6720 split instances of o005_c005 UNSAT, 7 open of rank 1); job m80 (the 7 open instances 5 minutes in each arm); job m81 (the splits of o009_c005 and o009_c006; a departure from m79's pace rule written before it ran) |
+| [a68.md](a68.md) | results of jobs m80r, m79a and m79b (23, 26 and 24 graded checks held; the 7 open instances of o005_c005 UNSAT in 11 to 38 s of CaDiCaL, so **Corollary 98 (computer-assisted): the class o005_c005 of (B5) is empty**, and **Proposition 35 (computer-assisted): (B5) is empty at t = 7 and dim V = 9, with the list of what it rests on; A(7) <= 8 is now exactly "(B6) is empty"**; 2002 of 2023, 1280 of 1287 and 1961 of 1975 split instances of o008_c000, o008_c001 and o008_c003 UNSAT, 42 open, 2 of them of rank 1, a pre-registered guess missed; open roots repeat by m66 index across pair orbit 8 (an observation)); job m82 (the 42 open instances 5 minutes in each arm and the splits of o010_c003 and o010_c005); m81b queued; 20 classes left for A(7) <= 8, all of (B6) |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22, m24, m25, m26, m30, m32, m33, m34, m36,
-m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
+m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
 The code is in [`../cube_groups/`](../cube_groups/), with unit tests that gated each commit.
