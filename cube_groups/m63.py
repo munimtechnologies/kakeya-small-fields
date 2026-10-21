@@ -16,17 +16,25 @@ m63 imports m62, which points m60.py's lists at m62's, so the check is m60's che
 (m57's own check, m55's classes and counts, the 14 re-opened instances recomputed), plus m63's own.
 
 Group a (job m63a): the rank-0 instances of m62a's re-opened list (o032_c000's a014, a023, a053,
-  a083; o000_c000's a031, a098) and the entries of TAIL_OPEN["a"].
-Group b (job m63b): the 7 of m62b's list (all of o000_c000, rank 0) and TAIL_OPEN["b"].
+  a083; o000_c000's a031, a098), then TAIL_PLAIN["a"], then TAIL_OPEN["a"].
+Group b (job m63b): the 7 of m62b's list (all of o000_c000, rank 0), then TAIL_PLAIN["b"], then
+  TAIL_OPEN["b"].
+TAIL_OPEN is the rank-0 instances of r3b_t7_B5_o000_c001 (a) and o000_c002 (b) that m62 left open at
+its 15 to 20 s CaDiCaL budgets, run with Lemma 93. TAIL_PLAIN is the ones of rank 1 or 2 that m62
+left open at 10 to 16 s; Lemma 93 (b) says nothing linear for them, so they run as m62's instances,
+unchanged (m60's rule for a split with 1 to 30 open).
 Each: CaDiCaL for at most CAP seconds, then, if still open, CryptoMiniSat with native XOR for CAP.
 
 Parts:
-    check   m60's graded check of m62's group; m63's: every entry has rank 0 on X_1 and is one of
-            m55's representatives (index, rank and A_(h_1) as recorded); on the first entry, in
-            both arms, the Lemma 93 instance is m62's instance plus exactly t (dim X_1 - 1) (kd - 2)
-            negative unit clauses on A_(v_2), ..., A_(v_(kd-1)), consistent with the other units.
+    check   m60's graded check of m62's group; m63's: every Lemma 93 entry has rank 0 on X_1 and is
+            one of m55's representatives (index, rank and A_(h_1) as recorded), every plain entry
+            is one of m55's representatives with its recorded rank, 1 or 2; on the first entry, in
+            both arms, the Lemma 93 instance is m62's instance plus exactly
+            t (dim X_1 - 1) (kd - 2) negative unit clauses on A_(v_2), ..., A_(v_(kd-1)),
+            consistent with the other units.
     solve   the group's plan in order.
-    grade   graded checks and every SAT verified; status and time of every instance in each arm.
+    grade   graded checks and every SAT verified; status and time of every instance in each arm;
+            whether the tail class is now empty (m62's UNSAT plus this group's).
 
 Usage: python m63.py --part check|solve|grade|child [--group a|b] [--group-minutes 150]
                      [--out-dir DIR]
@@ -44,9 +52,38 @@ import m57 as m
 
 T = 7
 CAP = 300.0
+C1, C2 = m62.C1, m62.C2
 # Tail instances that m62 left open, rank 0 on X_1: (class, m55 order k, m55 index, 0, A_(h_1)),
-# to be copied from m62's out/r3s_t7_B5_o000_c00?_aKKK__cadical.json before the job is queued.
-TAIL_OPEN = {"a": (), "b": ()}
+# copied from m62a's and m62b's out/r3s_t7_B5_o000_c00?_aKKK__cadical.json (2026-10-21).
+TAIL_OPEN = {
+    "a": ((C1, 74, 512, 0, 262144), (C1, 137, 1024, 0, 2048), (C1, 165, 2560, 0, 262160),
+          (C1, 311, 6656, 0, 786448), (C1, 318, 8192, 0, 4096), (C1, 348, 10752, 0, 266256),
+          (C1, 402, 20992, 0, 786464), (C1, 429, 65536, 0, 8192), (C1, 488, 66560, 0, 10240),
+          (C1, 573, 73728, 0, 12288), (C1, 587, 75264, 0, 276480), (C1, 592, 75776, 0, 12304),
+          (C1, 593, 76288, 0, 274448), (C1, 643, 131072, 0, 1048576),
+          (C1, 664, 131584, 0, 1310720), (C1, 676, 132096, 0, 1050624),
+          (C1, 755, 139264, 0, 1052672), (C1, 757, 140288, 0, 1054720),
+          (C1, 758, 140800, 0, 1316864), (C1, 760, 141824, 0, 1314832),
+          (C1, 777, 145408, 0, 1576976), (C1, 821, 159744, 0, 1576992),
+          (C1, 887, 264704, 0, 134479888), (C1, 933, 270336, 0, 134221824)),
+    "b": ((C2, 74, 512, 0, 262144), (C2, 233, 2560, 0, 262160), (C2, 248, 4096, 0, 524288),
+          (C2, 278, 4608, 0, 786432), (C2, 382, 8192, 0, 4096), (C2, 420, 8704, 0, 266240),
+          (C2, 529, 16384, 0, 32), (C2, 533, 16896, 0, 262176), (C2, 539, 18432, 0, 48),
+          (C2, 559, 20480, 0, 524320), (C2, 582, 25088, 0, 266272), (C2, 696, 41472, 0, 266304),
+          (C2, 732, 49152, 0, 96), (C2, 736, 49664, 0, 262240), (C2, 773, 131072, 0, 1048576),
+          (C2, 827, 184320, 0, 1572960), (C2, 953, 295424, 0, 134479936),
+          (C2, 1119, 557056, 0, 17179869248), (C2, 1123, 557568, 0, 17180131392),
+          (C2, 1656, 3145728, 0, 283673999966208)),
+}
+# Tail instances that m62 left open, rank 1 or 2 on X_1, from the same files.
+TAIL_PLAIN = {
+    "a": ((C1, 1229, 547331, 1, 17180688688), (C1, 1788, 3166376, 2, 283674000557092),
+          (C1, 1793, 3168264, 1, 283674000556080)),
+    "b": ((C2, 478, 10249, 1, 102416), (C2, 616, 32848, 2, 131648), (C2, 674, 37568, 1, 918592),
+          (C2, 1325, 1572897, 2, 2216203157508), (C2, 1492, 2097165, 2, 281474976808962)),
+}
+# m62's tail totals (m62a/m62b grade.json "tail"): (instances, UNSAT).
+M62_TAIL = {C1: (1798, 1771), C2: (1827, 1802)}
 
 _base_build_plain = m.build_plain
 
@@ -101,12 +138,23 @@ def spec93(name, k, rep):
 
 
 def plan(group, reps):
-    """[(spec, arm, cap seconds, condition)]; "open" runs the entry only if still undecided."""
+    """[(spec, arm, cap seconds, condition)]; "open" runs the entry only if still undecided.
+    m62's re-opened rank-0 instances first (the control), then TAIL_PLAIN, then TAIL_OPEN."""
+    controls = [row for row in m62.REOPEN[group] if row[3] == 0]
+    specs = [spec93(name, k, reps[name][k]) for name, k, *_ in controls]
+    specs += [m60.split_spec(name, k, reps[name][k]) for name, k, *_ in TAIL_PLAIN[group]]
+    specs += [spec93(name, k, reps[name][k]) for name, k, *_ in TAIL_OPEN[group]]
     out = []
-    for name, k, *_ in entries(group):
-        sp = spec93(name, k, reps[name][k])
+    for sp in specs:
         out += [(sp, "cadical", CAP, None), (dict(sp), "xor", CAP, "open")]
     return out
+
+
+def rows_match(reps, rows):
+    return all(name in reps and k < len(reps[name]) and reps[name][k]["index"] == idx
+               and reps[name][k]["rank_x1"] == rk and reps[name][k]["a1"] == a1
+               and m60.rank_on(a1, m60.m55.CLASSES[name][1]) == rk
+               for name, k, idx, rk, a1 in rows)
 
 
 # ---------- check ----------
@@ -116,11 +164,14 @@ def check(group, out_dir):
     graded = st["graded"]
     reps = m60.load_reps(out_dir)
     rows = entries(group)
-    graded["m63_entries"] = len(rows) > 0 and all(
-        name in reps and k < len(reps[name]) and reps[name][k]["index"] == idx
-        and reps[name][k]["rank_x1"] == rk == 0 and reps[name][k]["a1"] == a1
-        and m60.rank_on(a1, m60.m55.CLASSES[name][1]) == 0
-        for name, k, idx, rk, a1 in rows)
+    graded["m63_entries"] = (len(rows) > 0 and all(rk == 0 for _, _, _, rk, _ in rows)
+                             and rows_match(reps, rows))
+    graded["m63_plain"] = (all(rk in (1, 2) for _, _, _, rk, _ in TAIL_PLAIN[group])
+                           and rows_match(reps, TAIL_PLAIN[group]))
+    tail = m62.TAIL[group]
+    graded["m63_tail_counts"] = (
+        all(r[0] == tail for r in TAIL_OPEN[group] + TAIL_PLAIN[group])
+        and len(TAIL_OPEN[group]) + len(TAIL_PLAIN[group]) == M62_TAIL[tail][0] - M62_TAIL[tail][1])
     name, k = rows[0][:2]
     probes = {}
     for arm in ("cadical", "xor"):
@@ -140,6 +191,7 @@ def check(group, out_dir):
             and len(getattr(c1, "xors", ())) == len(getattr(c0, "xors", ())))
     st["m63_probes"] = probes
     st["m63_entries"] = [[n, kk] for n, kk, *_ in rows]
+    st["m63_plain"] = [[n, kk] for n, kk, *_ in TAIL_PLAIN[group]]
     return st
 
 
@@ -223,9 +275,17 @@ def grade(group, out_dir):
     status = {n: ("UNSAT" if any(v[0] == "UNSAT" for v in a.values())
                   else "SAT" if any(v[0] == "SAT" for v in a.values()) else "open")
               for n, a in rows.items()}
+    tail = m62.TAIL[group]
+    tail_names = ([spec93(n, k, reps[n][k])["name"] for n, k, *_ in TAIL_OPEN[group]]
+                  + [m60.split_spec(n, k, reps[n][k])["name"] for n, k, *_ in TAIL_PLAIN[group]])
+    total, before = M62_TAIL[tail]
+    here = sum(status.get(n) == "UNSAT" for n in tail_names)
     return {"group": group, "graded": graded, "ungraded": ungraded, "rows": rows,
             "status": status, "unsat": sorted(n for n, s in status.items() if s == "UNSAT"),
             "open": sorted(n for n, s in status.items() if s == "open"),
+            "tail": {"name": tail, "total": total, "unsat": before + here,
+                     "open": [n for n in tail_names if status.get(n) != "UNSAT"],
+                     "empty": before + here == total},
             "any_sat_7": any(s == "SAT" for s in status.values())}
 
 
@@ -252,7 +312,7 @@ def main():
         print(f"SUMMARY grade group {args.group} all_match {all(out['graded'].values())} "
               f"graded {len(out['graded'])} ungraded {len(out['ungraded'])} "
               f"any_sat_7 {out['any_sat_7']} unsat {len(out.get('unsat', []))} "
-              f"open {out.get('open')}", flush=True)
+              f"open {out.get('open')} tail {json.dumps(out.get('tail'))}", flush=True)
         with open(os.path.join(args.out_dir, "grade.json"), "w") as f:
             json.dump(out, f, indent=1)
     else:

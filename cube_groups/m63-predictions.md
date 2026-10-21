@@ -59,3 +59,45 @@ Rules:
 
 No speed-up is claimed before the run. Every UNSAT is a solver answer saved without a proof
 certificate, as in every job of these notes. An UNKNOWN is not evidence either way.
+
+## Addendum, written 2026-10-21 ~03:50Z after m62 reported and before m63 ran
+
+What m62 found (notes/a55.md): all 14 re-opened instances UNSAT (12 in CaDiCaL, a574 and a031 in
+the XOR arm), so the 13 controls of m63 are all known UNSAT, 11 of them in CaDiCaL (a031 needed
+the XOR arm). The split of o000_c001 left 27 instances open (24 of rank 0, 3 of rank 1 or 2) and
+o000_c002 left 25 (20 of rank 0, 5 of rank 1 or 2), none skipped, each at a budget of 10 to 20 s.
+
+Changes to the plan, made before m63 ran:
+
+- TAIL_OPEN holds the 24 (a) and 20 (b) rank-0 tail instances, copied from m62's output files.
+- TAIL_PLAIN is new: the 3 (a) and 5 (b) tail instances of rank 1 or 2. Lemma 93 gives nothing
+  linear for them, so they run as m62's instances, unchanged (named r3s_, no extra clauses), with
+  the same two arms and caps. This carries out m62's rule for a split with 1 to 30 open.
+- Order in each group: the controls, then TAIL_PLAIN, then TAIL_OPEN. Instances not reached in the
+  150 minutes are SKIPPED and count as open.
+- Added checks: every TAIL_PLAIN entry is one of m55's representatives with its recorded index,
+  rank (1 or 2) and A_(h_1); TAIL_OPEN and TAIL_PLAIN together are exactly as many as m62 left
+  open in that group's tail class, all from that class.
+- The grade reports whether the tail class is now empty: m62's UNSAT plus this group's.
+
+Only m63a is queued now (2 jobs pending before it, m64a and m64b, and m66 queued with it); m63b
+is staged.
+
+Guesses for the tail (low confidence, written before m63 ran):
+
+- **TAIL_PLAIN: all UNSAT in CaDiCaL within 300 s** (3 of 3 in a, 5 of 5 in b). Every instance
+  of rank 1 or 2 re-opened so far closed (m60b's a219 and a262, m62a's a574, the last in XOR).
+- **TAIL_OPEN: at least 20 of 24 (a) and 16 of 20 (b) UNSAT after both arms.** m60's and m62's
+  rank-0 instances that had their full 20 s first all closed, in 15 to 272 s.
+- **o000_c001 empty after m63a; o000_c002 empty after m63b: guess yes for each, low confidence.**
+- **m63a ends without SKIPPED instances**, its 33 entries inside 150 minutes.
+
+Rules for the tail:
+
+- **A tail class all of whose instances are UNSAT** (m62's and m63's): the class is empty, (B5)
+  goes up by one (the next corollary).
+- **A tail instance still open after both arms:** the third-matrix split by hand first, as for the
+  re-opened ones.
+- **SKIPPED tail instances:** re-run in the next group (m63c) with the same caps.
+- The speed rule above is graded on the 13 controls only: the tail instances have no CaDiCaL time
+  from m62 to compare with (UNKNOWN at 10 to 20 s).
