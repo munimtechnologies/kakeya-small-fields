@@ -1,0 +1,129 @@
+{
+ "class": "r3b_t7_B6_o005_c003",
+ "group": "b",
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "class": true,
+  "class_reps": true,
+  "sample": true,
+  "build_l": true,
+  "build_s": true,
+  "dimacs_roundtrip": true,
+  "groups": true,
+  "group": true
+ },
+ "instances": 980,
+ "tools": {
+  "cadical": {
+   "url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz",
+   "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"
+  },
+  "drat_trim": {
+   "url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c",
+   "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+  }
+ },
+ "counts": {
+  "VERIFIED": 980
+ },
+ "verified": 980,
+ "not_verified": [],
+ "any_sat": false,
+ "cadical_sum": 2071.7,
+ "drat_sum": 1912.15,
+ "cadical_median": 1.02,
+ "drat_median": 1.01,
+ "cadical_max": 82.97,
+ "drat_max": 92.82,
+ "largest_proof": [
+  "r3l_t7_B6_o005_c003_a1921",
+  327976804
+ ],
+ "slowest": [
+  "r3l_t7_B6_o005_c003_a1885",
+  73.17,
+  92.82
+ ],
+ "sha_compared": 49,
+ "sha_differ": [],
+ "reruns": {
+  "r3l_t7_B6_o005_c003_a1141": [
+   "VERIFIED",
+   62.52,
+   48.56
+  ],
+  "r3l_t7_B6_o005_c003_a1150": [
+   "VERIFIED",
+   34.12,
+   23.55
+  ],
+  "r3s_t7_B6_o005_c003_a1156": [
+   "VERIFIED",
+   23.83,
+   8.07
+  ],
+  "r3l_t7_B6_o005_c003_a1521": [
+   "VERIFIED",
+   82.97,
+   75.86
+  ],
+  "r3l_t7_B6_o005_c003_a1534": [
+   "VERIFIED",
+   55.99,
+   47.97
+  ],
+  "r3l_t7_B6_o005_c003_a1564": [
+   "VERIFIED",
+   32.63,
+   34.0
+  ],
+  "r3s_t7_B6_o005_c003_a1570": [
+   "VERIFIED",
+   38.13,
+   32.53
+  ],
+  "r3s_t7_B6_o005_c003_a1599": [
+   "VERIFIED",
+   37.52,
+   22.3
+  ],
+  "r3l_t7_B6_o005_c003_a1605": [
+   "VERIFIED",
+   65.94,
+   83.49
+  ],
+  "r3s_t7_B6_o005_c003_a1801": [
+   "VERIFIED",
+   10.9,
+   6.49
+  ],
+  "r3s_t7_B6_o005_c003_a1811": [
+   "VERIFIED",
+   22.83,
+   11.25
+  ],
+  "r3l_t7_B6_o005_c003_a1885": [
+   "VERIFIED",
+   73.17,
+   92.82
+  ],
+  "r3l_t7_B6_o005_c003_a1921": [
+   "VERIFIED",
+   80.14,
+   75.32
+  ],
+  "r3l_t7_B6_o005_c003_a1926": [
+   "VERIFIED",
+   19.99,
+   25.05
+  ],
+  "r3l_t7_B6_o005_c003_a1960": [
+   "VERIFIED",
+   32.23,
+   39.0
+  ]
+ }
+}
