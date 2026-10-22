@@ -1,0 +1,139 @@
+{
+ "class": "r3b_t7_B6_o005_c003",
+ "group": "a",
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "class": true,
+  "class_reps": true,
+  "sample": true,
+  "build_l": true,
+  "build_s": true,
+  "dimacs_roundtrip": true,
+  "groups": true,
+  "group": true
+ },
+ "instances": 981,
+ "tools": {
+  "cadical": {
+   "url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz",
+   "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"
+  },
+  "drat_trim": {
+   "url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c",
+   "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+  }
+ },
+ "counts": {
+  "VERIFIED": 981
+ },
+ "verified": 981,
+ "not_verified": [],
+ "any_sat": false,
+ "cadical_sum": 1404.06,
+ "drat_sum": 1319.41,
+ "cadical_median": 0.89,
+ "drat_median": 0.91,
+ "cadical_max": 59.61,
+ "drat_max": 79.8,
+ "largest_proof": [
+  "r3l_t7_B6_o005_c003_a0927",
+  218091239
+ ],
+ "slowest": [
+  "r3l_t7_B6_o005_c003_a0927",
+  59.61,
+  79.8
+ ],
+ "sha_compared": 50,
+ "sha_differ": [],
+ "reruns": {
+  "r3s_t7_B6_o005_c003_a0015": [
+   "VERIFIED",
+   18.41,
+   15.86
+  ],
+  "r3s_t7_B6_o005_c003_a0033": [
+   "VERIFIED",
+   12.62,
+   9.58
+  ],
+  "r3s_t7_B6_o005_c003_a0042": [
+   "VERIFIED",
+   21.89,
+   10.18
+  ],
+  "r3s_t7_B6_o005_c003_a0051": [
+   "VERIFIED",
+   10.42,
+   8.07
+  ],
+  "r3s_t7_B6_o005_c003_a0060": [
+   "VERIFIED",
+   10.03,
+   6.58
+  ],
+  "r3s_t7_B6_o005_c003_a0118": [
+   "VERIFIED",
+   5.69,
+   2.82
+  ],
+  "r3s_t7_B6_o005_c003_a0175": [
+   "VERIFIED",
+   14.81,
+   6.03
+  ],
+  "r3l_t7_B6_o005_c003_a0240": [
+   "VERIFIED",
+   52.05,
+   45.7
+  ],
+  "r3l_t7_B6_o005_c003_a0350": [
+   "VERIFIED",
+   9.31,
+   7.92
+  ],
+  "r3s_t7_B6_o005_c003_a0379": [
+   "VERIFIED",
+   23.17,
+   15.5
+  ],
+  "r3s_t7_B6_o005_c003_a0554": [
+   "VERIFIED",
+   18.4,
+   18.62
+  ],
+  "r3l_t7_B6_o005_c003_a0625": [
+   "VERIFIED",
+   28.23,
+   24.72
+  ],
+  "r3s_t7_B6_o005_c003_a0714": [
+   "VERIFIED",
+   9.69,
+   5.62
+  ],
+  "r3l_t7_B6_o005_c003_a0767": [
+   "VERIFIED",
+   39.44,
+   51.41
+  ],
+  "r3l_t7_B6_o005_c003_a0817": [
+   "VERIFIED",
+   32.1,
+   33.95
+  ],
+  "r3s_t7_B6_o005_c003_a0846": [
+   "VERIFIED",
+   4.42,
+   2.16
+  ],
+  "r3l_t7_B6_o005_c003_a0927": [
+   "VERIFIED",
+   59.61,
+   79.8
+  ]
+ }
+}
