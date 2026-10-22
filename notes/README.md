@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-21, release v1.8.0)
+## Status (2026-10-22)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -33,9 +33,9 @@ A(t) = t for every t would settle the whole family.
 - Bounds: A(6..12) <= 6, 9, 11, 13, 16, 20, 23 (Corollary 49; job m38 recomputed it and agreed).
 - The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 2), (10, 3), (10, 4),
   (11, 4), (10, 5), (11, 5), (10, 6), (11, 6), (12, 6), (10, 7), (11, 7), (12, 7), (11, 8),
-  (12, 8), (12, 9), (13, 9), (13, 10), (14, 11) (Corollary 50; (11, 4) and (12, 6) are new). The
-  first open cases are (11, 2), (11, 3), (12, 4), (12, 5), (13, 6), (13, 7), (13, 8), (14, 9),
-  (14, 10), (15, 11), (15, 12) and (b + 3, b) for b >= 13.
+  (12, 8), (12, 9), (13, 9), (13, 10), (14, 11) (Corollary 50). The first open cases are (11, 2),
+  (11, 3), (12, 4), (12, 5), (13, 6), (13, 7), (13, 8), (14, 9), (14, 10), (15, 11), (15, 12) and
+  (b + 3, b) for b >= 13.
 - The road to A(6) = 6 ([a8.md](a8.md) to [a22.md](a22.md)): Lemma 60 (an element of U+ with zero
   map whose C contains x0 forces Im A_u n ker A_u = 0); rank 4 at t = 8 is in shape (c) unless A(6) = 7
   (Proposition 28; by Theorem 31 it is always in shape (c) now). Rank 4 at t = 6: Case A, job m24
@@ -53,178 +53,44 @@ A(t) = t for every t would settle the whole family.
   [a21.md](a21.md)), and jobs m36 and m37 the last four classes ([a23.md](a23.md)). Lemmas 71 to 76
   ([a18.md](a18.md) to [a22.md](a22.md), by hand) prepared a finer split that was not needed in
   the end.
-- **Towards A(7) <= 8** ([a24.md](a24.md), partial, by hand), which would settle (13, 8): a system
-  with t = 7 and dim V = 9 has an element of rank 4 (Case A, or Case B in shape (c) or (d2)) or
-  only elements of rank <= 3, with each element of rank 3 in (A5), (B6) or (B5) (Proposition 29).
-  In Case A at rank 4, x0 is not in Im A_u (Lemma 77, the step of Lemma 52 that carries over). In
-  Case B at rank 4, no element of U+ whose value lies in Z_N has zero map (Lemma 78), and in shape (c)
-  n -> A_n is one-to-one (Corollary 51). In (A5), A_u^2 = 0 (Lemma 79). For Case A at rank 4,
-  Lemma 80 ([a25.md](a25.md), by hand) reduces A_u to six classes, and job m39 found all six UNSAT:
-  **no element of rank 4 in Case A at t = 7 and dim V = 9** (Corollary 52, [a26.md](a26.md),
-  computer-assisted, 6 solver answers). In the rank-3 configuration (A5), A_u is unique up to base
-  change (Lemma 82, by hand), and job m41 found that one class UNSAT: **no element of rank 3 in (A5)
-  when there is none of rank 4** (Corollary 53, [a29.md](a29.md), computer-assisted, 1 solver
-  answer). Case B at rank 4, shape (d2): in job m40a the two forms stayed UNKNOWN after 45 minutes
-  each ([a27.md](a27.md)), so Lemma 84 ([a28.md](a28.md), by hand) splits them by Im A_u into 7 and 5
-  orbits, Lemma 87 ([a31.md](a31.md), by hand, before the job ran) counts the classes of A_u in them,
-  119 and 91, with their sizes, and job m43 searched every class with the facts of Lemma 78 as
-  conditions: all 85 graded checks held, Lemma 87 was matched by machine in every count and every
-  class size, and every one of the 210 classes was UNSAT, all but one in under 5 s: **no element of
-  rank 4 in shape (d2) at t = 7 and dim V = 9** (Corollary 54, [a34.md](a34.md), computer-assisted,
-  210 solver answers). Shape (c), split three ways by Lemma 81, was undecided after 150 minutes in
-  job m40b, so Lemma 85 ([a29.md](a29.md), by hand) splits it by Im A_u into 5 orbits, Lemma 86
-  ([a30.md](a30.md), by hand, before the job ran) counts the classes of A_u in them, 5, 6, 10, 18
-  and 15, with their sizes, and job m44 searched every class with the commuting matrices of Lemma 38
-  as conditions: all 29 graded checks held, Lemma 86 was matched by machine in every count and every
-  class size, and all 54 classes were UNSAT in under 4 s each. **No anisotropic system with t = 7
-  and dim V = 9 has an element of rank 4** (Corollary 55, [a35.md](a35.md), computer-assisted), and
-  so **no element of rank 3 is in (A5)** (Corollary 56, Corollary 53 without its hypothesis).
-  **A(7) <= 8 is now exactly the statement that (B6) and (B5) are empty.** For these, Lemma 83
-  ([a27.md](a27.md), by hand) counts 13 and 49 orbits of (ker A_u, Im A_u), and job m42 searched
-  every class of A_u in them, 68 in (B6) and 420 in (B5). (B6): m42a and m42b found 9 of 68 UNSAT,
-  59 open after about 200 to 250 s each ([a32.md](a32.md), [a34.md](a34.md)); job m45 gave m42a's
-  30 three times the budget, about 10.4 minutes per class: m45b closed 1 of 15 ([a39.md](a39.md))
-  and m45a 4 of 15 ([a40.md](a40.md)), so (B6) stood at 14 of 68, and job m47 (designed for
-  m42b's 29, to be queued only if m45 closed most of its 30) was not queued. (B5): m42c and m42d
-  found 327 of 420 UNSAT, 93 open after 40 to 97 s each (a few longer) ([a33.md](a33.md),
-  [a35.md](a35.md)); job m46 gave m42c's 42 three times the budget and closed 23, among them 20 of
-  the 23 with d = 2 and none of the 5 with d = 3 ([a41.md](a41.md)), and job m48 does the same for
-  m42d's 51 in three batches: m48a closed 14 of its 17 at up to 15 minutes each, all 8 with d = 2,
-  4 of 6 with d = 1 and **the first class with d = 3** ([a45.md](a45.md)), and m48b closed 10 of
-  its 17, among them **a second class with d = 3** ([a46.md](a46.md)); with one class closed by
-  job m50, (B5) stood at 375 of 420. The solver's time follows the kind and
-  d = dim(ker A_u n Im A_u) of the pair orbit: 91
-  of the 97 classes of (B5) with x0 in Im A_u and d <= 2 closed, (B6) had closed only at d <= 1 (11
-  of 18 classes with d = 0, 3 of 34 with d = 1), and of the 13 classes with d = 3 in (B6) and (B5)
-  only two, both in (B5) and both with the smallest stabiliser, had closed; these are the targets
-  for hand work. Lemma 88 ([a36.md](a36.md),
-  by hand) carries Lemma 72 to
-  t = 7 for both shapes: for every non-zero w in ker phi, A_w maps P + span(x0) onto
-  A_u beta(w, V), the space beta(w, V) + span(sigma(w)) has dimension at least rank A_w + 3 and
-  meets ker A_u in dimension at least 3, and when rank A_w = 3, w is itself in (B6) or (B5). The
-  note also records the routes tried on the 13 classes with d = 3 and where each stops. Lemma 89
-  ([a37.md](a37.md), by hand) carries Lemma 60 to (B6) and (B5): an element w != 0 of ker phi with
-  A_w = 0 either has x0 in C = beta(w, V) + span(sigma(w)), which forces d = 0 in (B6) and d <= 1
-  in (B5), or has C a complement of span(x0) in ker A_u with U+(w) / span(w) a maximal system at
-  t = 6 with an invariant plane (case (II)). Lemma 90 ([a38.md](a38.md), by hand, using the rank
-  bound of Corollary 55) shows that for such a w, sigma(w) is never a value of beta(w, .), and
-  narrows case (II) (Corollary 59). **Lemma 92 ([a39.md](a39.md), by hand) rules case (II) out**,
-  through Lemma 91 (for every k != 0, the span of the vectors A_h sigma(k) and sigma(k) has
-  dimension at least 3, which is Lemma 30 read through (*)): so **in every class of (B6) with
-  d >= 1 and of (B5) with d >= 2, all 13 classes with d = 3 among them, h -> A_h is one-to-one on
-  ker phi** (Corollary 60). That is one clause per element of ker phi once A_u is fixed; job m49
-  ([a40.md](a40.md)) added these clauses to the 23 classes of (B6) that m45 left open with d >= 1,
-  with m45 as its control, to measure whether they help: neither batch closed a class, m49a none
-  of 13 and m49b none of 10 in 624 s each ([a43.md](a43.md), [a44.md](a44.md)), so under its rule
-  the clauses are set aside as a lever. Job m50
-  ([a41.md](a41.md), [a46.md](a46.md)) measured CryptoMiniSat with native XOR
-  constraints against CaDiCaL: it decided 4 of 9 classes CaDiCaL decides and 1 of 5 it never had, so
-  under its rule CaDiCaL stays. Proposition 30 ([a42.md](a42.md), by hand) counts the classes of a second matrix
-  A_(h_1), h_1 in ker phi, in the three classes of (B6) with d = 3: 40 when Im A_u lies in P and
-  178 when it neither lies in P nor contains x0, so each of these classes splits into that many
-  instances with two matrices fixed; Proposition 31 ([a43.md](a43.md), by hand) counts the third
-  class, with x0 in Im A_u: 308. Job m52 matched all three counts by machine, with their split by
-  rank ([a46.md](a46.md)). Job m53 ran the class with Im A_u in P as its 40 instances: 39 UNSAT
-  in 118 s of solver time in all, one open ([a46.md](a46.md)), where the class as a whole had been
-  undecided at 250 s; job m57b closed the last one in 291 s, so **the class of (B6) with Im A_u in
-  P is empty** (Corollary 61, [a47.md](a47.md), computer-assisted, 40 solver answers) and **(B6)
-  stands at 15 of 68**. Jobs m54a and m58a ran the 178 instances of the class with Im A_u neither
-  in P nor through x0: **176 UNSAT**, the two left open both of rank 0 on X_1 ([a47.md](a47.md),
-  [a48.md](a48.md)). Proposition 32 ([a45.md](a45.md), by hand) sets up the same split for the ten
-  classes of (B5) with d = 3, where A_(h_1) is also free on a vector outside P + span(x0): 405566
-  or 323966 possible maps, stabilisers of order 512 to 24576; job m55 matched every one of these
-  numbers by machine and counted the instances exactly, 421 to 3366 per class ([a47.md](a47.md)).
-  The XOR arm, given one pass of up to 5 minutes over the 21 open classes of (B5) with d <= 2 that
-  CaDiCaL had failed at 10 to 15 minutes (job m57b), closed 18 of them, every one with d <= 1
-  ([a47.md](a47.md)), and job m57a, m48's third batch, closed 14 of its 17 classes
-  ([a48.md](a48.md)). Job m59b closed the last two classes with d = 1 under the XOR arm, so
-  (B5) stood at 409 of 420, and ran the first two splits of (B5) with d = 3: 436 of 445 and
-  404 of 421 instances UNSAT, 24 of the 26 open ones of rank 0 on X_1 ([a49.md](a49.md)). Job m59a
-  closed the last two kind-graph instances, so **the class of (B6) with Im A_u neither in P nor
-  through x0 is empty** (Corollary 62, [a50.md](a50.md), computer-assisted, 178 solver answers)
-  and **(B6) stands at 16 of 68**; it also ran the kind-L class of (B6) as its 308 instances: 301
-  UNSAT, the 7 open all of rank 0 on X_1. Job m58b's XOR pass closed none of the 51 open classes
-  of (B6) with d <= 2 at about 176 s each ([a50.md](a50.md)). Job m60 closed all 26 open split
-  instances of (B5), 24 in CaDiCaL and 2 in the XOR arm, so **two more classes of (B5) with d = 3
-  are empty** (Corollary 63, [a51.md](a51.md), computer-assisted, 866 solver answers) and **(B5)
-  stands at 411 of 420**; it also split o032_c000 (851 of 856 UNSAT) and o000_c000 (662 of 671),
-  13 of the 14 open of rank 0 on X_1 ([a51.md](a51.md)). Job m61 re-runs the 7 open kind-L
-  instances and gives CaDiCaL 15 minutes on the classes of job m47's list; job m62 re-runs the 14
-  open split instances of (B5) and splits o000_c001 and o000_c002. Lemma 93 ([a52.md](a52.md), by
-  hand) lets the second element h_1 of ker phi be chosen with the largest rank on ker A_u, so in a
-  split instance of rank 0 every map of ker phi vanishes on ker A_u (unit clauses), and
-  Proposition 33 ([a52.md](a52.md), by hand) sets up the second-matrix split of the 51 open classes
-  of (B6) with d <= 2: every stabiliser order, checked by orbit-stabiliser sums on seven pair
-  orbits, and 9755 instances for the 7 classes with d = 0. Job m61a closed the last 7 kind-L
-  instances in 108 to 272 s each, so **the kind-L class of (B6) is empty** (Corollary 64,
-  [a53.md](a53.md), computer-assisted, 308 solver answers): **no class of (B6) with d = 3 is
-  left, and (B6) stands at 17 of 68**; the 7 classes with d = 2 of m47's list stayed open at 15
-  minutes each. Job m61b closed 4 of the 16 classes with d = 1 of m47's list at 15 minutes each,
-  so **(B6) stands at 21 of 68** ([a54.md](a54.md)). Job m62 closed all 14 open split instances of
-  (B5), 12 in CaDiCaL and 2 in the XOR arm, so **two more classes of (B5) with d = 3 are empty**
-  (Corollaries 65 and 66, [a55.md](a55.md), computer-assisted, 856 and 671 solver answers) and
-  **(B5) stands at 413 of 420**; it also split o000_c001 (1771 of 1798 UNSAT) and o000_c002 (1802
-  of 1827). Job m63a closed the 27 open split instances of o000_c001, the 24 of rank 0 with the
-  unit clauses of Lemma 93, so **the class o000_c001 of (B5) is empty** (Corollary 67,
-  [a56.md](a56.md), computer-assisted, 1798 solver answers) and **(B5) stands at 414 of 420**. Job
-  m64b's rank-0 sweep was UNSAT for 6 of the 7 open classes of (B5), so their splits need only the
-  instances of rank 1 and 2 on ker A_u, and o000_c002 has 5 instances left; job m66 matched
-  Proposition 33 by machine and counted the split of (B6) exactly, 88545 instances for the 51
-  classes ([a56.md](a56.md)). Job m67a closed those last 5 instances, so **the class o000_c002 of
-  (B5) is empty** (Corollary 68, [a57.md](a57.md), computer-assisted) and **(B5) stands at 415 of
-  420**; it also closed 1614 of the 1615 split instances of o020_c000 of rank 1 and 2. Job m64a's
-  rank-0 sweep of (B6) was UNSAT for 17 of the 47 open classes (all 7 with d = 0, 10 of the 27
-  with d = 1, none of the 13 with d = 2), which leaves 82222 split instances for (B6)
-  ([a57.md](a57.md)). Job m69a closed o020_c000's last instance, so **the class o020_c000 of (B5)
-  is empty** (Corollary 69, [a58.md](a58.md), computer-assisted) and **(B5) stands at 416 of 420**,
-  and found all 1534 split instances of o011_c003, o011_c004 and o012_c011 UNSAT, so **the first
-  three classes of (B6) closed by the second-matrix split are empty** (Corollary 70,
-  [a58.md](a58.md), computer-assisted) and **(B6) stands at 24 of 68**. Job m67b closed 1881 of
-  the 1908 split instances of o002_c001, and its 13 controls gave the pre-registered speed rule of
-  Lemma 93 the verdict "adopt" (median time ratio 0.329). Proposition 34 ([a58.md](a58.md), by
-  hand) sets up the second-matrix split for the three open classes of (B5) with d = 2. Job m69b
-  found all 696 split instances of o009_c008 UNSAT, so **the first class of (B6) with d = 1 closed
-  by the second-matrix split is empty** (Corollary 71, [a59.md](a59.md), computer-assisted) and
-  **(B6) stands at 25 of 68**; o004_c001 and o006_c001 (d = 2) left 13 and 8 of their 587 split
-  instances open. Job m70a-v2 closed the last 27 split instances of o002_c001, so **the class
-  o002_c001 of (B5) is empty** (Corollary 72, [a60.md](a60.md), computer-assisted) and **(B5)
-  stands at 417 of 420**, and found all 924 split instances of o011_c002 UNSAT, so **that class of
-  (B6) with d = 0 is empty** (Corollary 73, [a60.md](a60.md), computer-assisted) and **(B6) stands
-  at 26 of 68**; jobs m70a-v2 and m70b closed every split instance of rank 1 and 2 in six more
-  classes and left 80 of rank 0 open. Job m71a re-ran m69b's 21 open split instances and found all
-  21 UNSAT, so **the classes o004_c001 and o006_c001 of (B6) with d = 2 are empty** (Corollaries 74
-  and 75, [a61.md](a61.md), computer-assisted) and **(B6) stands at 28 of 68**; its splits of
-  o008_c002 and o010_c002 closed every instance of rank 1 and 2 and left 19 of rank 0 open. Jobs
-  m72a and m72b re-ran m70's 80 open split instances and found all 80 UNSAT, and found every split
-  instance of o012_c009 and o012_c004 UNSAT, so **eight more classes of (B6) are empty** (o004_c000,
-  o006_c000, o008_c004, o003_c004, o003_c002, o003_c003, o012_c009 and o012_c004: Corollaries 76 to
-  83, [a62.md](a62.md), computer-assisted) and **(B6) stands at 36 of 68**. Job m73a re-ran m71a's
-  13 open split instances of o008_c002 and found all 13 UNSAT, and found every split instance of
-  o009_c003 and o007_c001 UNSAT, so **three more classes of (B6) are empty** (Corollaries 84 to 86,
-  [a63.md](a63.md), computer-assisted) and **(B6) stands at 39 of 68**. Job m73b re-ran m71a's 6
-  open split instances of o010_c002 and found all 6 UNSAT, and found every split instance of
-  o007_c004, o007_c007 and o009_c000 UNSAT, so **four more classes of (B6) are empty**
-  (Corollaries 87 to 90, [a64.md](a64.md), computer-assisted) and **(B6) stands at 43 of 68**. Job
-  m74 matched Proposition 34 by machine and counted the split of the three open classes of (B5)
-  exactly: 12458 instances of rank 1 and 2 ([a64.md](a64.md)). Job m76b found all 3584 split
-  instances of o012_c001 UNSAT, the last class of (B6) with d = 0 (Corollary 91, [a65.md](a65.md),
-  computer-assisted), and jobs m76a-v2, m77a and m77b closed o009_c002, o009_c009, o009_c001 and
-  o009_c004 (Corollaries 92 to 95, [a66.md](a66.md), computer-assisted), so **every class of (B6)
-  with a UNSAT rank-0 sweep is closed and (B6) stands at 48 of 68**. Jobs m75a, m75b and m78 split
-  the three classes of (B5) with d = 2 under Proposition 34, so **o004_c001 and o006_c000 of (B5)
-  are empty** (Corollaries 96 and 97, [a67.md](a67.md), computer-assisted), and job m80r closed the
-  last 7 of o005_c005's 6720 split instances in 11 to 38 s each, so **o005_c005 is empty**
-  (Corollary 98, [a68.md](a68.md), computer-assisted) and **(B5) is empty** (Proposition 35,
-  below). Jobs m79a and m79b split three classes of (B6) with an open sweep, o008_c000, o008_c001
-  and o008_c003, and left 21, 7 and 14 of their 5285 instances open ([a68.md](a68.md)); job m82
-  re-runs those 42 and splits o010_c003 and o010_c005, and job m81 splits o009_c005 and o009_c006,
-  all queued with their predictions.
+- **Towards A(7) <= 8** ([a24.md](a24.md) to [a79.md](a79.md)), which would settle (13, 8). A
+  system with t = 7 and dim V = 9 has an element of rank 4 (Case A, or Case B in shape (c) or (d2))
+  or only elements of rank <= 3, each element of rank 3 in (A5), (B6) or (B5) (Proposition 29,
+  [a24.md](a24.md)). Rank 4 is ruled out (computer-assisted): Case A by Lemma 80 and job m39
+  (Corollary 52, [a26.md](a26.md)), shape (d2) by Lemmas 84 and 87 and job m43 (Corollary 54,
+  [a34.md](a34.md)), shape (c) by Lemmas 85 and 86 and job m44 (Corollary 55, [a35.md](a35.md));
+  Lemmas 86 and 87 were written before their jobs and matched by machine in every count and class
+  size. (A5) is ruled out by Lemma 82 and job m41 (Corollaries 53 and 56, [a29.md](a29.md),
+  [a35.md](a35.md)). **So A(7) <= 8 is exactly the statement that (B6) and (B5) are empty.**
+  Lemma 83 ([a27.md](a27.md), by hand) counts 13 and 49 orbits of (ker A_u, Im A_u), and job m42
+  found 68 classes of A_u in (B6) and 420 in (B5). The hand work since then: Lemmas 88 to 92 and
+  Corollary 60 ([a36.md](a36.md) to [a39.md](a39.md)); Propositions 30, 31 and 32, the second
+  matrix A_(h_1) for the classes with d = 3 ([a42.md](a42.md), [a43.md](a43.md), [a45.md](a45.md));
+  **Lemma 93** (h_1 can be chosen of the largest rank on ker A_u, so a rank-0 split instance gets
+  21 unit clauses) and **Proposition 33** (the second-matrix split of (B6) with d <= 2)
+  ([a52.md](a52.md)); Proposition 34, the same for (B5) with d = 2 ([a58.md](a58.md)). Every count
+  of Propositions 30 to 34 was matched by machine (jobs m52, m55, m66, m74). Levers measured and
+  set aside: the clauses of Corollary 60 (job m49), the XOR arm as a first choice (jobs m50, m58b).
 - **(B5) is empty at t = 7 and dim V = 9** (Proposition 35, [a68.md](a68.md), computer-assisted):
   all 420 classes of A_u in (B5) are UNSAT, 409 searched whole (jobs m42 to m59b) and 11 split by
-  the second matrix under Propositions 32 and 34 and Lemma 93 (jobs m59b to m80r). It rests on
-  solver answers saved without proof certificates and on hand lemmas no human mathematician has
-  checked. **So A(7) <= 8 is now exactly the statement that (B6) is empty**, and 20 of its 68
-  classes are left, all with d = 1 or 2 and an open rank-0 sweep, about 41300 split instances.
+  the second matrix under Propositions 32 and 34 and Lemma 93 (jobs m59b to m80r).
+- **(B6) stands at 66 of 68** ([a79.md](a79.md)). 21 classes closed whole or through the d = 3
+  splits of Propositions 30 and 31 (jobs m42 to m61b; Corollaries 61, 62 and 64, [a47.md](a47.md),
+  [a50.md](a50.md), [a53.md](a53.md)), and 45 by the second-matrix split of Proposition 33 with
+  Lemma 93 and 5-minute re-runs of the instances left open (jobs m69 to m90 and m87a-v3;
+  Corollaries 70 to 116, [a58.md](a58.md) to [a78.md](a78.md)). **Every class with d = 0, 1 or 3
+  is empty** (Corollary 116 closed the last with d = 1). The two left both have d = 2 and an open
+  rank-0 sweep: o003_c000, 1574 of its 1599 split instances UNSAT, and o005_c000, 1893 of 1913
+  (jobs m91a and m91b). Job m92 re-runs the 45 open instances with 5 minutes of CaDiCaL and then 5
+  of XOR; every leftover re-run with these caps has closed so far (450 of 450). If all 45 close,
+  (B6) is empty and A(7) <= 8 holds (computer-assisted), which would settle (13, 8).
+- **Certificates.** All 1961 split instances of the (B6) class o005_c003 (Corollary 115) have DRAT
+  proofs found by a standalone CaDiCaL (rel-2.2.1) and VERIFIED by drat-trim (jobs cert1, cert2a,
+  cert2b; [a77.md](a77.md) to [a79.md](a79.md)), the first class of (B6) certified in full; cert1's
+  99 sampled instances were certified twice with equal CNF hashes. A certificate covers one CNF
+  only: the encoding, the hints, Lemma 93's unit clauses, Proposition 33's orbit roots and the
+  reductions are code and hand arguments that no human has checked. Every other solver answer in
+  these notes is saved without a proof certificate.
 - Open next: A(7) <= 8, which would settle (13, 8); A(8) <= 10, which would settle (11, 2);
   A(9) <= 12, which would settle (11, 3); and A(7) = 7, which would carry the argument of Theorem
   32 to t = 10.
@@ -309,8 +175,19 @@ A(t) = t for every t would settle the whole family.
 | [a66.md](a66.md) | results of jobs m76a-v2, m77a, m77b and m75a (24, 22, 22 and 22 graded checks held; all split instances of o009_c002, o009_c009, o009_c001 and o009_c004 UNSAT, median 1.02 to 1.12 s, so **Corollaries 92 to 95 (computer-assisted): four more classes of (B6) with d = 1 are empty; every class of (B6) with a UNSAT sweep is closed; (B6) at 48 of 68**; 2083 of the 2084 split instances of o004_c001 of (B5) UNSAT, one open of rank 1); job m78 (the split of o005_c005 in two halves and a re-run of the open instance); job m79 (the splits of o008_c000, o008_c001 and o008_c003, d = 1 with an open sweep, rank-0 instances with Lemma 93 (b)) |
 | [a67.md](a67.md) | results of jobs m75b and m78 (22 and 23 graded checks held; o006_c000 all 3654 UNSAT and o004_c001's last instance UNSAT in 9.89 s, so **Corollaries 96 and 97 (computer-assisted): two more classes of (B5) with d = 2 are empty; (B5) at 419 of 420**; 6713 of the 6720 split instances of o005_c005 UNSAT, 7 open of rank 1); job m80 (the 7 open instances 5 minutes in each arm); job m81 (the splits of o009_c005 and o009_c006; a departure from m79's pace rule written before it ran) |
 | [a68.md](a68.md) | results of jobs m80r, m79a and m79b (23, 26 and 24 graded checks held; the 7 open instances of o005_c005 UNSAT in 11 to 38 s of CaDiCaL, so **Corollary 98 (computer-assisted): the class o005_c005 of (B5) is empty**, and **Proposition 35 (computer-assisted): (B5) is empty at t = 7 and dim V = 9, with the list of what it rests on; A(7) <= 8 is now exactly "(B6) is empty"**; 2002 of 2023, 1280 of 1287 and 1961 of 1975 split instances of o008_c000, o008_c001 and o008_c003 UNSAT, 42 open, 2 of them of rank 1, a pre-registered guess missed; open roots repeat by m66 index across pair orbit 8 (an observation)); job m82 (the 42 open instances 5 minutes in each arm and the splits of o010_c003 and o010_c005); m81b queued; 20 classes left for A(7) <= 8, all of (B6) |
+| [a69.md](a69.md) | results of jobs m82a, m82b, m81a and m81b (every graded check held; m79's 42 open instances UNSAT in their 5-minute re-runs, so **Corollaries 99 to 101 (computer-assisted): the classes o008_c000, o008_c001 and o008_c003 of (B6) are empty; (B6) at 51 of 68**; the splits of o010_c003, o010_c005, o009_c005 and o009_c006 down to 53 open instances); the re-run job for them |
+| [a70.md](a70.md) | results of jobs m83a and m83b (**Corollaries 102 to 105 (computer-assisted): the classes o009_c005, o009_c006, o010_c003 and o010_c005 of (B6) are empty; (B6) at 55 of 68**) |
+| [a71.md](a71.md) | results of jobs m84a, m84b and m85a (**Corollary 106 (computer-assisted): the class o010_c004 of (B6) is empty; (B6) at 56 of 68**) |
+| [a72.md](a72.md) | results of jobs m85b, m86a and m86b (**Corollaries 107 to 110 (computer-assisted): the classes o010_c006, o009_c007, o010_c000 and o010_c007 of (B6) are empty; (B6) at 60 of 68**) |
+| [a73.md](a73.md) | results of job m87b (**Corollaries 111 and 112 (computer-assisted): the classes o010_c008 (d = 1) and o005_c002 (d = 2) of (B6) are empty; (B6) at 62 of 68**; 49 open instances of o003_c001 and o005_c001 re-run in job m89) |
+| [a74.md](a74.md) | results of job m89 (all 49 open instances UNSAT in 11 to 95 s, so **Corollaries 113 and 114 (computer-assisted): the classes o003_c001 and o005_c001 of (B6) are empty; (B6) at 64 of 68**); jobs m87a and m88a found stopped by the host, re-run unchanged as -v2 |
+| [a75.md](a75.md) | results of job m88a-v2 (the split of o005_c003: 1929 of 1961 split instances UNSAT, 32 open); job m90 (the 32 re-run in two groups) |
+| [a76.md](a76.md) | results of job m90 (all 32 open instances UNSAT, so **Corollary 115 (computer-assisted): the class o005_c003 of (B6) is empty; (B6) at 65 of 68**); job cert1 (DRAT proofs for a sample of the class) |
+| [a77.md](a77.md) | results of job cert1 (**99 of 99 sampled split instances of o005_c003 UNSAT in a standalone CaDiCaL rel-2.2.1, every DRAT proof VERIFIED by drat-trim**); job cert2 (the whole class in two halves); m87a re-filed as -v3 |
+| [a78.md](a78.md) | results of jobs m87a-v3 and cert2a (m87a-v3 interrupted by the host after its 20 re-runs of o010_c001 finished, all UNSAT in 1.33 to 84.49 s, so **Corollary 116 (computer-assisted): the class o010_c001 of (B6) is empty; every class of (B6) with d = 1 is empty; (B6) at 66 of 68**; cert2a: 981 of 981 DRAT proofs VERIFIED); job m91 (the splits of the last two classes, one per job) |
+| [a79.md](a79.md) | results of jobs cert2b, m91a and m91b (12, 24 and 24 graded checks held; **cert2b: 980 of 980 DRAT proofs VERIFIED, so all 1961 split instances of o005_c003 are certified, the first class of (B6) certified in full**; 1574 of 1599 split instances of o003_c000 and 1893 of 1913 of o005_c000 UNSAT, 45 open, 43 of them of rank 0; no SAT); job m92 (the 45 re-run, one class per group, with rules written before it ran); 45 split instances in 2 classes left for A(7) <= 8 |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22, m24, m25, m26, m30, m32, m33, m34, m36,
-m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
+m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
 The code is in [`../cube_groups/`](../cube_groups/), with unit tests that gated each commit.
