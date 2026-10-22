@@ -1,0 +1,74 @@
+{
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "class": true,
+  "class_reps": true,
+  "sample": true,
+  "build_l": true,
+  "build_s": true,
+  "dimacs_roundtrip": true
+ },
+ "probes": {
+  "php65": [
+   {
+    "status": "UNSAT",
+    "rc": 20,
+    "seconds": 0.0
+   },
+   {
+    "verified": true,
+    "rc": 0,
+    "seconds": 0.06,
+    "tail": [
+     "c detected empty clause; start verification via backward checking",
+     "c 81 of 81 clauses in core                            ",
+     "c 169 of 201 lemmas in core using 1765 resolution steps",
+     "c 0 RAT lemmas in core; 1 redundant literals in core lemmas",
+     "s VERIFIED",
+     "c verification time: 0.060 seconds"
+    ]
+   }
+  ],
+  "php65_empty_proof": {
+   "verified": false,
+   "rc": 1,
+   "seconds": 0.06,
+   "tail": [
+    "c parsing input formula with 30 variables and 81 clauses",
+    "c finished parsing",
+    "c ERROR: no conflict",
+    "s NOT VERIFIED",
+    "c verification time: 0.054 seconds"
+   ]
+  },
+  "php55": {
+   "status": "SAT",
+   "rc": 10,
+   "seconds": 0.0
+  },
+  "build_l": [
+   "r3l_t7_B6_o005_c003_a0240",
+   48587,
+   286239,
+   79,
+   70
+  ],
+  "build_s": [
+   "r3s_t7_B6_o005_c003_a0000",
+   48587,
+   286218,
+   79,
+   49
+  ]
+ },
+ "sample": 99,
+ "ranks": {
+  "0": 8,
+  "1": 52,
+  "2": 39
+ },
+ "seconds": 4.0
+}
