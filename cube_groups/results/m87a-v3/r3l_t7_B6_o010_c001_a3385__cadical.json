@@ -1,0 +1,36 @@
+{
+ "status": "UNSAT",
+ "solver": "cadical195",
+ "vars": 48587,
+ "clauses": 286239,
+ "seconds": 18.76,
+ "name": "r3l_t7_B6_o010_c001_a3385",
+ "t": 7,
+ "d": 9,
+ "p": 6,
+ "pair": 10,
+ "cls": 1,
+ "x1": [
+  8,
+  4,
+  2,
+  1
+ ],
+ "r": [
+  32,
+  17,
+  2
+ ],
+ "au": 562640724016,
+ "source": "m45",
+ "a1": 30064771184,
+ "rank_x1": 0,
+ "m66_index": 74752,
+ "size": 2,
+ "parent": "r3b_t7_B6_o010_c001",
+ "lemma93": true,
+ "kind": "main",
+ "arm": "cadical",
+ "wall_seconds": 19.49,
+ "budget_seconds": 300.0
+}
