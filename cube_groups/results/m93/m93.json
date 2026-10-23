@@ -1,0 +1,2520 @@
+{
+ "graded": {
+  "gl_order": true,
+  "rank_by_image": true,
+  "inverses": true,
+  "classes": true,
+  "classes_gl": true,
+  "orbit_stabiliser": true,
+  "feit_fine": true,
+  "dim1": true,
+  "dim2_feit_fine": true,
+  "dim3_complete": true,
+  "dim3_double_count": true,
+  "dim3_reps": true
+ },
+ "commuting_pairs": 2526976,
+ "classes": [
+  {
+   "rep": 0,
+   "size": 1,
+   "rank": 0,
+   "centraliser": 65536,
+   "centraliser_gl": 20160
+  },
+  {
+   "rep": 1,
+   "size": 120,
+   "rank": 1,
+   "centraliser": 1024,
+   "centraliser_gl": 168
+  },
+  {
+   "rep": 2,
+   "size": 105,
+   "rank": 1,
+   "centraliser": 1024,
+   "centraliser_gl": 192
+  },
+  {
+   "rep": 18,
+   "size": 1680,
+   "rank": 2,
+   "centraliser": 64,
+   "centraliser_gl": 12
+  },
+  {
+   "rep": 19,
+   "size": 1120,
+   "rank": 2,
+   "centraliser": 64,
+   "centraliser_gl": 18
+  },
+  {
+   "rep": 20,
+   "size": 1260,
+   "rank": 2,
+   "centraliser": 64,
+   "centraliser_gl": 16
+  },
+  {
+   "rep": 21,
+   "size": 2520,
+   "rank": 2,
+   "centraliser": 64,
+   "centraliser_gl": 8
+  },
+  {
+   "rep": 33,
+   "size": 560,
+   "rank": 2,
+   "centraliser": 256,
+   "centraliser_gl": 36
+  },
+  {
+   "rep": 72,
+   "size": 210,
+   "rank": 2,
+   "centraliser": 256,
+   "centraliser_gl": 96
+  },
+  {
+   "rep": 292,
+   "size": 2520,
+   "rank": 3,
+   "centraliser": 64,
+   "centraliser_gl": 8
+  },
+  {
+   "rep": 293,
+   "size": 6720,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 3
+  },
+  {
+   "rep": 294,
+   "size": 5040,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 4
+  },
+  {
+   "rep": 296,
+   "size": 5040,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 4
+  },
+  {
+   "rep": 297,
+   "size": 1680,
+   "rank": 3,
+   "centraliser": 64,
+   "centraliser_gl": 12
+  },
+  {
+   "rep": 299,
+   "size": 5040,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 4
+  },
+  {
+   "rep": 310,
+   "size": 2880,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 7
+  },
+  {
+   "rep": 311,
+   "size": 2880,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 7
+  },
+  {
+   "rep": 314,
+   "size": 3360,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 6
+  },
+  {
+   "rep": 315,
+   "size": 2520,
+   "rank": 3,
+   "centraliser": 16,
+   "centraliser_gl": 8
+  },
+  {
+   "rep": 1057,
+   "size": 120,
+   "rank": 3,
+   "centraliser": 1024,
+   "centraliser_gl": 168
+  },
+  {
+   "rep": 4680,
+   "size": 210,
+   "rank": 4,
+   "centraliser": 256,
+   "centraliser_gl": 96
+  },
+  {
+   "rep": 4681,
+   "size": 3360,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 6
+  },
+  {
+   "rep": 4682,
+   "size": 2520,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 8
+  },
+  {
+   "rep": 4686,
+   "size": 1260,
+   "rank": 4,
+   "centraliser": 64,
+   "centraliser_gl": 16
+  },
+  {
+   "rep": 4698,
+   "size": 1680,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 12
+  },
+  {
+   "rep": 4699,
+   "size": 1344,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 15
+  },
+  {
+   "rep": 4700,
+   "size": 1344,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 15
+  },
+  {
+   "rep": 4701,
+   "size": 1344,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 15
+  },
+  {
+   "rep": 4702,
+   "size": 2880,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 7
+  },
+  {
+   "rep": 4703,
+   "size": 2880,
+   "rank": 4,
+   "centraliser": 16,
+   "centraliser_gl": 7
+  },
+  {
+   "rep": 4713,
+   "size": 112,
+   "rank": 4,
+   "centraliser": 256,
+   "centraliser_gl": 180
+  },
+  {
+   "rep": 4798,
+   "size": 1120,
+   "rank": 4,
+   "centraliser": 64,
+   "centraliser_gl": 18
+  },
+  {
+   "rep": 5160,
+   "size": 105,
+   "rank": 4,
+   "centraliser": 1024,
+   "centraliser_gl": 192
+  },
+  {
+   "rep": 33825,
+   "size": 1,
+   "rank": 4,
+   "centraliser": 65536,
+   "centraliser_gl": 20160
+  }
+ ],
+ "dim1": {
+  "dim": 1,
+  "with_identity": false,
+  "complete": true,
+  "containing": {
+   "1": 1,
+   "2": 1,
+   "18": 1,
+   "19": 1,
+   "20": 1,
+   "21": 1,
+   "33": 1,
+   "72": 1,
+   "292": 1,
+   "293": 1,
+   "294": 1,
+   "296": 1,
+   "297": 1,
+   "299": 1,
+   "310": 1,
+   "311": 1,
+   "314": 1,
+   "315": 1,
+   "1057": 1,
+   "4680": 1,
+   "4681": 1,
+   "4682": 1,
+   "4686": 1,
+   "4698": 1,
+   "4699": 1,
+   "4700": 1,
+   "4701": 1,
+   "4702": 1,
+   "4703": 1,
+   "4713": 1,
+   "4798": 1,
+   "5160": 1
+  },
+  "double_count": 65534,
+  "double_count_ok": true,
+  "subspaces": 65534,
+  "orbit_size_sum": 65534,
+  "orbits": 32
+ },
+ "dim2": {
+  "dim": 2,
+  "with_identity": true,
+  "complete": true,
+  "double_count": 1165185,
+  "double_count_ok": true,
+  "subspaces": 388395,
+  "orbit_size_sum": 388395,
+  "orbits": 146
+ },
+ "dim3": {
+  "dim": 3,
+  "with_identity": false,
+  "complete": true,
+  "orbits": [
+   {
+    "basis": [
+     1,
+     32,
+     1024
+    ],
+    "size": 3360,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      3,
+      3,
+      1,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     32,
+     2048
+    ],
+    "size": 5040,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      3,
+      3,
+      1,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     32,
+     18432
+    ],
+    "size": 5040,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      2,
+      2,
+      1
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     32,
+     19456
+    ],
+    "size": 3360,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      2,
+      2,
+      1
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     128
+    ],
+    "size": 840,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      4,
+      3,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 2,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     1056
+    ],
+    "size": 10080,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      3,
+      2,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     16384
+    ],
+    "size": 840,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      4,
+      3,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 2,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     16512
+    ],
+    "size": 2520,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      3,
+      2,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     33952
+    ],
+    "size": 2520,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      1,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     50208
+    ],
+    "size": 2520,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      1,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     64,
+     50336
+    ],
+    "size": 2520,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      2,
+      1,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     608,
+     1056
+    ],
+    "size": 3360,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      3,
+      3,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": -1,
+     "n4": true,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     640,
+     35872
+    ],
+    "size": 5040,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      1,
+      3,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     672,
+     35872
+    ],
+    "size": 10080,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      3,
+      1
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     1056,
+     32800
+    ],
+    "size": 3360,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      3,
+      3,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     1,
+     1056,
+     33376
+    ],
+    "size": 3360,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      1,
+      3,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     9920,
+     20064
+    ],
+    "size": 2880,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     1,
+     9952,
+     52800
+    ],
+    "size": 960,
+    "first_class": 1,
+    "flags": {
+     "ranks": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     8
+    ],
+    "size": 15,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 1,
+     "hyperplanes": 7,
+     "algebra": true,
+     "square_zero": true,
+     "nilpotent": 7,
+     "defect": -3,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     1057
+    ],
+    "size": 840,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      4,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     8192
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      5,
+      2,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 2,
+     "image_dim": 2,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": true,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     8200
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      4,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 2,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     33833
+    ],
+    "size": 105,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 7,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     42017
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     4,
+     42025
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     33,
+     2048
+    ],
+    "size": 5040,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      2,
+      3,
+      2,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     33,
+     18432
+    ],
+    "size": 5040,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      3,
+      1,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     33,
+     19456
+    ],
+    "size": 3360,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      3,
+      1,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     1057
+    ],
+    "size": 840,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      4,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     8192
+    ],
+    "size": 15,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 3,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": true,
+     "nilpotent": 7,
+     "defect": -3,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     8200
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      4,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 2,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     33833
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     42017
+    ],
+    "size": 105,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     512,
+     42025
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      0,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     516,
+     1057
+    ],
+    "size": 2520,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      4,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     516,
+     8200
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      6,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     516,
+     33833
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     516,
+     42017
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     516,
+     42025
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     2048
+    ],
+    "size": 210,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      3,
+      4,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 2,
+     "image_dim": 2,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": true,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     8196
+    ],
+    "size": 105,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      6,
+      0,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 7,
+     "defect": -2,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     10244
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      4,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 7,
+     "defect": -1,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     33833
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     35873
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     42021
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     42029
+    ],
+    "size": 315,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     520,
+     44069
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     1032,
+     32801
+    ],
+    "size": 2520,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 4,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     1057,
+     32801
+    ],
+    "size": 5040,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      1,
+      5,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": true,
+     "f3": true
+    }
+   },
+   {
+    "basis": [
+     2,
+     1057,
+     33280
+    ],
+    "size": 2520,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     1057,
+     33284
+    ],
+    "size": 2520,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      0,
+      4,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     2048,
+     33833
+    ],
+    "size": 1260,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      2,
+      1,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     2048,
+     34345
+    ],
+    "size": 630,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      2,
+      1,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     2052,
+     33833
+    ],
+    "size": 1260,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     2081,
+     33792
+    ],
+    "size": 5040,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      1,
+      3,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     10240,
+     34337
+    ],
+    "size": 1260,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      2,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     10244,
+     34345
+    ],
+    "size": 1260,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      0,
+      2,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     19456,
+     33792
+    ],
+    "size": 1680,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      3,
+      3,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": -1,
+     "n4": true,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     2,
+     19489,
+     33792
+    ],
+    "size": 1680,
+    "first_class": 2,
+    "flags": {
+     "ranks": [
+      1,
+      1,
+      1,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     18,
+     1057,
+     32801
+    ],
+    "size": 5040,
+    "first_class": 3,
+    "flags": {
+     "ranks": [
+      0,
+      4,
+      2,
+      1
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     18,
+     2081,
+     33792
+    ],
+    "size": 5040,
+    "first_class": 3,
+    "flags": {
+     "ranks": [
+      0,
+      3,
+      2,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     18,
+     19456,
+     33792
+    ],
+    "size": 1680,
+    "first_class": 3,
+    "flags": {
+     "ranks": [
+      0,
+      4,
+      0,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     18,
+     19489,
+     33792
+    ],
+    "size": 1680,
+    "first_class": 3,
+    "flags": {
+     "ranks": [
+      0,
+      2,
+      2,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     19,
+     33,
+     19456
+    ],
+    "size": 1120,
+    "first_class": 4,
+    "flags": {
+     "ranks": [
+      0,
+      4,
+      0,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     19,
+     1057,
+     32801
+    ],
+    "size": 3360,
+    "first_class": 4,
+    "flags": {
+     "ranks": [
+      0,
+      2,
+      4,
+      1
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     19,
+     2081,
+     33792
+    ],
+    "size": 3360,
+    "first_class": 4,
+    "flags": {
+     "ranks": [
+      0,
+      2,
+      2,
+      3
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     19,
+     19489,
+     33792
+    ],
+    "size": 1120,
+    "first_class": 4,
+    "flags": {
+     "ranks": [
+      0,
+      2,
+      0,
+      5
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     20,
+     1057,
+     32832
+    ],
+    "size": 5040,
+    "first_class": 5,
+    "flags": {
+     "ranks": [
+      0,
+      2,
+      3,
+      2
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 2,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     20,
+     16512,
+     33889
+    ],
+    "size": 1260,
+    "first_class": 5,
+    "flags": {
+     "ranks": [
+      0,
+      3,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     140,
+     19506
+    ],
+    "size": 560,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      3,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     140,
+     33829
+    ],
+    "size": 210,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      3,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 3,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     2064,
+     33953
+    ],
+    "size": 420,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      3,
+      0,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     2068,
+     33953
+    ],
+    "size": 1260,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      1,
+      2,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     2076,
+     33953
+    ],
+    "size": 1260,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      1,
+      2,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 3,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     72,
+     19506,
+     33965
+    ],
+    "size": 1680,
+    "first_class": 8,
+    "flags": {
+     "ranks": [
+      0,
+      1,
+      0,
+      6
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 1,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     310,
+     627,
+     1057
+    ],
+    "size": 960,
+    "first_class": 15,
+    "flags": {
+     "ranks": [
+      0,
+      0,
+      7,
+      0
+     ],
+     "singular": true,
+     "common_kernel_dim": 1,
+     "image_dim": 3,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": -1,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     310,
+     1057,
+     33395
+    ],
+    "size": 2880,
+    "first_class": 15,
+    "flags": {
+     "ranks": [
+      0,
+      0,
+      3,
+      4
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 1,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     4699,
+     9189,
+     19506
+    ],
+    "size": 1344,
+    "first_class": 25,
+    "flags": {
+     "ranks": [
+      0,
+      0,
+      0,
+      7
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   },
+   {
+    "basis": [
+     4699,
+     9189,
+     51219
+    ],
+    "size": 1344,
+    "first_class": 25,
+    "flags": {
+     "ranks": [
+      0,
+      0,
+      0,
+      7
+     ],
+     "singular": false,
+     "common_kernel_dim": 0,
+     "image_dim": 4,
+     "hyperplanes": 0,
+     "algebra": true,
+     "square_zero": false,
+     "nilpotent": 0,
+     "defect": 0,
+     "n4": false,
+     "f3": false
+    }
+   }
+  ],
+  "containing": {
+   "1": 732,
+   "2": 940,
+   "18": 28,
+   "19": 28,
+   "20": 28,
+   "21": 28,
+   "33": 196,
+   "72": 140,
+   "292": 28,
+   "293": 4,
+   "294": 4,
+   "296": 4,
+   "297": 28,
+   "299": 4,
+   "310": 4,
+   "311": 4,
+   "314": 4,
+   "315": 4,
+   "1057": 732,
+   "4680": 140,
+   "4681": 4,
+   "4682": 4,
+   "4686": 28,
+   "4698": 4,
+   "4699": 4,
+   "4700": 4,
+   "4701": 4,
+   "4702": 4,
+   "4703": 4,
+   "4713": 84,
+   "4798": 28,
+   "5160": 940
+  },
+  "double_count": 1122856,
+  "double_count_ok": true,
+  "subspaces": 160408,
+  "orbit_size_sum": 160408
+ },
+ "categories": {
+  "all": {
+   "orbits": 79,
+   "subspaces": 160408
+  },
+  "singular": {
+   "orbits": 24,
+   "subspaces": 48555
+  },
+  "hyper": {
+   "orbits": 73,
+   "subspaces": 153240
+  },
+  "singular_hyper": {
+   "orbits": 24,
+   "subspaces": 48555
+  },
+  "n4": {
+   "orbits": 23,
+   "subspaces": 47595
+  },
+  "f3": {
+   "orbits": 21,
+   "subspaces": 42555
+  },
+  "singular_not_compression": {
+   "orbits": 2,
+   "subspaces": 8400
+  }
+ },
+ "seconds": 45.3
+}

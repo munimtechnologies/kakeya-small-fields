@@ -1,0 +1,19 @@
+test_feit_fine (test_m93.TestArithmetic.test_feit_fine) ... ok
+test_mul (test_m93.TestArithmetic.test_mul) ... ok
+test_rank_inverse (test_m93.TestArithmetic.test_rank_inverse) ... ok
+test_spans (test_m93.TestArithmetic.test_spans) ... ok
+test_subspaces (test_m93.TestArithmetic.test_subspaces) ... ok
+test_vectors (test_m93.TestArithmetic.test_vectors) ... ok
+test_checks (test_m93.TestTables.test_checks) ... ok
+test_dim1 (test_m93.TestTables.test_dim1) ... ok
+test_flags_diagonal (test_m93.TestTables.test_flags_diagonal)
+span(E_00, E_11, E_22): diagonal idempotents. ... ok
+test_flags_first_row (test_m93.TestTables.test_flags_first_row)
+span(E_01, E_02, E_03): every product 0, seven matrices of rank 1. ... ok
+test_flags_invertible (test_m93.TestTables.test_flags_invertible)
+span(I + E_10, E_01, E_02) contains the invertible I + E_10 (and not I), so it is not ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 9.068s
+
+OK

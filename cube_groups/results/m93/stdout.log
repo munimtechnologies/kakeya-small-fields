@@ -1,0 +1,3 @@
+tables 7.2 s checks {"gl_order": true, "rank_by_image": true, "inverses": true, "classes": true, "classes_gl": true, "orbit_stabiliser": true, "feit_fine": true} pairs 2526976
+dim1 32 orbits; dim2 146 orbits 388395 subspaces (want 388395) 24.6 s
+SUMMARY m93 all_match True graded 12 dim3_orbits 79 dim3_subspaces 160408 categories {"all": {"orbits": 79, "subspaces": 160408}, "f3": {"orbits": 21, "subspaces": 42555}, "hyper": {"orbits": 73, "subspaces": 153240}, "n4": {"orbits": 23, "subspaces": 47595}, "singular": {"orbits": 24, "subspaces": 48555}, "singular_hyper": {"orbits": 24, "subspaces": 48555}, "singular_not_compression": {"orbits": 2, "subspaces": 8400}} seconds 45.3
