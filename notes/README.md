@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-22)
+## Status (2026-10-23)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -22,20 +22,27 @@ A(t) = t for every t would settle the whole family.
   UNSAT, jobs m30 to m37). It rests on 775 solver answers at t = 6, saved without proof
   certificates. A positive control at t = 6 with a non-symmetric matrix passed in jobs m32, m36 and
   m37. It supersedes Theorem 28 (A(6) <= 7, [a6.md](a6.md)), which stays true and is not used.
+- **A(7) <= 8 and M(7) <= 8** (Theorem 33, [a80.md](a80.md), computer-assisted): no anisotropic
+  system with t = 7 has dim V = 9. Such a system would have an element of rank 4, or of rank 3 in
+  (A5), (B6) or (B5) (Proposition 29, [a24.md](a24.md)). Rank 4 and (A5) are ruled out by
+  Corollaries 52 to 56, (B5) by Proposition 35 and (B6) class by class, the last two classes in
+  Corollaries 117 and 118. It rests on many thousands of solver answers, almost all saved without
+  proof certificates, and on hand lemmas; [a80.md](a80.md) lists them all. As a consequence the
+  answer is yes for Z_4^13 x Z_2^8 (Corollary 120). So 7 <= A(7) <= 8; A(7) = 7 is open.
 - **A(7) <= 9 and M(7) <= 9** (Theorem 29, [a7.md](a7.md), by hand): an element of U+ with zero
-  map would have to exist (Schur's bound), and Lemma 59 shows it cannot. A second,
-  computer-assisted route: the searches m21 and m22 found all 16 normal forms of Corollary 32 UNSAT
-  without using Lemma 59.
+  map would have to exist (Schur's bound), and Lemma 59 shows it cannot. Theorem 33 improves it;
+  Theorem 29 stays the bound proved by hand alone.
 - **A(8) <= 11 and M(8) <= 11** (Theorem 30, [a7.md](a7.md), by hand, using Theorem 27): Lemma 57
   holds at t = 8 and forces shape (c), which rank 3 cannot have there.
 - **A(9) <= 13 and M(9) <= 13** (Theorem 32, [a23.md](a23.md), by hand on top of Theorem 31): the
   four steps of Theorem 30 at t = 9, which need A(s) = s for s <= 6.
-- Bounds: A(6..12) <= 6, 9, 11, 13, 16, 20, 23 (Corollary 49; job m38 recomputed it and agreed).
+- Bounds: A(6..12) <= 6, 8, 11, 13, 16, 19, 23 (Corollary 119, [a80.md](a80.md); the earlier table
+  of Corollary 49 was recomputed by job m38, and a80_bounds.py's tests check the new one).
 - The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 2), (10, 3), (10, 4),
   (11, 4), (10, 5), (11, 5), (10, 6), (11, 6), (12, 6), (10, 7), (11, 7), (12, 7), (11, 8),
-  (12, 8), (12, 9), (13, 9), (13, 10), (14, 11) (Corollary 50). The first open cases are (11, 2),
-  (11, 3), (12, 4), (12, 5), (13, 6), (13, 7), (13, 8), (14, 9), (14, 10), (15, 11), (15, 12) and
-  (b + 3, b) for b >= 13.
+  (12, 8), (13, 8), (12, 9), (13, 9), (13, 10), (14, 11) (Corollary 120). The first open cases are
+  (11, 2), (11, 3), (12, 4), (12, 5), (13, 6), (13, 7), (14, 8), (14, 9), (14, 10), (15, 11),
+  (15, 12) and (b + 3, b) for b >= 13.
 - The road to A(6) = 6 ([a8.md](a8.md) to [a22.md](a22.md)): Lemma 60 (an element of U+ with zero
   map whose C contains x0 forces Im A_u n ker A_u = 0); rank 4 at t = 8 is in shape (c) unless A(6) = 7
   (Proposition 28; by Theorem 31 it is always in shape (c) now). Rank 4 at t = 6: Case A, job m24
@@ -53,37 +60,36 @@ A(t) = t for every t would settle the whole family.
   [a21.md](a21.md)), and jobs m36 and m37 the last four classes ([a23.md](a23.md)). Lemmas 71 to 76
   ([a18.md](a18.md) to [a22.md](a22.md), by hand) prepared a finer split that was not needed in
   the end.
-- **Towards A(7) <= 8** ([a24.md](a24.md) to [a79.md](a79.md)), which would settle (13, 8). A
-  system with t = 7 and dim V = 9 has an element of rank 4 (Case A, or Case B in shape (c) or (d2))
-  or only elements of rank <= 3, each element of rank 3 in (A5), (B6) or (B5) (Proposition 29,
-  [a24.md](a24.md)). Rank 4 is ruled out (computer-assisted): Case A by Lemma 80 and job m39
-  (Corollary 52, [a26.md](a26.md)), shape (d2) by Lemmas 84 and 87 and job m43 (Corollary 54,
-  [a34.md](a34.md)), shape (c) by Lemmas 85 and 86 and job m44 (Corollary 55, [a35.md](a35.md));
-  Lemmas 86 and 87 were written before their jobs and matched by machine in every count and class
-  size. (A5) is ruled out by Lemma 82 and job m41 (Corollaries 53 and 56, [a29.md](a29.md),
-  [a35.md](a35.md)). **So A(7) <= 8 is exactly the statement that (B6) and (B5) are empty.**
-  Lemma 83 ([a27.md](a27.md), by hand) counts 13 and 49 orbits of (ker A_u, Im A_u), and job m42
-  found 68 classes of A_u in (B6) and 420 in (B5). The hand work since then: Lemmas 88 to 92 and
-  Corollary 60 ([a36.md](a36.md) to [a39.md](a39.md)); Propositions 30, 31 and 32, the second
-  matrix A_(h_1) for the classes with d = 3 ([a42.md](a42.md), [a43.md](a43.md), [a45.md](a45.md));
-  **Lemma 93** (h_1 can be chosen of the largest rank on ker A_u, so a rank-0 split instance gets
-  21 unit clauses) and **Proposition 33** (the second-matrix split of (B6) with d <= 2)
-  ([a52.md](a52.md)); Proposition 34, the same for (B5) with d = 2 ([a58.md](a58.md)). Every count
-  of Propositions 30 to 34 was matched by machine (jobs m52, m55, m66, m74). Levers measured and
-  set aside: the clauses of Corollary 60 (job m49), the XOR arm as a first choice (jobs m50, m58b).
+- **The road to A(7) <= 8** ([a24.md](a24.md) to [a80.md](a80.md)). A system with t = 7 and
+  dim V = 9 has an element of rank 4 (Case A, or Case B in shape (c) or (d2)) or only elements of
+  rank <= 3, each element of rank 3 in (A5), (B6) or (B5) (Proposition 29, [a24.md](a24.md)). Rank
+  4 is ruled out (computer-assisted): Case A by Lemma 80 and job m39 (Corollary 52,
+  [a26.md](a26.md)), shape (d2) by Lemmas 84 and 87 and job m43 (Corollary 54, [a34.md](a34.md)),
+  shape (c) by Lemmas 85 and 86 and job m44 (Corollary 55, [a35.md](a35.md)); Lemmas 86 and 87 were
+  written before their jobs and matched by machine in every count and class size. (A5) is ruled out
+  by Lemma 82 and job m41 (Corollaries 53 and 56, [a29.md](a29.md), [a35.md](a35.md)). So A(7) <= 8
+  came down to (B6) and (B5) being empty. Lemma 83 ([a27.md](a27.md), by hand) counts 13 and 49
+  orbits of (ker A_u, Im A_u), and job m42 found 68 classes of A_u in (B6) and 420 in (B5). The hand
+  work since then: Lemmas 88 to 92 and Corollary 60 ([a36.md](a36.md) to [a39.md](a39.md));
+  Propositions 30, 31 and 32, the second matrix A_(h_1) for the classes with d = 3
+  ([a42.md](a42.md), [a43.md](a43.md), [a45.md](a45.md)); **Lemma 93** (h_1 can be chosen of the
+  largest rank on ker A_u, so a rank-0 split instance gets 21 unit clauses) and **Proposition 33**
+  (the second-matrix split of (B6) with d <= 2) ([a52.md](a52.md)); Proposition 34, the same for
+  (B5) with d = 2 ([a58.md](a58.md)). Every count of Propositions 30 to 34 was matched by machine
+  (jobs m52, m55, m66, m74). Levers measured and set aside: the clauses of Corollary 60 as solver
+  conditions (job m49), the XOR arm as a first choice (jobs m50, m58b).
 - **(B5) is empty at t = 7 and dim V = 9** (Proposition 35, [a68.md](a68.md), computer-assisted):
   all 420 classes of A_u in (B5) are UNSAT, 409 searched whole (jobs m42 to m59b) and 11 split by
   the second matrix under Propositions 32 and 34 and Lemma 93 (jobs m59b to m80r).
-- **(B6) stands at 66 of 68** ([a79.md](a79.md)). 21 classes closed whole or through the d = 3
-  splits of Propositions 30 and 31 (jobs m42 to m61b; Corollaries 61, 62 and 64, [a47.md](a47.md),
-  [a50.md](a50.md), [a53.md](a53.md)), and 45 by the second-matrix split of Proposition 33 with
-  Lemma 93 and 5-minute re-runs of the instances left open (jobs m69 to m90 and m87a-v3;
-  Corollaries 70 to 116, [a58.md](a58.md) to [a78.md](a78.md)). **Every class with d = 0, 1 or 3
-  is empty** (Corollary 116 closed the last with d = 1). The two left both have d = 2 and an open
-  rank-0 sweep: o003_c000, 1574 of its 1599 split instances UNSAT, and o005_c000, 1893 of 1913
-  (jobs m91a and m91b). Job m92 re-runs the 45 open instances with 5 minutes of CaDiCaL and then 5
-  of XOR; every leftover re-run with these caps has closed so far (450 of 450). If all 45 close,
-  (B6) is empty and A(7) <= 8 holds (computer-assisted), which would settle (13, 8).
+- **(B6) is empty at t = 7 and dim V = 9** ([a80.md](a80.md), computer-assisted): all 68 classes
+  of A_u in (B6) are UNSAT. 21 closed whole or through the d = 3 splits of Propositions 30 and 31
+  (jobs m42 to m61b; Corollaries 61, 62 and 64, [a47.md](a47.md), [a50.md](a50.md),
+  [a53.md](a53.md)), and 47 by the second-matrix split of Proposition 33 with Lemma 93 and 5-minute
+  re-runs of the instances left open (jobs m69 to m92; Corollaries 70 to 118 other than 72 and 96
+  to 98, which are of (B5); [a58.md](a58.md) to [a80.md](a80.md)). The last two, o003_c000 and
+  o005_c000 (d = 2), closed when job m92 found all 45 instances that m91a and m91b had left open
+  UNSAT, in 14.51 to 94.22 s each. Every leftover re-run with 5 minutes of CaDiCaL and then 5 of XOR
+  has closed (495 of 495).
 - **Certificates.** All 1961 split instances of the (B6) class o005_c003 (Corollary 115) have DRAT
   proofs found by a standalone CaDiCaL (rel-2.2.1) and VERIFIED by drat-trim (jobs cert1, cert2a,
   cert2b; [a77.md](a77.md) to [a79.md](a79.md)), the first class of (B6) certified in full; cert1's
@@ -91,9 +97,10 @@ A(t) = t for every t would settle the whole family.
   only: the encoding, the hints, Lemma 93's unit clauses, Proposition 33's orbit roots and the
   reductions are code and hand arguments that no human has checked. Every other solver answer in
   these notes is saved without a proof certificate.
-- Open next: A(7) <= 8, which would settle (13, 8); A(8) <= 10, which would settle (11, 2);
-  A(9) <= 12, which would settle (11, 3); and A(7) = 7, which would carry the argument of Theorem
-  32 to t = 10.
+- Open next: A(7) = 7, which would carry the argument of Theorem 32 to t = 10; A(8) <= 10, which
+  would settle (11, 2); A(9) <= 12, which would settle (11, 3). For Theorem 33 itself: DRAT
+  certificates for more of its chain, starting with the 495 re-run instances, and review by a human
+  mathematician.
 
 ## The notes, in order
 
@@ -186,8 +193,9 @@ A(t) = t for every t would settle the whole family.
 | [a77.md](a77.md) | results of job cert1 (**99 of 99 sampled split instances of o005_c003 UNSAT in a standalone CaDiCaL rel-2.2.1, every DRAT proof VERIFIED by drat-trim**); job cert2 (the whole class in two halves); m87a re-filed as -v3 |
 | [a78.md](a78.md) | results of jobs m87a-v3 and cert2a (m87a-v3 interrupted by the host after its 20 re-runs of o010_c001 finished, all UNSAT in 1.33 to 84.49 s, so **Corollary 116 (computer-assisted): the class o010_c001 of (B6) is empty; every class of (B6) with d = 1 is empty; (B6) at 66 of 68**; cert2a: 981 of 981 DRAT proofs VERIFIED); job m91 (the splits of the last two classes, one per job) |
 | [a79.md](a79.md) | results of jobs cert2b, m91a and m91b (12, 24 and 24 graded checks held; **cert2b: 980 of 980 DRAT proofs VERIFIED, so all 1961 split instances of o005_c003 are certified, the first class of (B6) certified in full**; 1574 of 1599 split instances of o003_c000 and 1893 of 1913 of o005_c000 UNSAT, 45 open, 43 of them of rank 0; no SAT); job m92 (the 45 re-run, one class per group, with rules written before it ran); 45 split instances in 2 classes left for A(7) <= 8 |
+| [a80.md](a80.md) | results of job m92 (23 and 25 graded checks held; all 45 open instances UNSAT in CaDiCaL in 14.51 to 94.22 s, ten of ten guesses held), so **Corollaries 117 and 118 (computer-assisted): the classes o003_c000 and o005_c000 of (B6) are empty; (B6) is empty**; **Theorem 33 (A(7) <= 8 and M(7) <= 8, computer-assisted) with the full list of what it rests on**; Corollaries 119 and 120 (the table, A(11) <= 19; Z_4^13 x Z_2^8 settled); a80_bounds.py |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22, m24, m25, m26, m30, m32, m33, m34, m36,
-m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
+m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
 The code is in [`../cube_groups/`](../cube_groups/), with unit tests that gated each commit.
