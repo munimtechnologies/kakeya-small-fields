@@ -1,0 +1,15 @@
+certify r3l_t7_B6_o009_c007_a0128: VERIFIED cadical 14.29 s drat 13.08 s proof 46109054 B
+certify r3l_t7_B6_o009_c007_a1520: VERIFIED cadical 81.82 s drat 86.6 s proof 202844832 B
+certify r3l_t7_B6_o009_c007_a1578: VERIFIED cadical 58.84 s drat 70.73 s proof 152563475 B
+certify r3l_t7_B6_o009_c007_a1984: VERIFIED cadical 14.93 s drat 11.0 s proof 47132495 B
+certify r3l_t7_B6_o009_c007_a2274: VERIFIED cadical 18.11 s drat 19.3 s proof 54769576 B
+certify r3l_t7_B6_o009_c007_a2303: VERIFIED cadical 73.59 s drat 65.35 s proof 173834259 B
+certify r3l_t7_B6_o009_c007_a2947: VERIFIED cadical 68.51 s drat 84.3 s proof 172334345 B
+certify r3l_t7_B6_o009_c007_a2974: VERIFIED cadical 50.2 s drat 53.14 s proof 128644024 B
+certify r3l_t7_B6_o009_c007_a3556: VERIFIED cadical 55.24 s drat 56.0 s proof 158056126 B
+certify r3l_t7_B6_o009_c007_a3586: VERIFIED cadical 46.78 s drat 45.97 s proof 129934378 B
+certify r3l_t7_B6_o009_c007_a3711: VERIFIED cadical 43.79 s drat 48.77 s proof 141897886 B
+certify r3l_t7_B6_o009_c007_a3783: VERIFIED cadical 19.03 s drat 15.64 s proof 71192481 B
+certify r3l_t7_B6_o009_c007_a3807: VERIFIED cadical 51.95 s drat 56.35 s proof 168393092 B
+certify r3l_t7_B6_o009_c007_a3814: VERIFIED cadical 39.76 s drat 29.67 s proof 134670955 B
+SUMMARY certify {"VERIFIED": 14} seconds 1308
