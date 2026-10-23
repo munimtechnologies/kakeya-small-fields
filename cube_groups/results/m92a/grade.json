@@ -1,0 +1,252 @@
+{
+ "group": "a",
+ "graded": {
+  "check_m57_reps": true,
+  "check_m57_hand_d": true,
+  "check_m57_lists": true,
+  "check_m57_a07": true,
+  "check_m57_hints_cadical": true,
+  "check_m57_hints_xor": true,
+  "check_m57_xor_is_smaller": true,
+  "check_m57_xor_agrees_with_cnf": true,
+  "check_m57_planted_accepted_cadical": true,
+  "check_m57_planted_flip_rejected_cadical": true,
+  "check_m57_planted_accepted_xor": true,
+  "check_m57_planted_flip_rejected_xor": true,
+  "check_m57_planted_sat_cadical": true,
+  "check_m57_planted_sat_xor": true,
+  "check_named_split_o003_c000": true,
+  "check_named_split_reps_o003_c000": true,
+  "check_named_list": true,
+  "check_named_maps": true,
+  "check_plan": true,
+  "check_probe_named_l_cadical": true,
+  "check_probe_named_l_xor": true,
+  "check_probe93_named_cadical": true,
+  "check_probe93_named_xor": true
+ },
+ "ungraded": {},
+ "rows": {
+  "r3l_t7_B6_o003_c000_a0042": {
+   "cadical": [
+    "UNSAT",
+    51.97,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0124": {
+   "cadical": [
+    "UNSAT",
+    43.4,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0206": {
+   "cadical": [
+    "UNSAT",
+    42.29,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0288": {
+   "cadical": [
+    "UNSAT",
+    55.83,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0352": {
+   "cadical": [
+    "UNSAT",
+    31.43,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0511": {
+   "cadical": [
+    "UNSAT",
+    61.03,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0524": {
+   "cadical": [
+    "UNSAT",
+    84.47,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0537": {
+   "cadical": [
+    "UNSAT",
+    52.23,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0576": {
+   "cadical": [
+    "UNSAT",
+    58.11,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0784": {
+   "cadical": [
+    "UNSAT",
+    29.74,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0799": {
+   "cadical": [
+    "UNSAT",
+    44.55,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0802": {
+   "cadical": [
+    "UNSAT",
+    45.56,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0814": {
+   "cadical": [
+    "UNSAT",
+    35.02,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0831": {
+   "cadical": [
+    "UNSAT",
+    59.69,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0850": {
+   "cadical": [
+    "UNSAT",
+    49.5,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a0967": {
+   "cadical": [
+    "UNSAT",
+    31.34,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1076": {
+   "cadical": [
+    "UNSAT",
+    63.5,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1240": {
+   "cadical": [
+    "UNSAT",
+    36.7,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1375": {
+   "cadical": [
+    "UNSAT",
+    68.64,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1380": {
+   "cadical": [
+    "UNSAT",
+    94.22,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1385": {
+   "cadical": [
+    "UNSAT",
+    39.68,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1410": {
+   "cadical": [
+    "UNSAT",
+    42.41,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1512": {
+   "cadical": [
+    "UNSAT",
+    44.37,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1552": {
+   "cadical": [
+    "UNSAT",
+    49.61,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o003_c000_a1559": {
+   "cadical": [
+    "UNSAT",
+    41.09,
+    300.0
+   ]
+  }
+ },
+ "named": {
+  "r3l_t7_B6_o003_c000_a0042": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0124": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0206": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0288": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0352": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0511": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0524": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0537": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0576": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0784": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0799": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0802": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0814": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0831": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0850": "UNSAT",
+  "r3l_t7_B6_o003_c000_a0967": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1076": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1240": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1375": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1380": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1385": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1410": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1512": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1552": "UNSAT",
+  "r3l_t7_B6_o003_c000_a1559": "UNSAT"
+ },
+ "named_unsat": 25,
+ "classes": {},
+ "b6_closed": [],
+ "any_sat_7": false,
+ "named_classes": {
+  "r3b_t7_B6_o003_c000": {
+   "total": 1599,
+   "unsat_before": 1574,
+   "rerun_here": 25,
+   "unsat_here": 25,
+   "open": []
+  }
+ },
+ "named_open": [],
+ "named_max_unsat_wall": 94.22,
+ "named_unsat_by_arm": {
+  "cadical": 25,
+  "xor": 0
+ }
+}

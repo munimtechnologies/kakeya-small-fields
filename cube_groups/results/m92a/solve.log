@@ -1,0 +1,26 @@
+solve r3l_t7_B6_o003_c000_a0042__cadical: UNSAT 51.97 s
+solve r3l_t7_B6_o003_c000_a0124__cadical: UNSAT 43.4 s
+solve r3l_t7_B6_o003_c000_a0206__cadical: UNSAT 42.29 s
+solve r3l_t7_B6_o003_c000_a0288__cadical: UNSAT 55.83 s
+solve r3l_t7_B6_o003_c000_a0352__cadical: UNSAT 31.43 s
+solve r3l_t7_B6_o003_c000_a0511__cadical: UNSAT 61.03 s
+solve r3l_t7_B6_o003_c000_a0524__cadical: UNSAT 84.47 s
+solve r3l_t7_B6_o003_c000_a0537__cadical: UNSAT 52.23 s
+solve r3l_t7_B6_o003_c000_a0576__cadical: UNSAT 58.11 s
+solve r3l_t7_B6_o003_c000_a0784__cadical: UNSAT 29.74 s
+solve r3l_t7_B6_o003_c000_a0799__cadical: UNSAT 44.55 s
+solve r3l_t7_B6_o003_c000_a0802__cadical: UNSAT 45.56 s
+solve r3l_t7_B6_o003_c000_a0814__cadical: UNSAT 35.02 s
+solve r3l_t7_B6_o003_c000_a0831__cadical: UNSAT 59.69 s
+solve r3l_t7_B6_o003_c000_a0850__cadical: UNSAT 49.5 s
+solve r3l_t7_B6_o003_c000_a0967__cadical: UNSAT 31.34 s
+solve r3l_t7_B6_o003_c000_a1076__cadical: UNSAT 63.5 s
+solve r3l_t7_B6_o003_c000_a1240__cadical: UNSAT 36.7 s
+solve r3l_t7_B6_o003_c000_a1375__cadical: UNSAT 68.64 s
+solve r3l_t7_B6_o003_c000_a1380__cadical: UNSAT 94.22 s
+solve r3l_t7_B6_o003_c000_a1385__cadical: UNSAT 39.68 s
+solve r3l_t7_B6_o003_c000_a1410__cadical: UNSAT 42.41 s
+solve r3l_t7_B6_o003_c000_a1512__cadical: UNSAT 44.37 s
+solve r3l_t7_B6_o003_c000_a1552__cadical: UNSAT 49.61 s
+solve r3l_t7_B6_o003_c000_a1559__cadical: UNSAT 41.09 s
+SUMMARY solve group a {"cadical_UNSAT": 25}
