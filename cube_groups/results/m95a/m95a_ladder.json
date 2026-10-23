@@ -1,0 +1,237 @@
+[
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.11,
+  "cnf": {
+   "start": 136023,
+   "first_var": 23113,
+   "d": 4,
+   "drop": [],
+   "units": 9,
+   "outside": 0,
+   "inv": 7,
+   "lin": 36,
+   "a_units": 30,
+   "vars": 23124,
+   "clauses": 135928,
+   "aniso_dropped": 255
+  },
+  "name": "relax_t6",
+  "t": 6,
+  "k": 3,
+  "w": null,
+  "f": null,
+  "relax": true,
+  "wall_seconds": 0.82,
+  "cap_seconds": 600.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.79,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 903835,
+   "aniso_dropped": 2047
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "relax",
+  "relax": true,
+  "drop": [],
+  "wall_seconds": 3.12,
+  "cap_seconds": 600.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 3.88,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [
+    "units"
+   ],
+   "units": 0,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905866
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "drop_units",
+  "relax": false,
+  "drop": [
+   "units"
+  ],
+  "wall_seconds": 6.23,
+  "cap_seconds": 300.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.79,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [
+    "inv"
+   ],
+   "units": 16,
+   "outside": 0,
+   "inv": 0,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142784,
+   "clauses": 905595
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "drop_inv",
+  "relax": false,
+  "drop": [
+   "inv"
+  ],
+  "wall_seconds": 3.17,
+  "cap_seconds": 300.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.88,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [
+    "lin"
+   ],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 0,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905754
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "drop_lin",
+  "relax": false,
+  "drop": [
+   "lin"
+  ],
+  "wall_seconds": 3.52,
+  "cap_seconds": 300.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 3.25,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [
+    "a"
+   ],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 0,
+   "vars": 142832,
+   "clauses": 905798
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "drop_a",
+  "relax": false,
+  "drop": [
+   "a"
+  ],
+  "wall_seconds": 6.01,
+  "cap_seconds": 300.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [
+    "lin",
+    "a"
+   ],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 0,
+   "a_units": 0,
+   "vars": 142832,
+   "clauses": 905670
+  },
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "name": "drop_lin_a",
+  "relax": false,
+  "drop": [
+   "lin",
+   "a"
+  ],
+  "wall_seconds": 300.02,
+  "cap_seconds": 300.0
+ }
+]

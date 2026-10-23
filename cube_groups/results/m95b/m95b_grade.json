@@ -1,0 +1,1467 @@
+{
+ "group": "b",
+ "graded": {
+  "selfcheck_m93_tables": true,
+  "selfcheck_m93_dim3": true,
+  "selfcheck_orbits_all": true,
+  "selfcheck_orbits_n4": true,
+  "selfcheck_orbits_hyper": true,
+  "selfcheck_hyper_counts": true,
+  "selfcheck_hyper_invariant": true,
+  "selfcheck_pilot_in_n4": true,
+  "selfcheck_encode_t8": true,
+  "selfcheck_aniso_t8": true,
+  "selfcheck_encode_t6": true,
+  "selfcheck_aniso_t6": true
+ },
+ "instances": 159,
+ "expected_instances": 159,
+ "counts": {
+  "UNSAT": 159
+ },
+ "unsat_seconds_sum": 144.39,
+ "unsat_seconds_median": 0.76,
+ "unsat_seconds_max": 7.67,
+ "slowest": "d3_o29_f02",
+ "not_unsat": [],
+ "vars": [
+  142880
+ ],
+ "clauses_range": [
+  906143,
+  906303
+ ],
+ "rows": {
+  "d3_o00_f01": [
+   "UNSAT",
+   1.24,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o00_f02": [
+   "UNSAT",
+   1.42,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o00_f04": [
+   "UNSAT",
+   1.32,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o00_f08": [
+   "UNSAT",
+   1.33,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o01_f01": [
+   "UNSAT",
+   1.22,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o01_f02": [
+   "UNSAT",
+   1.1,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o01_f08": [
+   "UNSAT",
+   0.94,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o02_f01": [
+   "UNSAT",
+   0.83,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o02_f02": [
+   "UNSAT",
+   0.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o02_f12": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o03_f01": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o03_f02": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o04_f01": [
+   "UNSAT",
+   0.77,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o04_f04": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o04_f08": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o04_f12": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o05_f01": [
+   "UNSAT",
+   0.69,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o05_f04": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o05_f08": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o06_f01": [
+   "UNSAT",
+   1.62,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o06_f04": [
+   "UNSAT",
+   0.82,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o07_f01": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o07_f04": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o08_f01": [
+   "UNSAT",
+   0.74,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o08_f04": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o08_f08": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o08_f12": [
+   "UNSAT",
+   0.7,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o09_f01": [
+   "UNSAT",
+   0.79,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o09_f04": [
+   "UNSAT",
+   0.86,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o10_f01": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o10_f04": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o11_f01": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o11_f08": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o12_f01": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o12_f08": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o13_f01": [
+   "UNSAT",
+   0.69,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o13_f08": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o13_f10": [
+   "UNSAT",
+   0.74,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o14_f01": [
+   "UNSAT",
+   0.93,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o14_f02": [
+   "UNSAT",
+   5.57,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o14_f04": [
+   "UNSAT",
+   1.94,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o14_f08": [
+   "UNSAT",
+   1.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o15_f01": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o15_f08": [
+   "UNSAT",
+   1.24,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o16_f01": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o17_f01": [
+   "UNSAT",
+   0.98,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f02": [
+   "UNSAT",
+   0.81,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f04": [
+   "UNSAT",
+   0.82,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f06": [
+   "UNSAT",
+   0.8,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f08": [
+   "UNSAT",
+   0.77,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f10": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f12": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o18_f14": [
+   "UNSAT",
+   0.72,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o19_f02": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o19_f04": [
+   "UNSAT",
+   0.77,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o19_f06": [
+   "UNSAT",
+   0.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o19_f08": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o20_f02": [
+   "UNSAT",
+   0.69,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o20_f04": [
+   "UNSAT",
+   0.88,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o20_f06": [
+   "UNSAT",
+   0.71,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o21_f02": [
+   "UNSAT",
+   1.01,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o21_f04": [
+   "UNSAT",
+   0.91,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o21_f06": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f02": [
+   "UNSAT",
+   0.8,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f04": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f06": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f08": [
+   "UNSAT",
+   0.81,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f10": [
+   "UNSAT",
+   0.7,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f12": [
+   "UNSAT",
+   0.76,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o22_f14": [
+   "UNSAT",
+   0.78,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o23_f02": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o23_f04": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o23_f06": [
+   "UNSAT",
+   0.72,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o24_f02": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o24_f04": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o24_f06": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o25_f02": [
+   "UNSAT",
+   0.86,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o25_f08": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o26_f02": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o26_f12": [
+   "UNSAT",
+   0.82,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o27_f02": [
+   "UNSAT",
+   0.83,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o28_f02": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o28_f08": [
+   "UNSAT",
+   0.96,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o29_f02": [
+   "UNSAT",
+   7.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o30_f02": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o31_f02": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o31_f08": [
+   "UNSAT",
+   0.77,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o31_f10": [
+   "UNSAT",
+   1.02,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o32_f02": [
+   "UNSAT",
+   1.29,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o33_f02": [
+   "UNSAT",
+   0.94,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o34_f02": [
+   "UNSAT",
+   0.74,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o34_f08": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o35_f02": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o36_f02": [
+   "UNSAT",
+   0.7,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o36_f08": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o36_f10": [
+   "UNSAT",
+   0.72,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o37_f02": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o38_f02": [
+   "UNSAT",
+   0.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o39_f02": [
+   "UNSAT",
+   0.89,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o39_f08": [
+   "UNSAT",
+   0.78,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o39_f10": [
+   "UNSAT",
+   1.14,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o40_f02": [
+   "UNSAT",
+   1.03,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o41_f02": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o42_f02": [
+   "UNSAT",
+   0.86,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o42_f08": [
+   "UNSAT",
+   0.77,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o42_f10": [
+   "UNSAT",
+   1.11,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o43_f02": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o43_f08": [
+   "UNSAT",
+   0.86,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o43_f10": [
+   "UNSAT",
+   0.75,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o44_f02": [
+   "UNSAT",
+   0.7,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o45_f02": [
+   "UNSAT",
+   1.16,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o46_f02": [
+   "UNSAT",
+   0.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o47_f02": [
+   "UNSAT",
+   0.79,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o47_f04": [
+   "UNSAT",
+   0.78,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o47_f08": [
+   "UNSAT",
+   0.8,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o47_f10": [
+   "UNSAT",
+   1.27,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o48_f02": [
+   "UNSAT",
+   1.45,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o48_f04": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o48_f08": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o49_f02": [
+   "UNSAT",
+   1.33,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o49_f08": [
+   "UNSAT",
+   0.74,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o50_f02": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o50_f08": [
+   "UNSAT",
+   1.03,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o51_f02": [
+   "UNSAT",
+   0.87,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o51_f08": [
+   "UNSAT",
+   0.86,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o51_f10": [
+   "UNSAT",
+   1.49,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o52_f02": [
+   "UNSAT",
+   0.76,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o52_f08": [
+   "UNSAT",
+   0.76,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o52_f10": [
+   "UNSAT",
+   0.92,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o53_f02": [
+   "UNSAT",
+   1.23,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o53_f08": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o53_f10": [
+   "UNSAT",
+   0.69,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o54_f02": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o54_f08": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o55_f02": [
+   "UNSAT",
+   0.82,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o56_f02": [
+   "UNSAT",
+   0.69,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o57_f02": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o58_f02": [
+   "UNSAT",
+   0.92,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o59_f03": [
+   "UNSAT",
+   1.13,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o59_f04": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o59_f08": [
+   "UNSAT",
+   0.7,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o60_f03": [
+   "UNSAT",
+   0.73,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o60_f08": [
+   "UNSAT",
+   0.68,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o61_f03": [
+   "UNSAT",
+   0.79,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o62_f03": [
+   "UNSAT",
+   1.1,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o64_f04": [
+   "UNSAT",
+   0.95,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o64_f08": [
+   "UNSAT",
+   0.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o65_f08": [
+   "UNSAT",
+   0.89,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o67_f04": [
+   "UNSAT",
+   0.67,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o67_f08": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o68_f04": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o70_f04": [
+   "UNSAT",
+   0.72,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o70_f08": [
+   "UNSAT",
+   0.78,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o70_f12": [
+   "UNSAT",
+   0.92,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o71_f08": [
+   "UNSAT",
+   0.66,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o72_f08": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o73_f08": [
+   "UNSAT",
+   0.65,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o75_f08": [
+   "UNSAT",
+   0.72,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "d3_o76_f08": [
+   "UNSAT",
+   0.64,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ }
+}

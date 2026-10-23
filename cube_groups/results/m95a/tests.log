@@ -1,0 +1,13 @@
+test_counts_d3_t6 (test_m95.TestM95.test_counts_d3_t6) ... ok
+test_d3_clauses_on_data (test_m95.TestM95.test_d3_clauses_on_data) ... ok
+test_d_basis (test_m95.TestM95.test_d_basis) ... ok
+test_equal_to_m94_t6 (test_m95.TestM95.test_equal_to_m94_t6) ... ok
+test_fixed_parts (test_m95.TestM95.test_fixed_parts) ... ok
+test_hyperplanes_pilot (test_m95.TestM95.test_hyperplanes_pilot) ... ok
+test_rejects (test_m95.TestM95.test_rejects) ... ok
+test_specs (test_m95.TestM95.test_specs) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.511s
+
+OK

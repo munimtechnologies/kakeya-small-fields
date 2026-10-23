@@ -1,0 +1,183 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 30.7 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f) for f in ('sat_aniso.py', 'case_b.py', 'c
+
+===== run-01-python: python -m unittest -v test_m95
+
+===== run-02-python: python m95.py --part selfcheck --group b --out-dir /out
+selfcheck: {"aniso_t6": true, "aniso_t8": true, "encode_t6": true, "encode_t8": true, "hyper_counts": true, "hyper_invariant": true, "m93_dim3": true, "m93_tables": true, "orbits_all": true, "orbits_hyper": true, "orbits_n4": true, "pilot_in_n4": true} instances {"a": 23, "b": 159} sizes {"8,4": [142832, 905882, 905367, 142785], "6,3": [23124, 136183, 136023, 23113]} seconds 42.4
+SUMMARY selfcheck all_match True
+
+===== run-03-python: python m95.py --part solve --group b --cap-seconds 120 --minutes 130 --out-dir /out
+solve d3_o00_f01: UNSAT seconds 1.24 wall 4.04 vars 142880 clauses 906143
+solve d3_o00_f02: UNSAT seconds 1.42 wall 3.43 vars 142880 clauses 906143
+solve d3_o00_f04: UNSAT seconds 1.32 wall 3.48 vars 142880 clauses 906143
+solve d3_o00_f08: UNSAT seconds 1.33 wall 3.78 vars 142880 clauses 906143
+solve d3_o01_f01: UNSAT seconds 1.22 wall 3.42 vars 142880 clauses 906143
+solve d3_o01_f02: UNSAT seconds 1.1 wall 3.57 vars 142880 clauses 906143
+solve d3_o01_f08: UNSAT seconds 0.94 wall 3.17 vars 142880 clauses 906143
+solve d3_o02_f01: UNSAT seconds 0.83 wall 3.07 vars 142880 clauses 906151
+solve d3_o02_f02: UNSAT seconds 0.85 wall 3.54 vars 142880 clauses 906151
+solve d3_o02_f12: UNSAT seconds 0.75 wall 3.25 vars 142880 clauses 906155
+solve d3_o03_f01: UNSAT seconds 0.67 wall 2.89 vars 142880 clauses 906167
+solve d3_o03_f02: UNSAT seconds 0.68 wall 2.73 vars 142880 clauses 906167
+solve d3_o04_f01: UNSAT seconds 0.77 wall 2.87 vars 142880 clauses 906143
+solve d3_o04_f04: UNSAT seconds 0.67 wall 2.72 vars 142880 clauses 906143
+solve d3_o04_f08: UNSAT seconds 0.87 wall 3.27 vars 142880 clauses 906143
+solve d3_o04_f12: UNSAT seconds 0.68 wall 2.77 vars 142880 clauses 906147
+solve d3_o05_f01: UNSAT seconds 0.69 wall 2.82 vars 142880 clauses 906151
+solve d3_o05_f04: UNSAT seconds 0.66 wall 2.92 vars 142880 clauses 906151
+solve d3_o05_f08: UNSAT seconds 0.66 wall 2.78 vars 142880 clauses 906151
+solve d3_o06_f01: UNSAT seconds 1.62 wall 3.72 vars 142880 clauses 906143
+solve d3_o06_f04: UNSAT seconds 0.82 wall 3.29 vars 142880 clauses 906143
+solve d3_o07_f01: UNSAT seconds 0.64 wall 2.73 vars 142880 clauses 906151
+solve d3_o07_f04: UNSAT seconds 0.64 wall 2.72 vars 142880 clauses 906151
+solve d3_o08_f01: UNSAT seconds 0.74 wall 2.92 vars 142880 clauses 906175
+solve d3_o08_f04: UNSAT seconds 0.73 wall 3.02 vars 142880 clauses 906175
+solve d3_o08_f08: UNSAT seconds 0.65 wall 2.82 vars 142880 clauses 906175
+solve d3_o08_f12: UNSAT seconds 0.7 wall 2.77 vars 142880 clauses 906179
+solve d3_o09_f01: UNSAT seconds 0.79 wall 3.07 vars 142880 clauses 906175
+solve d3_o09_f04: UNSAT seconds 0.86 wall 2.97 vars 142880 clauses 906175
+solve d3_o10_f01: UNSAT seconds 0.67 wall 2.73 vars 142880 clauses 906191
+solve d3_o10_f04: UNSAT seconds 0.67 wall 2.92 vars 142880 clauses 906191
+solve d3_o11_f01: UNSAT seconds 0.67 wall 2.85 vars 142880 clauses 906175
+solve d3_o11_f08: UNSAT seconds 0.68 wall 2.84 vars 142880 clauses 906175
+solve d3_o12_f01: UNSAT seconds 0.87 wall 3.58 vars 142880 clauses 906183
+solve d3_o12_f08: UNSAT seconds 0.75 wall 3.42 vars 142880 clauses 906183
+solve d3_o13_f01: UNSAT seconds 0.69 wall 2.82 vars 142880 clauses 906199
+solve d3_o13_f08: UNSAT seconds 0.67 wall 2.77 vars 142880 clauses 906199
+solve d3_o13_f10: UNSAT seconds 0.74 wall 2.82 vars 142880 clauses 906203
+solve d3_o14_f01: UNSAT seconds 0.93 wall 3.22 vars 142880 clauses 906159
+solve d3_o14_f02: UNSAT seconds 5.57 wall 7.66 vars 142880 clauses 906159
+solve d3_o14_f04: UNSAT seconds 1.94 wall 4.31 vars 142880 clauses 906159
+solve d3_o14_f08: UNSAT seconds 1.68 wall 4.03 vars 142880 clauses 906159
+solve d3_o15_f01: UNSAT seconds 0.66 wall 3.12 vars 142880 clauses 906183
+solve d3_o15_f08: UNSAT seconds 1.24 wall 3.57 vars 142880 clauses 906183
+solve d3_o16_f01: UNSAT seconds 0.65 wall 2.77 vars 142880 clauses 906271
+solve d3_o17_f01: UNSAT seconds 0.98 wall 3.62 vars 142880 clauses 906303
+solve d3_o18_f02: UNSAT seconds 0.81 wall 3.38 vars 142880 clauses 906143
+solve d3_o18_f04: UNSAT seconds 0.82 wall 3.27 vars 142880 clauses 906143
+solve d3_o18_f06: UNSAT seconds 0.8 wall 3.58 vars 142880 clauses 906147
+solve d3_o18_f08: UNSAT seconds 0.77 wall 3.21 vars 142880 clauses 906143
+solve d3_o18_f10: UNSAT seconds 0.73 wall 3.19 vars 142880 clauses 906147
+solve d3_o18_f12: UNSAT seconds 0.75 wall 2.88 vars 142880 clauses 906147
+solve d3_o18_f14: UNSAT seconds 0.72 wall 2.87 vars 142880 clauses 906151
+solve d3_o19_f02: UNSAT seconds 0.67 wall 2.87 vars 142880 clauses 906159
+solve d3_o19_f04: UNSAT seconds 0.77 wall 2.82 vars 142880 clauses 906159
+solve d3_o19_f06: UNSAT seconds 0.85 wall 3.43 vars 142880 clauses 906163
+solve d3_o19_f08: UNSAT seconds 0.65 wall 2.82 vars 142880 clauses 906159
+solve d3_o20_f02: UNSAT seconds 0.69 wall 2.77 vars 142880 clauses 906143
+solve d3_o20_f04: UNSAT seconds 0.88 wall 3.25 vars 142880 clauses 906143
+solve d3_o20_f06: UNSAT seconds 0.71 wall 2.87 vars 142880 clauses 906147
+solve d3_o21_f02: UNSAT seconds 1.01 wall 3.55 vars 142880 clauses 906151
+solve d3_o21_f04: UNSAT seconds 0.91 wall 3.74 vars 142880 clauses 906151
+solve d3_o21_f06: UNSAT seconds 0.66 wall 2.77 vars 142880 clauses 906155
+solve d3_o22_f02: UNSAT seconds 0.8 wall 3.27 vars 142880 clauses 906183
+solve d3_o22_f04: UNSAT seconds 0.68 wall 2.82 vars 142880 clauses 906183
+solve d3_o22_f06: UNSAT seconds 0.67 wall 2.77 vars 142880 clauses 906187
+solve d3_o22_f08: UNSAT seconds 0.81 wall 3.02 vars 142880 clauses 906183
+solve d3_o22_f10: UNSAT seconds 0.7 wall 2.82 vars 142880 clauses 906187
+solve d3_o22_f12: UNSAT seconds 0.76 wall 3.13 vars 142880 clauses 906187
+solve d3_o22_f14: UNSAT seconds 0.78 wall 2.97 vars 142880 clauses 906191
+solve d3_o23_f02: UNSAT seconds 0.75 wall 2.98 vars 142880 clauses 906183
+solve d3_o23_f04: UNSAT seconds 0.68 wall 3.15 vars 142880 clauses 906183
+solve d3_o23_f06: UNSAT seconds 0.72 wall 2.93 vars 142880 clauses 906187
+solve d3_o24_f02: UNSAT seconds 0.66 wall 2.72 vars 142880 clauses 906199
+solve d3_o24_f04: UNSAT seconds 0.66 wall 2.72 vars 142880 clauses 906199
+solve d3_o24_f06: UNSAT seconds 0.67 wall 2.77 vars 142880 clauses 906203
+solve d3_o25_f02: UNSAT seconds 0.86 wall 3.42 vars 142880 clauses 906151
+solve d3_o25_f08: UNSAT seconds 0.65 wall 2.77 vars 142880 clauses 906151
+solve d3_o26_f02: UNSAT seconds 0.65 wall 2.77 vars 142880 clauses 906159
+solve d3_o26_f12: UNSAT seconds 0.82 wall 3.02 vars 142880 clauses 906163
+solve d3_o27_f02: UNSAT seconds 0.83 wall 3.58 vars 142880 clauses 906175
+solve d3_o28_f02: UNSAT seconds 0.73 wall 2.9 vars 142880 clauses 906159
+solve d3_o28_f08: UNSAT seconds 0.96 wall 3.39 vars 142880 clauses 906159
+solve d3_o29_f02: UNSAT seconds 7.67 wall 9.8 vars 142880 clauses 906143
+solve d3_o30_f02: UNSAT seconds 0.64 wall 2.72 vars 142880 clauses 906151
+solve d3_o31_f02: UNSAT seconds 0.67 wall 2.92 vars 142880 clauses 906183
+solve d3_o31_f08: UNSAT seconds 0.77 wall 2.82 vars 142880 clauses 906183
+solve d3_o31_f10: UNSAT seconds 1.02 wall 3.23 vars 142880 clauses 906187
+solve d3_o32_f02: UNSAT seconds 1.29 wall 3.67 vars 142880 clauses 906183
+solve d3_o33_f02: UNSAT seconds 0.94 wall 3.88 vars 142880 clauses 906199
+solve d3_o34_f02: UNSAT seconds 0.74 wall 3.39 vars 142880 clauses 906167
+solve d3_o34_f08: UNSAT seconds 0.64 wall 2.88 vars 142880 clauses 906167
+solve d3_o35_f02: UNSAT seconds 0.65 wall 2.72 vars 142880 clauses 906159
+solve d3_o36_f02: UNSAT seconds 0.7 wall 2.77 vars 142880 clauses 906191
+solve d3_o36_f08: UNSAT seconds 0.66 wall 2.72 vars 142880 clauses 906191
+solve d3_o36_f10: UNSAT seconds 0.72 wall 2.82 vars 142880 clauses 906195
+solve d3_o37_f02: UNSAT seconds 0.65 wall 2.72 vars 142880 clauses 906191
+solve d3_o38_f02: UNSAT seconds 0.85 wall 3.93 vars 142880 clauses 906207
+solve d3_o39_f02: UNSAT seconds 0.89 wall 3.67 vars 142880 clauses 906151
+solve d3_o39_f08: UNSAT seconds 0.78 wall 3.22 vars 142880 clauses 906151
+solve d3_o39_f10: UNSAT seconds 1.14 wall 3.85 vars 142880 clauses 906155
+solve d3_o40_f02: UNSAT seconds 1.03 wall 5.76 vars 142880 clauses 906159
+solve d3_o41_f02: UNSAT seconds 0.73 wall 3.68 vars 142880 clauses 906167
+solve d3_o42_f02: UNSAT seconds 0.86 wall 3.47 vars 142880 clauses 906191
+solve d3_o42_f08: UNSAT seconds 0.77 wall 3.28 vars 142880 clauses 906191
+solve d3_o42_f10: UNSAT seconds 1.11 wall 3.63 vars 142880 clauses 906195
+solve d3_o43_f02: UNSAT seconds 0.75 wall 3.23 vars 142880 clauses 906191
+solve d3_o43_f08: UNSAT seconds 0.86 wall 3.26 vars 142880 clauses 906191
+solve d3_o43_f10: UNSAT seconds 0.75 wall 2.86 vars 142880 clauses 906195
+solve d3_o44_f02: UNSAT seconds 0.7 wall 2.84 vars 142880 clauses 906207
+solve d3_o45_f02: UNSAT seconds 1.16 wall 3.83 vars 142880 clauses 906223
+solve d3_o46_f02: UNSAT seconds 0.85 wall 3.82 vars 142880 clauses 906223
+solve d3_o47_f02: UNSAT seconds 0.79 wall 3.62 vars 142880 clauses 906167
+solve d3_o47_f04: UNSAT seconds 0.78 wall 3.47 vars 142880 clauses 906167
+solve d3_o47_f08: UNSAT seconds 0.8 wall 3.57 vars 142880 clauses 906167
+solve d3_o47_f10: UNSAT seconds 1.27 wall 4.28 vars 142880 clauses 906171
+solve d3_o48_f02: UNSAT seconds 1.45 wall 4.17 vars 142880 clauses 906175
+solve d3_o48_f04: UNSAT seconds 0.87 wall 4.06 vars 142880 clauses 906175
+solve d3_o48_f08: UNSAT seconds 0.87 wall 3.64 vars 142880 clauses 906175
+solve d3_o49_f02: UNSAT seconds 1.33 wall 4.18 vars 142880 clauses 906167
+solve d3_o49_f08: UNSAT seconds 0.74 wall 3.33 vars 142880 clauses 906167
+solve d3_o50_f02: UNSAT seconds 0.87 wall 3.42 vars 142880 clauses 906175
+solve d3_o50_f08: UNSAT seconds 1.03 wall 3.98 vars 142880 clauses 906175
+solve d3_o51_f02: UNSAT seconds 0.87 wall 3.98 vars 142880 clauses 906183
+solve d3_o51_f08: UNSAT seconds 0.86 wall 3.33 vars 142880 clauses 906183
+solve d3_o51_f10: UNSAT seconds 1.49 wall 4.24 vars 142880 clauses 906187
+solve d3_o52_f02: UNSAT seconds 0.76 wall 3.35 vars 142880 clauses 906199
+solve d3_o52_f08: UNSAT seconds 0.76 wall 3.58 vars 142880 clauses 906199
+solve d3_o52_f10: UNSAT seconds 0.92 wall 3.52 vars 142880 clauses 906203
+solve d3_o53_f02: UNSAT seconds 1.23 wall 4.33 vars 142880 clauses 906191
+solve d3_o53_f08: UNSAT seconds 0.73 wall 3.93 vars 142880 clauses 906191
+solve d3_o53_f10: UNSAT seconds 0.69 wall 2.97 vars 142880 clauses 906195
+solve d3_o54_f02: UNSAT seconds 0.65 wall 2.92 vars 142880 clauses 906167
+solve d3_o54_f08: UNSAT seconds 0.66 wall 2.72 vars 142880 clauses 906167
+solve d3_o55_f02: UNSAT seconds 0.82 wall 3.23 vars 142880 clauses 906191
+solve d3_o56_f02: UNSAT seconds 0.69 wall 2.95 vars 142880 clauses 906215
+solve d3_o57_f02: UNSAT seconds 0.73 wall 2.83 vars 142880 clauses 906175
+solve d3_o58_f02: UNSAT seconds 0.92 wall 3.43 vars 142880 clauses 906191
+solve d3_o59_f03: UNSAT seconds 1.13 wall 3.52 vars 142880 clauses 906187
+solve d3_o59_f04: UNSAT seconds 0.66 wall 2.72 vars 142880 clauses 906183
+solve d3_o59_f08: UNSAT seconds 0.7 wall 3.28 vars 142880 clauses 906183
+solve d3_o60_f03: UNSAT seconds 0.73 wall 3.27 vars 142880 clauses 906179
+solve d3_o60_f08: UNSAT seconds 0.68 wall 2.87 vars 142880 clauses 906175
+solve d3_o61_f03: UNSAT seconds 0.79 wall 3.07 vars 142880 clauses 906187
+solve d3_o62_f03: UNSAT seconds 1.1 wall 4.03 vars 142880 clauses 906203
+solve d3_o64_f04: UNSAT seconds 0.95 wall 4.74 vars 142880 clauses 906199
+solve d3_o64_f08: UNSAT seconds 0.85 wall 3.39 vars 142880 clauses 906199
+solve d3_o65_f08: UNSAT seconds 0.89 wall 3.88 vars 142880 clauses 906191
+solve d3_o67_f04: UNSAT seconds 0.67 wall 3.17 vars 142880 clauses 906175
+solve d3_o67_f08: UNSAT seconds 0.66 wall 3.02 vars 142880 clauses 906175
+solve d3_o68_f04: UNSAT seconds 0.64 wall 2.72 vars 142880 clauses 906199
+solve d3_o70_f04: UNSAT seconds 0.72 wall 2.87 vars 142880 clauses 906215
+solve d3_o70_f08: UNSAT seconds 0.78 wall 3.37 vars 142880 clauses 906215
+solve d3_o70_f12: UNSAT seconds 0.92 wall 3.14 vars 142880 clauses 906219
+solve d3_o71_f08: UNSAT seconds 0.66 wall 2.81 vars 142880 clauses 906199
+solve d3_o72_f08: UNSAT seconds 0.64 wall 2.7 vars 142880 clauses 906207
+solve d3_o73_f08: UNSAT seconds 0.65 wall 2.84 vars 142880 clauses 906223
+solve d3_o75_f08: UNSAT seconds 0.72 wall 3.03 vars 142880 clauses 906287
+solve d3_o76_f08: UNSAT seconds 0.64 wall 3.37 vars 142880 clauses 906295
+SUMMARY solve group b instances 159 {"UNSAT": 159} seconds 527
+
+===== run-04-python: python m95.py --part grade --group b --out-dir /out
+SUMMARY grade group b all_match True graded 12 instances 159 expected 159 counts {"UNSAT": 159} not_unsat [] unsat_sum 144.39 median 0.76 max 7.67 slowest d3_o29_f02 vars [142880] clauses [906143, 906303]

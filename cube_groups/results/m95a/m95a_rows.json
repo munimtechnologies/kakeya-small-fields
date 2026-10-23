@@ -1,0 +1,1244 @@
+[
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.72,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o00_s3360",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   32,
+   1024
+  ],
+  "f": null,
+  "orbit": 0,
+  "size": 3360,
+  "wall_seconds": 4.63,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "2fb30481b590f066846bc82324f73fc07cee0bee3528664362b3bd3f4840ce43",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 5.02
+  },
+  "proof_bytes": 70743515,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 5.71,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 2582 of 905874 clauses in core                            ",
+    "c 256 of 1120690 lemmas in core using 40406 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 5.666 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 1.01,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o01_s5040",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   32,
+   2048
+  ],
+  "f": null,
+  "orbit": 1,
+  "size": 5040,
+  "wall_seconds": 5.73,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "7f473db4b91edd5dcac6509a828369327139c4300e0778708fa868c730ce7931",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 4.57
+  },
+  "proof_bytes": 70012071,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 5.52,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 3602 of 905874 clauses in core                            ",
+    "c 179 of 1103075 lemmas in core using 48519 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 5.474 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.69,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o04_s840",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   128
+  ],
+  "f": null,
+  "orbit": 4,
+  "size": 840,
+  "wall_seconds": 4.57,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "9863dd91a31fdac66ce5b55028cddae79b07636eb82794445f84f7501367acbd",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 4.78
+  },
+  "proof_bytes": 69100815,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 3.93,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 6231 of 905874 clauses in core                            ",
+    "c 83 of 1086573 lemmas in core using 30262 resolution steps",
+    "c 0 RAT lemmas in core; 3 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 3.892 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.64,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o05_s10080",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   1056
+  ],
+  "f": null,
+  "orbit": 5,
+  "size": 10080,
+  "wall_seconds": 4.23,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "8359727eea1afaf7973e9611455268903b45efc931f52bb19c0d0d823d759bba",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.56
+  },
+  "proof_bytes": 653064,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.89,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 2881 of 905882 clauses in core                            ",
+    "c 1 of 73467 lemmas in core using 2881 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.869 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.79,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o06_s840",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   16384
+  ],
+  "f": null,
+  "orbit": 6,
+  "size": 840,
+  "wall_seconds": 4.48,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "0f58596b25ad6b34f0948008a60c21dd2c9ab58b2dc08434f5c09eab2e0c2b7d",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 4.62
+  },
+  "proof_bytes": 69192027,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 4.13,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 5575 of 905874 clauses in core                            ",
+    "c 304 of 1088752 lemmas in core using 73140 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 4.098 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.76,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o07_s2520",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   64,
+   16512
+  ],
+  "f": null,
+  "orbit": 7,
+  "size": 2520,
+  "wall_seconds": 4.41,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "0b371f90b8d9fb85dbd5a20d41dd0d307ae6f218eeb4365810d9a2142beb187e",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.49
+  },
+  "proof_bytes": 655073,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.81,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1685 of 905882 clauses in core                            ",
+    "c 1 of 73671 lemmas in core using 1685 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.786 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.65,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905906,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o11_s3360",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   608,
+   1056
+  ],
+  "f": null,
+  "orbit": 11,
+  "size": 3360,
+  "wall_seconds": 4.6,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "17a13c5bb9664b74b0654b0e7975833090cf8c714d783c511c1860cdcfd448a0",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.5
+  },
+  "proof_bytes": 573506,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.81,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1777 of 905906 clauses in core                            ",
+    "c 1 of 64563 lemmas in core using 1777 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.782 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 1.54,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905890,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o14_s3360",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   1,
+   1056,
+   32800
+  ],
+  "f": null,
+  "orbit": 14,
+  "size": 3360,
+  "wall_seconds": 5.33,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "e5f40e62d99c9ec7e26a13bae654868901352404b3c731de20d8d0315711e089",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 5.4
+  },
+  "proof_bytes": 72838054,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 4.77,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 5712 of 905890 clauses in core                            ",
+    "c 927 of 1175867 lemmas in core using 41847 resolution steps",
+    "c 0 RAT lemmas in core; 82 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 4.705 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.8,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o18_s15",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   4,
+   8
+  ],
+  "f": null,
+  "orbit": 18,
+  "size": 15,
+  "wall_seconds": 5.98,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "717ed9edfd9cbf3dbbf9b30d62460912208afc8ad116d0e3f430a3a16c21a1f8",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 5.29
+  },
+  "proof_bytes": 69640190,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 5.48,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 6266 of 905874 clauses in core                            ",
+    "c 64 of 1098197 lemmas in core using 39843 resolution steps",
+    "c 0 RAT lemmas in core; 8 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 5.444 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.69,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905890,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o19_s840",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   4,
+   1057
+  ],
+  "f": null,
+  "orbit": 19,
+  "size": 840,
+  "wall_seconds": 4.53,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "7f5dba83e15eb7cb346d90027223da7b7b6bf23615e5733210a4858484496213",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 3.61
+  },
+  "proof_bytes": 27374630,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1.84,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 4242 of 905890 clauses in core                            ",
+    "c 26 of 384891 lemmas in core using 11905 resolution steps",
+    "c 0 RAT lemmas in core; 3 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1.812 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.8,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o20_s315",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   4,
+   8192
+  ],
+  "f": null,
+  "orbit": 20,
+  "size": 315,
+  "wall_seconds": 4.33,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "17ae5934fe58a4e7809afcbad39f9523ccbea7f4959a6167fabc4441e2238370",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 5.61
+  },
+  "proof_bytes": 67313958,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 3.5,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 5180 of 905874 clauses in core                            ",
+    "c 102 of 1051303 lemmas in core using 33178 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 3.464 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.71,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o21_s315",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   4,
+   8200
+  ],
+  "f": null,
+  "orbit": 21,
+  "size": 315,
+  "wall_seconds": 4.49,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "33ebde9d71359523a80dc0bec6ffd1efb31020b6083ac1329b2f106935a0f4b0",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.48
+  },
+  "proof_bytes": 655432,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.8,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1353 of 905882 clauses in core                            ",
+    "c 1 of 73707 lemmas in core using 1353 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.779 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.61,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o25_s5040",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   33,
+   2048
+  ],
+  "f": null,
+  "orbit": 25,
+  "size": 5040,
+  "wall_seconds": 3.94,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "237c4c6d2721045930d5700941d042928d869e7daf8b84939dee2243bbf8326c",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.46
+  },
+  "proof_bytes": 583478,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.73,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 2741 of 905882 clauses in core                            ",
+    "c 1 of 65683 lemmas in core using 2741 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.715 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.64,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905890,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o28_s840",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   512,
+   1057
+  ],
+  "f": null,
+  "orbit": 28,
+  "size": 840,
+  "wall_seconds": 4.48,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "1abb545a58c2291e720078d7a0b223df2848dea7cd1568007e4ddc873aa85b10",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 3.2
+  },
+  "proof_bytes": 27175050,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1.78,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 3871 of 905890 clauses in core                            ",
+    "c 38 of 382044 lemmas in core using 15039 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1.751 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 7.92,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905874,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o29_s15",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   512,
+   8192
+  ],
+  "f": null,
+  "orbit": 29,
+  "size": 15,
+  "wall_seconds": 11.31,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "9df5d1b4e3481add26bfebf92f9faecfdf9b77b4b8fb3c2e0c8cf00bc4b6a74b",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 6.94
+  },
+  "proof_bytes": 78375059,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 9.87,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 32584 of 905874 clauses in core                            ",
+    "c 38546 of 1182091 lemmas in core using 2783211 resolution steps",
+    "c 0 RAT lemmas in core; 2675 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 9.820 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.84,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o30_s315",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   512,
+   8200
+  ],
+  "f": null,
+  "orbit": 30,
+  "size": 315,
+  "wall_seconds": 5.13,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "da195e0324be378f55af002de7be00c3dffeab8bb86b88d3a34e77be6d3c1439",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.5
+  },
+  "proof_bytes": 653004,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.75,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1507 of 905882 clauses in core                            ",
+    "c 1 of 73436 lemmas in core using 1507 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.731 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.67,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905898,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o34_s2520",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   516,
+   1057
+  ],
+  "f": null,
+  "orbit": 34,
+  "size": 2520,
+  "wall_seconds": 4.03,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "62150d93603d3d9a07b4091b73f0773ab72d17550a7f1e1df96d777036fb0e3b",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.45
+  },
+  "proof_bytes": 528843,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.75,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1614 of 905898 clauses in core                            ",
+    "c 1 of 59561 lemmas in core using 1614 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.733 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.65,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905890,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o35_s315",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   516,
+   8200
+  ],
+  "f": null,
+  "orbit": 35,
+  "size": 315,
+  "wall_seconds": 4.05,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "39b96e917af1aa7e855c024bdfa46da5c0bcddc27f450d94735e0d223900fc4f",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.48
+  },
+  "proof_bytes": 562275,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.76,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 3243 of 905890 clauses in core                            ",
+    "c 1 of 63283 lemmas in core using 3243 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.738 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.75,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905882,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o39_s210",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   520,
+   2048
+  ],
+  "f": null,
+  "orbit": 39,
+  "size": 210,
+  "wall_seconds": 4.12,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "16c0cb4df56ddbb448b60552e6115736b4277a57bbdb0623560991a8f0aae050",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 2.68
+  },
+  "proof_bytes": 21639847,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1.73,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 1271 of 905882 clauses in core                            ",
+    "c 159 of 238639 lemmas in core using 4476 resolution steps",
+    "c 0 RAT lemmas in core; 14 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1.697 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.63,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905890,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o40_s105",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   520,
+   8196
+  ],
+  "f": null,
+  "orbit": 40,
+  "size": 105,
+  "wall_seconds": 3.93,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "496a85a02dee3546de34b276c8b3916a17933473bb01d5ddb0b6153ed83e6d8b",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.46
+  },
+  "proof_bytes": 678400,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.76,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 3535 of 905890 clauses in core                            ",
+    "c 1 of 76323 lemmas in core using 3535 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.736 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.69,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905898,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o41_s630",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   520,
+   10244
+  ],
+  "f": null,
+  "orbit": 41,
+  "size": 630,
+  "wall_seconds": 4.68,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "81b3dff2a65fc511a7f641a73d965a1a0a1485cdb772b0b0b38097d9d607515d",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.64
+  },
+  "proof_bytes": 659932,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1.04,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1697 of 905898 clauses in core                            ",
+    "c 1 of 74234 lemmas in core using 1697 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1.014 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 1.22,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905906,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o48_s5040",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   1057,
+   32801
+  ],
+  "f": null,
+  "orbit": 48,
+  "size": 5040,
+  "wall_seconds": 6.33,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "677eda91747d777e69cf17e87c33b09505f216e8e39d82d04341e8c6a812672d",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 4.43
+  },
+  "proof_bytes": 27593534,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 2.5,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 5653 of 905906 clauses in core                            ",
+    "c 234 of 427041 lemmas in core using 23089 resolution steps",
+    "c 0 RAT lemmas in core; 15 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 2.461 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "seconds": 0.94,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "d": 4,
+   "drop": [],
+   "units": 16,
+   "outside": 0,
+   "inv": 15,
+   "lin": 96,
+   "a_units": 84,
+   "vars": 142832,
+   "clauses": 905906,
+   "dimacs_vars": 142832
+  },
+  "name": "n4_o57_s1680",
+  "kind": "n4",
+  "t": 8,
+  "k": 4,
+  "w": [
+   2,
+   19456,
+   33792
+  ],
+  "f": null,
+  "orbit": 57,
+  "size": 1680,
+  "wall_seconds": 5.69,
+  "cap_seconds": 600.0,
+  "cnf_sha256": "740fed0d62de90b93aaab990431c5335307712dc208e26656831a12970aa6f40",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 0.55
+  },
+  "proof_bytes": 674010,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 0.96,
+   "tail": [
+    "c UNSAT via unit propagation on the input instance",
+    "c 1628 of 905906 clauses in core                            ",
+    "c 1 of 75350 lemmas in core using 1628 resolution steps",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 0.930 seconds"
+   ]
+  },
+  "cert": "VERIFIED"
+ }
+]

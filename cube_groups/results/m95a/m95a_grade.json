@@ -1,0 +1,296 @@
+{
+ "group": "a",
+ "graded": {
+  "selfcheck_m93_tables": true,
+  "selfcheck_m93_dim3": true,
+  "selfcheck_orbits_all": true,
+  "selfcheck_orbits_n4": true,
+  "selfcheck_orbits_hyper": true,
+  "selfcheck_hyper_counts": true,
+  "selfcheck_hyper_invariant": true,
+  "selfcheck_pilot_in_n4": true,
+  "selfcheck_encode_t8": true,
+  "selfcheck_aniso_t8": true,
+  "selfcheck_encode_t6": true,
+  "selfcheck_aniso_t6": true,
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true
+ },
+ "instances": 23,
+ "expected_instances": 23,
+ "counts": {
+  "UNSAT": 23
+ },
+ "unsat_seconds_sum": 25.36,
+ "unsat_seconds_median": 0.72,
+ "unsat_seconds_max": 7.92,
+ "slowest": "n4_o29_s15",
+ "not_unsat": [],
+ "vars": [
+  142832
+ ],
+ "clauses_range": [
+  905874,
+  905906
+ ],
+ "verified": 23,
+ "cadical_sum": 61.72,
+ "drat_sum": 59.82,
+ "largest_proof": 78375059,
+ "not_verified": [],
+ "ladder": {
+  "relax_t6": [
+   "UNSAT",
+   0.11,
+   255,
+   null
+  ],
+  "relax": [
+   "UNSAT",
+   0.79,
+   2047,
+   null
+  ],
+  "drop_units": [
+   "UNSAT",
+   3.88,
+   null,
+   null
+  ],
+  "drop_inv": [
+   "UNSAT",
+   0.79,
+   null,
+   null
+  ],
+  "drop_lin": [
+   "UNSAT",
+   0.88,
+   null,
+   null
+  ],
+  "drop_a": [
+   "UNSAT",
+   3.25,
+   null,
+   null
+  ],
+  "drop_lin_a": [
+   "UNKNOWN",
+   null,
+   null,
+   null
+  ]
+ },
+ "rows": {
+  "n4_o00_s3360": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   5.02,
+   5.71,
+   70743515,
+   "2fb30481b590f066846bc82324f73fc07cee0bee3528664362b3bd3f4840ce43"
+  ],
+  "n4_o01_s5040": [
+   "UNSAT",
+   1.01,
+   "VERIFIED",
+   4.57,
+   5.52,
+   70012071,
+   "7f473db4b91edd5dcac6509a828369327139c4300e0778708fa868c730ce7931"
+  ],
+  "n4_o04_s840": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   4.78,
+   3.93,
+   69100815,
+   "9863dd91a31fdac66ce5b55028cddae79b07636eb82794445f84f7501367acbd"
+  ],
+  "n4_o05_s10080": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   0.56,
+   0.89,
+   653064,
+   "8359727eea1afaf7973e9611455268903b45efc931f52bb19c0d0d823d759bba"
+  ],
+  "n4_o06_s840": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   4.62,
+   4.13,
+   69192027,
+   "0f58596b25ad6b34f0948008a60c21dd2c9ab58b2dc08434f5c09eab2e0c2b7d"
+  ],
+  "n4_o07_s2520": [
+   "UNSAT",
+   0.76,
+   "VERIFIED",
+   0.49,
+   0.81,
+   655073,
+   "0b371f90b8d9fb85dbd5a20d41dd0d307ae6f218eeb4365810d9a2142beb187e"
+  ],
+  "n4_o11_s3360": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   0.5,
+   0.81,
+   573506,
+   "17a13c5bb9664b74b0654b0e7975833090cf8c714d783c511c1860cdcfd448a0"
+  ],
+  "n4_o14_s3360": [
+   "UNSAT",
+   1.54,
+   "VERIFIED",
+   5.4,
+   4.77,
+   72838054,
+   "e5f40e62d99c9ec7e26a13bae654868901352404b3c731de20d8d0315711e089"
+  ],
+  "n4_o18_s15": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   5.29,
+   5.48,
+   69640190,
+   "717ed9edfd9cbf3dbbf9b30d62460912208afc8ad116d0e3f430a3a16c21a1f8"
+  ],
+  "n4_o19_s840": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   3.61,
+   1.84,
+   27374630,
+   "7f5dba83e15eb7cb346d90027223da7b7b6bf23615e5733210a4858484496213"
+  ],
+  "n4_o20_s315": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   5.61,
+   3.5,
+   67313958,
+   "17ae5934fe58a4e7809afcbad39f9523ccbea7f4959a6167fabc4441e2238370"
+  ],
+  "n4_o21_s315": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   0.48,
+   0.8,
+   655432,
+   "33ebde9d71359523a80dc0bec6ffd1efb31020b6083ac1329b2f106935a0f4b0"
+  ],
+  "n4_o25_s5040": [
+   "UNSAT",
+   0.61,
+   "VERIFIED",
+   0.46,
+   0.73,
+   583478,
+   "237c4c6d2721045930d5700941d042928d869e7daf8b84939dee2243bbf8326c"
+  ],
+  "n4_o28_s840": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   3.2,
+   1.78,
+   27175050,
+   "1abb545a58c2291e720078d7a0b223df2848dea7cd1568007e4ddc873aa85b10"
+  ],
+  "n4_o29_s15": [
+   "UNSAT",
+   7.92,
+   "VERIFIED",
+   6.94,
+   9.87,
+   78375059,
+   "9df5d1b4e3481add26bfebf92f9faecfdf9b77b4b8fb3c2e0c8cf00bc4b6a74b"
+  ],
+  "n4_o30_s315": [
+   "UNSAT",
+   0.84,
+   "VERIFIED",
+   0.5,
+   0.75,
+   653004,
+   "da195e0324be378f55af002de7be00c3dffeab8bb86b88d3a34e77be6d3c1439"
+  ],
+  "n4_o34_s2520": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   0.45,
+   0.75,
+   528843,
+   "62150d93603d3d9a07b4091b73f0773ab72d17550a7f1e1df96d777036fb0e3b"
+  ],
+  "n4_o35_s315": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   0.48,
+   0.76,
+   562275,
+   "39b96e917af1aa7e855c024bdfa46da5c0bcddc27f450d94735e0d223900fc4f"
+  ],
+  "n4_o39_s210": [
+   "UNSAT",
+   0.75,
+   "VERIFIED",
+   2.68,
+   1.73,
+   21639847,
+   "16c0cb4df56ddbb448b60552e6115736b4277a57bbdb0623560991a8f0aae050"
+  ],
+  "n4_o40_s105": [
+   "UNSAT",
+   0.63,
+   "VERIFIED",
+   0.46,
+   0.76,
+   678400,
+   "496a85a02dee3546de34b276c8b3916a17933473bb01d5ddb0b6153ed83e6d8b"
+  ],
+  "n4_o41_s630": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   0.64,
+   1.04,
+   659932,
+   "81b3dff2a65fc511a7f641a73d965a1a0a1485cdb772b0b0b38097d9d607515d"
+  ],
+  "n4_o48_s5040": [
+   "UNSAT",
+   1.22,
+   "VERIFIED",
+   4.43,
+   2.5,
+   27593534,
+   "677eda91747d777e69cf17e87c33b09505f216e8e39d82d04341e8c6a812672d"
+  ],
+  "n4_o57_s1680": [
+   "UNSAT",
+   0.94,
+   "VERIFIED",
+   0.55,
+   0.96,
+   674010,
+   "740fed0d62de90b93aaab990431c5335307712dc208e26656831a12970aa6f40"
+  ]
+ }
+}
