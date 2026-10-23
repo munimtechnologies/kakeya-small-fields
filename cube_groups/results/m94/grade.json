@@ -1,0 +1,33 @@
+{
+ "graded": {
+  "selfcheck_case_b": true,
+  "selfcheck_case_b_shapes": true,
+  "selfcheck_w_space": true,
+  "selfcheck_w_orbit": true,
+  "selfcheck_w_flags": true,
+  "selfcheck_hints_t8": true,
+  "selfcheck_hints_t6": true,
+  "cb_t2_k1": true,
+  "n4_t6_k3": true
+ },
+ "ungraded": {},
+ "pilot": {
+  "status": "UNSAT",
+  "seconds": 0.62,
+  "wall_seconds": 2.57,
+  "cnf": {
+   "start": 905367,
+   "first_var": 142785,
+   "lin": 96,
+   "a_units": 84,
+   "n4_units": 16,
+   "inv": 15,
+   "vars": 142832,
+   "clauses": 905882
+  },
+  "solver": "cadical195",
+  "verified": null,
+  "facts": null
+ },
+ "control_seconds": 0.47
+}

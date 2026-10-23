@@ -1,0 +1,72 @@
+{
+ "case_b": {
+  "lemma34": true,
+  "example": true,
+  "two_qualify": true,
+  "normalised": true,
+  "cnf_agrees": true,
+  "nontrivial": true
+ },
+ "case_b_shapes": {
+  "census": true,
+  "shapes_on_n": true,
+  "units": true
+ },
+ "w": {
+  "elements": 8,
+  "identity": false,
+  "commuting": true,
+  "orbit_size": 10080,
+  "flags": {
+   "ranks": [
+    2,
+    3,
+    2,
+    0
+   ],
+   "singular": true,
+   "common_kernel_dim": 1,
+   "image_dim": 3,
+   "hyperplanes": 3,
+   "algebra": true,
+   "square_zero": false,
+   "nilpotent": 1,
+   "defect": -1,
+   "n4": true,
+   "f3": true
+  }
+ },
+ "hints": {
+  "8,4": {
+   "start": 905367,
+   "first_var": 142785,
+   "lin": 96,
+   "a_units": 84,
+   "n4_units": 16,
+   "inv": 15,
+   "vars": 142832,
+   "clauses": 905882,
+   "consistent": true
+  },
+  "6,3": {
+   "start": 136023,
+   "first_var": 23113,
+   "lin": 36,
+   "a_units": 30,
+   "n4_units": 9,
+   "inv": 7,
+   "vars": 23124,
+   "clauses": 136183,
+   "consistent": true
+  }
+ },
+ "graded": {
+  "case_b": true,
+  "case_b_shapes": true,
+  "w_space": true,
+  "w_orbit": true,
+  "w_flags": true,
+  "hints_t8": true,
+  "hints_t6": true
+ }
+}

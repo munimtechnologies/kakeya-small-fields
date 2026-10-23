@@ -1,0 +1,12 @@
+test_counts_t6 (test_m94.TestM94.test_counts_t6) ... ok
+test_fixed_ok (test_m94.TestM94.test_fixed_ok) ... ok
+test_hints_on_data (test_m94.TestM94.test_hints_on_data) ... ok
+test_m_of (test_m94.TestM94.test_m_of) ... ok
+test_pilot_singular (test_m94.TestM94.test_pilot_singular) ... ok
+test_rejects (test_m94.TestM94.test_rejects) ... ok
+test_tuples (test_m94.TestM94.test_tuples) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.139s
+
+OK

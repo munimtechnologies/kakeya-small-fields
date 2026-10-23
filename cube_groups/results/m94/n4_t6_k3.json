@@ -1,0 +1,59 @@
+{
+ "status": "UNSAT",
+ "solver": "cadical195",
+ "vars": 23124,
+ "clauses": 136183,
+ "seconds": 0.09,
+ "cnf": {
+  "start": 136023,
+  "first_var": 23113,
+  "lin": 36,
+  "a_units": 30,
+  "n4_units": 9,
+  "inv": 7,
+  "vars": 23124,
+  "clauses": 136183
+ },
+ "name": "n4_t6_k3",
+ "kind": "control",
+ "t": 6,
+ "k": 3,
+ "ms": [
+  [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0
+   ]
+  ],
+  [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ]
+ ],
+ "wall_seconds": 0.47,
+ "budget_seconds": 600
+}

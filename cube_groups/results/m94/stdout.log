@@ -1,0 +1,31 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 29.9 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f) for f in ('sat_aniso.py', 'case_b.py', 'c
+
+===== run-01-python: python -m unittest -v test_m94
+
+===== run-02-python: python m94.py --part selfcheck --out-dir /out
+selfcheck: {"case_b": {"cnf_agrees": true, "example": true, "lemma34": true, "nontrivial": true, "normalised": true, "two_qualify": true}, "case_b_shapes": {"census": true, "shapes_on_n": true, "units": true}, "graded": {"case_b": true, "case_b_shapes": true, "hints_t6": true, "hints_t8": true, "w_flags": true, "w_orbit": true, "w_space": true}, "hints": {"6,3": {"a_units": 30, "clauses": 136183, "consistent": true, "first_var": 23113, "inv": 7, "lin": 36, "n4_units": 9, "start": 136023, "vars": 23124}, "8,4": {"a_units": 84, "clauses": 905882, "consistent": true, "first_var": 142785, "inv": 15, "lin": 96, "n4_units": 16, "start": 905367, "vars": 142832}}, "w": {"commuting": true, "elements": 8, "flags": {"algebra": true, "common_kernel_dim": 1, "defect": -1, "f3": true, "hyperplanes": 3, "image_dim": 3, "n4": true, "nilpotent": 1, "ranks": [2, 3, 2, 0], "singular": true, "square_zero": false}, "identity": false, "orbit_size": 10080}}
+SUMMARY selfcheck all_match True
+
+===== run-03-python: python m94.py --part controls --out-dir /out
+solve cb_t2_k1: {"A": [8, 0], "B": [[0, 1, 2]], "clauses": 161, "d": 2, "k": 1, "name": "cb_t2_k1", "ranks": [0, 1, 1], "s": [1, 2], "seconds": 0.0, "solver": "cadical195", "status": "SAT", "t": 2, "vars": 48, "verified": true, "wall_seconds": 0.21}
+solve n4_t6_k3: {"budget_seconds": 600, "clauses": 136183, "cnf": {"a_units": 30, "clauses": 136183, "first_var": 23113, "inv": 7, "lin": 36, "n4_units": 9, "start": 136023, "vars": 23124}, "k": 3, "kind": "control", "ms": [[[0, 0, 0], [1, 0, 0], [0, 1, 0]], [[0, 0, 0], [0, 0, 0], [1, 0, 0]]], "name": "n4_t6_k3", "seconds": 0.09, "solver": "cadical195", "status": "UNSAT", "t": 6, "vars": 23124, "wall_seconds": 0.47}
+SUMMARY controls {"cb_t2_k1_SAT": 1, "n4_t6_k3_UNSAT": 1}
+
+===== run-04-python: python m94.py --part pilot --cap-minutes 75 --out-dir /out
+solve n4_t8_k4_w10080: {"budget_seconds": 4500.0, "clauses": 905882, "cnf": {"a_units": 84, "clauses": 905882, "first_var": 142785, "inv": 15, "lin": 96, "n4_units": 16, "start": 905367, "vars": 142832}, "k": 4, "kind": "pilot", "ms": [[[1, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 0]]], "name": "n4_t8_k4_w10080", "seconds": 0.62, "solver": "cadical195", "status": "UNSAT", "t": 8, "vars": 142832, "w_masks": [1, 64, 1056], "w_orbit": 10080, "wall_seconds": 2.57}
+SUMMARY pilot n4_t8_k4_w10080 UNSAT wall_seconds 2.57 vars 142832 clauses 905882 verified None
+
+===== run-05-python: python m94.py --part grade --out-dir /out
+grade: {"control_seconds": 0.47, "graded": {"cb_t2_k1": true, "n4_t6_k3": true, "selfcheck_case_b": true, "selfcheck_case_b_shapes": true, "selfcheck_hints_t6": true, "selfcheck_hints_t8": true, "selfcheck_w_flags": true, "selfcheck_w_orbit": true, "selfcheck_w_space": true}, "pilot": {"cnf": {"a_units": 84, "clauses": 905882, "first_var": 142785, "inv": 15, "lin": 96, "n4_units": 16, "start": 905367, "vars": 142832}, "facts": null, "seconds": 0.62, "solver": "cadical195", "status": "UNSAT", "verified": null, "wall_seconds": 2.57}, "ungraded": {}}
+SUMMARY grade all_match True graded 9 ungraded [] pilot UNSAT
