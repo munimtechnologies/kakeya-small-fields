@@ -1,0 +1,228 @@
+{
+ "class": "r3b_t7_B6_o003_c000",
+ "group": "a",
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "class": true,
+  "class_reps": true,
+  "sample": true,
+  "build_l": true,
+  "build_s": true,
+  "dimacs_roundtrip": true,
+  "groups": true,
+  "group": true,
+  "m92_probe_l": true
+ },
+ "instances": 25,
+ "tools": {
+  "cadical": {
+   "url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz",
+   "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"
+  },
+  "drat_trim": {
+   "url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c",
+   "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+  }
+ },
+ "counts": {
+  "VERIFIED": 25
+ },
+ "verified": 25,
+ "not_verified": [],
+ "any_sat": false,
+ "cadical_sum": 1173.8,
+ "drat_sum": 1265.83,
+ "cadical_median": 45.25,
+ "drat_median": 49.17,
+ "cadical_max": 112.46,
+ "drat_max": 114.68,
+ "largest_proof": [
+  "r3l_t7_B6_o003_c000_a1375",
+  276359798
+ ],
+ "slowest": [
+  "r3l_t7_B6_o003_c000_a1375",
+  112.46,
+  104.64
+ ],
+ "rows": {
+  "r3l_t7_B6_o003_c000_a0042": [
+   "VERIFIED",
+   44.73,
+   59.43,
+   140188609,
+   "81a3decb89da2c2f4a2f133d5091b7c9cfa9c6d0933f33a024f55828368593cd"
+  ],
+  "r3l_t7_B6_o003_c000_a0124": [
+   "VERIFIED",
+   28.01,
+   30.23,
+   104258402,
+   "98edd66c46fc3e351254f75e55e18d91fd8974f5b9cbe1b9a787fd0f4a58f0cd"
+  ],
+  "r3l_t7_B6_o003_c000_a0206": [
+   "VERIFIED",
+   51.3,
+   49.95,
+   138235462,
+   "229f7466d12b4e9edd345136a08456ec682dbbd993daa8d6e8b8d024d7fef98b"
+  ],
+  "r3l_t7_B6_o003_c000_a0288": [
+   "VERIFIED",
+   43.55,
+   43.83,
+   113998581,
+   "183d418e0942e77f169c1f48226f5b155bfa935d3eb4e8bf7ad683dc8edd9b2a"
+  ],
+  "r3l_t7_B6_o003_c000_a0352": [
+   "VERIFIED",
+   11.87,
+   14.38,
+   52252039,
+   "b4f7ef79d541e64b428b2d815e0fe968040e25db1bbe14f78200a2643f1dd4bc"
+  ],
+  "r3l_t7_B6_o003_c000_a0511": [
+   "VERIFIED",
+   45.25,
+   57.31,
+   108639967,
+   "7d0bbcd636e13596ca17c7fafe302e2e82796fe0730a41b5a7a31b1d2069c056"
+  ],
+  "r3l_t7_B6_o003_c000_a0524": [
+   "VERIFIED",
+   60.97,
+   86.03,
+   161282246,
+   "4dd8b79af1863ef1cf323bedb9b8b6ea68564a2af93cd088f0ed6bdd011f97cd"
+  ],
+  "r3l_t7_B6_o003_c000_a0537": [
+   "VERIFIED",
+   63.4,
+   51.75,
+   160227079,
+   "60dddc7154b93afb3aa0d8c07811bf3af73acae477636bb9d93e7385158c8fbd"
+  ],
+  "r3l_t7_B6_o003_c000_a0576": [
+   "VERIFIED",
+   30.42,
+   33.09,
+   99060783,
+   "a4c1ffdc2fecedc0d0ab7f2abf79fa79d5a52bff48125642a2092b56443f482e"
+  ],
+  "r3l_t7_B6_o003_c000_a0784": [
+   "VERIFIED",
+   28.38,
+   19.73,
+   62195189,
+   "6a2a0b30aa281da6f9ccdf9f0d0bdbe487a134ede9bad97bcf086590a69c09a6"
+  ],
+  "r3l_t7_B6_o003_c000_a0799": [
+   "VERIFIED",
+   24.91,
+   22.02,
+   72130507,
+   "54955b9c1e792d440578da95d74d16fb5cdea76f0d5899990df3b34b1ae579ff"
+  ],
+  "r3l_t7_B6_o003_c000_a0802": [
+   "VERIFIED",
+   55.51,
+   48.58,
+   152946307,
+   "b18964a6574ab0c85243dd845690edf755524ad42b3989d57f80e3bfcf7c8c4f"
+  ],
+  "r3l_t7_B6_o003_c000_a0814": [
+   "VERIFIED",
+   25.6,
+   20.36,
+   88682960,
+   "a4f040c4c05d3251291b68ea6e21eb5251697b4dc7727c3cad14ed237fe671b7"
+  ],
+  "r3l_t7_B6_o003_c000_a0831": [
+   "VERIFIED",
+   48.86,
+   81.19,
+   147526948,
+   "ad0be519286f93ed54f94ec43d0e058fc3c45b89861dff9c84ac16eb385fbd0e"
+  ],
+  "r3l_t7_B6_o003_c000_a0850": [
+   "VERIFIED",
+   60.12,
+   56.39,
+   126952536,
+   "7ac12e7de9d3f91052aab20ea4c4a5b34e1de3bccb9d8e8ab983cfc5465e4e9f"
+  ],
+  "r3l_t7_B6_o003_c000_a0967": [
+   "VERIFIED",
+   22.43,
+   30.36,
+   79359150,
+   "7ce5022d90f691908129f8174a0599df9d09a8cd43cb61114a3794083025d2fc"
+  ],
+  "r3l_t7_B6_o003_c000_a1076": [
+   "VERIFIED",
+   49.58,
+   67.34,
+   133581857,
+   "e7c77a4e852610808eb42c6b690b35426edfb2e611b442cd99d8a793699ca167"
+  ],
+  "r3l_t7_B6_o003_c000_a1240": [
+   "VERIFIED",
+   41.18,
+   36.09,
+   126736411,
+   "b8994a4535df2316f154125747f694bb93400bea5e34825bc2102ba45d4cb9df"
+  ],
+  "r3l_t7_B6_o003_c000_a1375": [
+   "VERIFIED",
+   112.46,
+   104.64,
+   276359798,
+   "ff53c4ee747083dafa684398032066294501c1da839ce0f80af77b5a5f6254d0"
+  ],
+  "r3l_t7_B6_o003_c000_a1380": [
+   "VERIFIED",
+   83.17,
+   114.68,
+   232663126,
+   "68054043dad3094d344be40ca99d039c21fc92f841aced68c24182fc4815f55c"
+  ],
+  "r3l_t7_B6_o003_c000_a1385": [
+   "VERIFIED",
+   56.85,
+   51.39,
+   136961686,
+   "283eaea8ebc16bc7dcf0f5ddcccb1a57feac0ab5baa7fa79f63bfbbc71c3aee3"
+  ],
+  "r3l_t7_B6_o003_c000_a1410": [
+   "VERIFIED",
+   39.48,
+   36.91,
+   118974948,
+   "3dbf8032ee64fe773f0e7f8d2e6cc4f986dbb3a3b0f83641c19936e4e229b710"
+  ],
+  "r3l_t7_B6_o003_c000_a1512": [
+   "VERIFIED",
+   31.06,
+   30.09,
+   103651616,
+   "74e7f6e3cfb232a6fdce2e582360884bc0cf4a9d6f1f28fef07e52fddc682a25"
+  ],
+  "r3l_t7_B6_o003_c000_a1552": [
+   "VERIFIED",
+   59.09,
+   70.89,
+   178635984,
+   "7d79abec5b0f16bebcaa0f1ebfabde6009634757e3eea63e8db4f750f16ff277"
+  ],
+  "r3l_t7_B6_o003_c000_a1559": [
+   "VERIFIED",
+   55.62,
+   49.17,
+   151306298,
+   "90f40f0d26fc5062feadb4de5e337088845783ceee9847d4c4059dc799395caf"
+  ]
+ }
+}
