@@ -1,0 +1,147 @@
+{
+ "m57": {
+  "by_d": {
+   "a": {
+    "3": 1,
+    "2": 8,
+    "1": 5,
+    "0": 3
+   },
+   "b": {
+    "2": 4,
+    "1": 14,
+    "0": 3
+   }
+  },
+  "probes": {
+   "cadical": {
+    "B5_hints": 111,
+    "B6_hints": 79,
+    "B6_units": 49,
+    "B5_vars": 48587,
+    "B6_vars": 48587,
+    "B6_xors": 0
+   },
+   "xor": {
+    "B5_hints": 111,
+    "B6_hints": 79,
+    "B6_units": 49,
+    "B5_vars": 24178,
+    "B6_vars": 24178,
+    "B6_xors": 5908
+   }
+  },
+  "random": {
+   "cases": 100,
+   "good": 38,
+   "disagree": 0
+  },
+  "seconds": 3.0
+ },
+ "split": {
+  "o005_c000": {
+   "name": "r3b_t7_B6_o005_c000",
+   "structure": {
+    "rank_au": 3,
+    "ker_is_x1": true,
+    "image_is_r": true,
+    "d": 2,
+    "d_hand": 2
+   },
+   "solution_space_dim": 12,
+   "order": 512,
+   "order_hand": 512,
+   "group_checked": true,
+   "d": 2,
+   "au_index": 139776,
+   "generators": 4,
+   "valid": 176126,
+   "valid_hand": 176126,
+   "action_closed": true,
+   "tables_match": true,
+   "orbits": 1913,
+   "orbits_by_rank_x1": {
+    "0": 135,
+    "1": 920,
+    "2": 858
+   },
+   "orbits_hand": null,
+   "lower_bound": 172,
+   "sizes_ok": true,
+   "seconds": 0.7
+  }
+ },
+ "probes": {
+  "named_l_cadical": [
+   48587,
+   286239,
+   79,
+   70
+  ],
+  "named_l_xor": [
+   24178,
+   60293,
+   79,
+   70
+  ],
+  "named_s_cadical": [
+   48587,
+   286218,
+   79,
+   49
+  ],
+  "named_s_xor": [
+   24178,
+   60272,
+   79,
+   49
+  ],
+  "lemma93_named": {
+   "cadical": [
+    48587,
+    286239,
+    79,
+    70,
+    21
+   ],
+   "xor": [
+    24178,
+    60293,
+    79,
+    70,
+    21
+   ]
+  }
+ },
+ "plan": {
+  "named": 20
+ },
+ "graded": {
+  "m57_reps": true,
+  "m57_hand_d": true,
+  "m57_lists": true,
+  "m57_a07": true,
+  "m57_hints_cadical": true,
+  "m57_hints_xor": true,
+  "m57_xor_is_smaller": true,
+  "m57_xor_agrees_with_cnf": true,
+  "m57_planted_accepted_cadical": true,
+  "m57_planted_flip_rejected_cadical": true,
+  "m57_planted_accepted_xor": true,
+  "m57_planted_flip_rejected_xor": true,
+  "m57_planted_sat_cadical": true,
+  "m57_planted_sat_xor": true,
+  "named_split_o005_c000": true,
+  "named_split_reps_o005_c000": true,
+  "named_list": true,
+  "named_maps": true,
+  "plan": true,
+  "probe_named_l_cadical": true,
+  "probe_named_l_xor": true,
+  "probe_named_s_cadical": true,
+  "probe_named_s_xor": true,
+  "probe93_named_cadical": true,
+  "probe93_named_xor": true
+ },
+ "seconds": 7.2
+}

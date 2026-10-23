@@ -1,0 +1,214 @@
+{
+ "group": "b",
+ "graded": {
+  "check_m57_reps": true,
+  "check_m57_hand_d": true,
+  "check_m57_lists": true,
+  "check_m57_a07": true,
+  "check_m57_hints_cadical": true,
+  "check_m57_hints_xor": true,
+  "check_m57_xor_is_smaller": true,
+  "check_m57_xor_agrees_with_cnf": true,
+  "check_m57_planted_accepted_cadical": true,
+  "check_m57_planted_flip_rejected_cadical": true,
+  "check_m57_planted_accepted_xor": true,
+  "check_m57_planted_flip_rejected_xor": true,
+  "check_m57_planted_sat_cadical": true,
+  "check_m57_planted_sat_xor": true,
+  "check_named_split_o005_c000": true,
+  "check_named_split_reps_o005_c000": true,
+  "check_named_list": true,
+  "check_named_maps": true,
+  "check_plan": true,
+  "check_probe_named_l_cadical": true,
+  "check_probe_named_l_xor": true,
+  "check_probe_named_s_cadical": true,
+  "check_probe_named_s_xor": true,
+  "check_probe93_named_cadical": true,
+  "check_probe93_named_xor": true
+ },
+ "ungraded": {},
+ "rows": {
+  "r3l_t7_B6_o005_c000_a0074": {
+   "cadical": [
+    "UNSAT",
+    52.72,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a0215": {
+   "cadical": [
+    "UNSAT",
+    41.49,
+    300.0
+   ]
+  },
+  "r3s_t7_B6_o005_c000_a0335": {
+   "cadical": [
+    "UNSAT",
+    17.59,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a0415": {
+   "cadical": [
+    "UNSAT",
+    40.53,
+    300.0
+   ]
+  },
+  "r3s_t7_B6_o005_c000_a0463": {
+   "cadical": [
+    "UNSAT",
+    14.51,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a0534": {
+   "cadical": [
+    "UNSAT",
+    24.14,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a0604": {
+   "cadical": [
+    "UNSAT",
+    21.48,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a0974": {
+   "cadical": [
+    "UNSAT",
+    87.81,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1006": {
+   "cadical": [
+    "UNSAT",
+    85.67,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1038": {
+   "cadical": [
+    "UNSAT",
+    54.04,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1134": {
+   "cadical": [
+    "UNSAT",
+    62.58,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1230": {
+   "cadical": [
+    "UNSAT",
+    45.99,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1487": {
+   "cadical": [
+    "UNSAT",
+    36.41,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1506": {
+   "cadical": [
+    "UNSAT",
+    49.18,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1521": {
+   "cadical": [
+    "UNSAT",
+    30.81,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1526": {
+   "cadical": [
+    "UNSAT",
+    58.98,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1534": {
+   "cadical": [
+    "UNSAT",
+    68.78,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1554": {
+   "cadical": [
+    "UNSAT",
+    50.38,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1654": {
+   "cadical": [
+    "UNSAT",
+    76.9,
+    300.0
+   ]
+  },
+  "r3l_t7_B6_o005_c000_a1906": {
+   "cadical": [
+    "UNSAT",
+    55.47,
+    300.0
+   ]
+  }
+ },
+ "named": {
+  "r3l_t7_B6_o005_c000_a0074": "UNSAT",
+  "r3l_t7_B6_o005_c000_a0215": "UNSAT",
+  "r3s_t7_B6_o005_c000_a0335": "UNSAT",
+  "r3l_t7_B6_o005_c000_a0415": "UNSAT",
+  "r3s_t7_B6_o005_c000_a0463": "UNSAT",
+  "r3l_t7_B6_o005_c000_a0534": "UNSAT",
+  "r3l_t7_B6_o005_c000_a0604": "UNSAT",
+  "r3l_t7_B6_o005_c000_a0974": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1006": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1038": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1134": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1230": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1487": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1506": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1521": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1526": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1534": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1554": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1654": "UNSAT",
+  "r3l_t7_B6_o005_c000_a1906": "UNSAT"
+ },
+ "named_unsat": 20,
+ "classes": {},
+ "b6_closed": [],
+ "any_sat_7": false,
+ "named_classes": {
+  "r3b_t7_B6_o005_c000": {
+   "total": 1913,
+   "unsat_before": 1893,
+   "rerun_here": 20,
+   "unsat_here": 20,
+   "open": []
+  }
+ },
+ "named_open": [],
+ "named_max_unsat_wall": 87.81,
+ "named_unsat_by_arm": {
+  "cadical": 20,
+  "xor": 0
+ }
+}
