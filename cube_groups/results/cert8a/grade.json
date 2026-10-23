@@ -1,0 +1,252 @@
+{
+ "classes": [
+  "r3b_t7_B6_o009_c005",
+  "r3b_t7_B6_o010_c003"
+ ],
+ "group": "a",
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "class": true,
+  "class_reps": true,
+  "sample": true,
+  "build_l": true,
+  "build_s": true,
+  "dimacs_roundtrip": true,
+  "class_o009_c005": true,
+  "class_reps_o009_c005": true,
+  "class_o010_c003": true,
+  "class_reps_o010_c003": true,
+  "groups": true,
+  "group": true,
+  "m83_probe_l": true
+ },
+ "instances": 26,
+ "tools": {
+  "cadical": {
+   "url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz",
+   "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"
+  },
+  "drat_trim": {
+   "url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c",
+   "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+  }
+ },
+ "counts": {
+  "VERIFIED": 26
+ },
+ "verified": 26,
+ "by_class": {
+  "r3b_t7_B6_o009_c005": {
+   "instances": 11,
+   "verified": 11
+  },
+  "r3b_t7_B6_o010_c003": {
+   "instances": 15,
+   "verified": 15
+  }
+ },
+ "not_verified": [],
+ "any_sat": false,
+ "cadical_sum": 928.63,
+ "drat_sum": 1027.19,
+ "cadical_median": 33.7,
+ "drat_median": 35.085,
+ "cadical_max": 83.83,
+ "drat_max": 96.35,
+ "largest_proof": [
+  "r3l_t7_B6_o010_c003_a1593",
+  259138506
+ ],
+ "slowest": [
+  "r3l_t7_B6_o010_c003_a1593",
+  83.83,
+  90.85
+ ],
+ "rows": {
+  "r3l_t7_B6_o009_c005_a1160": [
+   "VERIFIED",
+   26.07,
+   23.15,
+   88656805,
+   "be93755e8f7bea0f55ddcc066baccc5c4b292a6811635859f8c3a89447d73fba"
+  ],
+  "r3l_t7_B6_o009_c005_a1404": [
+   "VERIFIED",
+   45.21,
+   45.62,
+   137256315,
+   "88fe4ac1779eb2457a6a7f0a17e02ca7382c1ac7a1f399043f987e0b18989f3b"
+  ],
+  "r3l_t7_B6_o009_c005_a1462": [
+   "VERIFIED",
+   26.87,
+   24.06,
+   75613045,
+   "52df572afac41a215d6a095a5a806c7a3c603b6f462167d71779e3ea5f90a049"
+  ],
+  "r3l_t7_B6_o009_c005_a1839": [
+   "VERIFIED",
+   13.07,
+   10.98,
+   41664566,
+   "7362f5ca206cb1f577e4ef65b9b87b52ab98f800a50b844258c0bdaddd100e97"
+  ],
+  "r3l_t7_B6_o009_c005_a1868": [
+   "VERIFIED",
+   10.21,
+   6.99,
+   35022491,
+   "9cbf65a45d02bc9bcec191cab0949507c984b24bad887583a8dd5a999281640b"
+  ],
+  "r3l_t7_B6_o009_c005_a2071": [
+   "VERIFIED",
+   13.84,
+   8.84,
+   41900646,
+   "b4796fcee6166b30018f447e8f7ab2d88e203f68c81762f8d292d18fc56bd812"
+  ],
+  "r3l_t7_B6_o009_c005_a2322": [
+   "VERIFIED",
+   21.11,
+   19.16,
+   72320141,
+   "093f940c825d0c54765f75c0ae682064b126e68e0b359ab8f7841866b3015700"
+  ],
+  "r3l_t7_B6_o009_c005_a2920": [
+   "VERIFIED",
+   40.44,
+   42.37,
+   151131673,
+   "782d37aa1553f9cadc54eaa6a556b48d65f55e117906993b30906ad2e2b8c2f6"
+  ],
+  "r3l_t7_B6_o009_c005_a3556": [
+   "VERIFIED",
+   36.23,
+   34.96,
+   142330139,
+   "71d019393f125eb52d39f5c544f69a87b3366b4bac88edc2148dd2e939abf5cf"
+  ],
+  "r3l_t7_B6_o009_c005_a3586": [
+   "VERIFIED",
+   18.87,
+   16.55,
+   64349021,
+   "082484c8d12ad69078b0a6786fcbb0a0f283a7b7252d6700b32952fde08048e8"
+  ],
+  "r3l_t7_B6_o009_c005_a3808": [
+   "VERIFIED",
+   34.63,
+   33.57,
+   136128644,
+   "695171d5ae8660d1217d89ac47a44198a86bbd76981a5a07c82e21acf88f0dd0"
+  ],
+  "r3l_t7_B6_o010_c003_a0038": [
+   "VERIFIED",
+   25.54,
+   21.32,
+   113923203,
+   "6a8f504629acad9d95e94d8552a04769eca62c5500c27768996a81b1062c80c1"
+  ],
+  "r3l_t7_B6_o010_c003_a0123": [
+   "VERIFIED",
+   22.95,
+   25.91,
+   114855347,
+   "aa9a03855cd58730559e04297f4bdfe888f40584806842de6f4bdbb9ff95cb9e"
+  ],
+  "r3l_t7_B6_o010_c003_a0255": [
+   "VERIFIED",
+   32.77,
+   40.18,
+   119010759,
+   "17a25e6a49ae15c73bac0d1babe32b671f47f24435104ad9473549538835a2b7"
+  ],
+  "r3l_t7_B6_o010_c003_a1105": [
+   "VERIFIED",
+   48.24,
+   75.38,
+   166878042,
+   "6b6479c99da5ffeb3707e9b9a588ebc55873456a6a40e866ea23ed7e2a238584"
+  ],
+  "r3l_t7_B6_o010_c003_a1129": [
+   "VERIFIED",
+   39.68,
+   63.27,
+   154165985,
+   "fe3ab7b7dfd17167c8e654607a8a614beb3d746738e7131d190fdc720f5d8864"
+  ],
+  "r3l_t7_B6_o010_c003_a1177": [
+   "VERIFIED",
+   74.93,
+   89.43,
+   228158173,
+   "b472a684494a99f6e32609b999dd78be10d1754f809b17192ce88e5489048868"
+  ],
+  "r3l_t7_B6_o010_c003_a1201": [
+   "VERIFIED",
+   41.12,
+   35.21,
+   145511892,
+   "7925bc05675382ac2e9a2cd4c6fc712601a49a47ac9662dc132a96958458017a"
+  ],
+  "r3l_t7_B6_o010_c003_a1435": [
+   "VERIFIED",
+   9.41,
+   7.9,
+   44795447,
+   "574d5cb0b932b2d7b66c5abba78efec4bb249bdf78afb957fcb4228db7d110ff"
+  ],
+  "r3l_t7_B6_o010_c003_a1593": [
+   "VERIFIED",
+   83.83,
+   90.85,
+   259138506,
+   "8c73bd9754ab3e036c4bb22dee104bfc69ff9571593def5d3b58ac18f11e81a8"
+  ],
+  "r3l_t7_B6_o010_c003_a1797": [
+   "VERIFIED",
+   39.25,
+   43.5,
+   173297535,
+   "f71af0448a3535022243a0e4d36c45dc2fbc23df0103d2d1b0855ed79d0d1690"
+  ],
+  "r3l_t7_B6_o010_c003_a1806": [
+   "VERIFIED",
+   75.55,
+   96.35,
+   243657879,
+   "c5520cf32b657662c6f9ce082d9e3c4c9ba878a77fc1c5ba9f23c0d24d698a94"
+  ],
+  "r3l_t7_B6_o010_c003_a1903": [
+   "VERIFIED",
+   27.34,
+   35.88,
+   106839279,
+   "ec4a89dff69a14647267045f260964d13ce3ebf2dd1d40b5d5883f226b4302aa"
+  ],
+  "r3l_t7_B6_o010_c003_a1915": [
+   "VERIFIED",
+   18.65,
+   25.95,
+   92550504,
+   "0e740454756088e89a0abf3ed5adc7c6a4b66d4f2fc1c6758e7715280abd8532"
+  ],
+  "r3l_t7_B6_o010_c003_a1972": [
+   "VERIFIED",
+   58.31,
+   68.14,
+   231200831,
+   "c9ba55876bfed31bb2e60fcc0d34092e3dcc844bb9b5c6abbe7662e90ea06bc0"
+  ],
+  "r3l_t7_B6_o010_c003_a1973": [
+   "VERIFIED",
+   44.51,
+   41.67,
+   155247073,
+   "c6dd822e56370001bd95afeeaa0cebc3c7de2dd71bf244ffd1168349a0d1668e"
+  ]
+ }
+}

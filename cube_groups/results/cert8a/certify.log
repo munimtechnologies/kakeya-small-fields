@@ -1,0 +1,27 @@
+certify r3l_t7_B6_o009_c005_a1160: VERIFIED cadical 26.07 s drat 23.15 s proof 88656805 B
+certify r3l_t7_B6_o009_c005_a1404: VERIFIED cadical 45.21 s drat 45.62 s proof 137256315 B
+certify r3l_t7_B6_o009_c005_a1462: VERIFIED cadical 26.87 s drat 24.06 s proof 75613045 B
+certify r3l_t7_B6_o009_c005_a1839: VERIFIED cadical 13.07 s drat 10.98 s proof 41664566 B
+certify r3l_t7_B6_o009_c005_a1868: VERIFIED cadical 10.21 s drat 6.99 s proof 35022491 B
+certify r3l_t7_B6_o009_c005_a2071: VERIFIED cadical 13.84 s drat 8.84 s proof 41900646 B
+certify r3l_t7_B6_o009_c005_a2322: VERIFIED cadical 21.11 s drat 19.16 s proof 72320141 B
+certify r3l_t7_B6_o009_c005_a2920: VERIFIED cadical 40.44 s drat 42.37 s proof 151131673 B
+certify r3l_t7_B6_o009_c005_a3556: VERIFIED cadical 36.23 s drat 34.96 s proof 142330139 B
+certify r3l_t7_B6_o009_c005_a3586: VERIFIED cadical 18.87 s drat 16.55 s proof 64349021 B
+certify r3l_t7_B6_o009_c005_a3808: VERIFIED cadical 34.63 s drat 33.57 s proof 136128644 B
+certify r3l_t7_B6_o010_c003_a0038: VERIFIED cadical 25.54 s drat 21.32 s proof 113923203 B
+certify r3l_t7_B6_o010_c003_a0123: VERIFIED cadical 22.95 s drat 25.91 s proof 114855347 B
+certify r3l_t7_B6_o010_c003_a0255: VERIFIED cadical 32.77 s drat 40.18 s proof 119010759 B
+certify r3l_t7_B6_o010_c003_a1105: VERIFIED cadical 48.24 s drat 75.38 s proof 166878042 B
+certify r3l_t7_B6_o010_c003_a1129: VERIFIED cadical 39.68 s drat 63.27 s proof 154165985 B
+certify r3l_t7_B6_o010_c003_a1177: VERIFIED cadical 74.93 s drat 89.43 s proof 228158173 B
+certify r3l_t7_B6_o010_c003_a1201: VERIFIED cadical 41.12 s drat 35.21 s proof 145511892 B
+certify r3l_t7_B6_o010_c003_a1435: VERIFIED cadical 9.41 s drat 7.9 s proof 44795447 B
+certify r3l_t7_B6_o010_c003_a1593: VERIFIED cadical 83.83 s drat 90.85 s proof 259138506 B
+certify r3l_t7_B6_o010_c003_a1797: VERIFIED cadical 39.25 s drat 43.5 s proof 173297535 B
+certify r3l_t7_B6_o010_c003_a1806: VERIFIED cadical 75.55 s drat 96.35 s proof 243657879 B
+certify r3l_t7_B6_o010_c003_a1903: VERIFIED cadical 27.34 s drat 35.88 s proof 106839279 B
+certify r3l_t7_B6_o010_c003_a1915: VERIFIED cadical 18.65 s drat 25.95 s proof 92550504 B
+certify r3l_t7_B6_o010_c003_a1972: VERIFIED cadical 58.31 s drat 68.14 s proof 231200831 B
+certify r3l_t7_B6_o010_c003_a1973: VERIFIED cadical 44.51 s drat 41.67 s proof 155247073 B
+SUMMARY certify {"VERIFIED": 26} seconds 1977
