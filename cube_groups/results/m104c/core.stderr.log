@@ -1,0 +1,72 @@
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)
+Traceback (most recent call last):
+  File "/work/m104.py", line 551, in <module>
+    main()
+  File "/work/m104.py", line 524, in main
+    child(json.loads(args.spec), json.loads(args.case), json.loads(args.idx), args.child_out)
+  File "/work/m104.py", line 384, in child
+    n_aniso = m101.add_aniso_on(cnf, names, T, idx)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/m101.py", line 120, in add_aniso_on
+    vs = [S[i][r] for i in sub] + [B[(i, j)][r] for i, j in itertools.combinations(sub, 2)]
+                                   ~^^^^^^^^
+KeyError: (8, 4)

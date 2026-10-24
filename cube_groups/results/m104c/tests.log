@@ -1,0 +1,10 @@
+test_dimacs_and_answers (test_m104.TestM104.test_dimacs_and_answers) ... ok
+test_hand_counts (test_m104.TestM104.test_hand_counts) ... ok
+test_known_unsat (test_m104.TestM104.test_known_unsat) ... ok
+test_shards (test_m104.TestM104.test_shards) ... ok
+test_subspaces_of_v (test_m104.TestM104.test_subspaces_of_v) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK

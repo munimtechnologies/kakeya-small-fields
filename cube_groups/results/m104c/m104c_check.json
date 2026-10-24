@@ -1,0 +1,47 @@
+{
+ "shard": [
+  "r3b_t8_B7_o000_c000_t3_m004_034",
+  "r3b_t8_B7_o000_c000_t3_m011_017",
+  "r3b_t8_B7_o000_c000_t3_m065_184",
+  "r3b_t8_B7_o000_c000_t3_m078_161",
+  "r3b_t8_B7_o000_c000_t3_m106_157",
+  "r3b_t8_B7_o000_c000_t2_m015",
+  "r3b_t8_B7_o000_c000_t2_m071",
+  "r3b_t8_B7_o000_c000_t2_m078",
+  "r3b_t8_B7_o000_c000_t2_m087",
+  "r3b_t8_B7_o000_c000_t2_m094",
+  "r3b_t8_B7_o000_c000_t2_m098",
+  "r3b_t8_B7_o000_c000_t2_m106",
+  "r3b_t8_B7_o001_c000_t3_m002_132",
+  "r3b_t8_B7_o001_c000_t2_m012",
+  "r3b_t8_B7_o002_c000_t3_m002_132",
+  "r3b_t8_B7_o002_c000_t3_m064_136",
+  "r3b_t8_B7_o002_c000_t2_m011",
+  "r3b_t8_B7_o002_c000_t2_m069",
+  "r3b_t8_B7_o002_c000_t2_m094"
+ ],
+ "h_split": [
+  [
+   8,
+   9,
+   10
+  ],
+  [
+   4,
+   5,
+   6,
+   7
+  ]
+ ],
+ "graded": {
+  "cert_57": true,
+  "cert_known_unsat": true,
+  "cert_by_class": true,
+  "shard_19": true,
+  "tools": true,
+  "h_split_3_4": true,
+  "core_known_unsat": true,
+  "core_types_le4": true,
+  "w_sizes": true
+ }
+}

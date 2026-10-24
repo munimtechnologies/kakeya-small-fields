@@ -1,0 +1,553 @@
+[
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 1.95,
+  "instance": "r3b_t8_B7_o000_c000_t2_m511",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   511
+  ],
+  "inv": 10,
+  "type": "proj",
+  "wall_seconds": 3.61,
+  "budget_seconds": 100.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": true,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true,
+   "aniso_w": true
+  },
+  "verified": true
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 7.54,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 9.07,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o000_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 0, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [4, 2, 1], \"au\": 2113664, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t3\", \"maps\": [94, 187]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o000_c000_t3_m094_187_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 1.42,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 6.9,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 8.34,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98231,
+  "clauses": 576785,
+  "aniso_clauses": 127,
+  "seconds": 8.91,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 10.25,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o000_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 0, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [4, 2, 1], \"au\": 2113664, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t2\", \"maps\": [0, 94]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o000_c000_t2_m094_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 1.47,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104767,
+  "clauses": 627105,
+  "aniso_clauses": 255,
+  "seconds": 8.92,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 10.82,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 11.88,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 13.36,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o000_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 0, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [4, 2, 1], \"au\": 2113664, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t3\", \"maps\": [1, 176]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o000_c000_t3_m001_176_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 1.42,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 12.41,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 13.82,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98231,
+  "clauses": 576785,
+  "aniso_clauses": 127,
+  "seconds": 10.58,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 11.92,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o000_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 0, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [4, 2, 1], \"au\": 2113664, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t2\", \"maps\": [0, 86]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o000_c000_t2_m086_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 1.42,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104767,
+  "clauses": 627105,
+  "aniso_clauses": 255,
+  "seconds": 12.25,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 13.67,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 18.15,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 19.64,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o001_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 1, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [8, 4, 2], \"au\": 541097984, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t3\", \"maps\": [2, 132]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o001_c000_t3_m002_132_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 1.57,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 16.47,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 17.95,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98231,
+  "clauses": 576809,
+  "aniso_clauses": 127,
+  "seconds": 27.67,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out3",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 29.05,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "ERROR",
+  "reason": "Command '['/usr/local/bin/python', '/work/m104.py', '--part', 'child', '--spec', '{\"name\": \"r3b_t8_B7_o002_c000\", \"kind\": \"main\", \"t\": 8, \"d\": 11, \"p\": 7, \"pair\": 2, \"cls\": 0, \"x1\": [16, 8, 4, 2, 1], \"r\": [8, 4, 3], \"au\": 541098112, \"class_size\": 168, \"dmeet\": 3}', '--case', '{\"kind\": \"t2\", \"maps\": [0, 11]}', '--idx', '[0, 1, 2, 3, 8, 9, 10, 4]', '--child-out', '/out/r3b_t8_B7_o002_c000_t2_m011_out3_in1.child.json']' returned non-zero exit status 1.",
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out3_in1",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 1.63,
+  "budget_seconds": 100.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104767,
+  "clauses": 627129,
+  "aniso_clauses": 255,
+  "seconds": 23.73,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "in4",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 25.56,
+  "budget_seconds": 100.0
+ }
+]

@@ -1,0 +1,7 @@
+{
+ "graded": {
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true
+ }
+}
