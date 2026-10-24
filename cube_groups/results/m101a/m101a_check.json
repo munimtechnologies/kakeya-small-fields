@@ -1,0 +1,58 @@
+{
+ "spec": "r3b_t8_B7_o000_c000",
+ "sweep": {
+  "hints": 162,
+  "sweep": 144,
+  "base_clauses": 905561,
+  "zero": 64,
+  "in_x1": 30,
+  "case_two": 11,
+  "aniso_n": 0,
+  "clauses": 905953,
+  "aniso": 2047
+ },
+ "relax": {
+  "hints": 162,
+  "sweep": 144,
+  "base_clauses": 543242,
+  "zero": 64,
+  "in_x1": 30,
+  "case_two": 11,
+  "aniso_n": 0,
+  "clauses": 543634,
+  "aniso": 0
+ },
+ "relax_n": {
+  "hints": 162,
+  "sweep": 144,
+  "base_clauses": 543242,
+  "zero": 64,
+  "in_x1": 30,
+  "case_two": 11,
+  "aniso_n": 15,
+  "clauses": 545025,
+  "aniso": 15
+ },
+ "graded": {
+  "classes_68": true,
+  "x1_is_e0_e4": true,
+  "idempotent_as_hand": true,
+  "idempotent_d0_size1": true,
+  "x0_e0": true,
+  "n_in_ker_phi": true,
+  "m100_prefix": true,
+  "counts": true,
+  "aniso_by_mode": true,
+  "shards_cover": true
+ },
+ "idempotent": [
+  [
+   11,
+   5
+  ],
+  [
+   12,
+   10
+  ]
+ ]
+}

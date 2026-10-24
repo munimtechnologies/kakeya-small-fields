@@ -1,0 +1,11 @@
+test_aniso_on_small (test_m101.TestM101.test_aniso_on_small) ... ok
+test_case_two (test_m101.TestM101.test_case_two) ... ok
+test_constants (test_m101.TestM101.test_constants) ... ok
+test_idempotent (test_m101.TestM101.test_idempotent) ... ok
+test_in_x1_small (test_m101.TestM101.test_in_x1_small) ... ok
+test_zero_map_small (test_m101.TestM101.test_zero_map_small) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.060s
+
+OK

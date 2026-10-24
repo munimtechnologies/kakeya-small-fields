@@ -1,0 +1,196 @@
+{
+ "graded": {
+  "check_classes_68": true,
+  "check_x1_is_e0_e4": true,
+  "check_idempotent_as_hand": true,
+  "check_idempotent_d0_size1": true,
+  "check_x0_e0": true,
+  "check_n_in_ker_phi": true,
+  "check_m100_prefix": true,
+  "check_counts": true,
+  "check_aniso_by_mode": true,
+  "check_shards_cover": true,
+  "sweep_complete": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o000_c000_relax": true,
+  "verified_r3b_t8_B7_o000_c000_relax_n": true,
+  "verified_r3b_t8_B7_o003_c000_relax": true,
+  "verified_r3b_t8_B7_o003_c000_relax_n": true
+ },
+ "sweep": {
+  "r3b_t8_B7_o000_c000": [
+   "UNKNOWN",
+   180.04,
+   3
+  ],
+  "r3b_t8_B7_o001_c000": [
+   "UNKNOWN",
+   180.04,
+   3
+  ],
+  "r3b_t8_B7_o002_c000": [
+   "UNKNOWN",
+   180.02,
+   3
+  ],
+  "r3b_t8_B7_o003_c000": [
+   "UNKNOWN",
+   180.02,
+   2
+  ],
+  "r3b_t8_B7_o003_c001": [
+   "UNKNOWN",
+   180.02,
+   2
+  ],
+  "r3b_t8_B7_o003_c002": [
+   "UNKNOWN",
+   180.02,
+   2
+  ],
+  "r3b_t8_B7_o003_c003": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o003_c004": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o004_c000": [
+   "UNKNOWN",
+   180.02,
+   2
+  ],
+  "r3b_t8_B7_o004_c001": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o005_c000": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o005_c001": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o005_c002": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o005_c003": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o006_c000": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o006_c001": [
+   "UNKNOWN",
+   180.03,
+   2
+  ],
+  "r3b_t8_B7_o007_c000": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c001": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c002": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c003": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c004": [
+   "UNKNOWN",
+   180.04,
+   1
+  ],
+  "r3b_t8_B7_o007_c005": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c006": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c007": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c008": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o007_c009": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o008_c000": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o008_c001": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o008_c002": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o008_c003": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o008_c004": [
+   "UNKNOWN",
+   180.03,
+   1
+  ]
+ },
+ "control": {
+  "r3b_t8_B7_o000_c000_relax": [
+   "SAT",
+   2.07
+  ],
+  "r3b_t8_B7_o000_c000_relax_n": [
+   "SAT",
+   2.48
+  ],
+  "r3b_t8_B7_o003_c000_relax": [
+   "SAT",
+   2.13
+  ],
+  "r3b_t8_B7_o003_c000_relax_n": [
+   "SAT",
+   2.33
+  ]
+ },
+ "unsat": []
+}
