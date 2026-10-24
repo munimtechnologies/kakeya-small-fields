@@ -1,0 +1,8 @@
+{
+ "graded": {
+  "orbits_equal": true,
+  "orbits_23": true,
+  "pilot": true,
+  "tuples_ok": true
+ }
+}

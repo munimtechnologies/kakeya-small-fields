@@ -1,0 +1,2068 @@
+[
+ {
+  "name": "n4_o00_s3360",
+  "t": 8,
+  "k": 4,
+  "status": "SAT",
+  "seconds": 0.11,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 3,
+  "models_ok": [
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    1084231808,
+    4096,
+    2097152,
+    1073741824,
+    68730012544,
+    35185983037600,
+    18014399742623872,
+    907311895296,
+    9223553459570152580,
+    20547742180870784,
+    11601307893743567489
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    8,
+    11,
+    7,
+    15,
+    26,
+    10,
+    11,
+    137
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     6,
+     8
+    ],
+    [
+     0,
+     7,
+     16
+    ],
+    [
+     0,
+     8,
+     32
+    ],
+    [
+     0,
+     9,
+     64
+    ],
+    [
+     0,
+     10,
+     128
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     16
+    ],
+    [
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     9,
+     2
+    ],
+    [
+     1,
+     10,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     6,
+     0
+    ],
+    [
+     2,
+     7,
+     0
+    ],
+    [
+     2,
+     8,
+     47
+    ],
+    [
+     2,
+     9,
+     0
+    ],
+    [
+     2,
+     10,
+     4
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     6,
+     8
+    ],
+    [
+     3,
+     7,
+     0
+    ],
+    [
+     3,
+     8,
+     0
+    ],
+    [
+     3,
+     9,
+     66
+    ],
+    [
+     3,
+     10,
+     0
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     4,
+     6,
+     0
+    ],
+    [
+     4,
+     7,
+     18
+    ],
+    [
+     4,
+     8,
+     34
+    ],
+    [
+     4,
+     9,
+     0
+    ],
+    [
+     4,
+     10,
+     130
+    ],
+    [
+     5,
+     6,
+     8
+    ],
+    [
+     5,
+     7,
+     0
+    ],
+    [
+     5,
+     8,
+     15
+    ],
+    [
+     5,
+     9,
+     70
+    ],
+    [
+     5,
+     10,
+     134
+    ],
+    [
+     6,
+     7,
+     8
+    ],
+    [
+     6,
+     8,
+     7
+    ],
+    [
+     6,
+     9,
+     0
+    ],
+    [
+     6,
+     10,
+     134
+    ],
+    [
+     7,
+     8,
+     16
+    ],
+    [
+     7,
+     9,
+     80
+    ],
+    [
+     7,
+     10,
+     18
+    ],
+    [
+     8,
+     9,
+     96
+    ],
+    [
+     8,
+     10,
+     139
+    ],
+    [
+     9,
+     10,
+     130
+    ]
+   ]
+  }
+ },
+ {
+  "name": "n4_o01_s5040",
+  "t": 8,
+  "k": 4,
+  "status": "SAT",
+  "seconds": 0.11,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 3,
+  "models_ok": [
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    1083211936,
+    1048576,
+    32,
+    2147483648,
+    72218592160,
+    35187070402592,
+    36028799192694816,
+    36064890628407424,
+    36298181469831381,
+    18331129950241440,
+    9311227486051105697
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    8,
+    11,
+    8,
+    64,
+    65,
+    78,
+    65,
+    199
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     6,
+     8
+    ],
+    [
+     0,
+     7,
+     16
+    ],
+    [
+     0,
+     8,
+     32
+    ],
+    [
+     0,
+     9,
+     64
+    ],
+    [
+     0,
+     10,
+     128
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     28
+    ],
+    [
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     9,
+     2
+    ],
+    [
+     1,
+     10,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     6,
+     0
+    ],
+    [
+     2,
+     7,
+     4
+    ],
+    [
+     2,
+     8,
+     40
+    ],
+    [
+     2,
+     9,
+     4
+    ],
+    [
+     2,
+     10,
+     4
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     6,
+     0
+    ],
+    [
+     3,
+     7,
+     0
+    ],
+    [
+     3,
+     8,
+     0
+    ],
+    [
+     3,
+     9,
+     8
+    ],
+    [
+     3,
+     10,
+     78
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     4,
+     6,
+     10
+    ],
+    [
+     4,
+     7,
+     16
+    ],
+    [
+     4,
+     8,
+     32
+    ],
+    [
+     4,
+     9,
+     74
+    ],
+    [
+     4,
+     10,
+     206
+    ],
+    [
+     5,
+     6,
+     4
+    ],
+    [
+     5,
+     7,
+     4
+    ],
+    [
+     5,
+     8,
+     0
+    ],
+    [
+     5,
+     9,
+     8
+    ],
+    [
+     5,
+     10,
+     78
+    ],
+    [
+     6,
+     7,
+     16
+    ],
+    [
+     6,
+     8,
+     40
+    ],
+    [
+     6,
+     9,
+     72
+    ],
+    [
+     6,
+     10,
+     14
+    ],
+    [
+     7,
+     8,
+     32
+    ],
+    [
+     7,
+     9,
+     24
+    ],
+    [
+     7,
+     10,
+     196
+    ],
+    [
+     8,
+     9,
+     70
+    ],
+    [
+     8,
+     10,
+     70
+    ],
+    [
+     9,
+     10,
+     132
+    ]
+   ]
+  }
+ },
+ {
+  "name": "n4_o04_s840",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.05,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o05_s10080",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o06_s840",
+  "t": 8,
+  "k": 4,
+  "status": "SAT",
+  "seconds": 0.13,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 3,
+  "models_ok": [
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    1892696080,
+    269484048,
+    1073741824,
+    4194304,
+    69798519568,
+    70369552711760,
+    4611686021677989952,
+    4611687065349996723,
+    9241563529373303424,
+    11016231369946555148,
+    16231078680768872992
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    140,
+    34,
+    48,
+    33,
+    237,
+    129
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     6,
+     8
+    ],
+    [
+     0,
+     7,
+     16
+    ],
+    [
+     0,
+     8,
+     32
+    ],
+    [
+     0,
+     9,
+     64
+    ],
+    [
+     0,
+     10,
+     128
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     24
+    ],
+    [
+     1,
+     8,
+     2
+    ],
+    [
+     1,
+     9,
+     2
+    ],
+    [
+     1,
+     10,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     2,
+     6,
+     0
+    ],
+    [
+     2,
+     7,
+     0
+    ],
+    [
+     2,
+     8,
+     0
+    ],
+    [
+     2,
+     9,
+     37
+    ],
+    [
+     2,
+     10,
+     4
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     6,
+     0
+    ],
+    [
+     3,
+     7,
+     0
+    ],
+    [
+     3,
+     8,
+     8
+    ],
+    [
+     3,
+     9,
+     133
+    ],
+    [
+     3,
+     10,
+     0
+    ],
+    [
+     4,
+     5,
+     2
+    ],
+    [
+     4,
+     6,
+     0
+    ],
+    [
+     4,
+     7,
+     2
+    ],
+    [
+     4,
+     8,
+     10
+    ],
+    [
+     4,
+     9,
+     160
+    ],
+    [
+     4,
+     10,
+     6
+    ],
+    [
+     5,
+     6,
+     12
+    ],
+    [
+     5,
+     7,
+     20
+    ],
+    [
+     5,
+     8,
+     173
+    ],
+    [
+     5,
+     9,
+     97
+    ],
+    [
+     5,
+     10,
+     128
+    ],
+    [
+     6,
+     7,
+     0
+    ],
+    [
+     6,
+     8,
+     42
+    ],
+    [
+     6,
+     9,
+     207
+    ],
+    [
+     6,
+     10,
+     171
+    ],
+    [
+     7,
+     8,
+     56
+    ],
+    [
+     7,
+     9,
+     72
+    ],
+    [
+     7,
+     10,
+     177
+    ],
+    [
+     8,
+     9,
+     173
+    ],
+    [
+     8,
+     10,
+     3
+    ],
+    [
+     9,
+     10,
+     227
+    ]
+   ]
+  }
+ },
+ {
+  "name": "n4_o07_s2520",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o11_s3360",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o14_s3360",
+  "t": 8,
+  "k": 4,
+  "status": "SAT",
+  "seconds": 0.29,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 3,
+  "models_ok": [
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    1353744528,
+    269484048,
+    1075838976,
+    10518656,
+    70070055824,
+    18049585436776568,
+    9223407222801065172,
+    18015167407449669,
+    9223562324312939204,
+    9247297413191580844,
+    16789454664545195949
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    7,
+    9,
+    0,
+    11,
+    78,
+    129
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     6,
+     8
+    ],
+    [
+     0,
+     7,
+     16
+    ],
+    [
+     0,
+     8,
+     32
+    ],
+    [
+     0,
+     9,
+     64
+    ],
+    [
+     0,
+     10,
+     128
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     27
+    ],
+    [
+     1,
+     8,
+     2
+    ],
+    [
+     1,
+     9,
+     0
+    ],
+    [
+     1,
+     10,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     6,
+     15
+    ],
+    [
+     2,
+     7,
+     11
+    ],
+    [
+     2,
+     8,
+     37
+    ],
+    [
+     2,
+     9,
+     71
+    ],
+    [
+     2,
+     10,
+     15
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     5,
+     15
+    ],
+    [
+     3,
+     6,
+     8
+    ],
+    [
+     3,
+     7,
+     0
+    ],
+    [
+     3,
+     8,
+     34
+    ],
+    [
+     3,
+     9,
+     7
+    ],
+    [
+     3,
+     10,
+     130
+    ],
+    [
+     4,
+     5,
+     11
+    ],
+    [
+     4,
+     6,
+     5
+    ],
+    [
+     4,
+     7,
+     16
+    ],
+    [
+     4,
+     8,
+     5
+    ],
+    [
+     4,
+     9,
+     66
+    ],
+    [
+     4,
+     10,
+     143
+    ],
+    [
+     5,
+     6,
+     3
+    ],
+    [
+     5,
+     7,
+     0
+    ],
+    [
+     5,
+     8,
+     12
+    ],
+    [
+     5,
+     9,
+     75
+    ],
+    [
+     5,
+     10,
+     137
+    ],
+    [
+     6,
+     7,
+     16
+    ],
+    [
+     6,
+     8,
+     39
+    ],
+    [
+     6,
+     9,
+     64
+    ],
+    [
+     6,
+     10,
+     5
+    ],
+    [
+     7,
+     8,
+     11
+    ],
+    [
+     7,
+     9,
+     87
+    ],
+    [
+     7,
+     10,
+     11
+    ],
+    [
+     8,
+     9,
+     66
+    ],
+    [
+     8,
+     10,
+     34
+    ],
+    [
+     9,
+     10,
+     207
+    ]
+   ]
+  }
+ },
+ {
+  "name": "n4_o18_s15",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.05,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o19_s840",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.05,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o20_s315",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.04,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o21_s315",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o25_s5040",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o28_s840",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.05,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o29_s15",
+  "t": 8,
+  "k": 4,
+  "status": "SAT",
+  "seconds": 0.33,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 3,
+  "models_ok": [
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    2151690272,
+    8192,
+    2097152,
+    536870912,
+    137977929984,
+    9007201945456672,
+    2305843009769447424,
+    63051021327059712,
+    5247856311192447745,
+    2337649685613195296,
+    9308940640117207584
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    8,
+    28,
+    79,
+    134,
+    0,
+    222,
+    201,
+    133
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     6,
+     8
+    ],
+    [
+     0,
+     7,
+     16
+    ],
+    [
+     0,
+     8,
+     32
+    ],
+    [
+     0,
+     9,
+     64
+    ],
+    [
+     0,
+     10,
+     128
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     0
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     2
+    ],
+    [
+     1,
+     8,
+     22
+    ],
+    [
+     1,
+     9,
+     4
+    ],
+    [
+     1,
+     10,
+     6
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     2,
+     6,
+     0
+    ],
+    [
+     2,
+     7,
+     4
+    ],
+    [
+     2,
+     8,
+     72
+    ],
+    [
+     2,
+     9,
+     4
+    ],
+    [
+     2,
+     10,
+     0
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     6,
+     0
+    ],
+    [
+     3,
+     7,
+     6
+    ],
+    [
+     3,
+     8,
+     142
+    ],
+    [
+     3,
+     9,
+     0
+    ],
+    [
+     3,
+     10,
+     8
+    ],
+    [
+     4,
+     5,
+     2
+    ],
+    [
+     4,
+     6,
+     0
+    ],
+    [
+     4,
+     7,
+     18
+    ],
+    [
+     4,
+     8,
+     142
+    ],
+    [
+     4,
+     9,
+     78
+    ],
+    [
+     4,
+     10,
+     82
+    ],
+    [
+     5,
+     6,
+     8
+    ],
+    [
+     5,
+     7,
+     90
+    ],
+    [
+     5,
+     8,
+     126
+    ],
+    [
+     5,
+     9,
+     8
+    ],
+    [
+     5,
+     10,
+     130
+    ],
+    [
+     6,
+     7,
+     88
+    ],
+    [
+     6,
+     8,
+     0
+    ],
+    [
+     6,
+     9,
+     8
+    ],
+    [
+     6,
+     10,
+     142
+    ],
+    [
+     7,
+     8,
+     72
+    ],
+    [
+     7,
+     9,
+     76
+    ],
+    [
+     7,
+     10,
+     74
+    ],
+    [
+     8,
+     9,
+     240
+    ],
+    [
+     8,
+     10,
+     56
+    ],
+    [
+     9,
+     10,
+     76
+    ]
+   ]
+  }
+ },
+ {
+  "name": "n4_o30_s315",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o34_s2520",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o35_s315",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o39_s210",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.06,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o40_s105",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o41_s630",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o48_s5040",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.09,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "n4_o57_s1680",
+  "t": 8,
+  "k": 4,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 2047,
+  "aniso_expected": 2047,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ }
+]

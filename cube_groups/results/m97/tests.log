@@ -1,0 +1,13 @@
+test_idempotent_orbits (test_m97.TestM97.test_idempotent_orbits) ... ok
+test_instances (test_m97.TestM97.test_instances) ... ok
+test_invertible_in (test_m97.TestM97.test_invertible_in) ... ok
+test_mat_x (test_m97.TestM97.test_mat_x) ... ok
+test_reduced_shift (test_m97.TestM97.test_reduced_shift) ... ok
+test_reduced_t4 (test_m97.TestM97.test_reduced_t4) ... ok
+test_reduced_witness (test_m97.TestM97.test_reduced_witness) ... ok
+test_squares_t4 (test_m97.TestM97.test_squares_t4) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.010s
+
+OK

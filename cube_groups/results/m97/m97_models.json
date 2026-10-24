@@ -1,0 +1,990 @@
+[
+ {
+  "name": "t4_N",
+  "t": 4,
+  "k": 2,
+  "status": "SAT",
+  "seconds": 0.0,
+  "aniso_dropped": 31,
+  "aniso_expected": 31,
+  "models": 6,
+  "models_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    196,
+    64,
+    16464,
+    9653,
+    37108
+   ],
+   "s": [
+    1,
+    2,
+    8,
+    13,
+    9
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     4,
+     8
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     10
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     4,
+     10
+    ],
+    [
+     3,
+     4,
+     14
+    ]
+   ]
+  }
+ },
+ {
+  "name": "t4_IN",
+  "t": 4,
+  "k": 2,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 31,
+  "aniso_expected": 31,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "t4_E",
+  "t": 4,
+  "k": 2,
+  "status": "SAT",
+  "seconds": 0.0,
+  "aniso_dropped": 31,
+  "aniso_expected": 31,
+  "models": 6,
+  "models_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    76,
+    68,
+    1276,
+    36821,
+    54381
+   ],
+   "s": [
+    1,
+    2,
+    3,
+    5,
+    9
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     4,
+     8
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     3,
+     7
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     2,
+     3,
+     6
+    ],
+    [
+     2,
+     4,
+     8
+    ],
+    [
+     3,
+     4,
+     11
+    ]
+   ]
+  }
+ },
+ {
+  "name": "t4_F",
+  "t": 4,
+  "k": 2,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 31,
+  "aniso_expected": 31,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "t6_shift",
+  "t": 6,
+  "k": 3,
+  "status": "UNSAT",
+  "seconds": 0.0,
+  "aniso_dropped": 255,
+  "aniso_expected": 255,
+  "models": 0,
+  "models_ok": [],
+  "checks": []
+ },
+ {
+  "name": "t6_e00e11",
+  "t": 6,
+  "k": 3,
+  "status": "SAT",
+  "seconds": 0.01,
+  "aniso_dropped": 255,
+  "aniso_expected": 255,
+  "models": 6,
+  "models_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    68120,
+    520,
+    65552,
+    2199256,
+    268656152,
+    34375215185,
+    891476389,
+    44294030040
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    4,
+    5,
+    4,
+    7,
+    0
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     2
+    ],
+    [
+     0,
+     4,
+     4
+    ],
+    [
+     0,
+     5,
+     8
+    ],
+    [
+     0,
+     6,
+     16
+    ],
+    [
+     0,
+     7,
+     32
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     4,
+     0
+    ],
+    [
+     1,
+     5,
+     15
+    ],
+    [
+     1,
+     6,
+     2
+    ],
+    [
+     1,
+     7,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     4
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     2,
+     6,
+     18
+    ],
+    [
+     2,
+     7,
+     4
+    ],
+    [
+     3,
+     4,
+     6
+    ],
+    [
+     3,
+     5,
+     15
+    ],
+    [
+     3,
+     6,
+     16
+    ],
+    [
+     3,
+     7,
+     4
+    ],
+    [
+     4,
+     5,
+     12
+    ],
+    [
+     4,
+     6,
+     2
+    ],
+    [
+     4,
+     7,
+     36
+    ],
+    [
+     5,
+     6,
+     21
+    ],
+    [
+     5,
+     7,
+     45
+    ],
+    [
+     6,
+     7,
+     36
+    ]
+   ]
+  }
+ },
+ {
+  "name": "t6_e00e12",
+  "t": 6,
+  "k": 3,
+  "status": "SAT",
+  "seconds": 0.01,
+  "aniso_dropped": 255,
+  "aniso_expected": 255,
+  "models": 6,
+  "models_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "checks": [
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   },
+   {
+    "coeff_ok": true,
+    "anisotropic": false,
+    "shape": true,
+    "units": true,
+    "inv": true,
+    "lin": true,
+    "a": true,
+    "system": true,
+    "T_into_X1": true,
+    "sigma_N": true,
+    "G_keeps_X1": true,
+    "lemma98": true,
+    "r2": true,
+    "five": true,
+    "lemma46a": true
+   }
+  ],
+  "first_model": {
+   "A": [
+    198696,
+    8,
+    131072,
+    2263240,
+    537073704,
+    548251659,
+    285397000,
+    35636924617
+   ],
+   "s": [
+    1,
+    2,
+    4,
+    4,
+    17,
+    29,
+    2,
+    0
+   ],
+   "B": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     2
+    ],
+    [
+     0,
+     4,
+     4
+    ],
+    [
+     0,
+     5,
+     8
+    ],
+    [
+     0,
+     6,
+     16
+    ],
+    [
+     0,
+     7,
+     32
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     4,
+     0
+    ],
+    [
+     1,
+     5,
+     12
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     2
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     2,
+     6,
+     4
+    ],
+    [
+     2,
+     7,
+     20
+    ],
+    [
+     3,
+     4,
+     2
+    ],
+    [
+     3,
+     5,
+     2
+    ],
+    [
+     3,
+     6,
+     6
+    ],
+    [
+     3,
+     7,
+     20
+    ],
+    [
+     4,
+     5,
+     12
+    ],
+    [
+     4,
+     6,
+     4
+    ],
+    [
+     4,
+     7,
+     52
+    ],
+    [
+     5,
+     6,
+     8
+    ],
+    [
+     5,
+     7,
+     52
+    ],
+    [
+     6,
+     7,
+     22
+    ]
+   ]
+  }
+ }
+]

@@ -1,0 +1,382 @@
+{
+ "graded": {
+  "selfcheck_orbits_equal": true,
+  "selfcheck_orbits_23": true,
+  "selfcheck_pilot": true,
+  "selfcheck_tuples_ok": true,
+  "reduced_all": true,
+  "reduced_t4_N": true,
+  "reduced_t4_IN": true,
+  "reduced_t4_E": true,
+  "reduced_t4_F": true,
+  "reduced_t6_shift": true,
+  "reduced_t6_e00e11": true,
+  "reduced_t6_e00e12": true,
+  "models_all": true,
+  "dropped_t4_N": true,
+  "relax_as_m96_t4_N": true,
+  "models_ok_t4_N": true,
+  "consistent_t4_N": true,
+  "dropped_t4_IN": true,
+  "relax_as_m96_t4_IN": true,
+  "dropped_t4_E": true,
+  "relax_as_m96_t4_E": true,
+  "models_ok_t4_E": true,
+  "consistent_t4_E": true,
+  "dropped_t4_F": true,
+  "relax_as_m96_t4_F": true,
+  "dropped_t6_shift": true,
+  "relax_as_m96_t6_shift": true,
+  "dropped_t6_e00e11": true,
+  "relax_as_m96_t6_e00e11": true,
+  "models_ok_t6_e00e11": true,
+  "consistent_t6_e00e11": true,
+  "dropped_t6_e00e12": true,
+  "relax_as_m96_t6_e00e12": true,
+  "models_ok_t6_e00e12": true,
+  "consistent_t6_e00e12": true,
+  "dropped_n4_o00_s3360": true,
+  "models_ok_n4_o00_s3360": true,
+  "consistent_n4_o00_s3360": false,
+  "dropped_n4_o01_s5040": true,
+  "models_ok_n4_o01_s5040": true,
+  "consistent_n4_o01_s5040": true,
+  "dropped_n4_o04_s840": true,
+  "dropped_n4_o05_s10080": true,
+  "dropped_n4_o06_s840": true,
+  "models_ok_n4_o06_s840": true,
+  "consistent_n4_o06_s840": true,
+  "dropped_n4_o07_s2520": true,
+  "dropped_n4_o11_s3360": true,
+  "dropped_n4_o14_s3360": true,
+  "models_ok_n4_o14_s3360": true,
+  "consistent_n4_o14_s3360": false,
+  "dropped_n4_o18_s15": true,
+  "dropped_n4_o19_s840": true,
+  "dropped_n4_o20_s315": true,
+  "dropped_n4_o21_s315": true,
+  "dropped_n4_o25_s5040": true,
+  "dropped_n4_o28_s840": true,
+  "dropped_n4_o29_s15": true,
+  "models_ok_n4_o29_s15": true,
+  "consistent_n4_o29_s15": true,
+  "dropped_n4_o30_s315": true,
+  "dropped_n4_o34_s2520": true,
+  "dropped_n4_o35_s315": true,
+  "dropped_n4_o39_s210": true,
+  "dropped_n4_o40_s105": true,
+  "dropped_n4_o41_s630": true,
+  "dropped_n4_o48_s5040": true,
+  "dropped_n4_o57_s1680": true,
+  "pilot_relax_unsat": true
+ },
+ "reduced": {
+  "t4_N": [
+   "SAT(solved)",
+   "SAT(solved)",
+   "SAT(solved)"
+  ],
+  "t4_IN": [
+   "UNSAT(linear)",
+   "UNSAT(linear)",
+   "UNSAT(linear)"
+  ],
+  "t4_E": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "t4_F": [
+   "UNSAT(linear)",
+   "UNSAT(linear)",
+   "UNSAT(linear)"
+  ],
+  "t6_shift": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "t6_e00e11": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "t6_e00e12": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o00_s3360": [
+   "UNKNOWN(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o01_s5040": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o04_s840": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o05_s10080": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o06_s840": [
+   "SAT(solved)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o07_s2520": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o11_s3360": [
+   "UNSAT(linear)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o14_s3360": [
+   "UNKNOWN(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o18_s15": [
+   "SAT(solved)",
+   "SAT(solved)",
+   "SAT(solved)"
+  ],
+  "n4_o19_s840": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o20_s315": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o21_s315": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o25_s5040": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o28_s840": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o29_s15": [
+   "SAT(solved)",
+   "SAT(solved)",
+   "SAT(solved)"
+  ],
+  "n4_o30_s315": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o34_s2520": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o35_s315": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o39_s210": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o40_s105": [
+   "SAT(solved)",
+   "SAT(solved)",
+   "SAT(solved)"
+  ],
+  "n4_o41_s630": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)",
+   "UNSAT(no_invertible_S)"
+  ],
+  "n4_o48_s5040": [
+   "UNSAT(no_invertible_S)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ],
+  "n4_o57_s1680": [
+   "UNSAT(linear)",
+   "UNSAT(q_zero)",
+   "UNSAT(q_zero)"
+  ]
+ },
+ "t8_relax": {
+  "n4_o00_s3360": [
+   "SAT",
+   0.11,
+   3
+  ],
+  "n4_o01_s5040": [
+   "SAT",
+   0.11,
+   3
+  ],
+  "n4_o04_s840": [
+   "UNSAT",
+   0.05,
+   0
+  ],
+  "n4_o05_s10080": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o06_s840": [
+   "SAT",
+   0.13,
+   3
+  ],
+  "n4_o07_s2520": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o11_s3360": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o14_s3360": [
+   "SAT",
+   0.29,
+   3
+  ],
+  "n4_o18_s15": [
+   "UNSAT",
+   0.05,
+   0
+  ],
+  "n4_o19_s840": [
+   "UNSAT",
+   0.05,
+   0
+  ],
+  "n4_o20_s315": [
+   "UNSAT",
+   0.04,
+   0
+  ],
+  "n4_o21_s315": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o25_s5040": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o28_s840": [
+   "UNSAT",
+   0.05,
+   0
+  ],
+  "n4_o29_s15": [
+   "SAT",
+   0.33,
+   3
+  ],
+  "n4_o30_s315": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o34_s2520": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o35_s315": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o39_s210": [
+   "UNSAT",
+   0.06,
+   0
+  ],
+  "n4_o40_s105": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o41_s630": [
+   "UNSAT",
+   0.0,
+   0
+  ],
+  "n4_o48_s5040": [
+   "UNSAT",
+   0.09,
+   0
+  ],
+  "n4_o57_s1680": [
+   "UNSAT",
+   0.0,
+   0
+  ]
+ },
+ "small_relax": {
+  "t4_N": [
+   "SAT",
+   6
+  ],
+  "t4_IN": [
+   "UNSAT",
+   0
+  ],
+  "t4_E": [
+   "SAT",
+   6
+  ],
+  "t4_F": [
+   "UNSAT",
+   0
+  ],
+  "t6_shift": [
+   "UNSAT",
+   0
+  ],
+  "t6_e00e11": [
+   "SAT",
+   6
+  ],
+  "t6_e00e12": [
+   "SAT",
+   6
+  ]
+ },
+ "orbits_aniso2_unsat": 20,
+ "orbits_aniso1_unsat": 20,
+ "orbits_relax_unsat": 15,
+ "t8_relax_sat": [
+  "n4_o00_s3360",
+  "n4_o01_s5040",
+  "n4_o06_s840",
+  "n4_o14_s3360",
+  "n4_o29_s15"
+ ]
+}
