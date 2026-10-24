@@ -1,0 +1,10 @@
+test_dim2 (test_m103.TestM103.test_dim2) ... ok
+test_dim3 (test_m103.TestM103.test_dim3) ... ok
+test_pilot_data (test_m103.TestM103.test_pilot_data) ... ok
+test_span_and_space (test_m103.TestM103.test_span_and_space) ... ok
+test_subspaces (test_m103.TestM103.test_subspaces) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.072s
+
+OK

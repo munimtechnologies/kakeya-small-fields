@@ -1,0 +1,219 @@
+{
+ "graded": {
+  "subspaces_16": true,
+  "inv_dim2": true,
+  "inv_dim3": true,
+  "types_dim3": true,
+  "scalar_16": true,
+  "m102_labels_found": true,
+  "o000_le4_all_unsat": true,
+  "o000_ge8_all_unknown": true
+ },
+ "m102_cross": {
+  "r3b_t8_B7_o000_c000": {
+   "inv6 F2xF2[x]/x2": {
+    "UNSAT": 4,
+    "UNKNOWN": 12
+   },
+   "inv6": {
+    "UNSAT": 9,
+    "UNKNOWN": 21
+   },
+   "inv4 F2xF4": {
+    "UNSAT": 7
+   },
+   "inv4": {
+    "UNSAT": 19
+   },
+   "inv6 rad2_image": {
+    "UNSAT": 3
+   },
+   "inv6 rad2_kernel": {
+    "UNSAT": 2,
+    "UNKNOWN": 1
+   },
+   "inv4 F2[x]/x3": {
+    "UNSAT": 6
+   },
+   "inv2 F8": {
+    "UNSAT": 2
+   },
+   "inv2": {
+    "UNSAT": 2
+   },
+   "inv4 x(x2+x+1)": {
+    "UNSAT": 4
+   },
+   "inv4 nil3": {
+    "UNSAT": 2
+   },
+   "inv8 F2^3": {
+    "UNKNOWN": 7
+   },
+   "inv8": {
+    "UNKNOWN": 12
+   },
+   "inv10 proj": {
+    "UNKNOWN": 5
+   },
+   "inv10": {
+    "UNKNOWN": 5
+   },
+   "inv8 nil1": {
+    "UNKNOWN": 5
+   },
+   "inv6 x2(x+1)": {
+    "UNKNOWN": 8
+   }
+  },
+  "r3b_t8_B7_o011_c000": {
+   "inv4 F2[x]/x3": {
+    "UNSAT": 1,
+    "UNKNOWN": 5
+   },
+   "inv4": {
+    "UNSAT": 1,
+    "UNKNOWN": 14
+   },
+   "inv8 F2^3": {
+    "UNKNOWN": 6
+   },
+   "inv8": {
+    "UNKNOWN": 9
+   },
+   "inv6 F2xF2[x]/x2": {
+    "UNKNOWN": 13
+   },
+   "inv6": {
+    "UNKNOWN": 24
+   },
+   "inv4 F2xF4": {
+    "UNKNOWN": 6
+   },
+   "inv6 rad2_image": {
+    "UNKNOWN": 3
+   },
+   "inv6 rad2_kernel": {
+    "UNKNOWN": 3
+   },
+   "inv2 F8": {
+    "UNKNOWN": 1
+   },
+   "inv2": {
+    "UNKNOWN": 1
+   },
+   "inv10 proj": {
+    "UNKNOWN": 5
+   },
+   "inv10": {
+    "UNKNOWN": 5
+   },
+   "inv8 nil1": {
+    "UNKNOWN": 3
+   },
+   "inv6 x2(x+1)": {
+    "UNKNOWN": 5
+   },
+   "inv4 x(x2+x+1)": {
+    "UNKNOWN": 2
+   },
+   "inv4 nil3": {
+    "UNKNOWN": 1
+   }
+  }
+ },
+ "plan": {
+  "low": {
+   "r3b_t8_B7_o011_c005": {
+    "inv8": 2,
+    "inv6": 4,
+    "inv4": 4,
+    "inv2": 2,
+    "inv10": 1
+   },
+   "r3b_t8_B7_o004_c000": {
+    "inv4": 31,
+    "inv2": 6
+   },
+   "r3b_t8_B7_o007_c008": {
+    "inv4": 31,
+    "inv2": 6
+   }
+  },
+  "o011": {
+   "r3b_t8_B7_o011_c000": {
+    "inv4": 26,
+    "inv2": 4
+   }
+  }
+ },
+ "dim2": [
+  [
+   "irr",
+   2,
+   24
+  ],
+  [
+   "nil1",
+   8,
+   21
+  ],
+  [
+   "nil3",
+   4,
+   42
+  ],
+  [
+   "proj",
+   10,
+   28
+  ],
+  [
+   "x(x2+x+1)",
+   4,
+   56
+  ],
+  [
+   "x2(x+1)",
+   6,
+   84
+  ]
+ ],
+ "dim3": [
+  [
+   "F2[x]/x3",
+   4,
+   21
+  ],
+  [
+   "F2^3",
+   8,
+   28
+  ],
+  [
+   "F2xF2[x]/x2",
+   6,
+   84
+  ],
+  [
+   "F2xF4",
+   4,
+   28
+  ],
+  [
+   "F8",
+   2,
+   8
+  ],
+  [
+   "rad2_image",
+   6,
+   7
+  ],
+  [
+   "rad2_kernel",
+   6,
+   7
+  ]
+ ]
+}
