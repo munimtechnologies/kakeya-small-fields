@@ -1,0 +1,10 @@
+{
+ "graded": {
+  "orbits_equal": true,
+  "d3_instances": true,
+  "d3_pilot_f1": true,
+  "prefix_d4_equal": true,
+  "prefix_d3_drop": true
+ },
+ "m95_relax_overdrop_d3": 11
+}

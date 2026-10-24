@@ -1,0 +1,12 @@
+test_check_solution_witness (test_m98.TestM98.test_check_solution_witness) ... ok
+test_inverse_rows (test_m98.TestM98.test_inverse_rows) ... ok
+test_invertible_beyond_cap (test_m98.TestM98.test_invertible_beyond_cap) ... ok
+test_model_solution_t4 (test_m98.TestM98.test_model_solution_t4) ... ok
+test_relax_prefix_t4 (test_m98.TestM98.test_relax_prefix_t4) ... ok
+test_rows_of_cols (test_m98.TestM98.test_rows_of_cols) ... ok
+test_tables (test_m98.TestM98.test_tables) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.180s
+
+OK

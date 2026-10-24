@@ -1,0 +1,305 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 30.5 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f.split('/')[-1]) for f in ('sat_aniso.py', 
+
+===== setup-03-python: python cert1_tools.py --dest tools
+configure: making default 'build' directory
+configure: building in default '/work/tools/cadical-rel-2.2.1/build'
+configure: root directory '/work/tools/cadical-rel-2.2.1'
+configure: source directory '/work/tools/cadical-rel-2.2.1/src'
+configure: compiler supports all required C99/C++11 extensions
+configure: compiler configuration supports flexible array members
+configure: unlocked IO with '{putc,getc}_unlocked' seems to work
+configure: 'closefrom' seems to be working
+configure: no 'libcadical.so' shared library generated (without '-shared')
+configure: no 'cadical-dynamic' dynamically linked binary generated (without '-shared')
+configure: compiling C++ with 'g++ -Wall -Wextra -O3 -DNDEBUG'
+configure: compiling C with 'gcc -Wall -Wextra -O3 -DNDEBUG'
+configure: generated 'build/makefile' from '../makefile.in'
+configure: generated '../makefile' as proxy to ...
+configure: ... '/work/tools/cadical-rel-2.2.1/build/makefile'
+configure: linking '/work/tools/cadical-rel-2.2.1/makefile'
+configure: now run 'make' to compile CaDiCaL
+configure: optionally run 'make test'
+make -C "/work/tools/cadical-rel-2.2.1/build"
+make[1]: Entering directory '/work/tools/cadical-rel-2.2.1/build'
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/analyze.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/arena.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/assume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/averages.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backbone.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backtrack.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backward.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/bins.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/block.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ccadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/checker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/clause.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/collect.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/compact.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/condition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/config.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/congruence.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/constrain.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/contract.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cover.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decide.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decompose.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/deduplicate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/definition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/drattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elim.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elimfast.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ema.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/extend.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external_propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/factor.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/file.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flags.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flip.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/format.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/frattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/gates.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/idruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/instantiate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/internal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ipasir.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lidruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/limit.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/logging.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lookahead.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lratchecker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lrattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lucky.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/message.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/minimize.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/options.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/parse.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/phases.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/probe.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/profile.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/proof.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/queue.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/random.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reap.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reduce.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/rephase.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/report.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/resources.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restart.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restore.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/score.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/shrink.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/signal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solution.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solver.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stats.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/subsume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/sweep.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/terminal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ternary.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/tier.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/transred.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/unstable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/util.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/var.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/veripbtracer.cpp
+../scripts/make-build-header.sh > build.hpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/vivify.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk_full_occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/warmup.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/watch.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../contrib/craigtracer.cpp
+gcc -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -x c -c ../src/kitten.c -o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/mobical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/version.cpp
+ar rc libcadical.a analyze.o arena.o assume.o averages.o backbone.o backtrack.o backward.o bins.o block.o ccadical.o checker.o clause.o collect.o compact.o condition.o config.o congruence.o constrain.o contract.o cover.o decide.o decompose.o deduplicate.o definition.o drattracer.o elim.o elimfast.o ema.o extend.o external.o external_propagate.o factor.o file.o flags.o flip.o format.o frattracer.o gates.o idruptracer.o instantiate.o internal.o ipasir.o lidruptracer.o limit.o logging.o lookahead.o lratchecker.o lrattracer.o lucky.o message.o minimize.o occs.o options.o parse.o phases.o probe.o profile.o proof.o propagate.o queue.o random.o reap.o reduce.o rephase.o report.o resources.o restart.o restore.o score.o shrink.o signal.o solution.o solver.o stable.o stats.o subsume.o sweep.o terminal.o ternary.o tier.o transred.o unstable.o util.o var.o veripbtracer.o version.o vivify.o walk.o walk_full_occs.o warmup.o watch.o craigtracer.o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o cadical cadical.o -L. libcadical.a 
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o mobical mobical.o -L. libcadical.a
+make[1]: Leaving directory '/work/tools/cadical-rel-2.2.1/build'
+tools: {"cadical": {"url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz", "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"}, "drat_trim": {"url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c", "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"}}
+
+===== run-01-python: python -m unittest -v test_m98
+
+===== run-02-python: python m98.py --part controls --tools tools --out-dir /out
+SUMMARY controls all_match True {"control_empty_proof_rejected": true, "control_php55_sat": true, "control_php65_verified": true, "tools": true}
+
+===== run-03-python: python m98.py --part certb --tools tools --cap-seconds 300 --minutes 130 --out-dir /out
+solve d3_o00_f01: UNSAT seconds 1.2 wall 4.68 vars 142880 clauses 906143 cert VERIFIED cadical 6.86 s drat 4.41 s proof 72782376 B
+solve d3_o00_f02: UNSAT seconds 1.57 wall 4.93 vars 142880 clauses 906143 cert VERIFIED cadical 6.73 s drat 5.34 s proof 70035162 B
+solve d3_o00_f04: UNSAT seconds 1.51 wall 5.13 vars 142880 clauses 906143 cert VERIFIED cadical 6.14 s drat 4.41 s proof 70315328 B
+solve d3_o00_f08: UNSAT seconds 1.32 wall 4.68 vars 142880 clauses 906143 cert VERIFIED cadical 5.91 s drat 4.51 s proof 68963179 B
+solve d3_o01_f01: UNSAT seconds 1.3 wall 5.13 vars 142880 clauses 906143 cert VERIFIED cadical 7.5 s drat 5.42 s proof 70492098 B
+solve d3_o01_f02: UNSAT seconds 1.14 wall 5.23 vars 142880 clauses 906143 cert VERIFIED cadical 5.64 s drat 3.99 s proof 69893905 B
+solve d3_o01_f08: UNSAT seconds 1.06 wall 4.73 vars 142880 clauses 906143 cert VERIFIED cadical 5.74 s drat 4.04 s proof 70762732 B
+solve d3_o02_f01: UNSAT seconds 0.72 wall 4.43 vars 142880 clauses 906151 cert VERIFIED cadical 0.54 s drat 0.81 s proof 605488 B
+solve d3_o02_f02: UNSAT seconds 0.69 wall 4.34 vars 142880 clauses 906151 cert VERIFIED cadical 0.49 s drat 0.76 s proof 646052 B
+solve d3_o02_f12: UNSAT seconds 0.85 wall 4.65 vars 142880 clauses 906155 cert VERIFIED cadical 4.7 s drat 3.81 s proof 73480232 B
+solve d3_o03_f01: UNSAT seconds 0.69 wall 4.22 vars 142880 clauses 906167 cert VERIFIED cadical 0.58 s drat 1.03 s proof 615617 B
+solve d3_o03_f02: UNSAT seconds 0.65 wall 4.23 vars 142880 clauses 906167 cert VERIFIED cadical 0.55 s drat 0.99 s proof 660326 B
+solve d3_o04_f01: UNSAT seconds 0.79 wall 5.18 vars 142880 clauses 906143 cert VERIFIED cadical 6.36 s drat 3.54 s proof 69451207 B
+solve d3_o04_f04: UNSAT seconds 0.69 wall 3.98 vars 142880 clauses 906143 cert VERIFIED cadical 4.82 s drat 4.65 s proof 72025094 B
+solve d3_o04_f08: UNSAT seconds 0.65 wall 4.43 vars 142880 clauses 906143 cert VERIFIED cadical 4.41 s drat 3.67 s proof 72389454 B
+solve d3_o04_f12: UNSAT seconds 0.78 wall 4.54 vars 142880 clauses 906147 cert VERIFIED cadical 6.02 s drat 4.48 s proof 69375007 B
+solve d3_o05_f01: UNSAT seconds 0.65 wall 4.28 vars 142880 clauses 906151 cert VERIFIED cadical 5.64 s drat 4.36 s proof 69417975 B
+solve d3_o05_f04: UNSAT seconds 0.84 wall 5.06 vars 142880 clauses 906151 cert VERIFIED cadical 5.66 s drat 4.27 s proof 71315795 B
+solve d3_o05_f08: UNSAT seconds 0.72 wall 4.38 vars 142880 clauses 906151 cert VERIFIED cadical 6.13 s drat 3.99 s proof 69277593 B
+solve d3_o06_f01: UNSAT seconds 1.59 wall 5.12 vars 142880 clauses 906143 cert VERIFIED cadical 5.55 s drat 5.56 s proof 70146500 B
+solve d3_o06_f04: UNSAT seconds 0.91 wall 5.23 vars 142880 clauses 906143 cert VERIFIED cadical 5.66 s drat 3.99 s proof 70502326 B
+solve d3_o07_f01: UNSAT seconds 0.73 wall 4.45 vars 142880 clauses 906151 cert VERIFIED cadical 0.53 s drat 0.88 s proof 698663 B
+solve d3_o07_f04: UNSAT seconds 0.82 wall 4.95 vars 142880 clauses 906151 cert VERIFIED cadical 0.72 s drat 0.86 s proof 637735 B
+solve d3_o08_f01: UNSAT seconds 0.69 wall 4.58 vars 142880 clauses 906175 cert VERIFIED cadical 7.35 s drat 4.35 s proof 69431287 B
+solve d3_o08_f04: UNSAT seconds 0.72 wall 4.03 vars 142880 clauses 906175 cert VERIFIED cadical 4.66 s drat 3.54 s proof 71187880 B
+solve d3_o08_f08: UNSAT seconds 0.67 wall 4.74 vars 142880 clauses 906175 cert VERIFIED cadical 4.9 s drat 3.99 s proof 70465186 B
+solve d3_o08_f12: UNSAT seconds 0.71 wall 4.38 vars 142880 clauses 906179 cert VERIFIED cadical 4.93 s drat 3.73 s proof 69730693 B
+solve d3_o09_f01: UNSAT seconds 0.7 wall 4.2 vars 142880 clauses 906175 cert VERIFIED cadical 4.56 s drat 3.91 s proof 69264933 B
+solve d3_o09_f04: UNSAT seconds 0.93 wall 4.33 vars 142880 clauses 906175 cert VERIFIED cadical 5.37 s drat 4.34 s proof 70028529 B
+solve d3_o10_f01: UNSAT seconds 0.79 wall 4.43 vars 142880 clauses 906191 cert VERIFIED cadical 6.29 s drat 3.51 s proof 69190284 B
+solve d3_o10_f04: UNSAT seconds 0.69 wall 3.98 vars 142880 clauses 906191 cert VERIFIED cadical 4.42 s drat 3.62 s proof 71548054 B
+solve d3_o11_f01: UNSAT seconds 0.76 wall 4.08 vars 142880 clauses 906175 cert VERIFIED cadical 5.25 s drat 3.99 s proof 69039838 B
+solve d3_o11_f08: UNSAT seconds 0.64 wall 3.94 vars 142880 clauses 906175 cert VERIFIED cadical 4.5 s drat 3.47 s proof 69061052 B
+solve d3_o12_f01: UNSAT seconds 0.64 wall 4.18 vars 142880 clauses 906183 cert VERIFIED cadical 3.47 s drat 2.02 s proof 27123554 B
+solve d3_o12_f08: UNSAT seconds 0.71 wall 4.08 vars 142880 clauses 906183 cert VERIFIED cadical 5.01 s drat 3.76 s proof 71211092 B
+solve d3_o13_f01: UNSAT seconds 0.67 wall 4.69 vars 142880 clauses 906199 cert VERIFIED cadical 4.5 s drat 3.47 s proof 68797634 B
+solve d3_o13_f08: UNSAT seconds 0.7 wall 3.98 vars 142880 clauses 906199 cert VERIFIED cadical 4.48 s drat 3.97 s proof 70407947 B
+solve d3_o13_f10: UNSAT seconds 0.73 wall 4.16 vars 142880 clauses 906203 cert VERIFIED cadical 4.67 s drat 3.66 s proof 69043193 B
+solve d3_o14_f01: UNSAT seconds 0.9 wall 4.18 vars 142880 clauses 906159 cert VERIFIED cadical 4.94 s drat 4.17 s proof 69254924 B
+solve d3_o14_f02: UNSAT seconds 5.0 wall 8.65 vars 142880 clauses 906159 cert VERIFIED cadical 4.7 s drat 4.27 s proof 70824343 B
+solve d3_o14_f04: UNSAT seconds 1.72 wall 5.23 vars 142880 clauses 906159 cert VERIFIED cadical 4.84 s drat 3.84 s proof 69793782 B
+solve d3_o14_f08: UNSAT seconds 1.56 wall 4.88 vars 142880 clauses 906159 cert VERIFIED cadical 4.75 s drat 4.31 s proof 69410106 B
+solve d3_o15_f01: UNSAT seconds 0.63 wall 3.88 vars 142880 clauses 906183 cert VERIFIED cadical 4.45 s drat 3.47 s proof 68921741 B
+solve d3_o15_f08: UNSAT seconds 0.67 wall 3.92 vars 142880 clauses 906183 cert VERIFIED cadical 5.59 s drat 3.79 s proof 70481060 B
+solve d3_o16_f01: UNSAT seconds 0.64 wall 4.05 vars 142880 clauses 906271 cert VERIFIED cadical 4.56 s drat 3.46 s proof 68400127 B
+solve d3_o17_f01: UNSAT seconds 0.63 wall 4.08 vars 142880 clauses 906303 cert VERIFIED cadical 5.0 s drat 3.82 s proof 68642144 B
+solve d3_o18_f02: UNSAT seconds 0.65 wall 4.33 vars 142880 clauses 906143 cert VERIFIED cadical 4.04 s drat 3.64 s proof 70574075 B
+solve d3_o18_f04: UNSAT seconds 0.7 wall 4.04 vars 142880 clauses 906143 cert VERIFIED cadical 4.44 s drat 3.49 s proof 70649298 B
+solve d3_o18_f06: UNSAT seconds 0.93 wall 4.43 vars 142880 clauses 906147 cert VERIFIED cadical 3.98 s drat 3.87 s proof 71228039 B
+solve d3_o18_f08: UNSAT seconds 0.7 wall 4.08 vars 142880 clauses 906143 cert VERIFIED cadical 4.21 s drat 3.51 s proof 70654239 B
+solve d3_o18_f10: UNSAT seconds 0.66 wall 4.28 vars 142880 clauses 906147 cert VERIFIED cadical 4.53 s drat 3.55 s proof 71547718 B
+solve d3_o18_f12: UNSAT seconds 0.77 wall 4.68 vars 142880 clauses 906147 cert VERIFIED cadical 5.99 s drat 3.8 s proof 71645049 B
+solve d3_o18_f14: UNSAT seconds 0.68 wall 4.09 vars 142880 clauses 906151 cert VERIFIED cadical 4.47 s drat 4.2 s proof 68404313 B
+solve d3_o19_f02: UNSAT seconds 0.65 wall 3.93 vars 142880 clauses 906159 cert VERIFIED cadical 4.51 s drat 3.8 s proof 72865476 B
+solve d3_o19_f04: UNSAT seconds 0.67 wall 4.23 vars 142880 clauses 906159 cert VERIFIED cadical 4.71 s drat 3.84 s proof 73105476 B
+solve d3_o19_f06: UNSAT seconds 0.72 wall 3.99 vars 142880 clauses 906163 cert VERIFIED cadical 4.46 s drat 4.02 s proof 71400862 B
+solve d3_o19_f08: UNSAT seconds 0.75 wall 4.13 vars 142880 clauses 906159 cert VERIFIED cadical 5.21 s drat 3.79 s proof 69807817 B
+solve d3_o20_f02: UNSAT seconds 0.74 wall 4.09 vars 142880 clauses 906143 cert VERIFIED cadical 4.79 s drat 3.85 s proof 72113411 B
+solve d3_o20_f04: UNSAT seconds 0.73 wall 4.18 vars 142880 clauses 906143 cert VERIFIED cadical 5.88 s drat 4.07 s proof 71843888 B
+solve d3_o20_f06: UNSAT seconds 0.67 wall 4.13 vars 142880 clauses 906147 cert VERIFIED cadical 4.53 s drat 3.76 s proof 70012419 B
+solve d3_o21_f02: UNSAT seconds 0.65 wall 4.13 vars 142880 clauses 906151 cert VERIFIED cadical 0.5 s drat 0.75 s proof 639444 B
+solve d3_o21_f04: UNSAT seconds 0.63 wall 3.87 vars 142880 clauses 906151 cert VERIFIED cadical 4.74 s drat 3.7 s proof 72392803 B
+solve d3_o21_f06: UNSAT seconds 0.72 wall 4.78 vars 142880 clauses 906155 cert VERIFIED cadical 5.14 s drat 3.75 s proof 72326629 B
+solve d3_o22_f02: UNSAT seconds 0.65 wall 3.93 vars 142880 clauses 906183 cert VERIFIED cadical 4.21 s drat 3.82 s proof 70901546 B
+solve d3_o22_f04: UNSAT seconds 0.71 wall 4.13 vars 142880 clauses 906183 cert VERIFIED cadical 4.41 s drat 3.66 s proof 71100729 B
+solve d3_o22_f06: UNSAT seconds 0.67 wall 4.01 vars 142880 clauses 906187 cert VERIFIED cadical 4.24 s drat 3.61 s proof 71087488 B
+solve d3_o22_f08: UNSAT seconds 0.65 wall 4.07 vars 142880 clauses 906183 cert VERIFIED cadical 4.55 s drat 3.62 s proof 70901168 B
+solve d3_o22_f10: UNSAT seconds 0.75 wall 4.03 vars 142880 clauses 906187 cert VERIFIED cadical 5.33 s drat 5.49 s proof 70593531 B
+solve d3_o22_f12: UNSAT seconds 0.9 wall 4.99 vars 142880 clauses 906187 cert VERIFIED cadical 5.4 s drat 3.88 s proof 70578175 B
+solve d3_o22_f14: UNSAT seconds 0.7 wall 3.93 vars 142880 clauses 906191 cert VERIFIED cadical 5.52 s drat 3.94 s proof 70781262 B
+solve d3_o23_f02: UNSAT seconds 0.67 wall 3.95 vars 142880 clauses 906183 cert VERIFIED cadical 4.7 s drat 3.91 s proof 71351787 B
+solve d3_o23_f04: UNSAT seconds 0.67 wall 3.92 vars 142880 clauses 906183 cert VERIFIED cadical 6.09 s drat 4.18 s proof 73875167 B
+solve d3_o23_f06: UNSAT seconds 0.8 wall 4.55 vars 142880 clauses 906187 cert VERIFIED cadical 5.4 s drat 5.34 s proof 71944656 B
+solve d3_o24_f02: UNSAT seconds 0.69 wall 4.33 vars 142880 clauses 906199 cert VERIFIED cadical 4.45 s drat 3.95 s proof 70801303 B
+solve d3_o24_f04: UNSAT seconds 0.87 wall 4.83 vars 142880 clauses 906199 cert VERIFIED cadical 5.22 s drat 4.27 s proof 72907101 B
+solve d3_o24_f06: UNSAT seconds 0.66 wall 4.03 vars 142880 clauses 906203 cert VERIFIED cadical 4.23 s drat 3.71 s proof 70766079 B
+solve d3_o25_f02: UNSAT seconds 0.7 wall 4.28 vars 142880 clauses 906151 cert VERIFIED cadical 5.23 s drat 3.81 s proof 71684140 B
+solve d3_o25_f08: UNSAT seconds 0.65 wall 4.06 vars 142880 clauses 906151 cert VERIFIED cadical 0.48 s drat 0.88 s proof 668945 B
+solve d3_o26_f02: UNSAT seconds 0.64 wall 4.13 vars 142880 clauses 906159 cert VERIFIED cadical 0.49 s drat 0.89 s proof 654486 B
+solve d3_o26_f12: UNSAT seconds 0.79 wall 4.37 vars 142880 clauses 906163 cert VERIFIED cadical 3.62 s drat 3.06 s proof 52150152 B
+solve d3_o27_f02: UNSAT seconds 0.83 wall 4.13 vars 142880 clauses 906175 cert VERIFIED cadical 0.5 s drat 0.76 s proof 661107 B
+solve d3_o28_f02: UNSAT seconds 0.74 wall 4.38 vars 142880 clauses 906159 cert VERIFIED cadical 4.09 s drat 3.86 s proof 70903754 B
+solve d3_o28_f08: UNSAT seconds 0.69 wall 4.13 vars 142880 clauses 906159 cert VERIFIED cadical 4.57 s drat 3.97 s proof 69228871 B
+solve d3_o29_f02: UNSAT seconds 7.52 wall 10.9 vars 142880 clauses 906143 cert VERIFIED cadical 7.17 s drat 13.04 s proof 95119271 B
+solve d3_o30_f02: UNSAT seconds 0.73 wall 4.28 vars 142880 clauses 906151 cert VERIFIED cadical 3.1 s drat 1.86 s proof 27266751 B
+solve d3_o31_f02: UNSAT seconds 0.68 wall 4.4 vars 142880 clauses 906183 cert VERIFIED cadical 4.16 s drat 4.04 s proof 72042582 B
+solve d3_o31_f08: UNSAT seconds 1.13 wall 4.93 vars 142880 clauses 906183 cert VERIFIED cadical 4.8 s drat 3.97 s proof 71324630 B
+solve d3_o31_f10: UNSAT seconds 0.88 wall 4.23 vars 142880 clauses 906187 cert VERIFIED cadical 4.9 s drat 4.45 s proof 70558920 B
+solve d3_o32_f02: UNSAT seconds 1.09 wall 4.49 vars 142880 clauses 906183 cert VERIFIED cadical 5.18 s drat 4.64 s proof 68909325 B
+solve d3_o33_f02: UNSAT seconds 0.67 wall 3.98 vars 142880 clauses 906199 cert VERIFIED cadical 4.34 s drat 4.06 s proof 71320410 B
+solve d3_o34_f02: UNSAT seconds 0.65 wall 4.11 vars 142880 clauses 906167 cert VERIFIED cadical 0.55 s drat 0.77 s proof 659545 B
+solve d3_o34_f08: UNSAT seconds 0.71 wall 4.04 vars 142880 clauses 906167 cert VERIFIED cadical 0.51 s drat 0.92 s proof 626840 B
+solve d3_o35_f02: UNSAT seconds 0.69 wall 4.13 vars 142880 clauses 906159 cert VERIFIED cadical 0.52 s drat 0.76 s proof 666105 B
+solve d3_o36_f02: UNSAT seconds 0.69 wall 4.28 vars 142880 clauses 906191 cert VERIFIED cadical 0.59 s drat 0.76 s proof 623984 B
+solve d3_o36_f08: UNSAT seconds 0.66 wall 4.08 vars 142880 clauses 906191 cert VERIFIED cadical 4.72 s drat 3.72 s proof 71358183 B
+solve d3_o36_f10: UNSAT seconds 0.71 wall 4.0 vars 142880 clauses 906195 cert VERIFIED cadical 5.03 s drat 4.0 s proof 70587677 B
+solve d3_o37_f02: UNSAT seconds 0.68 wall 4.22 vars 142880 clauses 906191 cert VERIFIED cadical 4.95 s drat 3.85 s proof 70917761 B
+solve d3_o38_f02: UNSAT seconds 0.85 wall 4.54 vars 142880 clauses 906207 cert VERIFIED cadical 0.61 s drat 0.88 s proof 602145 B
+solve d3_o39_f02: UNSAT seconds 0.8 wall 4.25 vars 142880 clauses 906151 cert VERIFIED cadical 4.52 s drat 3.75 s proof 72621624 B
+solve d3_o39_f08: UNSAT seconds 0.68 wall 4.03 vars 142880 clauses 906151 cert VERIFIED cadical 4.94 s drat 3.78 s proof 73015349 B
+solve d3_o39_f10: UNSAT seconds 0.71 wall 4.03 vars 142880 clauses 906155 cert VERIFIED cadical 4.47 s drat 3.75 s proof 69335672 B
+solve d3_o40_f02: UNSAT seconds 0.65 wall 4.08 vars 142880 clauses 906159 cert VERIFIED cadical 4.0 s drat 2.06 s proof 27536976 B
+solve d3_o41_f02: UNSAT seconds 0.69 wall 4.53 vars 142880 clauses 906167 cert VERIFIED cadical 0.59 s drat 1.07 s proof 615258 B
+solve d3_o42_f02: UNSAT seconds 0.65 wall 3.98 vars 142880 clauses 906191 cert VERIFIED cadical 4.93 s drat 4.79 s proof 73569413 B
+solve d3_o42_f08: UNSAT seconds 0.66 wall 4.09 vars 142880 clauses 906191 cert VERIFIED cadical 4.8 s drat 3.81 s proof 71184096 B
+solve d3_o42_f10: UNSAT seconds 0.92 wall 4.23 vars 142880 clauses 906195 cert VERIFIED cadical 4.97 s drat 4.57 s proof 70500525 B
+solve d3_o43_f02: UNSAT seconds 0.65 wall 3.97 vars 142880 clauses 906191 cert VERIFIED cadical 4.5 s drat 3.69 s proof 72322486 B
+solve d3_o43_f08: UNSAT seconds 0.76 wall 4.07 vars 142880 clauses 906191 cert VERIFIED cadical 5.2 s drat 3.85 s proof 71963210 B
+solve d3_o43_f10: UNSAT seconds 0.8 wall 4.48 vars 142880 clauses 906195 cert VERIFIED cadical 4.94 s drat 4.34 s proof 70724432 B
+solve d3_o44_f02: UNSAT seconds 0.67 wall 4.18 vars 142880 clauses 906207 cert VERIFIED cadical 0.48 s drat 0.76 s proof 563513 B
+solve d3_o45_f02: UNSAT seconds 0.68 wall 4.02 vars 142880 clauses 906223 cert VERIFIED cadical 0.5 s drat 0.76 s proof 561520 B
+solve d3_o46_f02: UNSAT seconds 0.67 wall 4.13 vars 142880 clauses 906223 cert VERIFIED cadical 0.49 s drat 0.76 s proof 568143 B
+solve d3_o47_f02: UNSAT seconds 0.67 wall 3.98 vars 142880 clauses 906167 cert VERIFIED cadical 4.95 s drat 3.83 s proof 72029894 B
+solve d3_o47_f04: UNSAT seconds 0.69 wall 4.05 vars 142880 clauses 906167 cert VERIFIED cadical 4.55 s drat 3.69 s proof 69541709 B
+solve d3_o47_f08: UNSAT seconds 0.68 wall 4.23 vars 142880 clauses 906167 cert VERIFIED cadical 5.51 s drat 4.03 s proof 71539890 B
+solve d3_o47_f10: UNSAT seconds 0.86 wall 4.14 vars 142880 clauses 906171 cert VERIFIED cadical 5.13 s drat 4.16 s proof 71039772 B
+solve d3_o48_f02: UNSAT seconds 0.96 wall 4.78 vars 142880 clauses 906175 cert VERIFIED cadical 5.36 s drat 4.5 s proof 74475877 B
+solve d3_o48_f04: UNSAT seconds 0.77 wall 4.53 vars 142880 clauses 906175 cert VERIFIED cadical 5.25 s drat 3.98 s proof 72158269 B
+solve d3_o48_f08: UNSAT seconds 0.66 wall 4.08 vars 142880 clauses 906175 cert VERIFIED cadical 4.69 s drat 4.0 s proof 70052691 B
+solve d3_o49_f02: UNSAT seconds 1.22 wall 4.93 vars 142880 clauses 906167 cert VERIFIED cadical 6.11 s drat 5.7 s proof 70446210 B
+solve d3_o49_f08: UNSAT seconds 0.8 wall 4.94 vars 142880 clauses 906167 cert VERIFIED cadical 5.62 s drat 4.2 s proof 69441019 B
+solve d3_o50_f02: UNSAT seconds 0.67 wall 4.08 vars 142880 clauses 906175 cert VERIFIED cadical 5.04 s drat 4.16 s proof 72374167 B
+solve d3_o50_f08: UNSAT seconds 0.69 wall 4.06 vars 142880 clauses 906175 cert VERIFIED cadical 4.71 s drat 3.77 s proof 71636227 B
+solve d3_o51_f02: UNSAT seconds 0.72 wall 4.43 vars 142880 clauses 906183 cert VERIFIED cadical 4.72 s drat 3.68 s proof 72920807 B
+solve d3_o51_f08: UNSAT seconds 0.85 wall 4.23 vars 142880 clauses 906183 cert VERIFIED cadical 5.4 s drat 4.35 s proof 71483293 B
+solve d3_o51_f10: UNSAT seconds 0.79 wall 4.23 vars 142880 clauses 906187 cert VERIFIED cadical 4.96 s drat 4.37 s proof 71455351 B
+solve d3_o52_f02: UNSAT seconds 0.67 wall 4.28 vars 142880 clauses 906199 cert VERIFIED cadical 4.55 s drat 3.62 s proof 71626597 B
+solve d3_o52_f08: UNSAT seconds 0.66 wall 4.0 vars 142880 clauses 906199 cert VERIFIED cadical 5.19 s drat 4.12 s proof 71081308 B
+solve d3_o52_f10: UNSAT seconds 0.79 wall 4.08 vars 142880 clauses 906203 cert VERIFIED cadical 4.63 s drat 4.0 s proof 69986785 B
+solve d3_o53_f02: UNSAT seconds 0.64 wall 4.03 vars 142880 clauses 906191 cert VERIFIED cadical 5.67 s drat 4.23 s proof 72294742 B
+solve d3_o53_f08: UNSAT seconds 0.65 wall 3.98 vars 142880 clauses 906191 cert VERIFIED cadical 4.53 s drat 3.87 s proof 72339545 B
+solve d3_o53_f10: UNSAT seconds 0.74 wall 4.17 vars 142880 clauses 906195 cert VERIFIED cadical 4.97 s drat 4.08 s proof 71498891 B
+solve d3_o54_f02: UNSAT seconds 0.7 wall 4.24 vars 142880 clauses 906167 cert VERIFIED cadical 4.52 s drat 3.68 s proof 71506500 B
+solve d3_o54_f08: UNSAT seconds 0.68 wall 4.12 vars 142880 clauses 906167 cert VERIFIED cadical 5.43 s drat 4.1 s proof 70392686 B
+solve d3_o55_f02: UNSAT seconds 0.76 wall 4.29 vars 142880 clauses 906191 cert VERIFIED cadical 5.75 s drat 4.58 s proof 71771237 B
+solve d3_o56_f02: UNSAT seconds 0.71 wall 5.28 vars 142880 clauses 906215 cert VERIFIED cadical 5.02 s drat 3.98 s proof 71551371 B
+solve d3_o57_f02: UNSAT seconds 0.68 wall 4.02 vars 142880 clauses 906175 cert VERIFIED cadical 0.53 s drat 0.82 s proof 675454 B
+solve d3_o58_f02: UNSAT seconds 0.65 wall 4.36 vars 142880 clauses 906191 cert VERIFIED cadical 4.6 s drat 3.77 s proof 71527827 B
+solve d3_o59_f03: UNSAT seconds 1.18 wall 4.52 vars 142880 clauses 906187 cert VERIFIED cadical 4.92 s drat 4.6 s proof 70734572 B
+solve d3_o59_f04: UNSAT seconds 0.63 wall 3.98 vars 142880 clauses 906183 cert VERIFIED cadical 4.92 s drat 3.69 s proof 69677989 B
+solve d3_o59_f08: UNSAT seconds 0.69 wall 4.93 vars 142880 clauses 906183 cert VERIFIED cadical 5.22 s drat 3.59 s proof 69530373 B
+solve d3_o60_f03: UNSAT seconds 0.68 wall 4.03 vars 142880 clauses 906179 cert VERIFIED cadical 4.94 s drat 4.08 s proof 69711083 B
+solve d3_o60_f08: UNSAT seconds 0.64 wall 4.15 vars 142880 clauses 906175 cert VERIFIED cadical 0.5 s drat 0.87 s proof 560751 B
+solve d3_o61_f03: UNSAT seconds 0.65 wall 3.93 vars 142880 clauses 906187 cert VERIFIED cadical 4.72 s drat 4.04 s proof 69372688 B
+solve d3_o62_f03: UNSAT seconds 0.72 wall 4.18 vars 142880 clauses 906203 cert VERIFIED cadical 5.25 s drat 3.92 s proof 69954685 B
+solve d3_o64_f04: UNSAT seconds 0.64 wall 4.1 vars 142880 clauses 906199 cert VERIFIED cadical 5.16 s drat 3.99 s proof 69676150 B
+solve d3_o64_f08: UNSAT seconds 0.78 wall 4.78 vars 142880 clauses 906199 cert VERIFIED cadical 4.59 s drat 3.94 s proof 69503394 B
+solve d3_o65_f08: UNSAT seconds 0.64 wall 3.98 vars 142880 clauses 906191 cert VERIFIED cadical 4.88 s drat 3.75 s proof 70405860 B
+solve d3_o67_f04: UNSAT seconds 0.66 wall 4.08 vars 142880 clauses 906175 cert VERIFIED cadical 4.67 s drat 3.76 s proof 71600992 B
+solve d3_o67_f08: UNSAT seconds 0.75 wall 4.13 vars 142880 clauses 906175 cert VERIFIED cadical 0.49 s drat 0.85 s proof 524079 B
+solve d3_o68_f04: UNSAT seconds 0.69 wall 4.08 vars 142880 clauses 906199 cert VERIFIED cadical 5.1 s drat 3.86 s proof 71876090 B
+solve d3_o70_f04: UNSAT seconds 0.7 wall 4.38 vars 142880 clauses 906215 cert VERIFIED cadical 4.91 s drat 4.15 s proof 71402671 B
+solve d3_o70_f08: UNSAT seconds 0.66 wall 4.83 vars 142880 clauses 906215 cert VERIFIED cadical 4.63 s drat 3.69 s proof 70289874 B
+solve d3_o70_f12: UNSAT seconds 0.87 wall 4.21 vars 142880 clauses 906219 cert VERIFIED cadical 4.69 s drat 4.3 s proof 70273552 B
+solve d3_o71_f08: UNSAT seconds 0.67 wall 4.02 vars 142880 clauses 906199 cert VERIFIED cadical 4.76 s drat 3.71 s proof 71440497 B
+solve d3_o72_f08: UNSAT seconds 0.66 wall 4.08 vars 142880 clauses 906207 cert VERIFIED cadical 0.54 s drat 0.84 s proof 558094 B
+solve d3_o73_f08: UNSAT seconds 0.67 wall 4.22 vars 142880 clauses 906223 cert VERIFIED cadical 0.49 s drat 0.77 s proof 557256 B
+solve d3_o75_f08: UNSAT seconds 0.64 wall 3.94 vars 142880 clauses 906287 cert VERIFIED cadical 0.48 s drat 0.76 s proof 501634 B
+solve d3_o76_f08: UNSAT seconds 0.7 wall 4.23 vars 142880 clauses 906295 cert VERIFIED cadical 0.5 s drat 1.01 s proof 475497 B
+SUMMARY certb instances 159 {"UNSAT_VERIFIED": 159} seconds 1944
+
+===== run-04-python: python m98.py --part grade_b --out-dir /out
+SUMMARY grade_b all_match True graded 164 failed [] verified 159 not_verified [] cadical_sum 679.14 drat_sum 559.13 largest_proof 95119271

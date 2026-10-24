@@ -1,0 +1,1129 @@
+{
+ "graded": {
+  "tools": true,
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "certb_all": true,
+  "verified_d3_o00_f01": true,
+  "verified_d3_o00_f02": true,
+  "verified_d3_o00_f04": true,
+  "verified_d3_o00_f08": true,
+  "verified_d3_o01_f01": true,
+  "verified_d3_o01_f02": true,
+  "verified_d3_o01_f08": true,
+  "verified_d3_o02_f01": true,
+  "verified_d3_o02_f02": true,
+  "verified_d3_o02_f12": true,
+  "verified_d3_o03_f01": true,
+  "verified_d3_o03_f02": true,
+  "verified_d3_o04_f01": true,
+  "verified_d3_o04_f04": true,
+  "verified_d3_o04_f08": true,
+  "verified_d3_o04_f12": true,
+  "verified_d3_o05_f01": true,
+  "verified_d3_o05_f04": true,
+  "verified_d3_o05_f08": true,
+  "verified_d3_o06_f01": true,
+  "verified_d3_o06_f04": true,
+  "verified_d3_o07_f01": true,
+  "verified_d3_o07_f04": true,
+  "verified_d3_o08_f01": true,
+  "verified_d3_o08_f04": true,
+  "verified_d3_o08_f08": true,
+  "verified_d3_o08_f12": true,
+  "verified_d3_o09_f01": true,
+  "verified_d3_o09_f04": true,
+  "verified_d3_o10_f01": true,
+  "verified_d3_o10_f04": true,
+  "verified_d3_o11_f01": true,
+  "verified_d3_o11_f08": true,
+  "verified_d3_o12_f01": true,
+  "verified_d3_o12_f08": true,
+  "verified_d3_o13_f01": true,
+  "verified_d3_o13_f08": true,
+  "verified_d3_o13_f10": true,
+  "verified_d3_o14_f01": true,
+  "verified_d3_o14_f02": true,
+  "verified_d3_o14_f04": true,
+  "verified_d3_o14_f08": true,
+  "verified_d3_o15_f01": true,
+  "verified_d3_o15_f08": true,
+  "verified_d3_o16_f01": true,
+  "verified_d3_o17_f01": true,
+  "verified_d3_o18_f02": true,
+  "verified_d3_o18_f04": true,
+  "verified_d3_o18_f06": true,
+  "verified_d3_o18_f08": true,
+  "verified_d3_o18_f10": true,
+  "verified_d3_o18_f12": true,
+  "verified_d3_o18_f14": true,
+  "verified_d3_o19_f02": true,
+  "verified_d3_o19_f04": true,
+  "verified_d3_o19_f06": true,
+  "verified_d3_o19_f08": true,
+  "verified_d3_o20_f02": true,
+  "verified_d3_o20_f04": true,
+  "verified_d3_o20_f06": true,
+  "verified_d3_o21_f02": true,
+  "verified_d3_o21_f04": true,
+  "verified_d3_o21_f06": true,
+  "verified_d3_o22_f02": true,
+  "verified_d3_o22_f04": true,
+  "verified_d3_o22_f06": true,
+  "verified_d3_o22_f08": true,
+  "verified_d3_o22_f10": true,
+  "verified_d3_o22_f12": true,
+  "verified_d3_o22_f14": true,
+  "verified_d3_o23_f02": true,
+  "verified_d3_o23_f04": true,
+  "verified_d3_o23_f06": true,
+  "verified_d3_o24_f02": true,
+  "verified_d3_o24_f04": true,
+  "verified_d3_o24_f06": true,
+  "verified_d3_o25_f02": true,
+  "verified_d3_o25_f08": true,
+  "verified_d3_o26_f02": true,
+  "verified_d3_o26_f12": true,
+  "verified_d3_o27_f02": true,
+  "verified_d3_o28_f02": true,
+  "verified_d3_o28_f08": true,
+  "verified_d3_o29_f02": true,
+  "verified_d3_o30_f02": true,
+  "verified_d3_o31_f02": true,
+  "verified_d3_o31_f08": true,
+  "verified_d3_o31_f10": true,
+  "verified_d3_o32_f02": true,
+  "verified_d3_o33_f02": true,
+  "verified_d3_o34_f02": true,
+  "verified_d3_o34_f08": true,
+  "verified_d3_o35_f02": true,
+  "verified_d3_o36_f02": true,
+  "verified_d3_o36_f08": true,
+  "verified_d3_o36_f10": true,
+  "verified_d3_o37_f02": true,
+  "verified_d3_o38_f02": true,
+  "verified_d3_o39_f02": true,
+  "verified_d3_o39_f08": true,
+  "verified_d3_o39_f10": true,
+  "verified_d3_o40_f02": true,
+  "verified_d3_o41_f02": true,
+  "verified_d3_o42_f02": true,
+  "verified_d3_o42_f08": true,
+  "verified_d3_o42_f10": true,
+  "verified_d3_o43_f02": true,
+  "verified_d3_o43_f08": true,
+  "verified_d3_o43_f10": true,
+  "verified_d3_o44_f02": true,
+  "verified_d3_o45_f02": true,
+  "verified_d3_o46_f02": true,
+  "verified_d3_o47_f02": true,
+  "verified_d3_o47_f04": true,
+  "verified_d3_o47_f08": true,
+  "verified_d3_o47_f10": true,
+  "verified_d3_o48_f02": true,
+  "verified_d3_o48_f04": true,
+  "verified_d3_o48_f08": true,
+  "verified_d3_o49_f02": true,
+  "verified_d3_o49_f08": true,
+  "verified_d3_o50_f02": true,
+  "verified_d3_o50_f08": true,
+  "verified_d3_o51_f02": true,
+  "verified_d3_o51_f08": true,
+  "verified_d3_o51_f10": true,
+  "verified_d3_o52_f02": true,
+  "verified_d3_o52_f08": true,
+  "verified_d3_o52_f10": true,
+  "verified_d3_o53_f02": true,
+  "verified_d3_o53_f08": true,
+  "verified_d3_o53_f10": true,
+  "verified_d3_o54_f02": true,
+  "verified_d3_o54_f08": true,
+  "verified_d3_o55_f02": true,
+  "verified_d3_o56_f02": true,
+  "verified_d3_o57_f02": true,
+  "verified_d3_o58_f02": true,
+  "verified_d3_o59_f03": true,
+  "verified_d3_o59_f04": true,
+  "verified_d3_o59_f08": true,
+  "verified_d3_o60_f03": true,
+  "verified_d3_o60_f08": true,
+  "verified_d3_o61_f03": true,
+  "verified_d3_o62_f03": true,
+  "verified_d3_o64_f04": true,
+  "verified_d3_o64_f08": true,
+  "verified_d3_o65_f08": true,
+  "verified_d3_o67_f04": true,
+  "verified_d3_o67_f08": true,
+  "verified_d3_o68_f04": true,
+  "verified_d3_o70_f04": true,
+  "verified_d3_o70_f08": true,
+  "verified_d3_o70_f12": true,
+  "verified_d3_o71_f08": true,
+  "verified_d3_o72_f08": true,
+  "verified_d3_o73_f08": true,
+  "verified_d3_o75_f08": true,
+  "verified_d3_o76_f08": true
+ },
+ "verified": 159,
+ "not_verified": [],
+ "cadical_sum": 679.14,
+ "drat_sum": 559.13,
+ "largest_proof": 95119271,
+ "rows": {
+  "d3_o00_f01": [
+   "UNSAT",
+   1.2,
+   "VERIFIED",
+   "92213551730fcbb6ebcc1e8f42d830e326d9fa2a8454542229a716a258ec10b5"
+  ],
+  "d3_o00_f02": [
+   "UNSAT",
+   1.57,
+   "VERIFIED",
+   "b7dc78fe1702d56b5e5d4197db2d5db10d079f6b744ce2b92c1e03181d57d20b"
+  ],
+  "d3_o00_f04": [
+   "UNSAT",
+   1.51,
+   "VERIFIED",
+   "ca8873c0673349a8139df1ad14db280d6db8c552de3a772155ad58d66db3a963"
+  ],
+  "d3_o00_f08": [
+   "UNSAT",
+   1.32,
+   "VERIFIED",
+   "11845154a7e68517b939268f91da91c10725d51e014d540dce051344c846dd23"
+  ],
+  "d3_o01_f01": [
+   "UNSAT",
+   1.3,
+   "VERIFIED",
+   "d461fc55ade1b4c7d980e96ac9665ba8b95689c6bff791a3a59ddc7be94f1de8"
+  ],
+  "d3_o01_f02": [
+   "UNSAT",
+   1.14,
+   "VERIFIED",
+   "0b3f93b844ca677876e61719f62ad92066eb3788a8146f9fe37e36bd5a1504c5"
+  ],
+  "d3_o01_f08": [
+   "UNSAT",
+   1.06,
+   "VERIFIED",
+   "ffe5b1f3168786ad56d004a724cf16345d633f8071a44d033bb188cbd6011ad3"
+  ],
+  "d3_o02_f01": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "c606e7c1ca328326ce38c343b8c2c271e5e781e5d8037ccddbb8e2bc006f2af0"
+  ],
+  "d3_o02_f02": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "8c981d3a13530ff04aa6f2ff1cc366b35cb8058fba45ed33d4212f5f1838b11b"
+  ],
+  "d3_o02_f12": [
+   "UNSAT",
+   0.85,
+   "VERIFIED",
+   "3b89d0010bb9d702d134290e6b23240f1d7117bd772a57a3bafa495b88bacded"
+  ],
+  "d3_o03_f01": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "720b4de8b79e02edb55ae1b1f24d7325fce381e069128c3f98d0551a5bceef72"
+  ],
+  "d3_o03_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "c132ca1bef5c97a0da1c15685c184ab9a8d8e9548cdf641a4542e69a72638f60"
+  ],
+  "d3_o04_f01": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   "778ef77b97ed3a6d975854e46ee82547c2e64ba65e115bbeb37d2d9cc97568b2"
+  ],
+  "d3_o04_f04": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "fc35ed381645bf11147658cb0105f5397cd043d86af6b5336b9d00e61472c20e"
+  ],
+  "d3_o04_f08": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "0a51ab170613f13b14e5cd5aa301057fbf0d33f247d730e61cfaf17b17aa87b6"
+  ],
+  "d3_o04_f12": [
+   "UNSAT",
+   0.78,
+   "VERIFIED",
+   "ce82b3727e3a6960d4e8c435cb2052bd55a484ecf01b97ea12bcb4e409aa4514"
+  ],
+  "d3_o05_f01": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "0caed5c671eea6e0851fae3c4e1a4b0cdf8da6fef7a77b2ce1cbbf0cfa9a0775"
+  ],
+  "d3_o05_f04": [
+   "UNSAT",
+   0.84,
+   "VERIFIED",
+   "49def1d60d4887c2d2fb7254fd777be211b760db19fa7fcce49ae7792025c703"
+  ],
+  "d3_o05_f08": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "a7a1a9fd86245bdaa98df52b7d51709c3a319bac8d90f0ec791d9b2af1d2f94c"
+  ],
+  "d3_o06_f01": [
+   "UNSAT",
+   1.59,
+   "VERIFIED",
+   "c2c6f708de2fcd9f77a817420b2945faafb6bdd227d467c71996172c2cc24bfb"
+  ],
+  "d3_o06_f04": [
+   "UNSAT",
+   0.91,
+   "VERIFIED",
+   "d586317058a5b6bb52b2a4fda7dcbf60f546ae59c15accf84e6c10a57810d4f6"
+  ],
+  "d3_o07_f01": [
+   "UNSAT",
+   0.73,
+   "VERIFIED",
+   "2b014f1d27fb7d8ca896e1ba4a0d8d49d27d6c7ebcbda418a3eeb14f963d10ca"
+  ],
+  "d3_o07_f04": [
+   "UNSAT",
+   0.82,
+   "VERIFIED",
+   "100afcc30f2aefe134c1ce87685d20f8476cda47cfa62d4f904af973b9936e7c"
+  ],
+  "d3_o08_f01": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "cf93fcfd387b9f3162fd79c3a3b6b27b0b4b4354e87b784d68cfbe8ff9d4dff7"
+  ],
+  "d3_o08_f04": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "29053a36925c01c7b2eaf4b5e477c9be66de1ad59fe9a01fa4ba2d1a9478a262"
+  ],
+  "d3_o08_f08": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "3c97f173d2c64d721aa2c48ad94328441ec3b76b2b7e44ac9a2dab22a1ea5fee"
+  ],
+  "d3_o08_f12": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "e9aeda8508bbc7c73d046cfb8525cae86a56d871bf7ee7ae0bd8e9aba54ca8e7"
+  ],
+  "d3_o09_f01": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "eee205a1544f46df24e495154bf060243230d3a82744f0a7f77488301b3862cb"
+  ],
+  "d3_o09_f04": [
+   "UNSAT",
+   0.93,
+   "VERIFIED",
+   "19d021c25dab6e9eb2aa1c3457080ede272f75e79edc7b680c83e65029960b8b"
+  ],
+  "d3_o10_f01": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   "bca95226841deee69895df5fa8e48dcf7b1951f114f41dcad6a33e243f40f51a"
+  ],
+  "d3_o10_f04": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "d9f2b103f6963e02435629330174fdef113270ac5f365e4bf17251839b17499b"
+  ],
+  "d3_o11_f01": [
+   "UNSAT",
+   0.76,
+   "VERIFIED",
+   "48fb6eee27d6269b76060022972bd6fa0cca68d62363d793045cee201055a102"
+  ],
+  "d3_o11_f08": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "1d8918b4e6e409f5b33b909fca634d98d213eded454136acc813a8c5b354de1d"
+  ],
+  "d3_o12_f01": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "8065b14a5335faa98425f7b52a452e2149e377a64b032dcc7acf9d2888859c1c"
+  ],
+  "d3_o12_f08": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "9a78aa860355672cd5a69775a2148791e74fee6b9ed525f1ab949a9c3bb35a26"
+  ],
+  "d3_o13_f01": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "d8115406b8a90e0d5ec6e8ff941b50b2815322857f4f7927c0a82f65e0207643"
+  ],
+  "d3_o13_f08": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "ee7d9ab0467dcbb93d502dc735986d39590c07de13ae407d54ad941ff6b14e38"
+  ],
+  "d3_o13_f10": [
+   "UNSAT",
+   0.73,
+   "VERIFIED",
+   "9331802d74c567b86bba99af9b26ca80bb24c10fd287d80ef3cd01067aa9487c"
+  ],
+  "d3_o14_f01": [
+   "UNSAT",
+   0.9,
+   "VERIFIED",
+   "50190e0c7a044eee27a75f08755671601aa10bcc52d535f940dc8e42b3191eda"
+  ],
+  "d3_o14_f02": [
+   "UNSAT",
+   5.0,
+   "VERIFIED",
+   "743f82590d4c09b745a0df58259dadf6c6e3d2023100cda77c64772ac10b8d82"
+  ],
+  "d3_o14_f04": [
+   "UNSAT",
+   1.72,
+   "VERIFIED",
+   "70983906e30ee81ec043b5774c5ed9dbe03ca343d5ee292bae30cc310ac689f1"
+  ],
+  "d3_o14_f08": [
+   "UNSAT",
+   1.56,
+   "VERIFIED",
+   "9c1100e114d6b96bdacdb069767675b17c9657f163fd17031070ca038bd3ff63"
+  ],
+  "d3_o15_f01": [
+   "UNSAT",
+   0.63,
+   "VERIFIED",
+   "7ddf59ef14008cc7ce8e34cc4516dab3129c4bcbf8d898aa72cde35526170104"
+  ],
+  "d3_o15_f08": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "fcdb95595a7a26aea380da5a29986d9d0c8a80e5be922f2d95474448dc0b49fe"
+  ],
+  "d3_o16_f01": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "3fd483ed3220619e10c9fef45f208413a85bd129942aaebcd58a9ad3de86d61a"
+  ],
+  "d3_o17_f01": [
+   "UNSAT",
+   0.63,
+   "VERIFIED",
+   "53dfde4bd54ba4467a9f9e33f944a536261a3047ffec9d9198027f2448900971"
+  ],
+  "d3_o18_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "489c50b04befe6285713bd2be28189231c4cb9817879ca86e07947891a72ed07"
+  ],
+  "d3_o18_f04": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "cfad4350120e55c71fadaf44f979ac2b038ac6de75433db4f5091d07f5a9ff22"
+  ],
+  "d3_o18_f06": [
+   "UNSAT",
+   0.93,
+   "VERIFIED",
+   "310e8a9cca8810c4c96acb8604a3150b9d3952c74225ce72b5f22ecd9274238c"
+  ],
+  "d3_o18_f08": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "4014128c612a14536b1ade01020d7ba72cad9acfdb783a4eac87e97c4d611960"
+  ],
+  "d3_o18_f10": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "11ea699fa7f8e9304dbff71243835ac42442feb190fc1c0e937da16cdc0020e9"
+  ],
+  "d3_o18_f12": [
+   "UNSAT",
+   0.77,
+   "VERIFIED",
+   "6800f64203ea09432b9d21d1d0649f7f1f24fd3e082f6385ed0b2e8723086813"
+  ],
+  "d3_o18_f14": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "efdf0567bbee1db78679eaeb87b7c07739687eaa36783bb48e0667d931963af3"
+  ],
+  "d3_o19_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "d1bc0959cba6928ce55211221570519ea86fb7ddd46c71c3984812312dd2b625"
+  ],
+  "d3_o19_f04": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "622dda8a170937c2ebfd4d1556633e1ad8488eed383eab4b86cf02e2b06337fa"
+  ],
+  "d3_o19_f06": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "597f006abf57e899fcab2a0c67b6f340f2253a4a4bdfc4f8cb7c582c767c2fa0"
+  ],
+  "d3_o19_f08": [
+   "UNSAT",
+   0.75,
+   "VERIFIED",
+   "183e24e552825d63f391e238628f2eb5e00e38638933bd851df4eb9de31c36f6"
+  ],
+  "d3_o20_f02": [
+   "UNSAT",
+   0.74,
+   "VERIFIED",
+   "02f06de72ebcd4e5c385d13f29294a9dcd27bcd303ff9cfbfa6c34f644aea0c2"
+  ],
+  "d3_o20_f04": [
+   "UNSAT",
+   0.73,
+   "VERIFIED",
+   "3d0cb32daec590753968aaad3f3752b67c8dc8f215c76b705c6ee22568bf5fb6"
+  ],
+  "d3_o20_f06": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "ffa62be536d7a700fb42d9d9ccc4fd920f63255662ecf9ef43d01705af7f591f"
+  ],
+  "d3_o21_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "ebe6178f7ad0a351012fe6c1367462def6a2e7ed774d7538302595efcd6d0cf1"
+  ],
+  "d3_o21_f04": [
+   "UNSAT",
+   0.63,
+   "VERIFIED",
+   "b1ff75a7d196740c077566373242d83d1b1482668822019521433a7df82a1d6e"
+  ],
+  "d3_o21_f06": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "ca48b55303987b8e10105c2b8591989d82fb0c73d15c900b6173f7b2d01e8735"
+  ],
+  "d3_o22_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "acfb0479ab013ca657e7ee4ddfe3857e9887c79721abb2e910bb45c9e36b4c78"
+  ],
+  "d3_o22_f04": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "406c56a2e6e305b25466863c24b09f4b56bf1c855542a6ca73688ea421bf9cab"
+  ],
+  "d3_o22_f06": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "091acc796b93947777d4e799da429878f9045b36a789bbbfdf65595ceea17aa2"
+  ],
+  "d3_o22_f08": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "c4bcbe9fb6d41264c21ea2c13cfaa74b382a93684baa8623b3dd83dfaace09a5"
+  ],
+  "d3_o22_f10": [
+   "UNSAT",
+   0.75,
+   "VERIFIED",
+   "63e823d07e77e71546309ceed3892da4c4580c9f3eeab5296ad38a26fded7495"
+  ],
+  "d3_o22_f12": [
+   "UNSAT",
+   0.9,
+   "VERIFIED",
+   "f6f73d5f9c072b92beb523079af85a3c38345ca6cb95a47a52279ce20461b2ca"
+  ],
+  "d3_o22_f14": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "b2f39e8f2db4c8a44d99b3e9c714807b1dbb372c668128ae99514289bf7ec3e5"
+  ],
+  "d3_o23_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "1ea4a770f6039e791ef5b1daca5bf2bbda67b498c38cfe6c9f2af6e4750e4fa5"
+  ],
+  "d3_o23_f04": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "e79ecd002a40ed21b74dd55d5d7ca6e0322ac6fb7ab81d69f7c6eb2ba47c195c"
+  ],
+  "d3_o23_f06": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   "f5f0f5a109987692f327006fb446c1e0db563df0c1e87ed8b7f1ce469a402913"
+  ],
+  "d3_o24_f02": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "73c3353ccd50b9a204e7ee2e1edce27f49e0f65caeb273ff7c23909a84bb62cc"
+  ],
+  "d3_o24_f04": [
+   "UNSAT",
+   0.87,
+   "VERIFIED",
+   "e496d2d70b5fc58a20a477aefa95e61878a3956e5ee90657b5d074bf98a03bad"
+  ],
+  "d3_o24_f06": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "1b05f64a1033d6f3aabafbaee437a75b555fe96f6ac8f627e315949c2f8c803c"
+  ],
+  "d3_o25_f02": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "50ce54ca632b5407bfd56cfa464933b74f50fc44eb6b09f5645d1a1306ecdb52"
+  ],
+  "d3_o25_f08": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "8aeacfa3716234660b5ad93195dec648e2d23789513e8f2dcee06308bc801c07"
+  ],
+  "d3_o26_f02": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "85821ebf4f8088d7dc55039fb7e0ad537d03da01aebc6f9bbfc39c735067a29e"
+  ],
+  "d3_o26_f12": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   "555501ab75077fd320975a976bf32d5f857f5e6851d1370fa5537f2c33ac399c"
+  ],
+  "d3_o27_f02": [
+   "UNSAT",
+   0.83,
+   "VERIFIED",
+   "66082281687fee79b277b01656ec117ad1b37bb4a68bc8406aa58aac3ba97da6"
+  ],
+  "d3_o28_f02": [
+   "UNSAT",
+   0.74,
+   "VERIFIED",
+   "683b53bebd401b55f8a4674d74c9e6d4eca6661780d3bef3786e10ec00ceeaa7"
+  ],
+  "d3_o28_f08": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "352973aa686ea4acc39a0ccf365bb8a68e0152e2de1c92854d588fd2671444ed"
+  ],
+  "d3_o29_f02": [
+   "UNSAT",
+   7.52,
+   "VERIFIED",
+   "2d664dda12b8222f5c73a8ea712a9653de005a78e0127a300e56ff1bf1ef1f58"
+  ],
+  "d3_o30_f02": [
+   "UNSAT",
+   0.73,
+   "VERIFIED",
+   "6232dd1ae4d3d368e1290db2676e885416624e3dc1f5ec2b9dc537c33b3fc849"
+  ],
+  "d3_o31_f02": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "d6f7cc897b10e4bf5f2305f3542e8ca111c7d9ff5b959ceb551c90f4dccd7784"
+  ],
+  "d3_o31_f08": [
+   "UNSAT",
+   1.13,
+   "VERIFIED",
+   "9a6bb5e71729cd8aaf771984385aeab75b4d129afceb275c79340e8b1e6cdefd"
+  ],
+  "d3_o31_f10": [
+   "UNSAT",
+   0.88,
+   "VERIFIED",
+   "aa9bae231265e949242a78049faf5e5b7dab864308ad24f9622938ec1fe82d5d"
+  ],
+  "d3_o32_f02": [
+   "UNSAT",
+   1.09,
+   "VERIFIED",
+   "17dc6594723ff72765f294a5210252613dd9cc4c1c57d9c708eeaca4fb935c4e"
+  ],
+  "d3_o33_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "e1fd969dfe1914fc3ff22d4ffc33291fc423a870e805da8b128c09678ca965b1"
+  ],
+  "d3_o34_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "0879ffb9011a32a6e3b86eb89591a20c8a5a079416e9ec26d0a398a112dfecdb"
+  ],
+  "d3_o34_f08": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "2cc35f3fd4e7d9949892187f6584de5fb97cb359838aee2a6934c629a258fdc6"
+  ],
+  "d3_o35_f02": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "e3435d1ec8468c665fd018198d41211d06175ed7dfe3fce22447c989cb6c12b6"
+  ],
+  "d3_o36_f02": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "3ba9d311146329d4c30d64328d07fca1d48ca6d39e9a235bb98f22b33daed39f"
+  ],
+  "d3_o36_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "f272f0cebcbb3ce29a1b2e3f6a387c1be25d6e7be3e17cb2549ca11525223d0e"
+  ],
+  "d3_o36_f10": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "50c3e2ba8c514609c825bd6d3ccbf73e244f8b0b4b97ea693e85fe69a41ebf2d"
+  ],
+  "d3_o37_f02": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "be65f1b0d1a39292eb1068af2fd21dcb0d0f3ec9d39355fdf258082bab7dfea5"
+  ],
+  "d3_o38_f02": [
+   "UNSAT",
+   0.85,
+   "VERIFIED",
+   "adad87c71cea287f09fcf6e45dd70ff22eb9a102d6dd643ca23869ef8a571352"
+  ],
+  "d3_o39_f02": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   "f64106385dde8917dca317f0e4b8308d77fefffbdb93d0332c802f443d4b3365"
+  ],
+  "d3_o39_f08": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "ab50188e60688f8045b6abfd644a51544d8aeab1ef59ce54899a93e1046c83c9"
+  ],
+  "d3_o39_f10": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "c1542a94edfc5d5286beeed8140e24b933d78c29156e3af325b51205a3c0e34a"
+  ],
+  "d3_o40_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "1bc563f5eb5d9ca7b3ea2fdb0685b7a8742f50fb3bf0272c6860abd08fbd859c"
+  ],
+  "d3_o41_f02": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "06d18b65fb30ab0f00399dba2593589e91f51d17f9872fc078aba4827d8c0ba4"
+  ],
+  "d3_o42_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "ce0d0da478055af505182143588fada76916acf4ad726efe27a6f23a5e5c61e2"
+  ],
+  "d3_o42_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "05fe6ede9b2dc8c3ed5d32f44555badb61a7faaed4ea0e2cfbec186816debd15"
+  ],
+  "d3_o42_f10": [
+   "UNSAT",
+   0.92,
+   "VERIFIED",
+   "0651862a65a337f6edff1d2dfcafff6f2af6fa6552ea567ce2a5929cbd70f113"
+  ],
+  "d3_o43_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "d3b31e81392051a635a710de9a8066bab97371849136e5a0095943b2bf7cdbe8"
+  ],
+  "d3_o43_f08": [
+   "UNSAT",
+   0.76,
+   "VERIFIED",
+   "576d6b6d0dab2023ce15e43f9d10054e90c89b4d4d7160adc3dbbe40d8d5a3c4"
+  ],
+  "d3_o43_f10": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   "5a9d8a16d20d6cda20238fe2f57df4c1b2283dc292f85d12b833d6c0d21ee346"
+  ],
+  "d3_o44_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "d0c1ea2eae1a1e8e52ba4d66f28b8b6076bef6cc4be27187546e9ebe1a67815b"
+  ],
+  "d3_o45_f02": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "bcd362443362d115e0b00eb9f62f92ca6793f6e8cc5c0f6d8bc3546c6811d84a"
+  ],
+  "d3_o46_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "7f6169965729bf7be0016102a55d16175d023f95871e1c055e6f388a61f0d878"
+  ],
+  "d3_o47_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "cc1141695b744549381f4939359184115dcca9d3047e9935428d240e4f98c0d6"
+  ],
+  "d3_o47_f04": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "3aa253a50a10a48ee4c2f1ae2dae7f7ab29cea52b3e9708c5ffeaaf78b0be8b3"
+  ],
+  "d3_o47_f08": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "acabdbf501ccf68127fbe5aa5a22d75599916057a82ae64571666f3656fb04d5"
+  ],
+  "d3_o47_f10": [
+   "UNSAT",
+   0.86,
+   "VERIFIED",
+   "676fa086c951ae6fb6f3f3031f90beb1e4f438835448a521585abc1540e3e66d"
+  ],
+  "d3_o48_f02": [
+   "UNSAT",
+   0.96,
+   "VERIFIED",
+   "0806793ec9ca21d92849e87d50f719110f77183db4f5132acbaadb9b6112e007"
+  ],
+  "d3_o48_f04": [
+   "UNSAT",
+   0.77,
+   "VERIFIED",
+   "c6d2827e8a901bf73ebc19bf21295c50e13dc2b6c516decdeeac8cfa598a157a"
+  ],
+  "d3_o48_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "df908053ca51a744154f5bd670b647bea83dd950e7ef8e2aee90c4efc436ebf4"
+  ],
+  "d3_o49_f02": [
+   "UNSAT",
+   1.22,
+   "VERIFIED",
+   "1efd6fa51f481dd32f21affb29b59e1cece9e9e1326d975aa8f7c31e73f83ece"
+  ],
+  "d3_o49_f08": [
+   "UNSAT",
+   0.8,
+   "VERIFIED",
+   "44f98c1046d028f1be3e107e9481febfc900e1bd101b79ef6fb536e4c2a27485"
+  ],
+  "d3_o50_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "e5dc2d36a269caf4a01dd4b65d311b1945a7ef063ea4e7dd052efe7baf027dc1"
+  ],
+  "d3_o50_f08": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "d14c1ca78fce3cda65124dece671cb4747a9fdfebcfab545ce86d8d1ed0547f5"
+  ],
+  "d3_o51_f02": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "63ffe4eace89f65fc26d755b160c9bab0fab1aa98c461b77d68e3dc1cd697ba9"
+  ],
+  "d3_o51_f08": [
+   "UNSAT",
+   0.85,
+   "VERIFIED",
+   "11f1e50cf7e84d7f686acbe079e16173e2a9dbd989c61254ff56059cbf44e7c9"
+  ],
+  "d3_o51_f10": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   "88baeecafce0910d373e1efbef8f96fa2b07c554294592de0b0a0c8da5e3a5e1"
+  ],
+  "d3_o52_f02": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "173e87b35048898420d2ca406608924c1663eec997b9e5ba1e8528d05bab0133"
+  ],
+  "d3_o52_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "5e71c3e54a8765b94194aa2b8057aeaf11c94f09a35ad5dab9e1203c07238f97"
+  ],
+  "d3_o52_f10": [
+   "UNSAT",
+   0.79,
+   "VERIFIED",
+   "41c08b43661c571b5438e65173d383b812a6136e147f6906758f4de35f9e5ed0"
+  ],
+  "d3_o53_f02": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "f44188d0910a390eccbcfacf360db1723a6be4a251ff1136c2530d1b8f251513"
+  ],
+  "d3_o53_f08": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "f0141da5c0b3950c5a168053d9670319f7b1f7f045841a3ceb6dc129eddb581a"
+  ],
+  "d3_o53_f10": [
+   "UNSAT",
+   0.74,
+   "VERIFIED",
+   "9aa2457e9f9739ce19b50a5c3edf402f591a041bcba45945ba76cdeed923c179"
+  ],
+  "d3_o54_f02": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "86cf5fa8e78913e4b7a915a00d3c0aae547d481d5b302d96fa9714df7098fcf6"
+  ],
+  "d3_o54_f08": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "503d6bcc0db27474e4a157de16dc2514551a727aeb86937ab2dde82a9abd0079"
+  ],
+  "d3_o55_f02": [
+   "UNSAT",
+   0.76,
+   "VERIFIED",
+   "823d7f02cfc3e072d94a232929879c638b1b53eb42fe7d3526d23cc992452de0"
+  ],
+  "d3_o56_f02": [
+   "UNSAT",
+   0.71,
+   "VERIFIED",
+   "acfe2d9b51cee662f0281aaa9515e9e587581ca39165f8802dc4b6741fa022c3"
+  ],
+  "d3_o57_f02": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "610fd5d5feead2348ba2e5a3a2e09bec1d913de29af41a6b67665f4ef68a19c6"
+  ],
+  "d3_o58_f02": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "c4637e0e7388b499b6361611ad13aa4d31fd8a75303044e43cec34c026cfe663"
+  ],
+  "d3_o59_f03": [
+   "UNSAT",
+   1.18,
+   "VERIFIED",
+   "6fe0e76ea7461126d6506e597a292b3442a433a3551dc16f211448c3f7a43b80"
+  ],
+  "d3_o59_f04": [
+   "UNSAT",
+   0.63,
+   "VERIFIED",
+   "d5596266a0fd9f5c66456373c978b59711a508d67d77d582f68d145a2a1c8fd3"
+  ],
+  "d3_o59_f08": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "a2708dd88b2ccb247a9cb88c11de986822e8c2588505bdd7f04adc1260d99c47"
+  ],
+  "d3_o60_f03": [
+   "UNSAT",
+   0.68,
+   "VERIFIED",
+   "0dcd330d9906ba72726309406b8a54afc6b1552d7d094d4ecb3503631be33c11"
+  ],
+  "d3_o60_f08": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "91b510c7279a24db10966f64bddd3067a833eb98e4da0ee82731ac066a4aa134"
+  ],
+  "d3_o61_f03": [
+   "UNSAT",
+   0.65,
+   "VERIFIED",
+   "91d13040658d78de03fc19c31b849e6656721f9785d42c3996b8c5913db87fb1"
+  ],
+  "d3_o62_f03": [
+   "UNSAT",
+   0.72,
+   "VERIFIED",
+   "9e4cf9dd63e720d138fef05df93300fd4261304aef60fd9c455daed9c81ecc75"
+  ],
+  "d3_o64_f04": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "3eb0e4133afb10eb5e6c300644b84f14b8cc168bb766ab915c0fdb75755ced55"
+  ],
+  "d3_o64_f08": [
+   "UNSAT",
+   0.78,
+   "VERIFIED",
+   "5217fa799e5085f26a283f5deffd90d6b8fbe5889aea595408863378a67fe023"
+  ],
+  "d3_o65_f08": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "fa9b031f5c021bade7b417355ea0ece8afd6cdc6b942370314b8758f0584c91c"
+  ],
+  "d3_o67_f04": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "399e0e3630f4565928e552913264f488d1cff99a52ad89abbfe9d7003e730beb"
+  ],
+  "d3_o67_f08": [
+   "UNSAT",
+   0.75,
+   "VERIFIED",
+   "bfa4d349f54018f0db8f21041c3e7b5c42a342ba6081648b5c6d41da9257e2cf"
+  ],
+  "d3_o68_f04": [
+   "UNSAT",
+   0.69,
+   "VERIFIED",
+   "04a7eeaa24fb143414268d5568f69aedb25616189b8315c7d5da31798975d5a5"
+  ],
+  "d3_o70_f04": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "3ab998969878ac22355ee8a58180b9062fef0dffdb3f9815135c0d7c3f13faae"
+  ],
+  "d3_o70_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "38de6dfdeeab01d66aacd08c16b03c545baa294f50779750690bb991f3a66dce"
+  ],
+  "d3_o70_f12": [
+   "UNSAT",
+   0.87,
+   "VERIFIED",
+   "5c7774e17ad1b7b9f3dd36d23f98d342d2e9e1b63d7a62622019a10518b89250"
+  ],
+  "d3_o71_f08": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "1f15979589c6548944b57085e931116421229e5e8151a746549e9174d21e0707"
+  ],
+  "d3_o72_f08": [
+   "UNSAT",
+   0.66,
+   "VERIFIED",
+   "af307404004cb5d654a83cb2a976ec40ffb26398217d1a3891ab90e0235e629e"
+  ],
+  "d3_o73_f08": [
+   "UNSAT",
+   0.67,
+   "VERIFIED",
+   "56f039ff90e82b9b04e481762a85c945e98fde7140f0bf8cea8dd15b7180f182"
+  ],
+  "d3_o75_f08": [
+   "UNSAT",
+   0.64,
+   "VERIFIED",
+   "507787d3dde9d6224566b866aa469588d86389c8c554cc35a3cf1aa64ba7577a"
+  ],
+  "d3_o76_f08": [
+   "UNSAT",
+   0.7,
+   "VERIFIED",
+   "6645073cea1100cba78870bf34e56bacf0dd091eb92f011dda9f7ae91783c98a"
+  ]
+ }
+}

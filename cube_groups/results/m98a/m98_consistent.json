@@ -1,0 +1,950 @@
+[
+ {
+  "name": "t4_N",
+  "t": 4,
+  "status": "SAT",
+  "seconds": 0.0,
+  "dropped": 31,
+  "models": 6,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "t4_E",
+  "t": 4,
+  "status": "SAT",
+  "seconds": 0.0,
+  "dropped": 31,
+  "models": 6,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "t6_e00e11",
+  "t": 6,
+  "status": "SAT",
+  "seconds": 0.01,
+  "dropped": 255,
+  "models": 6,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "t6_e00e12",
+  "t": 6,
+  "status": "SAT",
+  "seconds": 0.01,
+  "dropped": 255,
+  "models": 6,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "n4_o00_s3360",
+  "t": 8,
+  "status": "SAT",
+  "seconds": 0.2,
+  "dropped": 2047,
+  "models": 3,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "n4_o01_s5040",
+  "t": 8,
+  "status": "SAT",
+  "seconds": 0.12,
+  "dropped": 2047,
+  "models": 3,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "n4_o06_s840",
+  "t": 8,
+  "status": "SAT",
+  "seconds": 0.16,
+  "dropped": 2047,
+  "models": 3,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "n4_o14_s3360",
+  "t": 8,
+  "status": "SAT",
+  "seconds": 0.42,
+  "dropped": 2047,
+  "models": 3,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": false,
+     "aniso2": false
+    },
+    "solution_ok": true
+   }
+  ]
+ },
+ {
+  "name": "n4_o29_s15",
+  "t": 8,
+  "status": "SAT",
+  "seconds": 0.46,
+  "dropped": 2047,
+  "models": 3,
+  "solutions": [
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   },
+   {
+    "G_keeps_X1": true,
+    "T_into_X1": true,
+    "T_invertible": true,
+    "identities_ok": true,
+    "q_is_Sw": true,
+    "check": {
+     "square": true,
+     "g_bits": true,
+     "g_x0": true,
+     "g_diag": true,
+     "g_pairs": true,
+     "invertible": true,
+     "z_match": true,
+     "r2": true,
+     "equations": true,
+     "relax_ok": true,
+     "aniso1": true,
+     "aniso2": true
+    },
+    "solution_ok": true
+   }
+  ]
+ }
+]
