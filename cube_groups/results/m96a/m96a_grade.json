@@ -1,0 +1,293 @@
+{
+ "group": "a",
+ "graded": {
+  "selfcheck_t4_N_labels": true,
+  "selfcheck_t4_N_equal_m94": true,
+  "selfcheck_t4_IN_labels": true,
+  "selfcheck_t4_IN_equal_m94": true,
+  "selfcheck_t4_E_labels": true,
+  "selfcheck_t4_E_equal_m94": true,
+  "selfcheck_t4_F_labels": true,
+  "selfcheck_t4_F_equal_m94": true,
+  "selfcheck_t6_shift_labels": true,
+  "selfcheck_t6_shift_equal_m94": true,
+  "selfcheck_t6_shift_sizes": true,
+  "selfcheck_t6_e00e11_labels": true,
+  "selfcheck_t6_e00e11_equal_m94": true,
+  "selfcheck_t6_e00e12_labels": true,
+  "selfcheck_t6_e00e12_equal_m94": true,
+  "all_instances": true,
+  "t4_N_bare_sat": true,
+  "t4_N_full_unsat": true,
+  "t4_N_models_ok": true,
+  "t4_IN_bare_sat": true,
+  "t4_IN_full_unsat": true,
+  "t4_IN_models_ok": true,
+  "t4_IN_core_final_unsat": true,
+  "t4_E_bare_sat": true,
+  "t4_E_full_unsat": true,
+  "t4_E_models_ok": true,
+  "t4_F_bare_sat": true,
+  "t4_F_full_unsat": true,
+  "t4_F_models_ok": true,
+  "t4_F_core_final_unsat": true,
+  "t6_shift_bare_sat": true,
+  "t6_shift_full_unsat": true,
+  "t6_shift_relax_unsat": true,
+  "t6_shift_models_ok": true,
+  "t6_shift_core_final_unsat": true,
+  "t6_e00e11_bare_sat": true,
+  "t6_e00e11_full_unsat": true,
+  "t6_e00e11_models_ok": true,
+  "t6_e00e12_bare_sat": true,
+  "t6_e00e12_full_unsat": true,
+  "t6_e00e12_models_ok": true
+ },
+ "relax": {
+  "t4_N": "SAT",
+  "t4_IN": "UNSAT",
+  "t4_E": "SAT",
+  "t4_F": "UNSAT",
+  "t6_shift": "UNSAT",
+  "t6_e00e11": "SAT",
+  "t6_e00e12": "SAT"
+ },
+ "full": {
+  "t4_N": "UNSAT",
+  "t4_IN": "UNSAT",
+  "t4_E": "UNSAT",
+  "t4_F": "UNSAT",
+  "t6_shift": "UNSAT",
+  "t6_e00e11": "UNSAT",
+  "t6_e00e12": "UNSAT"
+ },
+ "cores": {
+  "t4_N": {
+   "size": null,
+   "minimal": null,
+   "complete": null,
+   "families": null,
+   "core": null,
+   "kept": null
+  },
+  "t4_IN": {
+   "size": 11,
+   "minimal": true,
+   "complete": true,
+   "families": {
+    "nf": 5,
+    "units": 2,
+    "shape": 2,
+    "a": 2
+   },
+   "core": [
+    "a:v1n2",
+    "a:v1n3",
+    "units:T0",
+    "units:T1",
+    "shape:Av1_e0",
+    "shape:s_v1",
+    "nf:Au_e1",
+    "nf:phi_v2",
+    "nf:phi_v3",
+    "nf:phi_v4",
+    "nf:su"
+   ],
+   "kept": {
+    "a:v1n2": "SAT",
+    "a:v1n3": "SAT",
+    "units:T0": "SAT",
+    "units:T1": "SAT",
+    "shape:Av1_e0": "SAT",
+    "shape:s_v1": "SAT",
+    "nf:Au_e1": "SAT",
+    "nf:phi_v2": "SAT",
+    "nf:phi_v3": "SAT",
+    "nf:phi_v4": "SAT",
+    "nf:su": "SAT"
+   }
+  },
+  "t4_E": {
+   "size": null,
+   "minimal": null,
+   "complete": null,
+   "families": null,
+   "core": null,
+   "kept": null
+  },
+  "t4_F": {
+   "size": 12,
+   "minimal": true,
+   "complete": true,
+   "families": {
+    "inv": 3,
+    "nf": 5,
+    "lin": 2,
+    "shape": 2
+   },
+   "core": [
+    "lin:v1c0",
+    "lin:v1c1",
+    "inv:1",
+    "inv:2",
+    "inv:3",
+    "shape:Av1_e0",
+    "shape:s_v1",
+    "nf:Au_e1",
+    "nf:phi_v2",
+    "nf:phi_v3",
+    "nf:phi_v4",
+    "nf:su"
+   ],
+   "kept": {
+    "lin:v1c0": "SAT",
+    "lin:v1c1": "SAT",
+    "inv:1": "SAT",
+    "inv:2": "SAT",
+    "inv:3": "SAT",
+    "shape:Av1_e0": "SAT",
+    "shape:s_v1": "SAT",
+    "nf:Au_e1": "SAT",
+    "nf:phi_v2": "SAT",
+    "nf:phi_v3": "SAT",
+    "nf:phi_v4": "SAT",
+    "nf:su": "SAT"
+   }
+  },
+  "t6_shift": {
+   "size": 19,
+   "minimal": true,
+   "complete": true,
+   "families": {
+    "shape": 5,
+    "a": 4,
+    "nf": 6,
+    "units": 3,
+    "lin": 1
+   },
+   "core": [
+    "a:v1n3",
+    "a:v1n4",
+    "a:v2n3",
+    "a:v2n4",
+    "lin:v2c2",
+    "units:T0",
+    "units:T1",
+    "units:T2",
+    "shape:Av1_e0",
+    "shape:Av1_e2",
+    "shape:Av2_e0",
+    "shape:s_v1",
+    "shape:s_v2",
+    "nf:Au_e1",
+    "nf:Au_e2",
+    "nf:phi_v3",
+    "nf:phi_v5",
+    "nf:phi_v6",
+    "nf:su"
+   ],
+   "kept": {
+    "a:v1n3": "SAT",
+    "a:v1n4": "SAT",
+    "a:v2n3": "SAT",
+    "a:v2n4": "SAT",
+    "lin:v2c2": "SAT",
+    "units:T0": "SAT",
+    "units:T1": "SAT",
+    "units:T2": "SAT",
+    "shape:Av1_e0": "SAT",
+    "shape:Av1_e2": "SAT",
+    "shape:Av2_e0": "SAT",
+    "shape:s_v1": "SAT",
+    "shape:s_v2": "SAT",
+    "nf:Au_e1": "SAT",
+    "nf:Au_e2": "SAT",
+    "nf:phi_v3": "SAT",
+    "nf:phi_v5": "SAT",
+    "nf:phi_v6": "SAT",
+    "nf:su": "SAT"
+   }
+  },
+  "t6_e00e11": {
+   "size": null,
+   "minimal": null,
+   "complete": null,
+   "families": null,
+   "core": null,
+   "kept": null
+  },
+  "t6_e00e12": {
+   "size": null,
+   "minimal": null,
+   "complete": null,
+   "families": null,
+   "core": null,
+   "kept": null
+  }
+ },
+ "ladder": {
+  "t4_N": {
+   "-units-outside": "SAT",
+   "-inv": "SAT",
+   "-lin": "SAT",
+   "-a": "SAT",
+   "-lin-a": "SAT",
+   "-shape": "SAT",
+   "-nf": "SAT"
+  },
+  "t4_IN": {
+   "-units-outside": "SAT",
+   "-inv": "UNSAT",
+   "-lin": "UNSAT",
+   "-a": "UNSAT",
+   "-lin-a": "SAT",
+   "-shape": "SAT",
+   "-nf": "SAT"
+  },
+  "t4_E": {
+   "-units-outside": "SAT",
+   "-inv": "SAT",
+   "-lin": "SAT",
+   "-a": "SAT",
+   "-lin-a": "SAT",
+   "-shape": "SAT",
+   "-nf": "SAT"
+  },
+  "t4_F": {
+   "-units-outside": "UNSAT",
+   "-inv": "UNSAT",
+   "-lin": "UNSAT",
+   "-a": "UNSAT",
+   "-lin-a": "SAT",
+   "-shape": "UNSAT",
+   "-nf": "SAT"
+  },
+  "t6_shift": {
+   "-units-outside": "UNSAT",
+   "-inv": "UNSAT",
+   "-lin": "UNSAT",
+   "-a": "UNSAT",
+   "-lin-a": "SAT",
+   "-shape": "UNSAT",
+   "-nf": "SAT"
+  },
+  "t6_e00e11": {
+   "-units-outside": "SAT",
+   "-inv": "SAT",
+   "-lin": "SAT",
+   "-a": "SAT",
+   "-lin-a": "SAT",
+   "-shape": "SAT",
+   "-nf": "SAT"
+  },
+  "t6_e00e12": {
+   "-units-outside": "SAT",
+   "-inv": "SAT",
+   "-lin": "SAT",
+   "-a": "SAT",
+   "-lin-a": "SAT",
+   "-shape": "SAT",
+   "-nf": "SAT"
+  }
+ }
+}

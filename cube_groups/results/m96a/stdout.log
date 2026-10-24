@@ -1,0 +1,31 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 44.4 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f) for f in ('sat_aniso.py', 'case_b.py', 'c
+
+===== run-01-python: python -m unittest -v test_m96
+
+===== run-02-python: python m96.py --part selfcheck --group a --out-dir /out
+selfcheck: {"t4_E": {"clauses": 12144, "families": {"a": 3, "aniso": 1, "inv": 3, "lin": 2, "nf": 7, "shape": 3, "units": 2}, "first_var": 2253, "start": 12111, "vars": 2254}, "t4_F": {"clauses": 12156, "families": {"a": 3, "aniso": 1, "inv": 3, "lin": 2, "nf": 7, "shape": 3, "units": 2}, "first_var": 2253, "start": 12111, "vars": 2254}, "t4_IN": {"clauses": 12156, "families": {"a": 3, "aniso": 1, "inv": 3, "lin": 2, "nf": 7, "shape": 3, "units": 2}, "first_var": 2253, "start": 12111, "vars": 2254}, "t4_N": {"clauses": 12144, "families": {"a": 3, "aniso": 1, "inv": 3, "lin": 2, "nf": 7, "shape": 3, "units": 2}, "first_var": 2253, "start": 12111, "vars": 2254}, "t6_e00e11": {"clauses": 136177, "families": {"a": 10, "aniso": 1, "inv": 7, "lin": 6, "nf": 11, "shape": 9, "units": 3}, "first_var": 23113, "start": 136023, "vars": 23124}, "t6_e00e12": {"clauses": 136177, "families": {"a": 10, "aniso": 1, "inv": 7, "lin": 6, "nf": 11, "shape": 9, "units": 3}, "first_var": 23113, "start": 136023, "vars": 23124}, "t6_shift": {"clauses": 136183, "families": {"a": 10, "aniso": 1, "inv": 7, "lin": 6, "nf": 11, "shape": 9, "units": 3}, "first_var": 23113, "start": 136023, "vars": 23124}}
+SUMMARY selfcheck group a all_match True graded 15 {"t4_E_equal_m94": true, "t4_E_labels": true, "t4_F_equal_m94": true, "t4_F_labels": true, "t4_IN_equal_m94": true, "t4_IN_labels": true, "t4_N_equal_m94": true, "t4_N_labels": true, "t6_e00e11_equal_m94": true, "t6_e00e11_labels": true, "t6_e00e12_equal_m94": true, "t6_e00e12_labels": true, "t6_shift_equal_m94": true, "t6_shift_labels": true, "t6_shift_sizes": true}
+
+===== run-03-python: python m96.py --part run --group a --cap-seconds 30 --main-cap 300 --minutes 12 --out-dir /out
+inst t4_N: bare SAT(ok,rk0) full UNSAT relax SAT(ok,rk2) 0.0 s | core none (SAT) | ladder -units-outside SAT(ok,rk2) -inv SAT(ok,rk2) -lin SAT(ok,rk2) -a SAT(ok,rk2) -lin-a SAT(ok,rk2) -shape SAT(ok,rk2) -nf SAT(ok,rk2) | calls 10 seconds 0.3
+inst t4_IN: bare SAT(ok,rk0) full UNSAT relax UNSAT 0.0 s | core 11 minimal True final UNSAT {"a": 2, "nf": 5, "shape": 2, "units": 2} ['a:v1n2', 'a:v1n3', 'units:T0', 'units:T1', 'shape:Av1_e0', 'shape:s_v1', 'nf:Au_e1', 'nf:phi_v2', 'nf:phi_v3', 'nf:phi_v4', 'nf:su'] | ladder -units-outside SAT(ok,rk2) -inv UNSAT -lin UNSAT -a UNSAT -lin-a SAT(ok,rk2) -shape SAT(ok,rk2) -nf SAT(ok,rk3) | calls 28 seconds 0.2
+inst t4_E: bare SAT(ok,rk0) full UNSAT relax SAT(ok,rk2) 0.0 s | core none (SAT) | ladder -units-outside SAT(ok,rk2) -inv SAT(ok,rk2) -lin SAT(ok,rk2) -a SAT(ok,rk2) -lin-a SAT(ok,rk2) -shape SAT(ok,rk2) -nf SAT(ok,rk2) | calls 10 seconds 0.2
+inst t4_F: bare SAT(ok,rk0) full UNSAT relax UNSAT 0.0 s | core 12 minimal True final UNSAT {"inv": 3, "lin": 2, "nf": 5, "shape": 2} ['lin:v1c0', 'lin:v1c1', 'inv:1', 'inv:2', 'inv:3', 'shape:Av1_e0', 'shape:s_v1', 'nf:Au_e1', 'nf:phi_v2', 'nf:phi_v3', 'nf:phi_v4', 'nf:su'] | ladder -units-outside UNSAT -inv UNSAT -lin UNSAT -a UNSAT -lin-a SAT(ok,rk2) -shape UNSAT -nf SAT(ok,rk2) | calls 30 seconds 0.2
+inst t6_shift: bare SAT(ok,rk0) full UNSAT relax UNSAT 0.0 s | core 19 minimal True final UNSAT {"a": 4, "lin": 1, "nf": 6, "shape": 5, "units": 3} ['a:v1n3', 'a:v1n4', 'a:v2n3', 'a:v2n4', 'lin:v2c2', 'units:T0', 'units:T1', 'units:T2', 'shape:Av1_e0', 'shape:Av1_e2', 'shape:Av2_e0', 'shape:s_v1', 'shape:s_v2', 'nf:Au_e1', 'nf:Au_e2', 'nf:phi_v3', 'nf:phi_v5', 'nf:phi_v6', 'nf:su'] | ladder -units-outside UNSAT -inv UNSAT -lin UNSAT -a UNSAT -lin-a SAT(ok,rk3) -shape UNSAT -nf SAT(ok,rk5) | calls 43 seconds 5.4
+inst t6_e00e11: bare SAT(ok,rk0) full UNSAT relax SAT(ok,rk3) 0.01 s | core none (SAT) | ladder -units-outside SAT(ok,rk3) -inv SAT(ok,rk3) -lin SAT(ok,rk3) -a SAT(ok,rk3) -lin-a SAT(ok,rk3) -shape SAT(ok,rk3) -nf SAT(ok,rk3) | calls 10 seconds 3.9
+inst t6_e00e12: bare SAT(ok,rk0) full UNSAT relax SAT(ok,rk3) 0.01 s | core none (SAT) | ladder -units-outside SAT(ok,rk3) -inv SAT(ok,rk3) -lin SAT(ok,rk3) -a SAT(ok,rk3) -lin-a SAT(ok,rk3) -shape SAT(ok,rk3) -nf SAT(ok,rk3) | calls 10 seconds 3.7
+SUMMARY run group a instances 7 relax {"t4_E": "SAT", "t4_F": "UNSAT", "t4_IN": "UNSAT", "t4_N": "SAT", "t6_e00e11": "SAT", "t6_e00e12": "SAT", "t6_shift": "UNSAT"} cores {"t4_E": null, "t4_F": 12, "t4_IN": 11, "t4_N": null, "t6_e00e11": null, "t6_e00e12": null, "t6_shift": 19}
+
+===== run-04-python: python m96.py --part grade --group a --out-dir /out
+SUMMARY grade group a all_match True graded 41 failed [] relax {"t4_E": "SAT", "t4_F": "UNSAT", "t4_IN": "UNSAT", "t4_N": "SAT", "t6_e00e11": "SAT", "t6_e00e12": "SAT", "t6_shift": "UNSAT"} cores {"t4_E": [null, null], "t4_F": [12, true], "t4_IN": [11, true], "t4_N": [null, null], "t6_e00e11": [null, null], "t6_e00e12": [null, null], "t6_shift": [19, true]}

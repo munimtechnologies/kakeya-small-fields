@@ -1,0 +1,126 @@
+{
+ "graded": {
+  "t4_N_labels": true,
+  "t4_N_equal_m94": true,
+  "t4_IN_labels": true,
+  "t4_IN_equal_m94": true,
+  "t4_E_labels": true,
+  "t4_E_equal_m94": true,
+  "t4_F_labels": true,
+  "t4_F_equal_m94": true,
+  "t6_shift_labels": true,
+  "t6_shift_equal_m94": true,
+  "t6_shift_sizes": true,
+  "t6_e00e11_labels": true,
+  "t6_e00e11_equal_m94": true,
+  "t6_e00e12_labels": true,
+  "t6_e00e12_equal_m94": true
+ },
+ "instances": {
+  "t4_N": {
+   "vars": 2254,
+   "clauses": 12144,
+   "families": {
+    "lin": 2,
+    "a": 3,
+    "nf": 7,
+    "inv": 3,
+    "shape": 3,
+    "units": 2,
+    "aniso": 1
+   },
+   "start": 12111,
+   "first_var": 2253
+  },
+  "t4_IN": {
+   "vars": 2254,
+   "clauses": 12156,
+   "families": {
+    "lin": 2,
+    "a": 3,
+    "nf": 7,
+    "inv": 3,
+    "shape": 3,
+    "units": 2,
+    "aniso": 1
+   },
+   "start": 12111,
+   "first_var": 2253
+  },
+  "t4_E": {
+   "vars": 2254,
+   "clauses": 12144,
+   "families": {
+    "lin": 2,
+    "a": 3,
+    "nf": 7,
+    "inv": 3,
+    "shape": 3,
+    "units": 2,
+    "aniso": 1
+   },
+   "start": 12111,
+   "first_var": 2253
+  },
+  "t4_F": {
+   "vars": 2254,
+   "clauses": 12156,
+   "families": {
+    "lin": 2,
+    "a": 3,
+    "nf": 7,
+    "inv": 3,
+    "shape": 3,
+    "units": 2,
+    "aniso": 1
+   },
+   "start": 12111,
+   "first_var": 2253
+  },
+  "t6_shift": {
+   "vars": 23124,
+   "clauses": 136183,
+   "families": {
+    "nf": 11,
+    "lin": 6,
+    "a": 10,
+    "inv": 7,
+    "shape": 9,
+    "aniso": 1,
+    "units": 3
+   },
+   "start": 136023,
+   "first_var": 23113
+  },
+  "t6_e00e11": {
+   "vars": 23124,
+   "clauses": 136177,
+   "families": {
+    "nf": 11,
+    "lin": 6,
+    "a": 10,
+    "inv": 7,
+    "shape": 9,
+    "aniso": 1,
+    "units": 3
+   },
+   "start": 136023,
+   "first_var": 23113
+  },
+  "t6_e00e12": {
+   "vars": 23124,
+   "clauses": 136177,
+   "families": {
+    "nf": 11,
+    "lin": 6,
+    "a": 10,
+    "inv": 7,
+    "shape": 9,
+    "aniso": 1,
+    "units": 3
+   },
+   "start": 136023,
+   "first_var": 23113
+  }
+ }
+}

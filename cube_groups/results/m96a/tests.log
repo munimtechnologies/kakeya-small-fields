@@ -1,0 +1,12 @@
+test_bare_t4 (test_m96.TestM96.test_bare_t4) ... ok
+test_core_toy (test_m96.TestM96.test_core_toy) ... ok
+test_d3_labels_t6 (test_m96.TestM96.test_d3_labels_t6) ... ok
+test_equal_to_m94_t4 (test_m96.TestM96.test_equal_to_m94_t4) ... ok
+test_groups_on_data (test_m96.TestM96.test_groups_on_data) ... ok
+test_order (test_m96.TestM96.test_order) ... ok
+test_rejects (test_m96.TestM96.test_rejects) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.616s
+
+OK

@@ -1,0 +1,42 @@
+{
+ "graded": {
+  "t8_n4_labels": true,
+  "t8_n4_equal_m94": true,
+  "t8_n4_sizes": true,
+  "t8_d3_f1_labels": true,
+  "t8_d3_f1_sizes": true
+ },
+ "instances": {
+  "t8_n4": {
+   "vars": 142832,
+   "clauses": 905882,
+   "families": {
+    "a": 21,
+    "nf": 15,
+    "inv": 15,
+    "lin": 12,
+    "shape": 18,
+    "aniso": 1,
+    "units": 4
+   },
+   "start": 905367,
+   "first_var": 142785
+  },
+  "t8_d3_f1": {
+   "vars": 142880,
+   "clauses": 906151,
+   "families": {
+    "a": 21,
+    "nf": 15,
+    "inv": 15,
+    "lin": 12,
+    "shape": 18,
+    "aniso": 1,
+    "units": 3,
+    "outside": 1
+   },
+   "start": 905367,
+   "first_var": 142785
+  }
+ }
+}
