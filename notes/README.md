@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-23)
+## Status (2026-10-24)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -36,6 +36,17 @@ A(t) = t for every t would settle the whole family.
   holds at t = 8 and forces shape (c), which rank 3 cannot have there.
 - **A(9) <= 13 and M(9) <= 13** (Theorem 32, [a23.md](a23.md), by hand on top of Theorem 31): the
   four steps of Theorem 30 at t = 9, which need A(s) = s for s <= 6.
+- **No element of rank 4 at (t, dim V) = (8, 11)** (Corollary 122, [a91.md](a91.md),
+  computer-assisted). Such an element is in Case B in shape (c) (Corollary 121, [a84.md](a84.md)),
+  and A_u has one of three Jordan types (Lemma 94). The commuting matrices M_n of N_Y span a
+  3-dimensional space W that matters only up to conjugation (Lemmas 95 and 96); job m93 found 79
+  orbits of such spaces. Type (N4) is empty (Proposition 37): 14 orbits by hand (Lemmas 98 to 100,
+  [a89.md](a89.md), [a90.md](a90.md)), 6 by a small reduced system that has no solution even
+  without anisotropy, and 3 by CNFs with DRAT proofs (job m95a). Types (N3) and (F3) (d = 3) come
+  down to 159 CNFs (Lemma 97, [a87.md](a87.md)), all UNSAT with DRAT proofs VERIFIED (job m98b).
+  Both halves have positive controls: without the anisotropy clauses, some of the CNFs have models
+  that pass every independent check. The first control, on m94's pilot orbit, had failed (job m95,
+  [a88.md](a88.md)); that orbit is one of the 14 ruled out by hand.
 - Bounds: A(6..12) <= 6, 8, 11, 13, 16, 19, 23 (Corollary 119, [a80.md](a80.md); the earlier table
   of Corollary 49 was recomputed by job m38, and a80_bounds.py's tests check the new one).
 - The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 2), (10, 3), (10, 4),
@@ -101,28 +112,21 @@ A(t) = t for every t would settle the whole family.
   of jobs m85 and m83 that closed o010_c004, o010_c006, o009_c005, o009_c006, o010_c003 and
   o010_c005 (jobs cert7 and cert8, [a86.md](a86.md)), and the 42 re-runs of job m82 that closed
   o008_c000, o008_c001 and o008_c003 (job cert9, [a87.md](a87.md)). So 339 of the 495 5-minute
-  re-runs are certified. Every certificate run so far came back VERIFIED (2390 of 2390, 23 of them
-  for the rank-4 searches of job m95a at t = 8); cert1's 99 sampled instances were certified twice
-  with equal CNF hashes.
+  re-runs are certified. Every certificate run so far came back VERIFIED (2549 of 2549, 182 of them
+  for the rank-4 searches at t = 8: job m95a's 23 and job m98b's 159); cert1's 99 sampled instances
+  were certified twice with equal CNF hashes.
   A certificate covers one CNF only: the encoding, the hints, Lemma 93's unit clauses, Proposition
   33's orbit roots and the reductions are code and hand arguments that no human has checked. Every
   other solver answer in these notes is saved without a proof certificate.
-- Open next ([a83.md](a83.md) to [a88.md](a88.md)): **A(8) <= 10**, which would
-  settle (11, 2) and (14, 10) and comes down to three configurations (Proposition 36, by hand: an
-  element of rank 4 in Case B, or one of rank 3 with x0 outside P and dim P = 7 or 6). The rank-4
-  one is in shape (c) (Corollary 121), with A_u of one of three Jordan types, and in two of them
-  every matrix M_n of N_Y is singular (Lemma 94, by hand); the space W of those matrices matters
-  only up to conjugation, and each type puts a necessary condition on it (Lemma 95, by hand). Job
-  m93 found 79 orbits of such spaces, 23 meeting the condition of (N4), 21 that of (F3) and 73 that
-  of (N3); by Lemma 96 a search may fix the matrices to one representative, and by Lemma 97 the
-  types with d = 3 are one search per orbit and invariant hyperplane. Job m95 ran every case: all 23
-  orbits of (N4), with DRAT proofs, and all 159 instances with d = 3 came back UNSAT. But its
-  positive control, the same CNF without anisotropy, was UNSAT too, so nothing is claimed
-  ([a88.md](a88.md)); job m96 looks for the hypotheses that the contradiction uses. Rank 4 is not
-  yet ruled out. A(9) <= 12, which
-  would settle (11, 3) and (15, 12), also three configurations; A(7) = 7, which would settle
-  (13, 7) through the count and needs 11 configurations. For Theorem 33 itself: DRAT certificates
-  for more of its chain, next the other 156 re-run instances, and review by a human mathematician.
+- Open next ([a83.md](a83.md) to [a91.md](a91.md)): **A(8) <= 10**, which would settle (11, 2) and
+  (14, 10). By Proposition 36 (by hand) and Corollary 122 it now comes down to two rank-3
+  configurations with x0 outside P: (B7)_8 (dim P = 7) and (B6)_8 (dim P = 6). Lemma 101 (by hand)
+  counts 13 and 51 orbits of the pair (ker A_u, Im A_u) in them; job m99 computes the classes of
+  A_u by machine and runs a pilot search. At t = 7 the analogous step took 68 + 420 classes and
+  about 90,000 split instances. A(9) <= 12, which would settle (11, 3) and (15, 12), also three
+  configurations; A(7) = 7, which would settle (13, 7) through the count and needs 11
+  configurations. For Theorem 33 itself: DRAT certificates for more of its chain, next the other
+  156 re-run instances, and review by a human mathematician.
 
 ## The notes, in order
 
@@ -224,8 +228,11 @@ A(t) = t for every t would settle the whole family.
 | [a86.md](a86.md) | results of jobs cert7 and cert8 (15, 15, 17 and 18 graded checks held; **all 77 instances of jobs m85 and m83 that closed o010_c004, o010_c006, o009_c005, o009_c006, o010_c003 and o010_c005 UNSAT in a standalone CaDiCaL rel-2.2.1, every DRAT proof VERIFIED by drat-trim**; thirteen of fifteen guesses held, two slowest-instance guesses missed); 2226 distinct instances behind Theorem 33 now certified, 297 of the 495 re-runs; results of job m93 (12 of 12 graded checks held; **79 orbits of 3-dimensional commutative subspaces of M_4(F_2) without I, 24 of them singular; 23 meet the condition of (N4), 21 that of (F3), 73 have an invariant hyperplane**; five of seven guesses held); **Lemma 96 (by hand: the three matrices M_n can be fixed to any basis of any representative of their orbit, with the type of A_u unchanged; so rank 4 at (8, 11) is at most 117 searches)**; job m94 (one pilot search, (N4) in the largest orbit, with predictions written before it ran; queued); job cert9 (m82's 42 re-runs of o008_c000, o008_c001 and o008_c003, with predictions written before it ran; queued) |
 | [a87.md](a87.md) | results of jobs cert9a and cert9b (16 and 17 graded checks held; **all 42 instances of job m82 that closed o008_c000, o008_c001 and o008_c003 UNSAT in a standalone CaDiCaL rel-2.2.1, every DRAT proof VERIFIED by drat-trim**; seven of seven guesses held); 2268 distinct instances behind Theorem 33 now certified, 339 of the 495 re-runs; results of job m94 (9 of 9 graded checks held; the pilot search of rank 4 at t = 8, type (N4) in m93's largest orbit, UNSAT in 2.57 s); **Lemma 97 (by hand: the types with d = 3 are one search per orbit of W and per hyperplane invariant under the fixed basis)**; job m95 (every orbit of (N4) with DRAT proofs and a positive control without anisotropy, and every case with d = 3, with predictions written before it ran; queued) |
 | [a88.md](a88.md) | results of jobs m95a and m95b (16 and 12 graded checks held; all 23 orbits of (N4) UNSAT with DRAT proofs VERIFIED and all 159 instances with d = 3 UNSAT, but **the positive control failed: the pilot's CNF without its anisotropy clauses is UNSAT too, so by the rule written before the jobs ran no claim is made**); a reading by hand of (S), (a) and (N4) against Lemma 38(a), and which hand lemmas use anisotropy; job m96 (minimal sets of hypotheses that are contradictory without anisotropy, at (4, 2), (6, 3) and (8, 4), with predictions written before it ran; queued) |
+| [a89.md](a89.md) | results of jobs m96a and m96b (41 of 41 and 13 of 13 graded checks held; without anisotropy the CNF of type (N4) has checked models at (4, 2) for M = N and E and at (6, 3) for (E_00, E_11) and (E_00, E_12), none for I + N, F, (N, N^2) or at (8, 4); minimal contradictory sets of hypothesis groups); **Lemma 98 (by hand, without anisotropy: in type (N4), M_y^2 = M_(n(G_y y)) and (G_y + G_y^2) y = 0)**; **Lemma 99 (by hand: at k = 2, M^2 = 0 or M^2 = M; (N, N^2) has no system at (6, 3); with anisotropy no M_y with y != 0 is idempotent, so the 8 orbits of (N4) at (8, 11) whose basis starts with E_00 are empty)**; job m97 (Lemma 98 on solver models, a reduced system, and the control at t = 8; queued) |
+| [a90.md](a90.md) | results of job m97 (67 of 69 graded checks held; every identity of Lemma 98 held on every solver model at t = 4, 6 and 8; **a positive control at t = 8: without anisotropy the (N4) CNF has checked models for orbits 0, 1, 6, 14 and 29**; with anisotropy the reduced system of Lemma 98 is UNSAT for 20 of the 23 orbits; the two failed checks came from a capped search for an invertible S); **Lemma 100 (by hand: the 14 orbits of (N4) whose W contains a non-zero idempotent are empty)**; job m98 (the reduced system against solver models and without a cap, a control for d = 3, DRAT proofs for m95b; queued) |
+| [a91.md](a91.md) | results of jobs m98a and m98b (316 and 164 graded checks held; every pair (G, S) read off 39 solver models solves the reduced system, now decided without a cap; **a positive control for d = 3: 14 of the 159 CNFs have checked models without anisotropy**; **all 159 instances with d = 3 UNSAT, every DRAT proof VERIFIED by drat-trim**); **Proposition 37 (computer-assisted): type (N4) at (8, 11) is empty**; **Corollary 122 (computer-assisted): no element of rank 4 at t = 8 and dim V = 11, so A(8) <= 10 holds if (B7)_8 and (B6)_8 are empty**; **Lemma 101 (by hand): 13 and 51 orbits of (ker A_u, Im A_u) in (B7)_8 and (B6)_8**; job m99 (the classes of A_u in both, by machine, and a pilot search; queued) |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22, m24, m25, m26, m30, m32, m33, m34, m36,
-m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m94, m95b), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003; job cert3, the 45 re-runs of m92; job cert4, the 49 re-runs of m89; job cert5, the 45 re-runs of m87; job cert6, the 49 re-runs of m86; jobs cert7 and cert8, the 77 re-runs of m85 and m83; job cert9, the 42 re-runs of m82; job m95a, its 23 searches of type (N4) at t = 8), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
+m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m94, m95b, m96, m97, m98a), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003; job cert3, the 45 re-runs of m92; job cert4, the 49 re-runs of m89; job cert5, the 45 re-runs of m87; job cert6, the 49 re-runs of m86; jobs cert7 and cert8, the 77 re-runs of m85 and m83; job cert9, the 42 re-runs of m82; job m95a, its 23 searches of type (N4) at t = 8; job m98b, the 159 searches with d = 3 at t = 8), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
 The code is in [`../cube_groups/`](../cube_groups/), with unit tests that gated each commit.
