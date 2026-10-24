@@ -1,0 +1,13 @@
+test_constants (test_m100.TestM100.test_constants) ... ok
+test_d (test_m100.TestM100.test_d) ... ok
+test_encode_as_m42 (test_m100.TestM100.test_encode_as_m42) ... ok
+test_kernel_basis (test_m100.TestM100.test_kernel_basis) ... ok
+test_pairs (test_m100.TestM100.test_pairs) ... ok
+test_reps (test_m100.TestM100.test_reps) ... ok
+test_spec (test_m100.TestM100.test_spec) ... ok
+test_sweep_small (test_m100.TestM100.test_sweep_small) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.234s
+
+OK

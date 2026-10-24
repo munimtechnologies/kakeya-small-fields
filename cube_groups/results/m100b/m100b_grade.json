@@ -1,0 +1,216 @@
+{
+ "graded": {
+  "check_classes_68": true,
+  "check_classes_per_pair": true,
+  "check_sizes_168": true,
+  "check_d_as_m99": true,
+  "check_reps_kernel_image": true,
+  "check_shards_cover": true,
+  "check_encode_as_m42": true,
+  "check_aniso_2047": true,
+  "check_relax_no_aniso": true,
+  "check_sweep_144": true,
+  "sweep_complete": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o009_c000_relax": true,
+  "verified_r3b_t8_B7_o011_c000_relax": true
+ },
+ "sweep": {
+  "r3b_t8_B7_o009_c000": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c001": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o009_c002": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o009_c003": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o009_c004": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c005": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o009_c006": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c007": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o009_c008": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c009": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o010_c000": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o010_c001": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o010_c002": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c003": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c004": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c005": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c006": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c007": [
+   "UNKNOWN",
+   180.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c008": [
+   "UNKNOWN",
+   180.02,
+   1
+  ],
+  "r3b_t8_B7_o011_c000": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c001": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o011_c002": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c003": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o011_c004": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c005": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c000": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o012_c001": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c002": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c003": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c004": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c005": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o012_c006": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c007": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o012_c008": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c009": [
+   "UNKNOWN",
+   180.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c010": [
+   "UNKNOWN",
+   180.02,
+   0
+  ],
+  "r3b_t8_B7_o012_c011": [
+   "UNKNOWN",
+   180.03,
+   0
+  ]
+ },
+ "control": {
+  "r3b_t8_B7_o009_c000": [
+   "SAT",
+   2.02
+  ],
+  "r3b_t8_B7_o011_c000": [
+   "SAT",
+   2.02
+  ]
+ },
+ "unsat": []
+}

@@ -1,0 +1,19 @@
+{
+ "graded": {
+  "classes_68": true,
+  "classes_per_pair": true,
+  "sizes_168": true,
+  "d_as_m99": true,
+  "reps_kernel_image": true,
+  "shards_cover": true,
+  "encode_as_m42": true,
+  "aniso_2047": true,
+  "relax_no_aniso": true,
+  "sweep_144": true
+ },
+ "hints": 162,
+ "sweep": 144,
+ "relax_clauses": 543266,
+ "full_clauses": 905255,
+ "spec": "r3b_t8_B7_o009_c000"
+}

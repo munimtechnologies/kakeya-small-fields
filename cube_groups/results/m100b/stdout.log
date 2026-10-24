@@ -1,0 +1,65 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 30.4 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f) for f in ('sat_aniso.py', 'm42.py')]"
+
+===== run-01-python: python -m unittest -v test_m100
+
+===== run-02-python: python m100.py --part check --shard b --out-dir /out
+SUMMARY check b all_match True graded 10 failed [] hints 162 sweep 144 relax_clauses 543266 full_clauses 905255
+
+===== run-03-python: python m100.py --part control --shard b --cap-seconds 90 --out-dir /out
+solve r3b_t8_B7_o009_c000_relax: {"budget_seconds": 90.0, "check": {"anisotropic": false, "normal_form": true, "sweep": true, "system": true}, "class_size": 12, "clauses": 543266, "cls": 0, "dmeet": 1, "name": "r3b_t8_B7_o009_c000", "pair": 9, "relax": true, "seconds": 0.5, "solver": "cadical195", "status": "SAT", "vars": 93632, "verified": true, "wall_seconds": 2.02}
+solve r3b_t8_B7_o011_c000_relax: {"budget_seconds": 90.0, "check": {"anisotropic": false, "normal_form": true, "sweep": true, "system": true}, "class_size": 21, "clauses": 543242, "cls": 0, "dmeet": 0, "name": "r3b_t8_B7_o011_c000", "pair": 11, "relax": true, "seconds": 0.51, "solver": "cadical195", "status": "SAT", "vars": 93632, "verified": true, "wall_seconds": 2.02}
+SUMMARY control b {"SAT": 2} cap 90.0
+
+===== run-04-python: python m100.py --part sweep --shard b --cap-seconds 180 --out-dir /out
+solve r3b_t8_B7_o009_c000_sweep: {"budget_seconds": 180.0, "class_size": 12, "cls": 0, "dmeet": 1, "name": "r3b_t8_B7_o009_c000", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o009_c001_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 1, "dmeet": 1, "name": "r3b_t8_B7_o009_c001", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o009_c002_sweep: {"budget_seconds": 180.0, "class_size": 12, "cls": 2, "dmeet": 1, "name": "r3b_t8_B7_o009_c002", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o009_c003_sweep: {"budget_seconds": 180.0, "class_size": 8, "cls": 3, "dmeet": 1, "name": "r3b_t8_B7_o009_c003", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o009_c004_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 4, "dmeet": 1, "name": "r3b_t8_B7_o009_c004", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o009_c005_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 5, "dmeet": 1, "name": "r3b_t8_B7_o009_c005", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o009_c006_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 6, "dmeet": 1, "name": "r3b_t8_B7_o009_c006", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o009_c007_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 7, "dmeet": 1, "name": "r3b_t8_B7_o009_c007", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o009_c008_sweep: {"budget_seconds": 180.0, "class_size": 4, "cls": 8, "dmeet": 1, "name": "r3b_t8_B7_o009_c008", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o009_c009_sweep: {"budget_seconds": 180.0, "class_size": 12, "cls": 9, "dmeet": 1, "name": "r3b_t8_B7_o009_c009", "pair": 9, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o010_c000_sweep: {"budget_seconds": 180.0, "class_size": 32, "cls": 0, "dmeet": 1, "name": "r3b_t8_B7_o010_c000", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o010_c001_sweep: {"budget_seconds": 180.0, "class_size": 32, "cls": 1, "dmeet": 1, "name": "r3b_t8_B7_o010_c001", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o010_c002_sweep: {"budget_seconds": 180.0, "class_size": 8, "cls": 2, "dmeet": 1, "name": "r3b_t8_B7_o010_c002", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c003_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 3, "dmeet": 1, "name": "r3b_t8_B7_o010_c003", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c004_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 4, "dmeet": 1, "name": "r3b_t8_B7_o010_c004", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c005_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 5, "dmeet": 1, "name": "r3b_t8_B7_o010_c005", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c006_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 6, "dmeet": 1, "name": "r3b_t8_B7_o010_c006", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c007_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 7, "dmeet": 1, "name": "r3b_t8_B7_o010_c007", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o010_c008_sweep: {"budget_seconds": 180.0, "class_size": 16, "cls": 8, "dmeet": 1, "name": "r3b_t8_B7_o010_c008", "pair": 10, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o011_c000_sweep: {"budget_seconds": 180.0, "class_size": 21, "cls": 0, "dmeet": 0, "name": "r3b_t8_B7_o011_c000", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o011_c001_sweep: {"budget_seconds": 180.0, "class_size": 56, "cls": 1, "dmeet": 0, "name": "r3b_t8_B7_o011_c001", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o011_c002_sweep: {"budget_seconds": 180.0, "class_size": 42, "cls": 2, "dmeet": 0, "name": "r3b_t8_B7_o011_c002", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o011_c003_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 3, "dmeet": 0, "name": "r3b_t8_B7_o011_c003", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o011_c004_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 4, "dmeet": 0, "name": "r3b_t8_B7_o011_c004", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o011_c005_sweep: {"budget_seconds": 180.0, "class_size": 1, "cls": 5, "dmeet": 0, "name": "r3b_t8_B7_o011_c005", "pair": 11, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c000_sweep: {"budget_seconds": 180.0, "class_size": 12, "cls": 0, "dmeet": 0, "name": "r3b_t8_B7_o012_c000", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o012_c001_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 1, "dmeet": 0, "name": "r3b_t8_B7_o012_c001", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c002_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 2, "dmeet": 0, "name": "r3b_t8_B7_o012_c002", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c003_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 3, "dmeet": 0, "name": "r3b_t8_B7_o012_c003", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c004_sweep: {"budget_seconds": 180.0, "class_size": 12, "cls": 4, "dmeet": 0, "name": "r3b_t8_B7_o012_c004", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c005_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 5, "dmeet": 0, "name": "r3b_t8_B7_o012_c005", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o012_c006_sweep: {"budget_seconds": 180.0, "class_size": 24, "cls": 6, "dmeet": 0, "name": "r3b_t8_B7_o012_c006", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c007_sweep: {"budget_seconds": 180.0, "class_size": 6, "cls": 7, "dmeet": 0, "name": "r3b_t8_B7_o012_c007", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o012_c008_sweep: {"budget_seconds": 180.0, "class_size": 6, "cls": 8, "dmeet": 0, "name": "r3b_t8_B7_o012_c008", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c009_sweep: {"budget_seconds": 180.0, "class_size": 8, "cls": 9, "dmeet": 0, "name": "r3b_t8_B7_o012_c009", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+solve r3b_t8_B7_o012_c010_sweep: {"budget_seconds": 180.0, "class_size": 1, "cls": 10, "dmeet": 0, "name": "r3b_t8_B7_o012_c010", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.02}
+solve r3b_t8_B7_o012_c011_sweep: {"budget_seconds": 180.0, "class_size": 3, "cls": 11, "dmeet": 0, "name": "r3b_t8_B7_o012_c011", "pair": 12, "reason": "time budget reached", "relax": false, "status": "UNKNOWN", "wall_seconds": 180.03}
+SUMMARY sweep b {"UNKNOWN": 37} by_d {"d0": {"UNKNOWN": 18}, "d1": {"UNKNOWN": 19}} cap 180.0
+
+===== run-05-python: python m100.py --part grade --shard b --out-dir /out
+SUMMARY grade b all_match True graded 14 failed [] sweep {"UNKNOWN": 37} control {"r3b_t8_B7_o009_c000": ["SAT", 2.02], "r3b_t8_B7_o011_c000": ["SAT", 2.02]} unsat []
