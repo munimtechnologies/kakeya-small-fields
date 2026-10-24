@@ -1,0 +1,11 @@
+{
+ "class": "r3b_t8_B7_o000_c000",
+ "cases": 95,
+ "skipped": 27,
+ "counts": {
+  "t3 UNKNOWN": 20,
+  "t3 UNSAT": 24,
+  "t2 UNKNOWN": 18,
+  "t2 UNSAT": 6
+ }
+}

@@ -1,0 +1,19 @@
+test_aniso_on_small (test_m101.TestM101.test_aniso_on_small) ... ok
+test_case_two (test_m101.TestM101.test_case_two) ... ok
+test_constants (test_m101.TestM101.test_constants) ... ok
+test_idempotent (test_m101.TestM101.test_idempotent) ... ok
+test_in_x1_small (test_m101.TestM101.test_in_x1_small) ... ok
+test_zero_map_small (test_m101.TestM101.test_zero_map_small) ... ok
+test_a_of_t (test_m102.TestM102.test_a_of_t) ... ok
+test_case_two_w (test_m102.TestM102.test_case_two_w) ... ok
+test_cases (test_m102.TestM102.test_cases) ... ok
+test_gl3 (test_m102.TestM102.test_gl3) ... ok
+test_known_model (test_m102.TestM102.test_known_model)
+Job m101's relax_n model, with v_2 replaced by v_2 + v_3, is a model of the t2 case with ... ok
+test_lift_g (test_m102.TestM102.test_lift_g) ... ok
+test_orbits_cover (test_m102.TestM102.test_orbits_cover) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 18.188s
+
+OK

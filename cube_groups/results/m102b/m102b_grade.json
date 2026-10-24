@@ -1,0 +1,444 @@
+{
+ "graded": {
+  "check_gl3_168": true,
+  "check_spaces_255_183": true,
+  "check_three_are_algebras": true,
+  "check_gl3_orbits_dim2": true,
+  "check_gl3_orbits_dim3": true,
+  "check_kbar_identity": true,
+  "check_kbar_lifts_checked": true,
+  "check_kbar_closed": true,
+  "check_orbits_cover": true,
+  "check_a_of_t_I_is_au": true,
+  "check_m101_prefix": true,
+  "check_added_counts": true,
+  "sweep_complete": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o009_c000_t1_relax": true,
+  "verified_r3b_t8_B7_o011_c000_t1_relax": true,
+  "verified_r3b_t8_B7_o011_c000_t3_m001_016_relax_n": true
+ },
+ "sweep": {
+  "r3b_t8_B7_o009_c000_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c001_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c002_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c003_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c004_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c005_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c006_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c007_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c008_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o009_c009_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c000_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c001_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c002_t1": [
+   "UNKNOWN",
+   120.04,
+   1
+  ],
+  "r3b_t8_B7_o010_c003_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c004_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c005_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c006_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c007_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o010_c008_t1": [
+   "UNKNOWN",
+   120.03,
+   1
+  ],
+  "r3b_t8_B7_o011_c000_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c001_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c002_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c003_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c004_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o011_c005_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c000_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c001_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c002_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c003_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c004_t1": [
+   "UNKNOWN",
+   120.04,
+   0
+  ],
+  "r3b_t8_B7_o012_c005_t1": [
+   "UNKNOWN",
+   120.04,
+   0
+  ],
+  "r3b_t8_B7_o012_c006_t1": [
+   "UNKNOWN",
+   120.05,
+   0
+  ],
+  "r3b_t8_B7_o012_c007_t1": [
+   "UNKNOWN",
+   120.04,
+   0
+  ],
+  "r3b_t8_B7_o012_c008_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c009_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ],
+  "r3b_t8_B7_o012_c010_t1": [
+   "UNKNOWN",
+   120.04,
+   0
+  ],
+  "r3b_t8_B7_o012_c011_t1": [
+   "UNKNOWN",
+   120.03,
+   0
+  ]
+ },
+ "control": {
+  "r3b_t8_B7_o009_c000_t1_relax": [
+   "SAT",
+   1.57
+  ],
+  "r3b_t8_B7_o011_c000_t1_relax": [
+   "SAT",
+   1.62
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_016_relax_n": [
+   "SAT",
+   1.77
+  ]
+ },
+ "pilot": {
+  "r3b_t8_B7_o011_c000_t3_m001_016": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_032": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_048": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_128": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_144": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_160": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m001_176": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m002_004": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m002_021": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m002_128": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t3_m002_132": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m004_016": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m004_018": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m004_032": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m004_034": [
+   "UNSAT",
+   42.63
+  ],
+  "r3b_t8_B7_o011_c000_t3_m004_048": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t3_m005_016": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t3_m005_032": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m005_048": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m005_130": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m005_178": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m007_018": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t3_m007_130": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m007_179": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m008_032": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m008_096": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m016_068": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m016_069": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m021_040": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m021_047": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m024_100": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m024_109": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t3_m040_084": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m040_092": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m084_130": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m084_170": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m086_130": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t3_m094_187": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t2_m001": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m002": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t2_m004": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m005": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m007": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m008": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t2_m010": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t2_m011": [
+   "UNKNOWN",
+   45.05
+  ],
+  "r3b_t8_B7_o011_c000_t2_m012": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m013": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m014": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m015": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m016": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m020": [
+   "UNKNOWN",
+   45.04
+  ],
+  "r3b_t8_B7_o011_c000_t2_m021": [
+   "UNKNOWN",
+   45.03
+  ],
+  "r3b_t8_B7_o011_c000_t2_m022": [
+   "UNKNOWN",
+   45.03
+  ]
+ },
+ "pilot_skipped": 26,
+ "unsat": [
+  "r3b_t8_B7_o011_c000_t3_m004_034"
+ ]
+}

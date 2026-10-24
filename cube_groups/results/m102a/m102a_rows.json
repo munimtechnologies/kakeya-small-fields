@@ -1,0 +1,2081 @@
+[
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 94505,
+  "clauses": 547533,
+  "seconds": 0.46,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "relax",
+  "part": "control",
+  "wall_seconds": 1.88,
+  "budget_seconds": 60.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": false,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true
+  },
+  "verified": true
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "seconds": 1.09,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m511",
+  "kind": "t2",
+  "maps": [
+   0,
+   511
+  ],
+  "mode": "relax_n",
+  "part": "control",
+  "wall_seconds": 2.44,
+  "budget_seconds": 60.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": true,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true
+  },
+  "verified": true
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 94505,
+  "clauses": 547533,
+  "seconds": 0.44,
+  "name": "r3b_t8_B7_o003_c000",
+  "pair": 3,
+  "cls": 0,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o003_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "relax",
+  "part": "control",
+  "wall_seconds": 1.87,
+  "budget_seconds": 60.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": false,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true
+  },
+  "verified": true
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.44,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o001_c000",
+  "pair": 1,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o001_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o002_c000",
+  "pair": 2,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o002_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o003_c000",
+  "pair": 3,
+  "cls": 0,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o003_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o003_c001",
+  "pair": 3,
+  "cls": 1,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o003_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o003_c002",
+  "pair": 3,
+  "cls": 2,
+  "dmeet": 2,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o003_c002_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o003_c003",
+  "pair": 3,
+  "cls": 3,
+  "dmeet": 2,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o003_c003_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.03,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o003_c004",
+  "pair": 3,
+  "cls": 4,
+  "dmeet": 2,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o003_c004_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o004_c000",
+  "pair": 4,
+  "cls": 0,
+  "dmeet": 2,
+  "class_size": 96,
+  "instance": "r3b_t8_B7_o004_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o004_c001",
+  "pair": 4,
+  "cls": 1,
+  "dmeet": 2,
+  "class_size": 72,
+  "instance": "r3b_t8_B7_o004_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o005_c000",
+  "pair": 5,
+  "cls": 0,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o005_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.44,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o005_c001",
+  "pair": 5,
+  "cls": 1,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o005_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o005_c002",
+  "pair": 5,
+  "cls": 2,
+  "dmeet": 2,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o005_c002_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.43,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o005_c003",
+  "pair": 5,
+  "cls": 3,
+  "dmeet": 2,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o005_c003_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o006_c000",
+  "pair": 6,
+  "cls": 0,
+  "dmeet": 2,
+  "class_size": 96,
+  "instance": "r3b_t8_B7_o006_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o006_c001",
+  "pair": 6,
+  "cls": 1,
+  "dmeet": 2,
+  "class_size": 72,
+  "instance": "r3b_t8_B7_o006_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c000",
+  "pair": 7,
+  "cls": 0,
+  "dmeet": 1,
+  "class_size": 12,
+  "instance": "r3b_t8_B7_o007_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c001",
+  "pair": 7,
+  "cls": 1,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o007_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c002",
+  "pair": 7,
+  "cls": 2,
+  "dmeet": 1,
+  "class_size": 12,
+  "instance": "r3b_t8_B7_o007_c002_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c003",
+  "pair": 7,
+  "cls": 3,
+  "dmeet": 1,
+  "class_size": 8,
+  "instance": "r3b_t8_B7_o007_c003_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.45,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c004",
+  "pair": 7,
+  "cls": 4,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o007_c004_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c005",
+  "pair": 7,
+  "cls": 5,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o007_c005_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c006",
+  "pair": 7,
+  "cls": 6,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o007_c006_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.03,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c007",
+  "pair": 7,
+  "cls": 7,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o007_c007_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c008",
+  "pair": 7,
+  "cls": 8,
+  "dmeet": 1,
+  "class_size": 4,
+  "instance": "r3b_t8_B7_o007_c008_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o007_c009",
+  "pair": 7,
+  "cls": 9,
+  "dmeet": 1,
+  "class_size": 12,
+  "instance": "r3b_t8_B7_o007_c009_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o008_c000",
+  "pair": 8,
+  "cls": 0,
+  "dmeet": 1,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o008_c000_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o008_c001",
+  "pair": 8,
+  "cls": 1,
+  "dmeet": 1,
+  "class_size": 32,
+  "instance": "r3b_t8_B7_o008_c001_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o008_c002",
+  "pair": 8,
+  "cls": 2,
+  "dmeet": 1,
+  "class_size": 24,
+  "instance": "r3b_t8_B7_o008_c002_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.03,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o008_c003",
+  "pair": 8,
+  "cls": 3,
+  "dmeet": 1,
+  "class_size": 48,
+  "instance": "r3b_t8_B7_o008_c003_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o008_c004",
+  "pair": 8,
+  "cls": 4,
+  "dmeet": 1,
+  "class_size": 16,
+  "instance": "r3b_t8_B7_o008_c004_t1",
+  "kind": "t1",
+  "maps": [
+   0,
+   0
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 120.02,
+  "budget_seconds": 120.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_016",
+  "kind": "t3",
+  "maps": [
+   1,
+   16
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_032",
+  "kind": "t3",
+  "maps": [
+   1,
+   32
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_048",
+  "kind": "t3",
+  "maps": [
+   1,
+   48
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 29.56,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 31.83,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_144",
+  "kind": "t3",
+  "maps": [
+   1,
+   144
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_160",
+  "kind": "t3",
+  "maps": [
+   1,
+   160
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.03,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 14.11,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 16.22,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 31.22,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 33.36,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_017",
+  "kind": "t3",
+  "maps": [
+   2,
+   17
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_021",
+  "kind": "t3",
+  "maps": [
+   2,
+   21
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 31.53,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 33.89,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 12.98,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_132",
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 15.21,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_145",
+  "kind": "t3",
+  "maps": [
+   2,
+   145
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_149",
+  "kind": "t3",
+  "maps": [
+   2,
+   149
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m004_032",
+  "kind": "t3",
+  "maps": [
+   4,
+   32
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 14.74,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m004_034",
+  "kind": "t3",
+  "maps": [
+   4,
+   34
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 16.77,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m004_048",
+  "kind": "t3",
+  "maps": [
+   4,
+   48
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.04,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_048",
+  "kind": "t3",
+  "maps": [
+   5,
+   48
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 33.75,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 36.57,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_146",
+  "kind": "t3",
+  "maps": [
+   5,
+   146
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_162",
+  "kind": "t3",
+  "maps": [
+   5,
+   162
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 20.49,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_178",
+  "kind": "t3",
+  "maps": [
+   5,
+   178
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 22.56,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m006_049",
+  "kind": "t3",
+  "maps": [
+   6,
+   49
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m006_144",
+  "kind": "t3",
+  "maps": [
+   6,
+   144
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 37.47,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m006_161",
+  "kind": "t3",
+  "maps": [
+   6,
+   161
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 39.69,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 21.44,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m006_163",
+  "kind": "t3",
+  "maps": [
+   6,
+   163
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 23.45,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 18.97,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m011_017",
+  "kind": "t3",
+  "maps": [
+   11,
+   17
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 21.29,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 15.28,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m015_049",
+  "kind": "t3",
+  "maps": [
+   15,
+   49
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 17.34,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 25.49,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m064_128",
+  "kind": "t3",
+  "maps": [
+   64,
+   128
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 27.72,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 16.97,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m064_136",
+  "kind": "t3",
+  "maps": [
+   64,
+   136
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 19.03,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 32.32,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m064_144",
+  "kind": "t3",
+  "maps": [
+   64,
+   144
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 34.42,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m065_144",
+  "kind": "t3",
+  "maps": [
+   65,
+   144
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m065_168",
+  "kind": "t3",
+  "maps": [
+   65,
+   168
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 13.22,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m065_184",
+  "kind": "t3",
+  "maps": [
+   65,
+   184
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 15.26,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 32.25,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m072_145",
+  "kind": "t3",
+  "maps": [
+   72,
+   145
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 34.48,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 31.49,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m072_161",
+  "kind": "t3",
+  "maps": [
+   72,
+   161
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 33.6,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 15.27,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m072_169",
+  "kind": "t3",
+  "maps": [
+   72,
+   169
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 17.71,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 25.14,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m075_145",
+  "kind": "t3",
+  "maps": [
+   75,
+   145
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 27.76,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 27.29,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m078_161",
+  "kind": "t3",
+  "maps": [
+   78,
+   161
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 29.92,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m079_161",
+  "kind": "t3",
+  "maps": [
+   79,
+   161
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 11.94,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 14.13,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 20.2,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m098_140",
+  "kind": "t3",
+  "maps": [
+   98,
+   140
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 22.64,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906081,
+  "seconds": 10.05,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m106_157",
+  "kind": "t3",
+  "maps": [
+   106,
+   157
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 12.14,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t3_m121_151",
+  "kind": "t3",
+  "maps": [
+   121,
+   151
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m001",
+  "kind": "t2",
+  "maps": [
+   0,
+   1
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m002",
+  "kind": "t2",
+  "maps": [
+   0,
+   2
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m004",
+  "kind": "t2",
+  "maps": [
+   0,
+   4
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m005",
+  "kind": "t2",
+  "maps": [
+   0,
+   5
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m006",
+  "kind": "t2",
+  "maps": [
+   0,
+   6
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m010",
+  "kind": "t2",
+  "maps": [
+   0,
+   10
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 21.2,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m011",
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 23.63,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 18.67,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m012",
+  "kind": "t2",
+  "maps": [
+   0,
+   12
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 21.34,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m013",
+  "kind": "t2",
+  "maps": [
+   0,
+   13
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m014",
+  "kind": "t2",
+  "maps": [
+   0,
+   14
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 18.88,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m015",
+  "kind": "t2",
+  "maps": [
+   0,
+   15
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 21.18,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m017",
+  "kind": "t2",
+  "maps": [
+   0,
+   17
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.05,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m020",
+  "kind": "t2",
+  "maps": [
+   0,
+   20
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m021",
+  "kind": "t2",
+  "maps": [
+   0,
+   21
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.04,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m023",
+  "kind": "t2",
+  "maps": [
+   0,
+   23
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m064",
+  "kind": "t2",
+  "maps": [
+   0,
+   64
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m065",
+  "kind": "t2",
+  "maps": [
+   0,
+   65
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.03,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 18.76,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m066",
+  "kind": "t2",
+  "maps": [
+   0,
+   66
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 21.48,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m067",
+  "kind": "t2",
+  "maps": [
+   0,
+   67
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m068",
+  "kind": "t2",
+  "maps": [
+   0,
+   68
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.03,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 16.87,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m069",
+  "kind": "t2",
+  "maps": [
+   0,
+   69
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 19.41,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m070",
+  "kind": "t2",
+  "maps": [
+   0,
+   70
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.02,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 143071,
+  "clauses": 907089,
+  "seconds": 22.73,
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m071",
+  "kind": "t2",
+  "maps": [
+   0,
+   71
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 25.33,
+  "budget_seconds": 45.0
+ },
+ {
+  "status": "UNKNOWN",
+  "reason": "time budget reached",
+  "name": "r3b_t8_B7_o000_c000",
+  "pair": 0,
+  "cls": 0,
+  "dmeet": 3,
+  "class_size": 168,
+  "instance": "r3b_t8_B7_o000_c000_t2_m072",
+  "kind": "t2",
+  "maps": [
+   0,
+   72
+  ],
+  "mode": "sweep",
+  "part": "pilot",
+  "wall_seconds": 45.04,
+  "budget_seconds": 45.0
+ }
+]
