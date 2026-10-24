@@ -1,0 +1,33 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 24.3 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python -c "import urllib.request as u; b='https://raw.githubusercontent.com/munimtechnologies/kakeya-small-fields/main/cube_groups/'; [u.urlretrieve(b + f, f) for f in ('sat_aniso.py', 'm42.py')]"
+
+===== run-01-python: python -m unittest -v test_m99
+
+===== run-02-python: python m99.py --part classify --out-dir /out
+classify t7_B6 (B6): pairs 13 classes 68 by_x {"1395": 13} breakdown {"alpha_L": 3, "alpha_P": 4, "alpha_graph": 6} hand {"alpha_L": 3, "alpha_P": 4, "alpha_graph": 6} valid True stable True seconds 7.1
+classify t7_B5 (B5): pairs 49 classes 420 by_x {"155": 20, "1240": 29} breakdown {"alpha_L": 3, "alpha_P": 3, "alpha_graph": 5, "alpha_out": 9, "beta_L": 3, "beta_P": 3, "beta_graph": 5, "beta_out": 18} hand {"alpha_L": 3, "alpha_P": 3, "alpha_graph": 5, "alpha_out": 9, "beta_L": 3, "beta_P": 3, "beta_graph": 5, "beta_out": 18} valid True stable True seconds 18.5
+classify t8_B7 (B7_8): pairs 13 classes 68 by_x {"11811": 13} breakdown {"alpha_L": 3, "alpha_P": 4, "alpha_graph": 6} hand {"alpha_L": 3, "alpha_P": 4, "alpha_graph": 6} valid True stable True seconds 32.5
+classify t8_B6 (B6_8): pairs 51 classes 422 by_x {"651": 20, "11160": 31} breakdown {"alpha_L": 3, "alpha_P": 3, "alpha_graph": 5, "alpha_out": 9, "beta_L": 3, "beta_P": 4, "beta_graph": 6, "beta_out": 18} hand {"alpha_L": 3, "alpha_P": 3, "alpha_graph": 5, "alpha_out": 9, "beta_L": 3, "beta_P": 4, "beta_graph": 6, "beta_out": 18} valid True stable True seconds 69.1
+SUMMARY classify {"t7_B5": [49, 420], "t7_B6": [13, 68], "t8_B6": [51, 422], "t8_B7": [13, 68]}
+
+===== run-03-python: python m99.py --part pilot --cap-seconds 240 --per-shape 3 --out-dir /out
+solve r3b_t8_B7_o000_c000: {"au": 2113664, "budget_seconds": 240.0, "class_size": 168, "cls": 0, "d": 11, "key": "alpha_L", "kind": "main", "name": "r3b_t8_B7_o000_c000", "p": 7, "pair": 0, "pair_size": 413385, "r": [4, 2, 1], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.03, "x1": [16, 8, 4, 2, 1]}
+solve r3b_t8_B7_o001_c000: {"au": 541097984, "budget_seconds": 240.0, "class_size": 168, "cls": 0, "d": 11, "key": "alpha_P", "kind": "main", "name": "r3b_t8_B7_o001_c000", "p": 7, "pair": 1, "pair_size": 177165, "r": [8, 4, 2], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.02, "x1": [16, 8, 4, 2, 1]}
+solve r3b_t8_B7_o002_c000: {"au": 541098112, "budget_seconds": 240.0, "class_size": 168, "cls": 0, "d": 11, "key": "alpha_graph", "kind": "main", "name": "r3b_t8_B7_o002_c000", "p": 7, "pair": 2, "pair_size": 1240155, "r": [8, 4, 3], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.03, "x1": [16, 8, 4, 2, 1]}
+solve r3b_t8_B6_o000_c000: {"au": 2113664, "budget_seconds": 240.0, "class_size": 24, "cls": 0, "d": 11, "key": "alpha_L", "kind": "main", "name": "r3b_t8_B6_o000_c000", "p": 6, "pair": 0, "pair_size": 22785, "r": [4, 2, 1], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.03, "x1": [16, 8, 4, 2, 1]}
+solve r3b_t8_B6_o001_c000: {"au": 541097984, "budget_seconds": 240.0, "class_size": 168, "cls": 0, "d": 11, "key": "alpha_P", "kind": "main", "name": "r3b_t8_B6_o001_c000", "p": 6, "pair": 1, "pair_size": 9765, "r": [8, 4, 2], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.03, "x1": [16, 8, 4, 2, 1]}
+solve r3b_t8_B6_o002_c000: {"au": 541098112, "budget_seconds": 240.0, "class_size": 24, "cls": 0, "d": 11, "key": "alpha_graph", "kind": "main", "name": "r3b_t8_B6_o002_c000", "p": 6, "pair": 2, "pair_size": 68355, "r": [8, 4, 3], "reason": "time budget reached", "status": "UNKNOWN", "t": 8, "wall_seconds": 240.02, "x1": [16, 8, 4, 2, 1]}
+SUMMARY pilot {"UNKNOWN": 6} cap 240.0
+
+===== run-04-python: python m99.py --part grade --out-dir /out
+SUMMARY grade all_match True graded 24 failed [] classes {"t7_B5": 420, "t7_B6": 68, "t8_B6": 422, "t8_B7": 68} stable {"t7_B5": true, "t7_B6": true, "t8_B6": true, "t8_B7": true} pilot {"r3b_t8_B6_o000_c000": ["UNKNOWN", 240.03], "r3b_t8_B6_o001_c000": ["UNKNOWN", 240.03], "r3b_t8_B6_o002_c000": ["UNKNOWN", 240.02], "r3b_t8_B7_o000_c000": ["UNKNOWN", 240.03], "r3b_t8_B7_o001_c000": ["UNKNOWN", 240.02], "r3b_t8_B7_o002_c000": ["UNKNOWN", 240.03]}

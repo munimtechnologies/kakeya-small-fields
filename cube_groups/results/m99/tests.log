@@ -1,0 +1,12 @@
+test_gaussian (test_m99.TestM99.test_gaussian) ... ok
+test_group_orders (test_m99.TestM99.test_group_orders) ... ok
+test_hand_by_x (test_m99.TestM99.test_hand_by_x) ... ok
+test_hand_pairs_known (test_m99.TestM99.test_hand_pairs_known) ... ok
+test_hand_pairs_t8 (test_m99.TestM99.test_hand_pairs_t8) ... ok
+test_machine_key (test_m99.TestM99.test_machine_key) ... ok
+test_machine_pairs_t4 (test_m99.TestM99.test_machine_pairs_t4) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.025s
+
+OK

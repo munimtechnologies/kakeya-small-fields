@@ -1,0 +1,74 @@
+[
+ {
+  "name": "r3b_t8_B7_o000_c000",
+  "key": "alpha_L",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.03,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ },
+ {
+  "name": "r3b_t8_B7_o001_c000",
+  "key": "alpha_P",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.02,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ },
+ {
+  "name": "r3b_t8_B7_o002_c000",
+  "key": "alpha_graph",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.03,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ },
+ {
+  "name": "r3b_t8_B6_o000_c000",
+  "key": "alpha_L",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.03,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ },
+ {
+  "name": "r3b_t8_B6_o001_c000",
+  "key": "alpha_P",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.03,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ },
+ {
+  "name": "r3b_t8_B6_o002_c000",
+  "key": "alpha_graph",
+  "status": "UNKNOWN",
+  "seconds": null,
+  "wall_seconds": 240.02,
+  "vars": null,
+  "clauses": null,
+  "verified": null,
+  "max_rank": null,
+  "rank_u": null
+ }
+]

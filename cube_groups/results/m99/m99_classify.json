@@ -1,0 +1,188 @@
+{
+ "t7_B6": {
+  "sizes_add_up": true,
+  "members": true,
+  "units_in_H": true,
+  "divide_H": true,
+  "stable": true,
+  "classes": 68,
+  "t": 7,
+  "p": 6,
+  "pairs": 13,
+  "group_order": 20158709760,
+  "by_x_orbit_size": {
+   "1395": 13
+  },
+  "breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "hand_breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "total": 16476345,
+  "pairs_divide_G": true,
+  "x_units_ok": true,
+  "x_orbits": [
+   1395
+  ],
+  "reps_rank_3": true,
+  "classes_by_key": {
+   "alpha_L": 16,
+   "alpha_P": 14,
+   "alpha_graph": 38
+  },
+  "seconds": 7.1
+ },
+ "t7_B5": {
+  "sizes_add_up": true,
+  "members": true,
+  "units_in_H": true,
+  "divide_H": true,
+  "stable": true,
+  "classes": 420,
+  "t": 7,
+  "p": 5,
+  "pairs": 49,
+  "group_order": 639959040,
+  "by_x_orbit_size": {
+   "155": 20,
+   "1240": 29
+  },
+  "breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 3,
+   "alpha_graph": 5,
+   "alpha_out": 9,
+   "beta_L": 3,
+   "beta_P": 3,
+   "beta_graph": 5,
+   "beta_out": 18
+  },
+  "hand_breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 3,
+   "alpha_graph": 5,
+   "alpha_out": 9,
+   "beta_L": 3,
+   "beta_P": 3,
+   "beta_graph": 5,
+   "beta_out": 18
+  },
+  "total": 16476345,
+  "pairs_divide_G": true,
+  "x_units_ok": true,
+  "x_orbits": [
+   155,
+   1240
+  ],
+  "reps_rank_3": true,
+  "classes_by_key": {
+   "alpha_L": 26,
+   "alpha_P": 9,
+   "alpha_graph": 33,
+   "alpha_out": 138,
+   "beta_L": 16,
+   "beta_P": 13,
+   "beta_graph": 37,
+   "beta_out": 148
+  },
+  "seconds": 18.5
+ },
+ "t8_B7": {
+  "sizes_add_up": true,
+  "members": true,
+  "units_in_H": true,
+  "divide_H": true,
+  "stable": true,
+  "classes": 68,
+  "t": 8,
+  "p": 7,
+  "pairs": 13,
+  "group_order": 163849992929280,
+  "by_x_orbit_size": {
+   "11811": 13
+  },
+  "breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "hand_breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "total": 1147497705,
+  "pairs_divide_G": true,
+  "x_units_ok": true,
+  "x_orbits": [
+   11811
+  ],
+  "reps_rank_3": true,
+  "classes_by_key": {
+   "alpha_L": 16,
+   "alpha_P": 14,
+   "alpha_graph": 38
+  },
+  "seconds": 32.5
+ },
+ "t8_B6": {
+  "sizes_add_up": true,
+  "members": true,
+  "units_in_H": true,
+  "divide_H": true,
+  "stable": true,
+  "classes": 422,
+  "t": 8,
+  "p": 6,
+  "pairs": 51,
+  "group_order": 2580314849280,
+  "by_x_orbit_size": {
+   "651": 20,
+   "11160": 31
+  },
+  "breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 3,
+   "alpha_graph": 5,
+   "alpha_out": 9,
+   "beta_L": 3,
+   "beta_P": 4,
+   "beta_graph": 6,
+   "beta_out": 18
+  },
+  "hand_breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 3,
+   "alpha_graph": 5,
+   "alpha_out": 9,
+   "beta_L": 3,
+   "beta_P": 4,
+   "beta_graph": 6,
+   "beta_out": 18
+  },
+  "total": 1147497705,
+  "pairs_divide_G": true,
+  "x_units_ok": true,
+  "x_orbits": [
+   651,
+   11160
+  ],
+  "reps_rank_3": true,
+  "classes_by_key": {
+   "alpha_L": 26,
+   "alpha_P": 9,
+   "alpha_graph": 33,
+   "alpha_out": 138,
+   "beta_L": 16,
+   "beta_P": 14,
+   "beta_graph": 38,
+   "beta_out": 148
+  },
+  "seconds": 69.1
+ }
+}

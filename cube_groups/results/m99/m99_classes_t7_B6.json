@@ -1,0 +1,769 @@
+{
+ "info": {
+  "sizes_add_up": true,
+  "members": true,
+  "units_in_H": true,
+  "divide_H": true,
+  "stable": true,
+  "classes": 68,
+  "t": 7,
+  "p": 6,
+  "pairs": 13,
+  "group_order": 20158709760,
+  "by_x_orbit_size": {
+   "1395": 13
+  },
+  "breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "hand_breakdown": {
+   "alpha_L": 3,
+   "alpha_P": 4,
+   "alpha_graph": 6
+  },
+  "total": 16476345,
+  "pairs_divide_G": true,
+  "x_units_ok": true,
+  "x_orbits": [
+   1395
+  ],
+  "reps_rank_3": true,
+  "classes_by_key": {
+   "alpha_L": 16,
+   "alpha_P": 14,
+   "alpha_graph": 38
+  },
+  "seconds": 7.1
+ },
+ "pairs": [
+  {
+   "pair": 0,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    4,
+    2,
+    1
+   ],
+   "size": 9765,
+   "x_orbit_size": 1395,
+   "key": "alpha_L",
+   "invariants": {
+    "d": 3,
+    "x0_in_R": true,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     266304,
+     168
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 26,
+    "tries": 2110,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 1,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    8,
+    4,
+    2
+   ],
+   "size": 1395,
+   "x_orbit_size": 1395,
+   "key": "alpha_P",
+   "invariants": {
+    "d": 3,
+    "x0_in_R": false,
+    "dim_R_P": 3,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     34086912,
+     168
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 28,
+    "tries": 1080,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 2,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    8,
+    4,
+    3
+   ],
+   "size": 9765,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 3,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     34086976,
+     168
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 25,
+    "tries": 876,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 3,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    16,
+    2,
+    1
+   ],
+   "size": 273420,
+   "x_orbit_size": 1395,
+   "key": "alpha_L",
+   "invariants": {
+    "d": 2,
+    "x0_in_R": true,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     4294971456,
+     48
+    ],
+    [
+     4294971472,
+     48
+    ],
+    [
+     8589936704,
+     24
+    ],
+    [
+     8589936720,
+     24
+    ],
+    [
+     8589942800,
+     24
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 22,
+    "tries": 3654,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 4,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    16,
+    4,
+    2
+   ],
+   "size": 136710,
+   "x_orbit_size": 1395,
+   "key": "alpha_P",
+   "invariants": {
+    "d": 2,
+    "x0_in_R": false,
+    "dim_R_P": 3,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     4295499776,
+     96
+    ],
+    [
+     8590204928,
+     72
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 23,
+    "tries": 3791,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 5,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    16,
+    4,
+    3
+   ],
+   "size": 820260,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 2,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     4295499840,
+     48
+    ],
+    [
+     4295501904,
+     48
+    ],
+    [
+     8590204992,
+     24
+    ],
+    [
+     8590207056,
+     48
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 20,
+    "tries": 3050,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 6,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    17,
+    4,
+    2
+   ],
+   "size": 136710,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 2,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     4295499792,
+     96
+    ],
+    [
+     8590204960,
+     72
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 22,
+    "tries": 1985,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 7,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    32,
+    16,
+    1
+   ],
+   "size": 624960,
+   "x_orbit_size": 1395,
+   "key": "alpha_L",
+   "invariants": {
+    "d": 1,
+    "x0_in_R": true,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     558345748544,
+     12
+    ],
+    [
+     558345748560,
+     24
+    ],
+    [
+     558345748592,
+     12
+    ],
+    [
+     562640715840,
+     8
+    ],
+    [
+     562640715856,
+     24
+    ],
+    [
+     566935683104,
+     24
+    ],
+    [
+     571230650400,
+     24
+    ],
+    [
+     571230650416,
+     24
+    ],
+    [
+     1103806595136,
+     4
+    ],
+    [
+     1103806595152,
+     12
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 20,
+    "tries": 1993,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 8,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    32,
+    16,
+    2
+   ],
+   "size": 1093680,
+   "x_orbit_size": 1395,
+   "key": "alpha_P",
+   "invariants": {
+    "d": 1,
+    "x0_in_R": false,
+    "dim_R_P": 3,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     558345756672,
+     48
+    ],
+    [
+     562640723968,
+     32
+    ],
+    [
+     566935687168,
+     24
+    ],
+    [
+     571230654464,
+     48
+    ],
+    [
+     1103806603264,
+     16
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 20,
+    "tries": 3414,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 9,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    32,
+    16,
+    3
+   ],
+   "size": 4374720,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 1,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     558345756736,
+     12
+    ],
+    [
+     558345758800,
+     24
+    ],
+    [
+     558345762928,
+     12
+    ],
+    [
+     562640724032,
+     8
+    ],
+    [
+     562640726096,
+     24
+    ],
+    [
+     566935687200,
+     24
+    ],
+    [
+     571230654496,
+     24
+    ],
+    [
+     571230656560,
+     24
+    ],
+    [
+     1103806603328,
+     4
+    ],
+    [
+     1103806605392,
+     12
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 17,
+    "tries": 1938,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 10,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    32,
+    17,
+    2
+   ],
+   "size": 3281040,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 1,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     558345756704,
+     32
+    ],
+    [
+     562640724016,
+     32
+    ],
+    [
+     566935687232,
+     8
+    ],
+    [
+     571230654544,
+     16
+    ],
+    [
+     1103806603280,
+     16
+    ],
+    [
+     1116691499072,
+     16
+    ],
+    [
+     1125281433696,
+     16
+    ],
+    [
+     1653562417168,
+     16
+    ],
+    [
+     1679332214896,
+     16
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 18,
+    "tries": 2229,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 11,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    64,
+    32,
+    16
+   ],
+   "size": 714240,
+   "x_orbit_size": 1395,
+   "key": "alpha_P",
+   "invariants": {
+    "d": 0,
+    "x0_in_R": false,
+    "dim_R_P": 3,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     71485435674624,
+     21
+    ],
+    [
+     71489730641920,
+     56
+    ],
+    [
+     71494025609216,
+     42
+    ],
+    [
+     72043781423104,
+     24
+    ],
+    [
+     72048076390400,
+     24
+    ],
+    [
+     282578783305728,
+     1
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 19,
+    "tries": 1170,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  },
+  {
+   "pair": 12,
+   "x1": [
+    8,
+    4,
+    2,
+    1
+   ],
+   "r": [
+    64,
+    32,
+    17
+   ],
+   "size": 4999680,
+   "x_orbit_size": 1395,
+   "key": "alpha_graph",
+   "invariants": {
+    "d": 0,
+    "x0_in_R": false,
+    "dim_R_P": 2,
+    "dim_X1_P": 3,
+    "R_in_H0": true,
+    "X1_in_H0": true
+   },
+   "classes": [
+    [
+     71485435674688,
+     12
+    ],
+    [
+     71489730642000,
+     24
+    ],
+    [
+     71494025609312,
+     24
+    ],
+    [
+     71498320576624,
+     24
+    ],
+    [
+     72035191488576,
+     12
+    ],
+    [
+     72043781423200,
+     24
+    ],
+    [
+     72048076390512,
+     24
+    ],
+    [
+     142940806578192,
+     6
+    ],
+    [
+     143490562392080,
+     6
+    ],
+    [
+     144040318205968,
+     8
+    ],
+    [
+     282578783305744,
+     1
+    ],
+    [
+     283128539119632,
+     3
+    ]
+   ],
+   "stats": {
+    "algebra_dim": 16,
+    "tries": 1032,
+    "units": 64,
+    "units_ok": true,
+    "stable": true,
+    "matrices": 168
+   }
+  }
+ ]
+}
