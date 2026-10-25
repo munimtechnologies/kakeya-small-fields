@@ -1,0 +1,388 @@
+[
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "kept": [
+   "Q_vhh",
+   "Q_uhh",
+   "Q_uvh",
+   "L_hv",
+   "L_vh",
+   "L_hu",
+   "L_uh",
+   "L_vu"
+  ],
+  "why": {
+   "Q_vhh": "SAT",
+   "Q_uhh": "SAT",
+   "Q_uvh": "SAT",
+   "L_hv": "SAT",
+   "L_vh": "SAT",
+   "L_hu": "SAT",
+   "L_uh": "SAT",
+   "L_vu": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "Q_hhh",
+    "UNSAT"
+   ],
+   [
+    "Q_vhh",
+    "SAT"
+   ],
+   [
+    "Q_uhh",
+    "SAT"
+   ],
+   [
+    "L_hh",
+    "UNSAT"
+   ],
+   [
+    "Q_vvh",
+    "UNSAT"
+   ],
+   [
+    "Q_uvh",
+    "SAT"
+   ],
+   [
+    "L_hv",
+    "SAT"
+   ],
+   [
+    "L_vh",
+    "SAT"
+   ],
+   [
+    "L_hu",
+    "SAT"
+   ],
+   [
+    "L_uh",
+    "SAT"
+   ],
+   [
+    "Q_vvv",
+    "UNSAT"
+   ],
+   [
+    "Q_uvv",
+    "UNSAT"
+   ],
+   [
+    "L_vv",
+    "UNSAT"
+   ],
+   [
+    "L_vu",
+    "SAT"
+   ],
+   [
+    "L_uv",
+    "UNSAT"
+   ],
+   [
+    "L_uu",
+    "UNSAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "part": "k6",
+  "type": "rad2_image",
+  "kept": [
+   "Q_vhh",
+   "Q_uhh",
+   "Q_uvh",
+   "L_hv",
+   "L_vh",
+   "L_hu",
+   "L_uh",
+   "L_vu"
+  ],
+  "why": {
+   "Q_vhh": "SAT",
+   "Q_uhh": "SAT",
+   "Q_uvh": "SAT",
+   "L_hv": "UNKNOWN",
+   "L_vh": "SAT",
+   "L_hu": "SAT",
+   "L_uh": "SAT",
+   "L_vu": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "Q_hhh",
+    "UNSAT"
+   ],
+   [
+    "Q_vhh",
+    "SAT"
+   ],
+   [
+    "Q_uhh",
+    "SAT"
+   ],
+   [
+    "L_hh",
+    "UNSAT"
+   ],
+   [
+    "Q_vvh",
+    "UNSAT"
+   ],
+   [
+    "Q_uvh",
+    "SAT"
+   ],
+   [
+    "L_hv",
+    "UNKNOWN"
+   ],
+   [
+    "L_vh",
+    "SAT"
+   ],
+   [
+    "L_hu",
+    "SAT"
+   ],
+   [
+    "L_uh",
+    "SAT"
+   ],
+   [
+    "Q_vvv",
+    "UNSAT"
+   ],
+   [
+    "Q_uvv",
+    "UNSAT"
+   ],
+   [
+    "L_vv",
+    "UNSAT"
+   ],
+   [
+    "L_vu",
+    "SAT"
+   ],
+   [
+    "L_uv",
+    "UNSAT"
+   ],
+   [
+    "L_uu",
+    "UNSAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "part": "k6",
+  "type": "rad2_kernel",
+  "kept": [
+   "Q_vhh",
+   "Q_uhh",
+   "Q_uvh",
+   "L_hv",
+   "L_vh",
+   "L_hu",
+   "L_uh",
+   "L_vu"
+  ],
+  "why": {
+   "Q_vhh": "SAT",
+   "Q_uhh": "SAT",
+   "Q_uvh": "SAT",
+   "L_hv": "UNKNOWN",
+   "L_vh": "SAT",
+   "L_hu": "SAT",
+   "L_uh": "SAT",
+   "L_vu": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "Q_hhh",
+    "UNSAT"
+   ],
+   [
+    "Q_vhh",
+    "SAT"
+   ],
+   [
+    "Q_uhh",
+    "SAT"
+   ],
+   [
+    "L_hh",
+    "UNSAT"
+   ],
+   [
+    "Q_vvh",
+    "UNSAT"
+   ],
+   [
+    "Q_uvh",
+    "SAT"
+   ],
+   [
+    "L_hv",
+    "UNKNOWN"
+   ],
+   [
+    "L_vh",
+    "SAT"
+   ],
+   [
+    "L_hu",
+    "SAT"
+   ],
+   [
+    "L_uh",
+    "SAT"
+   ],
+   [
+    "Q_vvv",
+    "UNSAT"
+   ],
+   [
+    "Q_uvv",
+    "UNSAT"
+   ],
+   [
+    "L_vv",
+    "UNSAT"
+   ],
+   [
+    "L_vu",
+    "SAT"
+   ],
+   [
+    "L_uv",
+    "UNSAT"
+   ],
+   [
+    "L_uu",
+    "UNSAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "kept": [
+   "Q_vhh",
+   "Q_uhh",
+   "L_hh",
+   "Q_uvh",
+   "L_vh",
+   "L_hu",
+   "L_uh",
+   "L_vv",
+   "L_vu",
+   "L_uv",
+   "L_uu"
+  ],
+  "why": {
+   "Q_vhh": "SAT",
+   "Q_uhh": "SAT",
+   "L_hh": "SAT",
+   "Q_uvh": "SAT",
+   "L_vh": "SAT",
+   "L_hu": "SAT",
+   "L_uh": "SAT",
+   "L_vv": "UNKNOWN",
+   "L_vu": "SAT",
+   "L_uv": "UNKNOWN",
+   "L_uu": "UNKNOWN"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "Q_hhh",
+    "UNSAT"
+   ],
+   [
+    "Q_vhh",
+    "SAT"
+   ],
+   [
+    "Q_uhh",
+    "SAT"
+   ],
+   [
+    "L_hh",
+    "SAT"
+   ],
+   [
+    "Q_vvh",
+    "UNSAT"
+   ],
+   [
+    "Q_uvh",
+    "SAT"
+   ],
+   [
+    "L_hv",
+    "UNSAT"
+   ],
+   [
+    "L_vh",
+    "SAT"
+   ],
+   [
+    "L_hu",
+    "SAT"
+   ],
+   [
+    "L_uh",
+    "SAT"
+   ],
+   [
+    "Q_vvv",
+    "UNSAT"
+   ],
+   [
+    "Q_uvv",
+    "UNSAT"
+   ],
+   [
+    "L_vv",
+    "UNKNOWN"
+   ],
+   [
+    "L_vu",
+    "SAT"
+   ],
+   [
+    "L_uv",
+    "UNKNOWN"
+   ],
+   [
+    "L_uu",
+    "UNKNOWN"
+   ]
+  ]
+ }
+]

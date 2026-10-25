@@ -1,0 +1,14 @@
+test_model_meets_every_group (test_m108.TestControl.test_model_meets_every_group) ... ok
+test_same_as_m107_m_only (test_m108.TestControl.test_same_as_m107_m_only) ... ok
+test_counts_by_hand (test_m108.TestStatic.test_counts_by_hand) ... ok
+test_drop_one_group (test_m108.TestStatic.test_drop_one_group) ... ok
+test_example1 (test_m108.TestStatic.test_example1) ... ok
+test_groups (test_m108.TestStatic.test_groups) ... ok
+test_minimize (test_m108.TestStatic.test_minimize) ... ok
+test_shards_and_modes (test_m108.TestStatic.test_shards_and_modes) ... ok
+test_small_encode_is_sat_aniso (test_m108.TestStatic.test_small_encode_is_sat_aniso) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 36.504s
+
+OK

@@ -1,0 +1,18 @@
+{
+ "clauses": 543064,
+ "items": [
+  "r3b_t8_B7_o000_c000_t3_m094_187",
+  "r3b_t8_B7_o000_c000_t2_m094",
+  "r3b_t8_B7_o000_c000_t3_m001_176",
+  "r3b_t8_B7_o000_c000_t2_m086",
+  "r3b_t8_B7_o001_c000_t3_m002_132",
+  "r3b_t8_B7_o002_c000_t2_m011"
+ ],
+ "graded": {
+  "star_same_as_encode": true,
+  "star_counts_by_hand": true,
+  "m_only_same_as_m107": true,
+  "m_counts": true,
+  "items": true
+ }
+}
