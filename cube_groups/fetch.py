@@ -1,5 +1,5 @@
 # Copyright 2026 MV2 of Munim, Inc. Licensed under the Apache License, Version 2.0 (Apache-2.0).
-"""Setup step of job m105 (as jobs m103's and m104's): download the published modules it imports
+"""Setup step of job m106 (as jobs m103's to m105's): download the published modules it imports
 from kakeya-small-fields, waiting (up to 40 minutes) for a file that is not committed yet.
 
 Usage: python fetch.py NAME [NAME ...]
