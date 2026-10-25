@@ -1,0 +1,392 @@
+[
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "part": "core",
+  "type": "F8",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "part": "core",
+  "type": "irr",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "part": "core",
+  "type": "F2xF4",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "part": "core",
+  "type": "nil3",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "part": "core",
+  "type": "F2[x]/x3",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "part": "core",
+  "type": "x(x2+x+1)",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ }
+]

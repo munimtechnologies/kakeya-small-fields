@@ -1,0 +1,28 @@
+{
+ "by_class": {
+  "r3b_t8_B7_o000_c000": 58,
+  "r3b_t8_B7_o001_c000": 7,
+  "r3b_t8_B7_o002_c000": 23
+ },
+ "by_k": {
+  "6": 56,
+  "8": 21,
+  "10": 11
+ },
+ "types": {
+  "8 F2^3": 11,
+  "6 F2xF2[x]/x2": 22,
+  "6 rad2_image": 6,
+  "6 rad2_kernel": 6,
+  "10 proj": 11,
+  "8 nil1": 10,
+  "6 x2(x+1)": 22
+ },
+ "graded": {
+  "high_88": true,
+  "by_class": true,
+  "by_k": true,
+  "all_d3": true,
+  "shard_44": true
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "full_models": [],
+ "cases": {
+  "r3b_t8_B7_o003_c002_t2_m163": [
+   "UNSAT",
+   156.07
+  ],
+  "r3b_t8_B7_o005_c002_t2_m163": [
+   "UNSAT",
+   204.64
+  ],
+  "r3b_t8_B7_o005_c003_t2_m034": [
+   "UNSAT",
+   148.45
+  ],
+  "r3b_t8_B7_o005_c003_t2_m038": [
+   "UNSAT",
+   219.46
+  ]
+ },
+ "graded": {
+  "check_open_4": true,
+  "check_all_d2_t2": true,
+  "check_all_le4": true,
+  "check_in_m106a": true,
+  "no_error": true,
+  "rows_ran": true
+ }
+}

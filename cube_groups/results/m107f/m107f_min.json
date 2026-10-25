@@ -1,0 +1,262 @@
+[
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "part": "k6",
+  "type": "rad2_image",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "part": "k6",
+  "type": "rad2_kernel",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "kept": [
+   "M"
+  ],
+  "why": {
+   "M": "SAT"
+  },
+  "log": [
+   [
+    null,
+    "UNSAT"
+   ],
+   [
+    "X",
+    "UNSAT"
+   ],
+   [
+    "XE",
+    "UNSAT"
+   ],
+   [
+    "CE",
+    "UNSAT"
+   ],
+   [
+    "C",
+    "UNSAT"
+   ],
+   [
+    "S2",
+    "UNSAT"
+   ],
+   [
+    "S1",
+    "UNSAT"
+   ],
+   [
+    "H4",
+    "UNSAT"
+   ],
+   [
+    "H3",
+    "UNSAT"
+   ],
+   [
+    "H2",
+    "UNSAT"
+   ],
+   [
+    "H1",
+    "UNSAT"
+   ],
+   [
+    "Z",
+    "UNSAT"
+   ],
+   [
+    "M",
+    "SAT"
+   ]
+  ]
+ }
+]

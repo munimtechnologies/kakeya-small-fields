@@ -1,0 +1,15 @@
+test_checks_catch_changes (test_m107.TestControl.test_checks_catch_changes) ... ok
+test_counts (test_m107.TestControl.test_counts) ... ok
+test_dropping_unit_groups (test_m107.TestControl.test_dropping_unit_groups) ... ok
+test_model_meets_every_group (test_m107.TestControl.test_model_meets_every_group) ... ok
+test_same_as_relax (test_m107.TestControl.test_same_as_relax) ... ok
+test_counts_by_hand (test_m107.TestStatic.test_counts_by_hand) ... ok
+test_lists (test_m107.TestStatic.test_lists) ... ok
+test_minimize_groups (test_m107.TestStatic.test_minimize_groups) ... ok
+test_minimize_groups_not_unsat (test_m107.TestStatic.test_minimize_groups_not_unsat) ... ok
+test_minimize_groups_unknown (test_m107.TestStatic.test_minimize_groups_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 5.107s
+
+OK

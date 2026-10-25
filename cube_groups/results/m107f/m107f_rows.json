@@ -1,0 +1,2070 @@
+[
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 544770,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "X": 30,
+   "C": 11,
+   "M": 128,
+   "XE": 30,
+   "CE": 23
+  },
+  "seconds": 0.44,
+  "instance": "r3b_t8_B7_o000_c000_t2_m511",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t2_m511_all",
+  "part": "control",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "X",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   511
+  ],
+  "dmeet": 3,
+  "inv": 10,
+  "type": "proj",
+  "wall_seconds": 1.97,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "anisotropic": false,
+   "H1": true,
+   "H2": true,
+   "H3": true,
+   "H4": true,
+   "S1": true,
+   "S2": true,
+   "Z": true,
+   "X": true,
+   "C": true,
+   "M": true,
+   "XE": true,
+   "CE": true
+  },
+  "verified": true,
+  "violated": []
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543762,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "X": 30,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 31.76,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g01",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "X",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 32.99,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 29.98,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g02",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 31.33,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "CE": 0
+  },
+  "seconds": 30.86,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g03",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 32.18,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128
+  },
+  "seconds": 31.34,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g04",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 32.78,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543434,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 27.45,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g05",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 28.77,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543410,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.03,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g06",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 27.41,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543290,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 27.26,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g07",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 28.77,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543281,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 25.38,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g08",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 26.71,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543272,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.27,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g09",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 27.61,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543152,
+  "counts": {
+   "H1": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.21,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g10",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 27.87,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543128,
+  "counts": {
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 28.44,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g11",
+  "part": "k6",
+  "groups": [
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 29.83,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543064,
+  "counts": {
+   "M": 128
+  },
+  "seconds": 36.31,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g12",
+  "part": "k6",
+  "groups": [
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 38.01,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 542936,
+  "counts": {},
+  "seconds": 0.48,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m001_128_g13",
+  "part": "k6",
+  "groups": [],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 1.92,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "anisotropic": false,
+   "H1": true,
+   "H2": true,
+   "H3": true,
+   "H4": true,
+   "S1": true,
+   "S2": true,
+   "Z": true,
+   "X": true,
+   "C": true,
+   "M": false,
+   "XE": true,
+   "CE": true
+  },
+  "verified": true,
+  "violated": [
+   "M"
+  ]
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543762,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "X": 30,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 24.92,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g01",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "X",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 26.62,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 25.99,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g02",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 27.57,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "CE": 0
+  },
+  "seconds": 26.56,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g03",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 28.07,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128
+  },
+  "seconds": 24.27,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g04",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 25.81,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543434,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.34,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g05",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 27.77,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543410,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 24.24,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g06",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 25.61,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543290,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 27.6,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g07",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 28.97,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543281,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.56,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g08",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 28.07,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543272,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 30.17,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g09",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 31.79,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543152,
+  "counts": {
+   "H1": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 27.38,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g10",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 28.93,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543128,
+  "counts": {
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 28.14,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g11",
+  "part": "k6",
+  "groups": [
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 29.58,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543064,
+  "counts": {
+   "M": 128
+  },
+  "seconds": 29.14,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g12",
+  "part": "k6",
+  "groups": [
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 30.63,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 542936,
+  "counts": {},
+  "seconds": 0.48,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_004_g13",
+  "part": "k6",
+  "groups": [],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 2.22,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "anisotropic": false,
+   "H1": true,
+   "H2": true,
+   "H3": true,
+   "H4": true,
+   "S1": true,
+   "S2": true,
+   "Z": true,
+   "X": true,
+   "C": true,
+   "M": false,
+   "XE": true,
+   "CE": true
+  },
+  "verified": true,
+  "violated": [
+   "M"
+  ]
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543762,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "X": 30,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 38.4,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g01",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "X",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 39.87,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 38.93,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g02",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 40.37,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "CE": 0
+  },
+  "seconds": 44.8,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g03",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 46.25,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128
+  },
+  "seconds": 40.67,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g04",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 42.17,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543434,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 36.58,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g05",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 38.11,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543410,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 34.8,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g06",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 36.71,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543290,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 33.96,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g07",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 35.5,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543281,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 35.22,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g08",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 36.86,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543272,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 34.35,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g09",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 35.95,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543152,
+  "counts": {
+   "H1": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 35.36,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g10",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 36.76,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543128,
+  "counts": {
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 34.41,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g11",
+  "part": "k6",
+  "groups": [
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 35.81,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543064,
+  "counts": {
+   "M": 128
+  },
+  "seconds": 45.32,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g12",
+  "part": "k6",
+  "groups": [
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 46.94,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 542936,
+  "counts": {},
+  "seconds": 0.47,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m002_128_g13",
+  "part": "k6",
+  "groups": [],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 1.92,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "anisotropic": false,
+   "H1": true,
+   "H2": true,
+   "H3": true,
+   "H4": true,
+   "S1": true,
+   "S2": true,
+   "Z": true,
+   "X": true,
+   "C": true,
+   "M": false,
+   "XE": true,
+   "CE": true
+  },
+  "verified": true,
+  "violated": [
+   "M"
+  ]
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543762,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "X": 30,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 29.46,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g01",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "X",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 30.88,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "XE": 0,
+   "CE": 0
+  },
+  "seconds": 30.0,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g02",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "XE",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 31.44,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128,
+   "CE": 0
+  },
+  "seconds": 28.31,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g03",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M",
+   "CE"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 29.83,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93703,
+  "clauses": 543732,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "C": 11,
+   "M": 128
+  },
+  "seconds": 31.52,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g04",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "C",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 33.55,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543434,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "S2": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 24.99,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g05",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "S2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 26.51,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543410,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "S1": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 29.29,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g06",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "S1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 30.84,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543290,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "H4": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 27.79,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g07",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 29.44,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543281,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "H3": 9,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 30.64,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g08",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "H3",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 32.2,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543272,
+  "counts": {
+   "H1": 24,
+   "H2": 120,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 26.73,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g09",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "H2",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 28.22,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543152,
+  "counts": {
+   "H1": 24,
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 32.31,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g10",
+  "part": "k6",
+  "groups": [
+   "H1",
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 33.81,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543128,
+  "counts": {
+   "Z": 64,
+   "M": 128
+  },
+  "seconds": 28.49,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g11",
+  "part": "k6",
+  "groups": [
+   "Z",
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 30.19,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 543064,
+  "counts": {
+   "M": 128
+  },
+  "seconds": 38.24,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g12",
+  "part": "k6",
+  "groups": [
+   "M"
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 39.89,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 93632,
+  "clauses": 542936,
+  "counts": {},
+  "seconds": 0.61,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "tag": "r3b_t8_B7_o000_c000_t3_m005_130_g13",
+  "part": "k6",
+  "groups": [],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "dmeet": 3,
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 2.53,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "anisotropic": false,
+   "H1": true,
+   "H2": true,
+   "H3": true,
+   "H4": true,
+   "S1": true,
+   "S2": true,
+   "Z": true,
+   "X": true,
+   "C": true,
+   "M": false,
+   "XE": true,
+   "CE": true
+  },
+  "verified": true,
+  "violated": [
+   "M"
+  ]
+ }
+]

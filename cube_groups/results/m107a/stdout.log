@@ -1,0 +1,36 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 37.1 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+
+===== run-01-python: python -m unittest -v test_m107
+
+===== run-02-python: python m107.py --part check --shard a --out-dir /out
+SUMMARY check a all_match True graded 4 failed [] {"types": {"r3b_t8_B7_o003_c002_t2_m163": [4, "nil3"], "r3b_t8_B7_o005_c002_t2_m163": [4, "nil3"], "r3b_t8_B7_o005_c003_t2_m034": [4, "nil3"], "r3b_t8_B7_o005_c003_t2_m038": [4, "nil3"]}}
+
+===== run-03-python: python m107.py --part run --shard a --cap-seconds 900 --minutes 70 --out-dir /out
+solve r3b_t8_B7_o003_c002_t2_m163_n: {"aniso_clauses": 15, "budget_seconds": 900.0, "clauses": 546161, "dmeet": 2, "instance": "r3b_t8_B7_o003_c002_t2_m163", "inv": 4, "kind": "t2", "maps": [0, 163], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o003_c002", "part": "n", "seconds": 154.59, "solver": "cadical195", "status": "UNSAT", "tag": "r3b_t8_B7_o003_c002_t2_m163_n", "type": "nil3", "vars": 94135, "wall_seconds": 156.07}
+solve r3b_t8_B7_o005_c002_t2_m163_n: {"aniso_clauses": 15, "budget_seconds": 900.0, "clauses": 546185, "dmeet": 2, "instance": "r3b_t8_B7_o005_c002_t2_m163", "inv": 4, "kind": "t2", "maps": [0, 163], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o005_c002", "part": "n", "seconds": 203.2, "solver": "cadical195", "status": "UNSAT", "tag": "r3b_t8_B7_o005_c002_t2_m163_n", "type": "nil3", "vars": 94135, "wall_seconds": 204.64}
+solve r3b_t8_B7_o005_c003_t2_m034_n: {"aniso_clauses": 15, "budget_seconds": 900.0, "clauses": 546185, "dmeet": 2, "instance": "r3b_t8_B7_o005_c003_t2_m034", "inv": 4, "kind": "t2", "maps": [0, 34], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o005_c003", "part": "n", "seconds": 146.72, "solver": "cadical195", "status": "UNSAT", "tag": "r3b_t8_B7_o005_c003_t2_m034_n", "type": "nil3", "vars": 94135, "wall_seconds": 148.45}
+solve r3b_t8_B7_o005_c003_t2_m038_n: {"aniso_clauses": 15, "budget_seconds": 900.0, "clauses": 546185, "dmeet": 2, "instance": "r3b_t8_B7_o005_c003_t2_m038", "inv": 4, "kind": "t2", "maps": [0, 38], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o005_c003", "part": "n", "seconds": 217.95, "solver": "cadical195", "status": "UNSAT", "tag": "r3b_t8_B7_o005_c003_t2_m038_n", "type": "nil3", "vars": 94135, "wall_seconds": 219.46}
+SUMMARY run a skipped 0 {"n": {"UNSAT": 4}}
+
+===== run-04-python: python m107.py --part grade --shard a --out-dir /out
+SUMMARY grade a all_match True graded 6 failed [] {"full_models": []}

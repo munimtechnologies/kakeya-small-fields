@@ -1,0 +1,26 @@
+{
+ "types": {
+  "r3b_t8_B7_o003_c002_t2_m163": [
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o005_c002_t2_m163": [
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o005_c003_t2_m034": [
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o005_c003_t2_m038": [
+   4,
+   "nil3"
+  ]
+ },
+ "graded": {
+  "open_4": true,
+  "all_d2_t2": true,
+  "all_le4": true,
+  "in_m106a": true
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "full_models": [],
+ "min": {
+  "o000_c000_t3_m001_128": {
+   "kept": [
+    "M"
+   ],
+   "proven": true,
+   "why": {
+    "M": "SAT"
+   },
+   "type": "F2xF2[x]/x2"
+  },
+  "o000_c000_t3_m002_004": {
+   "kept": [
+    "M"
+   ],
+   "proven": true,
+   "why": {
+    "M": "SAT"
+   },
+   "type": "rad2_image"
+  },
+  "o000_c000_t3_m002_128": {
+   "kept": [
+    "M"
+   ],
+   "proven": true,
+   "why": {
+    "M": "SAT"
+   },
+   "type": "rad2_kernel"
+  },
+  "o000_c000_t3_m005_130": {
+   "kept": [
+    "M"
+   ],
+   "proven": true,
+   "why": {
+    "M": "SAT"
+   },
+   "type": "F2xF2[x]/x2"
+  }
+ },
+ "violated": {
+  "r3b_t8_B7_o000_c000_t3_m001_128_g13": [
+   "M"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_004_g13": [
+   "M"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_128_g13": [
+   "M"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m005_130_g13": [
+   "M"
+  ]
+ },
+ "graded": {
+  "check_items": true,
+  "check_same_as_relax": true,
+  "check_counts_by_hand": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o000_c000_t2_m511_all": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_g13": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_g13": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_128_g13": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m005_130_g13": true,
+  "control_sat": true,
+  "min_ran": true,
+  "all_groups_unsat": true
+ }
+}
