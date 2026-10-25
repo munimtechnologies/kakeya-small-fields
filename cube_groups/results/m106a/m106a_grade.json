@@ -1,0 +1,200 @@
+{
+ "full_models": [],
+ "by_level": {
+  "n": {
+   "UNSAT": 22,
+   "UNKNOWN": 6
+  },
+  "none": {
+   "UNKNOWN": 27,
+   "UNSAT": 1
+  },
+  "sweep": {
+   "UNSAT": 24,
+   "UNKNOWN": 4
+  }
+ },
+ "decided": [
+  "r3b_t8_B7_o003_c002_t2_m034",
+  "r3b_t8_B7_o003_c002_t3_m006_163",
+  "r3b_t8_B7_o004_c001_t2_m034",
+  "r3b_t8_B7_o004_c001_t2_m132",
+  "r3b_t8_B7_o004_c001_t3_m002_132",
+  "r3b_t8_B7_o004_c001_t3_m004_034",
+  "r3b_t8_B7_o005_c000_t2_m132",
+  "r3b_t8_B7_o005_c001_t2_m034",
+  "r3b_t8_B7_o005_c001_t2_m132",
+  "r3b_t8_B7_o005_c001_t2_m134",
+  "r3b_t8_B7_o005_c001_t3_m004_034",
+  "r3b_t8_B7_o005_c001_t3_m024_109",
+  "r3b_t8_B7_o005_c002_t2_m034",
+  "r3b_t8_B7_o005_c002_t2_m132",
+  "r3b_t8_B7_o005_c002_t3_m002_132",
+  "r3b_t8_B7_o005_c002_t3_m004_034",
+  "r3b_t8_B7_o005_c002_t3_m006_163",
+  "r3b_t8_B7_o005_c003_t2_m132",
+  "r3b_t8_B7_o005_c003_t3_m002_132",
+  "r3b_t8_B7_o005_c003_t3_m004_034",
+  "r3b_t8_B7_o006_c001_t2_m034",
+  "r3b_t8_B7_o006_c001_t2_m132",
+  "r3b_t8_B7_o006_c001_t3_m002_132",
+  "r3b_t8_B7_o006_c001_t3_m004_034"
+ ],
+ "undecided": [
+  "r3b_t8_B7_o003_c002_t2_m163",
+  "r3b_t8_B7_o005_c002_t2_m163",
+  "r3b_t8_B7_o005_c003_t2_m034",
+  "r3b_t8_B7_o005_c003_t2_m038"
+ ],
+ "cases": {
+  "r3b_t8_B7_o004_c001_t3_m002_132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c000_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNSAT",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c001_t2_m134": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c001_t3_m024_109": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c002_t3_m002_132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c003_t2_m038": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o006_c001_t2_m034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o006_c001_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o004_c001_t3_m004_034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c002_t2_m163": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o005_c002_t3_m004_034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c003_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c003_t3_m002_132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o006_c001_t3_m002_132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o003_c002_t2_m034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o003_c002_t2_m163": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o003_c002_t3_m006_163": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c001_t2_m034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c002_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c002_t3_m006_163": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c003_t3_m004_034": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o006_c001_t3_m004_034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o004_c001_t2_m034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o004_c001_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c001_t2_m132": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c001_t3_m004_034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c002_t2_m034": {
+   "n": "UNSAT",
+   "none": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o005_c003_t2_m034": {
+   "n": "UNKNOWN",
+   "none": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  }
+ },
+ "graded": {
+  "check_unknown_28": true,
+  "check_all_d2": true,
+  "check_all_le4": true,
+  "check_in_m105_sweep": true,
+  "no_error": true,
+  "rows_ran": true,
+  "consistent": true
+ }
+}

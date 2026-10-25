@@ -1,0 +1,13 @@
+test_aniso_clause_means_sigma_nonzero (test_m106.TestM106.test_aniso_clause_means_sigma_nonzero) ... ok
+test_case_of (test_m106.TestM106.test_case_of) ... ok
+test_minimize (test_m106.TestM106.test_minimize) ... ok
+test_minimize_unknown (test_m106.TestM106.test_minimize_unknown) ... ok
+test_names (test_m106.TestM106.test_names) ... ok
+test_order (test_m106.TestM106.test_order) ... ok
+test_same_size_as_add_aniso_on (test_m106.TestM106.test_same_size_as_add_aniso_on) ... ok
+test_unknown_list (test_m106.TestM106.test_unknown_list) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.484s
+
+OK

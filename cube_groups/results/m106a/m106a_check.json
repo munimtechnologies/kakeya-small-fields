@@ -1,0 +1,13 @@
+{
+ "by_type": {
+  "4 F2[x]/x3": 11,
+  "4 nil3": 16,
+  "4 F2xF4": 1
+ },
+ "graded": {
+  "unknown_28": true,
+  "all_d2": true,
+  "all_le4": true,
+  "in_m105_sweep": true
+ }
+}

@@ -1,0 +1,162 @@
+[
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "part": "core",
+  "type": "F8",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "part": "core",
+  "type": "irr",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "part": "core",
+  "type": "F2xF4",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "part": "core",
+  "type": "nil3",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "part": "core",
+  "type": "F2[x]/x3",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "part": "core",
+  "type": "x(x2+x+1)",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "part": "k6",
+  "type": "rad2_image",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "part": "k6",
+  "type": "rad2_kernel",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ },
+ {
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "part": "k6",
+  "type": "F2xF2[x]/x2",
+  "none": "UNSAT",
+  "N": {
+   "kept": [],
+   "why": {},
+   "log": []
+  },
+  "out": {
+   "kept": [],
+   "why": {},
+   "log": []
+  }
+ }
+]
