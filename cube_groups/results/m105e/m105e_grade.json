@@ -1,0 +1,508 @@
+{
+ "by_level": {
+  "core n": {
+   "UNSAT": 6
+  },
+  "core out1_h5": {
+   "UNSAT": 6
+  },
+  "core out1_h6": {
+   "UNSAT": 6
+  },
+  "core out1_h7": {
+   "UNSAT": 6
+  },
+  "core noN_out3": {
+   "UNSAT": 6
+  },
+  "core out2_h56": {
+   "UNSAT": 6
+  },
+  "core out2_h57": {
+   "UNSAT": 6
+  },
+  "core out2_h67": {
+   "UNSAT": 6
+  },
+  "core in1_h1": {
+   "UNSAT": 6
+  },
+  "core in2_h12": {
+   "UNSAT": 6
+  },
+  "core noN_in4": {
+   "UNSAT": 6
+  },
+  "k6 out3": {
+   "UNSAT": 4
+  },
+  "k6 in4": {
+   "UNSAT": 4
+  }
+ },
+ "rows": {
+  "r3b_t8_B7_o000_c000_t2_m511_n": [
+   "SAT",
+   3.13,
+   10,
+   "proj"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_n": [
+   "UNSAT",
+   5.63,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_n": [
+   "UNSAT",
+   6.58,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_n": [
+   "UNSAT",
+   8.24,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_n": [
+   "UNSAT",
+   9.09,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_n": [
+   "UNSAT",
+   13.01,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_n": [
+   "UNSAT",
+   21.69,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out1_h5": [
+   "UNSAT",
+   7.74,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out1_h5": [
+   "UNSAT",
+   7.54,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out1_h5": [
+   "UNSAT",
+   8.24,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out1_h5": [
+   "UNSAT",
+   9.44,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out1_h5": [
+   "UNSAT",
+   17.31,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out1_h5": [
+   "UNSAT",
+   16.46,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out1_h6": [
+   "UNSAT",
+   6.18,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out1_h6": [
+   "UNSAT",
+   10.15,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out1_h6": [
+   "UNSAT",
+   11.66,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out1_h6": [
+   "UNSAT",
+   13.27,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out1_h6": [
+   "UNSAT",
+   20.58,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out1_h6": [
+   "UNSAT",
+   20.58,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out1_h7": [
+   "UNSAT",
+   7.19,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out1_h7": [
+   "UNSAT",
+   9.35,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out1_h7": [
+   "UNSAT",
+   11.1,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out1_h7": [
+   "UNSAT",
+   11.45,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out1_h7": [
+   "UNSAT",
+   16.27,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out1_h7": [
+   "UNSAT",
+   19.99,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_noN_out3": [
+   "UNSAT",
+   7.44,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_noN_out3": [
+   "UNSAT",
+   11.4,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_noN_out3": [
+   "UNSAT",
+   17.97,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_noN_out3": [
+   "UNSAT",
+   10.85,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_noN_out3": [
+   "UNSAT",
+   24.75,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_noN_out3": [
+   "UNSAT",
+   38.95,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out2_h56": [
+   "UNSAT",
+   7.74,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out2_h56": [
+   "UNSAT",
+   7.89,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out2_h56": [
+   "UNSAT",
+   9.74,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out2_h56": [
+   "UNSAT",
+   12.3,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out2_h56": [
+   "UNSAT",
+   16.42,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out2_h56": [
+   "UNSAT",
+   20.24,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out2_h57": [
+   "UNSAT",
+   6.33,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out2_h57": [
+   "UNSAT",
+   6.33,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out2_h57": [
+   "UNSAT",
+   9.8,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out2_h57": [
+   "UNSAT",
+   10.2,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out2_h57": [
+   "UNSAT",
+   14.66,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out2_h57": [
+   "UNSAT",
+   20.53,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_out2_h67": [
+   "UNSAT",
+   7.19,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_out2_h67": [
+   "UNSAT",
+   7.09,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_out2_h67": [
+   "UNSAT",
+   9.69,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_out2_h67": [
+   "UNSAT",
+   11.25,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_out2_h67": [
+   "UNSAT",
+   18.32,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_out2_h67": [
+   "UNSAT",
+   17.47,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_in1_h1": [
+   "UNSAT",
+   5.73,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_in1_h1": [
+   "UNSAT",
+   6.59,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_in1_h1": [
+   "UNSAT",
+   8.74,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_in1_h1": [
+   "UNSAT",
+   11.61,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_in1_h1": [
+   "UNSAT",
+   13.51,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_in1_h1": [
+   "UNSAT",
+   17.52,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_in2_h12": [
+   "UNSAT",
+   7.39,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_in2_h12": [
+   "UNSAT",
+   7.24,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_in2_h12": [
+   "UNSAT",
+   9.55,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_in2_h12": [
+   "UNSAT",
+   10.7,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_in2_h12": [
+   "UNSAT",
+   18.28,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_in2_h12": [
+   "UNSAT",
+   16.41,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m094_187_noN_in4": [
+   "UNSAT",
+   10.05,
+   2,
+   "F8"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m094_noN_in4": [
+   "UNSAT",
+   12.25,
+   2,
+   "irr"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_176_noN_in4": [
+   "UNSAT",
+   18.97,
+   4,
+   "F2xF4"
+  ],
+  "r3b_t8_B7_o000_c000_t2_m086_noN_in4": [
+   "UNSAT",
+   10.8,
+   4,
+   "nil3"
+  ],
+  "r3b_t8_B7_o001_c000_t3_m002_132_noN_in4": [
+   "UNSAT",
+   19.97,
+   4,
+   "F2[x]/x3"
+  ],
+  "r3b_t8_B7_o002_c000_t2_m011_noN_in4": [
+   "UNSAT",
+   63.69,
+   4,
+   "x(x2+x+1)"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_128_out3": [
+   "UNSAT",
+   35.12,
+   6,
+   "F2xF2[x]/x2"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_004_out3": [
+   "UNSAT",
+   42.0,
+   6,
+   "rad2_image"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_128_out3": [
+   "UNSAT",
+   29.08,
+   6,
+   "rad2_kernel"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m005_130_out3": [
+   "UNSAT",
+   22.44,
+   6,
+   "F2xF2[x]/x2"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m001_128_in4": [
+   "UNSAT",
+   29.13,
+   6,
+   "F2xF2[x]/x2"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_004_in4": [
+   "UNSAT",
+   27.01,
+   6,
+   "rad2_image"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m002_128_in4": [
+   "UNSAT",
+   26.5,
+   6,
+   "rad2_kernel"
+  ],
+  "r3b_t8_B7_o000_c000_t3_m005_130_in4": [
+   "UNSAT",
+   22.03,
+   6,
+   "F2xF2[x]/x2"
+  ]
+ },
+ "graded": {
+  "check_h_split": true,
+  "check_w_sizes": true,
+  "check_no_repeats": true,
+  "check_core_known_unsat": true,
+  "check_k6_four": true,
+  "check_items": true,
+  "control_sat": true,
+  "core_ran": true,
+  "no_full_model": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o000_c000_t2_m511_n": true
+ }
+}

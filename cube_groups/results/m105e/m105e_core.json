@@ -1,0 +1,2136 @@
+[
+ {
+  "status": "SAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 1.5,
+  "instance": "r3b_t8_B7_o000_c000_t2_m511",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "part": "control",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   511
+  ],
+  "inv": 10,
+  "type": "proj",
+  "wall_seconds": 3.13,
+  "budget_seconds": 90.0,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": true,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true,
+   "aniso_w": true
+  },
+  "verified": true
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 4.42,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 5.63,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 5.43,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 6.58,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 7.05,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 8.24,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 7.72,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 9.09,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 11.87,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 13.01,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546185,
+  "aniso_clauses": 15,
+  "seconds": 20.11,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "n",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 21.69,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 6.37,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.74,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 6.19,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 7.54,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 7.12,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 8.24,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 8.22,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 9.44,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 16.11,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 17.31,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549033,
+  "aniso_clauses": 31,
+  "seconds": 15.32,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out1_h5",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 16.46,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 5.04,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 6.18,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 8.79,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 10.15,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 10.32,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 11.66,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 11.55,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 13.27,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 19.33,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 20.58,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549033,
+  "aniso_clauses": 31,
+  "seconds": 19.36,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out1_h6",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 20.58,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 5.96,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.19,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 8.13,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 9.35,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 9.69,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 11.1,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 10.18,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 11.45,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 14.99,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 16.27,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549033,
+  "aniso_clauses": 31,
+  "seconds": 18.68,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out1_h7",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 19.99,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93775,
+  "clauses": 544169,
+  "aniso_clauses": 7,
+  "seconds": 6.24,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.44,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93991,
+  "clauses": 545177,
+  "aniso_clauses": 7,
+  "seconds": 10.23,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 11.4,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93775,
+  "clauses": 544169,
+  "aniso_clauses": 7,
+  "seconds": 16.81,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 17.97,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93991,
+  "clauses": 545177,
+  "aniso_clauses": 7,
+  "seconds": 9.69,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 10.85,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93775,
+  "clauses": 544169,
+  "aniso_clauses": 7,
+  "seconds": 23.43,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 24.75,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93991,
+  "clauses": 545201,
+  "aniso_clauses": 7,
+  "seconds": 37.67,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "noN_out3",
+  "part": "core",
+  "idx": [
+   8,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 38.95,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 6.26,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.74,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 6.52,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 7.89,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 8.52,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 9.74,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 10.96,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 12.3,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 15.12,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 16.42,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556761,
+  "aniso_clauses": 63,
+  "seconds": 18.62,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out2_h56",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 20.24,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 5.2,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 6.33,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 5.19,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 6.33,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 8.66,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 9.8,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 9.01,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 10.2,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 13.35,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 14.66,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556761,
+  "aniso_clauses": 63,
+  "seconds": 19.15,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out2_h57",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 20.53,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 5.93,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.19,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 5.77,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 7.09,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 8.53,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 9.69,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 9.97,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 11.25,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 16.9,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 18.32,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556761,
+  "aniso_clauses": 63,
+  "seconds": 16.08,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "out2_h67",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   9,
+   10
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 17.47,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 4.52,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 5.73,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 5.5,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 6.59,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 7.65,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 8.74,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549009,
+  "aniso_clauses": 31,
+  "seconds": 10.13,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 11.61,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94319,
+  "clauses": 548001,
+  "aniso_clauses": 31,
+  "seconds": 12.27,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 13.51,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94535,
+  "clauses": 549033,
+  "aniso_clauses": 31,
+  "seconds": 16.25,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "in1_h1",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 17.52,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 6.18,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 7.39,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 5.85,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 7.24,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 8.31,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 9.55,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556737,
+  "aniso_clauses": 63,
+  "seconds": 9.47,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 10.7,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95367,
+  "clauses": 555729,
+  "aniso_clauses": 63,
+  "seconds": 17.02,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 18.28,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 95583,
+  "clauses": 556761,
+  "aniso_clauses": 63,
+  "seconds": 15.18,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "in2_h12",
+  "part": "core",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 16.41,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 8.78,
+  "instance": "r3b_t8_B7_o000_c000_t3_m094_187",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   94,
+   187
+  ],
+  "inv": 2,
+  "type": "F8",
+  "wall_seconds": 10.05,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 10.7,
+  "instance": "r3b_t8_B7_o000_c000_t2_m094",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   94
+  ],
+  "inv": 2,
+  "type": "irr",
+  "wall_seconds": 12.25,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 17.84,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_176",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   176
+  ],
+  "inv": 4,
+  "type": "F2xF4",
+  "wall_seconds": 18.97,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546161,
+  "aniso_clauses": 15,
+  "seconds": 9.69,
+  "instance": "r3b_t8_B7_o000_c000_t2_m086",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   86
+  ],
+  "inv": 4,
+  "type": "nil3",
+  "wall_seconds": 10.8,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 93919,
+  "clauses": 545153,
+  "aniso_clauses": 15,
+  "seconds": 18.65,
+  "instance": "r3b_t8_B7_o001_c000_t3_m002_132",
+  "name": "r3b_t8_B7_o001_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "wall_seconds": 19.97,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 94135,
+  "clauses": 546185,
+  "aniso_clauses": 15,
+  "seconds": 62.02,
+  "instance": "r3b_t8_B7_o002_c000_t2_m011",
+  "name": "r3b_t8_B7_o002_c000",
+  "level": "noN_in4",
+  "part": "core",
+  "idx": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t2",
+  "maps": [
+   0,
+   11
+  ],
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "wall_seconds": 63.69,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 33.44,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 35.12,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 40.19,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 42.0,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 27.2,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 29.08,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 98015,
+  "clauses": 575777,
+  "aniso_clauses": 127,
+  "seconds": 21.09,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "out3",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   10
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 22.44,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 27.58,
+  "instance": "r3b_t8_B7_o000_c000_t3_m001_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   1,
+   128
+  ],
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 29.13,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 25.43,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_004",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   4
+  ],
+  "inv": 6,
+  "type": "rad2_image",
+  "wall_seconds": 27.01,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 24.98,
+  "instance": "r3b_t8_B7_o000_c000_t3_m002_128",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   2,
+   128
+  ],
+  "inv": 6,
+  "type": "rad2_kernel",
+  "wall_seconds": 26.5,
+  "budget_seconds": 90.0
+ },
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 104551,
+  "clauses": 626097,
+  "aniso_clauses": 255,
+  "seconds": 20.68,
+  "instance": "r3b_t8_B7_o000_c000_t3_m005_130",
+  "name": "r3b_t8_B7_o000_c000",
+  "level": "in4",
+  "part": "k6",
+  "idx": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "kind": "t3",
+  "maps": [
+   5,
+   130
+  ],
+  "inv": 6,
+  "type": "F2xF2[x]/x2",
+  "wall_seconds": 22.03,
+  "budget_seconds": 90.0
+ }
+]

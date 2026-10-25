@@ -1,0 +1,32 @@
+{
+ "by_class": {
+  "r3b_t8_B7_o003_c000": 179,
+  "r3b_t8_B7_o003_c001": 179,
+  "r3b_t8_B7_o003_c002": 95,
+  "r3b_t8_B7_o003_c003": 95,
+  "r3b_t8_B7_o003_c004": 95,
+  "r3b_t8_B7_o004_c001": 30,
+  "r3b_t8_B7_o005_c000": 95,
+  "r3b_t8_B7_o005_c001": 95,
+  "r3b_t8_B7_o005_c002": 53,
+  "r3b_t8_B7_o005_c003": 95,
+  "r3b_t8_B7_o006_c000": 37,
+  "r3b_t8_B7_o006_c001": 30
+ },
+ "types": [
+  "F2[x]/x3",
+  "F2xF4",
+  "F8",
+  "irr",
+  "nil3",
+  "x(x2+x+1)"
+ ],
+ "shard": 269,
+ "graded": {
+  "d2_13": true,
+  "sweep_1078": true,
+  "by_class": true,
+  "types_le4": true,
+  "shard_size": true
+ }
+}
