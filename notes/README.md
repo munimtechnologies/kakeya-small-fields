@@ -10,7 +10,7 @@ The question: for a finite 2-group L of exponent 2^e whose involutions are all c
 comes down to a number A(t), the largest dimension of an anisotropic system over F_2^t, and
 A(t) = t for every t would settle the whole family.
 
-## Status (2026-10-24)
+## Status (2026-10-26)
 
 - A(t) = M(t) = t for every t <= 5 (Theorem 27, [a5.md](a5.md)). The last step has independent
   routes: the hand proof of Lemma 52, and the exact searches m15 and m16, which ran on 2026-10-18
@@ -47,6 +47,19 @@ A(t) = t for every t would settle the whole family.
   Both halves have positive controls: without the anisotropy clauses, some of the CNFs have models
   that pass every independent check. The first control, on m94's pilot orbit, had failed (job m95,
   [a88.md](a88.md)); that orbit is one of the 14 ruled out by hand.
+- **The rank-0 case of (B7)_8** ([a92.md](a92.md) to [a102.md](a102.md)). Job m99 found 68 classes
+  of A_u in (B7)_8 and 422 in (B6)_8. In the rank-0 case of (B7)_8 (every map of ker phi vanishes
+  on ker A_u), Lemmas 102 to 106 and Corollary 123 (by hand) split each class into a t1 case and one
+  t2 or t3 case per orbit of the commuting space T(N): 16,272 cases. Lemma 108 counts the subspaces
+  of Q that T(N) leaves invariant, k(T(N)); 6,548 cases have k <= 4. **Proposition 38**
+  ([a97.md](a97.md)) and **Proposition 39** ([a102.md](a102.md)), computer-assisted, with DRAT
+  proofs verified by drat-trim: no case with k <= 4 is possible when d = dim(X_1 n R) >= 2 (57
+  cases at d = 3, 1,115 at d = 2). No class is closed yet: the 3,876 cases with k <= 4 at d = 1
+  (job m110, queued) and 1,500 at d = 0, the 9,656 with k >= 6 and the 68 t1 cases remain, and
+  after them the rank >= 1 cases of (B7)_8 and all of (B6)_8. Jobs m107 to m109 looked for a hand
+  proof of the k <= 4 refutations: the system (*), the normal form and the case's maps already
+  contradict each other, but the contradiction uses 8 to 10 of the 11 basis vectors of V and
+  hundreds of equations, so none is in sight.
 - Bounds: A(6..12) <= 6, 8, 11, 13, 16, 19, 23 (Corollary 119, [a80.md](a80.md); the earlier table
   of Corollary 49 was recomputed by job m38, and a80_bounds.py's tests check the new one).
 - The answer is yes for b <= 1, for a <= max(9, b + 2), and for the pairs (10, 2), (10, 3), (10, 4),
@@ -112,21 +125,22 @@ A(t) = t for every t would settle the whole family.
   of jobs m85 and m83 that closed o010_c004, o010_c006, o009_c005, o009_c006, o010_c003 and
   o010_c005 (jobs cert7 and cert8, [a86.md](a86.md)), and the 42 re-runs of job m82 that closed
   o008_c000, o008_c001 and o008_c003 (job cert9, [a87.md](a87.md)). So 339 of the 495 5-minute
-  re-runs are certified. Every certificate run so far came back VERIFIED (2549 of 2549, 182 of them
-  for the rank-4 searches at t = 8: job m95a's 23 and job m98b's 159); cert1's 99 sampled instances
-  were certified twice with equal CNF hashes.
+  re-runs are certified. At t = 8, 1,354 CNFs have verified DRAT proofs: job m95a's 23 and job
+  m98b's 159 for rank 4 (Corollary 122), and 1,172 for the rank-0 case of (B7)_8 (job m104's 57,
+  Proposition 38; jobs m108a-d's 1,115, Proposition 39). Every certificate run so far came back
+  VERIFIED (3721 of 3721); cert1's 99 sampled instances were certified twice with equal CNF hashes.
   A certificate covers one CNF only: the encoding, the hints, Lemma 93's unit clauses, Proposition
   33's orbit roots and the reductions are code and hand arguments that no human has checked. Every
   other solver answer in these notes is saved without a proof certificate.
-- Open next ([a83.md](a83.md) to [a91.md](a91.md)): **A(8) <= 10**, which would settle (11, 2) and
-  (14, 10). By Proposition 36 (by hand) and Corollary 122 it now comes down to two rank-3
+- Open next ([a83.md](a83.md) to [a102.md](a102.md)): **A(8) <= 10**, which would settle (11, 2)
+  and (14, 10). By Proposition 36 (by hand) and Corollary 122 it comes down to two rank-3
   configurations with x0 outside P: (B7)_8 (dim P = 7) and (B6)_8 (dim P = 6). Lemma 101 (by hand)
-  counts 13 and 51 orbits of the pair (ker A_u, Im A_u) in them; job m99 computes the classes of
-  A_u by machine and runs a pilot search. At t = 7 the analogous step took 68 + 420 classes and
-  about 90,000 split instances. A(9) <= 12, which would settle (11, 3) and (15, 12), also three
-  configurations; A(7) = 7, which would settle (13, 7) through the count and needs 11
-  configurations. For Theorem 33 itself: DRAT certificates for more of its chain, next the other
-  156 re-run instances, and review by a human mathematician.
+  counts 13 and 51 orbits of the pair (ker A_u, Im A_u) in them, and job m99 found 68 and 422
+  classes of A_u; the rank-0 case of (B7)_8 is under way (above). At t = 7 the analogous step took
+  68 + 420 classes and about 90,000 split instances. A(9) <= 12, which would settle (11, 3) and
+  (15, 12), also three configurations; A(7) = 7, which would settle (13, 7) through the count and
+  needs 11 configurations. For Theorem 33 itself: DRAT certificates for more of its chain, next the
+  other 156 re-run instances, and review by a human mathematician.
 
 ## The notes, in order
 
@@ -231,8 +245,19 @@ A(t) = t for every t would settle the whole family.
 | [a89.md](a89.md) | results of jobs m96a and m96b (41 of 41 and 13 of 13 graded checks held; without anisotropy the CNF of type (N4) has checked models at (4, 2) for M = N and E and at (6, 3) for (E_00, E_11) and (E_00, E_12), none for I + N, F, (N, N^2) or at (8, 4); minimal contradictory sets of hypothesis groups); **Lemma 98 (by hand, without anisotropy: in type (N4), M_y^2 = M_(n(G_y y)) and (G_y + G_y^2) y = 0)**; **Lemma 99 (by hand: at k = 2, M^2 = 0 or M^2 = M; (N, N^2) has no system at (6, 3); with anisotropy no M_y with y != 0 is idempotent, so the 8 orbits of (N4) at (8, 11) whose basis starts with E_00 are empty)**; job m97 (Lemma 98 on solver models, a reduced system, and the control at t = 8; queued) |
 | [a90.md](a90.md) | results of job m97 (67 of 69 graded checks held; every identity of Lemma 98 held on every solver model at t = 4, 6 and 8; **a positive control at t = 8: without anisotropy the (N4) CNF has checked models for orbits 0, 1, 6, 14 and 29**; with anisotropy the reduced system of Lemma 98 is UNSAT for 20 of the 23 orbits; the two failed checks came from a capped search for an invertible S); **Lemma 100 (by hand: the 14 orbits of (N4) whose W contains a non-zero idempotent are empty)**; job m98 (the reduced system against solver models and without a cap, a control for d = 3, DRAT proofs for m95b; queued) |
 | [a91.md](a91.md) | results of jobs m98a and m98b (316 and 164 graded checks held; every pair (G, S) read off 39 solver models solves the reduced system, now decided without a cap; **a positive control for d = 3: 14 of the 159 CNFs have checked models without anisotropy**; **all 159 instances with d = 3 UNSAT, every DRAT proof VERIFIED by drat-trim**); **Proposition 37 (computer-assisted): type (N4) at (8, 11) is empty**; **Corollary 122 (computer-assisted): no element of rank 4 at t = 8 and dim V = 11, so A(8) <= 10 holds if (B7)_8 and (B6)_8 are empty**; **Lemma 101 (by hand): 13 and 51 orbits of (ker A_u, Im A_u) in (B7)_8 and (B6)_8**; job m99 (the classes of A_u in both, by machine, and a pilot search; queued) |
+| [a92.md](a92.md) | results of job m99 (68 classes of A_u in (B7)_8 and 422 in (B6)_8, by machine; the pilot decided nothing); **Lemma 102 (by hand: Lemma 88 at t = 8, the elements of ker phi)** and **Lemma 103 (by hand: Lemma 93 at t = 8, the second element of largest rank, and the rank-0 case)**; job m100 (the rank-0 sweep of all 68 classes of (B7)_8, with predictions written before it ran) |
+| [a93.md](a93.md) | results of job m100 (every graded check held; all 68 rank-0 sweeps UNKNOWN); **Lemma 104 (by hand: in the rank-0 case of (B7)_8 the maps of ker phi commute modulo ker A_u, so one of them is zero)** and **Lemma 105 (by hand: Lemma 89 at t = 8, one of its cases closed by M(5) = 5)**; **Corollary 123 (the rank-0 case of (B7)_8 as one instance per class, with A_(v_1) = 0)**; job m101 |
+| [a94.md](a94.md) | results of job m101 (every graded check held, all eight positive controls SAT, the 68 sweeps with a zero map UNKNOWN); **Lemma 106 (by hand: the split of the rank-0 case by the commuting space T(N), and its symmetry)** and **Lemma 107 (the commuting spaces of M_3(F_2) it runs over)**; job m102 |
+| [a95.md](a95.md) | results of job m102 (every graded check held, all six positive controls SAT; no t1 instance decided; the pilot decided 30 of 68 cases of o000_c000 and 1 of 54 of o011_c000); **Lemma 108 (by hand: the number k(T) of subspaces of Q invariant under T(N), by type)**; the o000_c000 pilot splits by k (an observation); job m103 |
+| [a96.md](a96.md) | results of jobs m103a and m103b (every graded check held; the reading of m102's pilot confirmed by machine; every case with k(T(N)) <= 4 in the three d = 3 classes UNSAT, 57 of 57; 37 of 37 in a d = 2 class, 31 of 37 in a d = 1 class, 3 of 25 at d = 0); job m104 |
+| [a97.md](a97.md) | results of jobs m104a, m104b and m104c (**all 57 DRAT proofs VERIFIED, so Proposition 38 (computer-assisted): in the d = 3 classes of the rank-0 case of (B7)_8, k(T(N)) >= 6**; 6,548 cases with k <= 4 over the 68 classes; in six core cases anisotropy on a 7-dimensional subspace of V is already contradictory); job m105 |
+| [a98.md](a98.md) | results of jobs m105a to m105e (1,050 of the 1,078 untested d = 2 cases with k <= 4 UNSAT within 45 s, 28 UNKNOWN, none SAT; in the six core cases anisotropy on N alone, 15 vectors, is already contradictory); job m106 |
+| [a99.md](a99.md) | results of jobs m106a, m106b and m106e (24 of the 28 open d = 2 cases decided; at "n", 33 of the 37 k <= 4 cases of the d = 1 class o007_c008 UNSAT, few at d = 0; the core refutations need no anisotropy clause at all); job m107 |
+| [a100.md](a100.md) | results of jobs m107a to m107f (the last four d = 2 cases UNSAT with anisotropy on N, so all 1,115 d = 2 cases with k <= 4 UNSAT, then uncertified; of the 88 d = 3 cases with k > 4, 16 UNSAT without anisotropy and 63 SAT short of full anisotropy; the deletion-minimal set of hand conditions is {M} alone); job m108 |
+| [a101.md](a101.md) | results of jobs m108g and m108h (deletion-minimal sets of the 16 groups of (*) have 7 to 11 groups; Q_vhh, Q_uhh and Q_uvh are needed in every case; "M only" UNSAT in 12 more k = 6 cases); job m109 |
+| [a102.md](a102.md) | results of jobs m108a to m108d (**all 1,115 DRAT proofs VERIFIED, so Proposition 39 (computer-assisted): in the rank-0 case of (B7)_8, k(T(N)) >= 6 whenever d >= 2**); results of jobs m109h, m109i and m109j (the reduced systems keep 8 to 10 basis indices of V and 798 to 1,980 equations of (*), dropping exactly the vectors of N with zero map; Lemma 110 set aside); job m110 (the 3,876 d = 1 cases with k <= 4; queued) |
 
 Each note says which results are proofs by hand, which rest on SAT-solver answers without proof
 certificates (jobs m12, m13, m15, m16, m18, m19, m21, m22, m24, m25, m26, m30, m32, m33, m34, m36,
-m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m94, m95b, m96, m97, m98a), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003; job cert3, the 45 re-runs of m92; job cert4, the 49 re-runs of m89; job cert5, the 45 re-runs of m87; job cert6, the 49 re-runs of m86; jobs cert7 and cert8, the 77 re-runs of m85 and m83; job cert9, the 42 re-runs of m82; job m95a, its 23 searches of type (N4) at t = 8; job m98b, the 159 searches with d = 3 at t = 8), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
+m37, m39, m41, m42, m43, m44, m45, m46, m48, m50, m53, m54, m57, m58, m59, m60, m61, m62, m63, m64, m67, m69, m70, m71, m72, m73, m75, m76, m77, m78, m79, m80, m81, m82, m83, m84, m85, m86, m87, m88, m89, m90, m91, m92, m94, m95b, m96, m97, m98a, m99, m100, m101, m102, m103, m105, m106, m107, m108g, m108h, m109), which have DRAT proofs checked by drat-trim (jobs cert1 and cert2, the class o005_c003; job cert3, the 45 re-runs of m92; job cert4, the 49 re-runs of m89; job cert5, the 45 re-runs of m87; job cert6, the 49 re-runs of m86; jobs cert7 and cert8, the 77 re-runs of m85 and m83; job cert9, the 42 re-runs of m82; job m95a, its 23 searches of type (N4) at t = 8; job m98b, the 159 searches with d = 3 at t = 8; job m104, the 57 cases of Proposition 38; jobs m108a to m108d, the 1,115 cases of Proposition 39), and which use Theorem 3.5 of C. de Seguins Pazzis (arXiv 1405.1575) through Lemma 29.
 The code is in [`../cube_groups/`](../cube_groups/), with unit tests that gated each commit.
