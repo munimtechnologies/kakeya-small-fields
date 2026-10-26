@@ -1,0 +1,14 @@
+{
+ "graded": {
+  "struct_ran": true,
+  "struct_specs_68": true,
+  "struct_dims_68": true,
+  "struct_im_s_is_pi_r": true,
+  "struct_d1_pi_r_q01": true,
+  "struct_cases_3876": true,
+  "struct_row2_is_pres_r": true,
+  "struct_grades_loaded": true,
+  "struct_names_known": true,
+  "struct_d2_1078": true
+ }
+}

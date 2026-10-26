@@ -1,0 +1,13 @@
+test_level_masks (test_m111.TestLinearAlgebra.test_level_masks) ... ok
+test_pi_r_by_hand (test_m111.TestLinearAlgebra.test_pi_r_by_hand) ... ok
+test_preserves_by_hand (test_m111.TestLinearAlgebra.test_preserves_by_hand) ... ok
+test_row2_rule_on_all_t2 (test_m111.TestLinearAlgebra.test_row2_rule_on_all_t2) ... ok
+test_s_against_m99 (test_m111.TestLinearAlgebra.test_s_against_m99) ... ok
+test_grade_rows (test_m111.TestTables.test_grade_rows) ... ok
+test_m110_parts (test_m111.TestTables.test_m110_parts) ... ok
+test_sample (test_m111.TestTables.test_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.014s
+
+OK

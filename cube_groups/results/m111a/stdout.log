@@ -1,0 +1,37 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 41.9 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m110.py results/m110a/m110a_grade.json results/m110b/m110b_grade.json results/m110c/m110c_grade.json results
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m110.py: downloaded
+results/m110a/m110a_grade.json: downloaded
+results/m110b/m110b_grade.json: downloaded
+results/m110c/m110c_grade.json: downloaded
+results/m110d/m110d_grade.json: downloaded
+results/m110e/m110e_grade.json: downloaded
+results/m110f/m110f_grade.json: downloaded
+results/m110g/m110g_grade.json: downloaded
+
+===== run-01-python: python -m unittest -v test_m111
+
+===== run-02-python: python m111.py --part struct --shard a --out-dir /out
+SUMMARY struct all_match True graded 9 failed [] {"cross": {"comm_s": {"False": {"UNKNOWN": 293, "UNSAT": 2394}, "True": {"UNKNOWN": 22, "UNSAT": 6}}, "pres_ker": {"False": {"UNKNOWN": 263, "UNSAT": 2105}, "True": {"UNKNOWN": 52, "UNSAT": 295}}, "pres_r": {"False": {"UNKNOWN": 2, "UNSAT": 2387}, "True": {"UNKNOWN": 313, "UNSAT": 13}}, "row2": {"False": {"UNKNOWN": 2, "UNSAT": 2387}, "True": {"UNKNOWN": 313, "UNSAT": 13}}}, "d2": {"cases": 1078, "pres_r": 142, "unknown_28_not": ["r3b_t8_B7_o005_c001_t3_m024_109"], "unknown_28_pres_r": 27}, "not_yet_run": {"cases": 1161, "pres_r": 160}, "open_not_pres_r": ["r3b_t8_B7_o008_c003_t2_m092", "r3b_t8_B7_o010_c003_t2_m092"], "pres_r_total": 486}
+
+===== run-03-python: python m111.py --part grade --shard a --out-dir /out
+SUMMARY grade a all_match True graded 10 failed [] {}

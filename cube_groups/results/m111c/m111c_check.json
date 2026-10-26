@@ -1,0 +1,48 @@
+{
+ "sample": [
+  "r3b_t8_B7_o007_c000_t2_m012",
+  "r3b_t8_B7_o007_c003_t2_m026",
+  "r3b_t8_B7_o007_c002_t2_m031",
+  "r3b_t8_B7_o007_c002_t2_m038",
+  "r3b_t8_B7_o007_c001_t2_m044",
+  "r3b_t8_B7_o007_c001_t2_m058",
+  "r3b_t8_B7_o007_c001_t2_m062",
+  "r3b_t8_B7_o007_c000_t3_m004_034",
+  "r3b_t8_B7_o007_c001_t3_m012_032",
+  "r3b_t8_B7_o007_c004_t3_m021_047",
+  "r3b_t8_B7_o007_c000_t3_m031_036"
+ ],
+ "labels": [
+  "t2_m011",
+  "t2_m012",
+  "t2_m015",
+  "t2_m026",
+  "t2_m030",
+  "t2_m031",
+  "t2_m034",
+  "t2_m038",
+  "t2_m043",
+  "t2_m044",
+  "t2_m047",
+  "t2_m058",
+  "t2_m059",
+  "t2_m062",
+  "t2_m092",
+  "t3_m004_034",
+  "t3_m011_017",
+  "t3_m012_032",
+  "t3_m015_049",
+  "t3_m021_047",
+  "t3_m030_043",
+  "t3_m031_036"
+ ],
+ "open": 315,
+ "graded": {
+  "grades_loaded": true,
+  "sample_one_per_label": true,
+  "sample_nonempty": true,
+  "sample_d1_open": true,
+  "control_name": true,
+  "mask_sizes": true
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "full_models": [],
+ "control": {
+  "control n": "SAT",
+  "control in4": "UNKNOWN",
+  "control out3": "UNKNOWN"
+ },
+ "by_level": {
+  "in4": {
+   "UNKNOWN": 11
+  },
+  "out3": {
+   "UNKNOWN": 10,
+   "UNSAT": 1
+  },
+  "sweep": {
+   "UNSAT": 6,
+   "UNKNOWN": 4
+  }
+ },
+ "decided": [
+  "r3b_t8_B7_o007_c000_t2_m011",
+  "r3b_t8_B7_o007_c000_t2_m030",
+  "r3b_t8_B7_o007_c001_t2_m043",
+  "r3b_t8_B7_o007_c001_t3_m011_017",
+  "r3b_t8_B7_o007_c001_t3_m015_049",
+  "r3b_t8_B7_o007_c004_t2_m034",
+  "r3b_t8_B7_o008_c003_t2_m092"
+ ],
+ "open": [
+  "r3b_t8_B7_o007_c000_t2_m015",
+  "r3b_t8_B7_o007_c000_t3_m030_043",
+  "r3b_t8_B7_o007_c001_t2_m047",
+  "r3b_t8_B7_o007_c001_t2_m059"
+ ],
+ "cases": {
+  "r3b_t8_B7_o007_c000_t2_m011": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c000_t2_m015": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o007_c000_t2_m030": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c004_t2_m034": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c001_t2_m043": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c001_t2_m047": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o007_c001_t2_m059": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  },
+  "r3b_t8_B7_o008_c003_t2_m092": {
+   "in4": "UNKNOWN",
+   "out3": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c001_t3_m011_017": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c001_t3_m015_049": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNSAT"
+  },
+  "r3b_t8_B7_o007_c000_t3_m030_043": {
+   "in4": "UNKNOWN",
+   "out3": "UNKNOWN",
+   "sweep": "UNKNOWN"
+  }
+ },
+ "graded": {
+  "no_error": true,
+  "verified_r3b_t8_B7_o000_c000_t2_m511_n": true,
+  "control_n_sat": true,
+  "levels_ran": true,
+  "sweep_rule": true,
+  "consistent": true,
+  "check_ran": true,
+  "check_grades_loaded": true,
+  "check_sample_one_per_label": true,
+  "check_sample_nonempty": true,
+  "check_sample_d1_open": true,
+  "check_control_name": true,
+  "check_mask_sizes": true,
+  "run_ran": true
+ }
+}
