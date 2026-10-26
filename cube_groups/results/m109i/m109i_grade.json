@@ -1,0 +1,202 @@
+{
+ "full_models": [],
+ "min": {
+  "o000_c000_t3_m001_128": {
+   "idx": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ],
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7
+   ],
+   "groups": [
+    "L_uh",
+    "L_vu",
+    "L_vh",
+    "L_hu",
+    "L_hv",
+    "Q_uvh",
+    "Q_uhh",
+    "Q_vhh"
+   ],
+   "equations": 1254,
+   "proven": true,
+   "why": {
+    "idx": {
+     "4": "SAT",
+     "5": "SAT",
+     "6": "SAT",
+     "7": "SAT",
+     "9": "SAT",
+     "10": "SAT",
+     "3": "SAT",
+     "2": "SAT",
+     "0": "SAT"
+    },
+    "rows": {
+     "0": "SAT",
+     "1": "SAT",
+     "2": "SAT",
+     "3": "SAT",
+     "4": "SAT",
+     "7": "SAT"
+    },
+    "groups": {
+     "Q_vhh": "SAT",
+     "Q_uhh": "SAT",
+     "Q_uvh": "SAT",
+     "L_hv": "SAT",
+     "L_vh": "SAT",
+     "L_hu": "SAT",
+     "L_uh": "SAT",
+     "L_vu": "SAT"
+    }
+   },
+   "type": "F2xF2[x]/x2",
+   "solves": 35
+  },
+  "o000_c000_t3_m002_004": {
+   "idx": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "groups": [
+    "L_uh",
+    "L_vu",
+    "L_vh",
+    "L_hu",
+    "L_hv",
+    "Q_uvh",
+    "Q_uhh",
+    "Q_vhh"
+   ],
+   "equations": 1254,
+   "proven": true,
+   "why": {
+    "idx": {
+     "4": "SAT",
+     "6": "SAT",
+     "7": "SAT",
+     "8": "SAT",
+     "9": "SAT",
+     "10": "SAT",
+     "3": "SAT",
+     "2": "SAT",
+     "0": "SAT"
+    },
+    "rows": {
+     "0": "SAT",
+     "1": "SAT",
+     "2": "SAT",
+     "3": "SAT",
+     "4": "SAT",
+     "5": "SAT"
+    },
+    "groups": {
+     "Q_vhh": "SAT",
+     "Q_uhh": "SAT",
+     "Q_uvh": "SAT",
+     "L_hv": "SAT",
+     "L_vh": "SAT",
+     "L_hu": "SAT",
+     "L_uh": "SAT",
+     "L_vu": "SAT"
+    }
+   },
+   "type": "rad2_image",
+   "solves": 35
+  }
+ },
+ "statuses": {
+  "SAT": 47,
+  "UNSAT": 24
+ },
+ "graded": {
+  "check_full_same_as_encode": true,
+  "check_full_counts": true,
+  "check_sub_counts_by_hand": true,
+  "check_sub_counts_encoded": true,
+  "check_build_same_as_m108": true,
+  "check_m_counts": true,
+  "check_items": true,
+  "check_parts": true,
+  "no_error": true,
+  "verified_r3b_t8_B7_o000_c000_t2_m511_all": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s02": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s03": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s04": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s05": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s07": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s08": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s10": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s11": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s12": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s13": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s14": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s15": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s16": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s17": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s20": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s22": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s23": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s26": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s27": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s28": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s29": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s30": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m001_128_s33": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s02": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s04": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s05": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s06": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s07": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s08": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s10": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s11": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s12": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s13": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s14": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s15": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s16": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s17": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s18": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s22": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s23": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s26": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s27": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s28": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s29": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s30": true,
+  "verified_r3b_t8_B7_o000_c000_t3_m002_004_s33": true,
+  "control_sat": true,
+  "min_ran": true,
+  "all_unsat": true
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "clauses": 543064,
+ "items": [
+  "r3b_t8_B7_o000_c000_t2_m086",
+  "r3b_t8_B7_o001_c000_t3_m002_132",
+  "r3b_t8_B7_o002_c000_t2_m011"
+ ],
+ "graded": {
+  "full_same_as_encode": true,
+  "full_counts": true,
+  "sub_counts_by_hand": true,
+  "sub_counts_encoded": true,
+  "build_same_as_m108": true,
+  "m_counts": true,
+  "items": true,
+  "parts": true
+ }
+}

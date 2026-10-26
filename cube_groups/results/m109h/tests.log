@@ -1,0 +1,13 @@
+test_model_and_one_change (test_m109.TestControl.test_model_and_one_change) ... ok
+test_same_as_m108 (test_m109.TestControl.test_same_as_m108) ... ok
+test_counts_by_hand (test_m109.TestStatic.test_counts_by_hand) ... ok
+test_example1 (test_m109.TestStatic.test_example1) ... ok
+test_orders (test_m109.TestStatic.test_orders) ... ok
+test_reduce_item (test_m109.TestStatic.test_reduce_item) ... ok
+test_small_full_is_encode_star (test_m109.TestStatic.test_small_full_is_encode_star) ... ok
+test_small_restricted (test_m109.TestStatic.test_small_restricted) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 3.408s
+
+OK
