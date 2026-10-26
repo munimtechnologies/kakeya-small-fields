@@ -1,0 +1,439 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 30.1 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m107.py cert1_tools.py
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m107.py: downloaded
+cert1_tools.py: downloaded
+
+===== setup-03-python: python cert1_tools.py --dest tools
+configure: making default 'build' directory
+configure: building in default '/work/tools/cadical-rel-2.2.1/build'
+configure: root directory '/work/tools/cadical-rel-2.2.1'
+configure: source directory '/work/tools/cadical-rel-2.2.1/src'
+configure: compiler supports all required C99/C++11 extensions
+configure: compiler configuration supports flexible array members
+configure: unlocked IO with '{putc,getc}_unlocked' seems to work
+configure: 'closefrom' seems to be working
+configure: no 'libcadical.so' shared library generated (without '-shared')
+configure: no 'cadical-dynamic' dynamically linked binary generated (without '-shared')
+configure: compiling C++ with 'g++ -Wall -Wextra -O3 -DNDEBUG'
+configure: compiling C with 'gcc -Wall -Wextra -O3 -DNDEBUG'
+configure: generated 'build/makefile' from '../makefile.in'
+configure: generated '../makefile' as proxy to ...
+configure: ... '/work/tools/cadical-rel-2.2.1/build/makefile'
+configure: linking '/work/tools/cadical-rel-2.2.1/makefile'
+configure: now run 'make' to compile CaDiCaL
+configure: optionally run 'make test'
+make -C "/work/tools/cadical-rel-2.2.1/build"
+make[1]: Entering directory '/work/tools/cadical-rel-2.2.1/build'
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/analyze.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/arena.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/assume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/averages.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backbone.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backtrack.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backward.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/bins.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/block.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ccadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/checker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/clause.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/collect.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/compact.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/condition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/config.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/congruence.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/constrain.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/contract.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cover.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decide.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decompose.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/deduplicate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/definition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/drattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elim.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elimfast.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ema.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/extend.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external_propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/factor.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/file.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flags.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flip.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/format.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/frattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/gates.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/idruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/instantiate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/internal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ipasir.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lidruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/limit.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/logging.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lookahead.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lratchecker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lrattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lucky.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/message.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/minimize.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/options.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/parse.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/phases.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/probe.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/profile.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/proof.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/queue.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/random.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reap.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reduce.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/rephase.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/report.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/resources.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restart.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restore.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/score.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/shrink.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/signal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solution.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solver.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stats.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/subsume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/sweep.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/terminal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ternary.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/tier.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/transred.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/unstable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/util.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/var.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/veripbtracer.cpp
+../scripts/make-build-header.sh > build.hpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/vivify.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk_full_occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/warmup.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/watch.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../contrib/craigtracer.cpp
+gcc -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -x c -c ../src/kitten.c -o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/mobical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/version.cpp
+ar rc libcadical.a analyze.o arena.o assume.o averages.o backbone.o backtrack.o backward.o bins.o block.o ccadical.o checker.o clause.o collect.o compact.o condition.o config.o congruence.o constrain.o contract.o cover.o decide.o decompose.o deduplicate.o definition.o drattracer.o elim.o elimfast.o ema.o extend.o external.o external_propagate.o factor.o file.o flags.o flip.o format.o frattracer.o gates.o idruptracer.o instantiate.o internal.o ipasir.o lidruptracer.o limit.o logging.o lookahead.o lratchecker.o lrattracer.o lucky.o message.o minimize.o occs.o options.o parse.o phases.o probe.o profile.o proof.o propagate.o queue.o random.o reap.o reduce.o rephase.o report.o resources.o restart.o restore.o score.o shrink.o signal.o solution.o solver.o stable.o stats.o subsume.o sweep.o terminal.o ternary.o tier.o transred.o unstable.o util.o var.o veripbtracer.o version.o vivify.o walk.o walk_full_occs.o warmup.o watch.o craigtracer.o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o cadical cadical.o -L. libcadical.a 
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o mobical mobical.o -L. libcadical.a
+make[1]: Leaving directory '/work/tools/cadical-rel-2.2.1/build'
+tools: {"cadical": {"url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz", "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"}, "drat_trim": {"url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c", "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"}}
+
+===== run-01-python: python -m unittest -v test_m108
+
+===== run-02-python: python m108.py --part check --shard b --tools tools --out-dir /out
+SUMMARY check b all_match True graded 6 failed [] {"n_mode": ["r3b_t8_B7_o005_c003_t2_m038"]}
+
+===== run-03-python: python m108.py --part controls --shard b --tools tools --out-dir /out
+SUMMARY controls b all_match True {"control_empty_proof_rejected": true, "control_php55_sat": true, "control_php65_verified": true}
+
+===== run-04-python: python m108.py --part cert --shard b --tools tools --minutes 215 --out-dir /out
+cert r3b_t8_B7_o003_c000_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 13.86 s drat 9.84 s proof 76944987 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m006_163: VERIFIED sweep inv 4 F2[x]/x3 cadical 22.28 s drat 16.49 s proof 83923009 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m011_017: VERIFIED sweep inv 4 F2xF4 cadical 11.45 s drat 7.73 s proof 75098315 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m018_199: VERIFIED sweep inv 4 F2xF4 cadical 14.62 s drat 9.42 s proof 76605698 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m030_043: VERIFIED sweep inv 4 F2xF4 cadical 12.66 s drat 10.55 s proof 75235084 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m048_077: VERIFIED sweep inv 4 F2xF4 cadical 14.3 s drat 8.95 s proof 77462516 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m064_136: VERIFIED sweep inv 4 F2[x]/x3 cadical 13.17 s drat 9.57 s proof 72808321 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m072_169: VERIFIED sweep inv 4 F2[x]/x3 cadical 15.81 s drat 9.64 s proof 72300904 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m081_154: VERIFIED sweep inv 4 F2xF4 cadical 18.36 s drat 12.44 s proof 76885105 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m090_139: VERIFIED sweep inv 4 F2xF4 cadical 22.12 s drat 13.19 s proof 75287908 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m098_140: VERIFIED sweep inv 4 F2xF4 cadical 15.1 s drat 10.05 s proof 74643492 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m106_157: VERIFIED sweep inv 2 F8 cadical 12.11 s drat 8.57 s proof 72833255 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m114_190: VERIFIED sweep inv 2 F8 cadical 9.62 s drat 6.27 s proof 71116639 B clauses 906081
+cert r3b_t8_B7_o003_c000_t3_m121_159: VERIFIED sweep inv 4 F2xF4 cadical 12.79 s drat 8.6 s proof 76331239 B clauses 906081
+cert r3b_t8_B7_o003_c000_t2_m011: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.12 s drat 7.98 s proof 75722394 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m030: VERIFIED sweep inv 4 x(x2+x+1) cadical 10.28 s drat 7.85 s proof 76243720 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m043: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.0 s drat 7.86 s proof 76715327 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m059: VERIFIED sweep inv 4 nil3 cadical 10.48 s drat 6.33 s proof 72451987 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m071: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.03 s drat 8.16 s proof 75218536 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m085: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.57 s drat 8.7 s proof 74573761 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m091: VERIFIED sweep inv 4 nil3 cadical 12.09 s drat 7.91 s proof 75421443 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m095: VERIFIED sweep inv 2 irr cadical 10.3 s drat 6.49 s proof 73576799 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m101: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.89 s drat 8.77 s proof 74737552 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m106: VERIFIED sweep inv 2 irr cadical 10.5 s drat 7.66 s proof 74311849 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m111: VERIFIED sweep inv 2 irr cadical 11.33 s drat 7.57 s proof 74935821 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m117: VERIFIED sweep inv 4 x(x2+x+1) cadical 14.85 s drat 7.94 s proof 75040823 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m123: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.41 s drat 8.94 s proof 77103816 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m136: VERIFIED sweep inv 4 nil3 cadical 10.67 s drat 6.69 s proof 72572200 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m142: VERIFIED sweep inv 2 irr cadical 10.39 s drat 7.04 s proof 72990356 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m156: VERIFIED sweep inv 2 irr cadical 11.33 s drat 7.1 s proof 73662863 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m163: VERIFIED sweep inv 4 nil3 cadical 16.5 s drat 12.2 s proof 82071949 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m171: VERIFIED sweep inv 2 irr cadical 10.05 s drat 6.98 s proof 74660808 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m176: VERIFIED sweep inv 4 x(x2+x+1) cadical 10.83 s drat 8.09 s proof 75109086 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m180: VERIFIED sweep inv 4 x(x2+x+1) cadical 14.23 s drat 11.44 s proof 79435434 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m184: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.24 s drat 7.95 s proof 76172992 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m189: VERIFIED sweep inv 4 nil3 cadical 12.57 s drat 8.12 s proof 75744875 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m199: VERIFIED sweep inv 4 x(x2+x+1) cadical 10.89 s drat 8.54 s proof 74903160 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m205: VERIFIED sweep inv 4 nil3 cadical 12.71 s drat 7.68 s proof 73499219 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m213: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.5 s drat 8.09 s proof 74781263 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m221: VERIFIED sweep inv 4 nil3 cadical 10.62 s drat 6.68 s proof 72489720 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m228: VERIFIED sweep inv 4 nil3 cadical 11.92 s drat 7.77 s proof 72575771 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m236: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.36 s drat 8.74 s proof 76525616 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m242: VERIFIED sweep inv 4 nil3 cadical 10.22 s drat 7.72 s proof 75519330 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m248: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.79 s drat 8.22 s proof 75973101 B clauses 907089
+cert r3b_t8_B7_o003_c000_t2_m254: VERIFIED sweep inv 4 nil3 cadical 10.93 s drat 7.95 s proof 73546004 B clauses 907089
+cert r3b_t8_B7_o003_c001_t3_m003_181: VERIFIED sweep inv 4 F2xF4 cadical 12.52 s drat 9.85 s proof 76940044 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m007_179: VERIFIED sweep inv 4 F2xF4 cadical 15.3 s drat 11.65 s proof 81262332 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m012_032: VERIFIED sweep inv 4 F2[x]/x3 cadical 12.24 s drat 6.96 s proof 72883735 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m021_047: VERIFIED sweep inv 4 F2xF4 cadical 12.76 s drat 7.91 s proof 75917077 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m031_036: VERIFIED sweep inv 4 F2[x]/x3 cadical 11.05 s drat 7.68 s proof 73657350 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m054_220: VERIFIED sweep inv 4 F2xF4 cadical 12.02 s drat 9.25 s proof 76062863 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m065_184: VERIFIED sweep inv 4 F2xF4 cadical 12.93 s drat 7.92 s proof 75704280 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m073_185: VERIFIED sweep inv 4 F2xF4 cadical 12.01 s drat 8.06 s proof 76089578 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m084_170: VERIFIED sweep inv 4 F2[x]/x3 cadical 13.59 s drat 7.77 s proof 74784638 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m091_155: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.65 s drat 7.53 s proof 74761876 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m099_172: VERIFIED sweep inv 2 F8 cadical 9.06 s drat 6.3 s proof 71566647 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m107_189: VERIFIED sweep inv 4 F2[x]/x3 cadical 11.03 s drat 7.12 s proof 73022365 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m115_142: VERIFIED sweep inv 2 F8 cadical 9.22 s drat 6.5 s proof 73121475 B clauses 906081
+cert r3b_t8_B7_o003_c001_t3_m122_167: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.0 s drat 8.0 s proof 74526016 B clauses 906081
+cert r3b_t8_B7_o003_c001_t2_m012: VERIFIED sweep inv 4 nil3 cadical 10.49 s drat 6.17 s proof 72726303 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m031: VERIFIED sweep inv 4 nil3 cadical 8.27 s drat 5.98 s proof 71638031 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m044: VERIFIED sweep inv 4 nil3 cadical 9.64 s drat 6.31 s proof 71624822 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m062: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.71 s drat 8.42 s proof 76519052 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m075: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.42 s drat 8.63 s proof 76838255 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m086: VERIFIED sweep inv 4 nil3 cadical 9.6 s drat 6.78 s proof 72196296 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m092: VERIFIED sweep inv 4 nil3 cadical 11.45 s drat 7.31 s proof 75243679 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m096: VERIFIED sweep inv 4 nil3 cadical 11.43 s drat 6.75 s proof 73511519 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m102: VERIFIED sweep inv 2 irr cadical 10.61 s drat 7.84 s proof 74098321 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m107: VERIFIED sweep inv 4 nil3 cadical 11.55 s drat 7.24 s proof 74629812 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m114: VERIFIED sweep inv 2 irr cadical 10.26 s drat 7.01 s proof 73747145 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m118: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.67 s drat 8.19 s proof 75440415 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m125: VERIFIED sweep inv 4 x(x2+x+1) cadical 10.49 s drat 8.11 s proof 76348383 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m139: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.21 s drat 7.84 s proof 74942557 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m143: VERIFIED sweep inv 4 nil3 cadical 11.75 s drat 8.15 s proof 73908180 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m157: VERIFIED sweep inv 2 irr cadical 9.27 s drat 7.1 s proof 73318483 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m165: VERIFIED sweep inv 4 nil3 cadical 17.63 s drat 14.96 s proof 85729792 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m172: VERIFIED sweep inv 2 irr cadical 10.5 s drat 7.41 s proof 74244296 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m177: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.44 s drat 8.02 s proof 75944184 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m181: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.9 s drat 9.44 s proof 78659599 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m185: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.52 s drat 7.19 s proof 75078574 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m190: VERIFIED sweep inv 2 irr cadical 11.03 s drat 8.24 s proof 73355372 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m200: VERIFIED sweep inv 4 nil3 cadical 10.7 s drat 6.11 s proof 73672698 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m206: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.95 s drat 7.84 s proof 75048300 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m215: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.27 s drat 7.56 s proof 75602969 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m225: VERIFIED sweep inv 4 nil3 cadical 9.06 s drat 6.28 s proof 74076965 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m229: VERIFIED sweep inv 2 irr cadical 8.68 s drat 6.5 s proof 72083169 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m239: VERIFIED sweep inv 4 nil3 cadical 11.07 s drat 7.51 s proof 75220526 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m243: VERIFIED sweep inv 4 nil3 cadical 11.43 s drat 8.05 s proof 76709732 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m249: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.09 s drat 7.89 s proof 76106935 B clauses 907089
+cert r3b_t8_B7_o003_c001_t2_m255: VERIFIED sweep inv 4 nil3 cadical 12.05 s drat 7.04 s proof 75507698 B clauses 907089
+cert r3b_t8_B7_o003_c002_t3_m005_178: VERIFIED sweep inv 4 F2xF4 cadical 14.7 s drat 11.24 s proof 77767731 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m011_017: VERIFIED sweep inv 4 F2xF4 cadical 12.34 s drat 8.78 s proof 75428272 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m021_047: VERIFIED sweep inv 4 F2xF4 cadical 11.9 s drat 8.75 s proof 75055451 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m064_136: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.85 s drat 8.06 s proof 72492334 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m072_169: VERIFIED sweep inv 4 F2[x]/x3 cadical 12.35 s drat 8.29 s proof 74239264 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m081_154: VERIFIED sweep inv 4 F2xF4 cadical 13.23 s drat 8.59 s proof 74786332 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m095_171: VERIFIED sweep inv 2 F8 cadical 9.87 s drat 7.75 s proof 73145122 B clauses 906081
+cert r3b_t8_B7_o003_c002_t3_m119_158: VERIFIED sweep inv 4 F2[x]/x3 cadical 12.33 s drat 7.85 s proof 75621409 B clauses 906081
+cert r3b_t8_B7_o003_c002_t2_m015: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.25 s drat 8.24 s proof 74946466 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m047: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.94 s drat 8.18 s proof 74417927 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m075: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.03 s drat 8.95 s proof 75058500 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m086: VERIFIED sweep inv 4 nil3 cadical 12.41 s drat 8.2 s proof 71695018 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m092: VERIFIED sweep inv 4 nil3 cadical 13.85 s drat 8.25 s proof 74643824 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m096: VERIFIED sweep inv 4 nil3 cadical 10.56 s drat 6.69 s proof 73612800 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m102: VERIFIED sweep inv 2 irr cadical 11.57 s drat 7.14 s proof 72647849 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m107: VERIFIED sweep inv 4 nil3 cadical 13.89 s drat 8.28 s proof 73478587 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m114: VERIFIED sweep inv 2 irr cadical 13.39 s drat 9.45 s proof 75522007 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m118: VERIFIED sweep inv 4 x(x2+x+1) cadical 15.42 s drat 10.36 s proof 75953393 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m125: VERIFIED sweep inv 4 x(x2+x+1) cadical 14.6 s drat 9.71 s proof 74568903 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m139: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.91 s drat 9.6 s proof 76080516 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m143: VERIFIED sweep inv 4 nil3 cadical 11.17 s drat 7.91 s proof 78386367 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m171: VERIFIED sweep inv 2 irr cadical 11.24 s drat 6.39 s proof 72638458 B clauses 907089
+cert r3b_t8_B7_o003_c002_t2_m176: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.1 s drat 7.88 s proof 76685406 B clauses 907089
+cert r3b_t8_B7_o003_c003_t3_m001_176: VERIFIED sweep inv 4 F2xF4 cadical 12.12 s drat 9.94 s proof 76132106 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m007_179: VERIFIED sweep inv 4 F2xF4 cadical 14.47 s drat 10.54 s proof 77408310 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m012_032: VERIFIED sweep inv 4 F2[x]/x3 cadical 11.68 s drat 8.09 s proof 74404707 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m021_047: VERIFIED sweep inv 4 F2xF4 cadical 13.75 s drat 8.21 s proof 76911876 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m031_036: VERIFIED sweep inv 4 F2[x]/x3 cadical 9.44 s drat 6.09 s proof 71399557 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m063_205: VERIFIED sweep inv 4 F2[x]/x3 cadical 11.72 s drat 7.6 s proof 73736376 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m081_154: VERIFIED sweep inv 4 F2xF4 cadical 12.3 s drat 8.99 s proof 74189894 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m094_187: VERIFIED sweep inv 2 F8 cadical 9.5 s drat 6.15 s proof 70986170 B clauses 906081
+cert r3b_t8_B7_o003_c003_t3_m107_189: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.72 s drat 7.83 s proof 73779836 B clauses 906081
+cert r3b_t8_B7_o003_c003_t2_m026: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.55 s drat 8.22 s proof 76511662 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m038: VERIFIED sweep inv 4 nil3 cadical 27.76 s drat 27.2 s proof 103994646 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m058: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.73 s drat 8.79 s proof 75337494 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m069: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.37 s drat 9.24 s proof 76627165 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m090: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.25 s drat 9.47 s proof 77889540 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m094: VERIFIED sweep inv 2 irr cadical 11.75 s drat 8.28 s proof 75046752 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m099: VERIFIED sweep inv 2 irr cadical 11.27 s drat 7.59 s proof 73296451 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m109: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.29 s drat 8.97 s proof 76296350 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m115: VERIFIED sweep inv 2 irr cadical 12.58 s drat 6.8 s proof 74771064 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m119: VERIFIED sweep inv 4 nil3 cadical 11.75 s drat 8.02 s proof 76556447 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m156: VERIFIED sweep inv 2 irr cadical 10.81 s drat 6.87 s proof 75072335 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m169: VERIFIED sweep inv 4 nil3 cadical 10.31 s drat 6.88 s proof 73646312 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m173: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.75 s drat 8.55 s proof 77056690 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m178: VERIFIED sweep inv 4 x(x2+x+1) cadical 15.23 s drat 12.22 s proof 80973393 B clauses 907089
+cert r3b_t8_B7_o003_c003_t2_m225: VERIFIED sweep inv 4 nil3 cadical 10.8 s drat 6.89 s proof 74514736 B clauses 907089
+cert r3b_t8_B7_o003_c004_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 14.48 s drat 10.96 s proof 80150746 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m008_096: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.28 s drat 6.9 s proof 72386387 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m015_049: VERIFIED sweep inv 4 F2xF4 cadical 10.94 s drat 7.9 s proof 74611003 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m024_109: VERIFIED sweep inv 4 F2xF4 cadical 12.82 s drat 8.28 s proof 74531144 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m040_092: VERIFIED sweep inv 4 F2[x]/x3 cadical 12.01 s drat 8.53 s proof 76610530 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m064_136: VERIFIED sweep inv 4 F2[x]/x3 cadical 10.36 s drat 7.19 s proof 72584625 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m084_170: VERIFIED sweep inv 4 F2[x]/x3 cadical 11.95 s drat 6.55 s proof 72057515 B clauses 906081
+cert r3b_t8_B7_o003_c004_t3_m095_171: VERIFIED sweep inv 2 F8 cadical 9.77 s drat 6.55 s proof 71588571 B clauses 906081
+cert r3b_t8_B7_o003_c004_t2_m011: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.75 s drat 9.16 s proof 77541641 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m030: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.25 s drat 7.73 s proof 76112013 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m043: VERIFIED sweep inv 4 x(x2+x+1) cadical 11.2 s drat 7.66 s proof 75221838 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m059: VERIFIED sweep inv 4 nil3 cadical 9.82 s drat 6.66 s proof 73668216 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m085: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.55 s drat 7.74 s proof 77350254 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m091: VERIFIED sweep inv 4 nil3 cadical 10.93 s drat 7.4 s proof 76155906 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m095: VERIFIED sweep inv 2 irr cadical 11.31 s drat 6.82 s proof 72605070 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m101: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.27 s drat 8.24 s proof 76038972 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m106: VERIFIED sweep inv 2 irr cadical 10.84 s drat 7.18 s proof 74390169 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m111: VERIFIED sweep inv 2 irr cadical 12.1 s drat 7.37 s proof 75297341 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m132: VERIFIED sweep inv 4 nil3 cadical 18.63 s drat 12.69 s proof 79459724 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m141: VERIFIED sweep inv 2 irr cadical 12.9 s drat 7.41 s proof 74958097 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m178: VERIFIED sweep inv 4 x(x2+x+1) cadical 16.28 s drat 12.28 s proof 89782863 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m185: VERIFIED sweep inv 4 x(x2+x+1) cadical 12.21 s drat 7.61 s proof 74565478 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m190: VERIFIED sweep inv 2 irr cadical 11.43 s drat 7.3 s proof 72442721 B clauses 907089
+cert r3b_t8_B7_o003_c004_t2_m242: VERIFIED sweep inv 4 nil3 cadical 11.73 s drat 7.66 s proof 74525184 B clauses 907089
+cert r3b_t8_B7_o004_c000_t3_m003_181: VERIFIED sweep inv 4 F2xF4 cadical 19.6 s drat 14.16 s proof 82740365 B clauses 906081
+cert r3b_t8_B7_o004_c000_t3_m012_032: VERIFIED sweep inv 4 F2[x]/x3 cadical 18.86 s drat 14.06 s proof 79221175 B clauses 906081
+cert r3b_t8_B7_o004_c000_t3_m031_036: VERIFIED sweep inv 4 F2[x]/x3 cadical 15.78 s drat 10.82 s proof 77240872 B clauses 906081
+cert r3b_t8_B7_o004_c000_t3_m099_172: VERIFIED sweep inv 2 F8 cadical 13.67 s drat 8.79 s proof 73954159 B clauses 906081
+cert r3b_t8_B7_o004_c000_t2_m030: VERIFIED sweep inv 4 x(x2+x+1) cadical 16.29 s drat 11.59 s proof 80042854 B clauses 907089
+cert r3b_t8_B7_o004_c000_t2_m044: VERIFIED sweep inv 4 nil3 cadical 12.56 s drat 10.4 s proof 76305733 B clauses 907089
+cert r3b_t8_B7_o004_c000_t2_m096: VERIFIED sweep inv 4 nil3 cadical 13.4 s drat 9.22 s proof 74579875 B clauses 907089
+cert r3b_t8_B7_o004_c000_t2_m102: VERIFIED sweep inv 2 irr cadical 14.58 s drat 9.29 s proof 78816731 B clauses 907089
+cert r3b_t8_B7_o004_c000_t2_m184: VERIFIED sweep inv 4 x(x2+x+1) cadical 14.63 s drat 10.29 s proof 77305230 B clauses 907089
+cert r3b_t8_B7_o004_c001_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 37.03 s drat 36.25 s proof 106510517 B clauses 906081
+cert r3b_t8_B7_o004_c001_t3_m011_017: VERIFIED sweep inv 4 F2xF4 cadical 13.45 s drat 10.09 s proof 75555348 B clauses 906081
+cert r3b_t8_B7_o004_c001_t3_m064_136: VERIFIED sweep inv 4 F2[x]/x3 cadical 15.37 s drat 10.65 s proof 78058914 B clauses 906081
+cert r3b_t8_B7_o004_c001_t2_m011: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.0 s drat 11.33 s proof 75868407 B clauses 907089
+cert r3b_t8_B7_o004_c001_t2_m066: VERIFIED sweep inv 4 nil3 cadical 13.84 s drat 10.42 s proof 75211508 B clauses 907089
+cert r3b_t8_B7_o004_c001_t2_m092: VERIFIED sweep inv 4 nil3 cadical 17.34 s drat 14.24 s proof 78431741 B clauses 907089
+cert r3b_t8_B7_o004_c001_t2_m096: VERIFIED sweep inv 4 nil3 cadical 14.42 s drat 9.56 s proof 75488796 B clauses 907089
+cert r3b_t8_B7_o004_c001_t2_m176: VERIFIED sweep inv 4 x(x2+x+1) cadical 13.32 s drat 9.57 s proof 74508770 B clauses 907089
+cert r3b_t8_B7_o005_c000_t3_m004_034: VERIFIED sweep inv 4 F2[x]/x3 cadical 25.96 s drat 26.13 s proof 95682246 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m011_017: VERIFIED sweep inv 4 F2xF4 cadical 16.83 s drat 12.21 s proof 79851033 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m021_047: VERIFIED sweep inv 4 F2xF4 cadical 15.76 s drat 12.79 s proof 79854754 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m040_092: VERIFIED sweep inv 4 F2[x]/x3 cadical 23.17 s drat 22.21 s proof 82718480 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m066_128: VERIFIED sweep inv 4 F2[x]/x3 cadical 27.69 s drat 18.59 s proof 79532026 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m086_130: VERIFIED sweep inv 4 F2[x]/x3 cadical 24.56 s drat 16.7 s proof 79935262 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m094_187: VERIFIED sweep inv 2 F8 cadical 15.68 s drat 10.04 s proof 75057045 B clauses 906105
+cert r3b_t8_B7_o005_c000_t3_m102_156: VERIFIED sweep inv 2 F8 cadical 14.66 s drat 10.07 s proof 77962864 B clauses 906105
+cert r3b_t8_B7_o005_c000_t2_m026: VERIFIED sweep inv 4 x(x2+x+1) cadical 16.18 s drat 13.76 s proof 81853605 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m043: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.43 s drat 12.81 s proof 80838291 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m071: VERIFIED sweep inv 4 x(x2+x+1) cadical 16.57 s drat 16.53 s proof 82051102 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m090: VERIFIED sweep inv 4 x(x2+x+1) cadical 25.85 s drat 20.85 s proof 87438173 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m094: VERIFIED sweep inv 2 irr cadical 15.6 s drat 10.83 s proof 76415984 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m099: VERIFIED sweep inv 2 irr cadical 14.79 s drat 10.87 s proof 77732382 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m132: VERIFIED sweep inv 4 nil3 cadical 29.63 s drat 23.4 s proof 93294896 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m140: VERIFIED sweep inv 4 x(x2+x+1) cadical 21.71 s drat 17.58 s proof 86427508 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m154: VERIFIED sweep inv 4 x(x2+x+1) cadical 18.57 s drat 17.38 s proof 84482252 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m178: VERIFIED sweep inv 4 x(x2+x+1) cadical 19.32 s drat 18.51 s proof 89042944 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m187: VERIFIED sweep inv 2 irr cadical 13.68 s drat 10.52 s proof 75954706 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m199: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.56 s drat 15.42 s proof 83885449 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m205: VERIFIED sweep inv 4 nil3 cadical 18.42 s drat 14.28 s proof 81929292 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m213: VERIFIED sweep inv 4 x(x2+x+1) cadical 24.71 s drat 19.15 s proof 94251326 B clauses 907113
+cert r3b_t8_B7_o005_c000_t2_m242: VERIFIED sweep inv 4 nil3 cadical 21.66 s drat 20.19 s proof 85683923 B clauses 907113
+cert r3b_t8_B7_o005_c001_t3_m001_176: VERIFIED sweep inv 4 F2xF4 cadical 18.02 s drat 14.79 s proof 82987225 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m005_178: VERIFIED sweep inv 4 F2xF4 cadical 21.52 s drat 18.26 s proof 87161285 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m012_032: VERIFIED sweep inv 4 F2[x]/x3 cadical 16.99 s drat 17.46 s proof 81629169 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m024_109: VERIFIED sweep inv 4 F2xF4 cadical 22.91 s drat 17.71 s proof 84753440 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m045_206: VERIFIED sweep inv 4 F2xF4 cadical 19.26 s drat 17.05 s proof 80928865 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m071_144: VERIFIED sweep inv 4 F2xF4 cadical 15.92 s drat 14.71 s proof 79642700 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m087_146: VERIFIED sweep inv 4 F2xF4 cadical 15.84 s drat 12.64 s proof 78140625 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m095_171: VERIFIED sweep inv 2 F8 cadical 12.35 s drat 10.29 s proof 74221571 B clauses 906105
+cert r3b_t8_B7_o005_c001_t3_m103_188: VERIFIED sweep inv 4 F2[x]/x3 cadical 17.91 s drat 15.83 s proof 82578370 B clauses 906105
+cert r3b_t8_B7_o005_c001_t2_m030: VERIFIED sweep inv 4 x(x2+x+1) cadical 22.22 s drat 17.56 s proof 85677033 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m044: VERIFIED sweep inv 4 nil3 cadical 16.9 s drat 16.68 s proof 90556494 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m085: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.04 s drat 14.34 s proof 81249064 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m091: VERIFIED sweep inv 4 nil3 cadical 20.1 s drat 17.66 s proof 83674615 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m095: VERIFIED sweep inv 2 irr cadical 11.87 s drat 10.2 s proof 77974759 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m101: VERIFIED sweep inv 4 x(x2+x+1) cadical 20.47 s drat 16.59 s proof 91158640 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m134: VERIFIED sweep inv 4 nil3 cadical 39.45 s drat 36.2 s proof 111695291 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m141: VERIFIED sweep inv 2 irr cadical 12.52 s drat 9.76 s proof 77479897 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m155: VERIFIED sweep inv 4 nil3 cadical 15.98 s drat 13.28 s proof 82750670 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m179: VERIFIED sweep inv 4 x(x2+x+1) cadical 22.23 s drat 20.91 s proof 92009234 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m188: VERIFIED sweep inv 4 nil3 cadical 16.63 s drat 15.33 s proof 81408345 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m200: VERIFIED sweep inv 4 nil3 cadical 16.26 s drat 13.38 s proof 82417748 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m206: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.78 s drat 18.62 s proof 85831001 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m215: VERIFIED sweep inv 4 x(x2+x+1) cadical 15.8 s drat 12.12 s proof 80088996 B clauses 907113
+cert r3b_t8_B7_o005_c001_t2_m243: VERIFIED sweep inv 4 nil3 cadical 17.4 s drat 13.88 s proof 80405383 B clauses 907113
+cert r3b_t8_B7_o005_c002_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 35.84 s drat 32.53 s proof 103592272 B clauses 906105
+cert r3b_t8_B7_o005_c002_t3_m009_241: VERIFIED sweep inv 4 F2xF4 cadical 15.34 s drat 13.81 s proof 78211592 B clauses 906105
+cert r3b_t8_B7_o005_c002_t3_m016_069: VERIFIED sweep inv 4 F2xF4 cadical 16.64 s drat 12.98 s proof 79932920 B clauses 906105
+cert r3b_t8_B7_o005_c002_t3_m066_128: VERIFIED sweep inv 4 F2[x]/x3 cadical 17.49 s drat 14.62 s proof 79984576 B clauses 906105
+cert r3b_t8_B7_o005_c002_t3_m075_145: VERIFIED sweep inv 4 F2xF4 cadical 19.55 s drat 15.11 s proof 83841999 B clauses 906105
+cert r3b_t8_B7_o005_c002_t2_m011: VERIFIED sweep inv 4 x(x2+x+1) cadical 15.72 s drat 11.48 s proof 89742916 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m066: VERIFIED sweep inv 4 nil3 cadical 16.41 s drat 12.56 s proof 81551409 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m077: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.25 s drat 14.53 s proof 82849445 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m092: VERIFIED sweep inv 4 nil3 cadical 16.6 s drat 14.62 s proof 81641202 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m096: VERIFIED sweep inv 4 nil3 cadical 14.71 s drat 11.07 s proof 78214367 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m102: VERIFIED sweep inv 2 irr cadical 11.16 s drat 8.33 s proof 76415789 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m139: VERIFIED sweep inv 4 x(x2+x+1) cadical 22.07 s drat 16.43 s proof 86005627 B clauses 907113
+cert r3b_t8_B7_o005_c002_t2_m143: VERIFIED sweep inv 4 nil3 cadical 18.22 s drat 15.78 s proof 82524787 B clauses 907113
+cert r3b_t8_B7_o005_c003_t3_m001_176: VERIFIED sweep inv 4 F2xF4 cadical 18.55 s drat 12.94 s proof 82258514 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m007_179: VERIFIED sweep inv 4 F2xF4 cadical 25.54 s drat 24.01 s proof 104661799 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m012_032: VERIFIED sweep inv 4 F2[x]/x3 cadical 15.55 s drat 12.8 s proof 79030626 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m021_047: VERIFIED sweep inv 4 F2xF4 cadical 16.62 s drat 14.01 s proof 84075629 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m031_036: VERIFIED sweep inv 4 F2[x]/x3 cadical 17.26 s drat 12.68 s proof 80352913 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m063_205: VERIFIED sweep inv 4 F2[x]/x3 cadical 17.51 s drat 14.15 s proof 84906111 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m081_154: VERIFIED sweep inv 4 F2xF4 cadical 17.01 s drat 13.8 s proof 82542467 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m094_187: VERIFIED sweep inv 2 F8 cadical 13.67 s drat 8.05 s proof 76193085 B clauses 906105
+cert r3b_t8_B7_o005_c003_t3_m107_189: VERIFIED sweep inv 4 F2[x]/x3 cadical 18.87 s drat 14.05 s proof 79245505 B clauses 906105
+cert r3b_t8_B7_o005_c003_t2_m026: VERIFIED sweep inv 4 x(x2+x+1) cadical 14.77 s drat 12.69 s proof 80083062 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m038: VERIFIED n inv 4 nil3 cadical 91.85 s drat 113.09 s proof 160534863 B clauses 546185
+cert r3b_t8_B7_o005_c003_t2_m058: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.41 s drat 15.79 s proof 81297022 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m069: VERIFIED sweep inv 4 x(x2+x+1) cadical 18.89 s drat 14.14 s proof 82007955 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m090: VERIFIED sweep inv 4 x(x2+x+1) cadical 21.01 s drat 16.82 s proof 81828212 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m094: VERIFIED sweep inv 2 irr cadical 15.55 s drat 12.37 s proof 78425554 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m099: VERIFIED sweep inv 2 irr cadical 13.91 s drat 10.52 s proof 77245838 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m109: VERIFIED sweep inv 4 x(x2+x+1) cadical 24.79 s drat 19.35 s proof 85177193 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m115: VERIFIED sweep inv 2 irr cadical 15.1 s drat 10.48 s proof 76979208 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m119: VERIFIED sweep inv 4 nil3 cadical 23.45 s drat 16.48 s proof 82087270 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m156: VERIFIED sweep inv 2 irr cadical 16.62 s drat 9.87 s proof 75042773 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m169: VERIFIED sweep inv 4 nil3 cadical 20.82 s drat 16.1 s proof 84151154 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m173: VERIFIED sweep inv 4 x(x2+x+1) cadical 17.8 s drat 15.35 s proof 89782894 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m178: VERIFIED sweep inv 4 x(x2+x+1) cadical 23.1 s drat 20.55 s proof 89595491 B clauses 907113
+cert r3b_t8_B7_o005_c003_t2_m225: VERIFIED sweep inv 4 nil3 cadical 18.49 s drat 12.87 s proof 80614381 B clauses 907113
+cert r3b_t8_B7_o006_c000_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 32.46 s drat 28.02 s proof 96743955 B clauses 906105
+cert r3b_t8_B7_o006_c000_t3_m011_017: VERIFIED sweep inv 4 F2xF4 cadical 19.51 s drat 14.93 s proof 88127082 B clauses 906105
+cert r3b_t8_B7_o006_c000_t3_m027_228: VERIFIED sweep inv 4 F2[x]/x3 cadical 21.96 s drat 19.46 s proof 83641533 B clauses 906105
+cert r3b_t8_B7_o006_c000_t3_m094_187: VERIFIED sweep inv 2 F8 cadical 14.43 s drat 9.76 s proof 73495215 B clauses 906105
+cert r3b_t8_B7_o006_c000_t2_m026: VERIFIED sweep inv 4 x(x2+x+1) cadical 18.0 s drat 12.84 s proof 78002917 B clauses 907113
+cert r3b_t8_B7_o006_c000_t2_m043: VERIFIED sweep inv 4 x(x2+x+1) cadical 16.76 s drat 12.17 s proof 80036325 B clauses 907113
+cert r3b_t8_B7_o006_c000_t2_m094: VERIFIED sweep inv 2 irr cadical 15.55 s drat 11.73 s proof 77322771 B clauses 907113
+cert r3b_t8_B7_o006_c000_t2_m101: VERIFIED sweep inv 4 x(x2+x+1) cadical 21.23 s drat 17.07 s proof 85785259 B clauses 907113
+cert r3b_t8_B7_o006_c000_t2_m178: VERIFIED sweep inv 4 x(x2+x+1) cadical 22.25 s drat 20.23 s proof 88811732 B clauses 907113
+cert r3b_t8_B7_o006_c001_t3_m001_176: VERIFIED sweep inv 4 F2xF4 cadical 15.65 s drat 14.74 s proof 80423458 B clauses 906105
+cert r3b_t8_B7_o006_c001_t3_m009_241: VERIFIED sweep inv 4 F2xF4 cadical 15.98 s drat 12.22 s proof 80036169 B clauses 906105
+cert r3b_t8_B7_o006_c001_t3_m016_069: VERIFIED sweep inv 4 F2xF4 cadical 16.42 s drat 11.74 s proof 76729683 B clauses 906105
+cert r3b_t8_B7_o006_c001_t3_m094_187: VERIFIED sweep inv 2 F8 cadical 12.51 s drat 7.54 s proof 73022396 B clauses 906105
+cert r3b_t8_B7_o006_c001_t2_m034: VERIFIED sweep inv 4 nil3 cadical 70.3 s drat 89.86 s proof 148751875 B clauses 907113
+cert r3b_t8_B7_o006_c001_t2_m091: VERIFIED sweep inv 4 nil3 cadical 17.26 s drat 15.89 s proof 82157149 B clauses 907113
+cert r3b_t8_B7_o006_c001_t2_m095: VERIFIED sweep inv 2 irr cadical 15.56 s drat 9.72 s proof 78134772 B clauses 907113
+cert r3b_t8_B7_o006_c001_t2_m132: VERIFIED sweep inv 4 nil3 cadical 46.29 s drat 49.22 s proof 124946700 B clauses 907113
+SUMMARY cert b cases 279 {"VERIFIED": 279} seconds 8508
+
+===== run-05-python: python m108.py --part grade --shard b --out-dir /out
+SUMMARY grade b all_match True graded 290 failed [] {"cadical_sum": 4290.74, "drat_sum": 3307.33, "largest_proof": 160534863, "not_verified": [], "sat": [], "skipped": [], "verified": 279}
