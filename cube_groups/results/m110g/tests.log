@@ -1,0 +1,11 @@
+test_by_class (test_m110.TestCases.test_by_class) ... ok
+test_m106b_cases_and_controls (test_m110.TestCases.test_m106b_cases_and_controls) ... ok
+test_shards (test_m110.TestCases.test_shards) ... ok
+test_counts (test_m110.TestStatic.test_counts) ... ok
+test_followups_and_final (test_m110.TestStatic.test_followups_and_final) ... ok
+test_grade_on_a_table (test_m110.TestStatic.test_grade_on_a_table) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.452s
+
+OK
