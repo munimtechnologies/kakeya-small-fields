@@ -1,0 +1,10 @@
+test_deadline_skips_without_solving (test_m114.TestCases.test_deadline_skips_without_solving) ... ok
+test_shards_partition_80 (test_m114.TestCases.test_shards_partition_80) ... ok
+test_sources_and_split (test_m114.TestCases.test_sources_and_split) ... ok
+test_sources_missing_m112 (test_m114.TestCases.test_sources_missing_m112) ... ok
+test_published_lists (test_m114.TestPublished.test_published_lists) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 6.930s
+
+OK

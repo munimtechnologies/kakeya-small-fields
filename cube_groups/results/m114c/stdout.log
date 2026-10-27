@@ -1,0 +1,63 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 30.3 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m110.py m111.py m112.py results/m110i/m110i_grade.json results/m112a/m112a_grade.json results/m112b/m112b_gr
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m110.py: downloaded
+m111.py: downloaded
+m112.py: downloaded
+results/m110i/m110i_grade.json: downloaded
+results/m112a/m112a_grade.json: downloaded
+results/m112b/m112b_grade.json: downloaded
+results/m112c/m112c_grade.json: downloaded
+results/m112d/m112d_grade.json: downloaded
+results/m112e/m112e_grade.json: downloaded
+results/m112f/m112f_grade.json: downloaded
+results/m112g/m112g_grade.json: downloaded
+results/m112h/m112h_grade.json: downloaded
+
+===== run-01-python: python -m unittest -v test_m114
+
+===== run-02-python: python m114.py --part check --shard c --out-dir /out
+SUMMARY check c all_match True graded 8 failed [] {"from_m110i": 54, "from_m112": 26, "not_pres_r": ["r3b_t8_B7_o010_c008_t3_m063_205"], "pres_r": 79, "shard": 13, "total": 80}
+
+===== run-03-python: python m114.py --part controls --shard c --out-dir /out
+solve r3b_t8_B7_o000_c000_t2_m511_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 546161, "dmeet": 3, "instance": "r3b_t8_B7_o000_c000_t2_m511", "inv": 10, "kind": "t2", "maps": [0, 511], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o000_c000", "part": "control", "seconds": 1.61, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o000_c000_t2_m511_control", "type": "proj", "unsatisfied": ["v2+h1", "v1+v2+h1", "v3+h1", "v1+v3+h1", "v1+v3+h2", "v1+v2+v3+h2", "h1+h2", "v1+h1+h2", "v2+h1+h2", "v1+v2+h1+h2", "v1+v2+h3", "u+v1+v2+v3+h3"], "vars": 94135, "verified": true, "wall_seconds": 3.03}
+solve r3b_t8_B7_o011_c000_t3_m001_016_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 545153, "dmeet": 0, "instance": "r3b_t8_B7_o011_c000_t3_m001_016", "inv": 8, "kind": "t3", "maps": [1, 16], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o011_c000", "part": "control", "seconds": 0.75, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o011_c000_t3_m001_016_control", "type": "F2^3", "unsatisfied": ["h1", "v1+h1", "v2+h1", "v1+v2+h1", "h2", "v1+h2", "v3+h2", "v1+v3+h2", "v1+h1+h2", "v2+h1+h2", "v1+v3+h1+h2", "v2+v3+h1+h2"], "vars": 93919, "verified": true, "wall_seconds": 2.17}
+solve r3b_t8_B7_o007_c008_t2_m012_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 546161, "dmeet": 1, "instance": "r3b_t8_B7_o007_c008_t2_m012", "inv": 4, "kind": "t2", "maps": [0, 12], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o007_c008", "part": "control", "seconds": 1.36, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o007_c008_t2_m012_control", "type": "nil3", "unsatisfied": ["v1+v2+v3+h1", "u+v2+h2", "u+v1+v2+h2", "u+v3+h1+h2", "u+v1+v3+h1+h2", "u+h3", "u+v1+h3", "u+v2+h3", "u+v1+v2+h3", "u+v3+h1+h3", "u+v1+v3+h1+h3", "u+v2+v3+h1+h3"], "vars": 94135, "verified": true, "wall_seconds": 3.28}
+SUMMARY controls c all_match True [["o000_c000_t2_m511", "SAT", true], ["o011_c000_t3_m001_016", "SAT", true], ["o007_c008_t2_m012", "SAT", true]]
+
+===== run-04-python: python m114.py --part run --shard c --sweep-seconds 1500 --workers 2 --minutes 210 --out-dir /out
+solve r3b_t8_B7_o007_c005_t3_m030_043_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 906081, "cls": 5, "dmeet": 1, "instance": "r3b_t8_B7_o007_c005_t3_m030_043", "kind": "t3", "maps": [30, 43], "mode": "sweep", "name": "r3b_t8_B7_o007_c005", "pair": 7, "part": "sweep", "seconds": 611.34, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 614.45}
+solve r3b_t8_B7_o007_c001_t2_m034_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 907089, "cls": 1, "dmeet": 1, "instance": "r3b_t8_B7_o007_c001_t2_m034", "kind": "t2", "maps": [0, 34], "mode": "sweep", "name": "r3b_t8_B7_o007_c001", "pair": 7, "part": "sweep", "seconds": 882.33, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 885.53}
+solve r3b_t8_B7_o007_c007_t3_m011_017_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 906081, "cls": 7, "dmeet": 1, "instance": "r3b_t8_B7_o007_c007_t3_m011_017", "kind": "t3", "maps": [11, 17], "mode": "sweep", "name": "r3b_t8_B7_o007_c007", "pair": 7, "part": "sweep", "seconds": 822.83, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 826.69}
+solve r3b_t8_B7_o008_c002_t2_m031_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 907089, "cls": 2, "dmeet": 1, "instance": "r3b_t8_B7_o008_c002_t2_m031", "kind": "t2", "maps": [0, 31], "mode": "sweep", "name": "r3b_t8_B7_o008_c002", "pair": 8, "part": "sweep", "seconds": 838.53, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 841.75}
+solve r3b_t8_B7_o009_c005_t2_m012_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 907113, "cls": 5, "dmeet": 1, "instance": "r3b_t8_B7_o009_c005_t2_m012", "kind": "t2", "maps": [0, 12], "mode": "sweep", "name": "r3b_t8_B7_o009_c005", "pair": 9, "part": "sweep", "seconds": 531.48, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 534.18}
+solve r3b_t8_B7_o009_c001_t2_m038_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 907113, "cls": 1, "dmeet": 1, "instance": "r3b_t8_B7_o009_c001_t2_m038", "kind": "t2", "maps": [0, 38], "mode": "sweep", "name": "r3b_t8_B7_o009_c001", "pair": 9, "part": "sweep", "seconds": 1035.98, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 1039.28}
+solve r3b_t8_B7_o009_c007_t2_m062_sweep: {"budget_seconds": 1500.0, "class_size": 24, "clauses": 907113, "cls": 7, "dmeet": 1, "instance": "r3b_t8_B7_o009_c007_t2_m062", "kind": "t2", "maps": [0, 62], "mode": "sweep", "name": "r3b_t8_B7_o009_c007", "pair": 9, "part": "sweep", "seconds": 773.2, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 775.72}
+solve r3b_t8_B7_o010_c004_t3_m004_034_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 906105, "cls": 4, "dmeet": 1, "instance": "r3b_t8_B7_o010_c004_t3_m004_034", "kind": "t3", "maps": [4, 34], "mode": "sweep", "name": "r3b_t8_B7_o010_c004", "pair": 10, "part": "sweep", "seconds": 751.33, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 753.95}
+solve r3b_t8_B7_o010_c001_t2_m026_sweep: {"budget_seconds": 1500.0, "class_size": 32, "cls": 1, "dmeet": 1, "instance": "r3b_t8_B7_o010_c001_t2_m026", "kind": "t2", "maps": [0, 26], "mode": "sweep", "name": "r3b_t8_B7_o010_c001", "pair": 10, "part": "sweep", "reason": "time budget reached", "status": "UNKNOWN", "wall_seconds": 1500.03}
+solve r3b_t8_B7_o010_c005_t3_m015_049_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 906105, "cls": 5, "dmeet": 1, "instance": "r3b_t8_B7_o010_c005_t3_m015_049", "kind": "t3", "maps": [15, 49], "mode": "sweep", "name": "r3b_t8_B7_o010_c005", "pair": 10, "part": "sweep", "seconds": 514.62, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 517.67}
+solve r3b_t8_B7_o010_c006_t3_m012_032_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 906105, "cls": 6, "dmeet": 1, "instance": "r3b_t8_B7_o010_c006_t3_m012_032", "kind": "t3", "maps": [12, 32], "mode": "sweep", "name": "r3b_t8_B7_o010_c006", "pair": 10, "part": "sweep", "seconds": 684.13, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 687.48}
+solve r3b_t8_B7_o010_c007_t3_m012_032_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 906105, "cls": 7, "dmeet": 1, "instance": "r3b_t8_B7_o010_c007_t3_m012_032", "kind": "t3", "maps": [12, 32], "mode": "sweep", "name": "r3b_t8_B7_o010_c007", "pair": 10, "part": "sweep", "seconds": 917.39, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 920.23}
+solve r3b_t8_B7_o010_c008_t2_m026_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 907113, "cls": 8, "dmeet": 1, "instance": "r3b_t8_B7_o010_c008_t2_m026", "kind": "t2", "maps": [0, 26], "mode": "sweep", "name": "r3b_t8_B7_o010_c008", "pair": 10, "part": "sweep", "seconds": 906.32, "solver": "cadical195", "status": "UNSAT", "vars": 143071, "wall_seconds": 908.84}
+SUMMARY run c skipped 0 {"sweep": {"UNKNOWN": 1, "UNSAT": 12}} seconds 5585
+
+===== run-05-python: python m114.py --part grade --shard c --out-dir /out
+SUMMARY grade c all_match True graded 12 failed [] {"by_status": {"sweep": {"UNKNOWN": 1, "UNSAT": 12}}, "by_type": {"F2[x]/x3": {"UNSAT": 3}, "F2xF4": {"UNSAT": 3}, "nil3": {"UNSAT": 4}, "x(x2+x+1)": {"UNKNOWN": 1, "UNSAT": 2}}, "full_models": [], "open": ["r3b_t8_B7_o010_c001_t2_m026"], "skipped": [], "unsat": ["r3b_t8_B7_o007_c001_t2_m034", "r3b_t8_B7_o007_c005_t3_m030_043", "r3b_t8_B7_o007_c007_t3_m011_017", "r3b_t8_B7_o008_c002_t2_m031", "r3b_t8_B7_o009_c001_t2_m038", "r3b_t8_B7_o009_c005_t2_m012", "r3b_t8_B7_o009_c007_t2_m062", "r3b_t8_B7_o010_c004_t3_m004_034", "r3b_t8_B7_o010_c005_t3_m015_049", "r3b_t8_B7_o010_c006_t3_m012_032", "r3b_t8_B7_o010_c007_t3_m012_032", "r3b_t8_B7_o010_c008_t2_m026"], "unsat_wall_seconds": {"max": 1039.28, "median": 826.69, "min": 517.67}}
