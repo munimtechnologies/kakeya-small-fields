@@ -1,0 +1,684 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 37.6 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m107.py m108.py m110.py m111.py cert1_tools.py results/m110a/m110a_grade.json results/m110b/m110b_grade.json
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m107.py: downloaded
+m108.py: downloaded
+m110.py: downloaded
+m111.py: downloaded
+cert1_tools.py: downloaded
+results/m110a/m110a_grade.json: downloaded
+results/m110b/m110b_grade.json: downloaded
+results/m110c/m110c_grade.json: downloaded
+results/m110d/m110d_grade.json: downloaded
+results/m110e/m110e_grade.json: downloaded
+results/m110f/m110f_grade.json: downloaded
+results/m110g/m110g_grade.json: downloaded
+results/m110h/m110h_grade.json: downloaded
+results/m110j/m110j_grade.json: downloaded
+
+===== setup-03-python: python cert1_tools.py --dest tools
+configure: making default 'build' directory
+configure: building in default '/work/tools/cadical-rel-2.2.1/build'
+configure: root directory '/work/tools/cadical-rel-2.2.1'
+configure: source directory '/work/tools/cadical-rel-2.2.1/src'
+configure: compiler supports all required C99/C++11 extensions
+configure: compiler configuration supports flexible array members
+configure: unlocked IO with '{putc,getc}_unlocked' seems to work
+configure: 'closefrom' seems to be working
+configure: no 'libcadical.so' shared library generated (without '-shared')
+configure: no 'cadical-dynamic' dynamically linked binary generated (without '-shared')
+configure: compiling C++ with 'g++ -Wall -Wextra -O3 -DNDEBUG'
+configure: compiling C with 'gcc -Wall -Wextra -O3 -DNDEBUG'
+configure: generated 'build/makefile' from '../makefile.in'
+configure: generated '../makefile' as proxy to ...
+configure: ... '/work/tools/cadical-rel-2.2.1/build/makefile'
+configure: linking '/work/tools/cadical-rel-2.2.1/makefile'
+configure: now run 'make' to compile CaDiCaL
+configure: optionally run 'make test'
+make -C "/work/tools/cadical-rel-2.2.1/build"
+make[1]: Entering directory '/work/tools/cadical-rel-2.2.1/build'
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/analyze.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/arena.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/assume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/averages.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backbone.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backtrack.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/backward.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/bins.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/block.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ccadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/checker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/clause.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/collect.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/compact.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/condition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/config.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/congruence.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/constrain.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/contract.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cover.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decide.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/decompose.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/deduplicate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/definition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/drattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elim.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/elimfast.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ema.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/extend.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/external_propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/factor.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/file.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flags.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/flip.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/format.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/frattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/gates.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/idruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/instantiate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/internal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ipasir.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lidruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/limit.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/logging.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lookahead.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lratchecker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lrattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/lucky.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/message.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/minimize.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/options.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/parse.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/phases.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/probe.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/profile.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/proof.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/queue.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/random.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reap.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/reduce.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/rephase.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/report.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/resources.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restart.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/restore.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/score.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/shrink.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/signal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solution.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/solver.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/stats.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/subsume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/sweep.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/terminal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/ternary.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/tier.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/transred.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/unstable.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/util.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/var.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/veripbtracer.cpp
+../scripts/make-build-header.sh > build.hpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/vivify.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/walk_full_occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/warmup.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/watch.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../contrib/craigtracer.cpp
+gcc -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -x c -c ../src/kitten.c -o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/cadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/mobical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -c ../src/version.cpp
+ar rc libcadical.a analyze.o arena.o assume.o averages.o backbone.o backtrack.o backward.o bins.o block.o ccadical.o checker.o clause.o collect.o compact.o condition.o config.o congruence.o constrain.o contract.o cover.o decide.o decompose.o deduplicate.o definition.o drattracer.o elim.o elimfast.o ema.o extend.o external.o external_propagate.o factor.o file.o flags.o flip.o format.o frattracer.o gates.o idruptracer.o instantiate.o internal.o ipasir.o lidruptracer.o limit.o logging.o lookahead.o lratchecker.o lrattracer.o lucky.o message.o minimize.o occs.o options.o parse.o phases.o probe.o profile.o proof.o propagate.o queue.o random.o reap.o reduce.o rephase.o report.o resources.o restart.o restore.o score.o shrink.o signal.o solution.o solver.o stable.o stats.o subsume.o sweep.o terminal.o ternary.o tier.o transred.o unstable.o util.o var.o veripbtracer.o version.o vivify.o walk.o walk_full_occs.o warmup.o watch.o craigtracer.o kitten.o
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o cadical cadical.o -L. libcadical.a 
+g++ -Wall -Wextra -O3 -DNDEBUG -I../build -I../src -o mobical mobical.o -L. libcadical.a
+make[1]: Leaving directory '/work/tools/cadical-rel-2.2.1/build'
+tools: {"cadical": {"url": "https://github.com/arminbiere/cadical/archive/refs/tags/rel-2.2.1.tar.gz", "sha256": "16d24cc143632b9990a3fbe062e2858d5dd9599a0f369dc02a40c2a76036f931"}, "drat_trim": {"url": "https://raw.githubusercontent.com/marijnheule/drat-trim/master/drat-trim.c", "sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"}}
+
+===== run-01-python: python -m unittest -v test_m113
+
+===== run-02-python: python m113.py --part check --shard e --tools tools --out-dir /out
+SUMMARY check e all_match True graded 8 failed [] {"by_mode": {"n": 3062, "sweep": 13}, "shard": 512}
+
+===== run-03-python: python m113.py --part controls --shard e --tools tools --out-dir /out
+SUMMARY controls e all_match True {"control_empty_proof_rejected": true, "control_n_d1": true, "control_n_model": true, "control_n_sat": true, "control_php55_sat": true, "control_php65_verified": true} clauses 546161 cadical 4.36 s
+
+===== run-04-python: python m113.py --part cert --shard e --tools tools --workers 2 --minutes 200 --out-dir /out
+cert r3b_t8_B7_o007_c000_t2_m092: VERIFIED n inv 4 nil3 cadical 7.6 s drat 5.77 s proof 27247661 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 9.62 s drat 9.5 s proof 28698661 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m099: VERIFIED n inv 2 irr cadical 6.08 s drat 5.64 s proof 24330867 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m109: VERIFIED n inv 4 x(x2+x+1) cadical 9.03 s drat 9.28 s proof 28942384 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m118: VERIFIED n inv 4 x(x2+x+1) cadical 7.43 s drat 5.79 s proof 26196785 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m212: VERIFIED n inv 4 nil3 cadical 6.84 s drat 5.68 s proof 24291085 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m197: VERIFIED n inv 4 x(x2+x+1) cadical 9.5 s drat 7.15 s proof 25058150 B clauses 546161
+cert r3b_t8_B7_o007_c000_t2_m230: VERIFIED n inv 4 x(x2+x+1) cadical 7.82 s drat 6.63 s proof 25837487 B clauses 546161
+cert r3b_t8_B7_o007_c000_t3_m003_181: VERIFIED n inv 4 F2xF4 cadical 10.44 s drat 7.84 s proof 27890030 B clauses 545153
+cert r3b_t8_B7_o007_c000_t3_m078_161: VERIFIED n inv 4 F2[x]/x3 cadical 6.59 s drat 5.08 s proof 25080052 B clauses 545153
+cert r3b_t8_B7_o007_c000_t3_m045_206: VERIFIED n inv 4 F2xF4 cadical 12.15 s drat 11.48 s proof 31338307 B clauses 545153
+cert r3b_t8_B7_o007_c000_t3_m103_188: VERIFIED n inv 4 F2[x]/x3 cadical 6.68 s drat 5.9 s proof 23991245 B clauses 545153
+cert r3b_t8_B7_o007_c001_t2_m085: VERIFIED n inv 4 x(x2+x+1) cadical 8.99 s drat 8.34 s proof 27897196 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m094: VERIFIED n inv 2 irr cadical 6.02 s drat 5.79 s proof 24244146 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m102: VERIFIED n inv 2 irr cadical 7.06 s drat 6.21 s proof 24962028 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m111: VERIFIED n inv 2 irr cadical 6.83 s drat 6.22 s proof 24459909 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m122: VERIFIED n inv 4 nil3 cadical 6.44 s drat 5.54 s proof 25549653 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 8.16 s drat 5.72 s proof 24538346 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m156: VERIFIED n inv 2 irr cadical 6.68 s drat 6.99 s proof 25282075 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m170: VERIFIED n inv 4 nil3 cadical 9.11 s drat 6.49 s proof 24654328 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m177: VERIFIED n inv 4 x(x2+x+1) cadical 10.71 s drat 8.08 s proof 26281941 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m184: VERIFIED n inv 4 x(x2+x+1) cadical 8.53 s drat 6.87 s proof 26418398 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m197: VERIFIED n inv 4 x(x2+x+1) cadical 10.24 s drat 7.2 s proof 26187653 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 12.57 s drat 10.98 s proof 28732040 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m221: VERIFIED n inv 4 nil3 cadical 7.83 s drat 6.7 s proof 25314051 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m234: VERIFIED n inv 4 x(x2+x+1) cadical 11.15 s drat 10.02 s proof 29437219 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m243: VERIFIED n inv 4 nil3 cadical 7.56 s drat 6.06 s proof 25382807 B clauses 546161
+cert r3b_t8_B7_o007_c001_t2_m254: VERIFIED n inv 4 nil3 cadical 7.56 s drat 6.5 s proof 25745892 B clauses 546161
+cert r3b_t8_B7_o007_c001_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 11.11 s drat 7.44 s proof 27743505 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m027_228: VERIFIED n inv 4 F2[x]/x3 cadical 7.36 s drat 5.74 s proof 25087193 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m064_136: VERIFIED n inv 4 F2[x]/x3 cadical 6.01 s drat 4.78 s proof 24492292 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m075_145: VERIFIED n inv 4 F2xF4 cadical 6.54 s drat 6.6 s proof 24497780 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m091_155: VERIFIED n inv 4 F2[x]/x3 cadical 6.88 s drat 6.6 s proof 26270514 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m106_157: VERIFIED n inv 2 F8 cadical 5.42 s drat 4.91 s proof 23678706 B clauses 545153
+cert r3b_t8_B7_o007_c001_t3_m118_174: VERIFIED n inv 4 F2xF4 cadical 6.13 s drat 5.15 s proof 23633405 B clauses 545153
+cert r3b_t8_B7_o007_c002_t2_m069: VERIFIED n inv 4 x(x2+x+1) cadical 9.61 s drat 7.87 s proof 27105675 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 8.53 s drat 6.17 s proof 25053433 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m096: VERIFIED n inv 4 nil3 cadical 9.37 s drat 6.01 s proof 25281025 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m104: VERIFIED n inv 4 nil3 cadical 8.14 s drat 6.09 s proof 25159598 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m115: VERIFIED n inv 2 irr cadical 8.23 s drat 6.22 s proof 24862043 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m125: VERIFIED n inv 4 x(x2+x+1) cadical 14.91 s drat 9.96 s proof 30528496 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m205: VERIFIED n inv 4 nil3 cadical 9.33 s drat 6.4 s proof 25591279 B clauses 546161
+cert r3b_t8_B7_o007_c002_t2_m221: VERIFIED n inv 4 nil3 cadical 9.17 s drat 6.44 s proof 25323747 B clauses 546161
+cert r3b_t8_B7_o007_c002_t3_m001_176: VERIFIED n inv 4 F2xF4 cadical 9.81 s drat 7.69 s proof 26522627 B clauses 545153
+cert r3b_t8_B7_o007_c002_t3_m027_228: VERIFIED n inv 4 F2[x]/x3 cadical 8.52 s drat 6.8 s proof 25403389 B clauses 545153
+cert r3b_t8_B7_o007_c001_t2_m026: UNKNOWN n inv 4 x(x2+x+1) cadical 600.22 s drat None s proof 595734528 B clauses 546161
+cert r3b_t8_B7_o007_c002_t3_m075_145: VERIFIED n inv 4 F2xF4 cadical 8.86 s drat 7.85 s proof 25798113 B clauses 545153
+cert r3b_t8_B7_o007_c002_t3_m103_188: VERIFIED n inv 4 F2[x]/x3 cadical 8.74 s drat 7.23 s proof 24882111 B clauses 545153
+cert r3b_t8_B7_o007_c002_t3_m122_167: VERIFIED n inv 4 F2[x]/x3 cadical 6.0 s drat 4.97 s proof 24591510 B clauses 545153
+cert r3b_t8_B7_o007_c003_t2_m085: VERIFIED n inv 4 x(x2+x+1) cadical 8.1 s drat 6.48 s proof 26658778 B clauses 546161
+cert r3b_t8_B7_o007_c003_t2_m094: VERIFIED n inv 2 irr cadical 5.46 s drat 5.66 s proof 25020631 B clauses 546161
+cert r3b_t8_B7_o007_c003_t2_m102: VERIFIED n inv 2 irr cadical 5.58 s drat 6.47 s proof 24133391 B clauses 546161
+cert r3b_t8_B7_o007_c003_t2_m111: VERIFIED n inv 2 irr cadical 6.28 s drat 6.0 s proof 24353795 B clauses 546161
+cert r3b_t8_B7_o007_c003_t2_m122: VERIFIED n inv 4 nil3 cadical 6.38 s drat 6.11 s proof 25256785 B clauses 546161
+cert r3b_t8_B7_o007_c003_t3_m075_145: VERIFIED n inv 4 F2xF4 cadical 6.84 s drat 5.57 s proof 24658199 B clauses 545153
+cert r3b_t8_B7_o007_c003_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 10.99 s drat 8.5 s proof 28841550 B clauses 545153
+cert r3b_t8_B7_o007_c003_t3_m115_142: VERIFIED n inv 2 F8 cadical 5.37 s drat 5.38 s proof 23517948 B clauses 545153
+cert r3b_t8_B7_o007_c004_t2_m085: VERIFIED n inv 4 x(x2+x+1) cadical 9.22 s drat 8.0 s proof 27963427 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 10.11 s drat 11.64 s proof 28765832 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m102: VERIFIED n inv 2 irr cadical 7.17 s drat 6.9 s proof 23922777 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m119: VERIFIED n inv 4 nil3 cadical 7.28 s drat 5.71 s proof 24429738 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m111: VERIFIED n inv 2 irr cadical 7.73 s drat 6.42 s proof 24753021 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 7.58 s drat 5.53 s proof 24025278 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m156: VERIFIED n inv 2 irr cadical 8.01 s drat 6.01 s proof 24578590 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m169: VERIFIED n inv 4 nil3 cadical 5.98 s drat 5.22 s proof 23554627 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m177: VERIFIED n inv 4 x(x2+x+1) cadical 9.49 s drat 7.9 s proof 28374890 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m184: VERIFIED n inv 4 x(x2+x+1) cadical 6.96 s drat 6.49 s proof 25187750 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m194: VERIFIED n inv 4 nil3 cadical 6.75 s drat 6.42 s proof 24053155 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m221: VERIFIED n inv 4 nil3 cadical 7.28 s drat 6.64 s proof 26270882 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 12.14 s drat 12.43 s proof 31569309 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m230: VERIFIED n inv 4 x(x2+x+1) cadical 7.3 s drat 6.4 s proof 24215870 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m243: VERIFIED n inv 4 nil3 cadical 7.24 s drat 6.4 s proof 26139184 B clauses 546161
+cert r3b_t8_B7_o007_c004_t2_m254: VERIFIED n inv 4 nil3 cadical 8.14 s drat 6.47 s proof 24682606 B clauses 546161
+cert r3b_t8_B7_o007_c004_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 9.16 s drat 5.76 s proof 26624986 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m064_136: VERIFIED n inv 4 F2[x]/x3 cadical 5.45 s drat 4.91 s proof 23272451 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m040_092: VERIFIED n inv 4 F2[x]/x3 cadical 10.14 s drat 8.3 s proof 28334985 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m078_161: VERIFIED n inv 4 F2[x]/x3 cadical 7.78 s drat 5.73 s proof 24794344 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m094_187: VERIFIED n inv 2 F8 cadical 6.14 s drat 5.22 s proof 23677468 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m106_157: VERIFIED n inv 2 F8 cadical 6.53 s drat 5.58 s proof 23717112 B clauses 545153
+cert r3b_t8_B7_o007_c004_t3_m119_158: VERIFIED n inv 4 F2[x]/x3 cadical 7.85 s drat 6.24 s proof 24291665 B clauses 545153
+cert r3b_t8_B7_o007_c005_t2_m090: VERIFIED n inv 4 x(x2+x+1) cadical 8.59 s drat 6.91 s proof 25345350 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m071: VERIFIED n inv 4 x(x2+x+1) cadical 9.52 s drat 8.13 s proof 26064492 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m106: VERIFIED n inv 2 irr cadical 5.98 s drat 5.94 s proof 24678249 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m096: VERIFIED n inv 4 nil3 cadical 7.76 s drat 6.28 s proof 25191374 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m116: VERIFIED n inv 4 nil3 cadical 7.09 s drat 6.38 s proof 26034084 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m125: VERIFIED n inv 4 x(x2+x+1) cadical 11.95 s drat 11.82 s proof 30616450 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m142: VERIFIED n inv 2 irr cadical 6.38 s drat 5.32 s proof 24511553 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m159: VERIFIED n inv 4 x(x2+x+1) cadical 7.0 s drat 5.72 s proof 24221480 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m172: VERIFIED n inv 2 irr cadical 7.0 s drat 6.86 s proof 25984944 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m188: VERIFIED n inv 4 nil3 cadical 6.59 s drat 5.43 s proof 24836547 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m180: VERIFIED n inv 4 x(x2+x+1) cadical 12.75 s drat 10.15 s proof 31077141 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m200: VERIFIED n inv 4 nil3 cadical 6.0 s drat 5.56 s proof 25988700 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m213: VERIFIED n inv 4 x(x2+x+1) cadical 9.07 s drat 8.39 s proof 26780238 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m227: VERIFIED n inv 4 x(x2+x+1) cadical 10.56 s drat 10.53 s proof 28178248 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m239: VERIFIED n inv 4 nil3 cadical 9.57 s drat 6.89 s proof 26988995 B clauses 546161
+cert r3b_t8_B7_o007_c005_t2_m248: VERIFIED n inv 4 x(x2+x+1) cadical 9.46 s drat 9.44 s proof 28086319 B clauses 546161
+cert r3b_t8_B7_o007_c005_t3_m002_132: VERIFIED n inv 4 F2[x]/x3 cadical 9.85 s drat 5.84 s proof 25174280 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m009_241: VERIFIED n inv 4 F2xF4 cadical 9.04 s drat 8.04 s proof 27890785 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m040_092: VERIFIED n inv 4 F2[x]/x3 cadical 9.89 s drat 7.07 s proof 27002702 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m064_136: VERIFIED n inv 4 F2[x]/x3 cadical 6.3 s drat 5.39 s proof 24838288 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m078_161: VERIFIED n inv 4 F2[x]/x3 cadical 5.54 s drat 4.83 s proof 24208208 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m094_187: VERIFIED n inv 2 F8 cadical 6.67 s drat 5.31 s proof 24085308 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m106_157: VERIFIED n inv 2 F8 cadical 6.39 s drat 4.76 s proof 24663427 B clauses 545153
+cert r3b_t8_B7_o007_c005_t3_m119_158: VERIFIED n inv 4 F2[x]/x3 cadical 6.08 s drat 5.21 s proof 24194183 B clauses 545153
+cert r3b_t8_B7_o007_c006_t2_m069: VERIFIED n inv 4 x(x2+x+1) cadical 7.79 s drat 6.76 s proof 27850258 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 7.7 s drat 6.8 s proof 26702463 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m095: VERIFIED n inv 2 irr cadical 6.73 s drat 5.74 s proof 25840639 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m115: VERIFIED n inv 2 irr cadical 7.31 s drat 6.35 s proof 24967499 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m104: VERIFIED n inv 4 nil3 cadical 8.74 s drat 6.17 s proof 25880873 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m141: VERIFIED n inv 2 irr cadical 5.31 s drat 4.74 s proof 24083298 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m123: VERIFIED n inv 4 x(x2+x+1) cadical 5.89 s drat 5.14 s proof 25250392 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m171: VERIFIED n inv 2 irr cadical 6.11 s drat 5.31 s proof 24702962 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m158: VERIFIED n inv 4 nil3 cadical 6.88 s drat 5.47 s proof 26022372 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m187: VERIFIED n inv 2 irr cadical 6.42 s drat 5.61 s proof 24714595 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m179: VERIFIED n inv 4 x(x2+x+1) cadical 11.35 s drat 8.04 s proof 29014041 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m199: VERIFIED n inv 4 x(x2+x+1) cadical 6.96 s drat 7.44 s proof 27287746 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m212: VERIFIED n inv 4 nil3 cadical 5.56 s drat 5.43 s proof 25084586 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m226: VERIFIED n inv 2 irr cadical 5.57 s drat 5.45 s proof 23749116 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m236: VERIFIED n inv 4 x(x2+x+1) cadical 7.02 s drat 7.24 s proof 25328392 B clauses 546161
+cert r3b_t8_B7_o007_c006_t2_m247: VERIFIED n inv 2 irr cadical 7.56 s drat 6.11 s proof 25312054 B clauses 546161
+cert r3b_t8_B7_o007_c006_t3_m001_176: VERIFIED n inv 4 F2xF4 cadical 7.71 s drat 6.91 s proof 27181798 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 6.44 s drat 6.02 s proof 24810689 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m045_206: VERIFIED n inv 4 F2xF4 cadical 11.44 s drat 9.03 s proof 31271856 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m065_184: VERIFIED n inv 4 F2xF4 cadical 7.29 s drat 6.42 s proof 26754258 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m095_171: VERIFIED n inv 2 F8 cadical 5.07 s drat 5.03 s proof 23116596 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m081_154: VERIFIED n inv 4 F2xF4 cadical 7.21 s drat 6.2 s proof 26024724 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m107_189: VERIFIED n inv 4 F2[x]/x3 cadical 5.26 s drat 5.41 s proof 24687764 B clauses 545153
+cert r3b_t8_B7_o007_c006_t3_m121_159: VERIFIED n inv 4 F2xF4 cadical 8.33 s drat 9.07 s proof 26686254 B clauses 545153
+cert r3b_t8_B7_o007_c007_t2_m071: VERIFIED n inv 4 x(x2+x+1) cadical 7.96 s drat 6.08 s proof 25531061 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m090: VERIFIED n inv 4 x(x2+x+1) cadical 7.01 s drat 6.55 s proof 26666853 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m096: VERIFIED n inv 4 nil3 cadical 7.19 s drat 6.42 s proof 25822832 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m106: VERIFIED n inv 2 irr cadical 7.63 s drat 5.92 s proof 24438265 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m116: VERIFIED n inv 4 nil3 cadical 6.98 s drat 6.25 s proof 25829144 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m142: VERIFIED n inv 2 irr cadical 6.84 s drat 6.15 s proof 24408029 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m125: VERIFIED n inv 4 x(x2+x+1) cadical 13.04 s drat 10.8 s proof 30572442 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m159: VERIFIED n inv 4 x(x2+x+1) cadical 5.02 s drat 5.38 s proof 25311862 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m172: VERIFIED n inv 2 irr cadical 7.18 s drat 5.69 s proof 24780303 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m180: VERIFIED n inv 4 x(x2+x+1) cadical 8.68 s drat 8.78 s proof 30495947 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m188: VERIFIED n inv 4 nil3 cadical 6.47 s drat 5.89 s proof 24951985 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m200: VERIFIED n inv 4 nil3 cadical 5.05 s drat 4.0 s proof 24709138 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m213: VERIFIED n inv 4 x(x2+x+1) cadical 6.64 s drat 6.66 s proof 29077698 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m239: VERIFIED n inv 4 nil3 cadical 6.37 s drat 5.78 s proof 26011077 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m227: VERIFIED n inv 4 x(x2+x+1) cadical 8.46 s drat 9.35 s proof 29797445 B clauses 546161
+cert r3b_t8_B7_o007_c007_t2_m248: VERIFIED n inv 4 x(x2+x+1) cadical 6.88 s drat 6.24 s proof 28066835 B clauses 546161
+cert r3b_t8_B7_o007_c007_t3_m001_176: VERIFIED n inv 4 F2xF4 cadical 7.24 s drat 6.48 s proof 28367796 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 6.55 s drat 4.6 s proof 25585039 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m045_206: VERIFIED n inv 4 F2xF4 cadical 9.29 s drat 9.17 s proof 30123556 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m065_184: VERIFIED n inv 4 F2xF4 cadical 6.15 s drat 6.13 s proof 25904530 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m081_154: VERIFIED n inv 4 F2xF4 cadical 5.6 s drat 4.68 s proof 24276496 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m095_171: VERIFIED n inv 2 F8 cadical 4.12 s drat 4.26 s proof 22959363 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m107_189: VERIFIED n inv 4 F2[x]/x3 cadical 4.14 s drat 4.06 s proof 23589094 B clauses 545153
+cert r3b_t8_B7_o007_c007_t3_m121_159: VERIFIED n inv 4 F2xF4 cadical 6.24 s drat 6.12 s proof 25336127 B clauses 545153
+cert r3b_t8_B7_o007_c008_t2_m069: VERIFIED n inv 4 x(x2+x+1) cadical 7.78 s drat 6.1 s proof 27888224 B clauses 546161
+cert r3b_t8_B7_o007_c008_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 5.25 s drat 5.22 s proof 25396332 B clauses 546161
+cert r3b_t8_B7_o007_c008_t2_m099: VERIFIED n inv 2 irr cadical 4.58 s drat 4.47 s proof 24172450 B clauses 546161
+cert r3b_t8_B7_o007_c008_t3_m094_187: VERIFIED n inv 2 F8 cadical 3.65 s drat 3.63 s proof 23725683 B clauses 545153
+cert r3b_t8_B7_o007_c008_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 7.5 s drat 5.99 s proof 27200962 B clauses 545153
+cert r3b_t8_B7_o007_c009_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 7.45 s drat 7.78 s proof 29035568 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 7.59 s drat 8.65 s proof 29455911 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m141: VERIFIED n inv 2 irr cadical 5.99 s drat 4.52 s proof 24454466 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m106: VERIFIED n inv 2 irr cadical 6.23 s drat 4.99 s proof 25184460 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m171: VERIFIED n inv 2 irr cadical 5.69 s drat 4.79 s proof 25836371 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m157: VERIFIED n inv 2 irr cadical 5.9 s drat 5.07 s proof 26438716 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m185: VERIFIED n inv 4 x(x2+x+1) cadical 5.3 s drat 5.69 s proof 24964902 B clauses 546161
+cert r3b_t8_B7_o007_c009_t2_m179: VERIFIED n inv 4 x(x2+x+1) cadical 8.56 s drat 7.68 s proof 29660968 B clauses 546161
+cert r3b_t8_B7_o007_c009_t3_m003_181: VERIFIED n inv 4 F2xF4 cadical 7.05 s drat 7.14 s proof 28382389 B clauses 545153
+cert r3b_t8_B7_o007_c009_t3_m016_069: VERIFIED n inv 4 F2xF4 cadical 6.73 s drat 7.4 s proof 28351109 B clauses 545153
+cert r3b_t8_B7_o007_c009_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 5.49 s drat 4.51 s proof 24021369 B clauses 545153
+cert r3b_t8_B7_o007_c009_t3_m094_187: VERIFIED n inv 2 F8 cadical 4.29 s drat 4.11 s proof 23219642 B clauses 545153
+cert r3b_t8_B7_o007_c009_t3_m121_159: VERIFIED n inv 4 F2xF4 cadical 6.24 s drat 5.45 s proof 25759245 B clauses 545153
+cert r3b_t8_B7_o008_c000_t2_m078: VERIFIED n inv 4 nil3 cadical 6.9 s drat 7.24 s proof 27837123 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 7.03 s drat 6.24 s proof 29263296 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m102: VERIFIED n inv 2 irr cadical 5.19 s drat 4.61 s proof 25270196 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m110: VERIFIED n inv 4 x(x2+x+1) cadical 6.82 s drat 7.23 s proof 28310006 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m119: VERIFIED n inv 4 nil3 cadical 7.23 s drat 5.78 s proof 27079610 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m213: VERIFIED n inv 4 x(x2+x+1) cadical 8.11 s drat 6.66 s proof 27905589 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m203: VERIFIED n inv 4 x(x2+x+1) cadical 9.04 s drat 8.79 s proof 29463194 B clauses 546161
+cert r3b_t8_B7_o008_c000_t2_m239: VERIFIED n inv 4 nil3 cadical 7.16 s drat 6.61 s proof 27736333 B clauses 546161
+cert r3b_t8_B7_o008_c000_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 8.5 s drat 8.8 s proof 28891886 B clauses 545153
+cert r3b_t8_B7_o008_c000_t3_m090_139: VERIFIED n inv 4 F2xF4 cadical 8.1 s drat 7.1 s proof 27981530 B clauses 545153
+cert r3b_t8_B7_o008_c000_t3_m106_157: VERIFIED n inv 2 F8 cadical 7.12 s drat 6.0 s proof 26602142 B clauses 545153
+cert r3b_t8_B7_o008_c000_t3_m063_205: VERIFIED n inv 4 F2[x]/x3 cadical 16.65 s drat 19.85 s proof 39406600 B clauses 545153
+cert r3b_t8_B7_o008_c001_t2_m069: VERIFIED n inv 4 x(x2+x+1) cadical 5.49 s drat 4.52 s proof 26636425 B clauses 546161
+cert r3b_t8_B7_o008_c001_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 6.2 s drat 5.9 s proof 27522573 B clauses 546161
+cert r3b_t8_B7_o008_c001_t2_m095: VERIFIED n inv 2 irr cadical 5.19 s drat 4.71 s proof 25060352 B clauses 546161
+cert r3b_t8_B7_o008_c001_t2_m104: VERIFIED n inv 4 nil3 cadical 8.31 s drat 8.53 s proof 31687776 B clauses 546161
+cert r3b_t8_B7_o008_c001_t2_m115: VERIFIED n inv 2 irr cadical 4.54 s drat 5.06 s proof 26407765 B clauses 546161
+cert r3b_t8_B7_o008_c001_t2_m123: VERIFIED n inv 4 x(x2+x+1) cadical 6.59 s drat 6.25 s proof 29490909 B clauses 546161
+cert r3b_t8_B7_o008_c001_t3_m078_161: VERIFIED n inv 4 F2[x]/x3 cadical 5.94 s drat 5.58 s proof 26820446 B clauses 545153
+cert r3b_t8_B7_o008_c001_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 13.51 s drat 15.26 s proof 41724258 B clauses 545153
+cert r3b_t8_B7_o008_c001_t3_m115_142: VERIFIED n inv 2 F8 cadical 3.98 s drat 4.49 s proof 24959794 B clauses 545153
+cert r3b_t8_B7_o008_c002_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 5.51 s drat 5.95 s proof 27304837 B clauses 546161
+cert r3b_t8_B7_o008_c002_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 6.86 s drat 6.37 s proof 27443302 B clauses 546161
+cert r3b_t8_B7_o008_c002_t2_m156: VERIFIED n inv 2 irr cadical 5.4 s drat 4.9 s proof 25963429 B clauses 546161
+cert r3b_t8_B7_o008_c002_t2_m187: VERIFIED n inv 2 irr cadical 5.79 s drat 6.0 s proof 27400653 B clauses 546161
+cert r3b_t8_B7_o008_c002_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 5.96 s drat 5.05 s proof 25219845 B clauses 545153
+cert r3b_t8_B7_o008_c002_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 16.38 s drat 16.93 s proof 39032890 B clauses 545153
+cert r3b_t8_B7_o008_c003_t2_m086: VERIFIED n inv 4 nil3 cadical 4.99 s drat 5.01 s proof 25381832 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m132: VERIFIED n inv 4 nil3 cadical 7.1 s drat 5.89 s proof 26662611 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m143: VERIFIED n inv 4 nil3 cadical 6.32 s drat 5.43 s proof 25174554 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m096: VERIFIED n inv 4 nil3 cadical 16.22 s drat 18.58 s proof 36363281 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m199: VERIFIED n inv 4 x(x2+x+1) cadical 8.05 s drat 6.0 s proof 26849642 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m180: VERIFIED n inv 4 x(x2+x+1) cadical 13.08 s drat 10.71 s proof 31685080 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m212: VERIFIED n inv 4 nil3 cadical 6.32 s drat 5.57 s proof 26064080 B clauses 546161
+cert r3b_t8_B7_o008_c003_t2_m244: VERIFIED n inv 2 irr cadical 6.43 s drat 5.81 s proof 26390927 B clauses 546161
+cert r3b_t8_B7_o008_c003_t3_m009_241: VERIFIED n inv 4 F2xF4 cadical 6.56 s drat 5.57 s proof 26804659 B clauses 545153
+cert r3b_t8_B7_o008_c003_t3_m045_206: VERIFIED n inv 4 F2xF4 cadical 10.09 s drat 10.24 s proof 31208960 B clauses 545153
+cert r3b_t8_B7_o008_c003_t3_m086_130: VERIFIED n inv 4 F2[x]/x3 cadical 7.62 s drat 6.3 s proof 26111868 B clauses 545153
+cert r3b_t8_B7_o008_c003_t3_m098_140: VERIFIED n inv 4 F2xF4 cadical 8.0 s drat 8.66 s proof 28198808 B clauses 545153
+cert r3b_t8_B7_o008_c004_t2_m071: VERIFIED n inv 4 x(x2+x+1) cadical 6.95 s drat 7.07 s proof 27281319 B clauses 546161
+cert r3b_t8_B7_o008_c004_t2_m099: VERIFIED n inv 2 irr cadical 7.37 s drat 5.49 s proof 25744928 B clauses 546161
+cert r3b_t8_B7_o008_c004_t2_m092: VERIFIED n inv 4 nil3 cadical 12.99 s drat 12.37 s proof 34373875 B clauses 546161
+cert r3b_t8_B7_o008_c004_t3_m078_161: VERIFIED n inv 4 F2[x]/x3 cadical 5.77 s drat 5.92 s proof 25833522 B clauses 545153
+cert r3b_t8_B7_o008_c004_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 12.86 s drat 11.1 s proof 32999469 B clauses 545153
+cert r3b_t8_B7_o009_c000_t2_m071: VERIFIED n inv 4 x(x2+x+1) cadical 7.86 s drat 6.52 s proof 28046064 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 8.76 s drat 7.05 s proof 27225437 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m106: VERIFIED n inv 2 irr cadical 7.58 s drat 6.27 s proof 26826733 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m096: VERIFIED n inv 4 nil3 cadical 12.35 s drat 11.08 s proof 32737163 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m115: VERIFIED n inv 2 irr cadical 7.91 s drat 7.4 s proof 27946536 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m125: VERIFIED n inv 4 x(x2+x+1) cadical 12.49 s drat 11.19 s proof 32616341 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 11.71 s drat 12.08 s proof 33520365 B clauses 546185
+cert r3b_t8_B7_o009_c000_t2_m221: VERIFIED n inv 4 nil3 cadical 6.93 s drat 6.16 s proof 26474119 B clauses 546185
+cert r3b_t8_B7_o009_c000_t3_m001_176: VERIFIED n inv 4 F2xF4 cadical 7.97 s drat 6.82 s proof 28353997 B clauses 545177
+cert r3b_t8_B7_o009_c000_t3_m009_241: VERIFIED n inv 4 F2xF4 cadical 7.9 s drat 6.84 s proof 28595548 B clauses 545177
+cert r3b_t8_B7_o009_c000_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 6.52 s drat 6.22 s proof 27265320 B clauses 545177
+cert r3b_t8_B7_o009_c000_t3_m098_140: VERIFIED n inv 4 F2xF4 cadical 7.44 s drat 7.45 s proof 27284759 B clauses 545177
+cert r3b_t8_B7_o009_c001_t2_m078: VERIFIED n inv 4 nil3 cadical 8.76 s drat 6.31 s proof 26577132 B clauses 546185
+cert r3b_t8_B7_o009_c000_t3_m121_159: VERIFIED n inv 4 F2xF4 cadical 10.66 s drat 8.12 s proof 28636295 B clauses 545177
+cert r3b_t8_B7_o009_c001_t2_m092: VERIFIED n inv 4 nil3 cadical 12.17 s drat 9.84 s proof 32368659 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m101: VERIFIED n inv 4 x(x2+x+1) cadical 12.49 s drat 10.32 s proof 33048611 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m110: VERIFIED n inv 4 x(x2+x+1) cadical 9.77 s drat 7.94 s proof 29013324 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m118: VERIFIED n inv 4 x(x2+x+1) cadical 9.54 s drat 8.25 s proof 27669837 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m136: VERIFIED n inv 4 nil3 cadical 7.27 s drat 6.11 s proof 25506047 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m155: VERIFIED n inv 4 nil3 cadical 9.21 s drat 7.24 s proof 27661785 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m176: VERIFIED n inv 4 x(x2+x+1) cadical 8.2 s drat 7.91 s proof 27365748 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m183: VERIFIED n inv 4 x(x2+x+1) cadical 12.42 s drat 14.42 s proof 34194493 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m165: VERIFIED n inv 4 nil3 cadical 27.07 s drat 29.02 s proof 45460514 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m190: VERIFIED n inv 2 irr cadical 7.21 s drat 6.68 s proof 26868724 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m220: VERIFIED n inv 4 x(x2+x+1) cadical 9.76 s drat 9.48 s proof 30000094 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m229: VERIFIED n inv 2 irr cadical 7.65 s drat 5.37 s proof 26162208 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m205: VERIFIED n inv 4 nil3 cadical 35.22 s drat 38.05 s proof 56395308 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m253: VERIFIED n inv 2 irr cadical 7.88 s drat 6.13 s proof 27957010 B clauses 546185
+cert r3b_t8_B7_o009_c001_t2_m242: VERIFIED n inv 4 nil3 cadical 39.58 s drat 40.93 s proof 57857678 B clauses 546185
+cert r3b_t8_B7_o009_c001_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 26.62 s drat 24.85 s proof 43306878 B clauses 545177
+cert r3b_t8_B7_o009_c001_t3_m024_109: VERIFIED n inv 4 F2xF4 cadical 9.85 s drat 8.91 s proof 31856027 B clauses 545177
+cert r3b_t8_B7_o009_c001_t3_m073_185: VERIFIED n inv 4 F2xF4 cadical 8.83 s drat 8.0 s proof 28866578 B clauses 545177
+cert r3b_t8_B7_o009_c001_t3_m056_093: VERIFIED n inv 4 F2xF4 cadical 12.79 s drat 14.28 s proof 33570699 B clauses 545177
+cert r3b_t8_B7_o009_c001_t3_m102_156: VERIFIED n inv 2 F8 cadical 6.23 s drat 4.89 s proof 24906198 B clauses 545177
+cert r3b_t8_B7_o009_c001_t3_m090_139: VERIFIED n inv 4 F2xF4 cadical 9.34 s drat 7.97 s proof 27836178 B clauses 545177
+cert r3b_t8_B7_o009_c002_t2_m066: VERIFIED n inv 4 nil3 cadical 7.15 s drat 5.24 s proof 24531911 B clauses 546185
+cert r3b_t8_B7_o009_c001_t3_m115_142: VERIFIED n inv 2 F8 cadical 7.74 s drat 6.21 s proof 24778530 B clauses 545177
+cert r3b_t8_B7_o009_c002_t2_m086: VERIFIED n inv 4 nil3 cadical 6.87 s drat 6.77 s proof 26908423 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m094: VERIFIED n inv 2 irr cadical 7.46 s drat 6.78 s proof 26435232 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m114: VERIFIED n inv 2 irr cadical 7.04 s drat 4.4 s proof 24280325 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m103: VERIFIED n inv 4 nil3 cadical 8.9 s drat 6.74 s proof 28435628 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m122: VERIFIED n inv 4 nil3 cadical 7.98 s drat 5.82 s proof 26876844 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m204: VERIFIED n inv 2 irr cadical 6.08 s drat 4.75 s proof 24830615 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m247: VERIFIED n inv 2 irr cadical 8.86 s drat 6.88 s proof 26822418 B clauses 546185
+cert r3b_t8_B7_o009_c002_t2_m220: VERIFIED n inv 4 x(x2+x+1) cadical 11.28 s drat 10.51 s proof 32190629 B clauses 546185
+cert r3b_t8_B7_o009_c002_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 11.09 s drat 6.46 s proof 25701387 B clauses 545177
+cert r3b_t8_B7_o009_c002_t3_m007_179: VERIFIED n inv 4 F2xF4 cadical 16.92 s drat 11.63 s proof 32385096 B clauses 545177
+cert r3b_t8_B7_o009_c002_t3_m094_187: VERIFIED n inv 2 F8 cadical 5.58 s drat 5.94 s proof 25282863 B clauses 545177
+cert r3b_t8_B7_o009_c002_t3_m111_141: VERIFIED n inv 2 F8 cadical 7.27 s drat 5.49 s proof 25870619 B clauses 545177
+cert r3b_t8_B7_o009_c003_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 9.58 s drat 8.42 s proof 30062920 B clauses 546185
+cert r3b_t8_B7_o009_c003_t2_m091: VERIFIED n inv 4 nil3 cadical 8.65 s drat 8.4 s proof 27077334 B clauses 546185
+cert r3b_t8_B7_o009_c003_t2_m099: VERIFIED n inv 2 irr cadical 8.8 s drat 6.73 s proof 26901798 B clauses 546185
+cert r3b_t8_B7_o009_c003_t2_m109: VERIFIED n inv 4 x(x2+x+1) cadical 12.98 s drat 11.25 s proof 31923540 B clauses 546185
+cert r3b_t8_B7_o009_c003_t2_m117: VERIFIED n inv 4 x(x2+x+1) cadical 11.57 s drat 8.52 s proof 30054702 B clauses 546185
+cert r3b_t8_B7_o009_c003_t3_m003_181: VERIFIED n inv 4 F2xF4 cadical 10.65 s drat 9.04 s proof 30032623 B clauses 545177
+cert r3b_t8_B7_o009_c003_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 7.6 s drat 5.48 s proof 25802439 B clauses 545177
+cert r3b_t8_B7_o009_c003_t3_m098_140: VERIFIED n inv 4 F2xF4 cadical 7.12 s drat 6.91 s proof 28549641 B clauses 545177
+cert r3b_t8_B7_o009_c004_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 9.13 s drat 8.72 s proof 31736295 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m092: VERIFIED n inv 4 nil3 cadical 10.62 s drat 8.66 s proof 32048336 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m101: VERIFIED n inv 4 x(x2+x+1) cadical 9.37 s drat 9.18 s proof 33812713 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m109: VERIFIED n inv 4 x(x2+x+1) cadical 8.61 s drat 7.71 s proof 31617118 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m118: VERIFIED n inv 4 x(x2+x+1) cadical 7.41 s drat 6.39 s proof 28561339 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m136: VERIFIED n inv 4 nil3 cadical 5.87 s drat 4.95 s proof 24814140 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 7.69 s drat 7.4 s proof 28516049 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m176: VERIFIED n inv 4 x(x2+x+1) cadical 7.36 s drat 6.68 s proof 29961675 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m182: VERIFIED n inv 4 x(x2+x+1) cadical 8.24 s drat 8.72 s proof 30495751 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m165: VERIFIED n inv 4 nil3 cadical 24.58 s drat 27.36 s proof 49294317 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m190: VERIFIED n inv 2 irr cadical 6.2 s drat 5.08 s proof 26850834 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m218: VERIFIED n inv 4 x(x2+x+1) cadical 10.68 s drat 8.25 s proof 29152741 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m229: VERIFIED n inv 2 irr cadical 7.5 s drat 5.82 s proof 25812656 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m205: VERIFIED n inv 4 nil3 cadical 34.72 s drat 30.94 s proof 52705538 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m250: VERIFIED n inv 2 irr cadical 8.18 s drat 6.99 s proof 27179364 B clauses 546185
+cert r3b_t8_B7_o009_c004_t2_m242: VERIFIED n inv 4 nil3 cadical 28.02 s drat 35.73 s proof 59920369 B clauses 546185
+cert r3b_t8_B7_o009_c004_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 11.84 s drat 10.66 s proof 32061563 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m024_109: VERIFIED n inv 4 F2xF4 cadical 8.4 s drat 9.04 s proof 31422626 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m056_093: VERIFIED n inv 4 F2xF4 cadical 10.12 s drat 11.76 s proof 33817273 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m073_185: VERIFIED n inv 4 F2xF4 cadical 8.42 s drat 8.29 s proof 29617954 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 7.29 s drat 7.19 s proof 26724324 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m102_156: VERIFIED n inv 2 F8 cadical 6.17 s drat 4.7 s proof 25126387 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m115_142: VERIFIED n inv 2 F8 cadical 4.62 s drat 5.16 s proof 25246240 B clauses 545177
+cert r3b_t8_B7_o009_c004_t3_m124_143: VERIFIED n inv 4 F2[x]/x3 cadical 6.61 s drat 6.13 s proof 26520611 B clauses 545177
+cert r3b_t8_B7_o009_c005_t2_m078: VERIFIED n inv 4 nil3 cadical 7.29 s drat 7.38 s proof 28188403 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m102: VERIFIED n inv 2 irr cadical 6.97 s drat 5.78 s proof 26933193 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 12.31 s drat 10.4 s proof 33240469 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m119: VERIFIED n inv 4 nil3 cadical 7.03 s drat 6.6 s proof 27817725 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m110: VERIFIED n inv 4 x(x2+x+1) cadical 7.74 s drat 7.14 s proof 28861279 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m155: VERIFIED n inv 4 nil3 cadical 8.68 s drat 6.1 s proof 27057784 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 9.56 s drat 7.89 s proof 29125211 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m169: VERIFIED n inv 4 nil3 cadical 6.66 s drat 5.33 s proof 25773551 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m177: VERIFIED n inv 4 x(x2+x+1) cadical 8.71 s drat 7.17 s proof 28621161 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m194: VERIFIED n inv 4 nil3 cadical 7.1 s drat 5.7 s proof 26797247 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m183: VERIFIED n inv 4 x(x2+x+1) cadical 12.55 s drat 12.12 s proof 33411970 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 11.91 s drat 10.86 s proof 33065302 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m220: VERIFIED n inv 4 x(x2+x+1) cadical 11.49 s drat 11.15 s proof 33282278 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m230: VERIFIED n inv 4 x(x2+x+1) cadical 10.32 s drat 9.14 s proof 29579212 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m243: VERIFIED n inv 4 nil3 cadical 8.61 s drat 7.11 s proof 27424261 B clauses 546185
+cert r3b_t8_B7_o009_c005_t2_m253: VERIFIED n inv 2 irr cadical 8.36 s drat 6.49 s proof 27457116 B clauses 546185
+cert r3b_t8_B7_o009_c005_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 11.87 s drat 12.34 s proof 31549788 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m024_109: VERIFIED n inv 4 F2xF4 cadical 12.29 s drat 10.13 s proof 31714440 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m056_093: VERIFIED n inv 4 F2xF4 cadical 12.74 s drat 12.27 s proof 32697192 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m073_185: VERIFIED n inv 4 F2xF4 cadical 8.97 s drat 9.19 s proof 28697966 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 9.29 s drat 8.85 s proof 26740946 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m102_156: VERIFIED n inv 2 F8 cadical 7.5 s drat 5.61 s proof 25374149 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m115_142: VERIFIED n inv 2 F8 cadical 6.0 s drat 5.52 s proof 24534147 B clauses 545177
+cert r3b_t8_B7_o009_c005_t3_m124_143: VERIFIED n inv 4 F2[x]/x3 cadical 8.1 s drat 7.03 s proof 28498970 B clauses 545177
+cert r3b_t8_B7_o009_c006_t2_m078: VERIFIED n inv 4 nil3 cadical 7.22 s drat 5.83 s proof 26960790 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 10.93 s drat 10.67 s proof 32675745 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m102: VERIFIED n inv 2 irr cadical 8.02 s drat 5.72 s proof 25732412 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m119: VERIFIED n inv 4 nil3 cadical 8.06 s drat 7.09 s proof 28721218 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m110: VERIFIED n inv 4 x(x2+x+1) cadical 8.7 s drat 7.67 s proof 28203868 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m155: VERIFIED n inv 4 nil3 cadical 7.14 s drat 6.41 s proof 27363658 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 7.31 s drat 6.78 s proof 27777339 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m169: VERIFIED n inv 4 nil3 cadical 5.79 s drat 4.41 s proof 25338620 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m177: VERIFIED n inv 4 x(x2+x+1) cadical 7.22 s drat 5.75 s proof 27310353 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m194: VERIFIED n inv 4 nil3 cadical 6.64 s drat 5.05 s proof 25703170 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m183: VERIFIED n inv 4 x(x2+x+1) cadical 10.64 s drat 10.37 s proof 33731750 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 9.72 s drat 10.49 s proof 33782720 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m220: VERIFIED n inv 4 x(x2+x+1) cadical 9.5 s drat 9.46 s proof 32812753 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m230: VERIFIED n inv 4 x(x2+x+1) cadical 7.57 s drat 6.96 s proof 28421739 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m243: VERIFIED n inv 4 nil3 cadical 6.37 s drat 6.95 s proof 27012178 B clauses 546185
+cert r3b_t8_B7_o009_c006_t2_m253: VERIFIED n inv 2 irr cadical 6.71 s drat 4.86 s proof 26695304 B clauses 546185
+cert r3b_t8_B7_o009_c006_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 8.98 s drat 9.27 s proof 32944973 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m018_199: VERIFIED n inv 4 F2xF4 cadical 7.09 s drat 6.45 s proof 29200313 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m073_185: VERIFIED n inv 4 F2xF4 cadical 6.97 s drat 6.32 s proof 27615394 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m056_093: VERIFIED n inv 4 F2xF4 cadical 9.66 s drat 10.47 s proof 33120490 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m102_156: VERIFIED n inv 2 F8 cadical 5.6 s drat 5.12 s proof 24664771 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 7.43 s drat 7.59 s proof 28173409 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m115_142: VERIFIED n inv 2 F8 cadical 6.66 s drat 5.45 s proof 23802893 B clauses 545177
+cert r3b_t8_B7_o009_c006_t3_m124_143: VERIFIED n inv 4 F2[x]/x3 cadical 8.2 s drat 7.22 s proof 28571146 B clauses 545177
+cert r3b_t8_B7_o009_c007_t2_m078: VERIFIED n inv 4 nil3 cadical 7.34 s drat 6.45 s proof 26838053 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 13.03 s drat 10.26 s proof 33448764 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m101: VERIFIED n inv 4 x(x2+x+1) cadical 12.74 s drat 12.11 s proof 35026689 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m110: VERIFIED n inv 4 x(x2+x+1) cadical 8.76 s drat 7.34 s proof 29223129 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m119: VERIFIED n inv 4 nil3 cadical 7.31 s drat 6.6 s proof 28164221 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m136: VERIFIED n inv 4 nil3 cadical 6.03 s drat 4.67 s proof 26282080 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m155: VERIFIED n inv 4 nil3 cadical 6.84 s drat 6.45 s proof 28429067 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m169: VERIFIED n inv 4 nil3 cadical 6.02 s drat 4.63 s proof 24817738 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m176: VERIFIED n inv 4 x(x2+x+1) cadical 6.57 s drat 6.71 s proof 28982157 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m183: VERIFIED n inv 4 x(x2+x+1) cadical 10.26 s drat 9.19 s proof 33428344 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m194: VERIFIED n inv 4 nil3 cadical 5.11 s drat 4.58 s proof 24956342 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m220: VERIFIED n inv 4 x(x2+x+1) cadical 9.67 s drat 8.63 s proof 32954277 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m205: VERIFIED n inv 4 nil3 cadical 13.41 s drat 12.5 s proof 37450973 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m230: VERIFIED n inv 4 x(x2+x+1) cadical 7.04 s drat 7.06 s proof 28442166 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m242: VERIFIED n inv 4 nil3 cadical 11.82 s drat 10.92 s proof 34219266 B clauses 546185
+cert r3b_t8_B7_o009_c007_t2_m253: VERIFIED n inv 2 irr cadical 5.6 s drat 5.64 s proof 26785288 B clauses 546185
+cert r3b_t8_B7_o009_c007_t3_m024_109: VERIFIED n inv 4 F2xF4 cadical 9.26 s drat 8.02 s proof 30101785 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m063_205: VERIFIED n inv 4 F2[x]/x3 cadical 11.7 s drat 11.44 s proof 36393011 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m006_163: VERIFIED n inv 4 F2[x]/x3 cadical 23.45 s drat 23.89 s proof 56222337 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m075_145: VERIFIED n inv 4 F2xF4 cadical 6.57 s drat 7.11 s proof 28086928 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m090_139: VERIFIED n inv 4 F2xF4 cadical 7.69 s drat 7.06 s proof 28701991 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m103_188: VERIFIED n inv 4 F2[x]/x3 cadical 5.21 s drat 6.09 s proof 25907171 B clauses 545177
+cert r3b_t8_B7_o009_c007_t3_m118_174: VERIFIED n inv 4 F2xF4 cadical 7.6 s drat 7.02 s proof 27893738 B clauses 545177
+cert r3b_t8_B7_o009_c008_t2_m085: VERIFIED n inv 4 x(x2+x+1) cadical 6.96 s drat 6.97 s proof 28162191 B clauses 546185
+cert r3b_t8_B7_o009_c008_t2_m095: VERIFIED n inv 2 irr cadical 6.51 s drat 5.68 s proof 26563320 B clauses 546185
+cert r3b_t8_B7_o009_c008_t3_m001_176: VERIFIED n inv 4 F2xF4 cadical 7.09 s drat 6.14 s proof 27767569 B clauses 545177
+cert r3b_t8_B7_o009_c008_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 7.47 s drat 5.89 s proof 26199039 B clauses 545177
+cert r3b_t8_B7_o009_c008_t2_m011: VERIFIED n inv 4 x(x2+x+1) cadical 35.73 s drat 44.24 s proof 63743273 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m066: VERIFIED n inv 4 nil3 cadical 6.63 s drat 5.02 s proof 25161405 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m086: VERIFIED n inv 4 nil3 cadical 6.41 s drat 4.95 s proof 24441127 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m096: VERIFIED n inv 4 nil3 cadical 9.49 s drat 9.97 s proof 30565615 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 9.42 s drat 7.5 s proof 27478828 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m134: VERIFIED n inv 4 nil3 cadical 14.49 s drat 16.09 s proof 37801255 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m174: VERIFIED n inv 4 x(x2+x+1) cadical 9.13 s drat 8.19 s proof 28723606 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m182: VERIFIED n inv 4 x(x2+x+1) cadical 7.4 s drat 6.43 s proof 29770230 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m163: VERIFIED n inv 4 nil3 cadical 24.13 s drat 24.35 s proof 46642117 B clauses 546185
+cert r3b_t8_B7_o009_c009_t2_m189: VERIFIED n inv 4 nil3 cadical 5.87 s drat 6.65 s proof 28263050 B clauses 546185
+cert r3b_t8_B7_o009_c009_t3_m071_144: VERIFIED n inv 4 F2xF4 cadical 6.4 s drat 5.13 s proof 26404762 B clauses 545177
+cert r3b_t8_B7_o009_c009_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 9.42 s drat 8.79 s proof 30847949 B clauses 545177
+cert r3b_t8_B7_o009_c009_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 6.45 s drat 6.23 s proof 27898945 B clauses 545177
+cert r3b_t8_B7_o009_c009_t3_m107_189: VERIFIED n inv 4 F2[x]/x3 cadical 5.58 s drat 5.7 s proof 26553819 B clauses 545177
+cert r3b_t8_B7_o010_c000_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 8.96 s drat 8.84 s proof 31709563 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m099: VERIFIED n inv 2 irr cadical 5.35 s drat 5.47 s proof 26039689 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m092: VERIFIED n inv 4 nil3 cadical 13.07 s drat 15.28 s proof 38157107 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m118: VERIFIED n inv 4 x(x2+x+1) cadical 7.94 s drat 6.91 s proof 28945425 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m109: VERIFIED n inv 4 x(x2+x+1) cadical 8.31 s drat 7.4 s proof 29899281 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 6.74 s drat 6.49 s proof 27037966 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m134: VERIFIED n inv 4 nil3 cadical 10.13 s drat 10.05 s proof 32499137 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m174: VERIFIED n inv 4 x(x2+x+1) cadical 7.2 s drat 7.29 s proof 28975313 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m165: VERIFIED n inv 4 nil3 cadical 11.67 s drat 12.9 s proof 32022076 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m190: VERIFIED n inv 2 irr cadical 6.41 s drat 5.08 s proof 25626926 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m182: VERIFIED n inv 4 x(x2+x+1) cadical 8.58 s drat 7.0 s proof 29595812 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m204: VERIFIED n inv 2 irr cadical 5.77 s drat 5.23 s proof 26899637 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m218: VERIFIED n inv 4 x(x2+x+1) cadical 7.66 s drat 7.47 s proof 29560700 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m229: VERIFIED n inv 2 irr cadical 4.91 s drat 5.13 s proof 25743246 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m241: VERIFIED n inv 4 x(x2+x+1) cadical 6.17 s drat 5.76 s proof 27306713 B clauses 546185
+cert r3b_t8_B7_o010_c000_t2_m250: VERIFIED n inv 2 irr cadical 5.88 s drat 6.16 s proof 26818241 B clauses 546185
+cert r3b_t8_B7_o010_c000_t3_m003_181: VERIFIED n inv 4 F2xF4 cadical 9.12 s drat 8.17 s proof 30068402 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m016_069: VERIFIED n inv 4 F2xF4 cadical 8.44 s drat 6.55 s proof 27186603 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m054_220: VERIFIED n inv 4 F2xF4 cadical 10.72 s drat 9.74 s proof 30425014 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m071_144: VERIFIED n inv 4 F2xF4 cadical 8.8 s drat 7.92 s proof 27595130 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m099_172: VERIFIED n inv 2 F8 cadical 5.79 s drat 4.79 s proof 25496727 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m086_130: VERIFIED n inv 4 F2[x]/x3 cadical 6.06 s drat 4.89 s proof 25946905 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m111_141: VERIFIED n inv 2 F8 cadical 7.2 s drat 5.82 s proof 26262822 B clauses 545177
+cert r3b_t8_B7_o010_c000_t3_m123_151: VERIFIED n inv 4 F2xF4 cadical 9.51 s drat 8.44 s proof 28315230 B clauses 545177
+cert r3b_t8_B7_o010_c001_t2_m077: VERIFIED n inv 4 x(x2+x+1) cadical 10.64 s drat 8.06 s proof 31313440 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m099: VERIFIED n inv 2 irr cadical 5.92 s drat 5.45 s proof 25564448 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m092: VERIFIED n inv 4 nil3 cadical 15.44 s drat 16.36 s proof 39140048 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m109: VERIFIED n inv 4 x(x2+x+1) cadical 7.5 s drat 8.14 s proof 30902727 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m118: VERIFIED n inv 4 x(x2+x+1) cadical 6.63 s drat 7.29 s proof 27908238 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 9.31 s drat 6.43 s proof 28587133 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m134: VERIFIED n inv 4 nil3 cadical 17.18 s drat 18.28 s proof 39133203 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m165: VERIFIED n inv 4 nil3 cadical 14.93 s drat 16.15 s proof 37527787 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m174: VERIFIED n inv 4 x(x2+x+1) cadical 8.26 s drat 9.54 s proof 29883574 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m190: VERIFIED n inv 2 irr cadical 5.72 s drat 5.16 s proof 24921046 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m182: VERIFIED n inv 4 x(x2+x+1) cadical 7.91 s drat 6.97 s proof 29971288 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m204: VERIFIED n inv 2 irr cadical 6.01 s drat 4.54 s proof 26256512 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m218: VERIFIED n inv 4 x(x2+x+1) cadical 6.96 s drat 5.73 s proof 28597451 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m229: VERIFIED n inv 2 irr cadical 6.27 s drat 4.66 s proof 26282017 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m241: VERIFIED n inv 4 x(x2+x+1) cadical 6.21 s drat 5.92 s proof 28566290 B clauses 546185
+cert r3b_t8_B7_o010_c001_t2_m250: VERIFIED n inv 2 irr cadical 5.97 s drat 5.73 s proof 26666976 B clauses 546185
+cert r3b_t8_B7_o010_c001_t3_m005_178: VERIFIED n inv 4 F2xF4 cadical 9.11 s drat 8.55 s proof 31710400 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m018_199: VERIFIED n inv 4 F2xF4 cadical 6.24 s drat 6.76 s proof 27231386 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 6.41 s drat 5.1 s proof 27069082 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m056_093: VERIFIED n inv 4 F2xF4 cadical 12.63 s drat 12.21 s proof 40536863 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 6.57 s drat 6.72 s proof 27339972 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m102_156: VERIFIED n inv 2 F8 cadical 5.45 s drat 4.65 s proof 25933647 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m114_190: VERIFIED n inv 2 F8 cadical 4.47 s drat 4.68 s proof 24962416 B clauses 545177
+cert r3b_t8_B7_o010_c001_t3_m124_143: VERIFIED n inv 4 F2[x]/x3 cadical 6.19 s drat 5.59 s proof 26947513 B clauses 545177
+cert r3b_t8_B7_o010_c002_t2_m087: VERIFIED n inv 4 x(x2+x+1) cadical 6.12 s drat 6.5 s proof 26871160 B clauses 546185
+cert r3b_t8_B7_o010_c002_t2_m139: VERIFIED n inv 4 x(x2+x+1) cadical 9.41 s drat 8.34 s proof 27872319 B clauses 546185
+cert r3b_t8_B7_o010_c002_t2_m155: VERIFIED n inv 4 nil3 cadical 9.32 s drat 6.89 s proof 27018011 B clauses 546185
+cert r3b_t8_B7_o010_c002_t2_m187: VERIFIED n inv 2 irr cadical 6.75 s drat 5.41 s proof 25703566 B clauses 546185
+cert r3b_t8_B7_o010_c002_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 7.52 s drat 6.65 s proof 27950868 B clauses 545177
+cert r3b_t8_B7_o010_c003_t2_m086: VERIFIED n inv 4 nil3 cadical 5.18 s drat 5.53 s proof 25656009 B clauses 546185
+cert r3b_t8_B7_o010_c002_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 19.04 s drat 18.1 s proof 37585917 B clauses 545177
+cert r3b_t8_B7_o010_c003_t2_m132: VERIFIED n inv 4 nil3 cadical 9.7 s drat 7.11 s proof 28426826 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m143: VERIFIED n inv 4 nil3 cadical 7.13 s drat 6.3 s proof 28025549 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m096: VERIFIED n inv 4 nil3 cadical 20.95 s drat 21.86 s proof 40424540 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m180: VERIFIED n inv 4 x(x2+x+1) cadical 11.67 s drat 11.06 s proof 34027981 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m199: VERIFIED n inv 4 x(x2+x+1) cadical 6.89 s drat 7.79 s proof 28745886 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m212: VERIFIED n inv 4 nil3 cadical 6.81 s drat 5.13 s proof 24680740 B clauses 546185
+cert r3b_t8_B7_o010_c003_t2_m244: VERIFIED n inv 2 irr cadical 7.21 s drat 5.07 s proof 26036415 B clauses 546185
+cert r3b_t8_B7_o010_c003_t3_m064_136: VERIFIED n inv 4 F2[x]/x3 cadical 7.25 s drat 6.41 s proof 25924225 B clauses 545177
+cert r3b_t8_B7_o010_c003_t3_m009_241: VERIFIED n inv 4 F2xF4 cadical 7.67 s drat 6.54 s proof 27896705 B clauses 545177
+cert r3b_t8_B7_o010_c003_t3_m099_172: VERIFIED n inv 2 F8 cadical 5.67 s drat 5.42 s proof 24977802 B clauses 545177
+cert r3b_t8_B7_o010_c003_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 7.21 s drat 7.21 s proof 28420627 B clauses 545177
+cert r3b_t8_B7_o010_c004_t2_m075: VERIFIED n inv 4 x(x2+x+1) cadical 9.88 s drat 8.16 s proof 27528358 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 11.31 s drat 8.96 s proof 32464842 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m140: VERIFIED n inv 4 x(x2+x+1) cadical 8.35 s drat 7.34 s proof 28864412 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m104: VERIFIED n inv 4 nil3 cadical 11.92 s drat 10.98 s proof 33149387 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m157: VERIFIED n inv 2 irr cadical 7.34 s drat 5.2 s proof 25316804 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m170: VERIFIED n inv 4 nil3 cadical 8.17 s drat 6.01 s proof 26530614 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m185: VERIFIED n inv 4 x(x2+x+1) cadical 8.09 s drat 7.57 s proof 28065203 B clauses 546185
+cert r3b_t8_B7_o010_c004_t2_m178: VERIFIED n inv 4 x(x2+x+1) cadical 10.49 s drat 9.83 s proof 32461795 B clauses 546185
+cert r3b_t8_B7_o010_c004_t3_m016_069: VERIFIED n inv 4 F2xF4 cadical 7.44 s drat 6.59 s proof 27641942 B clauses 545177
+cert r3b_t8_B7_o010_c004_t3_m002_132: VERIFIED n inv 4 F2[x]/x3 cadical 11.69 s drat 13.02 s proof 34658444 B clauses 545177
+cert r3b_t8_B7_o010_c004_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 6.47 s drat 5.11 s proof 24874181 B clauses 545177
+cert r3b_t8_B7_o010_c004_t3_m087_146: VERIFIED n inv 4 F2xF4 cadical 7.35 s drat 7.06 s proof 27052834 B clauses 545177
+cert r3b_t8_B7_o010_c004_t3_m121_159: VERIFIED n inv 4 F2xF4 cadical 9.47 s drat 8.75 s proof 28820114 B clauses 545177
+cert r3b_t8_B7_o010_c005_t2_m078: VERIFIED n inv 4 nil3 cadical 7.98 s drat 6.96 s proof 26477635 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m096: VERIFIED n inv 4 nil3 cadical 10.48 s drat 7.93 s proof 28525803 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 7.61 s drat 7.44 s proof 28022673 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m176: VERIFIED n inv 4 x(x2+x+1) cadical 7.98 s drat 7.52 s proof 28921430 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m199: VERIFIED n inv 4 x(x2+x+1) cadical 8.76 s drat 7.01 s proof 28834765 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m218: VERIFIED n inv 4 x(x2+x+1) cadical 7.78 s drat 6.77 s proof 28274764 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m132: VERIFIED n inv 4 nil3 cadical 43.01 s drat 50.17 s proof 64166146 B clauses 546185
+cert r3b_t8_B7_o010_c005_t2_m229: VERIFIED n inv 2 irr cadical 5.53 s drat 5.67 s proof 26242512 B clauses 546185
+cert r3b_t8_B7_o010_c005_t3_m008_096: VERIFIED n inv 4 F2[x]/x3 cadical 8.12 s drat 7.12 s proof 28814668 B clauses 545177
+cert r3b_t8_B7_o010_c005_t3_m048_077: VERIFIED n inv 4 F2xF4 cadical 9.51 s drat 8.72 s proof 30688058 B clauses 545177
+cert r3b_t8_B7_o010_c005_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 6.54 s drat 5.07 s proof 24625703 B clauses 545177
+cert r3b_t8_B7_o010_c005_t3_m095_171: VERIFIED n inv 2 F8 cadical 6.18 s drat 5.34 s proof 25659032 B clauses 545177
+cert r3b_t8_B7_o010_c006_t2_m071: VERIFIED n inv 4 x(x2+x+1) cadical 5.82 s drat 7.34 s proof 27817488 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m093: VERIFIED n inv 4 x(x2+x+1) cadical 11.02 s drat 8.73 s proof 32745437 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m101: VERIFIED n inv 4 x(x2+x+1) cadical 8.84 s drat 9.96 s proof 32980486 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m141: VERIFIED n inv 2 irr cadical 6.61 s drat 5.27 s proof 25476549 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m158: VERIFIED n inv 4 nil3 cadical 6.13 s drat 5.73 s proof 27284901 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m180: VERIFIED n inv 4 x(x2+x+1) cadical 10.22 s drat 10.18 s proof 33070753 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m226: VERIFIED n inv 2 irr cadical 6.03 s drat 5.06 s proof 26800945 B clauses 546185
+cert r3b_t8_B7_o010_c006_t2_m205: VERIFIED n inv 4 nil3 cadical 20.47 s drat 24.94 s proof 47091560 B clauses 546185
+cert r3b_t8_B7_o010_c006_t3_m018_199: VERIFIED n inv 4 F2xF4 cadical 8.29 s drat 6.87 s proof 27139754 B clauses 545177
+cert r3b_t8_B7_o010_c006_t3_m066_128: VERIFIED n inv 4 F2[x]/x3 cadical 6.77 s drat 6.03 s proof 25801734 B clauses 545177
+cert r3b_t8_B7_o010_c006_t3_m090_139: VERIFIED n inv 4 F2xF4 cadical 7.15 s drat 7.16 s proof 28047097 B clauses 545177
+cert r3b_t8_B7_o010_c006_t3_m103_188: VERIFIED n inv 4 F2[x]/x3 cadical 8.84 s drat 7.35 s proof 26890047 B clauses 545177
+cert r3b_t8_B7_o010_c006_t3_m002_132: VERIFIED sweep inv 4 F2[x]/x3 cadical 46.96 s drat 49.36 s proof 102501364 B clauses 906105
+cert r3b_t8_B7_o010_c007_t2_m085: VERIFIED n inv 4 x(x2+x+1) cadical 8.36 s drat 7.63 s proof 27475443 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m096: VERIFIED n inv 4 nil3 cadical 13.69 s drat 11.47 s proof 32670362 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m143: VERIFIED n inv 4 nil3 cadical 7.36 s drat 6.54 s proof 26133367 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m132: VERIFIED n inv 4 nil3 cadical 17.25 s drat 18.07 s proof 37578344 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m173: VERIFIED n inv 4 x(x2+x+1) cadical 9.59 s drat 6.71 s proof 28797049 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m181: VERIFIED n inv 4 x(x2+x+1) cadical 9.77 s drat 6.87 s proof 28023795 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m163: VERIFIED n inv 4 nil3 cadical 21.54 s drat 21.13 s proof 43065928 B clauses 546185
+cert r3b_t8_B7_o010_c007_t2_m189: VERIFIED n inv 4 nil3 cadical 6.75 s drat 8.56 s proof 27337252 B clauses 546185
+cert r3b_t8_B7_o010_c007_t3_m007_179: VERIFIED n inv 4 F2xF4 cadical 12.24 s drat 9.23 s proof 31460358 B clauses 545177
+cert r3b_t8_B7_o010_c007_t3_m065_184: VERIFIED n inv 4 F2xF4 cadical 7.13 s drat 7.29 s proof 29407976 B clauses 545177
+cert r3b_t8_B7_o010_c007_t3_m084_170: VERIFIED n inv 4 F2[x]/x3 cadical 6.0 s drat 5.78 s proof 25425126 B clauses 545177
+cert r3b_t8_B7_o010_c007_t3_m099_172: VERIFIED n inv 2 F8 cadical 4.6 s drat 4.59 s proof 24880560 B clauses 545177
+cert r3b_t8_B7_o010_c008_t2_m075: VERIFIED n inv 4 x(x2+x+1) cadical 7.14 s drat 6.7 s proof 28670748 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m094: VERIFIED n inv 2 irr cadical 5.27 s drat 4.89 s proof 25071300 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m111: VERIFIED n inv 2 irr cadical 5.83 s drat 5.48 s proof 25413327 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m154: VERIFIED n inv 4 x(x2+x+1) cadical 7.22 s drat 6.64 s proof 27731016 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m171: VERIFIED n inv 2 irr cadical 6.38 s drat 6.63 s proof 25374631 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m197: VERIFIED n inv 4 x(x2+x+1) cadical 7.42 s drat 6.34 s proof 28033064 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m206: VERIFIED n inv 4 x(x2+x+1) cadical 10.42 s drat 10.39 s proof 33748509 B clauses 546185
+cert r3b_t8_B7_o010_c008_t2_m227: VERIFIED n inv 4 x(x2+x+1) cadical 10.4 s drat 10.2 s proof 33067294 B clauses 546185
+cert r3b_t8_B7_o010_c008_t3_m003_181: VERIFIED n inv 4 F2xF4 cadical 7.46 s drat 7.11 s proof 30546017 B clauses 545177
+cert r3b_t8_B7_o010_c008_t3_m024_109: VERIFIED n inv 4 F2xF4 cadical 7.55 s drat 8.61 s proof 31534269 B clauses 545177
+cert r3b_t8_B7_o010_c008_t3_m072_169: VERIFIED n inv 4 F2[x]/x3 cadical 6.1 s drat 5.09 s proof 25940085 B clauses 545177
+cert r3b_t8_B7_o010_c008_t3_m095_171: VERIFIED n inv 2 F8 cadical 5.39 s drat 4.85 s proof 25872127 B clauses 545177
+SUMMARY cert e cases 512 {"n": {"UNKNOWN": 1, "VERIFIED": 510}, "sweep": {"VERIFIED": 1}} seconds 5280
+
+===== run-05-python: python m113.py --part grade --shard e --out-dir /out
+SUMMARY grade e all_match False graded 19 failed ['all_verified'] {"by_mode": {"n": {"UNKNOWN": 1, "VERIFIED": 510}, "sweep": {"VERIFIED": 1}}, "cadical": {"n": {"max": 600.22, "mean": 9.83, "median": 7.56, "n": 511}, "sweep": {"max": 46.96, "mean": 46.96, "median": 46.96, "n": 1}}, "drat": {"n": {"max": 50.17, "mean": 7.91, "median": 6.65, "n": 510}, "sweep": {"max": 49.36, "mean": 49.36, "median": 49.36, "n": 1}}, "largest_proof": 595734528, "not_verified": [["r3b_t8_B7_o007_c001_t2_m026", "UNKNOWN"]], "skipped": [], "verified": 511}

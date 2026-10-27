@@ -1,0 +1,12 @@
+test_control_case (test_m113.TestCases.test_control_case) ... ok
+test_counts_from_m110 (test_m113.TestCases.test_counts_from_m110) ... ok
+test_deadline_skips_without_building (test_m113.TestCases.test_deadline_skips_without_building) ... ok
+test_n_cnf_is_what_m110_solved (test_m113.TestCases.test_n_cnf_is_what_m110_solved) ... ok
+test_grade_rows (test_m113.TestStatic.test_grade_rows) ... ok
+test_mode_and_decided (test_m113.TestStatic.test_mode_and_decided) ... ok
+test_shards_partition_3075 (test_m113.TestStatic.test_shards_partition_3075) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 7.397s
+
+OK
