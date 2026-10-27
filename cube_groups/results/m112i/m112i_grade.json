@@ -1,0 +1,141 @@
+{
+ "full_models": [],
+ "by_status": {
+  "sweep": {
+   "UNSAT": 23,
+   "UNKNOWN": 4
+  }
+ },
+ "by_label": {
+  "t2_m015": {
+   "UNSAT": 3
+  },
+  "t2_m031": {
+   "UNSAT": 2,
+   "UNKNOWN": 2
+  },
+  "t2_m047": {
+   "UNSAT": 1
+  },
+  "t3_m015_049": {
+   "UNSAT": 2
+  },
+  "t2_m026": {
+   "UNSAT": 1
+  },
+  "t2_m059": {
+   "UNSAT": 1
+  },
+  "t3_m030_043": {
+   "UNSAT": 2
+  },
+  "t3_m012_032": {
+   "UNSAT": 3
+  },
+  "t3_m011_017": {
+   "UNSAT": 1
+  },
+  "t3_m031_036": {
+   "UNSAT": 1
+  },
+  "t2_m058": {
+   "UNSAT": 1
+  },
+  "t2_m030": {
+   "UNKNOWN": 1
+  },
+  "t2_m043": {
+   "UNSAT": 2
+  },
+  "t2_m044": {
+   "UNSAT": 1
+  },
+  "t2_m038": {
+   "UNSAT": 1
+  },
+  "t3_m004_034": {
+   "UNSAT": 1
+  },
+  "t2_m011": {
+   "UNKNOWN": 1
+  }
+ },
+ "by_type": {
+  "x(x2+x+1)": {
+   "UNSAT": 8,
+   "UNKNOWN": 2
+  },
+  "nil3": {
+   "UNSAT": 5,
+   "UNKNOWN": 2
+  },
+  "F2xF4": {
+   "UNSAT": 5
+  },
+  "F2[x]/x3": {
+   "UNSAT": 5
+  }
+ },
+ "unsat": [
+  "r3b_t8_B7_o007_c001_t2_m015",
+  "r3b_t8_B7_o007_c002_t2_m031",
+  "r3b_t8_B7_o007_c003_t2_m031",
+  "r3b_t8_B7_o007_c004_t2_m047",
+  "r3b_t8_B7_o007_c005_t2_m026",
+  "r3b_t8_B7_o007_c005_t3_m015_049",
+  "r3b_t8_B7_o007_c006_t2_m059",
+  "r3b_t8_B7_o007_c007_t3_m030_043",
+  "r3b_t8_B7_o007_c009_t3_m012_032",
+  "r3b_t8_B7_o008_c000_t3_m031_036",
+  "r3b_t8_B7_o008_c002_t3_m011_017",
+  "r3b_t8_B7_o008_c003_t3_m012_032",
+  "r3b_t8_B7_o009_c000_t3_m030_043",
+  "r3b_t8_B7_o009_c001_t2_m058",
+  "r3b_t8_B7_o009_c004_t2_m043",
+  "r3b_t8_B7_o009_c005_t2_m015",
+  "r3b_t8_B7_o009_c005_t3_m012_032",
+  "r3b_t8_B7_o009_c006_t2_m044",
+  "r3b_t8_B7_o009_c007_t2_m015",
+  "r3b_t8_B7_o009_c007_t3_m015_049",
+  "r3b_t8_B7_o009_c009_t2_m043",
+  "r3b_t8_B7_o010_c000_t2_m038",
+  "r3b_t8_B7_o010_c001_t3_m004_034"
+ ],
+ "open": [
+  "r3b_t8_B7_o007_c007_t2_m031",
+  "r3b_t8_B7_o009_c002_t2_m031",
+  "r3b_t8_B7_o009_c003_t2_m030",
+  "r3b_t8_B7_o010_c001_t2_m011",
+  "r3b_t8_B7_o010_c003_t2_m011",
+  "r3b_t8_B7_o010_c003_t3_m021_047",
+  "r3b_t8_B7_o010_c005_t2_m012",
+  "r3b_t8_B7_o010_c006_t2_m026",
+  "r3b_t8_B7_o010_c007_t2_m031",
+  "r3b_t8_B7_o010_c008_t2_m058"
+ ],
+ "skipped": [
+  "r3b_t8_B7_o010_c003_t2_m011_sweep",
+  "r3b_t8_B7_o010_c003_t3_m021_047_sweep",
+  "r3b_t8_B7_o010_c005_t2_m012_sweep",
+  "r3b_t8_B7_o010_c006_t2_m026_sweep",
+  "r3b_t8_B7_o010_c007_t2_m031_sweep",
+  "r3b_t8_B7_o010_c008_t2_m058_sweep"
+ ],
+ "unsat_wall_seconds": {
+  "min": 486.42,
+  "median": 897.55,
+  "max": 1326.55
+ },
+ "graded": {
+  "check_grades_loaded": true,
+  "check_open_414": true,
+  "check_decided_15_open": true,
+  "check_total_399": true,
+  "check_names_d1": true,
+  "check_shard_size": true,
+  "controls_controls_sat": true,
+  "no_error": true,
+  "all_accounted": true,
+  "run_ran": true
+ }
+}

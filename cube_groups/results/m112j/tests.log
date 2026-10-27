@@ -1,0 +1,11 @@
+test_deadline_skips_without_solving (test_m112.TestCases.test_deadline_skips_without_solving) ... ok
+test_m111_decided (test_m112.TestCases.test_m111_decided) ... ok
+test_open_cases (test_m112.TestCases.test_open_cases) ... ok
+test_pres_r_by_name (test_m112.TestCases.test_pres_r_by_name) ... ok
+test_shards_partition_399 (test_m112.TestCases.test_shards_partition_399) ... ok
+test_grade_rows (test_m112.TestGrade.test_grade_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.365s
+
+OK
