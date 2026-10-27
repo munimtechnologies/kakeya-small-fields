@@ -1,0 +1,5147 @@
+{
+ "verified": 511,
+ "skipped": [],
+ "not_verified": [
+  [
+   "r3b_t8_B7_o007_c009_t3_m011_017",
+   "UNKNOWN"
+  ]
+ ],
+ "by_mode": {
+  "n": {
+   "VERIFIED": 506,
+   "UNKNOWN": 1
+  },
+  "sweep": {
+   "VERIFIED": 5
+  }
+ },
+ "by_label": {
+  "t2_m075": {
+   "VERIFIED": 4
+  },
+  "t2_m091": {
+   "VERIFIED": 5
+  },
+  "t2_m098": {
+   "VERIFIED": 6
+  },
+  "t2_m107": {
+   "VERIFIED": 6
+  },
+  "t2_m194": {
+   "VERIFIED": 1
+  },
+  "t2_m117": {
+   "VERIFIED": 5
+  },
+  "t2_m207": {
+   "VERIFIED": 5
+  },
+  "t2_m229": {
+   "VERIFIED": 6
+  },
+  "t3_m002_132": {
+   "VERIFIED": 5
+  },
+  "t3_m027_228": {
+   "VERIFIED": 2
+  },
+  "t3_m075_145": {
+   "VERIFIED": 4
+  },
+  "t3_m099_172": {
+   "VERIFIED": 7
+  },
+  "t3_m122_167": {
+   "VERIFIED": 2
+  },
+  "t2_m078": {
+   "VERIFIED": 4
+  },
+  "t2_m092": {
+   "VERIFIED": 10
+  },
+  "t2_m101": {
+   "VERIFIED": 4
+  },
+  "t2_m110": {
+   "VERIFIED": 2
+  },
+  "t2_m118": {
+   "VERIFIED": 7
+  },
+  "t2_m136": {
+   "VERIFIED": 5
+  },
+  "t2_m155": {
+   "VERIFIED": 1
+  },
+  "t2_m165": {
+   "VERIFIED": 5
+  },
+  "t2_m176": {
+   "VERIFIED": 3
+  },
+  "t2_m183": {
+   "VERIFIED": 1
+  },
+  "t2_m190": {
+   "VERIFIED": 5
+  },
+  "t2_m205": {
+   "VERIFIED": 5
+  },
+  "t2_m220": {
+   "VERIFIED": 3
+  },
+  "t2_m242": {
+   "VERIFIED": 4
+  },
+  "t2_m253": {
+   "VERIFIED": 1
+  },
+  "t3_m005_178": {
+   "VERIFIED": 9
+  },
+  "t3_m024_109": {
+   "VERIFIED": 2
+  },
+  "t3_m073_185": {
+   "VERIFIED": 2
+  },
+  "t3_m063_205": {
+   "VERIFIED": 3
+  },
+  "t3_m090_139": {
+   "VERIFIED": 1
+  },
+  "t3_m103_188": {
+   "VERIFIED": 4
+  },
+  "t3_m115_142": {
+   "VERIFIED": 1
+  },
+  "t2_m066": {
+   "VERIFIED": 4
+  },
+  "t2_m094": {
+   "VERIFIED": 7
+  },
+  "t2_m086": {
+   "VERIFIED": 8
+  },
+  "t2_m103": {
+   "VERIFIED": 6
+  },
+  "t2_m114": {
+   "VERIFIED": 4
+  },
+  "t2_m204": {
+   "VERIFIED": 6
+  },
+  "t2_m122": {
+   "VERIFIED": 3
+  },
+  "t2_m247": {
+   "VERIFIED": 3
+  },
+  "t3_m009_241": {
+   "VERIFIED": 2
+  },
+  "t3_m121_159": {
+   "VERIFIED": 1
+  },
+  "t3_m003_181": {
+   "VERIFIED": 6
+  },
+  "t3_m072_169": {
+   "VERIFIED": 6
+  },
+  "t3_m098_140": {
+   "VERIFIED": 4
+  },
+  "t2_m077": {
+   "VERIFIED": 7
+  },
+  "t2_m109": {
+   "VERIFIED": 7
+  },
+  "t2_m154": {
+   "VERIFIED": 7
+  },
+  "t2_m182": {
+   "VERIFIED": 5
+  },
+  "t2_m218": {
+   "VERIFIED": 5
+  },
+  "t2_m250": {
+   "VERIFIED": 5
+  },
+  "t3_m091_155": {
+   "VERIFIED": 5
+  },
+  "t3_m118_174": {
+   "VERIFIED": 2
+  },
+  "t2_m069": {
+   "VERIFIED": 5
+  },
+  "t2_m087": {
+   "VERIFIED": 1
+  },
+  "t2_m095": {
+   "VERIFIED": 5
+  },
+  "t2_m104": {
+   "VERIFIED": 4
+  },
+  "t2_m115": {
+   "VERIFIED": 1
+  },
+  "t2_m123": {
+   "VERIFIED": 3
+  },
+  "t2_m141": {
+   "VERIFIED": 3
+  },
+  "t2_m158": {
+   "VERIFIED": 2
+  },
+  "t2_m171": {
+   "VERIFIED": 2
+  },
+  "t2_m187": {
+   "VERIFIED": 2
+  },
+  "t2_m179": {
+   "VERIFIED": 4
+  },
+  "t2_m212": {
+   "VERIFIED": 3
+  },
+  "t2_m199": {
+   "VERIFIED": 2
+  },
+  "t2_m226": {
+   "VERIFIED": 2
+  },
+  "t2_m236": {
+   "VERIFIED": 2
+  },
+  "t3_m001_176": {
+   "VERIFIED": 3
+  },
+  "t3_m007_179": {
+   "VERIFIED": 5
+  },
+  "t2_m085": {
+   "VERIFIED": 5
+  },
+  "t2_m111": {
+   "VERIFIED": 2
+  },
+  "t2_m140": {
+   "VERIFIED": 2
+  },
+  "t2_m156": {
+   "VERIFIED": 3
+  },
+  "t2_m170": {
+   "VERIFIED": 2
+  },
+  "t3_m031_036": {
+   "VERIFIED": 2
+  },
+  "t2_m178": {
+   "VERIFIED": 2
+  },
+  "t2_m184": {
+   "VERIFIED": 5
+  },
+  "t2_m197": {
+   "VERIFIED": 5
+  },
+  "t2_m221": {
+   "VERIFIED": 1
+  },
+  "t2_m244": {
+   "VERIFIED": 1
+  },
+  "t2_m234": {
+   "VERIFIED": 1
+  },
+  "t2_m254": {
+   "VERIFIED": 1
+  },
+  "t3_m040_092": {
+   "VERIFIED": 2
+  },
+  "t3_m064_136": {
+   "VERIFIED": 3
+  },
+  "t3_m078_161": {
+   "VERIFIED": 6
+  },
+  "t3_m094_187": {
+   "VERIFIED": 3
+  },
+  "t3_m106_157": {
+   "VERIFIED": 4
+  },
+  "t3_m119_158": {
+   "VERIFIED": 2
+  },
+  "t2_m157": {
+   "VERIFIED": 2
+  },
+  "t2_m185": {
+   "VERIFIED": 1
+  },
+  "t2_m225": {
+   "VERIFIED": 2
+  },
+  "t2_m255": {
+   "VERIFIED": 2
+  },
+  "t2_m071": {
+   "VERIFIED": 4
+  },
+  "t2_m139": {
+   "VERIFIED": 2
+  },
+  "t2_m177": {
+   "VERIFIED": 2
+  },
+  "t3_m071_144": {
+   "VERIFIED": 7
+  },
+  "t3_m087_146": {
+   "VERIFIED": 3
+  },
+  "t3_m107_189": {
+   "VERIFIED": 2
+  },
+  "t2_m099": {
+   "VERIFIED": 7
+  },
+  "t2_m230": {
+   "VERIFIED": 1
+  },
+  "t3_m045_206": {
+   "VERIFIED": 2
+  },
+  "t3_m086_130": {
+   "VERIFIED": 8
+  },
+  "t2_m142": {
+   "VERIFIED": 3
+  },
+  "t3_m011_017": {
+   "UNKNOWN": 1,
+   "VERIFIED": 1
+  },
+  "t2_m243": {
+   "VERIFIED": 1
+  },
+  "t3_m008_096": {
+   "VERIFIED": 2
+  },
+  "t3_m084_170": {
+   "VERIFIED": 3
+  },
+  "t3_m095_171": {
+   "VERIFIED": 2
+  },
+  "t3_m065_184": {
+   "VERIFIED": 4
+  },
+  "t3_m111_141": {
+   "VERIFIED": 3
+  },
+  "t2_m134": {
+   "VERIFIED": 4
+  },
+  "t2_m174": {
+   "VERIFIED": 4
+  },
+  "t2_m189": {
+   "VERIFIED": 4
+  },
+  "t2_m163": {
+   "VERIFIED": 4
+  },
+  "t2_m228": {
+   "VERIFIED": 4
+  },
+  "t2_m241": {
+   "VERIFIED": 4
+  },
+  "t3_m018_199": {
+   "VERIFIED": 5
+  },
+  "t3_m054_220": {
+   "VERIFIED": 5
+  },
+  "t3_m114_190": {
+   "VERIFIED": 4
+  },
+  "t3_m124_143": {
+   "VERIFIED": 2
+  },
+  "t2_m093": {
+   "VERIFIED": 2
+  },
+  "t2_m102": {
+   "VERIFIED": 1
+  },
+  "t2_m119": {
+   "VERIFIED": 1
+  },
+  "t2_m203": {
+   "VERIFIED": 3
+  },
+  "t2_m215": {
+   "VERIFIED": 4
+  },
+  "t2_m239": {
+   "VERIFIED": 1
+  },
+  "t3_m110_173": {
+   "VERIFIED": 2
+  },
+  "t2_m090": {
+   "VERIFIED": 1
+  },
+  "t2_m106": {
+   "VERIFIED": 1
+  },
+  "t2_m116": {
+   "VERIFIED": 1
+  },
+  "t2_m143": {
+   "VERIFIED": 5
+  },
+  "t2_m181": {
+   "VERIFIED": 5
+  },
+  "t2_m249": {
+   "VERIFIED": 3
+  },
+  "t3_m123_151": {
+   "VERIFIED": 4
+  },
+  "t3_m004_034": {
+   "VERIFIED": 1
+  },
+  "t3_m016_069": {
+   "VERIFIED": 3
+  },
+  "t3_m056_093": {
+   "VERIFIED": 1
+  },
+  "t3_m102_156": {
+   "VERIFIED": 2
+  },
+  "t2_m132": {
+   "VERIFIED": 3
+  },
+  "t2_m011": {
+   "VERIFIED": 1
+  },
+  "t2_m159": {
+   "VERIFIED": 2
+  },
+  "t2_m173": {
+   "VERIFIED": 3
+  },
+  "t2_m188": {
+   "VERIFIED": 1
+  },
+  "t3_m066_128": {
+   "VERIFIED": 2
+  },
+  "t2_m240": {
+   "VERIFIED": 2
+  },
+  "t3_m048_077": {
+   "VERIFIED": 1
+  },
+  "t2_m169": {
+   "VERIFIED": 2
+  },
+  "t2_m227": {
+   "VERIFIED": 1
+  },
+  "t3_m006_163": {
+   "VERIFIED": 2
+  },
+  "t2_m172": {
+   "VERIFIED": 1
+  },
+  "t2_m180": {
+   "VERIFIED": 1
+  }
+ },
+ "cadical": {
+  "n": {
+   "n": 507,
+   "mean": 12.46,
+   "median": 9.23,
+   "max": 600.08
+  },
+  "sweep": {
+   "n": 5,
+   "mean": 126.5,
+   "median": 132.75,
+   "max": 192.02
+  }
+ },
+ "drat": {
+  "n": {
+   "n": 506,
+   "mean": 9.33,
+   "median": 7.24,
+   "max": 247.66
+  },
+  "sweep": {
+   "n": 5,
+   "mean": 133.38,
+   "median": 131.73,
+   "max": 212.56
+  }
+ },
+ "largest_proof": 549912576,
+ "rows": {
+  "r3b_t8_B7_o007_c000_t2_m075": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "3a5dad7accb47d45ba7d9957f976e9b324ae4fea9a8a31ac9b6a2f1ef4abf2d2",
+   9.4,
+   6.43
+  ],
+  "r3b_t8_B7_o007_c000_t2_m091": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d079a16a2b614bed04756073f54bbd250acff9ce582db735668a59df9b7892b7",
+   9.92,
+   6.77
+  ],
+  "r3b_t8_B7_o007_c000_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b23fe81e62bb191ca7080210eddda95104c0372dc1df596dcf030bf70d4e1efc",
+   8.42,
+   6.53
+  ],
+  "r3b_t8_B7_o007_c000_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "c43322cdcb85ae6c26497da7d036e17d53ceb9bbde7c945a3fb31503052923f8",
+   8.94,
+   7.24
+  ],
+  "r3b_t8_B7_o007_c000_t2_m117": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "89c1c421127624e41ca64319eeec2b40ac8549ab5d24f670623807b1eb81cda3",
+   11.2,
+   12.47
+  ],
+  "r3b_t8_B7_o007_c000_t2_m194": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "cd6ad753ca24dbb31bed83564c6e72d4bb0d51a22e7c4dcfa35fb79d599fa8eb",
+   6.28,
+   5.96
+  ],
+  "r3b_t8_B7_o007_c000_t2_m207": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "d78b6169070c4ffc4801c4ad155bf763de334e33b968bcead2ed7f961768e643",
+   11.98,
+   6.75
+  ],
+  "r3b_t8_B7_o007_c000_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "04f4283bdda8ae3fd7fa124d3f3128f640bb88946aaa364c7fc82f01a3a5961e",
+   8.33,
+   6.81
+  ],
+  "r3b_t8_B7_o007_c000_t3_m002_132": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "dfb8cff6aca7fd2f3dce66c94411fbf3bc304ad0afb00e1f8da709070bf470ae",
+   8.04,
+   5.3
+  ],
+  "r3b_t8_B7_o007_c000_t3_m027_228": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "2ad9ee5f7d6cb2ebb8fd4689893123f8f82abb4c3310d7a259d3d026fb8125f5",
+   7.94,
+   6.25
+  ],
+  "r3b_t8_B7_o007_c000_t3_m075_145": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "b0be855dc3ab74db53075c68b92dcc73378994429ec85175c5b272f0f56fe3ea",
+   7.39,
+   6.79
+  ],
+  "r3b_t8_B7_o007_c000_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "6789ab05542b1cf55131a2ae9ce4a86ffa44953d11a7d4ff40f14e0dbcedd4fe",
+   5.92,
+   5.55
+  ],
+  "r3b_t8_B7_o007_c000_t3_m122_167": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "aeb9ef5b42e6ddd1ba7d86faba20884c0448a47a47866cf5ebd5a90c83f9413b",
+   5.84,
+   6.1
+  ],
+  "r3b_t8_B7_o007_c001_t2_m078": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "c619ab70c938fbef727b647c648fee757549a068364226b8ccd6dc2a8ab45ecb",
+   6.47,
+   5.77
+  ],
+  "r3b_t8_B7_o007_c001_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "99c440b94db880604b9c0842991b0c858af15b2d75918de190858c237d2b4874",
+   10.89,
+   7.4
+  ],
+  "r3b_t8_B7_o007_c001_t2_m101": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b5e881a206624516ac1ae1b7cabb070d3351c72d9b2729668f17e615df53744c",
+   13.53,
+   10.37
+  ],
+  "r3b_t8_B7_o007_c001_t2_m110": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "a2701467eb93751de0f85fc81d8b86c12e306a380d7c9e842fea55406ead30f9",
+   6.82,
+   6.17
+  ],
+  "r3b_t8_B7_o007_c001_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "eb8a8bc41c6d4760d8f551bb03497ef516caa41f7ceba22f227bb4cf945087ea",
+   6.93,
+   5.52
+  ],
+  "r3b_t8_B7_o007_c001_t2_m136": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "655c14709b72e48430ec309b488894de9b70016fcd43f4f060328d48e5edd155",
+   6.44,
+   5.22
+  ],
+  "r3b_t8_B7_o007_c001_t2_m155": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "cfd9231316289128dcdd4bf65a815ad23b803d11028126d0e08d37f24165b456",
+   7.69,
+   6.46
+  ],
+  "r3b_t8_B7_o007_c001_t2_m165": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "41bfcf7d3cb4b2a6722389c9dd4a76daf6be6fd930f1ddabfe295ea05fc0e5dd",
+   8.67,
+   4.8
+  ],
+  "r3b_t8_B7_o007_c001_t2_m176": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b6ec5f7fb979c495f96c9e3d3216e906aacd12690c2191619ee35f60a1cb597d",
+   9.02,
+   7.89
+  ],
+  "r3b_t8_B7_o007_c001_t2_m183": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6a826e0750cc49f0ae0b25212f2b76461bc38138ead12c5ea957fef3d3d2a524",
+   12.3,
+   12.18
+  ],
+  "r3b_t8_B7_o007_c001_t2_m190": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "3a9725d70847687d49b6b57ec4a75db806c67457ee4ada2d63da63b560e47ae7",
+   6.31,
+   6.29
+  ],
+  "r3b_t8_B7_o007_c001_t2_m205": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "2750b50d390208841b5eded7a7cc25ee4a746790fbab9e3a86ad7f2adba3db4a",
+   9.23,
+   7.53
+  ],
+  "r3b_t8_B7_o007_c001_t2_m220": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "daff5af204f681fb082276a8239b5a58e818cb794f6f56ad62bc92949d6f8ab9",
+   12.43,
+   10.92
+  ],
+  "r3b_t8_B7_o007_c001_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "e786463567ec1f1d2653810b48087b7ff6beca6e4a68df029ae568d00f41a554",
+   7.73,
+   7.25
+  ],
+  "r3b_t8_B7_o007_c001_t2_m242": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "26a5c30fc0f95f76d577d0ab768770144a88d06fee7397eb19e3c2906161e9c4",
+   10.82,
+   6.26
+  ],
+  "r3b_t8_B7_o007_c001_t2_m253": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "6f168c38e2f46015e8f7eb7f7f7864e34510ac9eb5ff2c45a89fba1c02d83ee6",
+   8.75,
+   7.67
+  ],
+  "r3b_t8_B7_o007_c001_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8fc87591343586f9d40f134411a91d1aa7fad7caf7c04e0dfe5c7b6093acc64f",
+   11.07,
+   9.1
+  ],
+  "r3b_t8_B7_o007_c001_t3_m024_109": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "d9be0926c1aa79c831d37aba1d245a7b2c65dc87ea8c5966904b18dc82abc4fa",
+   10.33,
+   7.9
+  ],
+  "r3b_t8_B7_o007_c001_t3_m063_205": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "97acd5c70b619b770beff79b98d8ae32b72a8697bb1182201a5e45306c7f0e1a",
+   10.63,
+   6.83
+  ],
+  "r3b_t8_B7_o007_c001_t3_m073_185": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "619d6d23599643a662a9946a4b083ff20282886d409afdcbcbaa8addbb817962",
+   10.28,
+   6.82
+  ],
+  "r3b_t8_B7_o007_c001_t3_m090_139": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "7af0a92d9b0281ecfd7f685c6c146dae7eabb5e8e8a918ca73bdf0aa2a3edcd8",
+   6.81,
+   6.84
+  ],
+  "r3b_t8_B7_o007_c001_t3_m103_188": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "009430bc319b88f8bce854e36dda35d79ea2341f365455817a2e50ba8ba330f5",
+   6.99,
+   7.21
+  ],
+  "r3b_t8_B7_o007_c001_t3_m115_142": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "4c2c3ec296483eb40f630b7ab12ba965de6561c16a9daf1778839e73ea0cd613",
+   6.67,
+   5.96
+  ],
+  "r3b_t8_B7_o007_c002_t2_m066": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d0b0ed33637c003cf2826c5393474d02ff6f8461d0aea949c988139fac1c4f71",
+   7.88,
+   6.02
+  ],
+  "r3b_t8_B7_o007_c002_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "f622487fff219ff7877c051acf00b772e40ebd050a569587fbfc8495f7416164",
+   8.07,
+   6.19
+  ],
+  "r3b_t8_B7_o007_c002_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "ba412f5e43ab0380caba95e6c84683454989f6373586209769ab8f63aacb7165",
+   7.3,
+   5.62
+  ],
+  "r3b_t8_B7_o007_c002_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "1f76bde8fda9d2d76323d71bf1f900559df09af117aba793a5a2b064b7598257",
+   8.14,
+   5.27
+  ],
+  "r3b_t8_B7_o007_c002_t2_m114": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "0002a5f9c9f3aaeacf8ea157a29e438da5e2301a526e94ad41e09963dbd93590",
+   8.02,
+   5.69
+  ],
+  "r3b_t8_B7_o007_c002_t2_m122": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "f7f7b4789db29eec57aa66b3ebc96078bc38cf57d6e9c4e33b273ab4372798e7",
+   6.77,
+   5.77
+  ],
+  "r3b_t8_B7_o007_c002_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "2dc2603db0b3150f3ccecec2ad2ccf4652f6c1af4bf3fcf8c562bd21832d79c7",
+   6.5,
+   5.47
+  ],
+  "r3b_t8_B7_o007_c002_t2_m220": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b560cd4cb9d2be533b739c9f483438e230508a00fb68bfcbc08418059dd3176f",
+   9.84,
+   9.6
+  ],
+  "r3b_t8_B7_o007_c002_t2_m247": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c59fe28c45969657686095f9f23c33d07b52eb9295fd8be27c78322bb5089045",
+   7.44,
+   7.02
+  ],
+  "r3b_t8_B7_o007_c002_t3_m009_241": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8de287f3250dca1097d8b596e56e560b9fad7a4b08e30cdce602af4f8ce00f64",
+   8.55,
+   7.07
+  ],
+  "r3b_t8_B7_o007_c002_t3_m073_185": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "73012a0c3a50014889cded4f8d0b909ca1d7548fa787be156ced6cc8f27f7957",
+   6.58,
+   5.92
+  ],
+  "r3b_t8_B7_o007_c002_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "ae69f7648d402d5b7ab5ce8500bf1b8504d753577b411a448b83ff4ccfdbcc7a",
+   4.96,
+   4.58
+  ],
+  "r3b_t8_B7_o007_c002_t3_m121_159": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "92c57feea38e8f3052e2af907b23a1fea1a494736173493023ba7a69d82aa449",
+   7.41,
+   5.54
+  ],
+  "r3b_t8_B7_o007_c003_t2_m078": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "4e2585480dedb6c220ec308ee531cc0bdf4af101167aff5bf309ddbbe70d531f",
+   6.26,
+   5.53
+  ],
+  "r3b_t8_B7_o007_c003_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "1e0723c8c5cfc4023739ab20acadf49c6c0e27dcd325a1198f032582bf0d0654",
+   7.46,
+   5.5
+  ],
+  "r3b_t8_B7_o007_c003_t2_m101": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "9cb8fa95acdd6c519ed741bafcba4abe4347198ca14c24259f82ff3ce5504590",
+   11.97,
+   12.29
+  ],
+  "r3b_t8_B7_o007_c003_t2_m110": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e4b2aafc73e67fead892fc2098558eefb61c2cd4cf6915ad912f480700a82827",
+   8.1,
+   6.96
+  ],
+  "r3b_t8_B7_o007_c003_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "715316aa55e6659a840f23887087cdb7b476ed9ebb18798b043f84bd8914f2cd",
+   8.09,
+   5.83
+  ],
+  "r3b_t8_B7_o007_c003_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "0f462d5371078cdd55404f3635d08409e42a2534ca247d13a98bd8789816e279",
+   9.78,
+   7.78
+  ],
+  "r3b_t8_B7_o007_c003_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "45037eef2f0cdf1fc19af43e67fc9bd643a56cf85f32ba2a6f6a24a74e1ac40f",
+   4.98,
+   4.99
+  ],
+  "r3b_t8_B7_o007_c003_t3_m098_140": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4b94fc1c2ace3ac9b936587a4506cb8a1352108222e958afa7df126d8b7be1a2",
+   6.22,
+   4.98
+  ],
+  "r3b_t8_B7_o007_c004_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "557c5e3ec7332950192de5120f0cb22387b16d163c3fa2e341188952fc597834",
+   9.56,
+   8.84
+  ],
+  "r3b_t8_B7_o007_c004_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "8c7e1c75ecfdd04b360a41e8d8b07b5db763a7249c26a656cf5ab61840c85660",
+   9.45,
+   7.56
+  ],
+  "r3b_t8_B7_o007_c004_t2_m101": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "78e1ab3e0d36bf2e08d2db5c848242c2070e29a4b03bd02b88b65903e8b1e4de",
+   14.92,
+   13.57
+  ],
+  "r3b_t8_B7_o007_c004_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "4a1279ca4b0af4756363577b18edf41d0bd41a905a7b9911bd0087a87f07d47d",
+   10.9,
+   8.37
+  ],
+  "r3b_t8_B7_o007_c004_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "fa4ffd9acb0e3576ec1518e52f00e12fd14a01209c2d1fe5d178ea672b87d64f",
+   6.72,
+   5.37
+  ],
+  "r3b_t8_B7_o007_c004_t2_m136": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bad9e2044f3e9bebcc3e75a3b507447f173de0a0be4fa35479ee7457fc7f3b6f",
+   6.48,
+   5.09
+  ],
+  "r3b_t8_B7_o007_c004_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d3e82694591948fe2f4cb0bf6b4c979ec7eec7277b4f2e685078621aea3b3e5b",
+   7.11,
+   5.44
+  ],
+  "r3b_t8_B7_o007_c004_t2_m165": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "a7afa1af13e728882909ba00a5f1a1c1e36a5fb9ed552b41b45b8269981f0bcd",
+   8.44,
+   5.76
+  ],
+  "r3b_t8_B7_o007_c004_t2_m176": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "f363cca77f7563587ff5972c90651e66f2ce0762de27579d57152e05cd6dc510",
+   8.52,
+   6.04
+  ],
+  "r3b_t8_B7_o007_c004_t2_m182": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "75657df552256eccce10b6871fd44f757a51873dfcd1ad7fd7556a2e2d66c19e",
+   11.1,
+   8.81
+  ],
+  "r3b_t8_B7_o007_c004_t2_m190": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "66f4d718e968fe3881e9074c456bc4253d48639321c13e795a799b20e49e128e",
+   7.27,
+   5.08
+  ],
+  "r3b_t8_B7_o007_c004_t2_m205": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "47505404714a96675d12dcbe0c32a3f8216c7229408696340c2240aaa76cac1e",
+   8.02,
+   6.13
+  ],
+  "r3b_t8_B7_o007_c004_t2_m218": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "555b1f3ca7e683ef6bf8bb4d26cfb33a505c903c02ef82c98dc1adb87b40d380",
+   7.94,
+   6.22
+  ],
+  "r3b_t8_B7_o007_c004_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "57728564a035498aa719843c4e68ba4ff3c75c347028df3a341101e21275f151",
+   6.43,
+   6.0
+  ],
+  "r3b_t8_B7_o007_c004_t2_m242": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b8e6eb0284b7e069f5ac7c88846fbb5061f5ba76b3da8f2920ed2f4117a532be",
+   9.23,
+   5.12
+  ],
+  "r3b_t8_B7_o007_c004_t2_m250": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "15bbfa49ef9f9411c9dae473324ca26309f30de4dc47003abd77cf30e324840d",
+   7.96,
+   6.39
+  ],
+  "r3b_t8_B7_o007_c004_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "26675eb626d14926a0c1e5b8c1acb4155cf394b895654eb09cff45901fe78904",
+   11.38,
+   11.07
+  ],
+  "r3b_t8_B7_o007_c004_t3_m024_109": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e0117e79024c64c5308571089dde0445aec1be8bce8ca73a295d549f5c3884cd",
+   13.48,
+   10.01
+  ],
+  "r3b_t8_B7_o007_c004_t3_m063_205": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "4f0481d348436972a481e9017b53d89589f26d40eb778f6ff73474e50d333981",
+   9.9,
+   6.75
+  ],
+  "r3b_t8_B7_o007_c004_t3_m075_145": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "b27fb803d9f8d7a2ff1cd7517a8bc78df3d6c08e3469a2a1d68f80c7cb36211b",
+   9.23,
+   9.15
+  ],
+  "r3b_t8_B7_o007_c004_t3_m091_155": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "da2728d0f8d3b1a0924d1618009032fbd33b11e46441d87b9bc39467e9206cfd",
+   9.01,
+   7.27
+  ],
+  "r3b_t8_B7_o007_c004_t3_m103_188": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "9a30fbb4d006ba0e0c6bde60a6e54db4c1d5728c84a3d68e5c95fd8353423d7b",
+   7.69,
+   5.81
+  ],
+  "r3b_t8_B7_o007_c004_t3_m118_174": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "d0d38c863f34b94c81dec1f83e275efdc1a13ae6767034c78ed8dc8651960802",
+   6.66,
+   6.33
+  ],
+  "r3b_t8_B7_o007_c005_t2_m069": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "347990a470a6fa053369d6cb0a9bb075b1a929ad906d9812941610fa06b19bf6",
+   8.18,
+   7.86
+  ],
+  "r3b_t8_B7_o007_c005_t2_m087": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "0abb250e7af215e556789f537608121f96c397b0e974353389e6570522618014",
+   8.69,
+   6.11
+  ],
+  "r3b_t8_B7_o007_c005_t2_m095": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "e26af6574bbf35c05594f9ebeb9cd952b31b19d6af8480bcddc0914190d1019b",
+   6.68,
+   6.02
+  ],
+  "r3b_t8_B7_o007_c005_t2_m104": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "be55b543124dca28ef429e9fc463f81229b7ac590593cf0886b2f167558de0c9",
+   11.73,
+   6.93
+  ],
+  "r3b_t8_B7_o007_c005_t2_m115": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c48fdad3d048ba99905ce04cc24f618833aff0676bb16515292e040689790566",
+   8.94,
+   6.31
+  ],
+  "r3b_t8_B7_o007_c005_t2_m123": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "62d05aa239074305efd10f842c9b24f17533d7c6ca12385d6f57671179f245d4",
+   8.68,
+   6.18
+  ],
+  "r3b_t8_B7_o007_c005_t2_m141": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "cd549e6a2413e7b692a1f7412c534211e889fc13cd718441e4ed438fabbd8146",
+   7.35,
+   5.45
+  ],
+  "r3b_t8_B7_o007_c005_t2_m158": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "9950cd37227dd7e18b1160cf9b7bf6cf07bf6373dbbbf5cc0f679982cd1a3290",
+   7.39,
+   5.63
+  ],
+  "r3b_t8_B7_o007_c005_t2_m171": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "e9c2a93275ead5d0a3b04a802f61f26a84249e5ea1bf6e9fe3531d045492bf5f",
+   6.92,
+   5.53
+  ],
+  "r3b_t8_B7_o007_c005_t2_m179": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "0b4ad5dd6ec61de9c7851af2aaf68922e53a4d63c6d270f8186018fcd51cd14e",
+   11.95,
+   10.76
+  ],
+  "r3b_t8_B7_o007_c005_t2_m187": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c33e123c7ea21164e82abf57534038bba1c7ee6c3e0c26bac48f5be2799cf165",
+   7.64,
+   6.72
+  ],
+  "r3b_t8_B7_o007_c005_t2_m199": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "0a434c3d5d710e7f238456a755cabf5059e45e143ea58b81dfde36bfd59ead15",
+   9.88,
+   8.12
+  ],
+  "r3b_t8_B7_o007_c005_t2_m212": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "dadd13a5c5f1692e5b5f78468f6345fb1d63934e18abc7122871a9c5fdb0fe25",
+   6.64,
+   5.36
+  ],
+  "r3b_t8_B7_o007_c005_t2_m226": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "b3cdefaa9fa8b6ab6ef313c45a1956fc151d0627d207691c3f374e65b8c05270",
+   4.84,
+   4.04
+  ],
+  "r3b_t8_B7_o007_c005_t2_m236": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "2bfb79156cd8c6b3ac746a175249a9639abbfd134013ffeb89dbbca05ab1b785",
+   6.69,
+   6.45
+  ],
+  "r3b_t8_B7_o007_c005_t2_m247": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "4caa689a79a6fc65e362e1d84806130e0a2399c771a6bdaa24e5c331b22fcbc9",
+   6.68,
+   5.62
+  ],
+  "r3b_t8_B7_o007_c005_t3_m001_176": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "230d5c5425a335d5d439915bfa72cac40ec63cdfd8a0918d4aa9f887d0812f4a",
+   7.6,
+   6.4
+  ],
+  "r3b_t8_B7_o007_c005_t3_m007_179": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "7b729921bee79bbf22dbb09966999f7b977253e5f5bb29ba47818e99a86eda45",
+   14.47,
+   11.61
+  ],
+  "r3b_t8_B7_o007_c005_t3_m031_036": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "fd1cef9d245d7e3968c3c39358fc08bde82d4bec6459a2d05235bac7176c4924",
+   133.85,
+   154.28
+  ],
+  "r3b_t8_B7_o007_c005_t3_m063_205": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "ba528d6b1e1f5417cdf59978d0f282ea3269d8131211438d63fbf500ee0559cf",
+   9.27,
+   5.22
+  ],
+  "r3b_t8_B7_o007_c005_t3_m075_145": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "3a9f8fb293e8225be576b8b0d86dc57d6fe24a0ead475fe1c9303ae35110d13a",
+   7.08,
+   5.82
+  ],
+  "r3b_t8_B7_o007_c005_t3_m091_155": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "79bbde832ce0045cbb9095c98f23a92cfa5a84618836fa1c24926d7edfa1e527",
+   8.08,
+   5.56
+  ],
+  "r3b_t8_B7_o007_c005_t3_m103_188": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "2e72927a973b6a94d4a007b30910fda6e0c936bc7fe1950ad3b8dba083989039",
+   7.15,
+   5.66
+  ],
+  "r3b_t8_B7_o007_c005_t3_m118_174": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "a1736baf96b25a842ed80fd61e511a40ed5ca94a51809372ac98373ff68b9f00",
+   6.01,
+   5.31
+  ],
+  "r3b_t8_B7_o007_c006_t2_m066": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "44eadfc95ba85aa3bac13ecfa7c96bbd4bd89c3fca72ff6a112bcdc3d60aed69",
+   6.07,
+   5.4
+  ],
+  "r3b_t8_B7_o007_c006_t2_m085": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "8c9dd8bb213ce04e413116a33bb7e9875c436379a1432e60c5407e17d4a4a508",
+   10.65,
+   8.0
+  ],
+  "r3b_t8_B7_o007_c006_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "1869cfb08a72912c2de13f2254bd0c29863b420e43817bec0fa310c775984321",
+   7.57,
+   7.48
+  ],
+  "r3b_t8_B7_o007_c006_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b68fc5e4bbf548d644a1fb64d65e63e456164dd63c7e2441a0d77227e7852d5c",
+   8.54,
+   7.08
+  ],
+  "r3b_t8_B7_o007_c006_t2_m111": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c075434d60f80c0351f345cb57ddefde9280449fcb35d14ba5354d534f3a18fa",
+   11.39,
+   8.2
+  ],
+  "r3b_t8_B7_o007_c006_t2_m122": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "e167ece0d0d034efd3a8d261bb9483b66fd061803dcacc587dfe75b999870ad9",
+   8.04,
+   6.72
+  ],
+  "r3b_t8_B7_o007_c006_t2_m140": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c1354b7e3bc670cf4d5cf9962359d16ecc7ac9e807b8c575164c06300121d353",
+   10.85,
+   6.58
+  ],
+  "r3b_t8_B7_o007_c006_t2_m156": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "8af5a51a84e96aaf0d720f0a0d4247b47d4b92827a3faf5135d6868e4252d300",
+   11.67,
+   7.5
+  ],
+  "r3b_t8_B7_o007_c006_t2_m170": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b5d871dc810b6215e47da5830f5091dda663fc7ce8c337ebbbbf5c906ccf3080",
+   9.96,
+   6.62
+  ],
+  "r3b_t8_B7_o007_c006_t2_m178": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "de9ec82caafb5ecc7e5641ff273de8d4f5ea98ad080ac73c39ccb97e27b2af82",
+   10.21,
+   8.58
+  ],
+  "r3b_t8_B7_o007_c006_t2_m184": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "cad2ae8fdfa1d42f75e1cec3859ddb038bd8bdb84022b14c4c04788f58887dc6",
+   8.5,
+   6.8
+  ],
+  "r3b_t8_B7_o007_c006_t2_m197": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e21a952542328ba8b073004e11215cb451f38553155365921a2de6a472f1995e",
+   8.27,
+   6.8
+  ],
+  "r3b_t8_B7_o007_c006_t2_m207": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "1e4c8dbf5a8c1c18d7afff05800139ee79fa4c84c44e7691a93e5fb1f2dec8db",
+   7.96,
+   5.64
+  ],
+  "r3b_t8_B7_o007_c006_t2_m221": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "6c0aee4891d91f81dc35983ca1db9ff7f151d264d0e1de8b3e1c78108a39f623",
+   6.5,
+   4.93
+  ],
+  "r3b_t8_B7_o007_c006_t2_m234": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "f0e5b4f1e1d22c5ca27b25ac31aedb4c36a2dfdbdfcf95ff7890ed31be659175",
+   10.09,
+   7.74
+  ],
+  "r3b_t8_B7_o007_c006_t2_m244": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "d74c9faea949c62f7e6db321fefb11c98f732b6ac9582e7fa4d8faec6ee97c28",
+   6.19,
+   4.98
+  ],
+  "r3b_t8_B7_o007_c006_t2_m254": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "56ecdbd1db9f9c8efbb65365e222e92691de72fb239290b872768cc8fd871a86",
+   6.08,
+   5.08
+  ],
+  "r3b_t8_B7_o007_c006_t3_m007_179": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8c70b1b3eba51b459ff1acff5a2d43ddf0ff3a295d7cd26818005136e7b6097f",
+   10.58,
+   12.22
+  ],
+  "r3b_t8_B7_o007_c006_t3_m040_092": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "129376fe14d990d0abb326ce32877da1bbe6aff10ce9a75844ae2544b1f3e0eb",
+   9.44,
+   5.35
+  ],
+  "r3b_t8_B7_o007_c006_t3_m064_136": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "64744bc70090d249efe044bd0f88c725f288ad75fe667c30e0561660ac2a0dd8",
+   4.45,
+   3.96
+  ],
+  "r3b_t8_B7_o007_c006_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "58ec6a08d53ae47e16bd672d6cee78efb5c59984244ad60d694df2cb4c498af6",
+   4.6,
+   4.28
+  ],
+  "r3b_t8_B7_o007_c006_t3_m094_187": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "8fb64fcf8c17029e9915b769ec31150169a5063149a2a7669360bcf8a514da0a",
+   5.45,
+   4.45
+  ],
+  "r3b_t8_B7_o007_c006_t3_m106_157": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "08f1ef67976388059cd594216a052f27f2e1ebcad8333fedee14e508845989eb",
+   5.33,
+   4.46
+  ],
+  "r3b_t8_B7_o007_c006_t3_m119_158": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "30f69416394d811dc64f75a7d0d8b6168c708039a3780719757376c31e3efaec",
+   5.68,
+   5.05
+  ],
+  "r3b_t8_B7_o007_c007_t2_m069": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "0ddd7e80cd2d0a8d8d27ee0c025b0efa3d5a5e6c86120ebdff0c3399907786b1",
+   7.99,
+   6.08
+  ],
+  "r3b_t8_B7_o007_c007_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bfa1188c7ebffef19264ff3ab70b44fdc051391c3a3a72644e61ca1e985b62a8",
+   5.43,
+   4.85
+  ],
+  "r3b_t8_B7_o007_c007_t2_m095": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "e06845fa00d3f32b755484451f6e8ef299173267f320724eef466011192faf34",
+   6.5,
+   5.3
+  ],
+  "r3b_t8_B7_o007_c007_t2_m104": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "40e308fb07b1c36e46c4b59cba2a8a980691bd1f38804be49f6ea1a0a1bae496",
+   7.04,
+   4.77
+  ],
+  "r3b_t8_B7_o007_c007_t2_m114": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "f9d060096687f4bf68a819fb5f6d5418f92abc8eb99251022a617ec3b0524d97",
+   5.44,
+   4.79
+  ],
+  "r3b_t8_B7_o007_c007_t2_m123": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1461f1131013c5cafa597f22ae7db7dc8abea0da6400bdd7458b92e60bc30356",
+   5.01,
+   4.17
+  ],
+  "r3b_t8_B7_o007_c007_t2_m141": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "3abe06d82f75b3ecc9fdcb386b185d457b4e42d016e1fd00c7ac37eb06a388b5",
+   4.96,
+   4.64
+  ],
+  "r3b_t8_B7_o007_c007_t2_m157": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "60e1831491607fdf4096824fe2b86046c1f4c3a5c22f61dbfc67d37e2bba6be9",
+   5.71,
+   5.04
+  ],
+  "r3b_t8_B7_o007_c007_t2_m171": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "a737070ce24d4c7d1375d62db3818f47925a65b56c8c325bcc45ba10cf6b27ed",
+   6.3,
+   4.87
+  ],
+  "r3b_t8_B7_o007_c007_t2_m179": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ca9f723b0c651d18e922c4d3c94645fce32871c7f56cf4dc3f6f6b8d1660d094",
+   9.59,
+   7.97
+  ],
+  "r3b_t8_B7_o007_c007_t2_m185": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "2c33480dd1d27eb4412c4b9dfeea4135d8288f3bdd35fa9c5fa81a23107d2cf0",
+   5.93,
+   4.8
+  ],
+  "r3b_t8_B7_o007_c007_t2_m199": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "f202318de99e75d710b4a52a2c4a7485b2a999485022f487fcd5f4d2fe84edcf",
+   7.2,
+   6.65
+  ],
+  "r3b_t8_B7_o007_c007_t2_m212": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "8a5593e309c437647281ed042ff29a1cc4e0e108bf7fbbe9bdb2fc5dd49d72a5",
+   5.17,
+   4.37
+  ],
+  "r3b_t8_B7_o007_c007_t2_m225": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "fb5ffe5ce40921f689db2ab1065f87debd24c8ba9fb86ce3799b4cbf29cf8b26",
+   5.51,
+   4.4
+  ],
+  "r3b_t8_B7_o007_c007_t2_m236": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "83081640952e066a1775df5a882f281e61efcbb1c24f23fc3beff6da8e8673e8",
+   5.56,
+   4.61
+  ],
+  "r3b_t8_B7_o007_c007_t2_m247": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "7cb53531699418918e449d12c916d4882faa291cd6cd7c7a5ca0bbd0fd0cbce3",
+   6.61,
+   4.59
+  ],
+  "r3b_t8_B7_o007_c007_t2_m255": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "2b321e6f73790f7f8b7bb7cf9dbf9ae357e96b01cc3121cabe8de23a9c116bb6",
+   7.04,
+   5.43
+  ],
+  "r3b_t8_B7_o007_c007_t3_m007_179": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "be3ab6413f8bd2d38fca5a2890d979eba3c4f3f2cf78d3a648040e840e3a207f",
+   8.72,
+   7.04
+  ],
+  "r3b_t8_B7_o007_c007_t3_m027_228": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "25993773d862e983f403dc622507030cb3f478483fae3916338edccd58dd2390",
+   6.38,
+   4.59
+  ],
+  "r3b_t8_B7_o007_c007_t3_m064_136": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "2da4b89c851fd7716e8fc4ac0dac0495ac7b314835f32db6134cec351622276c",
+   5.63,
+   4.27
+  ],
+  "r3b_t8_B7_o007_c007_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "8d7d0cce3d73d18a55ec42bcfdb9691682720a55fe25ff822f9d380de8744f64",
+   5.4,
+   4.55
+  ],
+  "r3b_t8_B7_o007_c007_t3_m091_155": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "d6243e05de97ee17a51ed93268290a115195a99ddd67afe1c80a05d1f8084680",
+   5.99,
+   4.95
+  ],
+  "r3b_t8_B7_o007_c007_t3_m106_157": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "2a2d3cde1bcb61f37c8f5f1335328270893e7706f25534f6985a432c3a707f0b",
+   5.44,
+   4.34
+  ],
+  "r3b_t8_B7_o007_c007_t3_m119_158": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "5a0c6eac7a6a89b805198c6d37b4d1b3277ae52e7dda865d1cbf71153920cb36",
+   6.97,
+   4.81
+  ],
+  "r3b_t8_B7_o007_c008_t2_m066": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "50dcd4323cedc673239e3f1f839ae4375722f8646643de3e66b5bcc3dffcdf29",
+   5.65,
+   4.42
+  ],
+  "r3b_t8_B7_o007_c008_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "11dd34148e611885a8961004c0b2967362071a9876d7350a9ab9d3a79a113181",
+   4.68,
+   3.58
+  ],
+  "r3b_t8_B7_o007_c008_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "70f7fca83abe8c953ac863a73807c3a36f19a291510ec86cb1b9ad53e140774a",
+   4.78,
+   3.96
+  ],
+  "r3b_t8_B7_o007_c008_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "12432d232dfd184edc2c3abce8de7dbd598be9609b8c4e6b0d5acd70a4ad563d",
+   10.24,
+   7.14
+  ],
+  "r3b_t8_B7_o007_c008_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "80a44da615f595ce96e56aabcebcb8d769b2056e939f153cf9b0701725bbd67b",
+   6.46,
+   4.42
+  ],
+  "r3b_t8_B7_o007_c009_t2_m071": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "06a0793bc1185410ca5d632ac7f3567877254681f8d3c901876b6803a9f6b34f",
+   5.34,
+   4.75
+  ],
+  "r3b_t8_B7_o007_c009_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "09a584ecf090214be44b51e0b6f6290e17c319d53288c1b85d0b44acf938afd9",
+   6.29,
+   4.54
+  ],
+  "r3b_t8_B7_o007_c009_t2_m104": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "34846ce12d881a05764f29e052332c265cff87dec337bb48f0468efae46e284d",
+   5.71,
+   4.62
+  ],
+  "r3b_t8_B7_o007_c009_t2_m139": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "5ffb8d767869d7894b557ea562acbaa8bacd02bf4100b3acfd04e055aebfc509",
+   5.19,
+   4.69
+  ],
+  "r3b_t8_B7_o007_c009_t2_m156": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "fbc0f64953d1847faed5d8766dff8601a83715d968ddb499b40d8eb1c165fe73",
+   5.75,
+   5.14
+  ],
+  "r3b_t8_B7_o007_c009_t2_m170": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "ffbeb48f687f77952139f963f769f8d709f3d8db70cd7a4ed3796fc89eda96cc",
+   5.51,
+   4.79
+  ],
+  "r3b_t8_B7_o007_c009_t2_m177": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "8d90a387231f27fb147e3247a0347abee2dc77be489088f5faf4a400b7596ba2",
+   6.02,
+   6.06
+  ],
+  "r3b_t8_B7_o007_c009_t2_m184": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ba6f1e2850284bd7fbc2a69edd56cf29b06f554d41f65e48e8fe7d857d4e55f3",
+   5.73,
+   5.63
+  ],
+  "r3b_t8_B7_o007_c009_t3_m002_132": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "aad33e16ad07ce330133fd2fc381ce972b35444ef796a8025dee0b8c09c03ad6",
+   7.78,
+   4.86
+  ],
+  "r3b_t8_B7_o007_c009_t3_m011_017": [
+   "UNKNOWN",
+   "n",
+   4,
+   "F2xF4",
+   "ccf1a168eb0268b46d4a50547e3770e3068834f53a498569a3a9ecfb86ba057e",
+   600.08,
+   null
+  ],
+  "r3b_t8_B7_o007_c009_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "32386beb43b6b8cf0d7d1e07822d9ddedb82e59616b42329c9110df7d9d10dc7",
+   6.87,
+   5.31
+  ],
+  "r3b_t8_B7_o007_c009_t3_m087_146": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "24f4a3375db7953fb49a47ed87583b195007f0532fae5fbd556df71a4055d716",
+   6.07,
+   4.31
+  ],
+  "r3b_t8_B7_o007_c009_t3_m107_189": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "86b6519ceec2f8cb77ce17f7e1db96eb675a09230efaac5d94c750a17a2101ad",
+   5.72,
+   4.83
+  ],
+  "r3b_t8_B7_o008_c000_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ca80466878eea5a0e7e4632f2ac7221a9dd53b166e7f221143bb7f6ca60ebc54",
+   9.16,
+   7.54
+  ],
+  "r3b_t8_B7_o008_c000_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "e012115a66e33c4e6b340a8ddb70fc2f1c6a037ab3d35f401685b91b1c773245",
+   12.34,
+   10.28
+  ],
+  "r3b_t8_B7_o008_c000_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "a9fcd029c45eb3850ad961dd30f8890c4ec8478f30c487284b741dbb86dc7750",
+   8.44,
+   5.89
+  ],
+  "r3b_t8_B7_o008_c000_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c7e96213b649bc2784f0d7bc37928395f7011523730913176ff668a084e807d1",
+   10.3,
+   6.78
+  ],
+  "r3b_t8_B7_o008_c000_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6b6ac818c470efb0ce61ceedfc32440a8134ae288354a7a9a51b21e431102973",
+   8.44,
+   7.54
+  ],
+  "r3b_t8_B7_o008_c000_t2_m197": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "7e87d813a21029becbe71608dbdf04605796bcd3a5f5c3f44d43ec88507b224a",
+   7.7,
+   6.1
+  ],
+  "r3b_t8_B7_o008_c000_t2_m212": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "080c143048f3a7cb72f15f1fb851bc34696857d4bde6fb7b8fce41ad95a79857",
+   7.84,
+   6.47
+  ],
+  "r3b_t8_B7_o008_c000_t2_m230": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6e6db7d45f6a04a5a4f64917c5141c8b0da16a6eb30c5e150ccec71d52a4b9aa",
+   8.65,
+   7.48
+  ],
+  "r3b_t8_B7_o008_c000_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "b672edb0bad604e495d15b9358422ee54799a6744e88e479a53a611fc4df80bf",
+   7.97,
+   7.03
+  ],
+  "r3b_t8_B7_o008_c000_t3_m045_206": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c3b06da20d7bd3d06ed54a3e81fe997fd7a92515c43b55fa8e40ad1ec5e5579d",
+   9.54,
+   10.71
+  ],
+  "r3b_t8_B7_o008_c000_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "7e26e994ac1770f197394c5079278fb2888ed29cb38d7987aa5c55510a7ddc8e",
+   8.4,
+   6.36
+  ],
+  "r3b_t8_B7_o008_c000_t3_m103_188": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "3101b1e142de3f39ade7cb1d752453cfecebf54df3fd9dfd39b9282e2c52bf32",
+   6.49,
+   6.4
+  ],
+  "r3b_t8_B7_o008_c001_t2_m066": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b6a235ff06757846ab896fe3d7dd4cf5f6510dae3136bb92bacfbdbd28a65227",
+   5.51,
+   4.99
+  ],
+  "r3b_t8_B7_o008_c001_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "9e6a3cc064f21bd309d9f05e340518e605c43ac98ddc19ef38dc4e08d8f3625f",
+   6.08,
+   6.16
+  ],
+  "r3b_t8_B7_o008_c001_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "0a5778bea1dbdbfd8e83121637fb2dfb1a928c25a94e7250590f43a769456d7d",
+   7.64,
+   5.59
+  ],
+  "r3b_t8_B7_o008_c001_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "0689137d619600e04a9e6ce88c91e5b671433b4aae1418bf70994be87f63cf5c",
+   9.07,
+   6.79
+  ],
+  "r3b_t8_B7_o008_c001_t2_m114": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "0b9815563c8505769425616afbf95c00bfb64a41b2104682cc56679267067edc",
+   7.06,
+   6.06
+  ],
+  "r3b_t8_B7_o008_c001_t2_m122": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "414602461df93f37c3406084cdbe4af01a2fbae7ab5ea85a2f93e13e43c26daf",
+   9.34,
+   6.5
+  ],
+  "r3b_t8_B7_o008_c001_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "cc5ef3529dc881493297bd739f12e3adc1220942264730df166ae0dc0509e997",
+   9.45,
+   8.87
+  ],
+  "r3b_t8_B7_o008_c001_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "3e9cffc7563e4b3e701b2aa0e174feb7f09049b4aa00265a33bdd2ba848f73e5",
+   7.08,
+   6.46
+  ],
+  "r3b_t8_B7_o008_c001_t3_m106_157": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "cc3b7507348f50227ef0852886da78f42aaeaeb6659e828882c6cae5358745be",
+   5.79,
+   5.27
+  ],
+  "r3b_t8_B7_o008_c002_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "97cf4af263ece9705afaa8c83447a6bc1d1d7a5bc4e042b57a353a630731aa9e",
+   7.3,
+   5.06
+  ],
+  "r3b_t8_B7_o008_c002_t2_m136": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "4e6984ab7df0f39d8eac66f42ed8160ff8fff22e958341e290ba4c4075180ce4",
+   6.53,
+   4.98
+  ],
+  "r3b_t8_B7_o008_c002_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "818789a20049068b6ca8698d5d0606bb04ac403a05c15891889deabbfc12b3c6",
+   7.51,
+   6.56
+  ],
+  "r3b_t8_B7_o008_c002_t2_m184": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e31b7d70134af431b6951e1e954809db48daf0035a622e2f90f4ac0e14872d1e",
+   6.58,
+   6.46
+  ],
+  "r3b_t8_B7_o008_c002_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "d1b4d1a42e3dad20100701de5b0f154226ed14437c72ed54929961ccb7a53038",
+   9.86,
+   7.88
+  ],
+  "r3b_t8_B7_o008_c002_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "f0a56b8c43f9cb72ded4cd09cec12ec12012f6589e7a9555f63b96019e2a58cf",
+   6.26,
+   5.33
+  ],
+  "r3b_t8_B7_o008_c003_t2_m085": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "494fcf626009c3ceef941cbfee77e9aeb042d28bdd2c74736b082544d109c420",
+   7.82,
+   6.21
+  ],
+  "r3b_t8_B7_o008_c003_t2_m095": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "cb0f0cc5f6341bd0d328633108a8c4523330574fcdf0bac2f7970263568a7d87",
+   9.29,
+   6.47
+  ],
+  "r3b_t8_B7_o008_c003_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "7697089ca797ae1f0002f44fec99dacc52677d1fd84fa1a67f536c9c17f9e1f7",
+   7.99,
+   6.71
+  ],
+  "r3b_t8_B7_o008_c003_t2_m142": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "0534c96cc44c61f079bbba1c9223fd65f041c6a5a6666a21fcf700db0eab2cb8",
+   7.57,
+   5.69
+  ],
+  "r3b_t8_B7_o008_c003_t2_m179": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "7b8c6d647177caf0cd8fb7affb3f58d292f0acb409bedbb4c42f8a5de42695b1",
+   8.12,
+   7.42
+  ],
+  "r3b_t8_B7_o008_c003_t2_m197": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "de74e2ff81d94373a4b4d6ad1071f039787df406d92c7c9eb17a9680e7f4abaf",
+   7.22,
+   6.46
+  ],
+  "r3b_t8_B7_o008_c003_t2_m207": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "07c369be73d4798b47e13ced2330483891c6e5f6c382b44fd667c2802f734a20",
+   8.09,
+   6.34
+  ],
+  "r3b_t8_B7_o008_c003_t2_m243": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "430bcbbad7a0a9831a4bff9ca665cd58c456953566c665860ce873d15c6f43c5",
+   8.49,
+   7.65
+  ],
+  "r3b_t8_B7_o008_c003_t3_m008_096": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "e54977f71e66e873a184c2721b9e8710ccd310722f3c58dbcfb858415e865fa6",
+   19.57,
+   18.75
+  ],
+  "r3b_t8_B7_o008_c003_t3_m040_092": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "a2ce044da7d50fca76132005875c78ac926853a557da2dd3567628f0c112c819",
+   72.03,
+   67.45
+  ],
+  "r3b_t8_B7_o008_c003_t3_m084_170": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "9fb41ac1a5b223e62e34d5dd4efebddc52a2153c3eb9b66c45a37f300e65577f",
+   7.61,
+   5.86
+  ],
+  "r3b_t8_B7_o008_c003_t3_m095_171": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "e1f7c1af7ccd90cd15e3e4d62f8656ea2ec081dcb8140f483cd5dce8ad63e8cf",
+   7.15,
+   5.33
+  ],
+  "r3b_t8_B7_o008_c004_t2_m069": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d3e0658895294fa55e8716e20797d6690851a2866e468301bc8b17e660970886",
+   7.74,
+   6.58
+  ],
+  "r3b_t8_B7_o008_c004_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bb06a1bddcf557edf64b7d79380f45e90edda629ab2ab7d70f20e2781fd6f673",
+   6.62,
+   5.5
+  ],
+  "r3b_t8_B7_o008_c004_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b06774fd74ccbd0625cce51772e17c46e511bbdb4bc6d29b9ad269b7b8001fff",
+   8.29,
+   7.33
+  ],
+  "r3b_t8_B7_o008_c004_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "969142c47aa231906eadce401279b06395835cd1e74133cbcd2728e6afce3823",
+   8.41,
+   8.25
+  ],
+  "r3b_t8_B7_o008_c004_t3_m075_145": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "1ddacbe3dac1de5e93eaab6fe8d0e4aadc2ea493798e2390e63d0153965f6bd5",
+   7.37,
+   6.61
+  ],
+  "r3b_t8_B7_o009_c000_t2_m069": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "4ec9681b07ac94ec99d96a4788b7299b71d13b73181f9800e3426698068dfc6f",
+   7.78,
+   6.68
+  ],
+  "r3b_t8_B7_o009_c000_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "8717f1d8d8d8c66fa3cc4e1be6a1432e8e95c6c342d4814e64a9da36ada908e1",
+   7.75,
+   5.96
+  ],
+  "r3b_t8_B7_o009_c000_t2_m095": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "4b57a13223951150c7ed46c84384b8991f41b7060e185f9d06c09bb47b8d3ec6",
+   7.81,
+   5.94
+  ],
+  "r3b_t8_B7_o009_c000_t2_m104": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "173301e6bd806415530a611dd13a8db3a3d22d3bff86d60884a93946fb525593",
+   12.31,
+   12.34
+  ],
+  "r3b_t8_B7_o009_c000_t2_m114": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "85bb9eabfbed1e4de4b0ac2793d72e0cf61f646848c8c005ef6ab84114176d0d",
+   6.95,
+   4.83
+  ],
+  "r3b_t8_B7_o009_c000_t2_m123": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "89a540e3e224fbc925f76af443de32eed326a4cf68d00f454af8c29fba570a64",
+   9.0,
+   9.52
+  ],
+  "r3b_t8_B7_o009_c000_t2_m205": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "cf3921603483c860a16ac3e4c88080517c2a12e42832b38b9babde636504caab",
+   22.25,
+   20.77
+  ],
+  "r3b_t8_B7_o009_c000_t2_m220": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e338e55edee075b502ee7b8d8f14b53a2dffec2c90c078f371f10decc516b663",
+   11.24,
+   8.98
+  ],
+  "r3b_t8_B7_o009_c000_t2_m255": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "fbc2a5b4863d3ec8d7f774efe1255ab907cf5ebd8b65d3329383557f93df22b5",
+   12.38,
+   11.77
+  ],
+  "r3b_t8_B7_o009_c000_t3_m007_179": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c0d85c4cf52571fa907527f08fae7cd4d3b6be51e932c23d1d3e0ca4ab19ee9f",
+   14.33,
+   14.69
+  ],
+  "r3b_t8_B7_o009_c000_t3_m065_184": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c60bcb8456f3bd5d85e7e5be5b5f91853bf5ead284b2e858f1253e8cf2893d36",
+   9.21,
+   7.43
+  ],
+  "r3b_t8_B7_o009_c000_t3_m094_187": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "c5f31561e5c48b95c4f9f5d57e7a120d13e287bba995e37579b8bb41492c8480",
+   6.82,
+   6.37
+  ],
+  "r3b_t8_B7_o009_c000_t3_m111_141": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "e87bdf641b298003356fb5ab4312eb203055098ab3bcbef6bc61bc4ed6af3953",
+   7.1,
+   6.44
+  ],
+  "r3b_t8_B7_o009_c001_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "57ebf2d5bfe6bcb9b048eb0bdd3bcf05236f4698d422fd479cd90cbf5b58205e",
+   12.7,
+   9.62
+  ],
+  "r3b_t8_B7_o009_c001_t2_m091": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "2973e7adae4830040ea4734e57ce9182062f5b506382137aaaef3c2301a018f9",
+   8.0,
+   6.97
+  ],
+  "r3b_t8_B7_o009_c001_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c2db593ff3e6c1b7309cbdb085ff1fc327378bd70e59a4efcf16dc19a7a1388c",
+   8.49,
+   7.11
+  ],
+  "r3b_t8_B7_o009_c001_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6ebb93ae06e94eff0d16ec2a51f608bf5855af215062e9156406e5569e794c73",
+   11.38,
+   9.02
+  ],
+  "r3b_t8_B7_o009_c001_t2_m117": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "5ac56070d754c798f048bffeb7f3f808974ea2bb9519ca5a519ae3bf345ff2ad",
+   9.89,
+   7.6
+  ],
+  "r3b_t8_B7_o009_c001_t2_m134": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bcf4a92df82d63e33568201f6cd6af8756ffd2723e3b25fc06be0aa3581425ad",
+   17.24,
+   14.24
+  ],
+  "r3b_t8_B7_o009_c001_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ca24f4a8f31d7f92257aab7fc2a0a6c4115fbef55aa8fd771b7934491c9fa1d4",
+   10.16,
+   7.56
+  ],
+  "r3b_t8_B7_o009_c001_t2_m163": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d0c659ba157b3b3c9324454089856161e2d2d677ae9446985f50619042509b0c",
+   34.17,
+   36.39
+  ],
+  "r3b_t8_B7_o009_c001_t2_m174": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "cd993ef3ab045e5dee8f944b4e108ae5f158e587479ed524f08c0a4195ed62db",
+   10.49,
+   9.04
+  ],
+  "r3b_t8_B7_o009_c001_t2_m182": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "fb658a15ed19e17084d11d44229ceb7b10711bc956a65c8a635656e12af52d92",
+   9.43,
+   6.69
+  ],
+  "r3b_t8_B7_o009_c001_t2_m189": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "539723294f00942a655ee42c08d0aa1a9d14b33073b12d7f6340cf90a377a504",
+   7.59,
+   7.73
+  ],
+  "r3b_t8_B7_o009_c001_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "1cc25712b87a68d0384bb995f95a477bb35b8634477d93babcbc28a637313d45",
+   6.68,
+   6.57
+  ],
+  "r3b_t8_B7_o009_c001_t2_m218": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "7bf139fdbc9c5254ed923b2b9b9812cbc5060478cfa8f6c01a8f14a0eefa7a68",
+   8.12,
+   7.1
+  ],
+  "r3b_t8_B7_o009_c001_t2_m228": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "75ac2a80faca71df42005992a9a5f80f7621686470e931d1274d2821ad00199a",
+   17.09,
+   15.81
+  ],
+  "r3b_t8_B7_o009_c001_t2_m241": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d799071d5770c5824f75a5523ad8af03d2773ec96ecb9426a96a6bf94deeed69",
+   9.47,
+   6.97
+  ],
+  "r3b_t8_B7_o009_c001_t2_m250": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "caf1cf2d48413dfe7b605f0e6f8912e2303c8ef667f7a2646b8422f42610bbc2",
+   7.73,
+   5.49
+  ],
+  "r3b_t8_B7_o009_c001_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "1ef6d27b4553fa5dac463a32842f012dfee1e1e6d35b31abfa46c1f1ecbd2c7b",
+   9.75,
+   8.53
+  ],
+  "r3b_t8_B7_o009_c001_t3_m018_199": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c50006d7449db1a0af3989206cabdd5aa38f30160ebd13741cffb56de4d4f789",
+   10.15,
+   7.24
+  ],
+  "r3b_t8_B7_o009_c001_t3_m054_220": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8107387cad5d43910e1a9fb093132f525efef9c12434a7fc1a40bc240f6aa666",
+   12.94,
+   9.97
+  ],
+  "r3b_t8_B7_o009_c001_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "06cd1462256c53c0104282086948484cef2195096d1025a6cc435dc993b5145e",
+   6.13,
+   5.39
+  ],
+  "r3b_t8_B7_o009_c001_t3_m087_146": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "06b83e67f77c9622c09dc9f36dd8e80a34d4aad7ea0c51eee3b80485bf08bdb4",
+   8.09,
+   6.72
+  ],
+  "r3b_t8_B7_o009_c001_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "176ff7b1f2a0a58be0107507908493517c3969978d213d09518ffd2ff459950e",
+   5.9,
+   4.51
+  ],
+  "r3b_t8_B7_o009_c001_t3_m114_190": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "224bdb82c5a7a0b891dffe6301a547cb44d3319f41ed199c3b54a7e109dc4d0e",
+   5.41,
+   4.62
+  ],
+  "r3b_t8_B7_o009_c001_t3_m124_143": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "afb9caf46c9e822bf790d93957d30ec1488cba4713ee2a4cf870ea08412fcf3e",
+   6.58,
+   5.92
+  ],
+  "r3b_t8_B7_o009_c002_t2_m085": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "66c5db3bc3959ba47dc94607a58ba24e9e5983f59b219cb023b92495ef827ffa",
+   11.13,
+   7.81
+  ],
+  "r3b_t8_B7_o009_c002_t2_m093": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "20e83686b5e505c880105f4d04f9aa883d9605366eb031acc799c17f42877d01",
+   13.76,
+   12.35
+  ],
+  "r3b_t8_B7_o009_c002_t2_m102": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "be26ee99ca3620c36df95c26c3af85cd478c06dd62c080b775e34cbd417d337d",
+   8.07,
+   6.61
+  ],
+  "r3b_t8_B7_o009_c002_t2_m111": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "a1f0ab8c2734652f1faabdc6d61eaafbec18b792a9cf5d00f1c899e6562e9aa4",
+   7.17,
+   5.39
+  ],
+  "r3b_t8_B7_o009_c002_t2_m119": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "503936a9f4c84f5e188e170b77fa8cc294a5685eaaf611917e4dbd5368c5a1ce",
+   8.09,
+   6.96
+  ],
+  "r3b_t8_B7_o009_c002_t2_m203": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "13891da5a82846080eb8c04134d3bced699e398f7565d86db822140fcd05e344",
+   9.21,
+   9.46
+  ],
+  "r3b_t8_B7_o009_c002_t2_m215": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c390710a5296a1ea9c15c44557cf56fb2c5d71da39ff19a8dd9214812e1acf57",
+   8.69,
+   6.85
+  ],
+  "r3b_t8_B7_o009_c002_t2_m239": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "434ec0f1886598c9a8588ff087502950277bcc8693b5a6b1d4343872ea63c9c1",
+   7.44,
+   5.55
+  ],
+  "r3b_t8_B7_o009_c002_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "cff06948955b38c78fd13c2a3c4a8e13e3381f8a9b6b25a8fbbd5aaeb8bbc64b",
+   12.17,
+   11.18
+  ],
+  "r3b_t8_B7_o009_c002_t3_m065_184": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "45d449bebbd0b09619fd54481751742407d5702cdc67ee523baeb44c1e1b1f3e",
+   8.02,
+   6.96
+  ],
+  "r3b_t8_B7_o009_c002_t3_m091_155": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "901c897ee23f4a7c30bb8b7380bdc2f04d92d51f402b9694c2412d17c5dea521",
+   7.91,
+   6.93
+  ],
+  "r3b_t8_B7_o009_c002_t3_m110_173": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "dfe3358f27360f784616daff3d1ea3a092d89cc845594f8bf7e9585d4f95bae3",
+   8.61,
+   8.16
+  ],
+  "r3b_t8_B7_o009_c003_t2_m071": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "5047ef7312fa204b490b0da5ad78da8b4bbcf8aafec7f8354321329125c86e85",
+   9.63,
+   7.08
+  ],
+  "r3b_t8_B7_o009_c003_t2_m090": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d49c6809d8448b8b8a99554ae2b953fce2d0d60bee1d7010029f7acca1b220fd",
+   9.42,
+   7.5
+  ],
+  "r3b_t8_B7_o009_c003_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "5e1c873a185d448eb7569bd91aed79e0fa249f01247bd96b9b882f52f6c3125b",
+   10.38,
+   7.74
+  ],
+  "r3b_t8_B7_o009_c003_t2_m106": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "076d1445f642460d713d7d96dbd5e5bd38a9d5c43ce7e224d495b4a5d9efccd3",
+   7.29,
+   5.72
+  ],
+  "r3b_t8_B7_o009_c003_t2_m116": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "4933705f37513ff7afe91894e11aeb7b05dfcd25d7edbfaefa7af758c0f5699b",
+   16.54,
+   15.62
+  ],
+  "r3b_t8_B7_o009_c003_t3_m002_132": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "f39a50b5ee857ac2606a8a9124801baecab8c2e4ca95ceb62572165c22cedfc4",
+   11.66,
+   9.8
+  ],
+  "r3b_t8_B7_o009_c003_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "5438bc694af0c7b0355eee14015dc4dadda1d42a7aa4c1c2acdb4d12fb0f9d61",
+   11.26,
+   8.67
+  ],
+  "r3b_t8_B7_o009_c003_t3_m095_171": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "cbd9911f1f76817a5116d4b2cc321372be60618980b4d0fdffb999cb3cc6a07f",
+   7.27,
+   5.73
+  ],
+  "r3b_t8_B7_o009_c004_t2_m075": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "77375910ca13c3430b4af262ba171105595dae7c8525e41654ee32e4ed858dd3",
+   9.65,
+   7.57
+  ],
+  "r3b_t8_B7_o009_c004_t2_m091": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "1dc52dab4640dc75fb079b2a16a5a43f913ba8ab9a91c42a0ae6f3badb016e15",
+   9.85,
+   7.47
+  ],
+  "r3b_t8_B7_o009_c004_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "3dd490bce40211dd6332776c40a31c066ea7881d7212e364ab491ebf5916d199",
+   9.24,
+   7.79
+  ],
+  "r3b_t8_B7_o009_c004_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "6232bf7cb9b128ba137cf0a8dd8c49cb49f5792ec145b56bac1e62c9cfecc0d4",
+   10.28,
+   7.83
+  ],
+  "r3b_t8_B7_o009_c004_t2_m117": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "689f67346f58b5c823203b17ce035f3f6f484e96e092d7f260e3f0e2eaff7526",
+   9.73,
+   8.38
+  ],
+  "r3b_t8_B7_o009_c004_t2_m134": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "4443284ac2ae9c11c2e91fb73880a9ef2d3e435f5296b7972482fb9c423f27a8",
+   18.16,
+   17.11
+  ],
+  "r3b_t8_B7_o009_c004_t2_m143": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "e6c870657fd6c14f65627f0925d10e955c12fee355967c24ab071cacef682295",
+   9.53,
+   6.82
+  ],
+  "r3b_t8_B7_o009_c004_t2_m163": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "c71376f41640fbf4c16c6b6724f4c39ba47375c3495310544037ba46cd7921d1",
+   36.51,
+   36.22
+  ],
+  "r3b_t8_B7_o009_c004_t2_m174": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "0af27411df65cca62eb592f30ec3b944d36d5e215b72a7f7aecb5d2270b53b7f",
+   10.73,
+   9.01
+  ],
+  "r3b_t8_B7_o009_c004_t2_m181": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1a20eceae366e679fc2bea076148dac691f4c20473cb6967dea5b565ecc32e93",
+   10.14,
+   7.73
+  ],
+  "r3b_t8_B7_o009_c004_t2_m189": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "029bd1aee62055e8e5b442fbda12d293e7b9875cc61ff29429baf1761329db66",
+   7.92,
+   7.61
+  ],
+  "r3b_t8_B7_o009_c004_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "f278737f411b4511a9d03cccff361607f6aa938cf4ab00fef97fcd3fdab743f1",
+   8.8,
+   6.38
+  ],
+  "r3b_t8_B7_o009_c004_t2_m215": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d92bda864b4aa39f4830701f6e2b64d0abc7f757fe23fdd0d7c05b5268b9c5a1",
+   10.29,
+   7.83
+  ],
+  "r3b_t8_B7_o009_c004_t2_m228": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "69937b41b4fd6c71086c9136d3ac321e767e161f817f95073b21750f6d85f2af",
+   16.79,
+   15.34
+  ],
+  "r3b_t8_B7_o009_c004_t2_m241": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e3e48bfd046a9872d711cd065ffca49688699eeee1b888b04ea9e5ca1f2c9a69",
+   8.0,
+   6.42
+  ],
+  "r3b_t8_B7_o009_c004_t2_m249": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "cb86fdf9542dafd40903ed1f0d8164022f7e47a788f00ded7656057b31950aac",
+   8.09,
+   8.01
+  ],
+  "r3b_t8_B7_o009_c004_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "dde9b0933e91147bdd375c26564be6025009efdf0f40d208119216e1c76be5ff",
+   10.69,
+   9.37
+  ],
+  "r3b_t8_B7_o009_c004_t3_m018_199": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "b7c35a583bc7d37a1caa7454a85f7a960dd59cf93653cc0762a59c9a01e9f93f",
+   8.73,
+   6.9
+  ],
+  "r3b_t8_B7_o009_c004_t3_m054_220": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e6cb6da9dd4adc808db2a97234d19adc6667784689960d86313a4c959678f588",
+   11.29,
+   9.09
+  ],
+  "r3b_t8_B7_o009_c004_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "390c9c1a6a2e25f260aa765c286548097b42b6fb6428eb275a64aa8df6ac7cfe",
+   7.43,
+   6.0
+  ],
+  "r3b_t8_B7_o009_c004_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "306528f2ba4f6929840ffd44d037d54dde9183032aceb5b30430b3e865fddab9",
+   5.82,
+   5.2
+  ],
+  "r3b_t8_B7_o009_c004_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "28cc50f77a6d62c9f1d82960855f6bb34a6aca6a12d7eea47bb7274ab24cbe98",
+   6.37,
+   5.61
+  ],
+  "r3b_t8_B7_o009_c004_t3_m114_190": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "f546e19d91ed082434ca743c3d13d1348354eb37ea703db4a1e96128621506e8",
+   6.48,
+   4.62
+  ],
+  "r3b_t8_B7_o009_c004_t3_m123_151": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e5dd2c642938baeb211b154bf7c97e7aeec327e63e78d7fa2830c63fe4c7fc23",
+   10.79,
+   8.18
+  ],
+  "r3b_t8_B7_o009_c005_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "f60587ea65aae37297f6516d79982e2a90af3b9c3ad99816a7eebe22078995f3",
+   11.68,
+   7.74
+  ],
+  "r3b_t8_B7_o009_c005_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bba7f871167d38bc5d32c32bd94e36bee6a36bbd6db1c50170cfd72a85dae8b7",
+   44.96,
+   49.66
+  ],
+  "r3b_t8_B7_o009_c005_t2_m101": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b4a6de18b19a57cc1230d50669639fce7c87fe63a4ab962cc2ee96deb5562246",
+   12.84,
+   10.04
+  ],
+  "r3b_t8_B7_o009_c005_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ab04e123d459df114a207e1f6efc2b81dfcfe4c33501db0eee8d1fa0ea377101",
+   9.63,
+   8.24
+  ],
+  "r3b_t8_B7_o009_c005_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "436dc960e8e7631ca46686e86078553f14b0a2d3e1f39e8e267129293ffda923",
+   6.69,
+   5.94
+  ],
+  "r3b_t8_B7_o009_c005_t2_m136": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "3ab261e40319646bad2aa070b5b2f0d9b536d895f20c5038894267cb76208b31",
+   6.22,
+   5.15
+  ],
+  "r3b_t8_B7_o009_c005_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d2466513edf9c90448e70fe8e5ef293738082c8ef2881d88985d3b703f0a6e44",
+   7.87,
+   6.42
+  ],
+  "r3b_t8_B7_o009_c005_t2_m165": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b10cc84e5d1b58aa1cb8f690327dc14abfa6c30d210c7eb1340a55c67a0e5f6a",
+   19.67,
+   16.2
+  ],
+  "r3b_t8_B7_o009_c005_t2_m176": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1b71e6c379faf671766304116da522438b596ee13ffcb573318a86cc91fa3947",
+   9.51,
+   8.55
+  ],
+  "r3b_t8_B7_o009_c005_t2_m182": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "81993fe4f1d327ee018ee3fdd3e5327e69bd08c843d02d9c9f9017289dae76dd",
+   11.17,
+   8.75
+  ],
+  "r3b_t8_B7_o009_c005_t2_m190": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "576e62e66209b159c5418aed19c57080f79f44340546a2806a8264406cbb0e62",
+   8.19,
+   6.95
+  ],
+  "r3b_t8_B7_o009_c005_t2_m205": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "bd7b2e22e67329113664df2e513b90ac5fb8450939f4f67feb388b43e74e69a2",
+   34.33,
+   35.98
+  ],
+  "r3b_t8_B7_o009_c005_t2_m218": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c999c85f5929d66231ffdfcb7afa06c78ce79c4bfaeb56958b08c4cff480b842",
+   10.56,
+   8.21
+  ],
+  "r3b_t8_B7_o009_c005_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "8e1241b1333e50ba2e7f773748c2df0356b517824f58bd5babe0c4009b192977",
+   8.51,
+   6.19
+  ],
+  "r3b_t8_B7_o009_c005_t2_m242": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d8a9e804c79cdd11950de90e3cfce9c47291649ee33cd2f9c75b43055bf9d4da",
+   32.68,
+   31.92
+  ],
+  "r3b_t8_B7_o009_c005_t2_m250": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "defe49a0851f3babf864bf714a3abc693c5fa2f18104824184bafc7f0f123c38",
+   7.85,
+   6.48
+  ],
+  "r3b_t8_B7_o009_c005_t3_m004_034": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "9e864a4d0ca66afdf96d212d13684e71879bf9e6ec82d66d1ccd67f9cb28ac6a",
+   101.84,
+   100.87
+  ],
+  "r3b_t8_B7_o009_c005_t3_m018_199": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "5a769bd2a5f5b88f704ce489c613d0ea306a3f31971f454009a4f0c3b004853b",
+   9.28,
+   7.1
+  ],
+  "r3b_t8_B7_o009_c005_t3_m054_220": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4f4fa7c1d0478cd9f98b0aafdd2d0ec5c7a9b7a1a1e233cb86b08a292410b698",
+   17.19,
+   13.25
+  ],
+  "r3b_t8_B7_o009_c005_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "12aaade74774fba1279d72efb4ee0557efc9c3567a13d4983d20ead90ddf6dc1",
+   7.94,
+   6.12
+  ],
+  "r3b_t8_B7_o009_c005_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "9820e87b925694cbc4602c6e8f3522e418fd4145c26119d9659472cd3c9771ed",
+   7.92,
+   6.14
+  ],
+  "r3b_t8_B7_o009_c005_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "ebfb0a63be7fef1f16c91ae0fea3441ec4000eacf1a234df542d7691d83061ac",
+   9.32,
+   5.64
+  ],
+  "r3b_t8_B7_o009_c005_t3_m114_190": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "a72a90e42d5dd698e365619af73f76b586f128708560d12bcea6debc42dc4122",
+   6.94,
+   5.43
+  ],
+  "r3b_t8_B7_o009_c005_t3_m123_151": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "22802ee8761f03008219c933b92a0c469a0cc494943d4d19d14eff3eb6924c17",
+   9.6,
+   8.57
+  ],
+  "r3b_t8_B7_o009_c006_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "a2c73a1df33d7f41a77212b0f0a4941359394e7268f8353550596388e14c7193",
+   15.3,
+   11.9
+  ],
+  "r3b_t8_B7_o009_c006_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b1a38015feb3873db644c30f34def6fc3d492fdf420df502d944e084b781b2e7",
+   58.23,
+   50.35
+  ],
+  "r3b_t8_B7_o009_c006_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "ddf85c1275e7831c2ff2ee35b1c303137f0052f17f47057b3a6bb221d0ec6314",
+   9.43,
+   6.46
+  ],
+  "r3b_t8_B7_o009_c006_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "de52b15668f41fee5a8f77e70c762a4dfd020d8d4c2a1ad8ec303a1edb7348ca",
+   13.11,
+   7.05
+  ],
+  "r3b_t8_B7_o009_c006_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ffb5c0b248a88c4c0829345d427abd2b95bd3a3743d7b2e9ba6b541221939922",
+   8.38,
+   7.35
+  ],
+  "r3b_t8_B7_o009_c006_t2_m134": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "fb68051199999366bb26c02bccd09642732190edc842c38d9011c09e78156baf",
+   9.5,
+   8.23
+  ],
+  "r3b_t8_B7_o009_c006_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "f673e0e0b2aec4268f38eb7c8d3c8bc47871f2a7f1b95ebd9f60fa5a82c9721a",
+   10.26,
+   7.64
+  ],
+  "r3b_t8_B7_o009_c006_t2_m165": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "f5782c80b892c6403845aaebe621128d0fc97b9f713e29d9a98e6663515bda39",
+   11.49,
+   11.86
+  ],
+  "r3b_t8_B7_o009_c006_t2_m174": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "fea16bf7afa59f28fafcdb1963b7096cff97d148970b7ccd11036d3c05b3128c",
+   8.0,
+   7.45
+  ],
+  "r3b_t8_B7_o009_c006_t2_m182": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "14f8926645238dbcbbb992f3a3ac095d887fa54ff62aad61597d89bddb5bcbde",
+   8.68,
+   6.97
+  ],
+  "r3b_t8_B7_o009_c006_t2_m190": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "ba59d58f6955d385b78a469fe7b8bad234bf82c5cbf0a4aed4823502c0d7ad63",
+   7.39,
+   5.65
+  ],
+  "r3b_t8_B7_o009_c006_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "e663806456b1e0fbe4e0d8f186dc9ee254692a3830e3c596cb37510c98763b4b",
+   7.59,
+   6.24
+  ],
+  "r3b_t8_B7_o009_c006_t2_m218": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "8cb8b75bc9ef4a3277fd35d62c1756f04bfe96ccea4fc5c22f810cc384142618",
+   11.73,
+   8.42
+  ],
+  "r3b_t8_B7_o009_c006_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "ff4bcdf45b2950384574269c0cc93a84e2adcb168ac283fcfb232d4d7dcef25d",
+   7.09,
+   5.24
+  ],
+  "r3b_t8_B7_o009_c006_t2_m241": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "042eec810a158558b9cd5cecfe4e4e6b550c2dd468570b5aba44877906da3df2",
+   8.18,
+   6.39
+  ],
+  "r3b_t8_B7_o009_c006_t2_m250": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "29dafc2d2fb9a9cb0ab6941be36f55a1f3ae41dee1e7d389706a443287e03a7e",
+   7.58,
+   5.72
+  ],
+  "r3b_t8_B7_o009_c006_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e8384a1ae6c990a21143cbcb018280670aa15b873c35dd9fa799810dc4218bd0",
+   9.46,
+   7.03
+  ],
+  "r3b_t8_B7_o009_c006_t3_m016_069": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "97db7b6ade51a6148dc619f5bcd7b2160ab61c64e7662f30d93666fd440962d1",
+   7.88,
+   6.67
+  ],
+  "r3b_t8_B7_o009_c006_t3_m054_220": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c89f98aab9de80b9cb7795d2eb5a9941ad10909f4240ea7b2e1da48597c57bd8",
+   13.45,
+   10.34
+  ],
+  "r3b_t8_B7_o009_c006_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "ec8b34a21796b107760e2292d700230cc151c88ae23fc85e05d1a18d04e0194e",
+   9.49,
+   6.47
+  ],
+  "r3b_t8_B7_o009_c006_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "bb13f09a49671d85b48ea3fd61c4098da6719d2347bc8bc6be6ad82dbd6565bc",
+   6.68,
+   6.01
+  ],
+  "r3b_t8_B7_o009_c006_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "4aac8a3ea9b503709ba4042c1f20d4b9bed06bed45fae95047443bc7213964fd",
+   7.05,
+   5.51
+  ],
+  "r3b_t8_B7_o009_c006_t3_m111_141": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "4f3f2f1c037b8aedf9e92235738fe9e320756832de28fef0913aa2341b1201c9",
+   6.08,
+   5.53
+  ],
+  "r3b_t8_B7_o009_c006_t3_m123_151": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4ad56a21d61282e5852306f6d158278b68a42c86959419772af1ff4c527c1f0e",
+   9.54,
+   7.82
+  ],
+  "r3b_t8_B7_o009_c007_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "18258d0bb90201d21ff9e32e0de79b6b26962523d274d07a7af65aeee488b0c0",
+   12.14,
+   11.13
+  ],
+  "r3b_t8_B7_o009_c007_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "47ca3b10cfc34bbd4d7423da1ae13b472b35345bd0b09e41c49ddb7b4606b2ec",
+   49.02,
+   57.24
+  ],
+  "r3b_t8_B7_o009_c007_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "f5fee2801154c50f23808828fe9b21fdde44cdbb3dd204f55f945d7b74400666",
+   7.52,
+   6.26
+  ],
+  "r3b_t8_B7_o009_c007_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "eb7df89c4f923d89cc5aded654dee5d4c309841589c1a9e99a1cba2d429b2f0e",
+   10.79,
+   8.69
+  ],
+  "r3b_t8_B7_o009_c007_t2_m118": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "61e9058adc5589eaf212fa20ace58bf31ca30bf1cc978e8360ed56a8ca8b015d",
+   9.67,
+   8.64
+  ],
+  "r3b_t8_B7_o009_c007_t2_m134": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "c46de7c99fce0015301ef124eca273c71d5e7af8b3917353a6acb9fe223b2199",
+   16.55,
+   14.17
+  ],
+  "r3b_t8_B7_o009_c007_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c1e6c6882aa8fccf204e293ca9e3e8ed1e0137df4e28f9732234d4548d118f86",
+   9.24,
+   8.53
+  ],
+  "r3b_t8_B7_o009_c007_t2_m165": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "fd427d32982b5fd0c036acd2a98e84f21ae5ca94ac595007a1f1fd695f341d6d",
+   34.21,
+   32.01
+  ],
+  "r3b_t8_B7_o009_c007_t2_m174": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "71fe56d00812ef3998505fa63fd1cdee39540955842f2ccbaead7c3b7559c40e",
+   11.04,
+   8.75
+  ],
+  "r3b_t8_B7_o009_c007_t2_m182": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d232826c659a716f85f68555232b37324be57e6b3efce358e6edb9fee5df2395",
+   9.83,
+   9.34
+  ],
+  "r3b_t8_B7_o009_c007_t2_m190": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "0b75afa5dcd782be622b1120138e09a8d4d9a1ae0745b72b48dc831ee072895f",
+   8.55,
+   7.68
+  ],
+  "r3b_t8_B7_o009_c007_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "48d0549a153d7f4cf35b040ab17f30db0fc2352b2b817b3caba1bec13ee3c519",
+   9.06,
+   6.18
+  ],
+  "r3b_t8_B7_o009_c007_t2_m218": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "17918a13615e89e605ec5a59f08c850f4a6787523255f5333820796d2728c8e0",
+   9.76,
+   7.49
+  ],
+  "r3b_t8_B7_o009_c007_t2_m229": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "dd2146597a17fb6b82cbdc05bb6395e06497244849051eaeb2099c68be5e1231",
+   7.75,
+   6.12
+  ],
+  "r3b_t8_B7_o009_c007_t2_m241": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "abbdd317134e0229fe4e60eda4d65512e161d9d2c5bb8acbdfb77bfdccdc2666",
+   9.68,
+   8.17
+  ],
+  "r3b_t8_B7_o009_c007_t2_m250": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "46ec637d7b694c3337d65336f9dd59ba349a1c11e449b4a3be0005caa738dcb1",
+   8.62,
+   7.69
+  ],
+  "r3b_t8_B7_o009_c007_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "6b88f9054468b7bad031e17878fd56bd2e03b8a3a661d348b98b50422acf4062",
+   19.2,
+   13.99
+  ],
+  "r3b_t8_B7_o009_c007_t3_m018_199": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "da055627aba7c897a99be62a587d8503add1f66543adf33a5ff70ac15255b981",
+   13.49,
+   10.72
+  ],
+  "r3b_t8_B7_o009_c007_t3_m056_093": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "aee547ea81983102045e5dc722fd1bee1ca7adc39075b1bbea134b27df2001e4",
+   15.68,
+   13.91
+  ],
+  "r3b_t8_B7_o009_c007_t3_m072_169": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "aac95615805628252700f02b632f2c1c02b7defcc1c716c9a932c27a28a91f5b",
+   10.06,
+   7.73
+  ],
+  "r3b_t8_B7_o009_c007_t3_m087_146": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4820e2f0f2978c03bbf5c595149afea7c71459a539ce1cc1f09a65342f6d8023",
+   10.09,
+   9.49
+  ],
+  "r3b_t8_B7_o009_c007_t3_m102_156": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "32417bc7368012b5777c65b6bb0b88b06b707cf24fa905d24569d947cdabf168",
+   7.76,
+   7.78
+  ],
+  "r3b_t8_B7_o009_c007_t3_m114_190": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "f906f3ea00b0a330c50795b3d46fc8a2f1965c122bb574d93131633f93951fff",
+   7.97,
+   6.87
+  ],
+  "r3b_t8_B7_o009_c007_t3_m124_143": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "f8d3b21e1e0b88731d2c84bdc55cc25b3c138405536557945d9a8ca7373c8def",
+   9.31,
+   8.73
+  ],
+  "r3b_t8_B7_o009_c008_t2_m078": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "f40315f87144e30fa3433969125c1267801144b93370d63f9986ca2074e9189d",
+   11.72,
+   8.02
+  ],
+  "r3b_t8_B7_o009_c008_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "2d3a7600d4f65d22a17fba09615e4b615863b3e54090b3a1d2a3153d18a07f29",
+   8.04,
+   5.91
+  ],
+  "r3b_t8_B7_o009_c008_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "8bf2f58681e11d188dbfc517e27e822f6e7b58166220d7b074f18cbcc8717483",
+   11.95,
+   11.36
+  ],
+  "r3b_t8_B7_o009_c008_t3_m065_184": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "7b44c597959c0bc0ca9236df55eab66c730b27a1cb54dab82bcd4d1bb36dcd87",
+   10.45,
+   9.99
+  ],
+  "r3b_t8_B7_o009_c009_t2_m011": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "8b2308c1c7d4031542eced917873561f6e8defb1a9ec032644e33320becbb079",
+   65.92,
+   53.45
+  ],
+  "r3b_t8_B7_o009_c009_t2_m085": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "aaba0a99037223fbed4fe8df200dd136f50ac8ae93bfd072d30d4e84c206ecc2",
+   12.22,
+   10.69
+  ],
+  "r3b_t8_B7_o009_c009_t2_m095": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "df67e8d9da3b7a3f32fad1c8673157f34c9c2276faae94a161607a4a22019ebb",
+   8.02,
+   7.5
+  ],
+  "r3b_t8_B7_o009_c009_t2_m132": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "fcbf91a16be14de9e14e81eb314f80e9895ddf756f77e44277abc82c17c1f307",
+   21.01,
+   16.22
+  ],
+  "r3b_t8_B7_o009_c009_t2_m143": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d1983850cda5e7855a5186a48dc6a745eb1c9b38c9bdf9c69b91221808cd43d1",
+   8.76,
+   7.19
+  ],
+  "r3b_t8_B7_o009_c009_t2_m159": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "85c662abb7cc72642a3e6014ffffc35d03fe23ba8a33024fcb6856297374dee9",
+   9.66,
+   9.58
+  ],
+  "r3b_t8_B7_o009_c009_t2_m173": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1e94231999a684547f817644f0b5b26d0df1b8cc60c295f83d8ff315167c6b8d",
+   10.31,
+   7.43
+  ],
+  "r3b_t8_B7_o009_c009_t2_m181": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "444aed6719ddb2a5c0290e14ebb2cf4e7cf09c43784e2849d67b93bb94385866",
+   10.87,
+   8.74
+  ],
+  "r3b_t8_B7_o009_c009_t2_m188": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d282ffea3eaddb130bf9437cae2ba840035ae104383fdc14ac3b9611a6011efd",
+   9.22,
+   7.09
+  ],
+  "r3b_t8_B7_o009_c009_t3_m007_179": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "fa9fb141a29dfe5e7115f48359e0f0b66cf7b852f9edbaeef60fe1dbc18ce2c6",
+   14.2,
+   13.72
+  ],
+  "r3b_t8_B7_o009_c009_t3_m066_128": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "25cf8473694687158b6c10b7efe20294fc1996c4c48f7b4c2dfe2a9e623161c3",
+   8.32,
+   6.45
+  ],
+  "r3b_t8_B7_o009_c009_t3_m084_170": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "6867d567deaf3d138b1003cd4ebbe5c2847c11bf1c425dedb6441a701c79e4e3",
+   8.57,
+   7.52
+  ],
+  "r3b_t8_B7_o009_c009_t3_m106_157": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "8c29d830f30c6b660706c4f99bf51704fb42d1d4e0e1d60992338cf4a967e4bf",
+   7.4,
+   6.57
+  ],
+  "r3b_t8_B7_o010_c000_t2_m075": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6c1bf4c57afcbcf3111a1154355f1255e788281b6a70417aa3f55971d9be5c1e",
+   10.05,
+   8.01
+  ],
+  "r3b_t8_B7_o010_c000_t2_m091": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "168211410a2c383c6dd33a88d72a7d121e538bf66522354e31096d3333170240",
+   8.98,
+   7.06
+  ],
+  "r3b_t8_B7_o010_c000_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "e8f3737929b6bd778ad5e7dd158552dba93d95fe460e882755af900f7124b124",
+   10.59,
+   8.69
+  ],
+  "r3b_t8_B7_o010_c000_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "92a442a706461a0e0e280c4c1fdf5379392b7128d9c3244894300a0409facda7",
+   10.0,
+   7.71
+  ],
+  "r3b_t8_B7_o010_c000_t2_m117": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "a2c856606342f18f91fed77ac97ac0ee5f79f5cba0cd0590b3f0034dee4a2eaa",
+   11.25,
+   9.78
+  ],
+  "r3b_t8_B7_o010_c000_t2_m132": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "c0fbc2f7e142df080202466244387b91a5aebcac0ac4cce24c818b766aad38f9",
+   18.98,
+   12.84
+  ],
+  "r3b_t8_B7_o010_c000_t2_m143": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "47cc4d355bd3c89c43c8fb3616121ccf192269044f58e0736d3ff8605f1f959a",
+   8.06,
+   7.56
+  ],
+  "r3b_t8_B7_o010_c000_t2_m163": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "3f4bfe4a375b06b0398d4beba98f654e453de58e160b16b1f41f839c9f58af25",
+   19.14,
+   17.89
+  ],
+  "r3b_t8_B7_o010_c000_t2_m173": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "34af5279d79d712e252535f8fa30bd0fe612183baefcae40afb763661d0555ec",
+   9.23,
+   7.89
+  ],
+  "r3b_t8_B7_o010_c000_t2_m181": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "b1f96a489aab4429514dcbd71184ce8ffe0cd89ccee944ec53bd5f1cd0302c42",
+   12.68,
+   9.83
+  ],
+  "r3b_t8_B7_o010_c000_t2_m189": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d5fe42540901e95b92997a8ef5946ff15d33484d38366341265f9599e0d40377",
+   9.53,
+   7.49
+  ],
+  "r3b_t8_B7_o010_c000_t2_m203": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "05dfc98819b9b44122055899b3a755374d8c7263d163822bd408b3f271863ead",
+   10.91,
+   7.66
+  ],
+  "r3b_t8_B7_o010_c000_t2_m215": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "7b7e1168bb41c8c225db6e8941fcd4f455166bc83e19976f1a072f28b2b71ebe",
+   9.98,
+   7.69
+  ],
+  "r3b_t8_B7_o010_c000_t2_m228": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "39eb9f800f449a4d4a5831067c3ff4116471ddff8a25ae203206eb13021e30c4",
+   21.6,
+   22.1
+  ],
+  "r3b_t8_B7_o010_c000_t2_m240": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "86399927e6857506996d057169c9d309c2bd6ae9d6995176f3594ae0837c80b6",
+   10.23,
+   8.49
+  ],
+  "r3b_t8_B7_o010_c000_t2_m249": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c6e1339bd7c890beda0918b887f75d0a04548e79096d790c1068b859f3f11a08",
+   8.79,
+   7.67
+  ],
+  "r3b_t8_B7_o010_c000_t3_m002_132": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "30f761ff8faa838efe91ca0f815e758ea2d7792de20aae4d219b86172e5dcc2c",
+   15.64,
+   13.91
+  ],
+  "r3b_t8_B7_o010_c000_t3_m009_241": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "413520183d930b7b4e5299c862c2543d0e1ec8469421a3d8051b351399e87adb",
+   11.29,
+   7.29
+  ],
+  "r3b_t8_B7_o010_c000_t3_m048_077": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "9e2d529e1d0c4ba327f069378f247c5c98f33f7535c1755588f025ade2d1067f",
+   12.55,
+   10.67
+  ],
+  "r3b_t8_B7_o010_c000_t3_m066_128": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "5a47a0b397a25309871f07dd25cb8d625312abcfcb371e94ede09c6446062ea7",
+   7.61,
+   6.92
+  ],
+  "r3b_t8_B7_o010_c000_t3_m084_170": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "1ded24bf0467039be0121fb6562396b6959a9ef7313109a4a9d11215a79e2c14",
+   9.58,
+   8.38
+  ],
+  "r3b_t8_B7_o010_c000_t3_m098_140": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "285d05f6e2eef839c49bf64cebd790a6d3ee31eb067778472e35dd2ebaa750cd",
+   10.02,
+   8.82
+  ],
+  "r3b_t8_B7_o010_c000_t3_m110_173": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "5ffeb6e5c9c46109d02c3376457dc1808a5f072ba1125e0a40a7a80f2de0464f",
+   9.71,
+   9.54
+  ],
+  "r3b_t8_B7_o010_c000_t3_m122_167": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "aeebf17e10487a02267e92d947e55b9e5798d64611491bb58b8a220deb110e10",
+   7.81,
+   7.35
+  ],
+  "r3b_t8_B7_o010_c001_t2_m075": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "5c65adc307d0d22c7956bb091798932decd7873f6ac1c401605fb53ad7b92338",
+   10.67,
+   7.99
+  ],
+  "r3b_t8_B7_o010_c001_t2_m091": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b90dd046cbd00453b3e824ec0bd635f269c76b02591252c865591d231686fc51",
+   10.3,
+   7.97
+  ],
+  "r3b_t8_B7_o010_c001_t2_m098": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "44d96a9b470dd350b55d85d50cc774e4856d4274b331f5ce550cfe4dadab8095",
+   13.65,
+   10.67
+  ],
+  "r3b_t8_B7_o010_c001_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d19f6d42dd940a09120389c591d236b7c5df84c0e9f8a4f2acef2d975d3040de",
+   12.63,
+   9.01
+  ],
+  "r3b_t8_B7_o010_c001_t2_m117": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "8048f94e84eab729c0349b2e0a9979ca7c9ea247f5be697ad4b8521fc9def0fa",
+   11.25,
+   9.65
+  ],
+  "r3b_t8_B7_o010_c001_t2_m132": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "652c73ea87ea6aec720ec0d4999b015cd8e31541940126d9a5ce966350e40ab4",
+   26.53,
+   25.5
+  ],
+  "r3b_t8_B7_o010_c001_t2_m143": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "054ad77a1e6d2dc9031c9dad5f8def6045b91d9e787d7286033937e72e061654",
+   10.21,
+   9.18
+  ],
+  "r3b_t8_B7_o010_c001_t2_m163": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b8067fc24e98657c1c54344d6f01fb46bf6bbd4a06d563397305705051752131",
+   21.02,
+   21.26
+  ],
+  "r3b_t8_B7_o010_c001_t2_m173": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "cf4684f82bd210c0bef26841bedfeb4d5e7c7ccf0d3b138f345586ceb1bd40cc",
+   10.85,
+   9.45
+  ],
+  "r3b_t8_B7_o010_c001_t2_m181": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ec3b75018398e19f16bdf8828cf620ef202ca2a3eeb826b7fece7dedb72c7ba3",
+   10.07,
+   8.36
+  ],
+  "r3b_t8_B7_o010_c001_t2_m189": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "15afa5b117d24d08b9a1c030156460d827d753072cd70f8ebfa283d76ab1e242",
+   12.36,
+   8.49
+  ],
+  "r3b_t8_B7_o010_c001_t2_m203": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "cd0d1cb3c635d2e9cf4b8dc5f41bde6e140c65be3fab20703cb90b31bc2ee96b",
+   12.28,
+   9.22
+  ],
+  "r3b_t8_B7_o010_c001_t2_m215": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d160f251ae9e5975e50e96e04d32f6c3de608395a58756b343c06fc51e3e01dd",
+   9.3,
+   7.21
+  ],
+  "r3b_t8_B7_o010_c001_t2_m228": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "0618f8d69f04220e626d0a4b6372cf91510c15bfac50c5838355e7e9492d8633",
+   12.44,
+   12.16
+  ],
+  "r3b_t8_B7_o010_c001_t2_m240": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "ed464e0bc5c0955f93b4d6437dd81dd3839f6802646ace199f57f93e54c7ddd0",
+   8.53,
+   7.72
+  ],
+  "r3b_t8_B7_o010_c001_t2_m249": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "c70293e2d15a7ef8c300b0248f8c390d8a911fb5c7ae1761a2d9c3f8c8566f64",
+   11.26,
+   9.47
+  ],
+  "r3b_t8_B7_o010_c001_t3_m003_181": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e4b38544af3eea9d82ec500a3fa7d976e0eecdf58c2f8bd0812bdf7b19318349",
+   12.25,
+   10.47
+  ],
+  "r3b_t8_B7_o010_c001_t3_m016_069": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8e51aca98fa0400ce8846486ce8dbc7fcccc3aea4215bc7afe6650f3fbe17b49",
+   10.04,
+   9.19
+  ],
+  "r3b_t8_B7_o010_c001_t3_m054_220": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "9942ff4bc833767ae56d853dd52462080af20c7f11fbee969a570e8c390276f2",
+   15.11,
+   12.99
+  ],
+  "r3b_t8_B7_o010_c001_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4d59f141767d7f29e02b8e7b667a374a8ef44fd272afc048ce65c8c2aaf64a19",
+   11.63,
+   11.43
+  ],
+  "r3b_t8_B7_o010_c001_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "a6ffe0757255ca24829140d5a8d5990707f3d2410152c792e3b38e52144e0de3",
+   10.82,
+   6.74
+  ],
+  "r3b_t8_B7_o010_c001_t3_m099_172": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "41e8c952a38926557d47185a188ac7b62c92a3b31dbfc8b4791db36893aa9167",
+   8.5,
+   6.73
+  ],
+  "r3b_t8_B7_o010_c001_t3_m111_141": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "f99910e0e1c78a422ed0406d83c798d62b5217d301d5cec166ae6d77dbd7d9a8",
+   7.05,
+   5.81
+  ],
+  "r3b_t8_B7_o010_c001_t3_m123_151": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "308332681fa5b27045042220721ab637442e05c1424f5e197e775841f103ef6d",
+   10.22,
+   9.46
+  ],
+  "r3b_t8_B7_o010_c002_t2_m086": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "f57413e734d4ac99aafd1e99ce94d01ad72a10e60f7f61d52f8af18660cb17f6",
+   8.28,
+   7.1
+  ],
+  "r3b_t8_B7_o010_c002_t2_m136": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "9d31162deaad4f7e60fc766c2fb7e7e517eed04376daff72d5d73d226d2a03ab",
+   10.72,
+   7.54
+  ],
+  "r3b_t8_B7_o010_c002_t2_m154": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "bbb51b7e59740749eb08b87d41ccb8b77dc2df3744c13af6e79e3bd3f57cb09c",
+   13.82,
+   10.99
+  ],
+  "r3b_t8_B7_o010_c002_t2_m184": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "757ed802923bda063959056dec5d15096ae04e829403f589dff233b047da1c7c",
+   10.6,
+   10.01
+  ],
+  "r3b_t8_B7_o010_c002_t3_m005_178": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "598e914a00e6daad5d3592694df9d6a13ebe5d8880931b7c4fc27a3cf7ee699e",
+   13.1,
+   10.95
+  ],
+  "r3b_t8_B7_o010_c002_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "4292537351127f57d3aa7a68c55b4e6abca8022d937f4be007ca76f33eaf4b7d",
+   9.45,
+   7.49
+  ],
+  "r3b_t8_B7_o010_c003_t2_m085": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "d565bb3e82152e203bbb1114c1ab120b8c0581ef2da483c1bb4d0506522f5806",
+   12.89,
+   9.17
+  ],
+  "r3b_t8_B7_o010_c003_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "58719c882ae8cafbd8379d1bfee1ecde5479574bee8f9a4fa506ab6998e23cd3",
+   10.92,
+   7.39
+  ],
+  "r3b_t8_B7_o010_c003_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "8de8344c850617bb4b3b67dfed6c64ffdb7fd74ea6ff0a8adb4eff8883eda627",
+   12.38,
+   9.19
+  ],
+  "r3b_t8_B7_o010_c003_t2_m142": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "3dee99b7038fdd495b6fe28b56dd18b75cd207893039cd0481b2ebf472dacbf3",
+   10.62,
+   7.58
+  ],
+  "r3b_t8_B7_o010_c003_t2_m178": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "3701d2af176166191465b74e2645a0eea7337461207e3821b2606afb527477fc",
+   18.19,
+   15.24
+  ],
+  "r3b_t8_B7_o010_c003_t2_m197": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "08e8ebf7bfc5a1952c96bc295fb1d251c6a27cdcb8a8e5554cc35de892115db7",
+   11.69,
+   10.0
+  ],
+  "r3b_t8_B7_o010_c003_t2_m207": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "8b28a35ae7349ff1ff07020da6e12c95ec81dfb24e1c31dfb9614db8bc35b5cc",
+   13.12,
+   9.37
+  ],
+  "r3b_t8_B7_o010_c003_t2_m242": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "69b74a68845160220f9236c3e96e4ed973f308ed0e22e0eb2314edd4f55962c5",
+   40.25,
+   35.46
+  ],
+  "r3b_t8_B7_o010_c003_t3_m008_096": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "7746c4e8ac0fe132d01f98aa55a26d10dd0ea26bb29cd9e3f8582f54b1bbe5a6",
+   35.24,
+   27.66
+  ],
+  "r3b_t8_B7_o010_c003_t3_m045_206": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "4321c93df38cd6e787606cb656d2b0a3c69ad946c3e3db8b97e7e1856e662291",
+   18.84,
+   17.44
+  ],
+  "r3b_t8_B7_o010_c003_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "9c73017a37fdc1aff8fe205267a92eddf9c3eb74b133a773bb6f1bc86f293120",
+   8.9,
+   9.06
+  ],
+  "r3b_t8_B7_o010_c003_t3_m098_140": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "32310e667ea85c6964aa6df4e3a09f1335b56de074a95646b49e02eaa8f8a922",
+   10.42,
+   9.31
+  ],
+  "r3b_t8_B7_o010_c004_t2_m071": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "7a8ba4e690c607898bb877c3b09a9c16b1231346091d26a851c6209f19ddd6bf",
+   9.57,
+   7.53
+  ],
+  "r3b_t8_B7_o010_c004_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d4ddf27d72b46ff07951e71cb35a203181f9f6361c82ffbf4b392333f64def24",
+   24.23,
+   23.9
+  ],
+  "r3b_t8_B7_o010_c004_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "3edacfd9dfbe1754c423ac651c32046c3b29714259b88c1609b10b49b14bcf2a",
+   9.87,
+   8.53
+  ],
+  "r3b_t8_B7_o010_c004_t2_m139": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "34424e4a613a6767b0ac3f1d24f52774304f73e7296b0634c9819f8339414174",
+   11.52,
+   9.2
+  ],
+  "r3b_t8_B7_o010_c004_t2_m156": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "b635cd2d0eeb0a4534e158943de7cdbdea267b0ad6362be3a63ca4cb833dceb0",
+   9.61,
+   9.3
+  ],
+  "r3b_t8_B7_o010_c004_t2_m169": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "71ba774c0d5f40bbd11e840df010e2799be92a5c669d2ed02d65080cd434a059",
+   8.72,
+   6.36
+  ],
+  "r3b_t8_B7_o010_c004_t2_m177": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "af9396066aff810b789e53a8734b582a4257cd5c9884cb09ef785ab57bb0f412",
+   9.21,
+   11.18
+  ],
+  "r3b_t8_B7_o010_c004_t2_m184": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "9f875691957a37b869f7c52e2487587b027d43002d3d2a7c3474f1ed4029fc0c",
+   11.99,
+   10.86
+  ],
+  "r3b_t8_B7_o010_c004_t3_m001_176": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "ed773758b4437a31f57430133674d5b97630386fa04958a436ce404f3eca3d16",
+   9.8,
+   10.33
+  ],
+  "r3b_t8_B7_o010_c004_t3_m011_017": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "c5f406c6ae0c09153e447289b1be30bd90353b2fcbe68afeb4a5cdd59f4c3ca3",
+   383.88,
+   247.66
+  ],
+  "r3b_t8_B7_o010_c004_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "275ba1f7b3ac7fb566cb7edb4590a6d38ac99ec88016ae8f03aba1dd0eb2f3f2",
+   9.76,
+   8.47
+  ],
+  "r3b_t8_B7_o010_c004_t3_m086_130": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "7d32f40580734a0424d331dd40505cb12aba82d3777d0001ece2544ab9518325",
+   11.21,
+   9.27
+  ],
+  "r3b_t8_B7_o010_c004_t3_m107_189": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "ae8a9c573030aa0dcdf04e044aaf8048226aeca29342b12bbfc23a54fab27d8f",
+   13.44,
+   9.29
+  ],
+  "r3b_t8_B7_o010_c005_t2_m077": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1aabe761b35d4967bce6c5e444b9e393c604f19178aba36d3b9f5303aa08e88d",
+   16.76,
+   13.0
+  ],
+  "r3b_t8_B7_o010_c005_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "c76ec725f8f213e03fa9664125ba9e66a2adc6114d69478e092c194bd4e5aa85",
+   12.63,
+   8.84
+  ],
+  "r3b_t8_B7_o010_c005_t2_m103": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "1d04ba35a7fcb115f900b939327002a1e5126bd966a0caaf20a9cca45b6e71c9",
+   12.34,
+   9.95
+  ],
+  "r3b_t8_B7_o010_c005_t2_m143": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "5c92ac562a3369125618f96b5c18717b1a6891da79b1a66ce69627a3da5c51ee",
+   9.27,
+   6.98
+  ],
+  "r3b_t8_B7_o010_c005_t2_m159": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "be2270a3cd90f770f68a4d76830234535eb5cd31a696ac5d00e4b705e12e998b",
+   9.63,
+   8.75
+  ],
+  "r3b_t8_B7_o010_c005_t2_m197": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "9d454988f31f5a522fbbbb0db641e0d2ded6ad5b3bfba42592d60d97d572352d",
+   9.8,
+   10.34
+  ],
+  "r3b_t8_B7_o010_c005_t2_m207": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "790d15c6c1ee5567d4a4288be6518d99075fb07312d7b61dee734ee9b86741e3",
+   9.36,
+   7.21
+  ],
+  "r3b_t8_B7_o010_c005_t2_m227": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "70f066345ab5ed3642abc363bca28da972ece46e48a02c630e7c0c8b51a3cfca",
+   12.94,
+   11.34
+  ],
+  "r3b_t8_B7_o010_c005_t3_m006_163": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "d7e338e8af4ad9d88a8ecfe2acce9d62c280aa70c892f4a39749744e201bde4c",
+   57.46,
+   55.2
+  ],
+  "r3b_t8_B7_o010_c005_t3_m031_036": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "82cd6aec2a0526f384548c4bdfdddb5fd3a09cd755a459783c8e84a5f537a6e0",
+   192.02,
+   212.56
+  ],
+  "r3b_t8_B7_o010_c005_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e9e151009ad3d88150b87707f36c42153748fc9797111a06ec6e9a9d643218eb",
+   16.41,
+   9.43
+  ],
+  "r3b_t8_B7_o010_c005_t3_m094_187": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "b08ad3ce4f6e1b7367c922fcbb99b72072fdfdccb53026c0a22185975148798a",
+   8.44,
+   11.1
+  ],
+  "r3b_t8_B7_o010_c006_t2_m069": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "02543a9abc1faca43ab3f26aef1df4ab083349605529d991ad6c2162ef01800f",
+   11.64,
+   9.39
+  ],
+  "r3b_t8_B7_o010_c006_t2_m092": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "b3a2b2e9caa4f7984d3e2d658ebc2097a84385a77f8adf318adec1f74fa85a55",
+   32.25,
+   24.64
+  ],
+  "r3b_t8_B7_o010_c006_t2_m099": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "08a68b378c0742515394cbdae130111bf6dfef839814017ecce6c9dbf60f192c",
+   10.22,
+   10.17
+  ],
+  "r3b_t8_B7_o010_c006_t2_m140": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1e34b8e568a364e22b2f6d471e1a678e173f863d5d5e4313b5bd9158435d2d70",
+   11.73,
+   10.4
+  ],
+  "r3b_t8_B7_o010_c006_t2_m157": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "90f9d34e9e6b02a7a45e1e73a7e7a6d4504f513fe73de577cf0edf71cacd03e5",
+   9.7,
+   6.43
+  ],
+  "r3b_t8_B7_o010_c006_t2_m179": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "882730f12d81487838456c7cbfb63b4d9b8c77041b4b3a43077a8844de897e37",
+   23.49,
+   16.47
+  ],
+  "r3b_t8_B7_o010_c006_t2_m204": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "b1587002a6e840bdbab6af94e2da1483935e78e9003a79d4bfb66293cad01845",
+   16.05,
+   8.86
+  ],
+  "r3b_t8_B7_o010_c006_t2_m225": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "2bfd2a8a2a2dcfd4dd8b7d49a48a67ce00d6d73ecfa37b6300d7b3d8f9cddb0e",
+   9.55,
+   6.91
+  ],
+  "r3b_t8_B7_o010_c006_t3_m001_176": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "191d380fd5b046d23be9d6de340f45c84bf0d5838eb5066f3bc2590bc838aa99",
+   10.87,
+   7.69
+  ],
+  "r3b_t8_B7_o010_c006_t3_m016_069": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e6236e5cffa1defa53c29f44f7f560db13166d719c3886a3484202b04cd11b1f",
+   10.43,
+   7.06
+  ],
+  "r3b_t8_B7_o010_c006_t3_m065_184": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "273a0b624d1c0999fd67cb98a1f3a94d716e05c88c24e4f73aa789978e754b98",
+   9.01,
+   8.01
+  ],
+  "r3b_t8_B7_o010_c006_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "6a83864ba12959c7785829938642028c91a879123087378cce6a905161fe9f29",
+   9.72,
+   5.95
+  ],
+  "r3b_t8_B7_o010_c006_t3_m102_156": [
+   "VERIFIED",
+   "n",
+   2,
+   "F8",
+   "9e21ea6a9c63380d7a07c3b60157362248f5d75d7b3016b1f684f99dc488e8d7",
+   7.12,
+   5.86
+  ],
+  "r3b_t8_B7_o010_c007_t2_m078": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "279804c6abb87b37a725264bab7692167960dead60f8b78c818d477e8947842b",
+   8.11,
+   8.48
+  ],
+  "r3b_t8_B7_o010_c007_t2_m094": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "f2ee7765c5c27d75b7bb7657dc7f9fd99e5c59f44949b24f09597b0c74e42df9",
+   14.95,
+   7.25
+  ],
+  "r3b_t8_B7_o010_c007_t2_m107": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "651cc7979041b9594b355671e00f30a85ec4eb436428fc9b155f186e34ae2914",
+   11.99,
+   9.04
+  ],
+  "r3b_t8_B7_o010_c007_t2_m142": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "d7b3623187995854802437b55febd861bf80ebce0688ec74a4e69f9272a36354",
+   10.55,
+   6.84
+  ],
+  "r3b_t8_B7_o010_c007_t2_m158": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "d361970ee5f997df37b27da5ae218f0317e7824fc17de352b01af5507295a7d7",
+   11.67,
+   8.13
+  ],
+  "r3b_t8_B7_o010_c007_t2_m172": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "4bc438dab0de158e33ce671a7f8bde3f6b62bc3a7052f34a97ac7145b0c337e2",
+   13.66,
+   11.64
+  ],
+  "r3b_t8_B7_o010_c007_t2_m180": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "6c869f80d691716fd9d5f96d42ec72108f1c4aefae5279b83f05409ce78c3fe7",
+   23.53,
+   24.57
+  ],
+  "r3b_t8_B7_o010_c007_t2_m187": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "79029018e9433897bfe18ad46b63a0dd5762c7a45c46037415613c8e7f88cd90",
+   12.45,
+   15.22
+  ],
+  "r3b_t8_B7_o010_c007_t3_m006_163": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "d1d0e8e60b50113b8d2ac9f52e3422b2bb0178da5fced59e68b05172736a7fcd",
+   25.87,
+   36.86
+  ],
+  "r3b_t8_B7_o010_c007_t3_m064_136": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "42b59a095448b2dc8a7bec2ddb66dc1f9d8f1dff813b2024f0c565ebc52096a8",
+   10.74,
+   6.87
+  ],
+  "r3b_t8_B7_o010_c007_t3_m078_161": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "1272f2f0da2e62d0930751934b0230b65b66ab47903b69dfddba6e28338b740a",
+   8.27,
+   8.71
+  ],
+  "r3b_t8_B7_o010_c007_t3_m098_140": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "e69ce3504295af316c93b3ebfaa419db3bd7ed22c905dda1e35561c14ae53b5c",
+   21.49,
+   22.02
+  ],
+  "r3b_t8_B7_o010_c008_t2_m071": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "4c124021cda275e4040b23d3e1c8fed5e9564f4acdffd62bae925e7b0111fdf1",
+   22.6,
+   18.34
+  ],
+  "r3b_t8_B7_o010_c008_t2_m093": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "57a6706144f8662766f876bf6010036f3ae96fa604d6f27ac29837b41c1c9fc8",
+   25.68,
+   17.64
+  ],
+  "r3b_t8_B7_o010_c008_t2_m109": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "9b18738c94a0b7c1e6328ad83571e6415af97e880f3b00957d150b9224ac7918",
+   16.83,
+   26.96
+  ],
+  "r3b_t8_B7_o010_c008_t2_m141": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "4638c85a4d8ee89cf2cd928c35ef67f8690dcb0ccd2a053176c3b9af4a9d801e",
+   24.73,
+   9.88
+  ],
+  "r3b_t8_B7_o010_c008_t2_m169": [
+   "VERIFIED",
+   "n",
+   4,
+   "nil3",
+   "08973c7fef25da1f0f7cadc7c6e0ab69dac30e44b97764cf99bad89da5752c4c",
+   9.34,
+   11.72
+  ],
+  "r3b_t8_B7_o010_c008_t2_m181": [
+   "VERIFIED",
+   "n",
+   4,
+   "x(x2+x+1)",
+   "1070545e105321f1654063ccf2b5c231210a7795216cab14379f89f163a09f31",
+   30.07,
+   14.46
+  ],
+  "r3b_t8_B7_o010_c008_t2_m205": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "fe86ba5ac4be43d6291856a540e83b6cbb5dd7148fea32bc954d7b8e00c1cf10",
+   132.75,
+   131.73
+  ],
+  "r3b_t8_B7_o010_c008_t2_m226": [
+   "VERIFIED",
+   "n",
+   2,
+   "irr",
+   "35b6f90f53b5493d7f919242f17a74ea9dcbdead8fb5fc2c22733b2f930cc52e",
+   9.23,
+   6.04
+  ],
+  "r3b_t8_B7_o010_c008_t3_m002_132": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "442225f3a39beb2fbde895fe37b8cc8a6fb60e3a13c1582a5930657d216191f2",
+   19.54,
+   14.62
+  ],
+  "r3b_t8_B7_o010_c008_t3_m018_199": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "8362cf87a45dfb4534338af0971d7c081bfd3b82d5973c4bec4fcce73c8bfa09",
+   9.32,
+   7.02
+  ],
+  "r3b_t8_B7_o010_c008_t3_m071_144": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2xF4",
+   "fb017d6935df289418cda36c1fc1a28e155b046aad25f806e5377257706c06d7",
+   8.42,
+   8.12
+  ],
+  "r3b_t8_B7_o010_c008_t3_m091_155": [
+   "VERIFIED",
+   "n",
+   4,
+   "F2[x]/x3",
+   "22c4bf67128f485e9df92a172b23365bf215490b60a105c76a1e5c61d02bbbfe",
+   13.06,
+   8.2
+  ]
+ },
+ "graded": {
+  "check_grades_loaded": true,
+  "check_total_3075": true,
+  "check_by_mode": true,
+  "check_names_d1": true,
+  "check_open_414": true,
+  "check_shard_size": true,
+  "check_control_sat_at_n": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": false,
+  "clauses_uniform": true
+ }
+}
