@@ -1,0 +1,9 @@
+{
+ "case": "r3b_t8_B7_o010_c008_t3_m012_032",
+ "graded": {
+  "grade_loaded": true,
+  "skipped_in_m112l": true,
+  "not_unsat": true,
+  "case_d1": true
+ }
+}

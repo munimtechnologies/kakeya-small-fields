@@ -1,0 +1,50 @@
+{
+ "graded": {
+  "control_php65_verified": true,
+  "control_empty_proof_rejected": true,
+  "control_php55_sat": true,
+  "control_n_sat": true,
+  "control_n_model": true,
+  "control_n_d1": true
+ },
+ "row": {
+  "instance": "r3b_t8_B7_o007_c008_t2_m012",
+  "name": "r3b_t8_B7_o007_c008",
+  "kind": "t2",
+  "maps": [
+   0,
+   12
+  ],
+  "dmeet": 1,
+  "inv": 4,
+  "type": "nil3",
+  "mode": "n",
+  "clauses": 546161,
+  "vars": 94135,
+  "cnf_sha256": "5612f68b23a6db6978a708716402d71cfc1929724ee05fd7d04acdabe08f6d1b",
+  "cadical": {
+   "status": "SAT",
+   "rc": 10,
+   "seconds": 4.59
+  },
+  "proof_bytes": 22762511,
+  "cert": "SAT",
+  "satisfies_cnf": true,
+  "check": {
+   "system": true,
+   "normal_form": true,
+   "sweep": true,
+   "anisotropic": false,
+   "zero_map": true,
+   "in_x1": true,
+   "case_two": true,
+   "aniso_n": true,
+   "t_maps": true,
+   "in_x1_extra": true,
+   "case_two_extra": true,
+   "aniso_masks": true
+  },
+  "verified": true,
+  "wall_seconds": 30.27
+ }
+}

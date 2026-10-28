@@ -1,0 +1,43 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 27.7 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m110.py m111.py m112.py results/m112l/m112l_grade.json
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m110.py: downloaded
+m111.py: downloaded
+m112.py: downloaded
+results/m112l/m112l_grade.json: downloaded
+
+===== run-01-python: python -m unittest -v test_m119
+
+===== run-02-python: python m119.py --part check --out-dir /out
+SUMMARY check all_match True graded 4 failed []
+
+===== run-03-python: python m119.py --part controls --out-dir /out
+solve r3b_t8_B7_o000_c000_t2_m511_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 546161, "dmeet": 3, "instance": "r3b_t8_B7_o000_c000_t2_m511", "inv": 10, "kind": "t2", "maps": [0, 511], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o000_c000", "part": "control", "seconds": 1.73, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o000_c000_t2_m511_control", "type": "proj", "unsatisfied": ["v2+h1", "v1+v2+h1", "v3+h1", "v1+v3+h1", "v1+v3+h2", "v1+v2+v3+h2", "h1+h2", "v1+h1+h2", "v2+h1+h2", "v1+v2+h1+h2", "v1+v2+h3", "u+v1+v2+v3+h3"], "vars": 94135, "verified": true, "wall_seconds": 3.13}
+solve r3b_t8_B7_o011_c000_t3_m001_016_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 545153, "dmeet": 0, "instance": "r3b_t8_B7_o011_c000_t3_m001_016", "inv": 8, "kind": "t3", "maps": [1, 16], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o011_c000", "part": "control", "seconds": 0.67, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o011_c000_t3_m001_016_control", "type": "F2^3", "unsatisfied": ["h1", "v1+h1", "v2+h1", "v1+v2+h1", "h2", "v1+h2", "v3+h2", "v1+v3+h2", "v1+h1+h2", "v2+h1+h2", "v1+v3+h1+h2", "v2+v3+h1+h2"], "vars": 93919, "verified": true, "wall_seconds": 2.07}
+solve r3b_t8_B7_o007_c008_t2_m012_control: {"aniso_clauses": 15, "budget_seconds": 60.0, "check": {"aniso_masks": true, "aniso_n": true, "anisotropic": false, "case_two": true, "case_two_extra": true, "in_x1": true, "in_x1_extra": true, "normal_form": true, "sweep": true, "system": true, "t_maps": true, "zero_map": true}, "clauses": 546161, "dmeet": 1, "instance": "r3b_t8_B7_o007_c008_t2_m012", "inv": 4, "kind": "t2", "maps": [0, 12], "masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "name": "r3b_t8_B7_o007_c008", "part": "control", "seconds": 1.17, "solver": "cadical195", "status": "SAT", "tag": "r3b_t8_B7_o007_c008_t2_m012_control", "type": "nil3", "unsatisfied": ["v1+v2+v3+h1", "u+v2+h2", "u+v1+v2+h2", "u+v3+h1+h2", "u+v1+v3+h1+h2", "u+h3", "u+v1+h3", "u+v2+h3", "u+v1+v2+h3", "u+v3+h1+h3", "u+v1+v3+h1+h3", "u+v2+v3+h1+h3"], "vars": 94135, "verified": true, "wall_seconds": 3.48}
+SUMMARY controls all_match True [["o000_c000_t2_m511", "SAT", true], ["o011_c000_t3_m001_016", "SAT", true], ["o007_c008_t2_m012", "SAT", true]]
+
+===== run-04-python: python m119.py --part run --sweep-seconds 1500 --out-dir /out
+solve r3b_t8_B7_o010_c008_t3_m012_032_sweep: {"budget_seconds": 1500.0, "class_size": 16, "clauses": 906105, "cls": 8, "dmeet": 1, "instance": "r3b_t8_B7_o010_c008_t3_m012_032", "kind": "t3", "maps": [12, 32], "mode": "sweep", "name": "r3b_t8_B7_o010_c008", "pair": 10, "part": "sweep", "seconds": 448.47, "solver": "cadical195", "status": "UNSAT", "vars": 142855, "wall_seconds": 450.65}
+SUMMARY run o010_c008_t3_m012_032 UNSAT wall 450.65 seconds 457
+
+===== run-05-python: python m119.py --part grade --out-dir /out
+SUMMARY grade all_match True graded 8 failed [] {"by_status": {"sweep": {"UNSAT": 1}}, "by_type": {"F2[x]/x3": {"UNSAT": 1}}, "full_models": [], "open": [], "skipped": [], "unsat": ["r3b_t8_B7_o010_c008_t3_m012_032"], "unsat_wall_seconds": {"max": 450.65, "median": 450.65, "min": 450.65}}

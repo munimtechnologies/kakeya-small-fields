@@ -1,0 +1,27 @@
+[
+ {
+  "status": "UNSAT",
+  "solver": "cadical195",
+  "vars": 142855,
+  "clauses": 906105,
+  "seconds": 448.47,
+  "name": "r3b_t8_B7_o010_c008",
+  "pair": 10,
+  "cls": 8,
+  "dmeet": 1,
+  "class_size": 16,
+  "instance": "r3b_t8_B7_o010_c008_t3_m012_032",
+  "kind": "t3",
+  "maps": [
+   12,
+   32
+  ],
+  "mode": "sweep",
+  "part": "sweep",
+  "wall_seconds": 450.65,
+  "budget_seconds": 1500.0,
+  "tag": "r3b_t8_B7_o010_c008_t3_m012_032_sweep",
+  "inv": 4,
+  "type": "F2[x]/x3"
+ }
+]

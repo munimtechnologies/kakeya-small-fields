@@ -1,0 +1,38 @@
+{
+ "full_models": [],
+ "by_status": {
+  "sweep": {
+   "UNSAT": 1
+  }
+ },
+ "by_label": {
+  "t3_m012_032": {
+   "UNSAT": 1
+  }
+ },
+ "by_type": {
+  "F2[x]/x3": {
+   "UNSAT": 1
+  }
+ },
+ "unsat": [
+  "r3b_t8_B7_o010_c008_t3_m012_032"
+ ],
+ "open": [],
+ "skipped": [],
+ "unsat_wall_seconds": {
+  "min": 450.65,
+  "median": 450.65,
+  "max": 450.65
+ },
+ "graded": {
+  "check_grade_loaded": true,
+  "check_skipped_in_m112l": true,
+  "check_not_unsat": true,
+  "check_case_d1": true,
+  "controls_controls_sat": true,
+  "no_error": true,
+  "all_accounted": true,
+  "run_ran": true
+ }
+}

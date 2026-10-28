@@ -1,0 +1,58 @@
+{
+ "rows": {
+  "r3b_t8_B7_o007_c005_t2_m034": [
+   "VERIFIED",
+   144.54,
+   165.47,
+   192995720,
+   313.15,
+   260.24
+  ],
+  "r3b_t8_B7_o009_c002_t3_m004_034": [
+   "VERIFIED",
+   205.86,
+   202.27,
+   244932611,
+   411.39,
+   421.64
+  ],
+  "r3b_t8_B7_o010_c000_t2_m047": [
+   "VERIFIED",
+   472.56,
+   594.72,
+   554014885,
+   1070.54,
+   712.78
+  ]
+ },
+ "verified": 3,
+ "skipped": [],
+ "per_case": {
+  "wall_seconds_mean": 598.4,
+  "proof_bytes_max": 554014885,
+  "cadical_over_pysat": [
+   0.56,
+   0.49,
+   0.66
+  ],
+  "drat_over_cadical": [
+   1.14,
+   0.98,
+   1.26
+  ]
+ },
+ "graded": {
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "mode_sweep": true,
+  "same_cnf": true,
+  "no_sat": true,
+  "all_verified": true
+ }
+}

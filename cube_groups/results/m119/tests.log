@@ -1,0 +1,8 @@
+test_case_is_d1 (test_m119.TestM119.test_case_is_d1) ... ok
+test_deadline_skips_without_solving (test_m119.TestM119.test_deadline_skips_without_solving) ... ok
+test_grade_without_rows (test_m119.TestM119.test_grade_without_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.640s
+
+OK
