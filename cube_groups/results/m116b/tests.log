@@ -1,0 +1,8 @@
+test_cases (test_m116.TestM116.test_cases) ... ok
+test_deadline_skips_without_solving (test_m116.TestM116.test_deadline_skips_without_solving) ... ok
+test_skipped_of (test_m116.TestM116.test_skipped_of) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.700s
+
+OK

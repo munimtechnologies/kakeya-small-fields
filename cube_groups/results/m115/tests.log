@@ -1,0 +1,7 @@
+test_cases_are_d1_and_caps_doubled (test_m115.TestM115.test_cases_are_d1_and_caps_doubled) ... ok
+test_grade_rows (test_m115.TestM115.test_grade_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.706s
+
+OK

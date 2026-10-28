@@ -1,0 +1,19 @@
+{
+ "shard": [
+  "r3b_t8_B7_o010_c003_t2_m011",
+  "r3b_t8_B7_o010_c003_t3_m021_047",
+  "r3b_t8_B7_o010_c005_t2_m012",
+  "r3b_t8_B7_o010_c006_t2_m026",
+  "r3b_t8_B7_o010_c007_t2_m031",
+  "r3b_t8_B7_o010_c008_t2_m058",
+  "r3b_t8_B7_o010_c008_t3_m004_034"
+ ],
+ "total": 14,
+ "graded": {
+  "grades_loaded": true,
+  "skipped_14_as_listed": true,
+  "none_unsat": true,
+  "names_d1": true,
+  "shard_size": true
+ }
+}
