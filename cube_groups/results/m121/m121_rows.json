@@ -1,0 +1,434 @@
+[
+ {
+  "instance": "r3b_t8_B7_o007_c000_t2_m011",
+  "label": "t2_m011",
+  "clauses": 907089,
+  "verdict": "OPEN",
+  "wall_seconds": 1248.4,
+  "vars": [
+   257,
+   258,
+   259
+  ],
+  "positions": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "cubes": [
+   {
+    "cube": 0,
+    "units": [
+     257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.02
+   },
+   {
+    "cube": 1,
+    "units": [
+     257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.02
+   },
+   {
+    "cube": 2,
+    "units": [
+     257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.68
+   },
+   {
+    "cube": 3,
+    "units": [
+     257,
+     -258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.68
+   },
+   {
+    "cube": 4,
+    "units": [
+     -257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 552.34
+   },
+   {
+    "cube": 5,
+    "units": [
+     -257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 160.88
+   },
+   {
+    "cube": 6,
+    "units": [
+     -257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 542.62
+   },
+   {
+    "cube": 7,
+    "units": [
+     -257,
+     -258,
+     -259
+    ],
+    "status": "UNKNOWN",
+    "seconds": 681.11
+   }
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o007_c003_t2_m026",
+  "label": "t2_m026",
+  "clauses": 907089,
+  "verdict": "OPEN",
+  "wall_seconds": 1390.6,
+  "vars": [
+   257,
+   258,
+   259
+  ],
+  "positions": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "cubes": [
+   {
+    "cube": 0,
+    "units": [
+     257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.04
+   },
+   {
+    "cube": 1,
+    "units": [
+     257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.03
+   },
+   {
+    "cube": 2,
+    "units": [
+     257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.74
+   },
+   {
+    "cube": 3,
+    "units": [
+     257,
+     -258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.79
+   },
+   {
+    "cube": 4,
+    "units": [
+     -257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 414.83
+   },
+   {
+    "cube": 5,
+    "units": [
+     -257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 342.87
+   },
+   {
+    "cube": 6,
+    "units": [
+     -257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 164.51
+   },
+   {
+    "cube": 7,
+    "units": [
+     -257,
+     -258,
+     -259
+    ],
+    "status": "UNKNOWN",
+    "seconds": 953.6
+   }
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o007_c007_t2_m031",
+  "label": "t2_m031",
+  "clauses": 907089,
+  "verdict": "OPEN",
+  "wall_seconds": 647.7,
+  "vars": [
+   257,
+   258,
+   259
+  ],
+  "positions": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "cubes": [
+   {
+    "cube": 0,
+    "units": [
+     257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.25
+   },
+   {
+    "cube": 1,
+    "units": [
+     257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 1.25
+   },
+   {
+    "cube": 2,
+    "units": [
+     257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.41
+   },
+   {
+    "cube": 3,
+    "units": [
+     257,
+     -258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.41
+   },
+   {
+    "cube": 4,
+    "units": [
+     -257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 18.95
+   },
+   {
+    "cube": 5,
+    "units": [
+     -257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 18.44
+   },
+   {
+    "cube": 6,
+    "units": [
+     -257,
+     -258,
+     259
+    ],
+    "status": "UNKNOWN",
+    "seconds": 600.22
+   },
+   {
+    "cube": 7,
+    "units": [
+     -257,
+     -258,
+     -259
+    ],
+    "status": "UNKNOWN",
+    "seconds": 600.16
+   }
+  ]
+ },
+ {
+  "instance": "r3b_t8_B7_o007_c001_t3_m011_017",
+  "label": "t3_m011_017",
+  "clauses": 906081,
+  "verdict": "UNSAT",
+  "wall_seconds": 1222.3,
+  "vars": [
+   257,
+   258,
+   259
+  ],
+  "positions": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "cubes": [
+   {
+    "cube": 0,
+    "units": [
+     257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.58
+   },
+   {
+    "cube": 1,
+    "units": [
+     257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.56
+   },
+   {
+    "cube": 2,
+    "units": [
+     257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.48
+   },
+   {
+    "cube": 3,
+    "units": [
+     257,
+     -258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 0.5
+   },
+   {
+    "cube": 4,
+    "units": [
+     -257,
+     258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 297.68
+   },
+   {
+    "cube": 5,
+    "units": [
+     -257,
+     258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 154.96
+   },
+   {
+    "cube": 6,
+    "units": [
+     -257,
+     -258,
+     259
+    ],
+    "status": "UNSAT",
+    "seconds": 337.89
+   },
+   {
+    "cube": 7,
+    "units": [
+     -257,
+     -258,
+     -259
+    ],
+    "status": "UNSAT",
+    "seconds": 562.34
+   }
+  ]
+ }
+]

@@ -1,0 +1,25 @@
+===== setup-01-pip: pip install python-sat
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m107.py m108.py m110.py m111.py m113.py m120.py cert1_tools.py results/m110a/m110a_grade.json results/m110b/
+
+===== setup-03-python: python cert1_tools.py --dest tools
+make-build-header.sh: warning: could not determine 'IDENTIFIER' (git id)
+
+===== run-01-python: python -m unittest -v test_m121
+test_cube_vars (test_m121.TestM121.test_cube_vars) ... ok
+test_cubes (test_m121.TestM121.test_cubes) ... ok
+test_pilot_cases (test_m121.TestM121.test_pilot_cases) ... ok
+test_verdict (test_m121.TestM121.test_verdict) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+===== run-02-python: python m121.py --part check --tools tools --out-dir /out
+
+===== run-03-python: python m121.py --part control --tools tools --k 3 --workers 2 --out-dir /out
+
+===== run-04-python: python m121.py --part run --tools tools --k 3 --cap 600 --workers 2 --minutes 190 --out-dir /out
+
+===== run-05-python: python m121.py --part grade --k 3 --out-dir /out

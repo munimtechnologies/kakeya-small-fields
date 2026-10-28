@@ -1,0 +1,92 @@
+{
+ "verdicts": {
+  "r3b_t8_B7_o007_c000_t2_m011": "OPEN",
+  "r3b_t8_B7_o007_c003_t2_m026": "OPEN",
+  "r3b_t8_B7_o007_c007_t2_m031": "OPEN",
+  "r3b_t8_B7_o007_c001_t3_m011_017": "UNSAT"
+ },
+ "cube_status": {
+  "UNSAT": 28,
+  "UNKNOWN": 4
+ },
+ "unsat_cube_seconds": {
+  "n": 28,
+  "median": 1.25,
+  "max": 562.34
+ },
+ "positions": {
+  "r3b_t8_B7_o007_c000_t2_m011": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "r3b_t8_B7_o007_c003_t2_m026": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "r3b_t8_B7_o007_c007_t2_m031": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "r3b_t8_B7_o007_c001_t3_m011_017": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ]
+  ]
+ },
+ "sat_cubes": 0,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_d1_3876": true,
+  "check_open_30": false,
+  "check_pilot_4": true,
+  "check_tools": true,
+  "control_control_vars_k": true,
+  "control_control_cubes": true,
+  "control_control_some_sat": true,
+  "control_control_models_ok": true,
+  "run_ran": true,
+  "all_accounted": true,
+  "cubes_complete": true,
+  "no_error": true,
+  "sat_models_ok": true
+ }
+}

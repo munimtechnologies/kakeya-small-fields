@@ -1,0 +1,112 @@
+{
+ "instance": "r3b_t8_B7_o007_c008_t2_m012",
+ "graded": {
+  "control_vars_k": true,
+  "control_cubes": true,
+  "control_some_sat": true,
+  "control_models_ok": true
+ },
+ "vars": [
+  257,
+  258,
+  259
+ ],
+ "positions": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   2
+  ]
+ ],
+ "cubes": [
+  {
+   "cube": 0,
+   "units": [
+    257,
+    258,
+    259
+   ],
+   "status": "UNSAT",
+   "seconds": 0.44
+  },
+  {
+   "cube": 1,
+   "units": [
+    257,
+    258,
+    -259
+   ],
+   "status": "UNSAT",
+   "seconds": 0.45
+  },
+  {
+   "cube": 2,
+   "units": [
+    257,
+    -258,
+    259
+   ],
+   "status": "UNSAT",
+   "seconds": 0.36
+  },
+  {
+   "cube": 3,
+   "units": [
+    257,
+    -258,
+    -259
+   ],
+   "status": "UNSAT",
+   "seconds": 0.35
+  },
+  {
+   "cube": 4,
+   "units": [
+    -257,
+    258,
+    259
+   ],
+   "status": "UNSAT",
+   "seconds": 6.33
+  },
+  {
+   "cube": 5,
+   "units": [
+    -257,
+    258,
+    -259
+   ],
+   "status": "UNSAT",
+   "seconds": 6.13
+  },
+  {
+   "cube": 6,
+   "units": [
+    -257,
+    -258,
+    259
+   ],
+   "status": "SAT",
+   "seconds": 68.18,
+   "satisfies_cnf": true
+  },
+  {
+   "cube": 7,
+   "units": [
+    -257,
+    -258,
+    -259
+   ],
+   "status": "SAT",
+   "seconds": 4.12,
+   "satisfies_cnf": true
+  }
+ ]
+}
