@@ -1,0 +1,369 @@
+{
+ "verified": 14,
+ "skipped": [
+  "r3b_t8_B7_o009_c004_t3_m011_017",
+  "r3b_t8_B7_o009_c005_t2_m047",
+  "r3b_t8_B7_o009_c006_t2_m038",
+  "r3b_t8_B7_o009_c007_t2_m015",
+  "r3b_t8_B7_o009_c007_t3_m030_043",
+  "r3b_t8_B7_o009_c009_t3_m021_047",
+  "r3b_t8_B7_o010_c000_t3_m012_032",
+  "r3b_t8_B7_o010_c001_t2_m062",
+  "r3b_t8_B7_o010_c003_t2_m026",
+  "r3b_t8_B7_o010_c004_t2_m034",
+  "r3b_t8_B7_o010_c006_t2_m011",
+  "r3b_t8_B7_o010_c007_t2_m034",
+  "r3b_t8_B7_o010_c008_t3_m015_049"
+ ],
+ "not_verified": [],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 14,
+   "SKIPPED": 13
+  }
+ },
+ "by_label": {
+  "t3_m004_034": {
+   "VERIFIED": 2
+  },
+  "t2_m015": {
+   "VERIFIED": 2,
+   "SKIPPED": 1
+  },
+  "t2_m062": {
+   "VERIFIED": 1,
+   "SKIPPED": 1
+  },
+  "t2_m058": {
+   "VERIFIED": 1
+  },
+  "t2_m043": {
+   "VERIFIED": 1
+  },
+  "t2_m030": {
+   "VERIFIED": 2
+  },
+  "t2_m012": {
+   "VERIFIED": 2
+  },
+  "t3_m012_032": {
+   "VERIFIED": 2,
+   "SKIPPED": 1
+  },
+  "t3_m030_043": {
+   "VERIFIED": 1,
+   "SKIPPED": 1
+  },
+  "t3_m011_017": {
+   "SKIPPED": 1
+  },
+  "t2_m047": {
+   "SKIPPED": 1
+  },
+  "t2_m038": {
+   "SKIPPED": 1
+  },
+  "t3_m021_047": {
+   "SKIPPED": 1
+  },
+  "t2_m026": {
+   "SKIPPED": 1
+  },
+  "t2_m034": {
+   "SKIPPED": 2
+  },
+  "t2_m011": {
+   "SKIPPED": 1
+  },
+  "t3_m015_049": {
+   "SKIPPED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 14,
+   "mean": 758.73,
+   "median": 705.43,
+   "max": 1675.29
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 14,
+   "mean": 895.04,
+   "median": 930.79,
+   "max": 2029.55
+  }
+ },
+ "largest_proof": 841624927,
+ "rows": {
+  "r3b_t8_B7_o007_c000_t2_m015": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "53c78f0210d14095f74b3f1b5fa45a1397043bdc79b806caf22d2efccdcda8a8",
+   926.82,
+   1305.05
+  ],
+  "r3b_t8_B7_o007_c001_t3_m004_034": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "82855cf89fd4ed75e58af83b4f342ddbb3e2591ea03e79ddcf2db6f8761d4b03",
+   342.39,
+   360.8
+  ],
+  "r3b_t8_B7_o007_c003_t2_m015": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "e9f6a000bbdaa23c36ce4b3e44c4a7dfb8b45fe6cb8e9adb2ddaaaf73f45690d",
+   1001.02,
+   1006.56
+  ],
+  "r3b_t8_B7_o007_c004_t2_m062": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "263084da4486e88b99f29c83d4b9a6bb51f5192f5df7683cec9d7c3250442f8c",
+   705.43,
+   798.89
+  ],
+  "r3b_t8_B7_o007_c005_t2_m058": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "84786c649ef453ef307d61934dcc49a20fd87472db7a492fc4621c2b73db932e",
+   556.75,
+   872.11
+  ],
+  "r3b_t8_B7_o007_c006_t2_m043": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "74621e1241b6526513eda6b84dd9af421de41e8544531972e5013a07152d0255",
+   820.5,
+   1008.98
+  ],
+  "r3b_t8_B7_o007_c007_t2_m030": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "20eccb04421668d71e153d41d84f849100803df908925cb9762e3aaf581df451",
+   788.27,
+   1064.2
+  ],
+  "r3b_t8_B7_o007_c008_t2_m012": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "04254515a0836c7c14b7eb5353000af642684c3328fc55f10ba67da1cc049562",
+   1675.29,
+   2029.55
+  ],
+  "r3b_t8_B7_o008_c000_t2_m030": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "d9c425cca2549cebc8715a96ecf89a0ef18abdba70b7d2186018b14080d41416",
+   1161.38,
+   1409.49
+  ],
+  "r3b_t8_B7_o008_c002_t2_m012": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "65e118d928785ab0fee01052bb76dbaedbeb6c9282bf2b58016a21f1f396ed33",
+   699.69,
+   930.79
+  ],
+  "r3b_t8_B7_o008_c003_t3_m012_032": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "7986a7e3972f9b315dab4fbef4a91cc6a54e134bb46a727d7ade9980f382f3a3",
+   383.56,
+   424.56
+  ],
+  "r3b_t8_B7_o009_c000_t3_m030_043": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "82ffdc1ab2f00a977be073971e2bbc143926bcf28069acc6c108f9724b8e7a6d",
+   633.38,
+   710.18
+  ],
+  "r3b_t8_B7_o009_c001_t3_m012_032": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "b62628fc810404096a511ab98d5a9c76cdf999f0c7b28d4fe1d532e57df40894",
+   266.4,
+   264.29
+  ],
+  "r3b_t8_B7_o009_c003_t3_m004_034": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "9c1b131f57ca631104f95511daa04ea3901e7aa64e918af7eb6e3134ed78033c",
+   661.29,
+   345.15
+  ],
+  "r3b_t8_B7_o009_c004_t3_m011_017": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c005_t2_m047": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c006_t2_m038": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c007_t2_m015": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c007_t3_m030_043": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c009_t3_m021_047": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c000_t3_m012_032": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c001_t2_m062": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c003_t2_m026": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c004_t2_m034": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c006_t2_m011": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c007_t2_m034": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c008_t3_m015_049": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "wall_seconds_max": 3709.12,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_sweep_unsat_438": false,
+  "check_pilot_3_inside": true,
+  "check_total_435": false,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": false,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": true,
+  "clauses_uniform": true
+ }
+}

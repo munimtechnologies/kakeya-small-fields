@@ -1,0 +1,8 @@
+test_real_files_load (test_m120.TestM120.test_real_files_load) ... ok
+test_sizes (test_m120.TestM120.test_sizes) ... ok
+test_synthetic (test_m120.TestM120.test_synthetic) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.045s
+
+OK
