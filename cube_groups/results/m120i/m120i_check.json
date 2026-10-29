@@ -1,0 +1,120 @@
+{
+ "shard": [
+  [
+   "r3b_t8_B7_o007_c001_t2_m011",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c002_t2_m030",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c004_t2_m015",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c005_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c005_t3_m030_043",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c006_t3_m011_017",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c007_t2_m059",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c009_t2_m031",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o008_c000_t3_m030_043",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o008_c003_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c000_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c001_t2_m034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c002_t2_m030",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c004_t2_m034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c005_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c005_t3_m021_047",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c006_t3_m004_034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c007_t2_m047",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c009_t2_m015",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c000_t2_m034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c001_t2_m030",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c002_t2_m011",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c003_t3_m004_034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c005_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c006_t3_m004_034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c008_t2_m011",
+   "sweep"
+  ]
+ ],
+ "total": 420,
+ "graded": {
+  "grades_loaded": true,
+  "sweep_unsat_438": false,
+  "pilot_3_inside": true,
+  "total_435": false,
+  "names_d1": true,
+  "m110_3408": true,
+  "disjoint_from_m110": true,
+  "shard_size": false,
+  "tools": true
+ }
+}

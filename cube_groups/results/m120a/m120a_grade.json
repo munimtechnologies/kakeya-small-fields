@@ -1,0 +1,364 @@
+{
+ "verified": 16,
+ "skipped": [
+  "r3b_t8_B7_o009_c006_t2_m034",
+  "r3b_t8_B7_o009_c007_t2_m012",
+  "r3b_t8_B7_o009_c007_t3_m021_047",
+  "r3b_t8_B7_o009_c009_t3_m015_049",
+  "r3b_t8_B7_o010_c000_t3_m011_017",
+  "r3b_t8_B7_o010_c001_t2_m059",
+  "r3b_t8_B7_o010_c003_t2_m012",
+  "r3b_t8_B7_o010_c004_t2_m031",
+  "r3b_t8_B7_o010_c005_t3_m015_049",
+  "r3b_t8_B7_o010_c007_t2_m031",
+  "r3b_t8_B7_o010_c008_t3_m012_032"
+ ],
+ "not_verified": [],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 16,
+   "SKIPPED": 11
+  }
+ },
+ "by_label": {
+  "t2_m012": {
+   "VERIFIED": 2,
+   "SKIPPED": 2
+  },
+  "t2_m059": {
+   "VERIFIED": 2,
+   "SKIPPED": 1
+  },
+  "t2_m047": {
+   "VERIFIED": 1
+  },
+  "t2_m038": {
+   "VERIFIED": 1
+  },
+  "t2_m026": {
+   "VERIFIED": 2
+  },
+  "t2_m015": {
+   "VERIFIED": 1
+  },
+  "t3_m031_036": {
+   "VERIFIED": 1
+  },
+  "t2_m011": {
+   "VERIFIED": 1
+  },
+  "t3_m015_049": {
+   "VERIFIED": 1,
+   "SKIPPED": 2
+  },
+  "t3_m011_017": {
+   "VERIFIED": 2,
+   "SKIPPED": 1
+  },
+  "t3_m004_034": {
+   "VERIFIED": 1
+  },
+  "t2_m044": {
+   "VERIFIED": 1
+  },
+  "t2_m034": {
+   "SKIPPED": 1
+  },
+  "t3_m021_047": {
+   "SKIPPED": 1
+  },
+  "t2_m031": {
+   "SKIPPED": 2
+  },
+  "t3_m012_032": {
+   "SKIPPED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 16,
+   "mean": 672.38,
+   "median": 620.97,
+   "max": 1344.44
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 16,
+   "mean": 788.08,
+   "median": 699.22,
+   "max": 1666.91
+  }
+ },
+ "largest_proof": 1182601813,
+ "rows": {
+  "r3b_t8_B7_o007_c000_t2_m012": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "0fecdf6d0613082c2744a039068015dd98440e19e78efb9702d13a6dcbe1b722",
+   475.15,
+   607.62
+  ],
+  "r3b_t8_B7_o007_c001_t2_m059": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "5ea59220ab8078193f24f26ea69c71bf60123392059f12ac489a7d55a397b52b",
+   688.61,
+   857.75
+  ],
+  "r3b_t8_B7_o007_c003_t2_m012": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "3c08cea16544ba3db82ffd328215699a52bdcbc753476e128f71e4e6581ab4c7",
+   597.93,
+   755.85
+  ],
+  "r3b_t8_B7_o007_c004_t2_m059": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "794d3feee05c93a44f50e616b622e4beab06e2b91057b468050c757255911e9a",
+   890.72,
+   1368.34
+  ],
+  "r3b_t8_B7_o007_c005_t2_m047": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "3c26792b45d98383895c76bcfe76755f42bb0f3899288b4baebbbf0b5d69bbba",
+   403.06,
+   515.81
+  ],
+  "r3b_t8_B7_o007_c006_t2_m038": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "715eab4c1d22db289828bf05121633e0edea804dd627cd25db40d199e00574a9",
+   620.97,
+   699.22
+  ],
+  "r3b_t8_B7_o007_c007_t2_m026": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "b6922d0157b554fca8c0eebc7ea107c2506ab90dafd2ecd4f1bc15114b8c4b39",
+   586.58,
+   628.32
+  ],
+  "r3b_t8_B7_o007_c007_t3_m031_036": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "de9956f96a776575bfe22b5a1573849f87dfec595f7680b3474c6a54cf4ba543",
+   1187.18,
+   1145.92
+  ],
+  "r3b_t8_B7_o008_c000_t2_m015": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "6b0850ee994a71fe6e9b6af40e8a51ab541e41fe9bb5c1ada1e4d1cd553a5ee4",
+   636.19,
+   673.75
+  ],
+  "r3b_t8_B7_o008_c002_t2_m011": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "37588c0bfab63375b349fa2d567641fe7cfb845b2f2beb794438b7963ac7a1e8",
+   396.72,
+   389.55
+  ],
+  "r3b_t8_B7_o008_c003_t3_m011_017": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "0c6884c73c587460923a5056eab0ba1a66b095adede6ce616bdfedca4c39fe9e",
+   759.96,
+   917.27
+  ],
+  "r3b_t8_B7_o009_c000_t3_m015_049": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "6549e3666a403da8d3688dfb7f7bac2431997d36aadbd13bfae039ea40626487",
+   548.99,
+   534.04
+  ],
+  "r3b_t8_B7_o009_c001_t3_m011_017": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "826fb823276d8888433175fa741da69321601cd801a239ea9b8ba5e9de662a28",
+   805.6,
+   1089.19
+  ],
+  "r3b_t8_B7_o009_c003_t2_m026": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "58be20088cce026dc306f31a2ce8e093e1a3ffaf1f5e910b033b3e340cc8ba07",
+   1344.44,
+   1666.91
+  ],
+  "r3b_t8_B7_o009_c004_t3_m004_034": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "52ec50df3130a8f8c864d7562988012f22cf86d4163fcd486df497b5c98d7900",
+   465.42,
+   369.44
+  ],
+  "r3b_t8_B7_o009_c005_t2_m044": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "ec2c06ac450edb28b16a256fc55db995714a64260189bdc51edbd14da3803996",
+   350.59,
+   390.35
+  ],
+  "r3b_t8_B7_o009_c006_t2_m034": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c007_t2_m012": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c007_t3_m021_047": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o009_c009_t3_m015_049": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c000_t3_m011_017": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c001_t2_m059": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c003_t2_m012": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c004_t2_m031": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c005_t3_m015_049": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c007_t2_m031": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "r3b_t8_B7_o010_c008_t3_m012_032": [
+   "SKIPPED",
+   "sweep",
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "wall_seconds_max": 3015.56,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_sweep_unsat_438": false,
+  "check_pilot_3_inside": true,
+  "check_total_435": false,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": false,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": true,
+  "clauses_uniform": true
+ }
+}
