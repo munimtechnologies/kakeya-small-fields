@@ -1,0 +1,90 @@
+{
+ "shard": [
+  [
+   "r3b_t8_B7_o007_c000_t2_m030",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c001_t2_m043",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c001_t2_m062",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c001_t3_m015_049",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o007_c004_t3_m021_047",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c004_t2_m011",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c005_t2_m047",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c006_t2_m044",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c007_t2_m030",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o009_c008_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c000_t2_m012",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c000_t3_m021_047",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c001_t3_m012_032",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c003_t2_m031",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c004_t3_m004_034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c006_t2_m015",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c007_t3_m004_034",
+   "sweep"
+  ],
+  [
+   "r3b_t8_B7_o010_c008_t3_m063_205",
+   "sweep"
+  ]
+ ],
+ "total": 53,
+ "graded": {
+  "grades_loaded": true,
+  "m111_15": true,
+  "skipped_38": true,
+  "disjoint": true,
+  "not_in_m120_verified": true,
+  "total_53": true,
+  "names_d1": true,
+  "m110_3408": true,
+  "disjoint_from_m110": true,
+  "shard_size": true,
+  "tools": true
+ }
+}
