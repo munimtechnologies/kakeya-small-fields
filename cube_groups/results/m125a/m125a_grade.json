@@ -1,0 +1,212 @@
+{
+ "verified": 14,
+ "skipped": [],
+ "not_verified": [],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 14
+  }
+ },
+ "by_label": {
+  "t2_m011": {
+   "VERIFIED": 1
+  },
+  "t2_m062": {
+   "VERIFIED": 1
+  },
+  "t2_m031": {
+   "VERIFIED": 1
+  },
+  "t3_m015_049": {
+   "VERIFIED": 2
+  },
+  "t3_m021_047": {
+   "VERIFIED": 3
+  },
+  "t2_m012": {
+   "VERIFIED": 1
+  },
+  "t3_m011_017": {
+   "VERIFIED": 1
+  },
+  "t2_m059": {
+   "VERIFIED": 1
+  },
+  "t2_m015": {
+   "VERIFIED": 2
+  },
+  "t3_m012_032": {
+   "VERIFIED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 14,
+   "mean": 696.93,
+   "median": 754.44,
+   "max": 1095.89
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 14,
+   "mean": 813.97,
+   "median": 747.98,
+   "max": 1414.07
+  }
+ },
+ "largest_proof": 1134813638,
+ "rows": {
+  "r3b_t8_B7_o009_c001_t2_m031": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "f20c6f8dfd4e1daad9ea62ffbaa7d755d81d9f29a405acb73776b6d7b43aa2a6",
+   792.68,
+   941.61
+  ],
+  "r3b_t8_B7_o009_c005_t2_m011": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "0f1fd3a0022bcac2d49814623a4445d5b6492f3ea94d2f1bfdea4a4c909478d5",
+   523.78,
+   615.86
+  ],
+  "r3b_t8_B7_o009_c006_t2_m062": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "44a7cc4b9f82e36f765f538c2f42c08b51c4ffe7827abbf81ef4d13a436f134d",
+   623.28,
+   747.98
+  ],
+  "r3b_t8_B7_o009_c007_t3_m021_047": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "aca4b68f017f12a243906f2bb73a5f0d09691304f0bc83f11e978507f96be638",
+   589.74,
+   547.38
+  ],
+  "r3b_t8_B7_o009_c009_t3_m015_049": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "4ba06b6928095b446faf4e316c1cdbdbd6edf19108f4b1a8bb6691895b8216f3",
+   360.0,
+   479.74
+  ],
+  "r3b_t8_B7_o010_c000_t3_m011_017": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "ce771b93a6a690975aa1fae9b139e6bfaea08283911e5cb53162b8a784b46cda",
+   754.44,
+   1081.69
+  ],
+  "r3b_t8_B7_o010_c001_t2_m059": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "d0bf98133265054c414291f56fa4b2192af4f27bc796cef5d8a4481863e234e7",
+   822.75,
+   1280.0
+  ],
+  "r3b_t8_B7_o010_c003_t2_m012": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "03686a3f39b5a702197af929265386e73faeae2c2824c135e66e947b49e45b03",
+   405.01,
+   436.62
+  ],
+  "r3b_t8_B7_o010_c003_t3_m021_047": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "83f95c0d48a3aed704b5ef2fad60ee06cde293e9ffb10677780e71fa8f42d51a",
+   1095.89,
+   1414.07
+  ],
+  "r3b_t8_B7_o010_c005_t2_m015": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "ef8f9fd314ce391e7e333b36fb12b6accce34d02562852301d05d24cd53c8066",
+   520.78,
+   556.03
+  ],
+  "r3b_t8_B7_o010_c005_t3_m015_049": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "0bf27543765238407608830c9877c8050a8f7c2cecdf71f7186b4962e5bb1352",
+   500.78,
+   639.23
+  ],
+  "r3b_t8_B7_o010_c006_t3_m012_032": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2[x]/x3",
+   "0a4d00449ed9708264977e49f0a8320187c6049b29b402fdbd8f8198161b9b9e",
+   824.64,
+   731.15
+  ],
+  "r3b_t8_B7_o010_c007_t3_m021_047": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "F2xF4",
+   "6bd05dc736e0a9ca440e22a5fedbb4ac11cc172b68cf2d34d7102d4d13a62bcd",
+   895.88,
+   980.01
+  ],
+  "r3b_t8_B7_o010_c008_t2_m015": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "b34780375113d83538c290bea4516c6e7ca42cce7305a07034ee86349a9588e1",
+   1047.43,
+   944.19
+  ]
+ },
+ "wall_seconds_max": 2513.22,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_skipped_42": true,
+  "check_unknown_4": true,
+  "check_disjoint": true,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": true,
+  "clauses_uniform": true
+ }
+}
