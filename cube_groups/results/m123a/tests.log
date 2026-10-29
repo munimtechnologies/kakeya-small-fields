@@ -1,0 +1,8 @@
+test_real_files_load (test_m123.TestM123.test_real_files_load) ... ok
+test_sizes (test_m123.TestM123.test_sizes) ... ok
+test_synthetic (test_m123.TestM123.test_synthetic) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.171s
+
+OK
