@@ -1,0 +1,27 @@
+{
+ "shard": [
+  [
+   "r3b_t8_B7_o010_c000_t2_m011",
+   "sweep"
+  ]
+ ],
+ "unknown": [
+  "r3b_t8_B7_o010_c004_t2_m031",
+  "r3b_t8_B7_o010_c006_t3_m011_017",
+  "r3b_t8_B7_o010_c007_t2_m031"
+ ],
+ "stopped": [
+  "r3b_t8_B7_o010_c000_t2_m011"
+ ],
+ "graded": {
+  "grades_loaded": true,
+  "unknown_3": true,
+  "stopped_1": true,
+  "disjoint": true,
+  "names_d1": true,
+  "m110_3408": true,
+  "disjoint_from_m110": true,
+  "shard_size": true,
+  "tools": true
+ }
+}

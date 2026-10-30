@@ -1,0 +1,8 @@
+test_real_files (test_m126.TestM126.test_real_files) ... ok
+test_shards (test_m126.TestM126.test_shards) ... ok
+test_synthetic (test_m126.TestM126.test_synthetic) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.425s
+
+OK
