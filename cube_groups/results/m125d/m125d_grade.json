@@ -1,0 +1,110 @@
+{
+ "verified": 3,
+ "skipped": [],
+ "not_verified": [
+  [
+   "r3b_t8_B7_o010_c000_t2_m011",
+   "DRAT_STOPPED"
+  ]
+ ],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 3,
+   "DRAT_STOPPED": 1
+  }
+ },
+ "by_label": {
+  "t2_m031": {
+   "VERIFIED": 1
+  },
+  "t2_m011": {
+   "DRAT_STOPPED": 1
+  },
+  "t2_m030": {
+   "VERIFIED": 1
+  },
+  "t2_m026": {
+   "VERIFIED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 4,
+   "mean": 3071.24,
+   "median": 3652.04,
+   "max": 4511.39
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 4,
+   "mean": 1906.65,
+   "median": 2564.72,
+   "max": 2573.47
+  }
+ },
+ "largest_proof": 2674497321,
+ "rows": {
+  "r3b_t8_B7_o007_c004_t2_m031": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "81369d692550bda50a5b3c567f2e9158ca696997969d4641bb071f1752aa089f",
+   1938.25,
+   2412.32
+  ],
+  "r3b_t8_B7_o010_c000_t2_m011": [
+   "DRAT_STOPPED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "6d63640cf370e5c125bd73df6805a88ddbf26308d368b5294f0c0fffab7eb323",
+   4511.39,
+   76.08
+  ],
+  "r3b_t8_B7_o010_c000_t2_m026": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "065c2ddd5a8c6f457ae05ad7115b6e4bd0bed2f9c64495896fcc0cbff11c45b0",
+   3652.04,
+   2573.47
+  ],
+  "r3b_t8_B7_o010_c006_t2_m030": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "ae17fe590cac01a7954fda2c908fd25938140e1f643beb10ae7587aa4ee40ca6",
+   2183.29,
+   2564.72
+  ]
+ },
+ "wall_seconds_max": 6238.35,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_skipped_42": true,
+  "check_unknown_4": true,
+  "check_disjoint": true,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": false,
+  "clauses_uniform": true
+ }
+}
