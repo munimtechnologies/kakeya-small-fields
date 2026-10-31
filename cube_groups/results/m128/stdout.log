@@ -1,0 +1,52 @@
+===== setup-01-pip: pip install python-sat
+Collecting python-sat
+  Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (1.8 kB)
+Collecting six (from python-sat)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_sat-1.9.dev17-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (4.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 5.5 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev17 six-1.17.0
+
+===== setup-02-python: python fetch.py sat_aniso.py m42.py m100.py m101.py m102.py m103.py m104.py m105.py m106.py m107.py m108.py m110.py m111.py m113.py cert1_tools.py results/m110a/m110a_grade.json results/m110b/m110b_gr
+sat_aniso.py: downloaded
+m42.py: downloaded
+m100.py: downloaded
+m101.py: downloaded
+m102.py: downloaded
+m103.py: downloaded
+m104.py: downloaded
+m105.py: downloaded
+m106.py: downloaded
+m107.py: downloaded
+m108.py: downloaded
+m110.py: downloaded
+m111.py: downloaded
+m113.py: downloaded
+cert1_tools.py: downloaded
+results/m110a/m110a_grade.json: downloaded
+results/m110b/m110b_grade.json: downloaded
+results/m110c/m110c_grade.json: downloaded
+results/m110d/m110d_grade.json: downloaded
+results/m110e/m110e_grade.json: downloaded
+results/m110f/m110f_grade.json: downloaded
+results/m110g/m110g_grade.json: downloaded
+results/m110h/m110h_grade.json: downloaded
+results/m110i/m110i_grade.json: downloaded
+results/m110j/m110j_grade.json: downloaded
+
+===== run-01-python: python test_m128.py
+SUMMARY tests run 6 failures 0 errors 0
+
+===== run-02-python: python m128.py --part list --out-dir /out
+SUMMARY list grade_files 123 truncated False
+
+===== run-03-python: python m128.py --part fetch --out-dir /out
+SUMMARY fetch got 123 failed 0 []
+
+===== run-04-python: python m128.py --part count --out-dir /out
+SUMMARY count d1 3876 files 123 verified 3846 missing 30 bad 0 missing_with_m110_unsat 0 by_label {"t2_m011": 8, "t2_m026": 6, "t2_m030": 1, "t2_m031": 6, "t2_m038": 1, "t2_m059": 2, "t3_m011_017": 4, "t3_m031_036": 2}
+
+===== run-05-python: python m128.py --part grade --out-dir /out
+SUMMARY grade all_match True failed [] verified 3846 missing 30 {"t2_m011": 8, "t2_m026": 6, "t2_m030": 1, "t2_m031": 6, "t2_m038": 1, "t2_m059": 2, "t3_m011_017": 4, "t3_m031_036": 2}

@@ -1,0 +1,26 @@
+{
+ "graded": {
+  "listed": true,
+  "fetched_all": true,
+  "m127_present": true,
+  "d1_3876": true,
+  "no_unreadable": true,
+  "tally_matches_a121": true,
+  "missing_30": true,
+  "no_sat_or_not_verified": true,
+  "missing_have_no_m110_unsat": true
+ },
+ "n_verified": 3846,
+ "n_missing": 30,
+ "missing_by_label": {
+  "t2_m011": 8,
+  "t2_m026": 6,
+  "t3_m011_017": 4,
+  "t3_m031_036": 2,
+  "t2_m031": 6,
+  "t2_m059": 2,
+  "t2_m038": 1,
+  "t2_m030": 1
+ },
+ "n_files": 123
+}

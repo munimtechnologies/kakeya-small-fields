@@ -1,0 +1,239 @@
+{
+ "n_d1": 3876,
+ "n_files": 123,
+ "files_with_d1_rows": [
+  "m103b__m103b_grade.json",
+  "m113a__m113a_grade.json",
+  "m113b__m113b_grade.json",
+  "m113c__m113c_grade.json",
+  "m113d__m113d_grade.json",
+  "m113e__m113e_grade.json",
+  "m113f__m113f_grade.json",
+  "m115__m115_grade.json",
+  "m117__m117_grade.json",
+  "m118__m118_grade.json",
+  "m120a__m120a_grade.json",
+  "m120b__m120b_grade.json",
+  "m120c__m120c_grade.json",
+  "m120d__m120d_grade.json",
+  "m120e__m120e_grade.json",
+  "m120f__m120f_grade.json",
+  "m120g__m120g_grade.json",
+  "m120h__m120h_grade.json",
+  "m120i__m120i_grade.json",
+  "m120j__m120j_grade.json",
+  "m120k__m120k_grade.json",
+  "m120l__m120l_grade.json",
+  "m120m__m120m_grade.json",
+  "m120n__m120n_grade.json",
+  "m120o__m120o_grade.json",
+  "m120p__m120p_grade.json",
+  "m122a__m122a_grade.json",
+  "m122b__m122b_grade.json",
+  "m122c__m122c_grade.json",
+  "m123a__m123a_grade.json",
+  "m123b__m123b_grade.json",
+  "m125a__m125a_grade.json",
+  "m125b__m125b_grade.json",
+  "m125c__m125c_grade.json",
+  "m125d__m125d_grade.json",
+  "m126a__m126a_grade.json",
+  "m126b__m126b_grade.json",
+  "m126c__m126c_grade.json",
+  "m126d__m126d_grade.json",
+  "m127a__m127a_grade.json",
+  "m127b__m127b_grade.json",
+  "m127c__m127c_grade.json",
+  "m127d__m127d_grade.json",
+  "m127e__m127e_grade.json",
+  "m127f__m127f_grade.json",
+  "m127g__m127g_grade.json",
+  "m127h__m127h_grade.json"
+ ],
+ "unreadable": [],
+ "n_verified": 3846,
+ "n_missing": 30,
+ "bad": [],
+ "missing": {
+  "r3b_t8_B7_o007_c003_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c003_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c004_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c004_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c004_t3_m011_017": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c006_t3_m031_036": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o007_c007_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o008_c000_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o008_c001_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o008_c001_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o008_c001_t3_m011_017": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o008_c003_t3_m031_036": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c001_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c001_t2_m059": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c002_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c002_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c002_t2_m038": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c003_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c003_t2_m030": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c003_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c003_t3_m011_017": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c004_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o009_c007_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c001_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c001_t2_m026": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c001_t3_m011_017": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c006_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c007_t2_m011": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c008_t2_m031": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  },
+  "r3b_t8_B7_o010_c008_t2_m059": {
+   "m110_unsat_mode": null,
+   "statuses": []
+  }
+ },
+ "missing_by_label": {
+  "t2_m011": 8,
+  "t2_m026": 6,
+  "t3_m011_017": 4,
+  "t3_m031_036": 2,
+  "t2_m031": 6,
+  "t2_m059": 2,
+  "t2_m038": 1,
+  "t2_m030": 1
+ },
+ "first_verified_by_file": {
+  "m122a__m122a_grade.json": 17,
+  "m120a__m120a_grade.json": 16,
+  "m120b__m120b_grade.json": 14,
+  "m122b__m122b_grade.json": 18,
+  "m120c__m120c_grade.json": 17,
+  "m120d__m120d_grade.json": 12,
+  "m120e__m120e_grade.json": 17,
+  "m113a__m113a_grade.json": 513,
+  "m113b__m113b_grade.json": 513,
+  "m113c__m113c_grade.json": 513,
+  "m113d__m113d_grade.json": 511,
+  "m113e__m113e_grade.json": 511,
+  "m113f__m113f_grade.json": 512,
+  "m118__m118_grade.json": 333,
+  "m122c__m122c_grade.json": 17,
+  "m120f__m120f_grade.json": 13,
+  "m120g__m120g_grade.json": 18,
+  "m120h__m120h_grade.json": 11,
+  "m120i__m120i_grade.json": 25,
+  "m120j__m120j_grade.json": 23,
+  "m120k__m120k_grade.json": 17,
+  "m115__m115_grade.json": 2,
+  "m120l__m120l_grade.json": 22,
+  "m120m__m120m_grade.json": 23,
+  "m120n__m120n_grade.json": 21,
+  "m120o__m120o_grade.json": 26,
+  "m120p__m120p_grade.json": 18,
+  "m125d__m125d_grade.json": 3,
+  "m117__m117_grade.json": 3,
+  "m125a__m125a_grade.json": 14,
+  "m125b__m125b_grade.json": 13,
+  "m123a__m123a_grade.json": 14,
+  "m125c__m125c_grade.json": 12,
+  "m123b__m123b_grade.json": 14,
+  "m127a__m127a_grade.json": 2,
+  "m126d__m126d_grade.json": 1,
+  "m127b__m127b_grade.json": 2,
+  "m127c__m127c_grade.json": 2,
+  "m127d__m127d_grade.json": 2,
+  "m126a__m126a_grade.json": 1,
+  "m127e__m127e_grade.json": 2,
+  "m126b__m126b_grade.json": 1,
+  "m127f__m127f_grade.json": 2,
+  "m127g__m127g_grade.json": 2,
+  "m126c__m126c_grade.json": 1,
+  "m127h__m127h_grade.json": 2
+ },
+ "m110_decided": 3408,
+ "missing_with_m110_unsat": []
+}
