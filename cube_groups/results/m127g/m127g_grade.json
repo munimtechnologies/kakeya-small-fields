@@ -1,0 +1,80 @@
+{
+ "verified": 2,
+ "skipped": [],
+ "not_verified": [],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 2
+  }
+ },
+ "by_label": {
+  "t2_m030": {
+   "VERIFIED": 1
+  },
+  "t2_m034": {
+   "VERIFIED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 2,
+   "mean": 612.22,
+   "median": 747.43,
+   "max": 747.43
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 2,
+   "mean": 778.61,
+   "median": 1048.27,
+   "max": 1048.27
+  }
+ },
+ "largest_proof": 851236762,
+ "rows": {
+  "r3b_t8_B7_o010_c007_t2_m030": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "ae709d061d23e6f49e419a51f16c44fafcc56f84e81f7e1135e56d8c059c6680",
+   477.02,
+   508.94
+  ],
+  "r3b_t8_B7_o010_c008_t2_m034": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "28df67b2be99f474bdfa3e8f28824a1b9551b68b92e1c1fc72f1470aa359e53b",
+   747.43,
+   1048.27
+  ]
+ },
+ "wall_seconds_max": 1798.89,
+ "graded": {
+  "check_grades_loaded": true,
+  "check_open_16": true,
+  "check_modes_sweep": true,
+  "check_disjoint_from_verified": true,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": true,
+  "clauses_uniform": true
+ }
+}
