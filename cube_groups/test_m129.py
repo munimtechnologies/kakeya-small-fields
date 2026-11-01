@@ -4,6 +4,9 @@ imports and m128_count.json next to it. Expectations worked out by hand:
 
 - 15 shards of 2 cases cover the 30 open cases without overlap; shard a takes items 0 and 15,
   shard o items 14 and 29.
+- Extra shard p is exactly shard i's second case, r3b_t8_B7_o010_c001_t2_m011.
+- Extra shard q is exactly shard n's second case, r3b_t8_B7_o010_c008_t2_m031, with a drat-trim
+  limit of 25,000 s; every other shard keeps 7,200 s.
 - The list is sorted, has no repeats, and equals m128's missing list; every name is a d = 1 case.
 """
 import unittest
@@ -20,6 +23,17 @@ class TestM129(unittest.TestCase):
         self.assertEqual(sorted(y for x in got for y in x), items)
         self.assertEqual(m129.shard_list("a", items), ["u00", "u15"])
         self.assertEqual(m129.shard_list("o", items), ["u14", "u29"])
+
+    def test_extra(self):
+        self.assertEqual(m129.shard_list("p", m129.OPEN), ["r3b_t8_B7_o010_c001_t2_m011"])
+        self.assertEqual(m129.shard_list("i", m129.OPEN)[1], "r3b_t8_B7_o010_c001_t2_m011")
+        self.assertEqual(m129.shard_list("q", m129.OPEN), ["r3b_t8_B7_o010_c008_t2_m031"])
+        self.assertEqual(m129.shard_list("n", m129.OPEN)[1], "r3b_t8_B7_o010_c008_t2_m031")
+
+    def test_caps(self):
+        self.assertEqual(m129.drat_cap("q"), 25000)
+        self.assertEqual(m129.drat_cap("p"), 7200)
+        self.assertEqual(m129.drat_cap("a"), 7200)
 
     def test_list(self):
         self.assertEqual(len(m129.OPEN), m129.N_OPEN)

@@ -14,16 +14,26 @@ mixes early and late names), and runs them one after the other: CaDiCaL at 4,800
 DRAT proof, drat-trim at 7,200 s; the second case starts only if 7,000 s have not yet passed (else
 it is SKIPPED, not failed). Shards a-h are the pilot; i-o follow by the rule in m129-predictions.md.
 
+Shard p (added 2026-11-01, run 20261101T140520Z): shard i's second case,
+r3b_t8_B7_o010_c001_t2_m011, was SKIPPED because its first case took 7,074 s. Shard p runs that one
+case alone with the same limits; nothing else changes. (Result: VERIFIED.)
+
+Shard q (added 2026-11-01, run 20261101T210521Z): shard n's second case,
+r3b_t8_B7_o010_c008_t2_m031, got CaDiCaL's UNSAT answer in 1,424 s with a 1.86 GB proof, but
+drat-trim stopped at its 7,200 s limit ("s TIMEOUT"), so it is DRAT_STOPPED, not certified. Shard q
+runs that one case alone with drat-trim's limit raised to 25,000 s; CaDiCaL's limit and everything
+else are unchanged. It is the last of the 3,876 d = 1 cases without a checked certificate.
+
 Parts:
 
     check     m128_count.json: its 30 missing cases are the 30 below, all d = 1 cases, none among
-              the 3,408 that m110a-j decided; this shard's 2 cases; both programs
+              the 3,408 that m110a-j decided; this shard's cases; both programs
     controls  m113's controls (cert1's three tool controls; the "n" control o007_c008 t2_m012 SAT
               with a model that passes m106's checks)
     cert      this shard's cases, one at a time
     grade     the graded checks (m113.grade_rows)
 
-Usage: python m129.py --part check|controls|cert|grade --shard a..o [--tools DIR] [--out-dir D]
+Usage: python m129.py --part check|controls|cert|grade --shard a..q [--tools DIR] [--out-dir D]
        (m128_count.json and the grade files of m110a-j in the working directory)
 """
 import argparse
@@ -55,9 +65,11 @@ OPEN = [
 N_OPEN = 30
 N_M110 = 3408
 SHARDS = "abcdefghijklmno"
+EXTRA = {"p": ["r3b_t8_B7_o010_c001_t2_m011"], "q": ["r3b_t8_B7_o010_c008_t2_m031"]}
 MODE = "sweep"
 CADICAL_CAP = 4800.0
 DRAT_CAP = 7200
+DRAT_CAP_BY_SHARD = {"q": 25000}
 SECOND_START_BY = 7000          # seconds after the cert part starts
 
 
@@ -67,10 +79,16 @@ def save(out_dir, name, obj):
 
 
 def shard_list(shard, items):
-    """Items k and k + 15 for shard number k."""
+    """Items k and k + 15 for shard number k; an EXTRA shard lists its own cases."""
+    if shard in EXTRA:
+        return [x for x in EXTRA[shard] if x in items]
     i = SHARDS.index(shard)
     half = len(SHARDS)
     return [items[i], items[i + half]] if i + half < len(items) else items[i:i + 1]
+
+
+def drat_cap(shard):
+    return DRAT_CAP_BY_SHARD.get(shard, DRAT_CAP)
 
 
 def m128_missing(src="."):
@@ -94,12 +112,14 @@ def run_check(shard, tools, out_dir):
     g["m110_3408"] = len(decided) == N_M110
     g["disjoint_from_m110"] = not set(OPEN) & decided
     mine = [[x, MODE] for x in shard_list(shard, OPEN)]
-    g["shard_size"] = len(mine) == 2
+    g["shard_size"] = len(mine) == (len(EXTRA[shard]) if shard in EXTRA else 2)
     g["tools"] = all(os.access(os.path.join(tools, x), os.X_OK) for x in ("cadical", "drat-trim"))
-    save(out_dir, f"m129{shard}_check.json", {"shard": mine, "open": OPEN, "graded": g})
+    save(out_dir, f"m129{shard}_check.json", {"shard": mine, "open": OPEN, "graded": g,
+                                              "drat_cap": drat_cap(shard)})
     bad = sorted(k for k, v in g.items() if not v)
     print(f"SUMMARY check {shard} all_match {not bad} graded {len(g)} failed {bad} "
-          f"{json.dumps({'open': len(OPEN), 'shard': mine}, sort_keys=True)}", flush=True)
+          f"{json.dumps({'open': len(OPEN), 'shard': mine, 'drat_cap': drat_cap(shard)}, sort_keys=True)}",
+          flush=True)
 
 
 def run_controls(shard, tools, out_dir):
@@ -110,7 +130,7 @@ def run_controls(shard, tools, out_dir):
 
 def run_cert(shard, tools, out_dir):
     m113.CADICAL_CAP = CADICAL_CAP
-    m113.DRAT_CAP = {"n": 1200, "sweep": DRAT_CAP}
+    m113.DRAT_CAP = {"n": 1200, "sweep": drat_cap(shard)}
     start = time.time()
     name = f"m129{shard}_cert.json"
     info = m100.load(out_dir, f"m129{shard}_check.json") or {"shard": []}
@@ -148,6 +168,7 @@ def grade(shard, out_dir):
     g.update(rg)
     done = [r for r in rows or [] if "wall_seconds" in r]
     out["wall_seconds_max"] = max((r["wall_seconds"] for r in done), default=None)
+    out["drat_cap"] = drat_cap(shard)
     out["graded"] = g
     return out
 
@@ -155,7 +176,7 @@ def grade(shard, out_dir):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--part", choices=["check", "controls", "cert", "grade"], default="check")
-    ap.add_argument("--shard", choices=list(SHARDS), default="a")
+    ap.add_argument("--shard", choices=list(SHARDS) + sorted(EXTRA), default="a")
     ap.add_argument("--tools", default="tools")
     ap.add_argument("--out-dir", default=".")
     args = ap.parse_args()
