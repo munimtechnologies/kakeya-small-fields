@@ -1,0 +1,76 @@
+[
+ {
+  "instance": "r3b_t8_B7_o008_c003_t3_m031_036",
+  "name": "r3b_t8_B7_o008_c003",
+  "kind": "t3",
+  "maps": [
+   31,
+   36
+  ],
+  "dmeet": 1,
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "mode": "sweep",
+  "clauses": 906081,
+  "vars": 142855,
+  "cnf_sha256": "54d28329192cedf320122f008196efbdf05091898b77524916af9ade1b6d07f4",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 1464.27
+  },
+  "proof_bytes": 782061010,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1326.57,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 110484 of 906081 clauses in core                            ",
+    "c 1493953 of 4542869 lemmas in core using 77004006 resolution steps",
+    "c 0 RAT lemmas in core; 915399 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1326.463 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 2796.43
+ },
+ {
+  "instance": "r3b_t8_B7_o010_c006_t2_m031",
+  "name": "r3b_t8_B7_o010_c006",
+  "kind": "t2",
+  "maps": [
+   0,
+   31
+  ],
+  "dmeet": 1,
+  "inv": 4,
+  "type": "nil3",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "47901f9f3bdd52b72a7241c0cf2d0740518baabb639af517b6623428ee6982f3",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 1436.58
+  },
+  "proof_bytes": 1101632467,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 2120.07,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 99205 of 907113 clauses in core                            ",
+    "c 2365549 of 6291074 lemmas in core using 93978699 resolution steps",
+    "c 0 RAT lemmas in core; 1303022 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 2119.968 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 3562.99
+ }
+]
