@@ -1,0 +1,79 @@
+{
+ "verified": 2,
+ "skipped": [],
+ "not_verified": [],
+ "by_mode": {
+  "sweep": {
+   "VERIFIED": 2
+  }
+ },
+ "by_label": {
+  "t2_m026": {
+   "VERIFIED": 1
+  },
+  "t2_m038": {
+   "VERIFIED": 1
+  }
+ },
+ "cadical": {
+  "n": null,
+  "sweep": {
+   "n": 2,
+   "mean": 902.02,
+   "median": 1084.85,
+   "max": 1084.85
+  }
+ },
+ "drat": {
+  "n": null,
+  "sweep": {
+   "n": 2,
+   "mean": 1326.38,
+   "median": 1595.33,
+   "max": 1595.33
+  }
+ },
+ "largest_proof": 1147981378,
+ "rows": {
+  "r3b_t8_B7_o007_c003_t2_m026": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "x(x2+x+1)",
+   "5090771d22556b6822c333216850beac85b62b4bafd2a863435863b7cbf786e8",
+   1084.85,
+   1595.33
+  ],
+  "r3b_t8_B7_o009_c002_t2_m038": [
+   "VERIFIED",
+   "sweep",
+   4,
+   "nil3",
+   "d3fd0d3bf31f47e2e4346a87f0643c5ecaed48bea9a673de280c2d247889f48f",
+   719.19,
+   1057.43
+  ]
+ },
+ "wall_seconds_max": 2683.48,
+ "graded": {
+  "check_files_loaded": true,
+  "check_open_30": true,
+  "check_matches_m128": true,
+  "check_names_d1": true,
+  "check_m110_3408": true,
+  "check_disjoint_from_m110": true,
+  "check_shard_size": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "all_accounted": true,
+  "no_sat": true,
+  "all_verified": true,
+  "clauses_uniform": true
+ }
+}
