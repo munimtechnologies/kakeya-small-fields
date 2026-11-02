@@ -1,0 +1,25 @@
+{
+ "shard": "b",
+ "case": "r3b_t8_B7_o012_c002_t2_m085",
+ "mode": "sweep",
+ "m130_cert": "UNKNOWN",
+ "info": {
+  "class": "r3b_t8_B7_o012_c002",
+  "kind": "t2"
+ },
+ "caps": {
+  "cadical": 4800.0,
+  "drat": {
+   "n": 1200,
+   "sweep": 25000
+  }
+ },
+ "graded": {
+  "d0_1500": true,
+  "case_is_d0": true,
+  "dmeet0": true,
+  "name_matches": true,
+  "cases_distinct": true,
+  "tools": true
+ }
+}
