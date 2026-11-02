@@ -1,0 +1,115 @@
+{
+ "graded": {
+  "check_d0_classes_nonempty": true,
+  "check_d0_all_dmeet0": true,
+  "check_d0_le4_1500": true,
+  "check_names_unique": true,
+  "check_no_t1": true,
+  "check_disjoint_from_d1": true,
+  "check_pilot_size": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "pilot_all_accounted": true,
+  "no_sat": false,
+  "no_error": true,
+  "unsat_at_n_ge_4": false,
+  "all_unsat_verified": true
+ },
+ "by_cert": {
+  "VERIFIED": 3,
+  "UNKNOWN": 2,
+  "SAT": 1
+ },
+ "n_rows": 6,
+ "unsat": 3,
+ "sat": 1,
+ "cadical_seconds": [
+  3.68,
+  66.79,
+  208.48,
+  291.26,
+  600.07,
+  600.11
+ ],
+ "drat_seconds": [
+  64.19,
+  341.62,
+  452.02
+ ],
+ "largest_proof": 1168257024,
+ "wall_seconds_max": 745.04,
+ "n_classes": 18,
+ "n_cases": 1500,
+ "by_kind": {
+  "t3": 502,
+  "t2": 998
+ },
+ "rows": [
+  [
+   "r3b_t8_B7_o011_c000_t2_m011",
+   "VERIFIED",
+   "UNSAT",
+   291.26,
+   452.02,
+   584347754,
+   546161,
+   94135
+  ],
+  [
+   "r3b_t8_B7_o012_c000_t2_m171",
+   "VERIFIED",
+   "UNSAT",
+   208.48,
+   341.62,
+   473014165,
+   546185,
+   94135
+  ],
+  [
+   "r3b_t8_B7_o012_c002_t2_m085",
+   "UNKNOWN",
+   "UNKNOWN",
+   600.11,
+   null,
+   934014976,
+   546185,
+   94135
+  ],
+  [
+   "r3b_t8_B7_o012_c003_t2_m204",
+   "SAT",
+   "SAT",
+   3.68,
+   null,
+   23147082,
+   546185,
+   94135
+  ],
+  [
+   "r3b_t8_B7_o012_c005_t2_m170",
+   "UNKNOWN",
+   "UNKNOWN",
+   600.07,
+   null,
+   1168257024,
+   546185,
+   94135
+  ],
+  [
+   "r3b_t8_B7_o012_c006_t3_m027_228",
+   "VERIFIED",
+   "UNSAT",
+   66.79,
+   64.19,
+   87335474,
+   545177,
+   93919
+  ]
+ ]
+}
