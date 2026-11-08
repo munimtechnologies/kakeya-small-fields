@@ -1,0 +1,71 @@
+{
+ "shard": 19,
+ "cases": [
+  "r3b_t8_B7_o011_c000_t3_m008_096",
+  "r3b_t8_B7_o011_c001_t3_m003_181",
+  "r3b_t8_B7_o011_c002_t3_m004_034",
+  "r3b_t8_B7_o011_c004_t2_m043",
+  "r3b_t8_B7_o012_c000_t2_m117",
+  "r3b_t8_B7_o012_c000_t3_m065_184",
+  "r3b_t8_B7_o012_c001_t2_m104",
+  "r3b_t8_B7_o012_c001_t2_m199",
+  "r3b_t8_B7_o012_c001_t3_m031_036",
+  "r3b_t8_B7_o012_c002_t2_m062",
+  "r3b_t8_B7_o012_c002_t2_m169",
+  "r3b_t8_B7_o012_c002_t2_m250",
+  "r3b_t8_B7_o012_c002_t3_m114_190",
+  "r3b_t8_B7_o012_c003_t2_m117",
+  "r3b_t8_B7_o012_c003_t2_m215",
+  "r3b_t8_B7_o012_c003_t3_m066_128",
+  "r3b_t8_B7_o012_c004_t2_m110",
+  "r3b_t8_B7_o012_c004_t3_m030_043",
+  "r3b_t8_B7_o012_c005_t2_m101",
+  "r3b_t8_B7_o012_c005_t2_m190",
+  "r3b_t8_B7_o012_c005_t3_m021_047",
+  "r3b_t8_B7_o012_c006_t2_m043",
+  "r3b_t8_B7_o012_c006_t2_m154",
+  "r3b_t8_B7_o012_c006_t2_m239",
+  "r3b_t8_B7_o012_c006_t3_m091_155",
+  "r3b_t8_B7_o012_c007_t2_m176",
+  "r3b_t8_B7_o012_c008_t2_m122",
+  "r3b_t8_B7_o012_c009_t2_m106",
+  "r3b_t8_B7_o012_c010_t3_m094_187"
+ ],
+ "mode": "sweep",
+ "classes": [
+  "r3b_t8_B7_o011_c000",
+  "r3b_t8_B7_o011_c001",
+  "r3b_t8_B7_o011_c002",
+  "r3b_t8_B7_o011_c004",
+  "r3b_t8_B7_o012_c000",
+  "r3b_t8_B7_o012_c001",
+  "r3b_t8_B7_o012_c002",
+  "r3b_t8_B7_o012_c003",
+  "r3b_t8_B7_o012_c004",
+  "r3b_t8_B7_o012_c005",
+  "r3b_t8_B7_o012_c006",
+  "r3b_t8_B7_o012_c007",
+  "r3b_t8_B7_o012_c008",
+  "r3b_t8_B7_o012_c009",
+  "r3b_t8_B7_o012_c010"
+ ],
+ "caps": {
+  "cadical": 1500.0,
+  "drat": {
+   "n": 1200,
+   "sweep": 4000
+  }
+ },
+ "graded": {
+  "d0_1500": true,
+  "pilot_6": true,
+  "done_100": true,
+  "done_in_remaining": true,
+  "census_1394": true,
+  "shard_size": true,
+  "all_d0": true,
+  "none_certified": true,
+  "names_match": true,
+  "tools": true
+ }
+}
