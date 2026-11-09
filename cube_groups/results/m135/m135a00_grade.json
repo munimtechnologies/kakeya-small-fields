@@ -1,0 +1,60 @@
+{
+ "graded": {
+  "check_census_1394": true,
+  "check_scope_known": true,
+  "check_chunk_in_range": true,
+  "check_files_all_published": true,
+  "check_verified_expected": true,
+  "check_mopup_expected": true,
+  "check_hard_expected": true,
+  "check_d0_1500": true,
+  "check_nonempty": true,
+  "check_distinct": true,
+  "check_all_d0": true,
+  "check_names_match": true,
+  "check_none_pilot_or_m132": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "no_error": true,
+  "no_sat": true,
+  "no_solution": true,
+  "all_started": true,
+  "fresh_all_verified": true
+ },
+ "tag": "m135a00",
+ "scope": "a",
+ "mode": "sweep",
+ "done": 8,
+ "rows": 8,
+ "counts": {
+  "VERIFIED": 8
+ },
+ "hard": {},
+ "fresh_done": 8,
+ "fresh_verified": 8,
+ "cadical_unsat_seconds": {
+  "median": 248.07,
+  "max": 470.93,
+  "n": 8
+ },
+ "drat_seconds_max": 476.75,
+ "proof_bytes_max": 522528476,
+ "verified": [
+  "r3b_t8_B7_o012_c003_t3_m084_170",
+  "r3b_t8_B7_o012_c005_t2_m203",
+  "r3b_t8_B7_o012_c006_t2_m066",
+  "r3b_t8_B7_o012_c006_t2_m247",
+  "r3b_t8_B7_o012_c006_t3_m103_188",
+  "r3b_t8_B7_o012_c008_t2_m176",
+  "r3b_t8_B7_o012_c009_t2_m176",
+  "r3b_t8_B7_o012_c011_t2_m066"
+ ],
+ "open": [],
+ "solutions": []
+}

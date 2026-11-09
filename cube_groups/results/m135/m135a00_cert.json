@@ -1,0 +1,338 @@
+[
+ {
+  "instance": "r3b_t8_B7_o012_c003_t3_m084_170",
+  "name": "r3b_t8_B7_o012_c003",
+  "kind": "t3",
+  "maps": [
+   84,
+   170
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "mode": "sweep",
+  "clauses": 906105,
+  "vars": 142855,
+  "cnf_sha256": "f074c59607842d5c389849ff21324bdda959427dfdd74e44740f024b683063d7",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 242.45
+  },
+  "proof_bytes": 382585062,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 335.5,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 76105 of 906105 clauses in core                            ",
+    "c 894436 of 2714522 lemmas in core using 42690684 resolution steps",
+    "c 0 RAT lemmas in core; 456165 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 335.420 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 580.79,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c005_t2_m203",
+  "name": "r3b_t8_B7_o012_c005",
+  "kind": "t2",
+  "maps": [
+   0,
+   203
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "c3a30a02f510a48817e4473a77d6d7e5b7931ec82a3b0ccc4041a6fe35f8c161",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 386.8
+  },
+  "proof_bytes": 509726630,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 375.32,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 79224 of 907113 clauses in core                            ",
+    "c 929494 of 3428190 lemmas in core using 30061758 resolution steps",
+    "c 0 RAT lemmas in core; 406984 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 375.250 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 765.16,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c006_t2_m066",
+  "name": "r3b_t8_B7_o012_c006",
+  "kind": "t2",
+  "maps": [
+   0,
+   66
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "nil3",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "3eea46d7c4334d0446230cb50ae71dee9854b751224017da4993eb81342ead30",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 124.85
+  },
+  "proof_bytes": 194243573,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 118.03,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 37445 of 907113 clauses in core                            ",
+    "c 519772 of 2044502 lemmas in core using 18221944 resolution steps",
+    "c 0 RAT lemmas in core; 179443 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 117.938 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 245.84,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c006_t2_m247",
+  "name": "r3b_t8_B7_o012_c006",
+  "kind": "t2",
+  "maps": [
+   0,
+   247
+  ],
+  "dmeet": 0,
+  "inv": 2,
+  "type": "irr",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "e3b576c69eec46cb717868e576a29975f89dc2482c75021b616be7133a74917f",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 142.74
+  },
+  "proof_bytes": 218292974,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 127.99,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 60100 of 907113 clauses in core                            ",
+    "c 456410 of 2029799 lemmas in core using 12731619 resolution steps",
+    "c 0 RAT lemmas in core; 164632 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 127.915 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 274.2,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c006_t3_m103_188",
+  "name": "r3b_t8_B7_o012_c006",
+  "kind": "t3",
+  "maps": [
+   103,
+   188
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "mode": "sweep",
+  "clauses": 906105,
+  "vars": 142855,
+  "cnf_sha256": "ab6b456eca6f78cfa8fa4f28c31f2f71bf274e93019bd79958c08f7ac878655f",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 253.69
+  },
+  "proof_bytes": 278017843,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 256.92,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 57491 of 906105 clauses in core                            ",
+    "c 630194 of 2325586 lemmas in core using 30532428 resolution steps",
+    "c 0 RAT lemmas in core; 331651 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 256.846 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 513.65,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c008_t2_m176",
+  "name": "r3b_t8_B7_o012_c008",
+  "kind": "t2",
+  "maps": [
+   0,
+   176
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "d06b6fb5f8d942ccbd22e34c563b04516e58282b7760bca499677075e35f5baa",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 440.98
+  },
+  "proof_bytes": 487414125,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 476.75,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 98542 of 907113 clauses in core                            ",
+    "c 1048251 of 3276039 lemmas in core using 39196884 resolution steps",
+    "c 0 RAT lemmas in core; 486899 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 476.664 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 920.93,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "NOT_STARTED"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c009_t2_m176",
+  "name": "r3b_t8_B7_o012_c009",
+  "kind": "t2",
+  "maps": [
+   0,
+   176
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "fb7c8cdc335ce892bd7b3cdf6d5c4c7e1b5d899ff36303fd5115692a5b8e5b55",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 470.93
+  },
+  "proof_bytes": 522528476,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 398.09,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 88177 of 907113 clauses in core                            ",
+    "c 1069405 of 3624073 lemmas in core using 30318140 resolution steps",
+    "c 0 RAT lemmas in core; 423108 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 397.972 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 872.27,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c011_t2_m066",
+  "name": "r3b_t8_B7_o012_c011",
+  "kind": "t2",
+  "maps": [
+   0,
+   66
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "nil3",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "200195a73b6d842367e092f1b9dc4804c4c8a7ac5f8b966e2613b2ec60ef850a",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 221.64
+  },
+  "proof_bytes": 228418253,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 184.75,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 73000 of 907113 clauses in core                            ",
+    "c 542506 of 2053512 lemmas in core using 27904304 resolution steps",
+    "c 0 RAT lemmas in core; 299049 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 184.694 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 410.11,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "MISSING"
+ }
+]

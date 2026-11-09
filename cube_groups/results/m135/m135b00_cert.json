@@ -1,0 +1,86 @@
+[
+ {
+  "instance": "r3b_t8_B7_o012_c003_t2_m227",
+  "name": "r3b_t8_B7_o012_c003",
+  "kind": "t2",
+  "maps": [
+   0,
+   227
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "a4651052510894dea22b93359f5d8574f9fa2fbbd988395371dbf892b46597d1",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 500.94
+  },
+  "proof_bytes": 679986781,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 520.98,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 90179 of 907113 clauses in core                            ",
+    "c 1202516 of 4228551 lemmas in core using 44083638 resolution steps",
+    "c 0 RAT lemmas in core; 567052 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 520.896 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 1025.68,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "UNKNOWN"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c006_t2_m248",
+  "name": "r3b_t8_B7_o012_c006",
+  "kind": "t2",
+  "maps": [
+   0,
+   248
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "fd36b6c85a93d6d5d6192d36349c05820b00ce2fb2a5e99d2b352076a5542a01",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 381.79
+  },
+  "proof_bytes": 640420229,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 384.84,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 95045 of 907113 clauses in core                            ",
+    "c 1279404 of 4147175 lemmas in core using 38460772 resolution steps",
+    "c 0 RAT lemmas in core; 533798 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 384.745 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 769.43,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "NOT_STARTED"
+ }
+]
