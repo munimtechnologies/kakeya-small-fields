@@ -12,9 +12,10 @@ m134's mop-up caps (CaDiCaL 4,000 s, drat-trim 6,000 s, 10,000 s for a DRAT_STOP
 new case after 12,000 s.
 
 Scope "a" (a141): m133 shards 22, 23 and 24 and m134 part k25p0 (shard 25, third 0).
+Scope "b" (a143): m134 parts k25p1 and k25p2 (shard 25, thirds 1 and 2).
 
 Usage:
-    python m135.py --step check|controls|cert|grade --scope a --chunk C [--tools DIR] [--out-dir D]
+    python m135.py --step check|controls|cert|grade --scope a|b --chunk C [--tools DIR] [--out-dir D]
 """
 import argparse
 import json
@@ -42,6 +43,14 @@ SCOPES = {
         "expect_mopup": 22,         # 6 + 0 + 11 + 5
         "expect_hard": 0,
         "nchunk": 3,
+    },
+    "b": {
+        "m133_shards": [],
+        "parts": [(25, 1), (25, 2)],
+        "expect_verified": 14,      # 8 (k25p1, a142) + 6 (k25p2, a143)
+        "expect_mopup": 5,          # 2 + 3
+        "expect_hard": 3,           # k25p1: 1 UNKNOWN + 1 DRAT_STOPPED; k25p2: 1 UNKNOWN
+        "nchunk": 3,                # 2, 2 and 1 cases: no chunk holds two worst-case hard cases
     },
 }
 
