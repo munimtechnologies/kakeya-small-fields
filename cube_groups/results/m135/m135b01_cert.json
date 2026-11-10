@@ -1,0 +1,86 @@
+[
+ {
+  "instance": "r3b_t8_B7_o012_c007_t3_m007_179",
+  "name": "r3b_t8_B7_o012_c007",
+  "kind": "t3",
+  "maps": [
+   7,
+   179
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "F2xF4",
+  "mode": "sweep",
+  "clauses": 906105,
+  "vars": 142855,
+  "cnf_sha256": "7e525adff5f92d41f22b420973c6e2e71a89d2f82236be8b8aed5e5645c62233",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 520.71
+  },
+  "proof_bytes": 543962645,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1071.53,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 103693 of 906105 clauses in core                            ",
+    "c 1319261 of 3664280 lemmas in core using 51028245 resolution steps",
+    "c 0 RAT lemmas in core; 704676 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1071.421 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 1595.52,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 10000
+  },
+  "before": "DRAT_STOPPED"
+ },
+ {
+  "instance": "r3b_t8_B7_o012_c008_t3_m002_132",
+  "name": "r3b_t8_B7_o012_c008",
+  "kind": "t3",
+  "maps": [
+   2,
+   132
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "F2[x]/x3",
+  "mode": "sweep",
+  "clauses": 906105,
+  "vars": 142855,
+  "cnf_sha256": "b9474fe262ac49ecf884852dd687843f40c674780f23edbe9a240f5341552520",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 785.39
+  },
+  "proof_bytes": 451571936,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 580.82,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 91374 of 906105 clauses in core                            ",
+    "c 1038019 of 3197743 lemmas in core using 56842142 resolution steps",
+    "c 0 RAT lemmas in core; 709133 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 580.743 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 1370.02,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "NOT_STARTED"
+ }
+]
