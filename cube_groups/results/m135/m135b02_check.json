@@ -1,0 +1,50 @@
+{
+ "tag": "m135b02",
+ "scope": "b",
+ "mode": "sweep",
+ "chunk": 2,
+ "nchunk": 3,
+ "sources": [
+  "m134k25p1",
+  "m134k25p2"
+ ],
+ "verified_published": 14,
+ "missing_files": [],
+ "mopup_total": 5,
+ "hard_total": 3,
+ "status": {
+  "r3b_t8_B7_o012_c011_t2_m069": "UNKNOWN"
+ },
+ "all_mopup": [
+  "r3b_t8_B7_o012_c003_t2_m227",
+  "r3b_t8_B7_o012_c007_t3_m007_179",
+  "r3b_t8_B7_o012_c011_t2_m069",
+  "r3b_t8_B7_o012_c006_t2_m248",
+  "r3b_t8_B7_o012_c008_t3_m002_132"
+ ],
+ "caps": {
+  "cadical": 4000.0,
+  "drat": 6000,
+  "drat_if_drat_stopped": 10000,
+  "no_start_after": 12000
+ },
+ "cases": [
+  "r3b_t8_B7_o012_c011_t2_m069"
+ ],
+ "graded": {
+  "census_1394": true,
+  "scope_known": true,
+  "chunk_in_range": true,
+  "files_all_published": true,
+  "verified_expected": true,
+  "mopup_expected": true,
+  "hard_expected": true,
+  "d0_1500": true,
+  "nonempty": true,
+  "distinct": true,
+  "all_d0": true,
+  "names_match": true,
+  "none_pilot_or_m132": true,
+  "tools": true
+ }
+}

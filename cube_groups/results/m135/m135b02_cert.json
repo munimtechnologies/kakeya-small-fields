@@ -1,0 +1,44 @@
+[
+ {
+  "instance": "r3b_t8_B7_o012_c011_t2_m069",
+  "name": "r3b_t8_B7_o012_c011",
+  "kind": "t2",
+  "maps": [
+   0,
+   69
+  ],
+  "dmeet": 0,
+  "inv": 4,
+  "type": "x(x2+x+1)",
+  "mode": "sweep",
+  "clauses": 907113,
+  "vars": 143071,
+  "cnf_sha256": "3188d89c28b8e14fa655d2c8459f91dc06d4dac9fb29ac2ffc345aa9cc62007e",
+  "cadical": {
+   "status": "UNSAT",
+   "rc": 20,
+   "seconds": 894.91
+  },
+  "proof_bytes": 1008395643,
+  "drat": {
+   "verified": true,
+   "rc": 0,
+   "seconds": 1287.78,
+   "tail": [
+    "c detected empty clause; start verification via backward checking",
+    "c 108873 of 907113 clauses in core                            ",
+    "c 2243239 of 5558223 lemmas in core using 79159523 resolution steps",
+    "c 0 RAT lemmas in core; 1380388 redundant literals in core lemmas",
+    "s VERIFIED",
+    "c verification time: 1287.625 seconds"
+   ]
+  },
+  "cert": "VERIFIED",
+  "wall_seconds": 2185.92,
+  "caps": {
+   "cadical": 4000.0,
+   "drat": 6000
+  },
+  "before": "UNKNOWN"
+ }
+]

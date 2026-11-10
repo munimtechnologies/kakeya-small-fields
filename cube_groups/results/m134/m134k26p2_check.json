@@ -1,0 +1,36 @@
+{
+ "src": "part",
+ "tag": "m134k26p2",
+ "mode": "sweep",
+ "shard": 26,
+ "third": 2,
+ "caps": {
+  "cadical": 1500.0,
+  "drat": 4000,
+  "no_start_after": 12000
+ },
+ "cases": [
+  "r3b_t8_B7_o011_c002_t3_m016_069",
+  "r3b_t8_B7_o012_c000_t3_m086_130",
+  "r3b_t8_B7_o012_c001_t3_m064_136",
+  "r3b_t8_B7_o012_c002_t3_m005_178",
+  "r3b_t8_B7_o012_c003_t2_m229",
+  "r3b_t8_B7_o012_c004_t3_m075_145",
+  "r3b_t8_B7_o012_c005_t3_m054_220",
+  "r3b_t8_B7_o012_c006_t2_m249",
+  "r3b_t8_B7_o012_c008_t3_m003_181"
+ ],
+ "graded": {
+  "census_1394": true,
+  "shard_in_range": true,
+  "third_in_range": true,
+  "shard_size_29": true,
+  "d0_1500": true,
+  "nonempty": true,
+  "distinct": true,
+  "all_d0": true,
+  "names_match": true,
+  "none_pilot_or_m132": true,
+  "tools": true
+ }
+}

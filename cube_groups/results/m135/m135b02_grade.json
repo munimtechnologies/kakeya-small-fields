@@ -1,0 +1,58 @@
+{
+ "graded": {
+  "check_census_1394": true,
+  "check_scope_known": true,
+  "check_chunk_in_range": true,
+  "check_files_all_published": true,
+  "check_verified_expected": true,
+  "check_mopup_expected": true,
+  "check_hard_expected": true,
+  "check_d0_1500": true,
+  "check_nonempty": true,
+  "check_distinct": true,
+  "check_all_d0": true,
+  "check_names_match": true,
+  "check_none_pilot_or_m132": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "no_error": true,
+  "no_sat": true,
+  "no_solution": true,
+  "all_started": true,
+  "fresh_all_verified": true
+ },
+ "tag": "m135b02",
+ "scope": "b",
+ "mode": "sweep",
+ "done": 1,
+ "rows": 1,
+ "counts": {
+  "VERIFIED": 1
+ },
+ "hard": {
+  "r3b_t8_B7_o012_c011_t2_m069": {
+   "before": "UNKNOWN",
+   "now": "VERIFIED"
+  }
+ },
+ "fresh_done": 0,
+ "fresh_verified": 0,
+ "cadical_unsat_seconds": {
+  "median": 894.91,
+  "max": 894.91,
+  "n": 1
+ },
+ "drat_seconds_max": 1287.78,
+ "proof_bytes_max": 1008395643,
+ "verified": [
+  "r3b_t8_B7_o012_c011_t2_m069"
+ ],
+ "open": [],
+ "solutions": []
+}
