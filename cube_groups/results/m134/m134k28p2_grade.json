@@ -1,0 +1,58 @@
+{
+ "graded": {
+  "check_census_1394": true,
+  "check_shard_in_range": true,
+  "check_third_in_range": true,
+  "check_shard_size_29": true,
+  "check_d0_1500": true,
+  "check_nonempty": true,
+  "check_distinct": true,
+  "check_all_d0": true,
+  "check_names_match": true,
+  "check_none_pilot_or_m132": true,
+  "check_tools": true,
+  "controls_control_php65_verified": true,
+  "controls_control_empty_proof_rejected": true,
+  "controls_control_php55_sat": true,
+  "controls_control_n_sat": true,
+  "controls_control_n_model": true,
+  "controls_control_n_d1": true,
+  "cert_ran": true,
+  "no_error": true,
+  "no_sat": true,
+  "no_solution": true,
+  "all_started": true,
+  "fresh_all_verified": true
+ },
+ "tag": "m134k28p2",
+ "src": "part",
+ "mode": "sweep",
+ "done": 9,
+ "rows": 9,
+ "counts": {
+  "VERIFIED": 9
+ },
+ "hard": {},
+ "fresh_done": 9,
+ "fresh_verified": 9,
+ "cadical_unsat_seconds": {
+  "median": 341.74,
+  "max": 531.26,
+  "n": 9
+ },
+ "drat_seconds_max": 698.04,
+ "proof_bytes_max": 624703234,
+ "verified": [
+  "r3b_t8_B7_o011_c002_t3_m040_092",
+  "r3b_t8_B7_o012_c000_t3_m094_187",
+  "r3b_t8_B7_o012_c001_t3_m071_144",
+  "r3b_t8_B7_o012_c002_t3_m007_179",
+  "r3b_t8_B7_o012_c003_t2_m234",
+  "r3b_t8_B7_o012_c004_t3_m081_154",
+  "r3b_t8_B7_o012_c005_t3_m063_205",
+  "r3b_t8_B7_o012_c006_t2_m253",
+  "r3b_t8_B7_o012_c008_t3_m005_178"
+ ],
+ "open": [],
+ "solutions": []
+}
