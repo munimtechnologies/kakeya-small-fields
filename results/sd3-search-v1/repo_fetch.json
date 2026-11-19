@@ -1,0 +1,18 @@
+{
+ "repo": "munimtechnologies/kakeya-small-fields",
+ "files": {
+  "sd3_local.py": {
+   "sha256": "e531daad68a9a06d6bd63d5f3817b48c7c98d2ae06d4518e9aed7b288600ebda",
+   "bytes": 7134
+  },
+  "sd3_search.py": {
+   "sha256": "29dd663a80d4ec77888e3de1242cd4653d2222f77985dd27c96981196f918045",
+   "bytes": 6455
+  },
+  "test_sd3_local.py": {
+   "sha256": "8ce05441016887f2fed3c002e800fd1e59a366c5836397d143337793b598b13e",
+   "bytes": 7935
+  }
+ },
+ "ref": "21eeffa51c2b72f83b8c01b220a910a14594ffee"
+}

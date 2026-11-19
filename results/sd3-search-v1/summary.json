@@ -1,0 +1,66 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "sd3-search-v1",
+ "id": "b8828444833b",
+ "field": "mathematics",
+ "run": "20261119T124430Z-mathematics",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "tango",
+ "image": "python:3.12",
+ "started_at": "2026-11-19T13:59:04.484280+00:00",
+ "finished_at": "2026-11-19T16:22:40.444549+00:00",
+ "duration_seconds": 8615,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 180.0
+ },
+ "peak_memory_gb": 0.01,
+ "network": {
+  "setup": null,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "run-01-python",
+   "cmd": "python get_repo.py . /out/repo_fetch.json sd3_local.py sd3_search.py test_sd3_local.py",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-02-python",
+   "cmd": "python -m unittest -v test_sd3_local",
+   "exit": 0,
+   "seconds": 1
+  },
+  {
+   "step": "run-03-python",
+   "cmd": "python sd3_search.py --N 2 --minutes 50 --seed 1 --out /out/sd3_n2.json",
+   "exit": 0,
+   "seconds": 3000
+  },
+  {
+   "step": "run-04-python",
+   "cmd": "python sd3_search.py --N 3 --minutes 90 --seed 2 --out /out/sd3_n3.json",
+   "exit": 0,
+   "seconds": 5401
+  }
+ ],
+ "out_files": [
+  "repo_fetch.json",
+  "sd3_n2.json",
+  "sd3_n3.json"
+ ],
+ "out_files_total": 3,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-04-python stdout] {\"N\": 3, \"maps_tried\": 162567, \"kinds\": {\"random\": 64838, \"quadratic\": 48833, \"perturbed\": 48896}, \"max_F\": 8.881784197001252e-16, \"max_R_avg_nondegenerate\": 1.7259824578787195, \"counterexample\": false}\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261119T124430Z-mathematics\\compete\\sd3-search-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-sd3-search, kept for later jobs)"
+ },
+ "note": ""
+}
