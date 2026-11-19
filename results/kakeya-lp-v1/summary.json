@@ -1,0 +1,15 @@
+{
+ "selftest": {
+  "kt_base_value": 0.5454545454545454,
+  "kt_base_exact": "6/11",
+  "kt_base_checked": "6/11"
+ },
+ "lps_solved": 4524,
+ "skipped": 0,
+ "invalid": 0,
+ "best_value": 0.5454545454545455,
+ "best_tag": "kt-cross1-u",
+ "kt_bound": 0.5454545454545454,
+ "hits_checked": [],
+ "uniform_gain": []
+}
