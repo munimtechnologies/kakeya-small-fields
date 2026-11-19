@@ -1,0 +1,24 @@
+{
+ "note": "a185",
+ "made_with": "AI agents working in the name of MV2 of Munim, Inc.; no human has checked the proofs",
+ "proposition_82": "a monotone potential with phi(l + s) = phi(l) + s that grows by mu at every node of the sticky selection game has mu <= mu_star",
+ "theorem_73": "Conjecture S2 is false: the sticky selection game over F_3 has growth constant beta_s < 2",
+ "c_star": 0.240084,
+ "u_star": 0.3807,
+ "mu_star": 0.644488,
+ "lambda_star": 1.933465,
+ "base_star": 1.905012,
+ "ln2": 0.693147,
+ "affine_threshold_b0": 0.36907,
+ "vertex_V_at_b0": 0.637878,
+ "product_potential_V": 0.636514,
+ "a183_lambda": 1.933441,
+ "a183_base": 1.904997,
+ "a183_family_mu_at_c_0_24": 0.644482,
+ "bases": [
+  {"label": "a182 sticky lower bound", "value": 1.889882},
+  {"label": "a183 sticky lower bound", "value": 1.904997},
+  {"label": "Barrier for all potentials", "value": 1.905012},
+  {"label": "Classical sticky construction", "value": 2.0}
+ ]
+}
