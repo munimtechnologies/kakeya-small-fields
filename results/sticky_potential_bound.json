@@ -1,0 +1,35 @@
+{
+ "theorem": "a183 Theorem 72: every sticky Kakeya set in F_3^n has |K| >= exp(lambda n / 3) - 1",
+ "potential": "phi_c(v) = (1 + c) sum_t log v_t - 3 c max_t log v_t",
+ "c": 0.24,
+ "u": 0.38,
+ "affine_rate": 1.933557628,
+ "triangle_rate": 1.933440596,
+ "lambda": 1.933440596,
+ "log_27_over_4": 1.909542505,
+ "gain_over_entropy_bound": 0.023898092,
+ "base_new_sticky_lower": 1.904996552,
+ "bases": [
+  {
+   "label": "All Kakeya sets, best lower bound (a180)",
+   "value": 1.82074
+  },
+  {
+   "label": "Smallest known Kakeya sets (KLSS upper bound)",
+   "value": 1.889882
+  },
+  {
+   "label": "Sticky sets, earlier lower bound (a182)",
+   "value": 1.889882
+  },
+  {
+   "label": "Sticky sets, new lower bound (a183)",
+   "value": 1.904997
+  },
+  {
+   "label": "Best sticky construction",
+   "value": 2.0
+  }
+ ],
+ "made_with": "AI agents working in the name of MV2 of Munim, Inc.; no human has checked the proof"
+}
