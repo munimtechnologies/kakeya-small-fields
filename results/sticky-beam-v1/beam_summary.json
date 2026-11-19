@@ -1,0 +1,144 @@
+{
+ "job": "sticky-beam-v1",
+ "made_with": "AI agents working in MV2's name; no human has checked this",
+ "config": {
+  "kmax": 10,
+  "cands": 40000,
+  "cap": 1500,
+  "per_beta": 3,
+  "top_prod": 16,
+  "translates": 1,
+  "trans_bases": 24,
+  "local_top": 12,
+  "local_tries": 150,
+  "passes": 2,
+  "exhaust": 200000,
+  "max_hits": 5
+ },
+ "restarts": 38,
+ "per_height": {
+  "1": {
+   "best_product": 8,
+   "eight_to_k": 8,
+   "best_sizes": [
+    2,
+    2,
+    2
+   ],
+   "evaluations": 5832,
+   "bases_kept": 9,
+   "seed": 20261119
+  },
+  "2": {
+   "best_product": 64,
+   "eight_to_k": 64,
+   "best_sizes": [
+    4,
+    4,
+    4
+   ],
+   "evaluations": 51457,
+   "bases_kept": 22,
+   "seed": 20261119
+  },
+  "3": {
+   "best_product": 512,
+   "eight_to_k": 512,
+   "best_sizes": [
+    8,
+    8,
+    8
+   ],
+   "evaluations": 51470,
+   "bases_kept": 26,
+   "seed": 20261119
+  },
+  "4": {
+   "best_product": 4096,
+   "eight_to_k": 4096,
+   "best_sizes": [
+    16,
+    16,
+    16
+   ],
+   "evaluations": 51474,
+   "bases_kept": 26,
+   "seed": 20261119
+  },
+  "5": {
+   "best_product": 32768,
+   "eight_to_k": 32768,
+   "best_sizes": [
+    32,
+    32,
+    32
+   ],
+   "evaluations": 51474,
+   "bases_kept": 24,
+   "seed": 20261119
+  },
+  "6": {
+   "best_product": 262144,
+   "eight_to_k": 262144,
+   "best_sizes": [
+    64,
+    64,
+    64
+   ],
+   "evaluations": 51472,
+   "bases_kept": 24,
+   "seed": 20261119
+  },
+  "7": {
+   "best_product": 2097152,
+   "eight_to_k": 2097152,
+   "best_sizes": [
+    128,
+    128,
+    128
+   ],
+   "evaluations": 51472,
+   "bases_kept": 24,
+   "seed": 20261119
+  },
+  "8": {
+   "best_product": 16777216,
+   "eight_to_k": 16777216,
+   "best_sizes": [
+    256,
+    256,
+    256
+   ],
+   "evaluations": 51472,
+   "bases_kept": 24,
+   "seed": 20261119
+  },
+  "9": {
+   "best_product": 134217728,
+   "eight_to_k": 134217728,
+   "best_sizes": [
+    512,
+    512,
+    512
+   ],
+   "evaluations": 51472,
+   "bases_kept": 25,
+   "seed": 20261119
+  },
+  "10": {
+   "best_product": 1073741824,
+   "eight_to_k": 1073741824,
+   "best_sizes": [
+    1024,
+    1024,
+    1024
+   ],
+   "evaluations": 51473,
+   "bases_kept": 26,
+   "seed": 20261119
+  }
+ },
+ "hits": [],
+ "verified_hit": false,
+ "outcome": "S7-NONE"
+}
