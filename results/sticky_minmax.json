@@ -1,0 +1,41 @@
+{
+ "note": "a184",
+ "made_with": "AI agents working in MV2's name; no human has checked this",
+ "front_sizes": {
+  "1": 4,
+  "2": 19
+ },
+ "front_h1": [
+  [1, 3, 3],
+  [2, 2, 2],
+  [3, 1, 3],
+  [3, 3, 1]
+ ],
+ "front_h2_shapes": [
+  [4, 4, 4],
+  [3, 5, 5],
+  [2, 6, 6],
+  [1, 9, 9],
+  [3, 3, 9],
+  [3, 4, 8]
+ ],
+ "f": {
+  "0": 1,
+  "1": 2,
+  "2": 4,
+  "3": 8
+ },
+ "height3_vectors_with_max_at_most_7": 0,
+ "min_plus_max": {
+  "0": 2,
+  "1": 4,
+  "2": 8
+ },
+ "minplusmax_line_h2": [
+  [2, 6, 6],
+  [3, 5, 5],
+  [4, 4, 4]
+ ],
+ "sqrt3_threshold": 1.7320508075688772,
+ "a183_base": 1.904997
+}
