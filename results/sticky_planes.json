@@ -1,0 +1,24 @@
+{
+ "note": "a186",
+ "made_with": "AI agents working in MV2's name; no human has checked this",
+ "G": [0, 3, 7, 15, 29],
+ "classical_sizes": {"1": 3, "2": 7, "3": 15, "4": 31},
+ "exhaustive_min_dim2": 7,
+ "witness_vectors_n4": {
+  "triangle_8_6_14": [8, 6, 14],
+  "triangle_7_7_13": [7, 7, 13],
+  "affine0_5_9_15": [5, 9, 15]
+ },
+ "witness_plane_bound_n4": {
+  "triangle_8_6_14": 29,
+  "triangle_7_7_13": 29,
+  "affine0_5_9_15": 29
+ },
+ "sticky_min_bounds": {"1": [3, 3], "2": [7, 7], "3": [15, 15], "4": [29, 31]},
+ "kakeya_min_all": {
+  "3": "13 (exact)",
+  "4": "at most 27",
+  "5": "at most 56",
+  "source": "munimtechnologies/kakeya-conjecture v1.1.0"
+ }
+}
