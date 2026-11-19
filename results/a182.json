@@ -1,0 +1,30 @@
+{
+ "note": "a182",
+ "author": "MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. No human mathematician has checked this.",
+ "licence": "CC BY 4.0",
+ "R0": 1.7259825,
+ "C3": 1.2618595,
+ "C_TRI": 0.7381405,
+ "u_star": 2.818842,
+ "M_at_u_star": -0.118154,
+ "u1": 9.703,
+ "a1": 0.08545,
+ "triangle_maps_of_F3": 18,
+ "affine_maps_of_F3": 9,
+ "reducible_maps_F3_2": 2121471,
+ "all_maps_F3_2": 387420489,
+ "reducible_fraction_F3_2": 0.00547589,
+ "kakeya_bases": [
+  {"name": "general_lower_a180", "value": 1.82074, "source": "a180, Theorem 68: 3^(6/11)"},
+  {"name": "general_lower_with_farnamfar", "value": 1.824918, "source": "a180 route with Farnamfar's unrefereed constant 1.8263483657"},
+  {"name": "general_upper_klss", "value": 1.889882, "source": "Kopparty-Lev-Saraf-Sudan: (27/4)^(1/3)"},
+  {"name": "sticky_lower_a182", "value": 1.889882, "source": "a182, Corollary 71.3: 3^(1/R0) = (27/4)^(1/3)"},
+  {"name": "sticky_upper_binary", "value": 2.0, "source": "{0,1}^n union {0,2}^n, size 2^(n+1) - 1, triangular"}
+ ],
+ "sum_difference_constants": [
+  {"name": "ruzsa_R0_exact_for_triangular_F3", "value": 1.7259825, "source": "a182, Theorems 70-71: exact constant for triangular configurations in F_3^N"},
+  {"name": "lemm_reals_lower", "value": 1.77898, "source": "Lemm 2015, over the reals"},
+  {"name": "farnamfar_upper", "value": 1.8263483657, "source": "Farnamfar, arXiv:2611.19594 (unrefereed), groups without 2-torsion"},
+  {"name": "katz_tao_upper", "value": 1.8333333, "source": "Katz-Tao 1999: 11/6"}
+ ]
+}
