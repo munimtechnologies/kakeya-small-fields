@@ -1,0 +1,52 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "sdz-search-v1",
+ "id": "1a5929ace553",
+ "field": "mathematics",
+ "run": "20261119T164414Z-mathematics",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "tango",
+ "image": "python:3.12",
+ "started_at": "2026-11-19T23:30:46.345920+00:00",
+ "finished_at": "2026-11-20T00:27:26.975249+00:00",
+ "duration_seconds": 3400,
+ "limits": {
+  "cpu": 1.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 150.0
+ },
+ "peak_memory_gb": 0.01,
+ "network": {
+  "setup": null,
+  "run": false
+ },
+ "steps": [
+  {
+   "step": "run-01-python",
+   "cmd": "python -m unittest -v test_sdz",
+   "exit": 0,
+   "seconds": 0
+  },
+  {
+   "step": "run-02-python",
+   "cmd": "python sdz.py --out /out/sdz.json --minutes-2d 40 --minutes-1d 15 --seed 1",
+   "exit": 0,
+   "seconds": 3326
+  }
+ ],
+ "out_files": [
+  "sdz.json"
+ ],
+ "out_files_total": 1,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-02-python stdout]  1.7784978531, |support| 14\n[ 2785.9s]   anneal 23507 steps, 15318 accepted, cur 1.7783337880, best 1.7784978531, |support| 13\n[ 2845.9s]   anneal 27358 steps, 17525 accepted, cur 1.7784978531, best 1.7784978531, |support| 14\n[ 2905.9s]   anneal 31210 steps, 19678 accepted, cur 1.7784978531, best 1.7784978531, |support| 14\n[ 2965.9s]   anneal 35065 steps, 21844 accepted, cur 1.7784978531, best 1.7784978531, |support| 12\n[ 3025.9s]   anneal 38911 steps, 23970 accepted, cur 1.7784978531, best 1.7784978531, |support| 13\n[ 3085.9s]   anneal 42673 steps, 26021 accepted, cur 1.7784973245, best 1.7784978531, |support| 13\n[ 3145.9s]   anneal 46487 steps, 28121 accepted, cur 1.7784973245, best 1.7784978531, |support| 14\n[ 3205.9s]   anneal 50135 steps, 30147 accepted, cur 1.7784973245, best 1.7784978531, |support| 13\n[ 3265.9s]   anneal 54020 steps, 32290 accepted, cur 1.7784978531, best 1.7784978531, |support| 13\n[ 3325.9s]   anneal 57917 steps, 34347 accepted, cur 1.7784978531, best 1.7784978531, |support| 12\n[ 3326.5s] E4 done: 57917 steps, best verified alpha_s 1.7789813590091999681554234977980342845634759596061 on 7 points\n[ 3326.5s] GRADE NO_GAIN best 1.778988827373 (E2 -2..6 random0)\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261119T164414Z-mathematics\\compete\\sdz-search-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-sdz-search, kept for later jobs)"
+ },
+ "note": ""
+}

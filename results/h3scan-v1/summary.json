@@ -1,0 +1,53 @@
+{
+ "contract": "mv2-compete-result-v1",
+ "name": "h3scan-v1",
+ "id": "8630b283adea",
+ "field": "mathematics",
+ "run": "20261119T141527Z-mathematics",
+ "kind": "compete",
+ "status": "ok",
+ "reason": "",
+ "host": "tango",
+ "image": "python:3.12",
+ "started_at": "2026-11-19T23:16:04.822543+00:00",
+ "finished_at": "2026-11-19T23:23:33.391588+00:00",
+ "duration_seconds": 448,
+ "limits": {
+  "cpu": 2.0,
+  "memory_gb": 1.0,
+  "timeout_minutes": 175.0
+ },
+ "peak_memory_gb": 0.06,
+ "network": {
+  "setup": null,
+  "run": true
+ },
+ "steps": [
+  {
+   "step": "run-01-python",
+   "cmd": "python -m unittest -v test_h3scan",
+   "exit": 0,
+   "seconds": 3
+  },
+  {
+   "step": "run-02-python",
+   "cmd": "python run_h3scan.py --out /out/h3scan.json --workers 2 --budget-minutes 150",
+   "exit": 0,
+   "seconds": 355
+  }
+ ],
+ "out_files": [
+  "h3scan.json",
+  "h3scan_bin"
+ ],
+ "out_files_total": 2,
+ "out_skipped": [],
+ "upload_skipped": [],
+ "summary_tail": "[run-02-python stdout] ['quad', 2, 0, 0, 0, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 48, 'near': 0} 37.5 s\nquadratic ['quad', 0, 1, 0, 0, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.2 s\nquadratic ['quad', 0, 1, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 8, 'near': 0} 37.1 s\nquadratic ['quad', 1, 1, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.3 s\nquadratic ['quad', 2, 1, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.2 s\nquadratic ['quad', 0, 2, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.3 s\nquadratic ['quad', 1, 2, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.5 s\nquadratic ['quad', 2, 2, 0, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 39.0 s\nquadratic ['quad', 0, 0, 1, 1, 0, 0, 0, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 39.4 s\nquadratic ['quad', 0, 1, 1, 1, 1, 0, 1, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.6 s\nquadratic ['quad', 1, 1, 1, 1, 1, 0, 1, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 36.9 s\nquadratic ['quad', 2, 2, 1, 1, 1, 0, 1, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 37.0 s\nquadratic ['quad', 2, 1, 2, 1, 1, 0, 1, 0, 0] ok {'above': 0, 'equal': 0, 'near': 0} 36.6 s\nGRADE NO_GAIN\n",
+ "paths": {
+  "workdir": "/work (copy of E:\\MV2-Pursuit\\work\\20261119T141527Z-mathematics\\compete\\h3scan-v1)",
+  "out": "/out -> out/",
+  "data": "/data (docker volume mv2c-data-h3scan, kept for later jobs)"
+ },
+ "note": ""
+}
