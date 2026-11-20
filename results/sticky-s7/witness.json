@@ -1,0 +1,66 @@
+{
+ "note": "a196",
+ "made_with": "AI agents working in MV2's name; no human mathematician has checked this",
+ "claim": "An explicit full sticky tree G of height 5 over F_3 has three slices of 31 points each, so its slice product is 29791 < 8^5 = 32768; by Corollary 78.1 sticky Kakeya sets over F_3 grow with base at most 31^(1/5) < 1.98735 (question S7 holds).",
+ "checked_by": "test_sticky_s7.py recomputes every value below by brute force from sticky_s7.py",
+ "A": {
+  "height": 3,
+  "map": "P(d1, d2, d3) = (d1^2, -d1 d2, 0)",
+  "slice_sizes": [4, 12, 12],
+  "S1_equals_S2": true,
+  "slices": [
+   [[0,0,0],[1,0,0],[1,1,0],[1,2,0]],
+   [[0,0,0],[0,0,1],[0,0,2],[0,1,0],[0,1,1],[0,1,2],[0,2,0],[0,2,1],[0,2,2],[2,0,0],[2,0,1],[2,0,2]],
+   [[0,0,0],[0,0,1],[0,0,2],[0,1,0],[0,1,1],[0,1,2],[0,2,0],[0,2,1],[0,2,2],[2,0,0],[2,0,1],[2,0,2]]
+  ]
+ },
+ "B": {
+  "height": 3,
+  "map": "note a187: P(e) = (e1^2, child_{e1}(e2, e3)) with Y(f) = (-f1, 0), X(f) = (1, -f2), Z(f) = (f1^2, -f1 f2) under e1 = 0, 1, 2",
+  "slice_sizes": [7, 7, 13],
+  "slices": [
+   [[0,0,0],[0,1,0],[0,2,0],[1,0,0],[1,1,0],[1,1,1],[1,1,2]],
+   [[0,0,0],[0,0,1],[0,0,2],[0,2,0],[2,0,0],[2,1,0],[2,2,0]],
+   [[0,0,0],[0,0,1],[0,0,2],[0,1,0],[0,1,1],[0,1,2],[0,2,0],[0,2,1],[0,2,2],[2,0,0],[2,0,1],[2,0,2],[2,2,0]]
+  ]
+ },
+ "C": {
+  "height": 3,
+  "map": "C(e) = B(-e)",
+  "slice_sizes": [7, 13, 7],
+  "slices_are_B_0_B_2_B_1": true
+ },
+ "A1_union_A2_subset_B2": true,
+ "H": {
+  "height": 4,
+  "map": "P(d) = (d1^2, R_{d1}(d2, d3, d4)) with R_0 = A, R_1 = B, R_2 = C",
+  "slice_sizes": [11, 20, 20],
+  "S1_equals_S2": true,
+  "kappa": 31
+ },
+ "G": {
+  "height": 5,
+  "map": "P(x, d) = (x^2, K_x(d)) with K_0 = H, K_1 = H(d) + 2d, K_2 = H(d) + d (cyclic triangle, Proposition 89 with i = 0, w = 0)",
+  "slice_sizes": [31, 31, 31],
+  "S1_equals_S2": true,
+  "product": 29791
+ },
+ "eight_to_5": 32768,
+ "classical_height5_product": 32768,
+ "base_upper_bound": 1.98734,
+ "kakeya_F3_6_from_G_is_kakeya": true,
+ "context_growth_bases": {
+  "note": "growth bases beta with |K| = beta^(n + o(n)); sources in notes/a196.md",
+  "sticky_lower_bound_a183": 1.90499,
+  "sticky_upper_bound_a196": 1.98734,
+  "sticky_classical_construction": 2.0,
+  "general_kakeya_upper_KLSS": 1.8899,
+  "general_kakeya_lower_KLSS": 1.8
+ },
+ "context_slice_products": {
+  "note": "least slice product of a full sticky tree of height k (pi_k) versus 8^k; heights 3-4 exact (a189, a194), height 5 range from a190 and this note",
+  "eight_to_k": {"3": 512, "4": 4096, "5": 32768},
+  "pi_k_best_known": {"3": 512, "4": 4096, "5": 29791},
+  "pi_5_lower_bound": 27000
+ }
+}
