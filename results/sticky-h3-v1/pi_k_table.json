@@ -1,0 +1,23 @@
+{
+ "about": "Least slice product pi_k of full sticky trees of height k over F_3, against 8^k (classical) and the union-to-max game. Note a194. MV2 of Munim, Inc.; made with AI agents working in MV2's name; no human has checked this. CC BY 4.0.",
+ "rows": [
+  {"k": 1, "pi_k_lower": 8, "pi_k_upper": 8, "game_min": 8, "eight_to_k": 8, "source": "Proposition 83"},
+  {"k": 2, "pi_k_lower": 64, "pi_k_upper": 64, "game_min": 64, "eight_to_k": 64, "source": "Proposition 83"},
+  {"k": 3, "pi_k_lower": 512, "pi_k_upper": 512, "game_min": 512, "eight_to_k": 512, "source": "a189 (Proposition 84), results/sticky-front-v1"},
+  {"k": 4, "pi_k_lower": 4096, "pi_k_upper": 4096, "game_min": 3971, "eight_to_k": 4096, "source": "a194 (Proposition 88), results/sticky-h3-v1/h3.json; game: a190, results/sticky-front-v1"},
+  {"k": 5, "pi_k_lower": 27000, "pi_k_upper": 32768, "game_min": 27000, "eight_to_k": 32768, "source": "a190 (game); upper bound = classical product map"}
+ ],
+ "height4_bounds": {
+  "game_relaxation_a190": 3971,
+  "exact_height3_quadratic_root_min": 4096,
+  "affine_root_lower_bound": 4608,
+  "classical_construction": 4096
+ },
+ "height3_vectors_in_W": {
+  "realised": [[4, 12, 12], [12, 4, 12], [12, 12, 4]],
+  "game_only_not_realised": [[7, 7, 12], [7, 12, 7], [12, 7, 7]],
+  "realised_product": 576,
+  "game_only_product": 588
+ },
+ "search": {"height2_trees": 531441, "C_orbit_reps": 188, "combinations": 46016815, "complete": true, "seconds": 16.6}
+}
