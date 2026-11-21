@@ -1,0 +1,699 @@
+{
+ "job": "sticky-l4-v1",
+ "prereg": "notes/prereg-sticky-l4.md",
+ "made_with": "AI agents working in MV2's name; no human has checked this",
+ "module_sha256": {
+  "sticky_l4.py": "ef6878f9c96809c310e1dca45e6fda64f71e0b0b75ecee667070b6e8b85e909a",
+  "sticky_s7.py": "e4847f25bfdabb8f41d02e446de3c2a1e8475f00ea6d72798f3a274683c0f9aa",
+  "sticky_kexact.py": "261a958951c54d1aebb9595395402f6bd06e3ebd8abcd3c0d013c09f10eb0182",
+  "sticky_h3.py": "de844ff9b822f193cc71e5ec279050bad68bb14dfb0b16eb5bf1cc689580b447",
+  "sticky_h4r.py": "41db7b698c6de911761d013210241783a283150731ad8acb78700d1168001126"
+ },
+ "runs": [
+  {
+   "status": "OPTIMAL",
+   "seconds": 0.2,
+   "time_limit": 600,
+   "cap": null,
+   "bound": 16,
+   "objective": 16,
+   "name": "kappa3",
+   "model": "kappa_cut",
+   "h": 3,
+   "front_size": 19,
+   "hint_value": null,
+   "verified_value": 16,
+   "triangle_height": 4,
+   "triangle_slices": [
+    16,
+    16,
+    16
+   ],
+   "sticky": true,
+   "root": [
+    2,
+    0,
+    0
+   ],
+   "children_slices": [
+    [
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     4,
+     4
+    ]
+   ],
+   "slice_sizes": [
+    8,
+    8,
+    8
+   ],
+   "front_cut_ok": true,
+   "verified_ok": true,
+   "base_bound": 2.0,
+   "maps": {
+    "root": [
+     2,
+     0,
+     0
+    ],
+    "0": [
+     1,
+     0,
+     0
+    ],
+    "00": [
+     0,
+     1,
+     1
+    ],
+    "01": [
+     2,
+     2,
+     1
+    ],
+    "02": [
+     2,
+     1,
+     2
+    ],
+    "1": [
+     2,
+     0,
+     0
+    ],
+    "10": [
+     1,
+     0,
+     1
+    ],
+    "11": [
+     1,
+     0,
+     1
+    ],
+    "12": [
+     0,
+     0,
+     1
+    ],
+    "2": [
+     2,
+     0,
+     0
+    ],
+    "20": [
+     1,
+     1,
+     0
+    ],
+    "21": [
+     0,
+     1,
+     0
+    ],
+    "22": [
+     1,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "status": "OPTIMAL",
+   "seconds": 0.1,
+   "time_limit": 600,
+   "cap": null,
+   "bound": 16,
+   "objective": 16,
+   "name": "lambda2",
+   "model": "pair_cut",
+   "h": 2,
+   "front_size": 19,
+   "hint_value": null,
+   "verified_value": 16,
+   "N_kappa0": 16,
+   "N_slices": [
+    8,
+    8,
+    8
+   ],
+   "triangle_height": 4,
+   "triangle_slices": [
+    16,
+    16,
+    16
+   ],
+   "sticky": true,
+   "A_slices": [
+    4,
+    4,
+    4
+   ],
+   "B_slices": [
+    4,
+    4,
+    4
+   ],
+   "front_cut_ok": true,
+   "verified_ok": true,
+   "base_bound": 2.0,
+   "A_maps": {
+    "root": [
+     2,
+     0,
+     0
+    ],
+    "0": [
+     1,
+     1,
+     1
+    ],
+    "1": [
+     2,
+     1,
+     0
+    ],
+    "2": [
+     2,
+     0,
+     1
+    ]
+   },
+   "B_maps": {
+    "root": [
+     2,
+     0,
+     0
+    ],
+    "0": [
+     1,
+     1,
+     1
+    ],
+    "1": [
+     1,
+     0,
+     2
+    ],
+    "2": [
+     2,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "status": "FEASIBLE",
+   "seconds": 1200.0,
+   "time_limit": 1200,
+   "cap": null,
+   "bound": 30,
+   "objective": 31,
+   "name": "lambda3",
+   "model": "pair_cut",
+   "h": 3,
+   "front_size": 112,
+   "hint_value": 31,
+   "verified_value": 31,
+   "N_kappa0": 31,
+   "N_slices": [
+    11,
+    20,
+    20
+   ],
+   "triangle_height": 5,
+   "triangle_slices": [
+    31,
+    31,
+    31
+   ],
+   "sticky": true,
+   "A_slices": [
+    4,
+    12,
+    12
+   ],
+   "B_slices": [
+    7,
+    7,
+    13
+   ],
+   "front_cut_ok": true,
+   "verified_ok": true,
+   "base_bound": 1.987341,
+   "A_maps": {
+    "root": [
+     0,
+     1,
+     1
+    ],
+    "0": [
+     2,
+     2,
+     2
+    ],
+    "00": [
+     1,
+     1,
+     1
+    ],
+    "01": [
+     1,
+     1,
+     1
+    ],
+    "02": [
+     1,
+     1,
+     1
+    ],
+    "1": [
+     2,
+     1,
+     0
+    ],
+    "10": [
+     0,
+     0,
+     0
+    ],
+    "11": [
+     2,
+     2,
+     2
+    ],
+    "12": [
+     2,
+     2,
+     2
+    ],
+    "2": [
+     2,
+     0,
+     1
+    ],
+    "20": [
+     0,
+     0,
+     0
+    ],
+    "21": [
+     2,
+     2,
+     2
+    ],
+    "22": [
+     2,
+     2,
+     2
+    ]
+   },
+   "B_maps": {
+    "root": [
+     0,
+     0,
+     2
+    ],
+    "0": [
+     0,
+     0,
+     0
+    ],
+    "00": [
+     1,
+     0,
+     2
+    ],
+    "01": [
+     2,
+     1,
+     0
+    ],
+    "02": [
+     1,
+     0,
+     2
+    ],
+    "1": [
+     0,
+     0,
+     1
+    ],
+    "10": [
+     0,
+     1,
+     2
+    ],
+    "11": [
+     1,
+     0,
+     2
+    ],
+    "12": [
+     2,
+     2,
+     2
+    ],
+    "2": [
+     0,
+     2,
+     1
+    ],
+    "20": [
+     2,
+     2,
+     2
+    ],
+    "21": [
+     2,
+     2,
+     2
+    ],
+    "22": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "status": "FEASIBLE",
+   "seconds": 2131.9,
+   "time_limit": 1800,
+   "cap": null,
+   "bound": 28,
+   "objective": 31,
+   "name": "kappa4",
+   "model": "kappa_cut",
+   "h": 4,
+   "front_size": 112,
+   "hint_value": 31,
+   "verified_value": 31,
+   "triangle_height": 5,
+   "triangle_slices": [
+    31,
+    31,
+    31
+   ],
+   "sticky": true,
+   "root": [
+    1,
+    0,
+    0
+   ],
+   "children_slices": [
+    [
+     4,
+     12,
+     12
+    ],
+    [
+     7,
+     13,
+     7
+    ],
+    [
+     7,
+     7,
+     13
+    ]
+   ],
+   "slice_sizes": [
+    11,
+    20,
+    20
+   ],
+   "front_cut_ok": true,
+   "verified_ok": true,
+   "base_bound": 1.987341,
+   "maps": {
+    "root": [
+     1,
+     0,
+     0
+    ],
+    "0": [
+     1,
+     0,
+     0
+    ],
+    "00": [
+     2,
+     2,
+     2
+    ],
+    "000": [
+     1,
+     1,
+     1
+    ],
+    "001": [
+     1,
+     1,
+     1
+    ],
+    "002": [
+     1,
+     1,
+     1
+    ],
+    "01": [
+     1,
+     2,
+     0
+    ],
+    "010": [
+     1,
+     1,
+     1
+    ],
+    "011": [
+     1,
+     1,
+     1
+    ],
+    "012": [
+     2,
+     2,
+     2
+    ],
+    "02": [
+     1,
+     0,
+     2
+    ],
+    "020": [
+     1,
+     1,
+     1
+    ],
+    "021": [
+     2,
+     2,
+     2
+    ],
+    "022": [
+     1,
+     1,
+     1
+    ],
+    "1": [
+     1,
+     0,
+     0
+    ],
+    "10": [
+     0,
+     1,
+     2
+    ],
+    "100": [
+     1,
+     1,
+     1
+    ],
+    "101": [
+     0,
+     0,
+     0
+    ],
+    "102": [
+     2,
+     2,
+     2
+    ],
+    "11": [
+     0,
+     0,
+     0
+    ],
+    "110": [
+     2,
+     0,
+     1
+    ],
+    "111": [
+     2,
+     0,
+     1
+    ],
+    "112": [
+     2,
+     0,
+     1
+    ],
+    "12": [
+     0,
+     0,
+     2
+    ],
+    "120": [
+     2,
+     1,
+     0
+    ],
+    "121": [
+     1,
+     2,
+     0
+    ],
+    "122": [
+     2,
+     2,
+     2
+    ],
+    "2": [
+     1,
+     0,
+     0
+    ],
+    "20": [
+     0,
+     2,
+     1
+    ],
+    "200": [
+     1,
+     1,
+     1
+    ],
+    "201": [
+     2,
+     2,
+     2
+    ],
+    "202": [
+     0,
+     0,
+     0
+    ],
+    "21": [
+     0,
+     2,
+     0
+    ],
+    "210": [
+     2,
+     0,
+     1
+    ],
+    "211": [
+     2,
+     2,
+     2
+    ],
+    "212": [
+     1,
+     0,
+     2
+    ],
+    "22": [
+     0,
+     0,
+     0
+    ],
+    "220": [
+     2,
+     1,
+     0
+    ],
+    "221": [
+     2,
+     1,
+     0
+    ],
+    "222": [
+     2,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "status": "UNKNOWN",
+   "seconds": 11400.7,
+   "time_limit": 7200,
+   "cap": 61,
+   "bound": 28,
+   "objective": null,
+   "name": "lambda4",
+   "model": "pair_cut",
+   "h": 4,
+   "front_size": 670,
+   "hint_value": null,
+   "verified_value": null
+  }
+ ],
+ "fronts": {
+  "height2_trees": 531441,
+  "height2_vectors": 96,
+  "M2": 19,
+  "E3": 112,
+  "E3_complete": true,
+  "F4": 670,
+  "F4_min_product": 4096,
+  "seconds": 41.2
+ },
+ "front_bugs": [],
+ "verdict": {
+  "bugs": [],
+  "lambda3": {
+   "status": "FEASIBLE",
+   "objective": 31,
+   "bound": 30,
+   "verified_value": 31
+  },
+  "kappa4": {
+   "status": "FEASIBLE",
+   "objective": 31,
+   "bound": 28,
+   "verified_value": 31
+  },
+  "lambda4": {
+   "status": "UNKNOWN",
+   "objective": null,
+   "bound": 28,
+   "verified_value": null
+  },
+  "kappa5": {
+   "status": null,
+   "objective": null,
+   "bound": null,
+   "verified_value": null
+  },
+  "height5_best_found": null,
+  "base_upper_bound": 1.987341,
+  "flags": [],
+  "verdict": "UNDECIDED"
+ }
+}
