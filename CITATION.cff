@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "kakeya-small-fields: Smaller Kakeya sets over small finite fields: lim K(n,q)^(1/n) <= q * 2^(-(q-1)/q), with proofs and tests"
+abstract: "Smaller Kakeya sets over small finite fields: lim K(n,q)^(1/n) <= q * 2^(-(q-1)/q), with proofs and tests. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/kakeya-small-fields"
+url: "https://www.munimtech.com/research/no-sticky-kakeya-tree-beats-classical-below-height-five"
+keywords:
+  - "Mathematics"
+  - "Numerical"
+  - "Pre-registered"
+  - "Proof"
+references:
+  - type: article
+    title: "Smaller Kakeya sets over small finite fields"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/kakeya-small-fields"
+  - type: article
+    title: "A sticky Kakeya set over F3 that beats the classical construction"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/sticky-kakeya-set-smaller-than-the-classical-one"
+  - type: article
+    title: "Ruzsa's bound is exact for sticky Kakeya configurations over F3"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/ruzsa-bound-exact-for-sticky-kakeya-over-f3"
+  - type: article
+    title: "Ruzsa's example is locally optimal in characteristic 3"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/ruzsa-example-locally-optimal-characteristic-3"
+  - type: article
+    title: "Sticky Kakeya sets over F3 grow more slowly than the classical 2^n"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/sticky-kakeya-sets-over-f3-beat-base-two"
+  - type: article
+    title: "No sticky Kakeya tree over F3 beats the classical one below height 5"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/no-sticky-kakeya-tree-beats-classical-below-height-five"
