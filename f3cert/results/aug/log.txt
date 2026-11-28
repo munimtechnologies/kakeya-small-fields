@@ -1,0 +1,45 @@
+[    0.1s] built standard-five-page.json: 30 vertices, 14 symbols, replay 0
+[    4.5s] pools {"plain": 103, "meet": 103, "mono": 309, "base": 1, "cross": 515, "pairs": 13140, "nbr": 4477}, 7102 classes
+[    4.7s]   round 1: z=0.546052632 rows=194 cols=221 pivots=119 violated=638
+[    4.8s]   round 2: z=0.546052632 rows=274 cols=287 pivots=202 violated=570
+[    4.9s]   round 3: z=0.546052632 rows=354 cols=358 pivots=275 violated=490
+[    5.0s]   round 4: z=0.546052632 rows=434 cols=422 pivots=382 violated=478
+[    5.4s]   round 5: z=0.546052632 rows=514 cols=475 pivots=498 violated=405
+[    5.7s]   round 6: z=0.546052632 rows=594 cols=539 pivots=585 violated=379
+[    6.0s]   round 7: z=0.546052632 rows=674 cols=597 pivots=663 violated=297
+[    6.4s]   round 8: z=0.546052632 rows=754 cols=665 pivots=748 violated=254
+[    6.8s]   round 9: z=0.546052632 rows=834 cols=727 pivots=876 violated=232
+[    7.4s]   round 10: z=0.546052632 rows=914 cols=782 pivots=994 violated=182
+[    7.9s]   round 11: z=0.546052632 rows=994 cols=815 pivots=1097 violated=136
+[    8.4s]   round 12: z=0.546052632 rows=1035 cols=829 pivots=1182 violated=41
+[    8.7s]   round 13: z=0.546052632 rows=1048 cols=834 pivots=1229 violated=13
+[    8.8s]   round 14: z=0.546052632 rows=1062 cols=849 pivots=1264 violated=14
+[    9.0s]   round 15: z=0.546052632 rows=1064 cols=852 pivots=1276 violated=2
+[    9.0s]   round 16: z=0.546052632 rows=1065 cols=853 pivots=1278 violated=1
+[    9.0s]   round 17: z=0.546052632 rows=1066 cols=855 pivots=1279 violated=1
+[    9.0s]   round 18: z=0.546052632 rows=1067 cols=856 pivots=1280 violated=1
+[    9.0s]   round 19: z=0.546052632 rows=1068 cols=858 pivots=1281 violated=1
+[    9.0s]   round 20: z=0.546052632 rows=1069 cols=859 pivots=1282 violated=1
+[    9.0s]   round 21: z=0.546052632 rows=1070 cols=860 pivots=1283 violated=1
+[    9.0s]   round 22: z=0.546052632 rows=1071 cols=861 pivots=1286 violated=1
+[    9.0s]   round 23: z=0.546052632 rows=1072 cols=861 pivots=1287 violated=1
+[    9.1s] aug-sym-meet: {"status": "optimal-all", "value_float": 0.5460526315789473, "lb_exact": "83/152", "lb": 0.5460526315789473, "base": 1.8219368368632634, "pivots": 1290, "rows_in_lp": 1072, "pool_rows": 9372, "cols": 861, "rounds": 23, "rows_used": 104, "box_used": 0, "seconds": 4.6, "const_violations": 0, "problems": [], "uniform": false, "symmetric": true}
+[    9.3s]   round 1: z=0.546052632 rows=194 cols=221 pivots=119 violated=638
+[    9.3s]   round 2: z=0.546052632 rows=274 cols=287 pivots=202 violated=576
+[    9.4s]   round 3: z=0.546052632 rows=354 cols=358 pivots=275 violated=497
+[    9.5s]   round 4: z=0.546052632 rows=434 cols=422 pivots=382 violated=503
+[    9.6s]   round 5: z=0.546052632 rows=514 cols=475 pivots=498 violated=424
+[    9.8s]   round 6: z=0.546052632 rows=594 cols=537 pivots=585 violated=394
+[   10.0s]   round 7: z=0.546052632 rows=674 cols=594 pivots=663 violated=316
+[   10.3s]   round 8: z=0.546052632 rows=754 cols=658 pivots=767 violated=279
+[   10.9s]   round 9: z=0.546052632 rows=834 cols=719 pivots=902 violated=242
+[   11.8s]   round 10: z=0.546052632 rows=914 cols=778 pivots=1019 violated=161
+[   12.2s]   round 11: z=0.546052632 rows=994 cols=812 pivots=1102 violated=85
+[   13.3s]   round 12: z=0.546052632 rows=1035 cols=827 pivots=1243 violated=41
+[   13.8s]   round 13: z=0.546052632 rows=1074 cols=848 pivots=1301 violated=39
+[   14.6s]   round 14: z=0.546052632 rows=1089 cols=860 pivots=1347 violated=15
+[   15.0s]   round 15: z=0.546052632 rows=1092 cols=863 pivots=1362 violated=3
+[   15.2s]   round 16: z=0.546052632 rows=1093 cols=865 pivots=1366 violated=1
+[   15.2s]   round 17: z=0.546052632 rows=1094 cols=866 pivots=1367 violated=1
+[   15.2s] aug-sym-meet-unif: {"status": "optimal-all", "value_float": 0.5460526315789473, "lb_exact": "83/152", "lb": 0.5460526315789473, "base": 1.8219368368632634, "pivots": 1370, "rows_in_lp": 1094, "pool_rows": 15756, "cols": 866, "rounds": 17, "rows_used": 104, "box_used": 0, "seconds": 6.1, "const_violations": 0, "problems": [], "uniform": true, "symmetric": true}
+[   15.3s] VERDICT NO_GAIN
