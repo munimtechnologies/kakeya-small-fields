@@ -1,0 +1,448 @@
+{
+ "q": 4,
+ "T": 28,
+ "group_order": 5760,
+ "made_with": "AI agents working in MV2's name; not checked by a human mathematician",
+ "todo": [],
+ "finished": [
+  {
+   "r": 1,
+   "S0": [
+    0
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1,
+   "pruned": 1,
+   "leaves": 0,
+   "leaf_min": null,
+   "solutions": [],
+   "complete": true,
+   "seconds": 0.0,
+   "orbit_size": 16
+  },
+  {
+   "r": 2,
+   "S0": [
+    0,
+    1
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 287,
+   "pruned": 144,
+   "leaves": 0,
+   "leaf_min": null,
+   "solutions": [],
+   "complete": true,
+   "seconds": 0.01,
+   "orbit_size": 120
+  },
+  {
+   "r": 3,
+   "S0": [
+    0,
+    1,
+    2
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 11848,
+   "pruned": 6984,
+   "leaves": 0,
+   "leaf_min": null,
+   "solutions": [],
+   "complete": true,
+   "seconds": 0.64,
+   "orbit_size": 80
+  },
+  {
+   "r": 3,
+   "S0": [
+    0,
+    1,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 6280,
+   "pruned": 3477,
+   "leaves": 32,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 0.52,
+   "orbit_size": 480
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 122005,
+   "pruned": 0,
+   "leaves": 0,
+   "leaf_min": null,
+   "solutions": [],
+   "complete": true,
+   "seconds": 8.46,
+   "orbit_size": 20
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 59482,
+   "pruned": 17021,
+   "leaves": 30,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 4.27,
+   "orbit_size": 960
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 185363,
+   "pruned": 0,
+   "leaves": 6858,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 16.74,
+   "orbit_size": 120
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    4,
+    6
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 88416,
+   "pruned": 15851,
+   "leaves": 1200,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 6.06,
+   "orbit_size": 720
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 203267,
+   "pruned": 93,
+   "leaves": 0,
+   "leaf_min": null,
+   "solutions": [],
+   "complete": true,
+   "seconds": 17.69,
+   "orbit_size": 240
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 448714,
+   "pruned": 10226,
+   "leaves": 6771,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 46.07,
+   "orbit_size": 1440
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 189336,
+   "pruned": 20787,
+   "leaves": 48,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 16.21,
+   "orbit_size": 1440
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    10
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 308295,
+   "pruned": 33851,
+   "leaves": 582,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 27.62,
+   "orbit_size": 960
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    4,
+    6,
+    9
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 487846,
+   "pruned": 56866,
+   "leaves": 2304,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 37.97,
+   "orbit_size": 288
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 786569,
+   "pruned": 0,
+   "leaves": 20772,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 104.25,
+   "orbit_size": 360
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 354094,
+   "pruned": 537,
+   "leaves": 816,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 28.53,
+   "orbit_size": 960
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 969516,
+   "pruned": 803,
+   "leaves": 6528,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 81.05,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 760253,
+   "pruned": 28312,
+   "leaves": 7584,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 58.56,
+   "orbit_size": 2880
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    9
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 622954,
+   "pruned": 18848,
+   "leaves": 621,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 62.85,
+   "orbit_size": 2880
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    15
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 364863,
+   "pruned": 40465,
+   "leaves": 864,
+   "leaf_min": 30,
+   "solutions": [],
+   "complete": true,
+   "seconds": 38.0,
+   "orbit_size": 240
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    10,
+    13
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 864570,
+   "pruned": 106338,
+   "leaves": 37152,
+   "leaf_min": 28,
+   "solutions": [],
+   "complete": true,
+   "seconds": 79.7,
+   "orbit_size": 160
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    4,
+    6,
+    9,
+    10
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1532757,
+   "pruned": 190101,
+   "leaves": 9120,
+   "leaf_min": 29,
+   "solutions": [],
+   "complete": true,
+   "seconds": 130.16,
+   "orbit_size": 48
+  }
+ ],
+ "sessions": [
+  {
+   "label": "b-run-1",
+   "started": "2026-11-28T08:16:39Z",
+   "finished_items": 15,
+   "splits": 0,
+   "seconds": 315.3
+  },
+  {
+   "label": "b-run-2",
+   "started": "2026-11-28T09:22:32Z",
+   "finished_items": 5,
+   "splits": 0,
+   "seconds": 400.4
+  },
+  {
+   "label": "b-run-3",
+   "started": "2026-11-28T09:29:36Z",
+   "finished_items": 1,
+   "splits": 0,
+   "seconds": 130.2
+  }
+ ],
+ "complete": true,
+ "sets_below_T": 0,
+ "leaf_min": 28
+}

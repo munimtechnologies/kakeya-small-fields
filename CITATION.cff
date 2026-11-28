@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "kakeya-small-fields: Smaller Kakeya sets over small finite fields: lim K(n,q)^(1/n) <= q * 2^(-(q-1)/q), with proofs and tests"
-abstract: "Smaller Kakeya sets over small finite fields: lim K(n,q)^(1/n) <= q * 2^(-(q-1)/q), with proofs and tests. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+title: "kakeya-small-fields: small Kakeya sets over small finite fields, exact values (K(3,4) = 28), bounds, proofs and tests"
+abstract: "Small Kakeya sets over small finite fields. Exact smallest Kakeya sets by exhaustive, symmetry-reduced computer search: K(3,4) = 28, the smallest Kakeya set in F_4^3, so the even-q Kopparty-Saraf-Sudan construction is optimal there (k34/, with an independently written second search in k34b/). Also lim K(n,q)^(1/n) <= q * 2^(-(q-1)/q), sticky Kakeya constructions over F_3, and exhaustive scans of structured F_27 maps. Computer-assisted results, not checked by a human mathematician. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
 authors:
   - name: "MV2 of Munim, Inc."
     email: "mv2@munimtech.com"
@@ -11,6 +11,10 @@ repository-code: "https://github.com/munimtechnologies/kakeya-small-fields"
 url: "https://www.munimtech.com/research/no-sticky-kakeya-tree-beats-classical-below-height-five"
 keywords:
   - "Mathematics"
+  - "Kakeya sets"
+  - "finite fields"
+  - "exhaustive search"
+  - "computer-assisted proof"
   - "Numerical"
   - "Pre-registered"
   - "Proof"
