@@ -1,0 +1,700 @@
+{
+ "q": 4,
+ "T": 28,
+ "made_with": "AI agents working in MV2's name; not checked by a human mathematician",
+ "orbit_counts": {
+  "1": 1,
+  "2": 1,
+  "3": 2,
+  "4": 4,
+  "5": 5,
+  "6": 8
+ },
+ "pending": [],
+ "done": [
+  {
+   "r": 1,
+   "S0": [
+    0
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1,
+   "pruned": 1,
+   "leaves": 0,
+   "leaf_min": null,
+   "hist": {},
+   "solutions": [],
+   "seconds": 0.0,
+   "complete": true,
+   "orbit_size": 16
+  },
+  {
+   "r": 2,
+   "S0": [
+    0,
+    1
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 143,
+   "pruned": 72,
+   "leaves": 0,
+   "leaf_min": null,
+   "hist": {},
+   "solutions": [],
+   "seconds": 0.0,
+   "complete": true,
+   "orbit_size": 120
+  },
+  {
+   "r": 3,
+   "S0": [
+    0,
+    1,
+    2
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 8140,
+   "pruned": 5346,
+   "leaves": 0,
+   "leaf_min": null,
+   "hist": {},
+   "solutions": [],
+   "seconds": 0.29,
+   "complete": true,
+   "orbit_size": 80
+  },
+  {
+   "r": 3,
+   "S0": [
+    0,
+    1,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 8232,
+   "pruned": 4863,
+   "leaves": 32,
+   "leaf_min": 29,
+   "hist": {
+    "29": 32
+   },
+   "solutions": [],
+   "seconds": 0.48,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 172117,
+   "pruned": 0,
+   "leaves": 0,
+   "leaf_min": null,
+   "hist": {},
+   "solutions": [],
+   "seconds": 11.84,
+   "complete": true,
+   "orbit_size": 20
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 84953,
+   "pruned": 34104,
+   "leaves": 30,
+   "leaf_min": 29,
+   "hist": {
+    "29": 30
+   },
+   "solutions": [],
+   "seconds": 6.65,
+   "complete": true,
+   "orbit_size": 960
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 263737,
+   "pruned": 0,
+   "leaves": 6858,
+   "leaf_min": 28,
+   "hist": {
+    "28": 18,
+    "29": 4536,
+    "30": 2304
+   },
+   "solutions": [],
+   "seconds": 16.49,
+   "complete": true,
+   "orbit_size": 120
+  },
+  {
+   "r": 4,
+   "S0": [
+    0,
+    1,
+    4,
+    6
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 137616,
+   "pruned": 40591,
+   "leaves": 1200,
+   "leaf_min": 28,
+   "hist": {
+    "28": 144,
+    "29": 816,
+    "30": 240
+   },
+   "solutions": [],
+   "seconds": 8.47,
+   "complete": true,
+   "orbit_size": 720
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 327253,
+   "pruned": 10938,
+   "leaves": 0,
+   "leaf_min": null,
+   "hist": {},
+   "solutions": [],
+   "seconds": 20.67,
+   "complete": true,
+   "orbit_size": 240
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 812040,
+   "pruned": 57285,
+   "leaves": 6771,
+   "leaf_min": 28,
+   "hist": {
+    "28": 54,
+    "29": 2949,
+    "30": 3690,
+    "31": 78
+   },
+   "solutions": [],
+   "seconds": 52.04,
+   "complete": true,
+   "orbit_size": 1440
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 371430,
+   "pruned": 97502,
+   "leaves": 48,
+   "leaf_min": 29,
+   "hist": {
+    "29": 48
+   },
+   "solutions": [],
+   "seconds": 27.32,
+   "complete": true,
+   "orbit_size": 1440
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    10
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 669590,
+   "pruned": 182691,
+   "leaves": 582,
+   "leaf_min": 28,
+   "hist": {
+    "28": 114,
+    "29": 468
+   },
+   "solutions": [],
+   "seconds": 40.86,
+   "complete": true,
+   "orbit_size": 960
+  },
+  {
+   "r": 5,
+   "S0": [
+    0,
+    1,
+    4,
+    6,
+    9
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 862576,
+   "pruned": 202590,
+   "leaves": 2304,
+   "leaf_min": 28,
+   "hist": {
+    "28": 768,
+    "29": 1536
+   },
+   "solutions": [],
+   "seconds": 74.59,
+   "complete": true,
+   "orbit_size": 288
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1602454,
+   "pruned": 52690,
+   "leaves": 20772,
+   "leaf_min": 28,
+   "hist": {
+    "28": 3096,
+    "29": 9246,
+    "30": 7710,
+    "31": 720
+   },
+   "solutions": [],
+   "seconds": 145.5,
+   "complete": true,
+   "orbit_size": 360
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 753040,
+   "pruned": 80848,
+   "leaves": 816,
+   "leaf_min": 29,
+   "hist": {
+    "29": 342,
+    "30": 438,
+    "31": 36
+   },
+   "solutions": [],
+   "seconds": 87.03,
+   "complete": true,
+   "orbit_size": 960
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    0
+   ],
+   "T": 28,
+   "nodes": 249012,
+   "pruned": 8777,
+   "leaves": 846,
+   "leaf_min": 28,
+   "hist": {
+    "28": 24,
+    "29": 276,
+    "30": 506,
+    "31": 40
+   },
+   "solutions": [],
+   "seconds": 32.58,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    1
+   ],
+   "T": 28,
+   "nodes": 318582,
+   "pruned": 26584,
+   "leaves": 840,
+   "leaf_min": 28,
+   "hist": {
+    "28": 12,
+    "29": 178,
+    "30": 586,
+    "31": 64
+   },
+   "solutions": [],
+   "seconds": 29.8,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    2
+   ],
+   "T": 28,
+   "nodes": 331029,
+   "pruned": 28309,
+   "leaves": 840,
+   "leaf_min": 28,
+   "hist": {
+    "28": 12,
+    "29": 178,
+    "30": 586,
+    "31": 64
+   },
+   "solutions": [],
+   "seconds": 26.89,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    3
+   ],
+   "T": 28,
+   "nodes": 291817,
+   "pruned": 6365,
+   "leaves": 562,
+   "leaf_min": 29,
+   "hist": {
+    "29": 136,
+    "30": 386,
+    "31": 40
+   },
+   "solutions": [],
+   "seconds": 25.65,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    4
+   ],
+   "T": 28,
+   "nodes": 301922,
+   "pruned": 10932,
+   "leaves": 1720,
+   "leaf_min": 28,
+   "hist": {
+    "28": 48,
+    "29": 564,
+    "30": 1020,
+    "31": 88
+   },
+   "solutions": [],
+   "seconds": 22.95,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "prefix": [
+    5
+   ],
+   "T": 28,
+   "nodes": 303233,
+   "pruned": 12812,
+   "leaves": 1720,
+   "leaf_min": 28,
+   "hist": {
+    "28": 48,
+    "29": 564,
+    "30": 1020,
+    "31": 88
+   },
+   "solutions": [],
+   "seconds": 25.25,
+   "complete": true,
+   "orbit_size": 480
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1545089,
+   "pruned": 179683,
+   "leaves": 7584,
+   "leaf_min": 28,
+   "hist": {
+    "28": 342,
+    "29": 4758,
+    "30": 2388,
+    "31": 96
+   },
+   "solutions": [],
+   "seconds": 115.57,
+   "complete": true,
+   "orbit_size": 2880
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    9
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1259847,
+   "pruned": 128484,
+   "leaves": 621,
+   "leaf_min": 29,
+   "hist": {
+    "29": 246,
+    "30": 354,
+    "31": 21
+   },
+   "solutions": [],
+   "seconds": 100.94,
+   "complete": true,
+   "orbit_size": 2880
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    15
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 833515,
+   "pruned": 174017,
+   "leaves": 864,
+   "leaf_min": 30,
+   "hist": {
+    "30": 768,
+    "31": 96
+   },
+   "solutions": [],
+   "seconds": 64.7,
+   "complete": true,
+   "orbit_size": 240
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    2,
+    4,
+    10,
+    13
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 1592299,
+   "pruned": 314585,
+   "leaves": 37152,
+   "leaf_min": 28,
+   "hist": {
+    "28": 3024,
+    "29": 25344,
+    "30": 8784
+   },
+   "solutions": [],
+   "seconds": 121.59,
+   "complete": true,
+   "orbit_size": 160
+  },
+  {
+   "r": 6,
+   "S0": [
+    0,
+    1,
+    4,
+    6,
+    9,
+    10
+   ],
+   "prefix": [],
+   "T": 28,
+   "nodes": 2395105,
+   "pruned": 492306,
+   "leaves": 9120,
+   "leaf_min": 29,
+   "hist": {
+    "29": 1920,
+    "30": 6720,
+    "31": 480
+   },
+   "solutions": [],
+   "seconds": 190.99,
+   "complete": true,
+   "orbit_size": 48
+  }
+ ],
+ "entries": [
+  {
+   "label": "run-a",
+   "started": "2026-11-28T05:37:04Z",
+   "items_done": 13,
+   "splits": 0,
+   "nodes": 4475588,
+   "seconds": 330.0
+  },
+  {
+   "label": "run-b",
+   "started": "2026-11-28T05:42:43Z",
+   "items_done": 3,
+   "splits": 1,
+   "nodes": 4085210,
+   "seconds": 415.4
+  },
+  {
+   "label": "run-c",
+   "started": "2026-11-28T05:49:43Z",
+   "items_done": 8,
+   "splits": 0,
+   "nodes": 5256714,
+   "seconds": 420.1
+  },
+  {
+   "label": "run-d",
+   "started": "2026-11-28T08:10:53Z",
+   "items_done": 2,
+   "splits": 0,
+   "nodes": 3987404,
+   "seconds": 312.8
+  },
+  {
+   "label": "run-e",
+   "started": "2026-11-28T08:16:11Z",
+   "items_done": 0,
+   "splits": 0,
+   "nodes": 0,
+   "seconds": 0.0
+  }
+ ],
+ "complete": true,
+ "solutions_found": 0,
+ "leaf_min_overall": 28
+}
